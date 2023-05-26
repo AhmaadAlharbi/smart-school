@@ -41,84 +41,38 @@
                             data-hs-dropdown-placement="bottom-right">
                             <button id="dropdown-flag" type="button"
                                 class="hs-dropdown-toggle ti-dropdown-toggle p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] border-0 rounded-full shadow-none focus:ring-gray-400 text-xs">
-                                <img src="{{asset('build/assets/img/flags/10.png')}}" alt="flag-img" class="h-[1.375rem] w-[1.375rem]">
+                                @if (App::getLocale() == 'en')
+                                <img src="{{ asset('build/assets/img/flags/usa.png') }}" alt="flag-img">
+                                @else
+                                <img src="{{ asset('build/assets/img/flags/kuwait.png') }}" alt="flag-img">
+                                @endif
                             </button>
                             <div class="hs-dropdown-menu ti-dropdown-menu min-w-[10rem]" aria-labelledby="dropdown-flag">
                                 <div class="ti-dropdown-divider divide-y divide-gray-200">
-                                <div class="py-2 first:pt-0 last:pb-0">
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/10.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            USA
-                                        </p>
-                                        </div>
+                                    <div class="py-2 first:pt-0 last:pb-0">
+                                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                            <div class="ti-dropdown-item">
+                                                <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
+                                                    <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
+                                                        @if ($localeCode == 'ar')
+                                                            <img src="{{ asset('build/assets/img/flags/kuwait.png') }}" alt="flag-img">
+                                                        @else
+                                                            <img src="{{ asset('build/assets/img/flags/usa.png') }}" alt="flag-img">
+                                                        @endif
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium">
+                                                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                                {{ $properties['native'] }}
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
                                     </div>
-                                    </div>
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/1.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            Argentina
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/2.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            Canada
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/3.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            France
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/4.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            Germany
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="ti-dropdown-item">
-                                    <div class="flex items-center space-x-2 rtl:space-x-reverse w-full">
-                                        <div class="h-[1.375rem] w-[1.375rem] rounded-sm">
-                                        <img src="{{asset('build/assets/img/flags/5.png')}}" alt="flag-img">
-                                        </div>
-                                        <div>
-                                        <p class="text-xs font-medium">
-                                            Italy
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
+                                    
+                                    
                                 </div>
                             </div>
                             </div>

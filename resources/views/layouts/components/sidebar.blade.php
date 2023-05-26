@@ -75,6 +75,38 @@
                             <!-- Start::slide__category -->
                             <li class="slide__category"><span class="category-name">General</span></li>
                             <!-- End::slide__category -->
+                            {{-- start my customization --}}
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
+                                        <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                                        <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                                        <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                                        <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
+                                    </svg>
+                                    <span class="side-menu__label">Dashboards</span>
+                                    <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide side-menu__label1"><a href="javascript:void(0)">Components</a></li>
+                                    <li class="slide"><a href="{{url('accordion')}}" class="side-menu__item">Accordion</a></li>
+                                    <li class="slide"><a href="{{url('alerts')}}" class="side-menu__item">Alerts</a></li>
+                                    <li class="slide"><a href="{{url('avatars')}}" class="side-menu__item">Avatars</a></li>
+                                    <li class="slide"><a href="{{url('badges')}}" class="side-menu__item">Badges</a></li>
+                                    <li class="slide"><a href="{{url('blockquotes')}}" class="side-menu__item">Blockquotes</a></li>
+                                    <li class="slide"><a href="{{url('buttons')}}" class="side-menu__item">Buttons</a></li>
+                                    <li class="slide"><a href="{{url('cards')}}" class="side-menu__item">Cards</a></li>
+                                    <li class="slide"><a href="{{url('collapse')}}" class="side-menu__item">Collapse</a></li>
+                                    <li class="slide"><a href="{{url('list-group')}}" class="side-menu__item">ListGroup</a></li>
+                                    <li class="slide"><a href="{{url('list-page')}}" class="side-menu__item">List</a></li>
+                                    <li class="slide"><a href="{{url('indicators')}}" class="side-menu__item">Indicators</a></li>
+                                    <li class="slide"><a href="{{url('progress')}}" class="side-menu__item">Progress</a></li>
+                                    <li class="slide"><a href="{{url('skeleton')}}" class="side-menu__item">Skeleton</a></li>
+                                    <li class="slide"><a href="{{url('spinners')}}" class="side-menu__item">Spinners</a></li>
+                                    <li class="slide"><a href="{{url('toast')}}" class="side-menu__item">Toast</a></li>
+                                </ul>
+                            </li>
+                            {{-- end my customization --}}
 
                             <!-- Start::slide -->
                             <li class="slide has-sub">

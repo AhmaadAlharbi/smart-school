@@ -25,7 +25,6 @@ use App\Http\Controllers\WidgetsController;
 |
 */
 
-Route::get('/', [DashboardsController::class, 'index']);
 Route::get('index', [DashboardsController::class, 'index']);
 Route::get('index2', [DashboardsController::class, 'index2']);
 Route::get('index3', [DashboardsController::class, 'index3']);
@@ -173,14 +172,22 @@ Route::get('empty-page', [PagesController::class, 'empty_page']);
 Route::get('widgets', [WidgetsController::class, 'widgets']);
 Route::get('navbar', [ElementsController::class, 'navbar']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+////////////////////////////////////
+Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+    Route::get('/', [DashboardsController::class, 'index']);
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
+
+    Route::middleware('auth')->group(function () {
+        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    });
 });
+
+
+
 
 require __DIR__ . '/auth.php';

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+@if (App::getLocale() == 'en')
+
 <html lang="en" dir="ltr" data-nav-layout="vertical" class="light" data-header-styles="light" data-menu-styles="dark">
+    @else 
+    <html lang="en" dir="rtl" data-nav-layout="vertical" class="light" data-header-styles="light" data-menu-styles="dark">
+@endif
 	<head>
 
 		<!-- META DATA -->
