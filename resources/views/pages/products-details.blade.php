@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Product Details</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Product Details</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Product Details
                                     </li>
                                 </ol>
@@ -107,45 +107,45 @@
                                 <div class="box mb-0 border-0 shadow-none bg-transparent">
                                     <div class="box-body xxl:px-0">
                                     <div class="space-y-5">
-                                        <h5 class="font-bold text-xl text-gray-800 dark:text-white">Dolar 20000mAh 18W Fast Charging Power Bank | Dual Output (Type C, 1
+                                        <h5 class="font-bold text-xl text-gray-800">Dolar 20000mAh 18W Fast Charging Power Bank | Dual Output (Type C, 1
                                         USB) and Dual Input (Type C, Micro USB) Ports</h5>
                                         <div class="sm:flex sm:space-x-6 rtl:space-x-reverse sm:space-y-0 space-y-2">
                                         <div class="flex space-x-2 rtl:space-x-reverse">
                                             <i class="ri ri-star-fill text-yellow-500 text-sm"></i>
-                                            <p class="text-gray-500 dark:text-white/70 text-sm space-x-2 rtl:space-x-reverse">4.2 Rating</p>
+                                            <p class="text-gray-500 text-sm space-x-2 rtl:space-x-reverse">4.2 Rating</p>
                                         </div>
                                         <div class="flex space-x-2 rtl:space-x-reverse">
                                             <span class="my-auto w-1.5 h-1.5 inline-block bg-gray-400 rounded-full"></span>
-                                            <p class="text-gray-500 dark:text-white/70 text-sm space-x-2 rtl:space-x-reverse">2,262 Reviews
+                                            <p class="text-gray-500 text-sm space-x-2 rtl:space-x-reverse">2,262 Reviews
                                             </p>
                                         </div>
                                         <div class="flex space-x-2 rtl:space-x-reverse">
                                             <span class="my-auto w-1.5 h-1.5 inline-block bg-gray-400 rounded-full"></span>
-                                            <p class="text-gray-500 dark:text-white/70 text-sm space-x-2 rtl:space-x-reverse">3,252 Units
+                                            <p class="text-gray-500 text-sm space-x-2 rtl:space-x-reverse">3,252 Units
                                             Sold</p>
                                         </div>
                                         </div>
-                                        <p class="text-gray-500 dark:text-white/70"><strong class="text-primary">81%</strong> of buyers
+                                        <p class="text-gray-500"><strong class="text-primary">81%</strong> of buyers
                                         enjoyed this product! <strong class="text-success">(105 votes)</strong> </p>
                                         <div class="space-y-4">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Description :</h5>
-                                        <p class="my-auto font-medium text-sm text-gray-500 dark:text-white/70">Lorem ipsum dolor sit
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Description :</h5>
+                                        <p class="my-auto font-medium text-sm text-gray-500">Lorem ipsum dolor sit
                                             amet, consectetur adipisicing elit. Voluptas sint exercitationem veritatis harum maiores
                                             corporis perspiciatis quos accusantium velit. Deserunt tenetur rerum nemo illum. Dolor
                                             laboriosam atque accusantium perspiciatis rerum?</p>
                                         </div>
                                         <div class="sm:flex sm:space-x-5">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Status :</h5>
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Status :</h5>
                                         <span class="my-auto font-medium text-sm text-success">Available In Stock</span>
                                         </div>
                                         <div class="sm:flex sm:space-x-2">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Price :</h5>
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Price :</h5>
                                         <h5 class="text-2xl font-semibold text-primary">$2000</h5>
                                         <span
-                                            class="my-auto line-through text-base text-gray-500 dark:text-white/70 font-semibold">$2999</span>
+                                            class="my-auto line-through text-base text-gray-500 font-semibold">$2999</span>
                                         </div>
                                         <div class="sm:flex sm:space-x-3 product-des">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Colors :</h5>
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Colors :</h5>
                                         <select class="ti-form-select product-des-select">
                                             <option value="">Select Color</option>
                                             <option value="Choice 1">Pink</option>
@@ -160,7 +160,7 @@
                                         </select>
                                         </div>
                                         <div class="sm:flex sm:space-x-3 product-des">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Capacity :</h5>
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Capacity :</h5>
                                         <select class="ti-form-select product-des-select">
                                             <option value="">Select Size</option>
                                             <option value="Choice 1">1000 mAh</option>
@@ -176,26 +176,26 @@
                                             class="ri-share-forward-line"></i>Compare
                                         Product</a>
                                         <div class="sm:flex sm:space-x-3 product-des">
-                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">Share :</h5>
+                                        <h5 class="font-bold text-sm my-auto w-28 text-gray-800">Share :</h5>
                                         <div class="flex space-x-1 rtl:space-x-reverse">
                                             <button aria-label="button" type="button"
-                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
+                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 bg-white/10  border-gray-200">
                                             <i class="ri ri-github-line text-lg leading-none"></i>
                                             </button>
                                             <button aria-label="button" type="button"
-                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
+                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 bg-white/10  border-gray-200">
                                             <i class="ri ri-instagram-line text-lg leading-none"></i>
                                             </button>
                                             <button aria-label="button" type="button"
-                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
+                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 bg-white/10  border-gray-200">
                                             <i class="ri ri-twitter-line text-lg leading-none"></i>
                                             </button>
                                             <button aria-label="button" type="button"
-                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
+                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 bg-white/10  border-gray-200">
                                             <i class="ri ri-linkedin-line text-lg leading-none"></i>
                                             </button>
                                             <button aria-label="button" type="button"
-                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
+                                            class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 bg-white/10  border-gray-200">
                                             <i class="ri ri-facebook-circle-line text-lg leading-none"></i>
                                             </button>
                                         </div>
@@ -227,20 +227,20 @@
                                         </div>
                                         <div class="box-body space-y-4">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <h5 class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">Item :</h5>
+                                            <h5 class="font-normal text-gray-500 text-sm my-auto w-28">Item :</h5>
                                             <img src="{{asset('build/assets/img/ecommerce/product-details/6.png')}}" class="avatar rounded-sm"
                                             alt="Product-image">
                                         </div>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <h5 class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">Color :</h5>
+                                            <h5 class="font-normal text-gray-500 text-sm my-auto w-28">Color :</h5>
                                             <p class="font-medium text-sm">Red</p>
                                         </div>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <h5 class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">Capacity :</h5>
+                                            <h5 class="font-normal text-gray-500 text-sm my-auto w-28">Capacity :</h5>
                                             <p class="font-medium text-sm">2000 mAh</p>
                                         </div>
                                         <div class="sm:flex sm:space-x-3">
-                                            <h5 class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">Quantity :</h5>
+                                            <h5 class="font-normal text-gray-500 text-sm my-auto w-28">Quantity :</h5>
                                             <div class="flex rounded-sm">
                                             <button aria-label="button" type="button" id="product-quantity-minus"
                                                 class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 ltr:rounded-l-sm rtl:rounded-r-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-5 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
@@ -256,7 +256,7 @@
                                             </div>
                                         </div>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <h5 class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">Total :</h5>
+                                            <h5 class="font-normal text-gray-500 text-sm my-auto w-28">Total :</h5>
                                             <p class="font-medium text-sm">$2000</p>
                                         </div>
                                         <p class="font-medium text-sm">Expected Delivery By Feb 25 ,2023</p>
@@ -266,7 +266,7 @@
                                         </div>
                                         </div>
                                     </div>
-                                    <p class="text-gray-500 dark:text-white/70 text-sm text-center">Any Issue Reagarding Product ? <a
+                                    <p class="text-gray-500 text-sm text-center">Any Issue Reagarding Product ? <a
                                         href="javascript:void(0);" class="text-primary inline-flex"><i
                                             class="ri-information-line ltr:mr-2 rtl:ml-2"></i>Report</a></p>
                                     </div>
@@ -281,29 +281,29 @@
                             <div class="col-span-12 xxl:col-span-9">
                                 <div class="box">
                                 <div class="box-body pt-0 px-0">
-                                    <div class="border-b border-gray-200 dark:border-white/10">
+                                    <div class="border-b border-gray-200">
                                     <nav class="-mb-0.5 sm:flex sm:space-x-6 rtl:space-x-reverse px-6" aria-label="Tabs" role="tablist"
                                         data-hs-tabs-vertical="true">
                                         <button aria-label="button" type="button"
-                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 dark:text-white/70 hover:text-primary active"
+                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-primary active"
                                         id="product-spec-tab-2" data-hs-tab="#product-spec-content-2"
                                         aria-controls="product-spec-content-2" role="tab">
                                         Description
                                         </button>
                                         <button aria-label="button" type="button"
-                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 dark:text-white/70 hover:text-primary"
+                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-primary"
                                         id="product-spec-tab-3" data-hs-tab="#product-spec-content-3"
                                         aria-controls="product-spec-content-3" role="tab">
                                         Ratings
                                         </button>
                                         <button aria-label="button" type="button"
-                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 dark:text-white/70 hover:text-primary"
+                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-primary"
                                         id="product-spec-tab-4" data-hs-tab="#product-spec-content-4"
                                         aria-controls="product-spec-content-3" role="tab">
                                         Reviews
                                         </button>
                                         <button aria-label="button" type="button"
-                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 dark:text-white/70 hover:text-primary"
+                                        class="w-full sm:w-auto hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-primary"
                                         id="product-spec-tab-1" data-hs-tab="#product-spec-content-1"
                                         aria-controls="product-spec-content-1" role="tab">
                                         Ship and Return
@@ -312,7 +312,7 @@
                                     </div>
                                     <div class="mt-6 px-6">
                                     <div id="product-spec-content-2" class="" role="tabpanel" aria-labelledby="product-spec-tab-2">
-                                        <ul class="list-disc list-inside space-y-3 text-gray-900 dark:text-gray-200">
+                                        <ul class="list-disc list-inside space-y-3 text-gray-900">
                                         <li>
                                             At vero eos et accusamus et iusto odio dignissimos
                                             ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
@@ -335,27 +335,27 @@
                                                 <tr>
                                                 <td class="font-bold">Brand</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">Dolar</td>
+                                                <td class="text-gray-500">Dolar</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Connector Type</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">USB</td>
+                                                <td class="text-gray-500">USB</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Battery Capacity</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70"> 2000 mAh</td>
+                                                <td class="text-gray-500"> 2000 mAh</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Special Feature</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">Fast charge</td>
+                                                <td class="text-gray-500">Fast charge</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Weight</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">500grms</td>
+                                                <td class="text-gray-500">500grms</td>
                                                 </tr>
                                             </tbody>
                                             </table>
@@ -366,27 +366,27 @@
                                                 <tr>
                                                 <td class="font-bold">Waranty</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">6 Months</td>
+                                                <td class="text-gray-500">6 Months</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Ports</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">Dual Ports</td>
+                                                <td class="text-gray-500">Dual Ports</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Dimensions</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">32.25 * 25.2 *36.3 cm</td>
+                                                <td class="text-gray-500">32.25 * 25.2 *36.3 cm</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Display</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">Wireless</td>
+                                                <td class="text-gray-500">Wireless</td>
                                                 </tr>
                                                 <tr>
                                                 <td class="font-bold">Origin</td>
                                                 <td>:</td>
-                                                <td class="text-gray-500 dark:text-white/70">India</td>
+                                                <td class="text-gray-500">India</td>
                                                 </tr>
                                             </tbody>
                                             </table>
@@ -405,53 +405,53 @@
                                             <i class="ri ri-star-fill text-yellow-500 text-xl"></i>
                                             <i class="ri ri-star-half-fill text-yellow-500 text-xl"></i>
                                             </div>
-                                            <p class="!mt-3 text-sm text-gray-500 dark:text-white/70">Based On 25,256 Ratings</p>
+                                            <p class="!mt-3 text-sm text-gray-500">Based On 25,256 Ratings</p>
                                         </div>
                                         <div class="space-y-4">
                                             <div class="flex items-center space-x-5 rtl:space-x-reverse justify-center">
                                             <div class="text-base leading-none">5<i
                                                 class="ri ri-star-fill text-yellow-500 ltr:ml-2 rtl:mr-2"></i></div>
-                                            <div class="ti-main-progress h-3 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-3 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" 
                                                 style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="text-gray-500 dark:text-white/70 text-sm">15,252</div>
+                                            <div class="text-gray-500 text-sm">15,252</div>
                                             </div>
                                             <div class="flex items-center space-x-5 rtl:space-x-reverse justify-center">
                                             <div class="text-base leading-none">4<i
                                                 class="ri ri-star-fill text-yellow-500 ltr:ml-2 rtl:mr-2"></i></div>
-                                            <div class="ti-main-progress h-3 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-3 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar"
                                                 style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="text-gray-500 dark:text-white/70 text-sm">5,235</div>
+                                            <div class="text-gray-500 text-sm">5,235</div>
                                             </div>
                                             <div class="flex items-center space-x-5 rtl:space-x-reverse justify-center">
                                             <div class="text-base leading-none">3<i
                                                 class="ri ri-star-fill text-yellow-500 ltr:ml-2 rtl:mr-2"></i></div>
-                                            <div class="ti-main-progress h-3 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-3 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar"
                                                 style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="text-gray-500 dark:text-white/70 text-sm">2,876</div>
+                                            <div class="text-gray-500 text-sm">2,876</div>
                                             </div>
                                             <div class="flex items-center space-x-5 rtl:space-x-reverse justify-center">
                                             <div class="text-base leading-none">2<i
                                                 class="ri ri-star-fill text-yellow-500 ltr:ml-2 rtl:mr-2"></i></div>
-                                            <div class="ti-main-progress h-3 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-3 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar"
                                                 style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="text-gray-500 dark:text-white/70 text-sm">1,352</div>
+                                            <div class="text-gray-500 text-sm">1,352</div>
                                             </div>
                                             <div class="flex items-center space-x-5 rtl:space-x-reverse justify-center">
                                             <div class="text-base leading-none">1<i
                                                 class="ri ri-star-fill text-yellow-500 ltr:ml-2 rtl:mr-2"></i></div>
-                                            <div class="ti-main-progress h-3 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-3 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar"
                                                 style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="text-gray-500 dark:text-white/70 text-sm">852</div>
+                                            <div class="text-gray-500 text-sm">852</div>
                                             </div>
                                         </div>
                                         </div>
@@ -469,7 +469,7 @@
                                                     <p class="font-semibold text-sm">Dolar Paul
                                                     </p>
                                                     <p
-                                                        class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs font-normal">
+                                                        class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs font-normal">
                                                         29 September,2023</p>
                                                     </div>
                                                 </div>
@@ -488,20 +488,20 @@
                                             </div>
                                             </div>
                                             <div class="box-body p-3">
-                                            <h5 class="font-semibold text-slate-700 dark:text-white">Lorem ipsum dolor sit amet
+                                            <h5 class="font-semibold text-slate-700">Lorem ipsum dolor sit amet
                                                 consectetur adipisicing elit.</h5>
-                                            <p class="my-2 text-gray-500 dark:text-white/70 text-xs">Very nice ! On the other hand,
+                                            <p class="my-2 text-gray-500 text-xs">Very nice ! On the other hand,
                                                 we
                                                 denounce with righteous indignation and dislike men who are so beguiled and
                                                 demoralized.</p>
                                             <img src="{{asset('build/assets/img/ecommerce/product-details/6.png')}}"
-                                                class="avatar rounded-sm p-2 border border-gray-200 dark:border-white/10"
+                                                class="avatar rounded-sm p-2 border border-gray-200"
                                                 alt="Product-image">
                                             <img src="{{asset('build/assets/img/ecommerce/product-details/2.png')}}"
-                                                class="avatar rounded-sm p-2 border border-gray-200 dark:border-white/10"
+                                                class="avatar rounded-sm p-2 border border-gray-200"
                                                 alt="Product-image">
                                             <img src="{{asset('build/assets/img/ecommerce/product-details/5.png')}}"
-                                                class="avatar rounded-sm p-2 border border-gray-200 dark:border-white/10"
+                                                class="avatar rounded-sm p-2 border border-gray-200"
                                                 alt="Product-image">
                                             </div>
                                             <div class="box-footer p-3 flex">
@@ -523,7 +523,7 @@
                                                     <div>
                                                     <p class="font-semibold text-sm">Socrates Imualte</p>
                                                     <p
-                                                        class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs font-normal">
+                                                        class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs font-normal">
                                                         25 September,2023</p>
                                                     </div>
                                                 </div>
@@ -542,14 +542,14 @@
                                             </div>
                                             </div>
                                             <div class="box-body p-3">
-                                            <h5 class="font-semibold text-slate-700 dark:text-white">Lorem ipsum dolor sit amet
+                                            <h5 class="font-semibold text-slate-700">Lorem ipsum dolor sit amet
                                                 consectetur adipisicing elit.</h5>
-                                            <p class="my-2 text-gray-500 dark:text-white/70 text-xs">Very nice ! On the other hand,
+                                            <p class="my-2 text-gray-500 text-xs">Very nice ! On the other hand,
                                                 we
                                                 denounce with righteous indignation and dislike men who are so beguiled and
                                                 demoralized.</p>
                                             <img src="{{asset('build/assets/img/ecommerce/product-details/3.png')}}"
-                                                class="avatar rounded-sm p-2 border border-gray-200 dark:border-white/10"
+                                                class="avatar rounded-sm p-2 border border-gray-200"
                                                 alt="product-image">
                                             </div>
                                             <div class="box-footer p-3 flex">
@@ -579,12 +579,12 @@
                                     <h5 class="box-title">Most Searched Products </h5>
                                 </div>
                                 <div class="box-body p-0">
-                                    <ul class="flex flex-col divide-y divide-gray-200 dark:divide-white/10">
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <ul class="flex flex-col divide-y divide-gray-200">
+                                    <li class="ti-list-group border-0 text-gray-800">
                                         <a href="{{url('products')}}" class="w-full">
                                         <div class="flex space-x-3 rtl:space-x-reverse w-full">
                                             <img src="{{asset('build/assets/img/ecommerce/products/1.png')}}"
-                                            class="avatar avatar-lg rounded-sm border border-gray-200 dark:border-white/10 p-1"
+                                            class="avatar avatar-lg rounded-sm border border-gray-200 p-1"
                                             alt="product-image">
                                             <div class="w-full my-auto">
                                             <div class="flex">
@@ -595,19 +595,19 @@
                                                 <p class="mb-0 flex">
                                                 <span class="text-yellow-500 flex"><i
                                                     class="ri-star-s-fill ltr:mr-1 rtl:ml-1"></i>4.4</span>
-                                                <span class="text-gray-500 dark:text-white/70 ltr:ml-1 rtl:mr-1">(13,256)</span>
+                                                <span class="text-gray-500 ltr:ml-1 rtl:mr-1">(13,256)</span>
                                                 </p>
-                                                <span class="text-gray-500 dark:text-white/70 text-sm ltr:ml-auto rtl:mr-auto">$999</span>
+                                                <span class="text-gray-500 text-sm ltr:ml-auto rtl:mr-auto">$999</span>
                                             </div>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group border-0 text-gray-800">
                                         <a href="{{url('products')}}" class="w-full">
                                         <div class="flex space-x-3 rtl:space-x-reverse w-full">
                                             <img src="{{asset('build/assets/img/ecommerce/products/2.png')}}"
-                                            class="avatar avatar-lg rounded-sm border border-gray-200 dark:border-white/10 p-1"
+                                            class="avatar avatar-lg rounded-sm border border-gray-200 p-1"
                                             alt="product-image">
                                             <div class="w-full my-auto">
                                             <div class="flex">
@@ -618,19 +618,19 @@
                                                 <p class="mb-0 flex">
                                                 <span class="text-yellow-500 flex"><i
                                                     class="ri-star-s-fill ltr:mr-1 rtl:ml-1"></i>4.0</span>
-                                                <span class="text-gray-500 dark:text-white/70 ltr:ml-1 rtl:mr-1">(15,256)</span>
+                                                <span class="text-gray-500 ltr:ml-1 rtl:mr-1">(15,256)</span>
                                                 </p>
-                                                <span class="text-gray-500 dark:text-white/70 text-sm ltr:ml-auto rtl:mr-auto">$599</span>
+                                                <span class="text-gray-500 text-sm ltr:ml-auto rtl:mr-auto">$599</span>
                                             </div>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group border-0 text-gray-800">
                                         <a href="{{url('products')}}" class="w-full">
                                         <div class="flex space-x-3 rtl:space-x-reverse w-full">
                                             <img src="{{asset('build/assets/img/ecommerce/products/3.png')}}"
-                                            class="avatar avatar-lg rounded-sm border border-gray-200 dark:border-white/10 p-1"
+                                            class="avatar avatar-lg rounded-sm border border-gray-200 p-1"
                                             alt="product-image">
                                             <div class="w-full my-auto">
                                             <div class="flex">
@@ -641,19 +641,19 @@
                                                 <p class="mb-0 flex">
                                                 <span class="text-yellow-500 flex"><i
                                                     class="ri-star-s-fill ltr:mr-1 rtl:ml-1"></i>3.8</span>
-                                                <span class="text-gray-500 dark:text-white/70 ltr:ml-1 rtl:mr-1">(10,456)</span>
+                                                <span class="text-gray-500 ltr:ml-1 rtl:mr-1">(10,456)</span>
                                                 </p>
-                                                <span class="text-gray-500 dark:text-white/70 text-sm ltr:ml-auto rtl:mr-auto">$2599</span>
+                                                <span class="text-gray-500 text-sm ltr:ml-auto rtl:mr-auto">$2599</span>
                                             </div>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group border-0 text-gray-800">
                                         <a href="{{url('products')}}" class="w-full">
                                         <div class="flex space-x-3 rtl:space-x-reverse w-full">
                                             <img src="{{asset('build/assets/img/ecommerce/products/4.png')}}"
-                                            class="avatar avatar-lg rounded-sm border border-gray-200 dark:border-white/10 p-1"
+                                            class="avatar avatar-lg rounded-sm border border-gray-200 p-1"
                                             alt="product-image">
                                             <div class="w-full my-auto">
                                             <div class="flex">
@@ -664,19 +664,19 @@
                                                 <p class="mb-0 flex">
                                                 <span class="text-yellow-500 flex"><i
                                                     class="ri-star-s-fill ltr:mr-1 rtl:ml-1"></i>4.5</span>
-                                                <span class="text-gray-500 dark:text-white/70 ltr:ml-1 rtl:mr-1">(20,263)</span>
+                                                <span class="text-gray-500 ltr:ml-1 rtl:mr-1">(20,263)</span>
                                                 </p>
-                                                <span class="text-gray-500 dark:text-white/70 text-sm ltr:ml-auto rtl:mr-auto">$499</span>
+                                                <span class="text-gray-500 text-sm ltr:ml-auto rtl:mr-auto">$499</span>
                                             </div>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group border-0 text-gray-800">
                                         <a href="{{url('products')}}" class="w-full">
                                         <div class="flex space-x-3 rtl:space-x-reverse w-full">
                                             <img src="{{asset('build/assets/img/ecommerce/products/5.png')}}"
-                                            class="avatar avatar-lg rounded-sm border border-gray-200 dark:border-white/10 p-1"
+                                            class="avatar avatar-lg rounded-sm border border-gray-200 p-1"
                                             alt="product-image">
                                             <div class="w-full my-auto">
                                             <div class="flex">
@@ -687,9 +687,9 @@
                                                 <p class="mb-0 flex">
                                                 <span class="text-yellow-500 flex"><i
                                                     class="ri-star-s-fill ltr:mr-1 rtl:ml-1"></i>4.5</span>
-                                                <span class="text-gray-500 dark:text-white/70 ltr:ml-1 rtl:mr-1">(20,263)</span>
+                                                <span class="text-gray-500 ltr:ml-1 rtl:mr-1">(20,263)</span>
                                                 </p>
-                                                <span class="text-gray-500 dark:text-white/70 text-sm ltr:ml-auto rtl:mr-auto">$299</span>
+                                                <span class="text-gray-500 text-sm ltr:ml-auto rtl:mr-auto">$299</span>
                                             </div>
                                             </div>
                                         </div>
@@ -707,7 +707,7 @@
 
                             <!-- Start::row-3 -->
                             <div class="box">
-                            <div class="grid grid-cols-12 divide-x rtl:divide-x-reverse divide-gray-200 dark:divide-white/10">
+                            <div class="grid grid-cols-12 divide-x rtl:divide-x-reverse divide-gray-200">
                                 <div class="col-span-12 xl:col-span-3 lg:col-span-6">
                                 <div class="box mb-0 border-0 shadow-none">
                                     <div class="box-body">
@@ -729,9 +729,9 @@
                                             </svg></g>
                                         </svg>
                                         <div>
-                                        <span class="block text-sm font-semibold dark:text-white max-w-[200px] truncate">Secured
+                                        <span class="block text-sm font-semibold max-w-[200px] truncate">Secured
                                             Payments</span>
-                                        <span class="block text-xs text-gray-600 dark:text-white/70">Make Payments easily and
+                                        <span class="block text-xs text-gray-600">Make Payments easily and
                                             securily</span>
                                         </div>
                                     </div>
@@ -762,9 +762,9 @@
                                             </svg></g>
                                         </svg>
                                         <div>
-                                        <span class="block text-sm font-semibold dark:text-white max-w-[200px] truncate">High Quality
+                                        <span class="block text-sm font-semibold max-w-[200px] truncate">High Quality
                                             Products</span>
-                                        <span class="block text-xs text-gray-600 dark:text-white/70">Product is Made with Atmost
+                                        <span class="block text-xs text-gray-600">Product is Made with Atmost
                                             Care</span>
                                         </div>
                                     </div>
@@ -799,9 +799,9 @@
                                             </svg></g>
                                         </svg>
                                         <div>
-                                        <span class="block text-sm font-semibold dark:text-white max-w-[200px] truncate">Free
+                                        <span class="block text-sm font-semibold max-w-[200px] truncate">Free
                                             Delivery</span>
-                                        <span class="block text-xs text-gray-600 dark:text-white/70">100% free charges on Every
+                                        <span class="block text-xs text-gray-600">100% free charges on Every
                                             Delivery</span>
                                         </div>
                                     </div>
@@ -850,9 +850,9 @@
                                             </svg></g>
                                         </svg>
                                         <div>
-                                        <span class="block text-sm font-semibold dark:text-white max-w-[200px] truncate">Free
+                                        <span class="block text-sm font-semibold max-w-[200px] truncate">Free
                                             Returns</span>
-                                        <span class="block text-xs text-gray-600 dark:text-white/70">Cash Back offers on every
+                                        <span class="block text-xs text-gray-600">Cash Back offers on every
                                             purchase</span>
                                         </div>
                                     </div>

@@ -17,16 +17,16 @@
                                         <!-- Page Header -->
                                         <div class="block justify-between page-header sm:flex">
                                                 <div>
-                                                <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Mail Settings</h3>
+                                                <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Mail Settings</h3>
                                                 </div>
                                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                                 <li class="text-sm">
-                                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                                         Pages
-                                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                                         </a>
                                                 </li>
-                                                <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                                <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                                         Mail Settings
                                                 </li>
                                                 </ol>
@@ -39,16 +39,16 @@
                                                         <div class="box">
                                                         <div class="box-header bg-transparent">
                                                         <nav class="-mb-0.5 md:flex md:space-x-6 rtl:space-x-reverse md:space-y-0 space-y-4 " aria-label="Tabs" role="tablist">
-                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary dark:hs-tab-active:bg-bgdark dark:hs-tab-active:border-primary dark:hs-tab-active:text-white -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-transparent dark:text-white/70 active" id="mail-item-1" data-hs-tab="#mail-1" aria-controls="mail-1" role="tab">
+                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 active" id="mail-item-1" data-hs-tab="#mail-1" aria-controls="mail-1" role="tab">
                                                                 <i class="ri ri-global-line"></i>General &amp; personal
                                                         </button>
-                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary dark:hs-tab-active:bg-bgdark dark:hs-tab-active:border-primary dark:hs-tab-active:text-white -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-transparent dark:text-white/70 dark:hover:text-gray-300" id="mail-item-2" data-hs-tab="#mail-2" aria-controls="mail-2" role="tab">
+                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700" id="mail-item-2" data-hs-tab="#mail-2" aria-controls="mail-2" role="tab">
                                                                 <i class="ri ri-lock-password-line"></i> Notifications
                                                         </button>
-                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary dark:hs-tab-active:bg-bgdark dark:hs-tab-active:border-primary dark:hs-tab-active:text-white -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-transparent dark:text-white/70 dark:hover:text-gray-300" id="mail-item-3" data-hs-tab="#mail-3" aria-controls="mail-3" role="tab">
+                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700" id="mail-item-3" data-hs-tab="#mail-3" aria-controls="mail-3" role="tab">
                                                                 <i class="ri ri-lock-password-line"></i> Security
                                                         </button>
-                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary dark:hs-tab-active:bg-bgdark dark:hs-tab-active:border-primary dark:hs-tab-active:text-white -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-transparent dark:text-white/70 dark:hover:text-gray-300" id="mail-item-4" data-hs-tab="#mail-4" aria-controls="mail-4" role="tab">
+                                                        <button type="button" class="hs-tab-active:bg-white hs-tab-active:rounded-b-none border-b-[3px] border-transparent hs-tab-active:border-primary hs-tab-active:text-primary -mb-px py-2 px-3 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700" id="mail-item-4" data-hs-tab="#mail-4" aria-controls="mail-4" role="tab">
                                                                 <i class="ri ri-mail-open-line"></i> Mail-View
                                                         </button>
                                                         </nav>
@@ -56,7 +56,7 @@
                                                         <div class="box-body">
                                                         <div id="mail-1" role="tabpanel" aria-labelledby="mail-item-1">
                                                         <h5 class="font-semibold text-lg mb-2">General and Basic Info Settings</h5>
-                                                        <p class="text-gray-500 dark:text-white/70 mb-6 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <p class="text-gray-500 mb-6 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                                         <div class="space-y-6">
                                                                 <div class="md:grid grid-cols-12 md:gap-6">
                                                                 <div class="col-span-12 md:col-span-2 my-auto">
@@ -64,8 +64,8 @@
                                                                 </div>
                                                                 <div class="col-span-12 md:col-span-10">
                                                                 <div class="relative inline-block md:mt-8">
-                                                                <img src="{{asset('build/assets/img/users/1.jpg')}}" class="w-24 h-24 rounded-full ring-4 ring-gray-200 dark:ring-white/10 mx-auto" id="profile-img" alt="profile-img">
-                                                                <span class="absolute bottom-0 ltr:right-0 rtl:left-0 block p-1 rounded-full ring-2 ring-gray-200 dark:ring-white/10 text-gray-500 bg-gray-100 dark:bg-bgdark leading-none">
+                                                                <img src="{{asset('build/assets/img/users/1.jpg')}}" class="w-24 h-24 rounded-full ring-4 ring-gray-200 mx-auto" id="profile-img" alt="profile-img">
+                                                                <span class="absolute bottom-0 ltr:right-0 rtl:left-0 block p-1 rounded-full ring-2 ring-gray-200 text-gray-500 bg-gray-100 leading-none">
                                                                         <input type="file" name="photo" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="profile-change"> <i class="ri ri-pencil-line"></i></span>
                                                                 </div>
                                                                 </div>
@@ -231,10 +231,10 @@
                                                                 </div>
                                                                 <div class="col-span-12 md:col-span-10">
                                                                 <nav class="flex space-x-2 rtl:space-x-reverse mb-4" aria-label="Tabs" role="tablist">
-                                                                <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 active" id="adhar-tab" data-hs-tab="#adhar" aria-controls="adhar" role="tab">
+                                                                <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 active" id="adhar-tab" data-hs-tab="#adhar" aria-controls="adhar" role="tab">
                                                                         Adhar Number
                                                                 </button>
-                                                                <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-gray-300" id="mobile-tab" data-hs-tab="#mobile" aria-controls="mobile" role="tab">
+                                                                <button type="button" class="hs-tab-active:bg-primary hs-tab-active:text-white py-2 px-4 inline-flex items-center gap-2 bg-gray-50 text-sm font-medium text-center text-gray-500 rounded-sm hover:text-gray-700" id="mobile-tab" data-hs-tab="#mobile" aria-controls="mobile" role="tab">
                                                                         mobile Number
                                                                 </button>
                                                                 </nav>
@@ -252,53 +252,53 @@
                                                         </div>
                                                         <div id="mail-2" class="hidden" role="tabpanel" aria-labelledby="mail-item-2">
                                                         <h5 class="font-semibold text-lg mb-2">Notification Settings</h5>
-                                                        <p class="text-gray-500 dark:text-white/70 mb-5 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <p class="text-gray-500 mb-5 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                                         <div class="space-y-5">
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5" checked>
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Enable Personal Setting For Admin Panel</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Enable Personal Setting For Admin Panel</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Personal Setting For Customer Panel</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Personal Setting For Customer Panel</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Default Login</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Default Login</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Disable Register</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Disable Register</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Enable Contact Us</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Enable Contact Us</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5" checked>
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Notifications From Unknown Mails</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Notifications From Unknown Mails</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5" checked>
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Notifications From Spam Mails</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Notifications From Spam Mails</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Notifications From Blocked Contacts</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Notifications From Blocked Contacts</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Allow All Mails</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Allow All Mails</label>
                                                                 </div>
                                                                 <div class="flex items-center">
                                                                 <input type="checkbox" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Block Mails</label>
+                                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Block Mails</label>
                                                                 </div>
                                                         </div>
                                                         </div>
                                                         <div id="mail-3" class="hidden" role="tabpanel" aria-labelledby="mail-item-3">
                                                         <h5 class="font-semibold text-lg mb-2">Security Settings</h5>
-                                                        <p class="text-gray-500 dark:text-white/70 mb-5 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <p class="text-gray-500 mb-5 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                                         <div class="space-y-6">
                                                                 <div class="sm:grid grid-cols-12 sm:gap-6">
                                                                 <div class="col-span-12 sm:col-span-2 my-auto">
@@ -348,14 +348,14 @@
                                                                 </label>
                                                                 </div>
                                                                 <div class="col-span-10">
-                                                                <button type="button" class="py-2 px-3 ti-btn bg-danger text-white hover:bg-danger/80 focus:ring-danger dark:focus:ring-offset-white/10">De-Activate Account</button>
+                                                                <button type="button" class="py-2 px-3 ti-btn bg-danger text-white hover:bg-danger/80 focus:ring-danger">De-Activate Account</button>
                                                                 </div>
                                                                 </div>
                                                         </div>
                                                         </div>
                                                         <div id="mail-4" class="hidden" role="tabpanel" aria-labelledby="mail-item-4">
                                                         <h5 class="font-semibold text-lg mb-2">Mail Settings</h5>
-                                                        <p class="text-gray-500 dark:text-white/70 mb-6 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <p class="text-gray-500 mb-6 text-sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                                         <div class="space-y-6">
                                                                 <div class="md:grid grid-cols-12 md:gap-6">
                                                                 <div class="col-span-2 my-auto">

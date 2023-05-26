@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium">Analytics Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium">Analytics Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                     Analytics Dashboard
                                     </li>
                                 </ol>
@@ -45,10 +45,10 @@
                                         <div class="flex-1">
                                             <div class="font-medium text-sm mb-1">Total Sessions</div>
                                             <div class="flex items-center justify-between mb-1">
-                                            <h5 class="text-xl font-bold text-gray-800 dark:text-white">1,289</h5>
+                                            <h5 class="text-xl font-bold text-gray-800">1,289</h5>
                                             <span class="badge bg-success/20 text-success rounded-sm py-1">+12.2%</span>
                                             </div>
-                                            <p class="text-gray-500 dark:text-white/70 mb-0 text-xs">since last 2 months</p>
+                                            <p class="text-gray-500 mb-0 text-xs">since last 2 months</p>
                                         </div>
                                         </div>
                                     </div>
@@ -65,10 +65,10 @@
                                         <div class="flex-1">
                                             <div class="font-medium text-sm mb-1">Bounce Rate</div>
                                             <div class="flex items-center justify-between mb-1">
-                                            <h5 class="text-xl font-bold text-gray-800 dark:text-white">19.8%</h5>
+                                            <h5 class="text-xl font-bold text-gray-800">19.8%</h5>
                                             <span class="badge bg-danger/20 text-danger rounded-sm py-1">-2.6%</span>
                                             </div>
-                                            <p class="text-gray-500 dark:text-white/70 mb-0 text-xs">since last 2 months</p>
+                                            <p class="text-gray-500 mb-0 text-xs">since last 2 months</p>
                                         </div>
                                         </div>
                                     </div>
@@ -85,10 +85,10 @@
                                         <div class="flex-1">
                                             <div class="font-medium text-sm mb-1">Page Views</div>
                                             <div class="flex items-center justify-between mb-1">
-                                            <h5 class="text-xl font-bold text-gray-800 dark:text-white">15,250</h5>
+                                            <h5 class="text-xl font-bold text-gray-800">15,250</h5>
                                             <span class="badge bg-success/20 text-success rounded-sm py-1">+35.6%</span>
                                             </div>
-                                            <p class="text-gray-500 dark:text-white/70 mb-0 text-xs">since last 2 months</p>
+                                            <p class="text-gray-500 mb-0 text-xs">since last 2 months</p>
                                         </div>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@
                                         <h5 class="box-title my-auto">Session Overview</h5>
                                         <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                             This year <i class="ti ti-chevron-down"></i></button>
                                             <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                             <a class="ti-dropdown-item" href="javascript:void(0)">Today</a>
@@ -123,13 +123,13 @@
                                         <div class="flex justify-between">
                                         <h5 class="box-title my-auto">Visitors By Countries</h5>
                                         <button type="button"
-                                            class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                            class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                             View All</button>
                                         </div>
                                     </div>
                                     <div class="box-body">
                                         <ul class="flex flex-col">
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="avatar avatar-xs rounded-sm">
@@ -139,12 +139,12 @@
                                                 <span class="text-sm">United States</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">32,190</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">32,190</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="avatar avatar-xs rounded-sm">
@@ -154,12 +154,12 @@
                                                 <span class="text-sm">Argentina</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">17,578</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">17,578</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -169,12 +169,12 @@
                                                 <span class="text-sm">France</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">2,345</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">2,345</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -184,12 +184,12 @@
                                                 <span class="text-sm">Germany</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">8,798</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">8,798</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -199,12 +199,12 @@
                                                 <span class="text-sm">Mexico</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">16,885</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">16,885</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -214,12 +214,12 @@
                                                 <span class="text-sm">Russia</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">10,118</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">10,118</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-4 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -229,12 +229,12 @@
                                                 <span class="text-sm">Cannada</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">1,678</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">1,678</span>
                                                 </div>
                                             </div>
                                             </a>
                                         </li>
-                                        <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white">
+                                        <li class="p-0 mb-0 ti-list-group border-0 text-gray-800">
                                             <a href="javascript:void(0);" class="w-full">
                                             <div class="flex items-center">
                                                 <div class="">
@@ -244,7 +244,7 @@
                                                 <span class="text-sm">Malaysia</span>
                                                 </div>
                                                 <div>
-                                                <span class="badge rounded-sm bg-gray-100 text-gray-500 dark:bg-black/20 dark:text-white">6,578</span>
+                                                <span class="badge rounded-sm bg-gray-100 text-gray-500">6,578</span>
                                                 </div>
                                             </div>
                                             </a>
@@ -262,7 +262,7 @@
                                     <h5 class="box-title my-auto">Active Users</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button" aria-label="button"
-                                        class="hs-dropdown-toggle ti-dropdown-toggle text-gray-500 dark:text-white/70 p-0 border-0 shadow-none">
+                                        class="hs-dropdown-toggle ti-dropdown-toggle text-gray-500 p-0 border-0 shadow-none">
                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -277,10 +277,10 @@
                                             class="ri-pulse-line leading-none"></i></span>
                                     </div>
                                     <div class="flex-1">
-                                        <p class="text-2xl text-gray-800 dark:text-white font-bold">12,890<span
+                                        <p class="text-2xl text-gray-800 font-bold">12,890<span
                                             class="text-success text-xs ltr:ml-2 rtl:mr-2"><i
                                             class="ri-arrow-right-up-line text-xs"></i>10.5%</span></p>
-                                        <p class="mb-0 text-xs text-gray-500 dark:text-white/70">Currently active now</p>
+                                        <p class="mb-0 text-xs text-gray-500">Currently active now</p>
                                     </div>
                                     </div>
                                 </div>
@@ -292,7 +292,7 @@
                                     <h5 class="box-title my-auto">Device views</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button"
-                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         This year <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Today</a>
@@ -320,7 +320,7 @@
                                     <h5 class="box-title my-auto">Sessions By Gender</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button" aria-label="button"
-                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -342,7 +342,7 @@
                                     <h5 class="box-title my-auto">Traffic Sources</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button" aria-label="button"
-                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -376,7 +376,7 @@
                                             <td class="">20,937<i
                                                 class="ri-arrow-up-s-fill ltr:ml-2 rtl:mr-2 text-base text-success my-auto"></i></td>
                                             <td class="">
-                                            <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-2 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 80%"
                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
@@ -395,7 +395,7 @@
                                             <td class="">23,379<i
                                                 class="ri-arrow-up-s-fill ltr:ml-2 rtl:mr-2 text-base text-success my-auto"></i></td>
                                             <td class="">
-                                            <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-2 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-secondary text-xs text-white text-center" role="progressbar" style="width: 40%"
                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
@@ -414,7 +414,7 @@
                                             <td class="">20,582<i
                                                 class="ri-arrow-down-s-fill ltr:ml-2 rtl:mr-2 text-base text-danger my-auto"></i></td>
                                             <td class="">
-                                            <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-2 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-danger text-xs text-white text-center" role="progressbar" style="width: 30%"
                                                 aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
@@ -433,7 +433,7 @@
                                             <td class="">18,120<i
                                                 class="ri-arrow-up-s-fill ltr:ml-2 rtl:mr-2 text-base text-success my-auto"></i></td>
                                             <td class="">
-                                            <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-2 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-warning text-xs text-white text-center" role="progressbar" style="width: 50%"
                                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
@@ -452,7 +452,7 @@
                                             <td class="">11,352<i
                                                 class="ri-arrow-up-s-fill ltr:ml-2 rtl:mr-2 text-base text-danger my-auto"></i></td>
                                             <td class="">
-                                            <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                            <div class="ti-main-progress h-2 bg-gray-200">
                                                 <div class="ti-main-progress-bar bg-success text-xs text-white text-center" role="progressbar" style="width: 25%"
                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
@@ -471,7 +471,7 @@
                                     <h5 class="box-title my-auto">Audience Overview</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button" aria-label="button"
-                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -489,7 +489,7 @@
                                             class="block w-3 h-3 rounded-full ltr:mr-2 rtl:ml-2 border-4 border-primary pointer-events-none"></span>
                                         <span class="flex items-center">
                                             <span
-                                            class="text-base text-gray-800 dark:text-white font-bold ltr:mr-2 rtl:ml-2 pointer-events-none">New
+                                            class="text-base text-gray-800 font-bold ltr:mr-2 rtl:ml-2 pointer-events-none">New
                                             Visitors</span>
                                         </span>
                                         </p>
@@ -500,7 +500,7 @@
                                             class="block w-3 h-3 rounded-full ltr:mr-2 rtl:ml-2 border-4 border-gray-200 pointer-events-none"></span>
                                         <span class="flex items-center">
                                             <span
-                                            class="text-base text-gray-800 dark:text-white font-bold ltr:mr-2 rtl:ml-2 pointer-events-none">Online
+                                            class="text-base text-gray-800 font-bold ltr:mr-2 rtl:ml-2 pointer-events-none">Online
                                             Visitors</span>
                                         </span>
                                         </p>
@@ -536,7 +536,7 @@
                                 <div class="box-body">
                                     <div class="table-bordered rounded-sm ti-custom-table-head overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
-                                        <thead class="bg-gray-50 dark:bg-black/20">
+                                        <thead class="bg-gray-50">
                                         <tr class="">
                                             <th scope="col" class="dark:text-white/80">S.no</th>
                                             <th scope="col" class="dark:text-white/80">Channel</th>
@@ -572,7 +572,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -583,7 +583,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -594,7 +594,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -625,7 +625,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -636,7 +636,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -647,7 +647,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -678,7 +678,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -689,7 +689,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -700,7 +700,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -731,7 +731,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -742,7 +742,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -753,7 +753,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -784,7 +784,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -795,7 +795,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -806,7 +806,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -837,7 +837,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -848,7 +848,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -859,7 +859,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>

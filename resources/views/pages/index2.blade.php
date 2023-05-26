@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Ecommerce Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Ecommerce Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Home
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Ecommerce Dashboard
                                     </li>
                                 </ol>
@@ -48,9 +48,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Orders</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             12,088
                                                         </span>
                                                     </div>
@@ -83,9 +83,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Sales</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             10,500
                                                         </span>
                                                     </div>
@@ -115,9 +115,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Visitors</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             2,56,259
                                                         </span>
                                                     </div>
@@ -146,9 +146,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Income</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             $69,270
                                                         </span>
                                                     </div>
@@ -184,9 +184,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Expenses</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             $21,520
                                                         </span>
                                                     </div>
@@ -216,9 +216,9 @@
                                                 </div>
                                                 <div class="">
                                                     <div class="mb-2">Total Products</div>
-                                                    <div class="text-gray-500 dark:text-white/70 mb-1 text-xs">
+                                                    <div class="text-gray-500 mb-1 text-xs">
                                                         <span
-                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom dark:text-white">
+                                                            class="text-gray-800 font-semibold text-xl leading-none align-bottom">
                                                             45,280
                                                         </span>
                                                     </div>
@@ -238,7 +238,7 @@
                                                 <h5 class="box-title my-auto">Recent Orders</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button aria-label="button" id="hs-dropdown-custom-icon-trigger1" type="button"
-                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu"
                                                         aria-labelledby="hs-dropdown-custom-icon-trigger1">
@@ -252,7 +252,7 @@
                                         </div>
                                         <div class="box-body">
                                             <ul class="flex flex-col">
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -261,7 +261,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">Smart Phone</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Mobiles</p>
+                                                                <p class="text-xs text-gray-500 mb-0">Mobiles</p>
                                                             </div>
                                                             <div>
                                                                 <span class="text-sm text-success font-semibold">$199.99</span>
@@ -269,7 +269,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -278,7 +278,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">White Headphones</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Music</p>
+                                                                <p class="text-xs text-gray-500 mb-0">Music</p>
                                                             </div>
                                                             <div>
                                                                 <span class="text-sm text-success font-semibold">$79.49</span>
@@ -286,7 +286,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -295,7 +295,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">Stop Watch</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Electronics
+                                                                <p class="text-xs text-gray-500 mb-0">Electronics
                                                                 </p>
                                                             </div>
                                                             <div>
@@ -304,7 +304,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -313,7 +313,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">Kikon Camera</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Electronics
+                                                                <p class="text-xs text-gray-500 mb-0">Electronics
                                                                 </p>
                                                             </div>
                                                             <div>
@@ -322,7 +322,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -331,7 +331,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">Photo Frame</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Furniture
+                                                                <p class="text-xs text-gray-500 mb-0">Furniture
                                                                 </p>
                                                             </div>
                                                             <div>
@@ -340,7 +340,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center">
                                                             <div class="leading-none">
@@ -349,7 +349,7 @@
                                                             </div>
                                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                 <p class="text-sm font-semibold mb-0">Canvas Shoes</p>
-                                                                <p class="text-xs text-gray-500 dark:text-white/70 mb-0">Footwear
+                                                                <p class="text-xs text-gray-500 mb-0">Footwear
                                                                 </p>
                                                             </div>
                                                             <div>
@@ -406,14 +406,14 @@
                                             <div class="flex justify-between">
                                                 <h5 class="box-title my-auto">Top Customers</h5>
                                                 <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                         View All</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="box-body">
                                             <ul class="flex flex-col">
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -424,7 +424,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Emma Wilson</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         15 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -442,7 +442,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -453,7 +453,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Robert Lewis</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         18 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -471,7 +471,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -482,7 +482,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Angelina Hose</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         21 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -500,7 +500,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -511,7 +511,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Hugh Jackma</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         20 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -529,7 +529,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-5 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -540,7 +540,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Samantha Sam</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         24 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -558,7 +558,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white">
+                                                <li class="p-0 mb-0 ti-list-group border-0 text-gray-800">
                                                     <a href="javascript:void(0);" class="w-full">
                                                         <div class="flex items-center justify-between">
                                                             <div class="flex items-top justify-center">
@@ -569,7 +569,7 @@
                                                                 <div>
                                                                     <p class="mb-0 text-sm fw-semibold">Bickle Bob</p>
                                                                     <p
-                                                                        class="mb-0 text-gray-500 dark:text-white/70 text-xs flex font-normal">
+                                                                        class="mb-0 text-gray-500 text-xs flex font-normal">
                                                                         12 Purchases
                                                                         <svg class="fill-primary w-4 h-4 ltr:ml-2 rtl:mr-2"
                                                                             xmlns="http://www.w3.org/2000/svg" width="100"
@@ -599,19 +599,19 @@
                                                 <nav class="sm:flex sm:space-x-2 space-y-2 sm:space-y-0 rtl:space-x-reverse ltr:ml-auto rtl:mr-auto"
                                                     aria-label="Tabs" role="tablist">
                                                     <button type="button"
-                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 dark:hs-tab-active:bg-info/20 dark:hs-tab-active:text-info py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300 active"
+                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 active"
                                                         id="active-item" data-hs-tab="#taskactive" aria-controls="taskactive"
                                                         role="tab">
                                                         Active
                                                     </button>
                                                     <button type="button"
-                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 dark:hs-tab-active:bg-info/20 dark:hs-tab-active:text-info py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300"
+                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700"
                                                         id="completed-item" data-hs-tab="#completed" aria-controls="completed"
                                                         role="tab">
                                                         Completed
                                                     </button>
                                                     <button type="button"
-                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 dark:hs-tab-active:bg-info/20 dark:hs-tab-active:text-info py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300"
+                                                        class=" hs-tab-active:text-info hs-tab-active:bg-info/20 py-2 px-3 inline-flex items-center w-full justify-center gap-2 leading-none font-medium text-center text-gray-500 rounded-sm hover:text-gray-700"
                                                         id="cancelled-item" data-hs-tab="#cancelled" aria-controls="cancelled"
                                                         role="tab">
                                                         Cancelled
@@ -638,8 +638,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Amanda Nanes</p>
                                                                         </div>
                                                                     </div>
@@ -647,18 +647,18 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $229.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Delivery
+                                                                            class="text-xs text-gray-500">Delivery
                                                                             Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">24 May
+                                                                        <p class="text-sm mb-0 text-gray-800">24 May
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -688,8 +688,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Peter Parkour</p>
                                                                         </div>
                                                                     </div>
@@ -697,18 +697,18 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $135.29</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Delivery
+                                                                            class="text-xs text-gray-500">Delivery
                                                                             Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">18 May
+                                                                        <p class="text-sm mb-0 text-gray-800">18 May
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -738,8 +738,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Jackie Chen</p>
                                                                         </div>
                                                                     </div>
@@ -747,18 +747,18 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $1,299.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Delivery
+                                                                            class="text-xs text-gray-500">Delivery
                                                                             Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">29 May
+                                                                        <p class="text-sm mb-0 text-gray-800">29 May
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -788,8 +788,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Ryan Gercia</p>
                                                                         </div>
                                                                     </div>
@@ -797,18 +797,18 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $249.29</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Delivery
+                                                                            class="text-xs text-gray-500">Delivery
                                                                             Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">05 Jun
+                                                                        <p class="text-sm mb-0 text-gray-800">05 Jun
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -838,8 +838,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Hugh Jackma</p>
                                                                         </div>
                                                                     </div>
@@ -847,18 +847,18 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $499.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Delivery
+                                                                            class="text-xs text-gray-500">Delivery
                                                                             Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">15 May
+                                                                        <p class="text-sm mb-0 text-gray-800">15 May
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -896,8 +896,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Lisa Rebecca</p>
                                                                         </div>
                                                                     </div>
@@ -905,16 +905,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $1,199.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-success">Delivery Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">24 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">24 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -944,8 +944,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Matt Martin</p>
                                                                         </div>
                                                                     </div>
@@ -953,16 +953,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $799.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-success">Delivered On</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">18 Nov
+                                                                        <p class="text-sm mb-0 text-gray-800">18 Nov
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -992,8 +992,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Mitchell Osama</p>
                                                                         </div>
                                                                     </div>
@@ -1001,16 +1001,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $279.00</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-success">Delivery Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">29 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">29 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1040,8 +1040,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Cornor Mcgood</p>
                                                                         </div>
                                                                     </div>
@@ -1049,16 +1049,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $79.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-success">Delivered On</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">05 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">05 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1088,8 +1088,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Kishan Patel</p>
                                                                         </div>
                                                                     </div>
@@ -1097,16 +1097,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $1449.29</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-success">Delivered On</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">20 Nov
+                                                                        <p class="text-sm mb-0 text-gray-800">20 Nov
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1144,8 +1144,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Hailey Bobber</p>
                                                                         </div>
                                                                     </div>
@@ -1153,16 +1153,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $199.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-danger">Cancelled Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">09 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">09 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1192,8 +1192,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Anthony Mansion</p>
                                                                         </div>
                                                                     </div>
@@ -1201,16 +1201,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $179.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-danger">Cancelled Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">28 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">28 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1240,8 +1240,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Simon Carter</p>
                                                                         </div>
                                                                     </div>
@@ -1249,16 +1249,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $149.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-danger">Cancelled Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">30 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">30 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1288,8 +1288,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Sofia Sekh</p>
                                                                         </div>
                                                                     </div>
@@ -1297,16 +1297,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $1439.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-danger">Cancelled Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">03 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">03 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1336,8 +1336,8 @@
                                                                         </div>
                                                                         <div class="items-center">
                                                                             <span
-                                                                                class="text-xs text-gray-500 dark:text-white/70">Name</span>
-                                                                            <p class="text-sm mb-0 text-gray-800 dark:text-white">
+                                                                                class="text-xs text-gray-500">Name</span>
+                                                                            <p class="text-sm mb-0 text-gray-800">
                                                                                 Kimura Kai</p>
                                                                         </div>
                                                                     </div>
@@ -1345,16 +1345,16 @@
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">Price</span>
+                                                                            class="text-xs text-gray-500">Price</span>
                                                                         <p
-                                                                            class="text-sm mb-0 font-semibold text-gray-800 dark:text-white">
+                                                                            class="text-sm mb-0 font-semibold text-gray-800">
                                                                             $1092.99</p>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="items-center">
                                                                         <span class="text-xs text-danger">Cancelled Date</span>
-                                                                        <p class="text-sm mb-0 text-gray-800 dark:text-white">02 Dec
+                                                                        <p class="text-sm mb-0 text-gray-800">02 Dec
                                                                             2022</p>
                                                                     </div>
                                                                 </td>
@@ -1383,7 +1383,7 @@
                                             <h5 class="box-title my-auto">Top Selling Products</h5>
                                             <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                 <button aria-label="button" id="hs-dropdown-custom-icon-trigger3" type="button"
-                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                 <div class="hs-dropdown-menu ti-dropdown-menu"
                                                     aria-labelledby="hs-dropdown-custom-icon-trigger3">
@@ -1408,7 +1408,7 @@
                                                         <tr>
                                                             <td class="leading-none">
                                                                 <img src="{{asset('build/assets/img/ecommerce/products/13.png')}}"
-                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100 dark:bg-black/20"
+                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100"
                                                                     alt="Image Description">Ethnic School bag for children (24L)
                                                             </td>
                                                             <td class="text-sm"><span
@@ -1421,7 +1421,7 @@
                                                         <tr>
                                                             <td class="leading-none">
                                                                 <img src="{{asset('build/assets/img/ecommerce/products/14.png')}}"
-                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100 dark:bg-black/20"
+                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100"
                                                                     alt="Image Description">Leather jacket for men (S,M,L,XL)
                                                             </td>
                                                             <td class="text-sm"><span
@@ -1434,7 +1434,7 @@
                                                         <tr>
                                                             <td class="leading-none">
                                                                 <img src="{{asset('build/assets/img/ecommerce/products/15.png')}}"
-                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100 dark:bg-black/20"
+                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100"
                                                                     alt="Image Description">Childrens Teddy toy of high quality
                                                             </td>
                                                             <td class="text-sm"><span
@@ -1447,7 +1447,7 @@
                                                         <tr>
                                                             <td class="leading-none">
                                                                 <img src="{{asset('build/assets/img/ecommerce/products/16.png')}}"
-                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100 dark:bg-black/20"
+                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100"
                                                                     alt="Image Description">Orange smart watch dial (24mm)
                                                             </td>
                                                             <td class="text-sm"><span
@@ -1460,7 +1460,7 @@
                                                         <tr>
                                                             <td class="leading-none">
                                                                 <img src="{{asset('build/assets/img/ecommerce/products/18.png')}}"
-                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100 dark:bg-black/20"
+                                                                    class=" ltr:mr-2 rtl:ml-2 avatar avatar-sm p-2 rounded-full bg-gray-100"
                                                                     alt="Image Description">Pink Womens Regular Hand Bag
                                                             </td>
                                                             <td class="text-sm"><span
@@ -1483,7 +1483,7 @@
                                                 <h5 class="box-title my-auto">Customer Reviews</h5>
                                                 <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button type="button"
-                                                        class="ti-btn rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                        class="ti-btn rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                         View All</button>
                                                 </div>
                                             </div>
@@ -1492,16 +1492,16 @@
                                             <div class="flex items-center">
                                                 <div class="flex-1">
                                                     <div class="flex items-baseline mb-2">
-                                                        <h4 class="mb-0 text-4xl text-gray-800 dark:text-white">4.3</h4>
+                                                        <h4 class="mb-0 text-4xl text-gray-800">4.3</h4>
                                                         <span class="ltr:ml-2 rtl:mr-2">
                                                             <i class="ri-star-fill text-primary"></i>
                                                             <i class="ri-star-fill text-primary"></i>
                                                             <i class="ri-star-fill text-primary"></i>
                                                             <i class="ri-star-fill text-primary"></i>
-                                                            <i class="ri-star-fill text-gray-200 dark:text-white/10"></i>
+                                                            <i class="ri-star-fill text-gray-200"></i>
                                                         </span>
                                                     </div>
-                                                    <a href="javascript:void(0);" class="tx-gray-500 dark:text-white/70">1,739
+                                                    <a href="javascript:void(0);" class="tx-gray-500">1,739
                                                         Reviews</a>
                                                 </div>
                                                 <div class="min-w-fit">
@@ -1513,7 +1513,7 @@
                                                     <p class="mb-0">5 Star</p>
                                                     <span>65%</span>
                                                 </div>
-                                                <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                <div class="ti-main-progress h-2 bg-gray-200">
                                                     <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
                                                         aria-valuemax="100"></div>
                                                 </div>
@@ -1523,7 +1523,7 @@
                                                     <p class="mb-0">4 Star</p>
                                                     <span>70%</span>
                                                 </div>
-                                                <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                <div class="ti-main-progress h-2 bg-gray-200">
                                                     <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
                                                         aria-valuemax="100"></div>
                                                 </div>
@@ -1533,7 +1533,7 @@
                                                     <p class="mb-0">3 Star</p>
                                                     <span>60%</span>
                                                 </div>
-                                                <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                <div class="ti-main-progress h-2 bg-gray-200">
                                                     <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
                                                         aria-valuemax="100"></div>
                                                 </div>
@@ -1543,7 +1543,7 @@
                                                     <p class="mb-0">2 Star</p>
                                                     <span>20%</span>
                                                 </div>
-                                                <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                <div class="ti-main-progress h-2 bg-gray-200">
                                                     <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
                                                         aria-valuemax="100"></div>
                                                 </div>
@@ -1553,7 +1553,7 @@
                                                     <p class="mb-0">1 Star</p>
                                                     <span>5%</span>
                                                 </div>
-                                                <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                <div class="ti-main-progress h-2 bg-gray-200">
                                                     <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
                                                         aria-valuemax="100"></div>
                                                 </div>
@@ -1638,7 +1638,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                 <i class="ti ti-eye"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     View
                                                                 </span>
@@ -1649,7 +1649,7 @@
                                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                 <i class="ti ti-pencil"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Edit
                                                                 </span>
@@ -1660,7 +1660,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -1704,7 +1704,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                 <i class="ti ti-eye"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     View
                                                                 </span>
@@ -1715,7 +1715,7 @@
                                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                 <i class="ti ti-pencil"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Edit
                                                                 </span>
@@ -1726,7 +1726,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -1771,7 +1771,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                 <i class="ti ti-eye"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     View
                                                                 </span>
@@ -1782,7 +1782,7 @@
                                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                 <i class="ti ti-pencil"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Edit
                                                                 </span>
@@ -1793,7 +1793,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -1837,7 +1837,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                 <i class="ti ti-eye"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     View
                                                                 </span>
@@ -1848,7 +1848,7 @@
                                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                 <i class="ti ti-pencil"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Edit
                                                                 </span>
@@ -1859,7 +1859,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -1903,7 +1903,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                 <i class="ti ti-eye"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     View
                                                                 </span>
@@ -1914,7 +1914,7 @@
                                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                 <i class="ti ti-pencil"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Edit
                                                                 </span>
@@ -1925,7 +1925,7 @@
                                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -1944,18 +1944,18 @@
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto">
                                                     <nav class="flex justify-center items-center space-x-2 rtl:space-x-reverse">
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                                             href="javascript:void(0);">
                                                             <span aria-hidden="true">Prev</span>
                                                             <span class="sr-only">Previous</span>
                                                         </a>
                                                         <a class="bg-primary text-white py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);" aria-current="page">1</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);">2</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);">3</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                                             href="javascript:void(0);">
                                                             <span class="sr-only">Next</span>
                                                             <span aria-hidden="true">Next</span>

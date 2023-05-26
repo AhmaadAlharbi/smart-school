@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Alerts</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Alerts</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Components
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Alerts
                                     </li>
                                 </ol>
@@ -58,11 +58,11 @@
                                     <div class="bg-success/10 border border-success/10 alert text-success" role="alert">
                                     <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white/[.1] border border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 alert" role="alert">
+                                    <div class="bg-white/[.1] border border-gray-200 text-gray-600 alert" role="alert">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-gray-800/[.1] border border-gray-200 text-gray-600 dark:bg-gray-900/[.1] dark:border-gray-700 dark:text-white alert"
+                                    class="bg-gray-800/[.1] border border-gray-200 text-gray-600 alert"
                                     role="alert">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
                                     </div>
@@ -96,13 +96,13 @@
                                     <div class="bg-success/10 border border-success/10 alert text-success" role="alert">A simple success
                                     alert with <a href="javascript:void(0);" class="font-bold text-success">an example link</a> Give it a click if you like.
                                     </div>
-                                    <div class="bg-white/[.1] border border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 alert" role="alert">A
-                                    simple Light alert with <a href="javascript:void(0);" class="font-bold text-gray-600 dark:text-white">an example
+                                    <div class="bg-white/[.1] border border-gray-200 text-gray-600 alert" role="alert">A
+                                    simple Light alert with <a href="javascript:void(0);" class="font-bold text-gray-600">an example
                                         link</a> Give it a click if you like.
                                     </div>
                                     <div
-                                    class="bg-gray-800/[.1] border border-gray-200 text-gray-600 dark:bg-gray-900/[.1] dark:border-gray-700 dark:text-white alert"
-                                    role="alert">A simple Dark alert with <a href="javascript:void(0);" class="font-bold text-gray-600 dark:text-white">an
+                                    class="bg-gray-800/[.1] border border-gray-200 text-gray-600 alert"
+                                    role="alert">A simple Dark alert with <a href="javascript:void(0);" class="font-bold text-gray-600">an
                                         example link</a> Give it a click if you like.
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@
                                     <div class="bg-gray-100 border border-gray-200 text-gray-600 alert" role="alert">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-black/20 border border-white/10 text-white alert dark:bg-gray-900 dark:text-white"
+                                    <div class="bg-black/20 border border-white/10 text-white alert"
                                     role="alert">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
                                     </div>
@@ -157,31 +157,31 @@
                                     </h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="bg-white dark:bg-bgdark border border-primary alert text-primary" role="alert">
+                                    <div class="bg-white border border-primary alert text-primary" role="alert">
                                     <span class="font-bold">Primary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-secondary alert text-secondary" role="alert">
+                                    <div class="bg-white border border-secondary alert text-secondary" role="alert">
                                     <span class="font-bold">Secondary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-danger alert text-danger" role="alert">
+                                    <div class="bg-white border border-danger alert text-danger" role="alert">
                                     <span class="font-bold">Danger</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-warning alert text-warning" role="alert">
+                                    <div class="bg-white border border-warning alert text-warning" role="alert">
                                     <span class="font-bold">Warning</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-info alert text-info" role="alert">
+                                    <div class="bg-white border border-info alert text-info" role="alert">
                                     <span class="font-bold">info</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-success alert text-success" role="alert">
+                                    <div class="bg-white border border-success alert text-success" role="alert">
                                     <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-200 dark:border-white/10 alert text-gray-600 dark:text-white/70"
+                                    class="bg-white border border-gray-200 alert text-gray-600"
                                     role="alert">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-900 alert text-gray-900 dark:border-white/10 dark:text-gray-100"
+                                    class="bg-white border border-gray-900 alert text-gray-900"
                                     role="alert">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
                                     </div>
@@ -223,7 +223,7 @@
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-black/20 border border-white/10 text-white alert dark:bg-gray-900 dark:text-white rounded-full px-6"
+                                    class="bg-black/20 border border-white/10 text-white alert rounded-full px-6"
                                     role="alert">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
                                     </div>
@@ -238,32 +238,32 @@
                                     </h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="bg-white dark:bg-bgdark border border-primary alert rounded-full  px-6 text-primary" role="alert">
+                                    <div class="bg-white border border-primary alert rounded-full  px-6 text-primary" role="alert">
                                     <span class="font-bold">Primary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-secondary alert rounded-full px-6 text-secondary"
+                                    <div class="bg-white border border-secondary alert rounded-full px-6 text-secondary"
                                     role="alert">
                                     <span class="font-bold">Secondary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-danger alert rounded-full px-6 text-danger" role="alert">
+                                    <div class="bg-white border border-danger alert rounded-full px-6 text-danger" role="alert">
                                     <span class="font-bold">Danger</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-warning alert rounded-full px-6 text-warning" role="alert">
+                                    <div class="bg-white border border-warning alert rounded-full px-6 text-warning" role="alert">
                                     <span class="font-bold">Warning</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-info alert rounded-full px-6 text-info" role="alert">
+                                    <div class="bg-white border border-info alert rounded-full px-6 text-info" role="alert">
                                     <span class="font-bold">info</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-success alert rounded-full px-6 text-success" role="alert">
+                                    <div class="bg-white border border-success alert rounded-full px-6 text-success" role="alert">
                                     <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-200 dark:border-white/10 alert rounded-full px-6 text-gray-600 dark:text-white/70"
+                                    class="bg-white border border-gray-200 alert rounded-full px-6 text-gray-600"
                                     role="alert">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-900 alert rounded-full px-6 text-gray-900 dark:border-gray-900 dark:text-gray-100"
+                                    class="bg-white border border-gray-900 alert rounded-full px-6 text-gray-900"
                                     role="alert">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
                                     </div>
@@ -312,7 +312,7 @@
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-black/20 border border-white/10 text-white alert dark:bg-gray-900 dark:text-white rounded-sm"
+                                    class="bg-black/20 border border-white/10 text-white alert rounded-sm"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/5.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
@@ -328,39 +328,39 @@
                                     </h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="bg-white dark:bg-bgdark border border-primary alert rounded-sm text-primary" role="alert">
+                                    <div class="bg-white border border-primary alert rounded-sm text-primary" role="alert">
                                     <img src="{{asset('build/assets/img/users/3.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Primary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-secondary alert rounded-sm text-secondary"
+                                    <div class="bg-white border border-secondary alert rounded-sm text-secondary"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/1.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Secondary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-danger alert rounded-sm text-danger" role="alert">
+                                    <div class="bg-white border border-danger alert rounded-sm text-danger" role="alert">
                                     <img src="{{asset('build/assets/img/users/4.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Danger</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-warning alert rounded-sm text-warning" role="alert">
+                                    <div class="bg-white border border-warning alert rounded-sm text-warning" role="alert">
                                     <img src="{{asset('build/assets/img/users/6.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Warning</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-info alert rounded-sm text-info" role="alert">
+                                    <div class="bg-white border border-info alert rounded-sm text-info" role="alert">
                                     <img src="{{asset('build/assets/img/users/16.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">info</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-success alert rounded-sm text-success" role="alert">
+                                    <div class="bg-white border border-success alert rounded-sm text-success" role="alert">
                                     <img src="{{asset('build/assets/img/users/14.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-200 dark:border-white/10 alert rounded-sm text-gray-600 dark:text-white/70"
+                                    class="bg-white border border-gray-200 alert rounded-sm text-gray-600"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/12.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-900 alert rounded-sm text-gray-900 dark:border-white/10 dark:text-gray-100"
+                                    class="bg-white border border-gray-900 alert rounded-sm text-gray-900"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/5.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-sm ring-0" alt="user-img">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
@@ -410,7 +410,7 @@
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-black/20 border border-white/10 text-white alert dark:bg-gray-900 dark:text-white rounded-full px-6"
+                                    class="bg-black/20 border border-white/10 text-white alert rounded-full px-6"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/5.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
@@ -426,39 +426,39 @@
                                     </h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="bg-white dark:bg-bgdark border border-primary alert rounded-full px-6 text-primary" role="alert">
+                                    <div class="bg-white border border-primary alert rounded-full px-6 text-primary" role="alert">
                                     <img src="{{asset('build/assets/img/users/3.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Primary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-secondary alert rounded-full px-6 text-secondary"
+                                    <div class="bg-white border border-secondary alert rounded-full px-6 text-secondary"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/1.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Secondary</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-danger alert rounded-full px-6 text-danger" role="alert">
+                                    <div class="bg-white border border-danger alert rounded-full px-6 text-danger" role="alert">
                                     <img src="{{asset('build/assets/img/users/4.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Danger</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-warning alert rounded-full px-6 text-warning" role="alert">
+                                    <div class="bg-white border border-warning alert rounded-full px-6 text-warning" role="alert">
                                     <img src="{{asset('build/assets/img/users/6.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Warning</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-info alert rounded-full px-6 text-info" role="alert">
+                                    <div class="bg-white border border-info alert rounded-full px-6 text-info" role="alert">
                                     <img src="{{asset('build/assets/img/users/16.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">info</span> alert! You should check in on some of those fields below.
                                     </div>
-                                    <div class="bg-white dark:bg-bgdark border border-success alert rounded-full px-6 text-success" role="alert">
+                                    <div class="bg-white border border-success alert rounded-full px-6 text-success" role="alert">
                                     <img src="{{asset('build/assets/img/users/14.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-200 dark:border-white/10 alert rounded-full px-6 text-gray-600 dark:text-white/70"
+                                    class="bg-white border border-gray-200 alert rounded-full px-6 text-gray-600"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/12.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
                                     </div>
                                     <div
-                                    class="bg-white dark:bg-bgdark border border-gray-900 alert rounded-full px-6 text-gray-900 dark:border-gray-900 dark:text-gray-100"
+                                    class="bg-white border border-gray-900 alert rounded-full px-6 text-gray-900"
                                     role="alert">
                                     <img src="{{asset('build/assets/img/users/5.jpg')}}" class="avatar w-6 h-6 ltr:mr-2 rtl:ml-2 rounded-full ring-0" alt="user-img">
                                     <span class="font-bold">Dark</span> alert! You should check in on some of those fields below.
@@ -554,10 +554,10 @@
                                         </svg>
                                         </div>
                                         <div class="ltr:ml-2 rtl:mr-2">
-                                        <h3 class="text-gray-800 dark:text-gray-200 font-semibold">
+                                        <h3 class="text-gray-800 font-semibold">
                                             YouTube would like you to send notifications
                                         </h3>
-                                        <div class="mt-2 text-sm text-gray-600 dark:text-white/70">
+                                        <div class="mt-2 text-sm text-gray-600">
                                             Notifications may include alerts, sounds and icon badges. These can be configured in Settings.
                                         </div>
                                         <div class="mt-4">
@@ -675,7 +675,7 @@
                                     </h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="bg-white border shadow-lg alert mb-0 dark:bg-bgdark dark:border-white/10" role="alert">
+                                    <div class="bg-white border shadow-lg alert mb-0" role="alert">
                                     <div class="flex">
                                         <div class="flex-shrink-0">
                                         <svg class="h-4 w-4 text-primary mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -685,10 +685,10 @@
                                         </svg>
                                         </div>
                                         <div class="ltr:ml-2 rtl:mr-2">
-                                        <h3 class="text-gray-800 font-semibold dark:text-white">
+                                        <h3 class="text-gray-800 font-semibold">
                                             New version published
                                         </h3>
-                                        <p class="mt-2 text-sm text-gray-700 dark:text-white/70">
+                                        <p class="mt-2 text-sm text-gray-700">
                                             Chris Lynch published a new version of this page. Refresh to see the changes.
                                         </p>
                                         </div>

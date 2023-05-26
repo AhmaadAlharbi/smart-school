@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> NFT Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> NFT Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         NFT Dashboard
                                     </li>
                                 </ol>
@@ -216,14 +216,14 @@
                                                     <div class="flex justify-between relative z-10">
                                                         <h5 class="box-title my-auto">Personal Listings</h5>
                                                         <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
-                                                            <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                            <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                                 View All</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="box-body p-0">
                                                     <ul class="flex flex-col">
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -231,14 +231,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Kakasha Si</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@sensei011<span
+                                                                                class="text-gray-500 text-xs">@sensei011<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-success text-xs"><i
                                                                                         class="ri-arrow-up-s-line align-middle ltr:mr-1 rtl:ml-1"></i>0.45%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -247,7 +247,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -255,14 +255,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Naruto Uzumaki</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@naruto111<span
+                                                                                class="text-gray-500 text-xs">@naruto111<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-success  text-xs"><i
                                                                                         class="ri-arrow-up-s-line align-middle ltr:mr-1 rtl:ml-1"></i>1.70%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -271,7 +271,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -279,14 +279,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Kazimo Aruke</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@kazimo900<span
+                                                                                class="text-gray-500 text-xs">@kazimo900<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-danger text-xs"><i
                                                                                         class="ri-arrow-down-s-line align-middle ltr:mr-1 rtl:ml-1"></i>1.21%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -295,7 +295,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -303,14 +303,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Oorichimaru lo</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@ooro001<span
+                                                                                class="text-gray-500 text-xs">@ooro001<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-danger text-xs"><i
                                                                                         class="ri-arrow-down-s-line align-middle ltr:mr-1 rtl:ml-1"></i>0.35%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -319,7 +319,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -327,14 +327,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Sasuke Uchiha</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@sasuke777<span
+                                                                                class="text-gray-500 text-xs">@sasuke777<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-danger text-xs"><i
                                                                                         class="ri-arrow-down-s-line align-middle ltr:mr-1 rtl:ml-1"></i>1.52%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -343,7 +343,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800 dark:text-white dark:border-white/10">
+                                                        <li class="ti-list-group py-4 border-t-0 border-x-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -351,14 +351,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Lorem Ipsum Uch</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@kakashi092<span
+                                                                                class="text-gray-500 text-xs">@kakashi092<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-danger text-xs"><i
                                                                                         class="ri-arrow-down-s-line align-middle ltr:mr-1 rtl:ml-1"></i>2.32%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -367,7 +367,7 @@
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="ti-list-group py-4 border-0 text-gray-800 dark:text-white">
+                                                        <li class="ti-list-group py-4 border-0 text-gray-800">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center justify-between">
                                                                     <div class="flex items-center">
@@ -375,14 +375,14 @@
                                                                         <div>
                                                                             <p class="text-sm font-semibold mb-0">Nagiro Ohinavo</p>
                                                                             <span
-                                                                                class="text-gray-500 dark:text-white/70 text-xs">@nagiro096<span
+                                                                                class="text-gray-500 text-xs">@nagiro096<span
                                                                                     class="ltr:ml-2 rtl:mr-2 text-success text-xs"><i
                                                                                         class="ri-arrow-up-s-line align-middle ltr:mr-1 rtl:ml-1"></i>0.99%</span></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="text-end">
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70 ltr:pl-6 rtl:pr-6">PRICE</span>
+                                                                            class="text-xs text-gray-500 ltr:pl-6 rtl:pr-6">PRICE</span>
                                                                         <p class="mb-0 font-semibold flex items-center"><span
                                                                                 class="avatar w-6 h-6 p-1 !ring-transparent"><img
                                                                                     src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}"
@@ -430,9 +430,9 @@
                                                 </div>
                                                 <div class="box-body p-0">
                                                     <div
-                                                        class="flex flex-wrap p-4 border-b border-dashed border-gray-200 dark:border-white/10">
+                                                        class="flex flex-wrap p-4 border-b border-dashed border-gray-200">
                                                         <div class="ltr:mr-3 rtl:ml-3">
-                                                            <span class="avatar avatar-sm rounded-full p-2 bg-gray-100 dark:bg-black/20">
+                                                            <span class="avatar avatar-sm rounded-full p-2 bg-gray-100">
                                                                 <img src="{{asset('build/assets/img/crypto-currencies/regular/Bitcoin.svg')}}" alt="">
                                                             </span>
                                                         </div>
@@ -472,7 +472,7 @@
                                                 <h5 class="box-title my-auto">Top Creators</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button id="hs-dropdown-custom-icon-trigger" type="button" aria-label="button"
-                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu"
                                                         aria-labelledby="hs-dropdown-custom-icon-trigger">
@@ -504,20 +504,20 @@
                                                                                 </path>
                                                                             </svg></p>
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">amandananes@</span>
+                                                                            class="text-xs text-gray-500">amandananes@</span>
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Total
+                                                                    <span class="text-xs text-gray-500">Total
                                                                         Sold</span>
                                                                     <p class="text-sm mb-0 font-semibold">18</p>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Sale
+                                                                    <span class="text-xs text-gray-500">Sale
                                                                         Value</span>
                                                                     <p class="text-sm mb-0 font-semibold">$1,982</p>
                                                                 </div>
@@ -540,20 +540,20 @@
                                                                                 </path>
                                                                             </svg></p>
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">@charlesachilles</span>
+                                                                            class="text-xs text-gray-500">@charlesachilles</span>
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Total
+                                                                    <span class="text-xs text-gray-500">Total
                                                                         Sold</span>
                                                                     <p class="text-sm mb-0 font-semibold">126</p>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Sale
+                                                                    <span class="text-xs text-gray-500">Sale
                                                                         Value</span>
                                                                     <p class="text-sm mb-0 font-semibold">$16,982</p>
                                                                 </div>
@@ -576,20 +576,20 @@
                                                                                 </path>
                                                                             </svg></p>
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">@juliacamo</span>
+                                                                            class="text-xs text-gray-500">@juliacamo</span>
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Total
+                                                                    <span class="text-xs text-gray-500">Total
                                                                         Sold</span>
                                                                     <p class="text-sm mb-0 font-semibold">42</p>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Sale
+                                                                    <span class="text-xs text-gray-500">Sale
                                                                         Value</span>
                                                                     <p class="text-sm mb-0 font-semibold">$3,432</p>
                                                                 </div>
@@ -611,20 +611,20 @@
                                                                                 </path>
                                                                             </svg></p>
                                                                         <span
-                                                                            class="text-xs text-gray-500 dark:text-white/70">@jsontaylor</span>
+                                                                            class="text-xs text-gray-500">@jsontaylor</span>
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Total
+                                                                    <span class="text-xs text-gray-500">Total
                                                                         Sold</span>
                                                                     <p class="text-sm mb-0 font-semibold">63</p>
                                                                 </div>
                                                             </td>
                                                             <td>
                                                                 <div class="items-center">
-                                                                    <span class="text-xs text-gray-500 dark:text-white/70">Sale
+                                                                    <span class="text-xs text-gray-500">Sale
                                                                         Value</span>
                                                                     <p class="text-sm mb-0 font-semibold">$9,236</p>
                                                                 </div>
@@ -680,14 +680,14 @@
                                                                 <div>
                                                                     <p class="mb-0 font-semibold"><a
                                                                             href="javascript:void(0);">Simon Cowell</a></p>
-                                                                    <p class="text-gray-500 dark:text-white/70 text-xs mb-0">@simon
+                                                                    <p class="text-gray-500 text-xs mb-0">@simon
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div
                                                                 class="hs-dropdown ti-dropdown ltr:ml-auto rtl:mr-auto [--placement:top-left]">
                                                                 <button id="hs-dropup11" type="button" aria-label="button"
-                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary dark:bg-primary/10 dark:hover:bg-primary dark:border-primary/10 dark:hover:border-primary dark:focus:ring-primary dark:focus:ring-offset-primary">
+                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary">
                                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i>
                                                                 </button>
                                                                 <div class="hs-dropdown-menu ti-dropdown-menu hidden"
@@ -741,14 +741,14 @@
                                                                 <div>
                                                                     <p class="mb-0 font-semibold"><a
                                                                             href="javascript:void(0);">Melissa Smith</a></p>
-                                                                    <p class="text-gray-500 dark:text-white/70 text-xs mb-0">
+                                                                    <p class="text-gray-500 text-xs mb-0">
                                                                         @melissa </p>
                                                                 </div>
                                                             </div>
                                                             <div
                                                                 class="hs-dropdown ti-dropdown ltr:ml-auto rtl:mr-auto [--placement:top-left]">
                                                                 <button id="hs-dropup12" type="button" aria-label="button"
-                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary dark:bg-primary/10 dark:hover:bg-primary dark:border-primary/10 dark:hover:border-primary dark:focus:ring-primary dark:focus:ring-offset-primary">
+                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary">
                                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i>
                                                                 </button>
                                                                 <div class="hs-dropdown-menu ti-dropdown-menu hidden"
@@ -803,14 +803,14 @@
                                                                 <div>
                                                                     <p class="mb-0 font-semibold"><a href="javascript:void(0);">Json
                                                                             Talor</a></p>
-                                                                    <p class="text-gray-500 dark:text-white/70 text-xs mb-0">@taylor
+                                                                    <p class="text-gray-500 text-xs mb-0">@taylor
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div
                                                                 class="hs-dropdown ti-dropdown ltr:ml-auto rtl:mr-auto [--placement:top-left]">
                                                                 <button id="hs-dropup1" type="button" aria-label="button"
-                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary dark:bg-primary/10 dark:hover:bg-primary dark:border-primary/10 dark:hover:border-primary dark:focus:ring-primary dark:focus:ring-offset-primary">
+                                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-primary/10 !border border-primary/10 text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary">
                                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i>
                                                                 </button>
                                                                 <div class="hs-dropdown-menu ti-dropdown-menu hidden"
@@ -834,18 +834,18 @@
                                             <div class="box-body">
                                                 <div class="flex items-start justify-between mb-3">
                                                     <div class="flex-grow">
-                                                        <p class="text-sm mb-0 text-gray-500 dark:text-white/70">Your Balance
+                                                        <p class="text-sm mb-0 text-gray-500">Your Balance
                                                         </p>
-                                                        <h6 class="text-2xl mb-4 text-gray-800 dark:text-white">$23,773.09</h6>
+                                                        <h6 class="text-2xl mb-4 text-gray-800">$23,773.09</h6>
                                                     </div>
                                                     <span
                                                         class="bg-primary/20 text-primary avatar rounded-sm text-3xl leading-none p-2"><i
                                                             class="ri-refund-2-line"></i></span>
                                                 </div>
-                                                <p class="text-gray-500 dark:text-white/70 mb-0 text-sm">Transactions</p>
+                                                <p class="text-gray-500 mb-0 text-sm">Transactions</p>
                                                 <div class="flex items-center justify-between mb-4">
-                                                    <h6 class="text-lg mb-0 text-gray-800 dark:text-white">1,107</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">Last activity
+                                                    <h6 class="text-lg mb-0 text-gray-800">1,107</h6>
+                                                    <span class="text-xs text-gray-500">Last activity
                                                         07-08-22</span>
                                                 </div>
                                                 <div class="flex items-center space-x-2 rtl:space-x-reverse">
@@ -908,7 +908,7 @@
                                                                                 href="javascript:void(0);" title="nft_name">Starter
                                                                                 Sense NFT</a></p>
                                                                         <a href="javscript:void(0);"
-                                                                            class="text-xs text-gray-500 dark:text-white/70 font-normal"
+                                                                            class="text-xs text-gray-500 font-normal"
                                                                             title="creator_name">@irukasensei229</a>
                                                                     </div>
                                                                 </div>
@@ -961,7 +961,7 @@
                                                                                 href="javascript:void(0);" title="nft_name">Lorem
                                                                                 Kekkei</a></p>
                                                                         <a href="javscript:void(0);"
-                                                                            class="text-xs text-gray-500 dark:text-white/70 font-normal"
+                                                                            class="text-xs text-gray-500 font-normal"
                                                                             title="creator_name">@clansound209</a>
                                                                     </div>
                                                                 </div>
@@ -1014,7 +1014,7 @@
                                                                                 href="javascript:void(0);" title="nft_name"> NFT
                                                                                 Uchiha</a></p>
                                                                         <a href="javscript:void(0);"
-                                                                            class="text-xs text-gray-500 dark:text-white/70 font-normal"
+                                                                            class="text-xs text-gray-500 font-normal"
                                                                             title="creator_name">@sasukeuhi990</a>
                                                                     </div>
                                                                 </div>
@@ -1067,7 +1067,7 @@
                                                                                 href="javascript:void(0);" title="nft_name"> Lorem
                                                                                 Ipsum Uch</a></p>
                                                                         <a href="javscript:void(0);"
-                                                                            class="text-xs text-gray-500 dark:text-white/70 font-normal"
+                                                                            class="text-xs text-gray-500 font-normal"
                                                                             title="creator_name">@kakashi092</a>
                                                                     </div>
                                                                 </div>
@@ -1120,7 +1120,7 @@
                                                                                 href="javascript:void(0);" title="nft_name">Ivan
                                                                                 Shomer Har</a></p>
                                                                         <a href="javscript:void(0);"
-                                                                            class="text-xs text-gray-500 dark:text-white/70 font-normal"
+                                                                            class="text-xs text-gray-500 font-normal"
                                                                             title="creator_name">narutouze025</a>
                                                                     </div>
                                                                 </div>
@@ -1174,18 +1174,18 @@
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto">
                                                     <nav class="flex justify-center items-center space-x-2 rtl:space-x-reverse">
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                                             href="javascript:void(0);">
                                                             <span aria-hidden="true">Prev</span>
                                                             <span class="sr-only">Previous</span>
                                                         </a>
                                                         <a class="bg-primary text-white py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);" aria-current="page">1</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);">2</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                                             href="javascript:void(0);">3</a>
-                                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
+                                                        <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                                             href="javascript:void(0);">
                                                             <span class="sr-only">Next</span>
                                                             <span aria-hidden="true">Next</span>

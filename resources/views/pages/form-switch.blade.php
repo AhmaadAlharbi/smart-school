@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Form Switch</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Form Switch</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Forms
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Form Switch
                                     </li>
                                 </ol>
@@ -51,8 +51,8 @@
                                         <div class="box-body">
                                             <div class="hs-tooltip flex items-center">
                                             <input type="checkbox" id="hs-tooltip-example" class="hs-tooltip-toggle ti-switch shrink-0">
-                                            <label for="hs-tooltip-example" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Allow push notifications</label>
-                                            <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-sm shadow-sm dark:bg-slate-700" role="tooltip">
+                                            <label for="hs-tooltip-example" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Allow push notifications</label>
+                                            <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-sm shadow-sm" role="tooltip">
                                                 Enable push notifications
                                             </div>
                                             </div>
@@ -73,18 +73,18 @@
                                             <div class="space-y-4">
                                             <div class="flex items-center">
                                                 <input type="checkbox" id="hs-basic-with-description-unchecked" class="ti-switch">
-                                                <label for="hs-basic-with-description-unchecked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Unchecked</label>
+                                                <label for="hs-basic-with-description-unchecked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Unchecked</label>
                                             </div>
 
                                             <div class="flex items-center">
                                                 <input type="checkbox" id="hs-basic-with-description-checked" class="ti-switch" checked>
-                                                <label for="hs-basic-with-description-checked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Checked</label>
+                                                <label for="hs-basic-with-description-checked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Checked</label>
                                             </div>
 
                                             <div class="flex items-center">
-                                                <label class="text-sm text-gray-500 ltr:mr-3 rtl:ml-3 dark:text-white/70">On</label>
+                                                <label class="text-sm text-gray-500 ltr:mr-3 rtl:ml-3">On</label>
                                                 <input type="checkbox" id="hs-basic-with-description" class="ti-switch">
-                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Off</label>
+                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Off</label>
                                             </div>
                                             </div>
                                         </div>
@@ -99,18 +99,18 @@
                                             <div class="space-y-4">
                                             <div class="flex items-center opacity-70">
                                                 <input type="checkbox" id="hs-basic-disabled-with-description-unchecked" class="ti-switch shrink-0 pointer-events-none" disabled>
-                                                <label for="hs-basic-disabled-with-description-unchecked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Unchecked</label>
+                                                <label for="hs-basic-disabled-with-description-unchecked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Unchecked</label>
                                             </div>
 
                                             <div class="flex items-center opacity-70">
                                                 <input type="checkbox" id="hs-basic-disabled-with-description-checked" class="ti-switch shrink-0 pointer-events-none" checked disabled>
-                                                <label for="hs-basic-disabled-with-description-checked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Checked</label>
+                                                <label for="hs-basic-disabled-with-description-checked" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Checked</label>
                                             </div>
 
                                             <div class="flex items-center opacity-70">
-                                                <label class="text-sm text-gray-500 ltr:mr-3 rtl:ml-3 dark:text-white/70">On</label>
+                                                <label class="text-sm text-gray-500 ltr:mr-3 rtl:ml-3">On</label>
                                                 <input type="checkbox" id="hs-basic-disabled-with-description" class="ti-switch shrink-0 pointer-events-none" disabled>
-                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Off</label>
+                                                <label class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Off</label>
                                             </div>
                                             </div>
                                         </div>
@@ -130,17 +130,17 @@
                                             <div class="space-y-4">
                                             <div class="flex items-center">
                                                 <input type="checkbox" id="hs-small-switch" class="ti-switch shrink-0 w-11 h-6 before:w-5 before:h-5">
-                                                <label for="hs-small-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Small</label>
+                                                <label for="hs-small-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Small</label>
                                             </div>
 
                                             <div class="flex items-center">
                                                 <input type="checkbox" id="hs-medium-switch" class="ti-switch shrink-0">
-                                                <label for="hs-medium-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Medium</label>
+                                                <label for="hs-medium-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Medium</label>
                                             </div>
 
                                             <div class="flex items-center">
                                                 <input type="checkbox" id="hs-large-switch" class="ti-switch shrink-0 w-[4.25rem] h-9 before:w-8 before:h-8">
-                                                <label for="hs-large-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Large</label>
+                                                <label for="hs-large-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Large</label>
                                             </div>
                                             </div>
                                         </div>
@@ -154,17 +154,17 @@
                                         <div class="box-body">
                                             <div class="space-y-4">
                                             <div class="flex items-center">
-                                                <input type="checkbox" id="hs-valid-toggle-switch" class="ti-switch shrink-0 checked:bg-none checked:bg-green-600 checked:hover:bg-green-600 checked:focus:bg-green-600 focus:border-green-600 focus:ring-green-600 dark:checked:bg-green-600
+                                                <input type="checkbox" id="hs-valid-toggle-switch" class="ti-switch shrink-0 checked:bg-none checked:bg-green-600 checked:hover:bg-green-600 checked:focus:bg-green-600 focus:border-green-600 focus:ring-green-600
 
-                                                checked:before:bg-green-200 dark:checked:before:bg-green-200" checked>
-                                                <label for="hs-valid-toggle-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Valid toggle switch</label>
+                                                checked:before:bg-green-200" checked>
+                                                <label for="hs-valid-toggle-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Valid toggle switch</label>
                                             </div>
 
                                             <div class="flex items-center">
-                                                <input type="checkbox" id="hs-invalid-toggle-switch" class="ti-switch shrink-0 checked:bg-none checked:bg-red-600 checked:hover:bg-red-600 checked:focus:bg-red-600 focus:border-red-600 focus:ring-red-600 dark:checked:bg-red-600
+                                                <input type="checkbox" id="hs-invalid-toggle-switch" class="ti-switch shrink-0 checked:bg-none checked:bg-red-600 checked:hover:bg-red-600 checked:focus:bg-red-600 focus:border-red-600 focus:ring-red-600
 
-                                                checked:before:bg-red-200 dark:checked:before:bg-red-200" checked>
-                                                <label for="hs-invalid-toggle-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Invalid toggle switch</label>
+                                                checked:before:bg-red-200" checked>
+                                                <label for="hs-invalid-toggle-switch" class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Invalid toggle switch</label>
                                             </div>
                                             </div>
                                         </div>

@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Form Elements</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Form Elements</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Forms
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Form Elements
                                     </li>
                                 </ol>
@@ -133,7 +133,7 @@
                                                 class="ti-form-label">Email</label>
                                             <input type="email" id="input-label-with-helper-text" class="ti-form-input"
                                                 placeholder="you@site.com" aria-describedby="hs-input-helper-text">
-                                            <p class="text-sm text-gray-500 mt-2 dark:text-white/70" id="hs-input-helper-text">We'll never share your
+                                            <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">We'll never share your
                                                 details.</p>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@
                                                 <input type="email" id="inline-input-label-with-helper-text"
                                                     class="ti-form-input"
                                                     placeholder="you@site.com" aria-describedby="hs-inline-input-helper-text">
-                                                <p class="text-sm text-gray-500 mt-2 dark:text-white/70" id="hs-inline-input-helper-text">We'll never
+                                                <p class="text-sm text-gray-500 mt-2" id="hs-inline-input-helper-text">We'll never
                                                     share your details.</p>
                                             </div>
                                         </div>
@@ -164,7 +164,7 @@
                                         <div class="box-body">
                                             <div class="flex justify-between items-center">
                                                 <label for="with-corner-hint" class="ti-form-label">Email</label>
-                                                <span class="block  text-sm text-gray-500 mb-2 dark:text-white/70">Optional</span>
+                                                <span class="block  text-sm text-gray-500 mb-2">Optional</span>
                                             </div>
                                             <input type="email" id="with-corner-hint" class="ti-form-input" placeholder="you@site.com">
                                         </div>

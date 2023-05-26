@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Tables</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Tables</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                     Basic Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Tables
                                     </li>
                                 </ol>
@@ -328,7 +328,7 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td class="bg-primary font-medium dark:!text-white !text-white">John Brown</td>
+                                            <td class="bg-primary font-medium !text-white">John Brown</td>
                                             <td>45</td>
                                             <td>New York No. 1 Lake Park</td>
                                             <td class="text-end font-medium">
@@ -338,7 +338,7 @@
 
                                         <tr>
                                             <td class="font-medium">Jim Green</td>
-                                            <td class="bg-orange-500 dark:!text-white !text-white">27</td>
+                                            <td class="bg-orange-500 !text-white">27</td>
                                             <td>London No. 1 Lake Park</td>
                                             <td class="text-end font-medium">
                                             <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
@@ -346,9 +346,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="bg-red-500 font-medium dark:!text-white !text-white">Joe Black</td>
-                                            <td class="bg-primary dark:!text-white !text-white">31</td>
-                                            <td class="bg-primary dark:!text-white !text-white">Sidney No. 1 Lake Park</td>
+                                            <td class="bg-red-500 font-medium !text-white">Joe Black</td>
+                                            <td class="bg-primary !text-white">31</td>
+                                            <td class="bg-primary !text-white">Sidney No. 1 Lake Park</td>
                                             <td class="text-end font-medium">
                                             <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
                                             </td>
@@ -522,7 +522,7 @@
                                     <h5 class="box-title">Table Thead Horizontally Divided</h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="table-bordered rounded-sm shadow overflow-auto dark:shadow-white/10">
+                                    <div class="table-bordered rounded-sm shadow overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head">
                                         <thead>
                                         <tr class="">
@@ -573,12 +573,12 @@
                                     <div class="box-body">
                                     <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head">
-                                        <thead class="bg-gray-100 dark:bg-black/20">
+                                        <thead class="bg-gray-100">
                                             <tr>
                                             <th scope="col" class="dark:text-white/70">Name</th>
                                             <th scope="col" class="dark:text-white/70">Age</th>
                                             <th scope="col" class="dark:text-white/70">Address</th>
-                                            <th scope="col" class="!text-end dark:text-white/70">Action</th>
+                                            <th scope="col" class="!text-end">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -625,14 +625,14 @@
                                         <h5 class="box-title">Tables Without Borders With Shadow</h5>
                                     </div>
                                     <div class="box-body">
-                                    <div class="table-bordered rounded-sm shadow overflow-auto dark:shadow-white/10">
+                                    <div class="table-bordered rounded-sm shadow overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head">
-                                        <thead class="bg-gray-100 dark:bg-black/20">
+                                        <thead class="bg-gray-100">
                                             <tr>
                                             <th scope="col" class="dark:text-white/70">Name</th>
                                             <th scope="col" class="dark:text-white/70">Age</th>
                                             <th scope="col" class="dark:text-white/70">Address</th>
-                                            <th scope="col" class="!text-end dark:text-white/70">Action</th>
+                                            <th scope="col" class="!text-end">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -674,7 +674,7 @@
                                     <h5 class="box-title"> Headless Tables</h5>
                                 </div>
                                 <div class="box-body">
-                                    <div class="table-bordered rounded-sm shadow overflow-auto dark:shadow-white/10">
+                                    <div class="table-bordered rounded-sm shadow overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head">
                                         <tbody>
                                         <tr>
@@ -771,7 +771,7 @@
                                 <div class="box-body p-0">
                                     <div class="overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head">
-                                        <caption class="py-2 px-4 text-start text-sm text-gray-600 dark:text-white/70">List of users</caption>
+                                        <caption class="py-2 px-4 text-start text-sm text-gray-600">List of users</caption>
                                         <thead>
                                         <tr>
                                             <th scope="col">Name</th>
@@ -889,7 +889,7 @@
                                     <div class="box-body">
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head">
-                                            <thead class="bg-gray-50 dark:bg-black/20">
+                                            <thead class="bg-gray-50">
                                             <tr>
                                                 <th scope="col" class="py-3 ltr:pl-4 rtl:pr-4">
                                                 <div class="flex items-center h-5">
@@ -1001,7 +1001,7 @@
                                             <label for="hs-table-search1" class="sr-only">Search</label>
                                             <input type="text" name="hs-table-search1" id="hs-table-search1" class="p-3 ltr:pl-10 rtl:pr-10 ti-form-input" placeholder="Search for items">
                                             <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none ltr:pl-4 rtl:pr-4">
-                                                <svg class="h-3.5 w-3.5 text-gray-400 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <svg class="h-3.5 w-3.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                                 </svg>
                                             </div>
@@ -1009,7 +1009,7 @@
                                         </div>
                                         <div class="overflow-auto">
                                             <table class="ti-custom-table ti-custom-table-head">
-                                            <thead class="bg-gray-50 dark:bg-black/20">
+                                            <thead class="bg-gray-50">
                                                 <tr>
                                                 <th scope="col" class="py-2 ltr:pr-0 rtl:pl-0">
                                                     <div class="flex items-center h-5">
@@ -1117,7 +1117,7 @@
                                             <label for="hs-table-search2" class="sr-only">Search</label>
                                             <input type="text" name="hs-table-search2" id="hs-table-search2" class="p-3 ltr:pl-10 rtl:pr-10 ti-form-input" placeholder="Search for items">
                                             <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none ltr:pl-4 rtl:pr-4">
-                                            <svg class="h-3.5 w-3.5 text-gray-400 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                            <svg class="h-3.5 w-3.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                             </svg>
                                             </div>
@@ -1125,7 +1125,7 @@
                                         </div>
                                         <div class="overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head">
-                                            <thead class="bg-gray-50 dark:bg-black/20">
+                                            <thead class="bg-gray-50">
                                             <tr>
                                                 <th scope="col" class="py-2 ltr:pr-0 rtl:pl-0">
                                                 <div class="flex items-center h-5">
@@ -1219,14 +1219,14 @@
                                         </div>
                                         <div class="py-1 px-4">
                                         <nav class="flex items-center sm:space-x-2 rtl:space-x-reverse">
-                                            <a class="text-gray-400 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                            <a class="text-gray-400 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                             <span aria-hidden="true">«</span>
                                             <span class="sr-only">Previous</span>
                                             </a>
                                             <a class="w-10 h-10 bg-primary text-white p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);" aria-current="page">1</a>
-                                            <a class="w-10 h-10 text-gray-400 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
-                                            <a class="w-10 h-10 text-gray-400 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
-                                            <a class="text-gray-400 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                            <a class="w-10 h-10 text-gray-400 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
+                                            <a class="w-10 h-10 text-gray-400 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
+                                            <a class="text-gray-400 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                             <span class="sr-only">Next</span>
                                             <span aria-hidden="true">»</span>
                                             </a>
@@ -1250,7 +1250,7 @@
                                         <div class="-m-1.5">
                                         <div class="p-1.5 min-w-full inline-block align-middle">
                                             <div class="overflow-auto">
-                                            <div class="table border-collapse table-auto w-full divide-y divide-gray-200 dark:divide-white/10">
+                                            <div class="table border-collapse table-auto w-full divide-y divide-gray-200">
                                                 <div class="table-header-group">
                                                 <div class="table-row">
                                                     <div class="table-cell px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Name</div>
@@ -1259,27 +1259,27 @@
                                                     <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Action</div>
                                                 </div>
                                                 </div>
-                                                <div class="table-row-group divide-y divide-gray-200 bg-white dark:divide-white/10 dark:bg-black/20">
+                                                <div class="table-row-group divide-y divide-gray-200 bg-white">
                                                 <div class="table-row">
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">John Brown</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">45</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">New York No. 1 Lake Park</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">John Brown</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">45</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">New York No. 1 Lake Park</div>
                                                     <div class="table-cell px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                                                     <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
                                                     </div>
                                                 </div>
                                                 <div class="table-row">
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Jim Green</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">27</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">London No. 1 Lake Park</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">Jim Green</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">27</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">London No. 1 Lake Park</div>
                                                     <div class="table-cell px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                                                     <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
                                                     </div>
                                                 </div>
                                                 <div class="table-row">
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Joe Black</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">31</div>
-                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Sidney No. 1 Lake Park</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">Joe Black</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">31</div>
+                                                    <div class="table-cell px-6 py-4 whitespace-nowrap text-sm text-gray-800">Sidney No. 1 Lake Park</div>
                                                     <div class="table-cell px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                                                     <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
                                                     </div>
@@ -1306,11 +1306,11 @@
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-primary">
                                             <thead class="">
-                                            <tr class="!divide-primary/10 dark:!divide-primary/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <tr class="!divide-primary/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1355,11 +1355,11 @@
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-secondary">
                                             <thead class="">
-                                            <tr class="!divide-secondary/10 dark:!divide-secondary/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <tr class="!divide-secondary/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1404,11 +1404,11 @@
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-warning">
                                             <thead class="">
-                                            <tr class="!divide-warning/10 dark:!divide-warning/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <tr class="!divide-warning/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1453,11 +1453,11 @@
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-info">
                                             <thead class="">
-                                            <tr class="!divide-info/10 dark:!divide-info/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <tr class="!divide-info/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1501,12 +1501,12 @@
                                     <div class="box-body">
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-danger">
-                                            <thead class="bg-danger/20 dark:bg-danger/20">
-                                            <tr class="!divide-danger/10 dark:!divide-danger/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <thead class="bg-danger/20">
+                                            <tr class="!divide-danger/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1551,11 +1551,11 @@
                                         <div class="table-bordered rounded-sm overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head ti-head-success">
                                             <thead class="">
-                                            <tr class="!divide-success/10 dark:!divide-success/10 ">
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Name</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Age</th>
-                                                <th scope="col" class="!text-gray-800  dark:!text-white/70">Address</th>
-                                                <th scope="col" class="!text-end !text-gray-800  dark:!text-white/70">Action</th>
+                                            <tr class="!divide-success/10 ">
+                                                <th scope="col" class="!text-gray-800 ">Name</th>
+                                                <th scope="col" class="!text-gray-800 ">Age</th>
+                                                <th scope="col" class="!text-gray-800 ">Address</th>
+                                                <th scope="col" class="!text-end !text-gray-800 ">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1901,7 +1901,7 @@
                                         <h5 class="box-title">Primary Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-primary rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-primary rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>
@@ -1950,7 +1950,7 @@
                                         <h5 class="box-title">Secondary Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-secondary rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-secondary rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>
@@ -1999,7 +1999,7 @@
                                         <h5 class="box-title">Warning Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-warning rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-warning rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>
@@ -2048,7 +2048,7 @@
                                         <h5 class="box-title">Info Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-info rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-info rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>
@@ -2097,7 +2097,7 @@
                                         <h5 class="box-title">Danger Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-danger rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-danger rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>
@@ -2146,7 +2146,7 @@
                                         <h5 class="box-title">Success Table</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="overflow-auto table-success rounded-sm border border-gray-200 dark:border-white/10">
+                                        <div class="overflow-auto table-success rounded-sm border border-gray-200">
                                         <table class="ti-custom-table ti-custom-table-head">
                                             <thead>
                                             <tr>

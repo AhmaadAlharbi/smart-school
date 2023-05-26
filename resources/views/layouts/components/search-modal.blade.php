@@ -20,7 +20,7 @@
                             </div>
                             </div>
                             <div class="mt-5">
-                            <p class="font-semibold text-[13px] text-gray-400 dark:text-gray-200 mb-2">Are You Looking For...</p>
+                            <p class="font-semibold text-[13px] text-gray-400 mb-2">Are You Looking For...</p>
                             <div class="badge rounded-sm bg-secondary/20 text-secondary relative header-box">
                                 <a href="{{url('teams')}}" class="w-full my-auto items-center flex space-x-2 rtl:space-x-reverse">
                                 <span class="inline-block text-secondary mr-1"><i class="ri ri-user-line text-sm"></i></span>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="mt-5">
                             <p class="font-semibold text-sm text-gray-500 mb-2">Recent Search :</p>
-                            <div class="p-2 border dark:border-white/10 rounded-sm flex items-center text-gray-500 mb-1 relative header-box">
+                            <div class="p-2 border rounded-sm flex items-center text-gray-500 mb-1 relative header-box">
                                 <a href="{{url('notifications')}}" class="w-full my-auto items-center flex">
                                 <span class="text-sm">Notifications</span>
                                 </a>
@@ -97,7 +97,7 @@
                                 <i class="ri-close-line"></i>
                                 </a>
                             </div>
-                            <div class="p-2 border dark:border-white/10 rounded-sm flex items-center text-gray-500 mb-1 relative header-box">
+                            <div class="p-2 border rounded-sm flex items-center text-gray-500 mb-1 relative header-box">
                                 <a href="{{url('alerts')}}" class="w-full my-auto items-center flex">
                                 <span class="text-sm">Alerts</span>
                                 </a>
@@ -106,7 +106,7 @@
                                 <i class="ri-close-line"></i>
                                 </a>
                             </div>
-                            <div class="p-2 border dark:border-white/10 rounded-sm flex items-center text-gray-500 relative header-box">
+                            <div class="p-2 border rounded-sm flex items-center text-gray-500 relative header-box">
                                 <a href="{{url('tables')}}" class="w-full my-auto items-center flex">
                                 <span class="text-sm">Tables</span>
                                 </a>
@@ -119,10 +119,10 @@
                         </div>
                         <div class="ti-modal-footer">
                             <div class="inline-flex rounded-md shadow-sm">
-                                <button type="button" class="ti-btn-group py-1 ti-btn-soft-primary dark:border-white/10">
+                                <button type="button" class="ti-btn-group py-1 ti-btn-soft-primary">
                                     Search
                                 </button>
-                                <button type="button" class="ti-btn-group py-1 ti-btn-primary dark:border-white/10">
+                                <button type="button" class="ti-btn-group py-1 ti-btn-primary">
                                     Clear Recents
                                 </button>
                             </div>

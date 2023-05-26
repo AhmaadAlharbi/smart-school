@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\DashboardsController;
 use App\Http\Controllers\AdvanceduiController;
 use App\Http\Controllers\AuthenticationController;
@@ -14,9 +14,6 @@ use App\Http\Controllers\IconsController;
 use App\Http\Controllers\MapsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\WidgetsController;
-
-// use App\Http\Controllers\Controller;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,9 +24,6 @@ use App\Http\Controllers\WidgetsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-// Route::get('', [Controller::class, 'index']);
-
 
 Route::get('/', [DashboardsController::class, 'index']);
 Route::get('index', [DashboardsController::class, 'index']);
@@ -177,3 +171,16 @@ Route::get('terms', [PagesController::class, 'terms']);
 Route::get('empty-page', [PagesController::class, 'empty_page']);
 
 Route::get('widgets', [WidgetsController::class, 'widgets']);
+Route::get('navbar', [ElementsController::class, 'navbar']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__ . '/auth.php';

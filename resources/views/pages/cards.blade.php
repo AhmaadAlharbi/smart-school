@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Cards</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Cards</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Components
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Cards
                                     </li>
                                 </ol>
@@ -37,7 +37,7 @@
                                 <img src="{{asset('build/assets/img/media/1.jpg')}}" class="box-img-top rounded-t-sm" alt="...">
                                 <div class="box-body">
                                     <h6 class="text-base box-title font-semibold mb-2">box title</h6>
-                                    <p class="text-[0.813rem] text-gray-500 dark:text-white/70 mb-4">when an unknown printer took a galley
+                                    <p class="text-[0.813rem] text-gray-500 mb-4">when an unknown printer took a galley
                                     of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                                     also the leap into electronic typesetting, remaining essentially unchanged.</p>
                                     <a href="javascript:void(0);" class="ti-btn ti-btn-primary">Read More</a>
@@ -62,7 +62,7 @@
                                 <div class="box">
                                 <div class="box-body">
                                     <h6 class="text-base box-title font-semibold mb-2">box title</h6>
-                                    <p class="box-subtitle text-sm mb-4 text-gray-500 dark:text-white/70">box subtitle</p>
+                                    <p class="box-subtitle text-sm mb-4 text-gray-500">box subtitle</p>
                                     <p class="text-[0.813rem]">There are many variations of passages of Lorem Ipsum available, but the
                                     majority have suffered alteration many variations of passages of Lorem Ipsum available there are so
                                     many ways to solve but the majority have suffered.</p>
@@ -81,7 +81,7 @@
                                     make up the bulk of the box's content.</p>
                                 </div>
                                 </div>
-                                <h6 class="text-base mb-4 font-semibold text-gray-800 dark:text-white">Only box Body:</h6>
+                                <h6 class="text-base mb-4 font-semibold text-gray-800">Only box Body:</h6>
                                 <div class="box">
                                 <div class="box-body">
                                     <div class="text-[0.813rem]">
@@ -99,9 +99,9 @@
                                     <p class="mb-4 text-[0.813rem]">Some quick example text to build on the box title and
                                     make up the bulk of the box's content.</p>
                                 </div>
-                                <ul class="flex flex-col divide-y divide-gray-200 dark:divide-white/10">
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">An item</li>
-                                    <li class="ti-list-group border-0 text-gray-800 dark:text-white">A second item</li>
+                                <ul class="flex flex-col divide-y divide-gray-200">
+                                    <li class="ti-list-group border-0 text-gray-800">An item</li>
+                                    <li class="ti-list-group border-0 text-gray-800">A second item</li>
                                 </ul>
                                 <div class="box-body space-x-4 rtl:space-x-reverse inline-flex">
                                     <a href="javascript:void(0);" class="text-sm text-primary">Box link</a>
@@ -124,7 +124,7 @@
                                         <h6 class="text-base mb-2">The greatest glory in living lies not in never falling, but in rising
                                             every time we fall.</h6>
                                         <footer
-                                            class="blockquote-footer before:content-['_'] text-gray-500 dark:text-white/70 mt-2 text-sm">
+                                            class="blockquote-footer before:content-['_'] text-gray-500 mt-2 text-sm">
                                             Someone famous in <cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
@@ -135,11 +135,11 @@
                                     <div class="grid grid-cols-12 gap-x-6">
                                     <div class="xxl:col-span-4 col-span-12">
                                         <div class="box">
-                                        <ul class="flex flex-col divide-y divide-gray-200 dark:divide-white/10">
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">An item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A second item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A third item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A fourth item</li>
+                                        <ul class="flex flex-col divide-y divide-gray-200">
+                                            <li class="ti-list-group border-0 text-gray-800">An item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A second item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A third item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A fourth item</li>
                                         </ul>
                                         </div>
                                     </div>
@@ -148,19 +148,19 @@
                                         <div class="box-header">
                                             Featured
                                         </div>
-                                        <ul class="flex flex-col divide-y divide-gray-200 dark:divide-white/10">
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">An item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A second item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A third item</li>
+                                        <ul class="flex flex-col divide-y divide-gray-200">
+                                            <li class="ti-list-group border-0 text-gray-800">An item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A second item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A third item</li>
                                         </ul>
                                         </div>
                                     </div>
                                     <div class="xxl:col-span-4 col-span-12">
                                         <div class="box">
-                                        <ul class="flex flex-col divide-y divide-gray-200 dark:divide-white/10">
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">An item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A second item</li>
-                                            <li class="ti-list-group border-0 text-gray-800 dark:text-white">A third item</li>
+                                        <ul class="flex flex-col divide-y divide-gray-200">
+                                            <li class="ti-list-group border-0 text-gray-800">An item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A second item</li>
+                                            <li class="ti-list-group border-0 text-gray-800">A third item</li>
                                         </ul>
                                         <div class="box-footer">
                                             Box footer
@@ -287,7 +287,7 @@
                                     </div>
                                     <div class="">
                                         <div class="text-base font-semibold">Adam Smith</div>
-                                        <p class="mb-0 text-gray-500 dark:text-white/70 text-[0.813rem]">28 Years, Male</p>
+                                        <p class="mb-0 text-gray-500 text-[0.813rem]">28 Years, Male</p>
                                     </div>
                                     <div class="ltr:ml-auto rtl:mr-auto">
                                         <div class="hs-dropdown ti-dropdown">
@@ -329,9 +329,9 @@
                                     <span class="text-warning text-base leading-none ltr:mr-1 rtl:ml-1"><i class="ri-star-s-fill"></i></span>
                                     <span class="text-warning text-base leading-none ltr:mr-1 rtl:ml-1"><i class="ri-star-s-fill"></i></span>
                                     <span class="text-warning text-base leading-none ltr:mr-1 rtl:ml-1"><i class="ri-star-s-fill"></i></span>
-                                    <span class="text-gray-200 dark:text-gray-200 text-base leading-none"><i
+                                    <span class="text-gray-200 text-base leading-none"><i
                                         class="ri-star-s-fill"></i></span>
-                                    <p class="block text-gray-500 dark:text-white/70 mb-0 text-[0.813rem] font-semibold">1 year ago</p>
+                                    <p class="block text-gray-500 mb-0 text-[0.813rem] font-semibold">1 year ago</p>
                                     </div>
                                 </div>
                                 <div class="box-body py-3">
@@ -355,18 +355,18 @@
                                 <div class="box-body pt-1">
                                     <img src="{{asset('build/assets/img/users/5.jpg')}}" class="avatar avatar-lg rounded-full ltr:mr-2 rtl:ml-2 mb-2" alt="Image Description">
                                     <div class="font-semibold text-base">Sasha Max</div>
-                                    <p class="mb-4 text-gray-500 dark:text-white/70 text-[0.813rem]">Web Developer</p>
+                                    <p class="mb-4 text-gray-500 text-[0.813rem]">Web Developer</p>
                                     <div class="">
                                     <button type="button"  aria-label="button"
-                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-[#3b5998] text-white hover:bg-[#3b5998] focus:ring-0 focus:ring-[#3b5998] dark:focus:ring-offset-white/10 ti-btn-facebook">
+                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-[#3b5998] text-white hover:bg-[#3b5998] focus:ring-0 focus:ring-[#3b5998] ti-btn-facebook">
                                         <i class="ri-facebook-line"></i>
                                     </button>
                                     <button type="button"  aria-label="button"
-                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-[#00acee] text-white hover:bg-[#00acee] focus:ring-0 focus:ring-[#00acee] dark:focus:ring-offset-white/10 ti-btn-twitter">
+                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-[#00acee] text-white hover:bg-[#00acee] focus:ring-0 focus:ring-[#00acee] ti-btn-twitter">
                                         <i class="ri-twitter-line"></i>
                                     </button>
                                     <button type="button"  aria-label="button"
-                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-instagram text-white hover:bg-instagram focus:ring-0 focus:ring-instagram dark:focus:ring-offset-white/10 ti-btn-instagram">
+                                        class="ti-btn p-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] bg-instagram text-white hover:bg-instagram focus:ring-0 focus:ring-instagram ti-btn-instagram">
                                         <i class="ri-instagram-line"></i>
                                     </button>
                                     </div>
@@ -466,7 +466,7 @@
                                     <a href="javascript:void(0);" class="ti-btn ti-btn-primary mt-2">Read More</a>
                                     <a href="javascript:void(0);" class="ti-btn ti-btn-outline ti-btn-outline-secondary mt-2">Close</a>
                                 </div>
-                                <div class="box-footer text-gray-500 dark:text-white/70">
+                                <div class="box-footer text-gray-500">
                                     11.32pm
                                 </div>
                                 </div>
@@ -478,15 +478,15 @@
                                     <img src="{{asset('build/assets/img/users/12.jpg')}}" class="avatar rounded-full ltr:mr-6 rtl:ml-6" alt="Image Description">
                                     <div class="flex items-center justify-between w-full">
                                         <div class="">
-                                        <p class="text-sm text-gray-500 dark:text-white/70 mb-0">Posts</p>
+                                        <p class="text-sm text-gray-500 mb-0">Posts</p>
                                         <p class="font-semibold text-base mb-0">25</p>
                                         </div>
                                         <div class="">
-                                        <p class="text-sm text-gray-500 dark:text-white/70 mb-0">Followers</p>
+                                        <p class="text-sm text-gray-500 mb-0">Followers</p>
                                         <p class="font-semibold text-base mb-0">1253</p>
                                         </div>
                                         <div class="">
-                                        <p class="text-sm text-gray-500 dark:text-white/70 mb-0">Following</p>
+                                        <p class="text-sm text-gray-500 mb-0">Following</p>
                                         <p class="font-semibold text-base mb-0">367</p>
                                         </div>
                                     </div>
@@ -494,7 +494,7 @@
                                 </div>
                                 <div class="box-body">
                                     <div class="font-semibold text-base">Angelina Caprio</div>
-                                    <div class="text-gray-500 dark:text-white/70 text-[0.813rem] mb-4">Angular Developer</div>
+                                    <div class="text-gray-500 text-[0.813rem] mb-4">Angular Developer</div>
                                     <p class="text-sm font-semibold mb-1">About:</p>
                                     <p class="mb-0 text-[0.813rem]">Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
                                     original form, accompanied by English versions </p>
@@ -614,33 +614,33 @@
                                 <div class="grid grid-cols-12 gap-x-6">
                                 <div class="xxl:col-span-6 col-span-12">
                                     <div class="box text-center">
-                                    <div class=" p-6 dark:bg-black/20 ">
+                                    <div class=" p-6 ">
                                         <div
-                                        class="flex flex-col bg-white border shadow-sm rounded-sm dark:bg-black/20 dark:border-gray-700 dark:shadow-black/[0.05]">
+                                        class="flex flex-col bg-white border shadow-sm rounded-sm">
                                         <div
-                                            class="bg-gray-100 border-b rounded-t-sm pt-3 px-4 md:pt-4 md:px-5 dark:bg-black/20 dark:border-gray-700 overflow-hidden">
+                                            class="bg-gray-100 border-b rounded-t-sm pt-3 px-4 md:pt-4 md:px-5 overflow-hidden">
                                             <nav class="flex space-x-2 rtl:space-x-reverse" aria-label="Tabs">
-                                            <a class="-mb-px py-3 px-4 bg-white text-sm font-medium text-center border border-b-transparent text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10 dark:bg-black/20 dark:border-gray-700 dark:border-b-white/10 dark:hover:text-white/80"
+                                            <a class="-mb-px py-3 px-4 bg-white text-sm font-medium text-center border border-b-transparent text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10"
                                                 href="javascript:void(0);">
                                                 Active
                                             </a>
 
-                                            <a class="-mb-px py-3 px-4 text-sm font-medium text-center border-b text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10 dark:border-gray-700 dark:hover:text-white/80"
+                                            <a class="-mb-px py-3 px-4 text-sm font-medium text-center border-b text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10"
                                                 href="javascript:void(0);">
                                                 Link
                                             </a>
 
-                                            <a class="-mb-px py-3 px-4 text-sm font-medium text-center border-b text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10 dark:border-gray-700 dark:hover:text-white/80"
+                                            <a class="-mb-px py-3 px-4 text-sm font-medium text-center border-b text-gray-500 rounded-t-sm hover:text-gray-700 focus:z-10"
                                                 href="javascript:void(0);">
                                                 Link
                                             </a>
                                             </nav>
                                         </div>
                                         <div class="p-4 text-center md:py-7 md:px-5">
-                                            <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                                            <h3 class="text-lg font-bold text-gray-800">
                                             Box title
                                             </h3>
-                                            <p class="mt-2 text-gray-800 dark:text-white/70">
+                                            <p class="mt-2 text-gray-800">
                                             With supporting text below as a natural lead-in to additional content.
                                             </p>
                                             <a class="mt-3 ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -654,7 +654,7 @@
                                 <div class="xxl:col-span-6 col-span-12">
                                     <div class="box text-center">
                                     <div
-                                        class="flex flex-col bg-white dark:bg-black/20  dark:shadow-black/[0.05]">
+                                        class="flex flex-col bg-white ">
                                         <!-- Select (Mobile only) -->
                                         <div class="sm:hidden">
                                         <label for="hs-box-nav-tabs" class="sr-only">Select a nav</label>
@@ -671,24 +671,24 @@
                                         <!-- Nav Tabs (Device only) -->
                                         <div class="hidden sm:block">
                                         <nav
-                                            class="relative z-0 flex border-b rounded-sm divide-x rtl:divide-x-reverse divide-gray-200 dark:border-gray-700 dark:divide-white/10"
+                                            class="relative z-0 flex border-b rounded-sm divide-x rtl:divide-x-reverse divide-gray-200"
                                             aria-label="Tabs">
-                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 border-b-2 border-b-primary text-gray-900 rounded-tl-sm text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 dark:bg-black/20 dark:text-gray-300"
+                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 border-b-2 border-b-primary text-gray-900 rounded-tl-sm text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10"
                                             aria-current="page" href="javascript:void(0);">
                                             My Account
                                             </a>
 
-                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 dark:bg-black/20 dark:hover:text-white/80"
+                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10"
                                             href="javascript:void(0);">
                                             Company
                                             </a>
 
-                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 dark:bg-black/20 dark:hover:text-white/80"
+                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10"
                                             href="javascript:void(0);">
                                             Team Members
                                             </a>
 
-                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 ltr:rounded-tr-sm rtl:rounded-tl-sm text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10 dark:bg-black/20 dark:hover:text-white/80"
+                                            <a class="group relative min-w-0 flex-1 bg-white py-4 px-4 text-gray-500 hover:text-gray-700 ltr:rounded-tr-sm rtl:rounded-tl-sm text-sm font-medium text-center overflow-hidden hover:bg-gray-50 focus:z-10"
                                             href="javascript:void(0);">
                                             Billing
                                             </a>
@@ -697,10 +697,10 @@
                                         <!-- End Nav Tabs (Device only) -->
 
                                         <div class="p-4 text-center md:py-7 md:px-5">
-                                        <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                                        <h3 class="text-lg font-bold text-gray-800">
                                             Box title
                                         </h3>
-                                        <p class="mt-2 text-gray-800 dark:text-white/70">
+                                        <p class="mt-2 text-gray-800">
                                             With supporting text below as a natural lead-in to additional content.
                                         </p>
                                         <a class="mt-3 ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -723,7 +723,7 @@
                                 <img src="{{asset('build/assets/img/media/10.jpg')}}" class="box-img-top rounded-t-sm" alt="...">
                                 <div class="box-body">
                                     <h6 class="text-base box-title font-semibold">Image caps are widely used in Blog's</h6>
-                                    <p class="text-[0.813rem] mb-4 text-gray-500 dark:text-white/70">But I must explain to you how all this mistaken
+                                    <p class="text-[0.813rem] mb-4 text-gray-500">But I must explain to you how all this mistaken
                                     idea of denouncing pleasure and praising pain was born and I will give you a complete account of the
                                     system, and expound the actual teachings.</p>
                                     <p class="text-[0.813rem] mb-0"><small class="text-sm">Last updated 3 mins
@@ -735,7 +735,7 @@
                                 <div class="box">
                                 <div class="box-body">
                                     <h6 class="text-base box-title font-semibold">Image caps are widely used in Blog's</h6>
-                                    <p class="text-[0.813rem] mb-4 text-gray-500 dark:text-white/70">But I must explain to you how all this mistaken
+                                    <p class="text-[0.813rem] mb-4 text-gray-500">But I must explain to you how all this mistaken
                                     idea of denouncing pleasure and praising pain was born and I will give you a complete account of the
                                     system, and expound.</p>
                                     <p class="text-[0.813rem] mb-0"><small class="text-sm">Last updated 3 mins
@@ -748,7 +748,7 @@
                                 <div class="box">
                                 <div class="box-body">
                                     <h6 class="text-base box-title font-semibold mb-1">Image caps are widely used in Blog's</h6>
-                                    <p class="text-[0.813rem] mb-1 text-gray-500 dark:text-white/70">This is a wider box with supporting text below
+                                    <p class="text-[0.813rem] mb-1 text-gray-500">This is a wider box with supporting text below
                                     as
                                     a natural lead-in to additional content. This content is a
                                     little
@@ -767,7 +767,7 @@
                                     <div class="box-title">Image caps are widely used in Blog's</div>
                                 </div>
                                 <div class="box-body">
-                                    <p class="text-[0.813rem] mb-1 text-gray-500 dark:text-white/70">This is a wider box with supporting text below
+                                    <p class="text-[0.813rem] mb-1 text-gray-500">This is a wider box with supporting text below
                                     as
                                     a natural lead-in to additional content. This content is a
                                     little
@@ -787,7 +787,7 @@
                                     <div class="box-title">Image caps are widely used in Blog's</div>
                                 </div>
                                 <div class="box-body">
-                                    <p class="text-[0.813rem] mb-1 text-gray-500 dark:text-white/70">This is a wider box with supporting text below
+                                    <p class="text-[0.813rem] mb-1 text-gray-500">This is a wider box with supporting text below
                                     as
                                     a natural lead-in to additional content. This content is a
                                     little
@@ -805,7 +805,7 @@
                                     <div class="box-title">Image caps are widely used in Blog's</div>
                                 </div>
                                 <div class="box-body">
-                                    <p class="text-[0.813rem] mb-1 text-gray-500 dark:text-white/70">This is a wider box with supporting text below
+                                    <p class="text-[0.813rem] mb-1 text-gray-500">This is a wider box with supporting text below
                                     as
                                     a natural lead-in to additional content. This content is a
                                     little
@@ -1125,7 +1125,7 @@
                                             </div>
                                                 <div class="">
                                                     <div class="text-base font-semibold">Jacob Smith</div>
-                                                    <p class="mb-0 text-gray-500 dark:text-white/70 opacity-70 text-xs">Finished by 24,Nov</p>
+                                                    <p class="mb-0 text-gray-500 opacity-70 text-xs">Finished by 24,Nov</p>
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto">
                                                 <div class="hs-dropdown ti-dropdown">
@@ -1287,10 +1287,10 @@
                                     </div>
                                 </div>
                                 <div class="xxl:col-span-3 col-span-12">
-                                    <div class="box border border-gray-200 dark:border-white/10">
+                                    <div class="box border border-gray-200">
                                         <div class="box-body">
                                             <p class="text-sm font-semibold mb-2 leading-none">New Employees
-                                            <a aria-label="anchor" href="javascript:void(0);"><i class="ri ri-add-box-line my-auto leading-none ltr:float-right rtl:float-left dark:text-white text-lg font-normal"></i></a>
+                                            <a aria-label="anchor" href="javascript:void(0);"><i class="ri ri-add-box-line my-auto leading-none ltr:float-right rtl:float-left text-lg font-normal"></i></a>
                                             </p>
                                             <div class="mb-6">
                                                 <span class="badge py-1 rounded-sm bg-warning/10 text-warning">Html</span>
@@ -1309,7 +1309,7 @@
                                     <div class="box border border-dark">
                                         <div class="box-body">
                                             <p class="text-sm font-semibold mb-2 leading-none">Terminated Employees
-                                            <a aria-label="anchor" href="javascript:void(0);"><i class="ri ri-add-box-line my-auto leading-none ltr:float-right rtl:float-left text-dark dark:text-white text-lg font-normal"></i></a>
+                                            <a aria-label="anchor" href="javascript:void(0);"><i class="ri ri-add-box-line my-auto leading-none ltr:float-right rtl:float-left text-dark text-lg font-normal"></i></a>
                                             </p>
                                             <div class="mb-6">
                                                 <span class="badge py-1 rounded-sm bg-primary/10 text-primary">Angular</span>
@@ -1330,7 +1330,7 @@
                             <h6 class="text-base mb-4">Box Groups With Footer:</h6>
                             <div class="grid grid-cols-12 gap-x-6">
                                 <div class="col-span-12">
-                                <div class="grid border rounded-sm shadow-sm divide-y overflow-hidden sm:flex sm:divide-y-0 sm:divide-x dark:border-gray-700 dark:shadow-black/[0.05] dark:divide-gray-600">
+                                <div class="grid border rounded-sm shadow-sm divide-y overflow-hidden sm:flex sm:divide-y-0 sm:divide-x">
                                     <div class="mb-0 box rounded-none border-0 flex flex-col flex-[1_0_0%]">
                                         <img class="w-full h-auto rounded-t-sm ltr:sm:rounded-tr-none rtl:sm:rounded-tl-none" src="{{asset('build/assets/img/media/22.jpg')}}" alt="Image Description">
                                         <div class="box-body flex-1">
@@ -1341,7 +1341,7 @@
                                                 longer.</p>
                                         </div>
                                         <div class="box-footer">
-                                        <small class="text-gray-500 dark:text-white/70">Last updated 3 mins ago</small>
+                                        <small class="text-gray-500">Last updated 3 mins ago</small>
                                         </div>
                                     </div>
                                     <div class="mb-0 box rounded-none border-0 flex flex-col flex-[1_0_0%]">
@@ -1351,7 +1351,7 @@
                                         <p class="text-[0.813rem]">This box has supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                     <div class="box-footer">
-                                        <small class="text-gray-500 dark:text-white/70">Last updated 3 mins ago</small>
+                                        <small class="text-gray-500">Last updated 3 mins ago</small>
                                     </div>
                                     </div>
                                     <div class="mb-0 box rounded-none border-0 flex flex-col flex-[1_0_0%]">
@@ -1361,7 +1361,7 @@
                                         <p class="text-[0.813rem]">This is a wider box with supporting text below as a natural lead-in to additional content. This box has even longer content than the first to show that equal height action.</p>
                                     </div>
                                     <div class="box-footer">
-                                        <small class="text-gray-500 dark:text-white/70">Last updated 3 mins ago</small>
+                                        <small class="text-gray-500">Last updated 3 mins ago</small>
                                     </div>
                                     </div>
                                 </div>
@@ -1406,7 +1406,7 @@
                                                         </div>
                                                         <div>
                                                             <p class="text-[0.813rem] mb-0 text-sm font-semibold">Atharva Simon.</p>
-                                                            <div class="box-title text-gray-500 dark:text-white/70 text-xs mb-0">Correspondent
+                                                            <div class="box-title text-gray-500 text-xs mb-0">Correspondent
                                                                 Professor</div>
                                                         </div>
                                                     </div>
@@ -1422,7 +1422,7 @@
                                                         <div>
                                                             <p class="text-[0.813rem] text-info mb-1 text-sm font-semibold">Alicia Keys.</p>
                                                             <div class="box-title text-xs mb-1">Department Of Commerce</div>
-                                                            <div class="box-title text-gray-500 dark:text-white/70 text-xs mb-0">24 Years, Female
+                                                            <div class="box-title text-gray-500 text-xs mb-0">24 Years, Female
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1443,7 +1443,7 @@
                                                             </p>
                                                         </div>
                                                         <div class="box-footer">
-                                                            <p class="text-[0.813rem]"><small class="text-gray-500 dark:text-white/70">Last updated 3 mins
+                                                            <p class="text-[0.813rem]"><small class="text-gray-500">Last updated 3 mins
                                                                     ago</small></p>
                                                         </div>
                                                     </div>

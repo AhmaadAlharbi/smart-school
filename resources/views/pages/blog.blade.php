@@ -17,16 +17,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Blog</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Blog</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Blog
                                     </li>
                                 </ol>
@@ -45,7 +45,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-success font-semibold">Music</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
@@ -63,20 +63,20 @@
                                                 alt="avatar">
                                             </div>
                                             <div>
-                                            <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                            <p class="text-slate-700 font-semibold text-sm">
                                                 Json Taylor
                                             </p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">
+                                            <p class="text-xs text-gray-500">
                                                 20 min ago
                                             </p>
                                             </div>
                                         </div>
                                         <div class="">
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-heart-line"></i><span class="my-2">30</span></a>
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-thumb-up-line"></i><span class="my-2">25k</span></a>
                                         </div>
                                         </div>
@@ -91,7 +91,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-danger font-semibold">Marketing</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -108,20 +108,20 @@
                                                 alt="avatar">
                                             </div>
                                             <div>
-                                            <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                            <p class="text-slate-700 font-semibold text-sm">
                                                 Json Taylor
                                             </p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">
+                                            <p class="text-xs text-gray-500">
                                                 20 min ago
                                             </p>
                                             </div>
                                         </div>
                                         <div class="">
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-heart-line"></i><span class="my-2">30</span></a>
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-thumb-up-line"></i><span class="my-2">25k</span></a>
                                         </div>
                                         </div>
@@ -133,7 +133,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-info font-semibold">Bussiness</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.Some quick title and make up the bulk of the
                                             card's content.
@@ -153,7 +153,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-warning font-semibold">Tourism</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -171,7 +171,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-secondary font-semibold">Trucking</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -191,7 +191,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-danger font-semibold">Technology</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -208,20 +208,20 @@
                                                 alt="avatar">
                                             </div>
                                             <div>
-                                            <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                            <p class="text-slate-700 font-semibold text-sm">
                                                 Json Taylor
                                             </p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">
+                                            <p class="text-xs text-gray-500">
                                                 20 min ago
                                             </p>
                                             </div>
                                         </div>
                                         <div class="">
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-heart-line"></i><span class="my-2">30</span></a>
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-thumb-up-line"></i><span class="my-2">25k</span></a>
                                         </div>
                                         </div>
@@ -236,7 +236,7 @@
                                         <a href="javascript:void(0);" class="text-sm leading-[0] text-secondary font-semibold">Nature</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -253,20 +253,20 @@
                                                 alt="avatar">
                                             </div>
                                             <div>
-                                            <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                            <p class="text-slate-700 font-semibold text-sm">
                                                 Json Taylor
                                             </p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">
+                                            <p class="text-xs text-gray-500">
                                                 20 min ago
                                             </p>
                                             </div>
                                         </div>
                                         <div class="">
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-heart-line"></i><span class="my-2">30</span></a>
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-thumb-up-line"></i><span class="my-2">25k</span></a>
                                         </div>
                                         </div>
@@ -281,7 +281,7 @@
                                         <a href="javascript:void(0);" class="text-xs leading-[0] text-warning font-semibold">Travel</a>
                                         <h5 class="font-semibold mb-0 text-lg leading-none">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit.</h5>
-                                        <p class="mt-3 mb-3 text-gray-500 dark:text-white/70 text-sm">
+                                        <p class="mt-3 mb-3 text-gray-500 text-sm">
                                             Some quick example text to build on the card title and make up the bulk of the
                                             card's content.
                                         </p>
@@ -298,20 +298,20 @@
                                                 alt="avatar">
                                             </div>
                                             <div>
-                                            <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                            <p class="text-slate-700 font-semibold text-sm">
                                                 Json Taylor
                                             </p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">
+                                            <p class="text-xs text-gray-500">
                                                 20 min ago
                                             </p>
                                             </div>
                                         </div>
                                         <div class="">
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-heart-line"></i><span class="my-2">30</span></a>
                                             <a href="javascript:void(0);"
-                                            class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                            class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                 class="text-xs ri ri-thumb-up-line"></i><span class="my-2">25k</span></a>
                                         </div>
                                         </div>
@@ -381,62 +381,62 @@
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="ti-list-group pt-0 px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group pt-0 px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/7.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>Sept 29 , 2022</span></p>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/9.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>3 hours ago</span></p>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/8.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>30 mins ago</span></p>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/3.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>l day ago</span></p>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/2.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>l day ago</span></p>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="ti-list-group px-0 pb-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 pb-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/8.jpg')}}" class="avatar avatar-lg rounded-sm ring-0" alt="Image Description">
                                         <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>30 mins ago</span></p>
                                         </div>
                                         </a>
@@ -450,43 +450,43 @@
                                     <h5 class="box-title">Categories</h5>
                                 </div>
                                 <div class="box-body">
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Lifestyle
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Health
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Tour
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Music
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Travel
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Nature
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Tourism
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Hotels
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Marketing
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Development
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Shopping
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Realestate
                                     </span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">
+                                    <span class="badge bg-gray-100 text-gray-800">
                                     #Business
                                     </span>
                                 </div>

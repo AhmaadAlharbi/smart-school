@@ -35,12 +35,12 @@
                                     <div class="box-body">
                                     <div class="space-x-3 flex rtl:space-x-reverse">
                                         <div
-                                        class="bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary p-3 rounded-full leading-none text-center avatar">
+                                        class="bg-primary/20 text-primary p-3 rounded-full leading-none text-center avatar">
                                         <i class="ri-smartphone-line text-2xl leading-none"></i>
                                         </div>
                                         <div>
                                         <h5 class="font-semibold text-base">Phone number</h5>
-                                        <p class="text-gray-500 dark:text-white/70"> + 01 234 567 88</p>
+                                        <p class="text-gray-500"> + 01 234 567 88</p>
                                         </div>
                                     </div>
                                     </div>
@@ -51,12 +51,12 @@
                                     <div class="box-body">
                                     <div class="space-x-3 flex rtl:space-x-reverse">
                                         <div
-                                        class="bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary p-3 rounded-full leading-none text-center avatar">
+                                        class="bg-primary/20 text-primary p-3 rounded-full leading-none text-center avatar">
                                         <i class="ri-mail-line text-2xl leading-none"></i>
                                         </div>
                                         <div>
                                         <h5 class="font-semibold text-base">Email Address</h5>
-                                        <p class="text-gray-500 dark:text-white/70"> info12323@example.com</p>
+                                        <p class="text-gray-500"> info12323@example.com</p>
                                         </div>
                                     </div>
                                     </div>
@@ -67,12 +67,12 @@
                                     <div class="box-body">
                                     <div class="space-x-3 flex rtl:space-x-reverse">
                                         <div
-                                        class="bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary p-3 rounded-full leading-none text-center avatar">
+                                        class="bg-primary/20 text-primary p-3 rounded-full leading-none text-center avatar">
                                         <i class="ri-map-pin-line text-2xl leading-none"></i>
                                         </div>
                                         <div>
                                         <h5 class="font-semibold text-base">Address</h5>
-                                        <p class="text-gray-500 dark:text-white/70"> New York, NY 10012, US-52014</p>
+                                        <p class="text-gray-500"> New York, NY 10012, US-52014</p>
                                         </div>
                                     </div>
                                     </div>
@@ -95,7 +95,7 @@
                                 <div class="box-body">
                                     <div class="my-auto text-center">
                                     <h2 class="mb-2 font-semibold text-2xl leading-none text-start">Contact Form</h2>
-                                    <p class="text-gray-500 dark:text-white/70 text-start">Ask us everything and we would love to hear
+                                    <p class="text-gray-500 text-start">Ask us everything and we would love to hear
                                         from you</p>
                                     <div class="mt-5">
                                         <div class="space-y-4 text-start">

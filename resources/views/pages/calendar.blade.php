@@ -17,16 +17,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Calendar</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Calendar</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Advanced Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Calendar
                                     </li>
                                 </ol>
@@ -69,7 +69,7 @@
                                         <div class="fc-event-main">My Event 6</div>
                                     </div>
                                     </div>
-                                    <div class="border-y border-dashed border-gray-200 dark:border-white/10">
+                                    <div class="border-y border-dashed border-gray-200">
                                     <div class="p-4 flex items-center justify-between">
                                         <h6 class="font-semibold my-auto text-xl">
                                         Activity :
@@ -85,7 +85,7 @@
                                             </p>
                                             <span class="badge rounded-sm bg-gray-100 text-gray-800 mb-1 p-1">12:00PM-1:00PM</span>
                                             </div>
-                                            <p class="mb-0 text-gray-500 dark:text-white/70 text-xs">
+                                            <p class="mb-0 text-gray-500 text-xs">
                                             Meeting with a client about new project requirement.
                                             </p>
                                         </li>
@@ -96,7 +96,7 @@
                                             </p>
                                             <span class="badge rounded-sm bg-success text-white mb-1 p-1">Completed</span>
                                             </div>
-                                            <p class="mb-0 text-gray-500 dark:text-white/70 text-xs">
+                                            <p class="mb-0 text-gray-500 text-xs">
                                             Birthday party of niha suka
                                             </p>
                                         </li>
@@ -107,7 +107,7 @@
                                             </p>
                                             <span class="badge  rounded-sm bg-warning/10 text-warning mb-1 p-1">Reminder</span>
                                             </div>
-                                            <p class="mb-0 text-gray-500 dark:text-white/70 text-xs">
+                                            <p class="mb-0 text-gray-500 text-xs">
                                             WOrk taget for new project is completing
                                             </p>
                                         </li>
@@ -118,7 +118,7 @@
                                             </p>
                                             <span class="badge rounded-sm bg-gray-100 text-gray-800 mb-1 p-1">06:00PM - 09:00PM</span>
                                             </div>
-                                            <p class="mb-0 text-gray-500 dark:text-white/70 text-xs">
+                                            <p class="mb-0 text-gray-500 text-xs">
                                             Watch new movie with family
                                             </p>
                                         </li>
@@ -129,7 +129,7 @@
                                             </p>
                                             <span class="badge  rounded-sm bg-danger/10 text-danger mb-1 p-1">Due Date</span>
                                             </div>
-                                            <p class="mb-0 text-gray-500 dark:text-white/70 text-xs">
+                                            <p class="mb-0 text-gray-500 text-xs">
                                             Last day to pay the electricity bill and water bill.need to check the bank details.
                                             </p>
                                         </li>

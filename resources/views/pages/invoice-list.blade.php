@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Invoice</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Invoice</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Invoice
                                     </li>
                                 </ol>
@@ -54,11 +54,11 @@
                                                             class="px-3 py-2 ltr:pr-10 rtl:pl-10 ti-form-input" placeholder="Search for items">
                                                         <div
                                                             class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center pointer-events-none ltr:pr-4 rtl:pl-4">
-                                                            <i class="ri-search-line text-gray-500 dark:text-white/70"></i>
+                                                            <i class="ri-search-line text-gray-500"></i>
                                                         </div>
                                                     </div>
                                                     <button aria-label="button" type="button"
-                                                        class="ti-btn px-3 py-2 ti-btn-outline border-gray-200 text-gray-500 dark:text-white/70 hover:text-white hover:bg-gray-500 hover:border-gray-500 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10 m-0">
+                                                        class="ti-btn px-3 py-2 ti-btn-outline border-gray-200 text-gray-500 hover:text-white hover:bg-gray-500 hover:border-gray-500 focus:ring-gray-200  m-0">
                                                         <i class="ri-refresh-line leading-none text-lg"></i>
                                                     </button>
                                                     <button aria-label="button" type="button" id="delete-btn" class="ti-btn px-3 py-2 ti-btn-danger m-0">
@@ -68,8 +68,8 @@
                                                 <div class="sm:space-x-3 sm:flex space-y-3 sm:space-y-0 rtl:space-x-reverse">
                                                     <div class="inline-flex">
                                                         <div
-                                                            class="px-4 py-2 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                            <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                                            class="px-4 py-2 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                                            <span class="text-sm text-gray-500"><i
                                                                     class="ri ri-calendar-line"></i></span>
                                                         </div>
 
@@ -112,7 +112,7 @@
                                             </div>
                                             <div class="mt-5 table-bordered rounded-sm ti-custom-table-head overflow-auto">
                                                 <table class="ti-custom-table ti-custom-table-head edit-table whitespace-nowrap text-center">
-                                                    <thead class="bg-gray-50 dark:bg-black/20">
+                                                    <thead class="bg-gray-50">
                                                         <tr class="cart-box">
                                                             <th scope="col" class="dark:text-white/70">
                                                                 <div class="flex leading-[0] justify-center">
@@ -120,7 +120,7 @@
                                                                         class="border-gray-500 ti-form-checkbox mt-0.5 check-all"
                                                                         id="hs-default-checkbox">
                                                                     <label for="hs-default-checkbox"
-                                                                        class="text-sm text-gray-500 dark:text-white/70"></label>
+                                                                        class="text-sm text-gray-500"></label>
                                                                 </div>
                                                             </th>
                                                             <th scope="col" class="dark:text-white/70">Invoice Id</th>
@@ -148,8 +148,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/2.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Socrates Itumay</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">socratesitumany@abc.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Socrates Itumay</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">socratesitumany@abc.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -163,7 +163,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -174,7 +174,7 @@
                                                                         data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -185,7 +185,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -207,8 +207,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/3.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Json Taylor</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">jsontaylor2416@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Json Taylor</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">jsontaylor2416@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -221,7 +221,7 @@
                                                                 <div class="hs-tooltip ti-main-tooltip">
                                                                     <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -232,7 +232,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -243,7 +243,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -265,8 +265,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Suzika Stallone</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">suzikastallone3214@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Suzika Stallone</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">suzikastallone3214@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -280,7 +280,7 @@
                                                                     <a href="javascript:void(0);"
                                                                 class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -291,7 +291,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -302,7 +302,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -324,8 +324,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/5.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Selena Deoyl</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">selenadeoyl114@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Selena Deoyl</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">selenadeoyl114@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -339,7 +339,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -350,7 +350,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -361,7 +361,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -383,8 +383,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/9.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Roman Killon</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">romankillon143@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Roman Killon</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">romankillon143@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -398,7 +398,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -409,7 +409,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -420,7 +420,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -442,8 +442,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/10.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Charlie Davieson</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">charliedavieson@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Charlie Davieson</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">charliedavieson@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -457,7 +457,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -468,7 +468,7 @@
                                                                         data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -479,7 +479,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -501,8 +501,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/11.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Joseph Samurai</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">josephsamurai@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Joseph Samurai</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">josephsamurai@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -516,7 +516,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -527,7 +527,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -538,7 +538,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -560,8 +560,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/12.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Kevin Powell</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">kevinpowell@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Kevin Powell</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">kevinpowell@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -575,7 +575,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -586,7 +586,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -597,7 +597,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -619,8 +619,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/6.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Darla Jung</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">darlajung555@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Darla Jung</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">darlajung555@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -634,7 +634,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -645,7 +645,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -656,7 +656,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -678,8 +678,8 @@
                                                                     <img class="avatar avatar-sm rounded-sm"
                                                                         src="{{asset('build/assets/img/users/7.jpg')}}" alt="Image Description">
                                                                     <div class="block">
-                                                                        <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">Kiara Advensh</p>
-                                                                        <p class="block text-xs text-gray-500 dark:text-white/70 my-auto">kiaraadvensh87@gmail.com</p>
+                                                                        <p class="block text-sm font-semibold text-gray-800 my-auto">Kiara Advensh</p>
+                                                                        <p class="block text-xs text-gray-500 my-auto">kiaraadvensh87@gmail.com</p>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -693,7 +693,7 @@
                                                                     <a href="javascript:void(0);"
                                                                     class="m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                                         <i class="ti ti-send"></i>
-                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                        <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Send
                                                                         </span>
@@ -704,7 +704,7 @@
                                                                     data-hs-overlay="#invoice-modal" class="invoice-edit m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                                         <i class="ti ti-pencil"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Edit
                                                                         </span>
@@ -715,7 +715,7 @@
                                                                         class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                         <i class="ti ti-trash"></i>
                                                                         <span
-                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                            class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                             role="tooltip">
                                                                             Delete
                                                                         </span>
@@ -727,14 +727,14 @@
                                                 </table>
                                             </div>
                                             <nav class="flex justify-end items-center space-x-2 rtl:space-x-reverse mt-5">
-                                                <a class="w-10 h-10 bg-white dark:bg-black/20 text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center text-sm font-medium items-center gap-2 rounded-full" href="javascript:void(0);">
+                                                <a class="w-10 h-10 bg-white text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center text-sm font-medium items-center gap-2 rounded-full" href="javascript:void(0);">
                                                 <span aria-hidden="true">«</span>
                                                 <span class="sr-only">Previous</span>
                                                 </a>
                                                 <a class="w-10 h-10 bg-primary text-white p-2 inline-flex items-center justify-center text-sm font-medium rounded-full" href="javascript:void(0);" aria-current="page">1</a>
-                                                <a class="w-10 h-10 bg-white dark:bg-black/20 text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
-                                                <a class="w-10 h-10 bg-white dark:bg-black/20 text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
-                                                <a class="w-10 h-10 bg-white dark:bg-black/20 text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center text-sm font-medium items-center gap-2 rounded-full" href="javascript:void(0);">
+                                                <a class="w-10 h-10 bg-white text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
+                                                <a class="w-10 h-10 bg-white text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
+                                                <a class="w-10 h-10 bg-white text-gray-500 hover:bg-primary hover:text-white p-2 inline-flex justify-center text-sm font-medium items-center gap-2 rounded-full" href="javascript:void(0);">
                                                 <span class="sr-only">Next</span>
                                                 <span aria-hidden="true">»</span>
                                                 </a>
@@ -773,8 +773,8 @@
                                     <div class="flex flex-col md:flex-row space-y-6 justify-between mb-5">
                                         <div class="space-y-2">
                                             <div class="mb-2">
-                                                <img src="{{asset('build/assets/img/brand-logos/desktop-logo.png')}}" alt="logo" class="flex dark:hidden">
-                                                <img src="{{asset('build/assets/img/brand-logos/desktop-dark.png')}}" alt="logo" class="hidden dark:flex">
+                                                <img src="{{asset('build/assets/img/brand-logos/desktop-logo.png')}}" alt="logo" class="flex">
+                                                <img src="{{asset('build/assets/img/brand-logos/desktop-dark.png')}}" alt="logo" class="hidden">
                                             </div>
                                             <input type="text" class="company-name ti-form-input md:w-72" placeholder="Company Name">
                                             <input type="text" class="company-address ti-form-input md:w-72" placeholder="Company Address">
@@ -787,7 +787,7 @@
                                             <div class="mt-1 flex"><input type="text" class="due-date ti-form-input md:w-72 text-end sm:ltr:ml-3 sm:rtl:mr-3 flatpickr-input invoice-date font-normal" placeholder="Due Date" readonly></div>
                                         </div>
                                     </div>
-                                    <hr class="pb-5 dark:border-t-white/10">
+                                    <hr class="pb-5">
                                     <div class="grid grid-cols-12 gap-6 mb-5">
                                         <div class="lg:col-span-6 col-span-12">
                                             <div class="space-y-3 inline-block">
@@ -812,8 +812,8 @@
                                     </div>
                                     <div class="py-5">
                                         <div class="overflow-auto lg:overflow-hidden">
-                                            <table class="ti-custom-table !border dark:border-white/10 !border-x-0 text-center">
-                                            <thead class="bg-gray-50 dark:bg-black/20 overflow-hidden">
+                                            <table class="ti-custom-table !border !border-x-0 text-center">
+                                            <thead class="bg-gray-50 overflow-hidden">
                                                 <tr>
                                                 <th scope="col" class="!text-center">S.No</th>
                                                 <th scope="col" class="!text-center">Product</th>
@@ -850,7 +850,7 @@
                                                                 class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -884,7 +884,7 @@
                                                                 class="invoice-btn m-0 hs-tooltip-toggle relative  w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                                 <i class="ti ti-trash"></i>
                                                                 <span
-                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                                     role="tooltip">
                                                                     Delete
                                                                 </span>
@@ -893,7 +893,7 @@
                                                     </td>
                                                 </tr>
                                             </tbody>
-                                            <tbody class="border-t border-b-0 border-x-0 border-gray-200 dark:border-white/10">
+                                            <tbody class="border-t border-b-0 border-x-0 border-gray-200">
                                                 <tr class="!border-b-0">
                                                     <td colspan="3" class="!p-1"></td>
                                                     <td class="!pb-1">Sub-Total</td>

@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Dropdown</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Dropdown</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                     Basic Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Dropdown
                                     </li>
                                 </ol>
@@ -389,7 +389,7 @@
                                         <div class="box-body">
                                             <div class="hs-dropdown ti-dropdown">
                                                 <button id="hs-dropdown-custom-trigger" type="button"
-                                                    class="hs-dropdown-toggle py-1 ltr:pl-1 ltr:pr-3 rtl:pr-1 rtl:pl-3 ti-dropdown-toggle rounded-full dark:hover:bg-black/20">
+                                                    class="hs-dropdown-toggle py-1 ltr:pl-1 ltr:pr-3 rtl:pr-1 rtl:pl-3 ti-dropdown-toggle rounded-full">
                                                     <img class="ti-dropdowm-profileimg" src="{{asset('build/assets/img/users/1.jpg')}}" alt="Maria">
                                                     <span class="ti-dropdowm-profileimg-content">Maria</span>
                                                     <svg class="hs-dropdown-open:rotate-180 ti-dropdown-caret" width="16"
@@ -556,7 +556,7 @@
                                                 <div class="hs-dropdown-menu ti-dropdown-menu transition-none"
                                                     aria-labelledby="hs-dropdown-item-checkbox1">
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-checkbox-delete"
                                                                 name="hs-dropdown-item-checkbox-delete" type="checkbox"
@@ -566,14 +566,14 @@
                                                         </div>
                                                         <label for="hs-dropdown-item-checkbox-delete" class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="block text-sm font-semibold text-gray-800 dark:text-white">Delete</span>
+                                                                class="block text-sm font-semibold text-gray-800">Delete</span>
                                                             <span id="hs-dropdown-item-checkbox-delete-description"
-                                                                class="block text-sm text-gray-600 dark:text-white/70">Notify me
+                                                                class="block text-sm text-gray-600">Notify me
                                                                 when this action happens.</span>
                                                         </label>
                                                     </div>
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-checkbox-archive1"
                                                                 name="hs-dropdown-item-checkbox-archive1" type="checkbox"
@@ -583,9 +583,9 @@
                                                         <label for="hs-dropdown-item-checkbox-archive1"
                                                             class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="block text-sm font-semibold text-gray-800 dark:text-white">Archive</span>
+                                                                class="block text-sm font-semibold text-gray-800">Archive</span>
                                                             <span id="hs-dropdown-item-checkbox-archive-description"
-                                                                class="block text-sm text-gray-600 dark:text-white/70">Notify me
+                                                                class="block text-sm text-gray-600">Notify me
                                                                 when this action happens.</span>
                                                         </label>
                                                     </div>
@@ -616,7 +616,7 @@
                                                 <div class="hs-dropdown-menu transition-none ti-dropdown-menu"
                                                     aria-labelledby="hs-dropdown-item-checkbox2">
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-radio-delete" name="hs-dropdown-item-radio"
                                                                 type="radio" class="ti-form-radio"
@@ -625,14 +625,14 @@
                                                         </div>
                                                         <label for="hs-dropdown-item-radio-delete" class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="block text-sm font-semibold text-gray-800 dark:text-white">Delete</span>
+                                                                class="block text-sm font-semibold text-gray-800">Delete</span>
                                                             <span id="hs-dropdown-item-radio-delete-description"
-                                                                class="block text-sm text-gray-600 dark:text-white/70">Notify me
+                                                                class="block text-sm text-gray-600">Notify me
                                                                 when this action happens.</span>
                                                         </label>
                                                     </div>
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-radio-archive" name="hs-dropdown-item-radio"
                                                                 type="radio" class="ti-form-radio"
@@ -640,9 +640,9 @@
                                                         </div>
                                                         <label for="hs-dropdown-item-radio-archive" class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="block text-sm font-semibold text-gray-800 dark:text-white">Archive</span>
+                                                                class="block text-sm font-semibold text-gray-800">Archive</span>
                                                             <span id="hs-dropdown-item-radio-archive-description"
-                                                                class="block text-sm text-gray-600 dark:text-white/70">Notify me
+                                                                class="block text-sm text-gray-600">Notify me
                                                                 when this action happens.</span>
                                                         </label>
                                                     </div>
@@ -964,7 +964,7 @@
                                                 <div class="hs-dropdown-menu ti-dropdown-menu transition-none"
                                                     aria-labelledby="hs-dropdown-auto-close-inside">
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-checkbox-delete1"
                                                                 name="hs-dropdown-item-checkbox-delete1" type="checkbox"
@@ -973,11 +973,11 @@
                                                         <label for="hs-dropdown-item-checkbox-delete1"
                                                             class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="mt-1 block text-sm font-semibold text-gray-800 dark:text-white">Delete</span>
+                                                                class="mt-1 block text-sm font-semibold text-gray-800">Delete</span>
                                                         </label>
                                                     </div>
                                                     <div
-                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100 dark:hover:bg-black/20">
+                                                        class="relative flex items-start py-2 px-3 rounded-sm hover:bg-gray-100">
                                                         <div class="flex items-center h-5 mt-1">
                                                             <input id="hs-dropdown-item-checkbox-archive"
                                                                 name="hs-dropdown-item-checkbox-archive" type="checkbox"
@@ -986,7 +986,7 @@
                                                         <label for="hs-dropdown-item-checkbox-archive"
                                                             class="ltr:ml-3.5 rtl:mr-3.5">
                                                             <span
-                                                                class="mt-1 block text-sm font-semibold text-gray-800 dark:text-white">Archive</span>
+                                                                class="mt-1 block text-sm font-semibold text-gray-800">Archive</span>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -1548,7 +1548,7 @@
                                             </div>
                                             <div class="hs-dropdown ti-dropdown">
                                                 <button id="hs-dropdown-default15" type="button"
-                                                    class="hs-dropdown-toggle py-3 px-4 ti-btn bg-primary text-white hover:bg-primary focus:ring-primary sm:p-5 dark:focus:ring-offset-white/10">
+                                                    class="hs-dropdown-toggle py-3 px-4 ti-btn bg-primary text-white hover:bg-primary focus:ring-primary sm:p-5">
                                                     Large Dropdown
                                                     <svg class="fill-white text-white hs-dropdown-open:rotate-180 ti-dropdown-caret"
                                                         width="16" height="16" viewBox="0 0 16 16" fill="none"

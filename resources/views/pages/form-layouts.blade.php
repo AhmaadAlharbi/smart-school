@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Form Layouts</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Form Layouts</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Forms
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Form Layouts
                                     </li>
                                 </ol>
@@ -56,7 +56,7 @@
                                                 <div class="flex">
                                                     <input type="checkbox" class="ti-form-checkbox mt-0.5" id="hs-checkbox-group-11">
                                                     <label for="hs-checkbox-group-11"
-                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">I agree with the <a
+                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">I agree with the <a
                                                             href="javascript:void(0);" class="text-primary hover:underline">terms and
                                                             conditions</a></label>
                                                 </div>
@@ -86,7 +86,7 @@
                                                         <input type="checkbox" class=" ti-form-checkbox mt-0.5"
                                                             id="hs-checkbox-group-12">
                                                         <label for="hs-checkbox-group-12"
-                                                            class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">I agree with the
+                                                            class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">I agree with the
                                                             <a href="javascript:void(0);" class="text-primary hover:underline">terms and
                                                                 conditions</a></label>
                                                     </div>
@@ -125,7 +125,7 @@
                                                 <div class="col-span-12 lg:col-span-3 sm:inline-flex sm:items-center space-y-2 sm:space-y-0 sm:space-x-3 w-full rtl:space-x-reverse">
                                                     <input type="checkbox" class="ti-form-checkbox mt-0.5" id="hs-checkbox-group-13">
                                                     <label for="hs-checkbox-group-13"
-                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">I agree with the <a
+                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">I agree with the <a
                                                             href="javascript:void(0);" class="text-primary hover:underline">terms and
                                                             conditions</a></label>
                                                 </div>
@@ -182,7 +182,7 @@
                                                         <label class="ti-form-label mb-0">Gender</label>
                                                         <ul class="flex flex-col sm:flex-row">
                                                             <li
-                                                                class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                                                class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm">
                                                                 <div class="relative flex items-start w-full">
                                                                     <div class="flex items-center h-5">
                                                                         <input id="hs-horizontal-list-group-item-radio-1"
@@ -190,14 +190,14 @@
                                                                             class="ti-form-radio" checked>
                                                                     </div>
                                                                     <label for="hs-horizontal-list-group-item-radio-1"
-                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600 dark:text-white/70">
+                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600">
                                                                         Female
                                                                     </label>
                                                                 </div>
                                                             </li>
 
                                                             <li
-                                                            class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                                            class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm">
                                                             <div class="relative flex items-start w-full">
                                                                     <div class="flex items-center h-5">
                                                                         <input id="hs-horizontal-list-group-item-radio-2"
@@ -205,14 +205,14 @@
                                                                             class="ti-form-radio">
                                                                     </div>
                                                                     <label for="hs-horizontal-list-group-item-radio-2"
-                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600 dark:text-white/70">
+                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600">
                                                                         Male
                                                                     </label>
                                                                 </div>
                                                             </li>
 
                                                             <li
-                                                            class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                                            class="ti-list-group gap-x-2.5 bg-white border text-gray-800 ltr:sm:-ml-px rtl:sm:-mr-px sm:mt-0 ltr:sm:first:rounded-tr-none ltr:sm:first:rounded-tl-none rtl:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:first:rounded-bl-sm rtl:sm:first:rounded-br-sm ltr:sm:last:rounded-bl-none ltr:sm:last:rounded-br-none rtl:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-tr-sm rtl:sm:last:rounded-tl-sm">
                                                             <div class="relative flex items-start w-full">
                                                                     <div class="flex items-center h-5">
                                                                         <input id="hs-horizontal-list-group-item-radio-3"
@@ -220,7 +220,7 @@
                                                                             class="ti-form-radio">
                                                                     </div>
                                                                     <label for="hs-horizontal-list-group-item-radio-3"
-                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600 dark:text-white/70">
+                                                                        class="ltr:ml-3 rtl:mr-3 block w-full text-sm text-gray-600">
                                                                         Others
                                                                     </label>
                                                                 </div>
@@ -251,7 +251,7 @@
                                                 <div class="my-5">
                                                     <input type="checkbox" class="ti-form-checkbox mt-0.5" id="hs-checkbox-group-4">
                                                     <label for="hs-checkbox-group-4"
-                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">I agree with the <a
+                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">I agree with the <a
                                                             href="javascript:void(0);" class="text-primary hover:underline">terms and
                                                             conditions</a></label>
                                                 </div>
@@ -334,7 +334,7 @@
                                                 <div class="my-5">
                                                     <input type="checkbox" class="ti-form-checkbox mt-0.5" id="hs-checkbox-group-1">
                                                     <label for="hs-checkbox-group-1"
-                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70">Save my card for
+                                                        class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3">Save my card for
                                                         future purchases </label>
                                                 </div>
                                                 <button type="submit" class="ti-btn ti-btn-primary w-full">Complete Payment</button>

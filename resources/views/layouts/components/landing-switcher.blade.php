@@ -5,7 +5,7 @@
                 Switcher
             </h3>
             <button type="button"
-                class="ti-btn flex-shrink-0 p-0 transition-none text-gray-500 hover:text-gray-700 focus:ring-gray-400 focus:ring-offset-white dark:text-white/70 dark:hover:text-white/80 dark:focus:ring-white/10 dark:focus:ring-offset-white/10"
+                class="ti-btn flex-shrink-0 p-0 transition-none text-gray-500 hover:text-gray-700 focus:ring-gray-400 focus:ring-offset-white"
                 data-hs-overlay="#hs-overlay-switcher">
                 <span class="sr-only">Close modal</span>
                 <i class="ri-close-circle-line leading-none text-lg"></i>
@@ -19,12 +19,12 @@
                     <div class="flex">
                     <input type="radio" name="theme-style" class="ti-form-radio" id="switcher-light-theme" checked>
                     <label for="switcher-light-theme"
-                        class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70">Light</label>
+                        class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2">Light</label>
                     </div>
                     <div class="flex">
                     <input type="radio" name="theme-style" class="ti-form-radio" id="switcher-dark-theme">
                     <label for="switcher-dark-theme"
-                        class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70">Dark</label>
+                        class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2">Dark</label>
                     </div>
                 </div>
                 </div>
@@ -33,11 +33,11 @@
                 <div class="grid grid-cols-3 gap-6 switcher-style">
                     <div class="flex">
                     <input type="radio" name="direction" class="ti-form-radio" id="switcher-ltr" checked>
-                    <label for="switcher-ltr" class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70">LTR</label>
+                    <label for="switcher-ltr" class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2">LTR</label>
                     </div>
                     <div class="flex">
                     <input type="radio" name="direction" class="ti-form-radio" id="switcher-rtl">
-                    <label for="switcher-rtl" class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70">RTL</label>
+                    <label for="switcher-rtl" class="text-xs text-gray-500 ltr:ml-2 rtl:mr-2">RTL</label>
                     </div>
                 </div>
                 </div>

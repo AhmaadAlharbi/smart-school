@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> FileManager</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> FileManager</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Advanced Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         FileManager
                                     </li>
                                 </ol>
@@ -51,13 +51,13 @@
                                         <canvas id="storage-circle" class="chartjs-chart w-full"></canvas>
                                     </div>
                                     <div class="grid grid-cols-12 gap-6 overflow-auto">
-                                        <div class="col-span-12 lg:col-span-6 text-center ltr:border-r dark:border-white/10 rtl:border-l">
+                                        <div class="col-span-12 lg:col-span-6 text-center ltr:border-r rtl:border-l">
                                         <h3 class="font-bold">512Mb</h3>
-                                        <p class="text-gray-500 dark:text-white/70 text-sm">Total Space</p>
+                                        <p class="text-gray-500 text-sm">Total Space</p>
                                         </div>
                                         <div class="col-span-12 lg:col-span-6  text-center">
                                         <h3 class="font-bold">480Mb</h3>
-                                        <p class="text-gray-500 dark:text-white/70 text-sm">Total Space Used</p>
+                                        <p class="text-gray-500 text-sm">Total Space Used</p>
                                         </div>
                                     </div>
                                     </div>
@@ -94,7 +94,7 @@
                                 <div class="box">
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -106,15 +106,15 @@
                                             <h3 class="text-sm font-semibold">
                                                 Image
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">20GB</p>
+                                            <p class="text-xs text-gray-500">20GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -126,15 +126,15 @@
                                             <h3 class="text-sm font-semibold">
                                                 Documents
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">1.5GB</p>
+                                            <p class="text-xs text-gray-500">1.5GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -146,15 +146,15 @@
                                             <h3 class="text-sm font-semibold">
                                                 Video
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">1.25GB</p>
+                                            <p class="text-xs text-gray-500">1.25GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -166,15 +166,15 @@
                                             <h3 class="text-sm font-semibold">
                                                 Audio
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">2GB</p>
+                                            <p class="text-xs text-gray-500">2GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -186,15 +186,15 @@
                                             <h3 class="text-sm font-semibold">
                                                 Archive
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">1.3GB</p>
+                                            <p class="text-xs text-gray-500">1.3GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
@@ -206,31 +206,31 @@
                                             <h3 class="text-sm font-semibold">
                                                 Zip
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">1.5GB</p>
+                                            <p class="text-xs text-gray-500">1.5GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm">
                                         <div class="flex items-center justify-between">
                                         <div class="flex items-center space-x-3 rtl:space-x-reverse">
                                             <div>
                                             <span class="font-medium">
-                                                <i class="ri ri-folder-line text-gray-400 dark:text-white text-xl"></i>
+                                                <i class="ri ri-folder-line text-gray-400 text-xl"></i>
                                             </span>
                                             </div>
                                             <div class="ltr:ml-3 rtl:mr-3">
                                             <h3 class="text-sm font-semibold">
                                                 Others
                                             </h3>
-                                            <p class="text-xs text-gray-500 dark:text-white/70">5GB</p>
+                                            <p class="text-xs text-gray-500">5GB</p>
                                             </div>
                                         </div>
                                         <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                         </div>
                                         </div>
                                     </li>
@@ -253,49 +253,49 @@
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-image-line text-xl text-primary p-3 bg-primary/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Image</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Image</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-vidicon-line text-xl text-secondary p-3 bg-secondary/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Video</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Video</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-music-2-line text-xl text-danger p-3 bg-danger/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Audio</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Audio</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-file-line text-xl text-info p-3 bg-info/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Document</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Document</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-smartphone-line text-xl text-warning p-3 bg-warning/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Pdfs</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Pdfs</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-file-line text-xl text-pink-800 p-3 bg-pink-800/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Archive</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Archive</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-download-2-line text-xl text-blue-800 p-3 bg-blue-800/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">Downloads</h3>
+                                            <h3 class="text-sm text-center text-gray-500">Downloads</h3>
                                             </div>
                                         </div>
                                         <div class="col-span-6 sm:col-span-3 mt-3 mx-auto">
                                             <div class="space-y-3">
                                             <span><i class="ri ri-folder-line text-xl text-rose-800 p-3 bg-rose-800/20 rounded-sm"></i></span>
-                                            <h3 class="text-sm text-center text-gray-500 dark:text-white/70">All Files</h3>
+                                            <h3 class="text-sm text-center text-gray-500">All Files</h3>
                                             </div>
                                         </div>
                                         </div>
@@ -360,12 +360,12 @@
                                     <div class="box">
                                         <div class="box-body space-y-3">
                                         <p class="text-base font-semibold py-2 inline-flex"><i class="ri ri-smartphone-line text-lg ltr:mr-2 rtl:ml-2 p-2.5 bg-primary/20 text-primary rounded-full avatar avatar-sm leading-none"></i><span>Internal Storage</span></p>
-                                        <div class="ti-main-progress bg-gray-200 dark:bg-black/20 h-2">
+                                        <div class="ti-main-progress bg-gray-200 h-2">
                                             <div class="ti-main-progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="80"
                                             aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <div class="flex items-center justify-between text-xs">
-                                            <span class="text-gray-500 dark:text-white/70">480.24 Gb / 512 GB</span>
+                                            <span class="text-gray-500">480.24 Gb / 512 GB</span>
                                             <a href="javascript:void(0);" class="text-primary">Manage Files</a>
                                         </div>
                                         </div>
@@ -373,12 +373,12 @@
                                     <div class="box">
                                         <div class="box-body space-y-3">
                                         <p class="text-base font-semibold py-2 inline-flex"><i class="ri ri-cpu-line text-lg ltr:mr-2 rtl:ml-2 p-2.5 bg-danger/20 text-danger rounded-full avatar avatar-sm leading-none"></i><span>External Storage</span></p>
-                                        <div class="ti-main-progress bg-gray-200 dark:bg-black/20 h-2">
+                                        <div class="ti-main-progress bg-gray-200 h-2">
                                             <div class="ti-main-progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="60"
                                             aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <div class="flex items-center justify-between text-xs"> <span
-                                            class="text-gray-500 dark:text-white/70">10Gb / 16GB</span> <a
+                                            class="text-gray-500">10Gb / 16GB</span> <a
                                             href="javascript:void(0);" class="text-danger">Manage Files</a>
                                         </div>
                                         </div>
@@ -386,12 +386,12 @@
                                     <div class="box">
                                         <div class="box-body space-y-3">
                                         <p class="text-base font-semibold py-2 inline-flex"><i class="ri ri-cloud-line text-lg ltr:mr-2 rtl:ml-2 p-2.5 bg-secondary/20 text-secondary rounded-full avatar avatar-sm leading-none"></i><span>CLoud Storage</span></p>
-                                        <div class="ti-main-progress bg-gray-200 dark:bg-black/20 h-2">
+                                        <div class="ti-main-progress bg-gray-200 h-2">
                                             <div class="ti-main-progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="40"
                                             aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <div class="flex items-center justify-between text-xs"> <span
-                                            class="text-gray-500 dark:text-white/70">3Gb / 8 GB</span> <a
+                                            class="text-gray-500">3Gb / 8 GB</span> <a
                                             href="javascript:void(0);" class="text-secondary">Manage Files</a>
                                         </div>
                                         </div>
@@ -422,7 +422,7 @@
                                     </div>
                                     <div class="overflow-auto">
                                         <table class="ti-custom-table  table-bordered ti-custom-table-head">
-                                        <thead class="bg-gray-50 dark:bg-black/20">
+                                        <thead class="bg-gray-50">
                                             <tr>
                                             <th scope="col" class="!min-w-[13rem]">Name</th>
                                             <th scope="col">Files</th>
@@ -646,14 +646,14 @@
                                     </div>
                                     <div class="py-1 ltr:float-right rtl:float-left">
                                         <nav class="flex items-center space-x-2 rtl:space-x-reverse">
-                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                        <a class="text-gray-500 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                             <span aria-hidden="true">«</span>
                                             <span class="sr-only">Previous</span>
                                         </a>
                                         <a class="w-10 h-10 bg-primary text-white p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);" aria-current="page">1</a>
-                                        <a class="w-10 h-10 text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
-                                        <a class="w-10 h-10 text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
-                                        <a class="text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                        <a class="w-10 h-10 text-gray-500 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
+                                        <a class="w-10 h-10 text-gray-500 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
+                                        <a class="text-gray-500 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                             <span class="sr-only">Next</span>
                                             <span aria-hidden="true">»</span>
                                         </a>

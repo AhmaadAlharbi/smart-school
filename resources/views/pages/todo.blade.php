@@ -23,16 +23,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Todo List</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Todo List</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Todo List
                                     </li>
                                 </ol>
@@ -52,7 +52,7 @@
                                 <div class="box-body">
                                     <ul>
                                     <li>
-                                        <a href="javascript:void(0);" class="p-2 mb-1 flex items-center align-middle justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm bg-gray-100 font-normal hover:bg-gray-200 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="p-2 mb-1 flex items-center align-middle justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm bg-gray-100 font-normal hover:bg-gray-200 focus:bg-gary-800">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <i class="ri ri-mail-line"></i>
                                             <span class="">Today Tasks</span>
@@ -63,7 +63,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800 dark:bg-bgdark dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <i class="ri ri-inbox-archive-line"></i>
                                             <span class="">Upcoming Tasks</span>
@@ -74,7 +74,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800 dark:bg-bgdark dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <i class="ri ri-star-line"></i>
                                             <span class="">Starred</span>
@@ -82,7 +82,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800 dark:bg-bgdark dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <i class="ri ri-price-tag-3-line"></i>
                                             <span class="">Important</span>
@@ -90,7 +90,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800 dark:bg-bgdark dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="p-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal hover:bg-gray-200 focus:bg-gary-800">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <i class="ri ri-delete-bin-line"></i>
                                             <span class="">Trash</span>
@@ -101,10 +101,10 @@
                                         </a>
                                     </li>
                                     </ul>
-                                    <h3 class="text-gray-500 dark:text-white/70 my-3 font-semibold">Priority</h3>
+                                    <h3 class="text-gray-500 my-3 font-semibold">Priority</h3>
                                     <ul>
                                     <li>
-                                        <a href="javascript:void(0);" class="py-1 px-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="py-1 px-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <span class="w-2.5 h-2.5 inline-block bg-success rounded-full my-auto"></span>
                                             <span class="">Low</span>
@@ -112,7 +112,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="py-1 px-2 mb-1 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal dark:hover:bg-black/20">
+                                        <a href="javascript:void(0);" class="py-1 px-2 mb-1 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <span class="w-2.5 h-2.5 inline-block bg-warning rounded-full my-auto"></span>
                                             <span class="">Medium</span>
@@ -120,7 +120,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="py-1 px-2 flex justify-between text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-sm font-normal dark:hover:bg-black/20 mb-0">
+                                        <a href="javascript:void(0);" class="py-1 px-2 flex justify-between text-gray-500 space-x-2 rtl:space-x-reverse rounded-sm font-normal mb-0">
                                         <div class="flex space-x-3 rtl:space-x-reverse">
                                             <span class="w-2.5 h-2.5 inline-block bg-danger rounded-full my-auto"></span>
                                             <span class="">High</span>
@@ -166,7 +166,7 @@
                                         </select>
                                         <div class="hs-dropdown ti-dropdown">
                                             <a aria-label="anchor" href="javascript:void(0);"
-                                            class="hs-dropdown-toggle ti-dropdown-toggle inline-flex !p-2 flex-shrink-0 justify-center items-center gap-2 w-full rounded-sm border font-medium bg-white text-gray-500 shadow-sm align-middle focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-xs dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                            class="hs-dropdown-toggle ti-dropdown-toggle inline-flex !p-2 flex-shrink-0 justify-center items-center gap-2 w-full rounded-sm border font-medium bg-white text-gray-500 shadow-sm align-middle focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-xs">
                                             <i class="ri ri-more-2-line text-lg leading-none"></i>
                                             </a>
                                             <div class="hs-dropdown-menu ti-dropdown-menu">
@@ -184,13 +184,13 @@
                                 <div class="box-body">
                                     <div class="table-bordered rounded-sm overflow-auto todo-table">
                                     <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
-                                        <thead class="bg-gray-100 dark:bg-black/20">
+                                        <thead class="bg-gray-100">
                                         <tr>
                                             <th scope="col" class="dark:text-white/70">
                                             <div class="flex">
                                                 <input type="checkbox" class="border-gray-500 ti-form-checkbox mt-0.5 check-all"
                                                 id="hs-default-checkbox">
-                                                <label for="hs-default-checkbox" class="text-sm text-gray-500 dark:text-white/70"></label>
+                                                <label for="hs-default-checkbox" class="text-sm text-gray-500"></label>
                                             </div>
                                             </th>
                                             <th scope="col" class="dark:text-white/70"></th>
@@ -200,7 +200,7 @@
                                             <th scope="col" class="dark:text-white/70">Status</th>
                                             <th scope="col" class="dark:text-white/70">Priority</th>
                                             <th scope="col" class="dark:text-white/70 min-w-[160px]">Assigned To</th>
-                                            <th scope="col" class="!text-end dark:text-white/70">Action</th>
+                                            <th scope="col" class="!text-end">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="todo-drag">
@@ -213,7 +213,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -234,8 +234,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}"
                                                 alt="Image Description">
                                                 <span
-                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                <span class="font-medium text-gray-500 leading-none dark:text-white/70">9+</span>
+                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                <span class="font-medium text-gray-500 leading-none">9+</span>
                                                 </span>
                                             </div>
                                             </td>
@@ -245,7 +245,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -257,7 +257,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -275,7 +275,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -301,7 +301,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -313,7 +313,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -331,7 +331,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -353,7 +353,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -365,7 +365,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -383,7 +383,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -407,7 +407,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -419,7 +419,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -437,7 +437,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -458,8 +458,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/5.jpg')}}"
                                                 alt="Image Description">
                                                 <span
-                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                <span class="font-medium text-gray-500 leading-none dark:text-white/70">1+</span>
+                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                <span class="font-medium text-gray-500 leading-none">1+</span>
                                                 </span>
                                             </div>
                                             </td>
@@ -469,7 +469,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -481,7 +481,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -499,7 +499,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -520,8 +520,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/5.jpg')}}"
                                                 alt="Image Description">
                                                 <span
-                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                <span class="font-medium text-gray-500 leading-none">5+</span>
                                                 </span>
                                             </div>
                                             </td>
@@ -531,7 +531,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -543,7 +543,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -561,7 +561,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -582,8 +582,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/5.jpg')}}"
                                                 alt="Image Description">
                                                 <span
-                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                <span class="font-medium text-gray-500 leading-none">5+</span>
                                                 </span>
                                             </div>
                                             </td>
@@ -593,7 +593,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -605,7 +605,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -623,7 +623,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -645,7 +645,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -657,7 +657,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -675,7 +675,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -699,7 +699,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -711,7 +711,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -729,7 +729,7 @@
                                             </td>
                                             <td>
                                             <div
-                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 dark:bg-black/20 flex justify-center p-1.5 mx-auto">
+                                                class="cursor-move w-8 h-8 leading-none text-lg rounded-sm bg-gray-100 flex justify-center p-1.5 mx-auto">
                                                 ::</div>
                                             </td>
                                             <td>
@@ -755,7 +755,7 @@
                                                 class="hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(953px, -281px);">
                                                     Edit
@@ -767,7 +767,7 @@
                                                 class="todo-remove hs-tooltip-toggle w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip" data-popper-placement="top"
                                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(985px, -281px);">
                                                     Delete
@@ -780,14 +780,14 @@
                                     </table>
                                     </div>
                                     <nav class="flex items-center space-x-2 rtl:space-x-reverse justify-end">
-                                    <a class="text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                    <a class="text-gray-500 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                         <span aria-hidden="true">«</span>
                                         <span class="sr-only">Previous</span>
                                     </a>
                                     <a class="w-10 h-10 bg-primary text-white p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);" aria-current="page">1</a>
-                                    <a class="w-10 h-10 text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
-                                    <a class="w-10 h-10 text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
-                                    <a class="text-gray-500 dark:text-white/70 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
+                                    <a class="w-10 h-10 text-gray-500 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">2</a>
+                                    <a class="w-10 h-10 text-gray-500 hover:text-primary p-4 inline-flex items-center text-sm font-medium rounded-full" href="javascript:void(0);">3</a>
+                                    <a class="text-gray-500 hover:text-primary p-4 inline-flex items-center gap-2 font-medium rounded-sm" href="javascript:void(0);">
                                         <span class="sr-only">Next</span>
                                         <span aria-hidden="true">»</span>
                                     </a>
@@ -834,8 +834,8 @@
                                         <label for="input-label" class="ti-form-label">Assigned Date</label>
                                         <div class="flex rounded-sm shadow-sm">
                                         <div
-                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                            <span class="text-sm text-gray-500 dark:text-white/70"><i class="ri ri-calendar-line"></i></span>
+                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-gray-500"><i class="ri ri-calendar-line"></i></span>
                                         </div>
 
                                         <input type="text" class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
@@ -846,8 +846,8 @@
                                         <label for="input-label" class="ti-form-label">Due Date</label>
                                         <div class="flex rounded-sm shadow-sm">
                                         <div
-                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                            <span class="text-sm text-gray-500 dark:text-white/70"><i class="ri ri-calendar-line"></i></span>
+                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-gray-500"><i class="ri ri-calendar-line"></i></span>
                                         </div>
 
                                         <input type="text" class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input"
@@ -868,7 +868,7 @@
                                 </div>
                                 <div class="ti-modal-footer">
                                     <button type="button"
-                                    class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                    class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                     data-hs-overlay="#todo-compose">
                                     Close
                                     </button>

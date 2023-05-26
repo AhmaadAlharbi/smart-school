@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> File Details</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> File Details</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Advanced Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         File Details
                                     </li>
                                 </ol>
@@ -45,11 +45,11 @@
                                     <div class="sm:flex justify-between space-y-2 sm:space-y-0">
                                         <div class="flex space-x-2 rtl:space-x-reverse"><i class="ri ri-image-line text-primary p-2 leading-none bg-primary/20 rounded-sm"></i><h3 class="my-auto font-bold">Nature.jpg</h3></div>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                        <i class="ri ri-edit-2-line p-2 leading-none bg-gray-200 text-gray-500 dark:text-white/70 dark:bg-black/20 rounded-sm"></i>
-                                        <i class="ri ri-star-line p-2 leading-none bg-gray-200 text-gray-500 dark:text-white/70 dark:bg-black/20 rounded-sm"></i>
-                                        <i class="ri ri-share-line p-2 leading-none bg-gray-200 text-gray-500 dark:text-white/70 dark:bg-black/20 rounded-sm"></i>
-                                        <i class="ri ri-download-2-line p-2 leading-none bg-gray-200 text-gray-500 dark:text-white/70 dark:bg-black/20 rounded-sm"></i>
-                                        <i class="ri ri-delete-bin-6-line p-2 leading-none bg-gray-200 text-gray-500 dark:text-white/70 dark:bg-black/20 rounded-sm"></i>
+                                        <i class="ri ri-edit-2-line p-2 leading-none bg-gray-200 text-gray-500 rounded-sm"></i>
+                                        <i class="ri ri-star-line p-2 leading-none bg-gray-200 text-gray-500 rounded-sm"></i>
+                                        <i class="ri ri-share-line p-2 leading-none bg-gray-200 text-gray-500 rounded-sm"></i>
+                                        <i class="ri ri-download-2-line p-2 leading-none bg-gray-200 text-gray-500 rounded-sm"></i>
+                                        <i class="ri ri-delete-bin-6-line p-2 leading-none bg-gray-200 text-gray-500 rounded-sm"></i>
                                         </div>
                                     </div>
                                     </div>
@@ -127,37 +127,37 @@
                                     <div class="rounded-sm overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head">
                                         <tbody>
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Type</td>
                                             <td>Jpg File(.jpg)</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Location</td>
                                             <td>file/gallery</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Size</td>
                                             <td>909KB</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Created Date</td>
                                             <td>1-10-2022</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Modified Date</td>
                                             <td>12-10-2022</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">Dimensions</td>
                                             <td>7360 * 4912</td>
                                         </tr>
 
-                                        <tr class="divide-x divide-gray-200 dark:divide-white/10">
+                                        <tr class="divide-x divide-gray-200">
                                             <td class="font-medium">File Location</td>
                                             <td>Device/Storage/Archives/AMB-2012.zip</td>
                                         </tr>
@@ -174,7 +174,7 @@
                                     <p class="mb-3">
                                     This file contains 3 folder Synto.main &amp; Synto.premium &amp; Synto.featured and 42 images and layout styles are added in this update.
                                     </p>
-                                    <h5 class="font-semibold text-slate-700 dark:text-white text-sm">Shared With :-</h5>
+                                    <h5 class="font-semibold text-slate-700 text-sm">Shared With :-</h5>
                                     <div class="flex -space-x-2 rtl:space-x-reverse mt-2 overflow-auto">
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/1.jpg')}}" alt="Image Description">
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
@@ -183,8 +183,8 @@
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/7.jpg')}}" alt="Image Description">
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/2.jpg')}}" alt="Image Description">
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/9.jpg')}}" alt="Image Description">
-                                        <span class="inline-flex items-center justify-center h-[2.375rem] w-[2.375rem] rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">9+</span>
+                                        <span class="inline-flex items-center justify-center h-[2.375rem] w-[2.375rem] rounded-full bg-gray-100 border-2 border-gray-200">
+                                        <span class="font-medium text-gray-500 leading-none">9+</span>
                                         </span>
                                     </div>
                                 </div>

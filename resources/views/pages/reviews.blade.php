@@ -17,16 +17,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Reviews</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Reviews</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Reviews
                                     </li>
                                 </ol>
@@ -184,11 +184,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">
@@ -204,11 +204,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vel ut impedit. Sapiente id libero reprehenderit accusantium nisi. Dolorum hic voluptas quia id.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">
@@ -224,11 +224,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour, or randomised words which don't  even slightly believable.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">
@@ -244,11 +244,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     All the Lorem Ipsum generators on the Internet tend to repeat Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">
@@ -264,11 +264,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     If you are going to use a passage of Lorem Ipsum, you need to as necessary All the Lorem generators on the Internet to repeat Various versions have evolved over the years.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">
@@ -284,11 +284,11 @@
                                         <div class="swiper-slide !text-sm !bg-transparent">
                                             <div class="box mb-0 text-start rtl:dir-rtl">
                                             <div class="box-body">
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-l"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-l"></i>
                                                 <span>
                                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa molestias, inventore incidunt aliquid amet nihil exercitationem, modi possimus molestiae assumenda.
                                                 </span>
-                                                <i class="!text-lg text-gray-500 dark:text-white/70 ri ri-double-quotes-r"></i>
+                                                <i class="!text-lg text-gray-500 ri ri-double-quotes-r"></i>
                                             </div>
                                             <div class="box-footer">
                                                 <a class="flex my-auto">

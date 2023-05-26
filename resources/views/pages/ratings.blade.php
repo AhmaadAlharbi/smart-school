@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Rating</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Rating</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Advanced Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Rating
                                     </li>
                                 </ol>
@@ -38,7 +38,7 @@
                                         <h5 class="box-title">Basic Rater</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Show Some <span class="text-danger">❤</span> with rating :</p>
                                             <div id="rater-basic"></div>
@@ -53,7 +53,7 @@
                                         <h5 class="box-title">5 Star Rater With Steps</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Dont forget to rate the product :</p>
                                             <div id="rater-steps"></div>
@@ -68,7 +68,7 @@
                                         <h5 class="box-title"> Custom messages</h5>
                                     </div>
                                     <div class="box-body text-center">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Your rating is much appreciated👏 :</p>
                                             <div id="custom-messages"></div>
@@ -88,7 +88,7 @@
                                         <h5 class="box-title"> Unlimited number of stars readOnly</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0  overflow-auto touch-none">
                                             <p class="text-sm mb-0 font-semibold">Your rating is much appreciated👏 :</p>
                                             <div id="stars-unlimited"></div>
@@ -103,7 +103,7 @@
                                         <h5 class="box-title">5 Star rater with custom isBusyText and simulated backend</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Thanks for rating :</p>
                                             <div id="stars-busytext"></div>
@@ -123,7 +123,7 @@
                                         <h5 class="box-title">On hover event</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Please give your valuable rating :</p>
                                             <div class="flex items-center">
@@ -143,7 +143,7 @@
                                         <h5 class="box-title"> Clear/reset rater</h5>
                                     </div>
                                     <div class="box-body">
-                                        <div class="p-5 border border-dashed border-gray-200 dark:border-white/10 rounded-sm">
+                                        <div class="p-5 border border-dashed border-gray-200 rounded-sm">
                                         <div class="sm:flex items-center justify-between space-y-2 sm:space-y-0">
                                             <p class="text-sm mb-0 font-semibold">Please give your valuable rating :</p>
                                             <div class="flex items-center">

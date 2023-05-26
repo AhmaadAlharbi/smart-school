@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Modals</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Modals</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Basic Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Modals
                                     </li>
                                 </ol>
@@ -61,13 +61,13 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-basic-modal">
                                             Close
                                             </button>
@@ -112,13 +112,13 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-slide-down-animation-modal">
                                             Close
                                             </button>
@@ -163,13 +163,13 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-slide-up-animation-modal">
                                             Close
                                             </button>
@@ -213,17 +213,17 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-small-modal">
                                             Close
                                             </button>
-                                            <a class="ti-btn bg-primary text-white hover:bg-primary  focus:ring-primary  dark:focus:ring-offset-white/10"
+                                            <a class="ti-btn bg-primary text-white hover:bg-primary  focus:ring-primary "
                                             href="javascript:void(0);">
                                             Save changes
                                             </a>
@@ -255,17 +255,17 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-medium-modal">
                                             Close
                                             </button>
-                                            <a class="ti-btn  bg-primary text-white hover:bg-primary  focus:ring-primary  dark:focus:ring-offset-white/10"
+                                            <a class="ti-btn  bg-primary text-white hover:bg-primary  focus:ring-primary "
                                             href="javascript:void(0);">
                                             Save changes
                                             </a>
@@ -297,17 +297,17 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-large-modal">
                                             Close
                                             </button>
-                                            <a class="ti-btn  bg-primary text-white hover:bg-primary  focus:ring-primary  dark:focus:ring-offset-white/10"
+                                            <a class="ti-btn  bg-primary text-white hover:bg-primary  focus:ring-primary "
                                             href="javascript:void(0);">
                                             Save changes
                                             </a>
@@ -348,13 +348,13 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-static-backdrop-modal">
                                             Close
                                             </button>
@@ -401,8 +401,8 @@
                                         <div class="ti-modal-body ">
                                             <div class="space-y-4">
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be bold</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be bold</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Motivate teams to do their best work. Offer best practices to get users going in the right
                                                 direction. Be bold and offer just enough help to get the work started, and then get out of
                                                 the way. Give accurate information so users can make educated decisions. Know your user's
@@ -412,8 +412,8 @@
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be optimistic</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be optimistic</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Focusing on the details gives people confidence in our products. Weave a consistent story
                                                 across our fabric and be diligent about vocabulary across all messaging by being brand
                                                 conscious across products to create a seamless flow across all the things. Let people know
@@ -426,9 +426,9 @@
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be practical, with a wink
+                                                <h3 class="text-lg font-semibold text-gray-800">Be practical, with a wink
                                                 </h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <p class="mt-1 text-gray-800">
                                                 Keep our own story short and give teams just enough to get moving. Get to the point and be
                                                 direct. Be concise - we tell the story of how we can help, but we do it directly and with
                                                 purpose. Be on the lookout for opportunities and be quick to offer a helping hand. At the
@@ -443,7 +443,7 @@
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-scroll-inside-body-modal">
                                             Close
                                             </button>
@@ -482,8 +482,8 @@
                                         <div class="ti-modal-body ">
                                             <div class="space-y-4">
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be bold</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be bold</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Motivate teams to do their best work. Offer best practices to get users going in the right
                                                 direction. Be bold and offer just enough help to get the work started, and then get out of
                                                 the way. Give accurate information so users can make educated decisions. Know your user's
@@ -493,8 +493,8 @@
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be optimistic</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be optimistic</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Focusing on the details gives people confidence in our products. Weave a consistent story
                                                 across our fabric and be diligent about vocabulary across all messaging by being brand
                                                 conscious across products to create a seamless flow across all the things. Let people know
@@ -507,9 +507,9 @@
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be practical, with a wink
+                                                <h3 class="text-lg font-semibold text-gray-800">Be practical, with a wink
                                                 </h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <p class="mt-1 text-gray-800">
                                                 Keep our own story short and give teams just enough to get moving. Get to the point and be
                                                 direct. Be concise - we tell the story of how we can help, but we do it directly and with
                                                 purpose. Be on the lookout for opportunities and be quick to offer a helping hand. At the
@@ -524,7 +524,7 @@
                                         </div>
                                         <div class="ti-modal-footer">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                             data-hs-overlay="#hs-scroll-inside-viewport-modal">
                                             Close
                                             </button>
@@ -564,12 +564,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="text-gray-800 dark:text-white/70">
+                                            <p class="text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-vertically-centered-modal">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-vertically-centered-modal">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -601,29 +601,29 @@
                                         <div class="ti-modal-body">
                                             <div class="space-y-4">
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be bold</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be bold</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Motivate teams to do their best work. Offer best practices to get users going in the right direction. Be bold and offer just enough help to get the work started, and then get out of the way. Give accurate information so users can make educated decisions. Know your user's struggles and desired outcomes and give just enough information to let them get where they need to go.
                                                 </p>
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be optimistic</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be optimistic</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Focusing on the details gives people confidence in our products. Weave a consistent story across our fabric and be diligent about vocabulary across all messaging by being brand conscious across products to create a seamless flow across all the things. Let people know that they can jump in and start working expecting to find a dependable experience across all the things. Keep teams in the loop about what is happening by informing them of relevant features, products and opportunities for success. Be on the journey with them and highlight the key points that will help them the most - right now. Be in the moment by focusing attention on the important bits first.
                                                 </p>
                                             </div>
 
                                             <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Be practical, with a wink</h3>
-                                                <p class="mt-1 text-gray-800 dark:text-white/70">
+                                                <h3 class="text-lg font-semibold text-gray-800">Be practical, with a wink</h3>
+                                                <p class="mt-1 text-gray-800">
                                                 Keep our own story short and give teams just enough to get moving. Get to the point and be direct. Be concise - we tell the story of how we can help, but we do it directly and with purpose. Be on the lookout for opportunities and be quick to offer a helping hand. At the same time realize that novbody likes a nosy neighbor. Give the user just enough to know that something awesome is around the corner and then get out of the way. Write clear, accurate, and concise text that makes interusers more usable and consistent - and builds trust. We strive to write text that is understandable by anyone, anywhere, regardless of their culture or language so that everyone feels they are part of the team.
                                                 </p>
                                             </div>
                                             </div>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-vertically-centered-scrollable-modal">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-vertically-centered-scrollable-modal">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -665,7 +665,7 @@
                                             <input type="email" id="input-label" class="ti-form-input" placeholder="you@site.com" autofocus>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-focus-management-modal">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-focus-management-modal">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -703,7 +703,7 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             Show a second modal and hide this one with the button below.
                                             </p>
                                         </div>
@@ -731,7 +731,7 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             Hide this modal and show the first with the button below.
                                             </p>
                                         </div>
@@ -771,12 +771,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-full-screen-modal">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-full-screen-modal">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -793,7 +793,7 @@
 
                                     <div id="hs-full-screen-modal-below-sm" class="hs-overlay hidden ti-modal">
                                     <div class="hs-overlay-open:mt-0 ti-modal-box mt-10 max-w-full w-full !m-0 sm:hs-overlay-open:!mt-10 sm:!mt-0 sm:max-w-lg sm:!mx-auto">
-                                        <div class="ti-modal-content sm:border sm:rounded-sm sm:shadow-sm dark:bg-bgdark sm:dark:border-white/10">
+                                        <div class="ti-modal-content sm:border sm:rounded-sm sm:shadow-sm sm:dark:border-white/10">
                                         <div class="ti-modal-header">
                                             <h3 class="ti-modal-title">
                                             Modal title
@@ -806,12 +806,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-full-screen-modal-below-sm">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-full-screen-modal-below-sm">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -841,12 +841,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-full-screen-modal-below-md">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-full-screen-modal-below-md">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -876,12 +876,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-full-screen-modal-below-lg">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-full-screen-modal-below-lg">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">
@@ -911,12 +911,12 @@
                                             </button>
                                         </div>
                                         <div class="ti-modal-body">
-                                            <p class="mt-1 text-gray-800 dark:text-white/70">
+                                            <p class="mt-1 text-gray-800">
                                             This is a wider card with supporting text below as a natural lead-in to additional content.
                                             </p>
                                         </div>
                                         <div class="ti-modal-footer">
-                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10" data-hs-overlay="#hs-full-screen-modal-below-xl">
+                                            <button type="button" class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary" data-hs-overlay="#hs-full-screen-modal-below-xl">
                                             Close
                                             </button>
                                             <a class="ti-btn ti-btn-primary" href="javascript:void(0);">

@@ -29,7 +29,7 @@
                                     <img src="{{asset('build/assets/img/users/1.jpg')}}" class="w-24 h-24 rounded-full ring-4 ring-white/10 mx-auto"
                                     id="profile-img" alt="profile-img">
                                     <span
-                                        class="absolute bottom-0 ltr:right-0 rtl:left-0 block p-1 rounded-full ring-2 ring-white/10 text-white bg-white/10 dark:bg-bgdark leading-none cursor-pointer">
+                                        class="absolute bottom-0 ltr:right-0 rtl:left-0 block p-1 rounded-full ring-2 ring-white/10 text-white bg-white/10 leading-none cursor-pointer">
                                         <i class="ri ri-pencil-line cursor-pointer"></i>
                                         <input type="file"  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                                         id="profile-change">
@@ -53,7 +53,7 @@
                                     class="hs-tooltip-toggle m-0 rounded-full p-2 ti-btn ti-btn-outline ring-white/10 text-white bg-white/10  border-white/10">
                                     <i class="ri ri-github-line text-lg leading-none"></i>
                                     <span
-                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden"
                                     role="tooltip" data-popper-placement="top"
                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(823px, -92px);">
                                     Github
@@ -65,7 +65,7 @@
                                     class="hs-tooltip-toggle m-0 rounded-full p-2 ti-btn ti-btn-outline ring-white/10 text-white bg-white/10  border-white/10">
                                     <i class="ri ri-instagram-line text-lg leading-none"></i>
                                     <span
-                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                     role="tooltip" data-popper-placement="top"
                                     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(823px, -92px);">
                                     Instagram
@@ -77,7 +77,7 @@
                                     class="hs-tooltip-toggle m-0 rounded-full p-2 ti-btn ti-btn-outline ring-white/10 text-white bg-white/10  border-white/10">
                                     <i class="ri ri-twitter-line text-lg leading-none"></i>
                                     <span
-                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                     role="tooltip">
                                     Twitter
                                     </span>
@@ -88,7 +88,7 @@
                                     class="hs-tooltip-toggle m-0 rounded-full p-2 ti-btn ti-btn-outline ring-white/10 text-white bg-white/10  border-white/10">
                                     <i class="ri ri-linkedin-line text-lg leading-none"></i>
                                     <span
-                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                     role="tooltip">
                                     Linkedin
                                     </span>
@@ -99,7 +99,7 @@
                                     class="hs-tooltip-toggle m-0 rounded-full p-2 ti-btn ti-btn-outline ring-white/10 text-white bg-white/10  border-white/10">
                                     <i class="ri ri-facebook-circle-line text-lg leading-none"></i>
                                     <span
-                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                     role="tooltip">
                                     Facebook
                                     </span>
@@ -181,109 +181,109 @@
                                     </div>
                                     <div class="box-body space-y-4 text-center">
                                     <ul class="flex flex-col">
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <img class="avatar avatar-xs rounded-sm" src="{{asset('build/assets/img/users/2.jpg')}}"
                                                 alt="Image Description">
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">Socrates Itumay</h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">UI/Ux Designer</p>
+                                                <h5 class="text-gray-800">Socrates Itumay</h5>
+                                                <p class="text-xs text-gray-500">UI/Ux Designer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
                                         </div>
                                         </li>
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <img class="avatar avatar-xs rounded-sm" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                 alt="Image Description">
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">Ben Dover</h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">Java Developer</p>
+                                                <h5 class="text-gray-800">Ben Dover</h5>
+                                                <p class="text-xs text-gray-500">Java Developer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
                                         </div>
                                         </li>
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <span
                                                 class="avatar avatar-xs ring-0 rounded-sm bg-secondary leading-none  p-2 text-center text-lg text-white">B</span>
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">Benz Makit</h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">React Developer</p>
+                                                <h5 class="text-gray-800">Benz Makit</h5>
+                                                <p class="text-xs text-gray-500">React Developer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
                                         </div>
                                         </li>
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <img class="avatar avatar-xs rounded-sm" src="{{asset('build/assets/img/users/3.jpg')}}"
                                                 alt="Image Description">
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">Wiley Waites</h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">Web Designer</p>
+                                                <h5 class="text-gray-800">Wiley Waites</h5>
+                                                <p class="text-xs text-gray-500">Web Designer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
                                         </div>
                                         </li>
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <img class="avatar avatar-xs rounded-sm" src="{{asset('build/assets/img/users/13.jpg')}}"
                                                 alt="Image Description">
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">King Berunda </h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">Full Stack Developer</p>
+                                                <h5 class="text-gray-800">King Berunda </h5>
+                                                <p class="text-xs text-gray-500">Full Stack Developer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
                                         </div>
                                         </li>
-                                        <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                        <li class="ti-list-group bg-white text-gray-800">
                                         <div class="sm:flex xxl:block xxxl:flex space-y-2 xxxl:space-y-0 justify-between w-full">
                                             <div class="flex items-center">
                                             <img class="avatar avatar-xs rounded-sm" src="{{asset('build/assets/img/users/4.jpg')}}"
                                                 alt="Image Description">
                                             <div class="ltr:ml-4 rtl:mr-4">
-                                                <h5 class="text-gray-800 dark:text-white">Samantha May</h5>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">Full Stack Developer</p>
+                                                <h5 class="text-gray-800">Samantha May</h5>
+                                                <p class="text-xs text-gray-500">Full Stack Developer</p>
                                             </div>
                                             </div>
                                             <div class="my-auto">
                                             <button type="button"
-                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10">
+                                                class="ti-btn p-1 m-0 text-xs font-medium bg-white border-gray-200 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary">
                                                 <i class="ri-user-unfollow-line"></i> Following
                                             </button>
                                             </div>
@@ -299,22 +299,22 @@
                                     <div class="box-header">
                                     <nav class="sm:flex sm:space-x-2 space-y-2 sm:space-y-0 rtl:space-x-reverse block" aria-label="Tabs" role="tablist">
                                         <button type="button"
-                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white dark:hs-tab-active:bg-primary dark:hs-tab-active:border-primary dark:hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-gray-300 active"
+                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700 active"
                                         id="profile-item-1" data-hs-tab="#profile-1" aria-controls="profile-1" role="tab">
                                         Profile
                                         </button>
                                         <button type="button"
-                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white dark:hs-tab-active:bg-primary dark:hs-tab-active:border-primary dark:hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-gray-300"
+                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700"
                                         id="profile-item-2" data-hs-tab="#profile-2" aria-controls="profile-2" role="tab">
                                         Activities
                                         </button>
                                         <button type="button"
-                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white dark:hs-tab-active:bg-primary dark:hs-tab-active:border-primary dark:hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-gray-300"
+                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700"
                                         id="profile-item-3" data-hs-tab="#profile-3" aria-controls="profile-3" role="tab">
                                         Posts
                                         </button>
                                         <button type="button"
-                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white dark:hs-tab-active:bg-primary dark:hs-tab-active:border-primary dark:hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-gray-300"
+                                        class="hs-tab-active:bg-primary hs-tab-active:border-primary hs-tab-active:text-white py-2 px-3 inline-flex items-center w-full justify-center gap-2 text-sm font-medium text-center border text-gray-500 rounded-sm hover:text-gray-700"
                                         id="profile-item-4" data-hs-tab="#profile-4" aria-controls="profile-4" role="tab">
                                         Projects
                                         </button>
@@ -327,29 +327,29 @@
                                         <table class="ti-custom-table border-0 whitespace-nowrap">
                                             <tbody>
                                             <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">First name</td>
+                                                <td class="!p-2 font-medium !text-gray-500">First name</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Anderson</td>
+                                                <td class="!p-2 !text-gray-500">Anderson</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Last Name</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Last Name</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Itumay</td>
+                                                <td class="!p-2 !text-gray-500">Itumay</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Birthday</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Birthday</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">03 September 1990</td>
+                                                <td class="!p-2 !text-gray-500">03 September 1990</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Gender</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Gender</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Female</td>
+                                                <td class="!p-2 !text-gray-500">Female</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Languages</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Languages</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Telugu ,Hindi , English</td>
+                                                <td class="!p-2 !text-gray-500">Telugu ,Hindi , English</td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -359,29 +359,29 @@
                                         <table class="ti-custom-table border-0 whitespace-nowrap">
                                             <tbody>
                                             <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Personal Contact No</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Personal Contact No</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">+123(45)-158-90.</td>
+                                                <td class="!p-2 !text-gray-500">+123(45)-158-90.</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Email Id</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Email Id</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">andersonitumay@abc.com</td>
+                                                <td class="!p-2 !text-gray-500">andersonitumay@abc.com</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Address</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Address</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">andersonitumay@abc.com</td>
+                                                <td class="!p-2 !text-gray-500">andersonitumay@abc.com</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Website link</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Website link</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">www.andersonitumay.com</td>
+                                                <td class="!p-2 !text-gray-500">www.andersonitumay.com</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70">Linked in link</td>
+                                                <td class="!p-2 font-medium !text-gray-500">Linked in link</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">https://in.linkedin.com/andersonitumay
+                                                <td class="!p-2 !text-gray-500">https://in.linkedin.com/andersonitumay
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -392,14 +392,14 @@
                                         <table class="ti-custom-table border-0 whitespace-nowrap">
                                             <tbody>
                                             <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70 w-[252px]">School</td>
+                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">School</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Studied at Makit Hight school ,1-12th</td>
+                                                <td class="!p-2 !text-gray-500">Studied at Makit Hight school ,1-12th</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70 w-[252px]">Graduation</td>
+                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">Graduation</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Studied at Abc University , Btech(cse)
+                                                <td class="!p-2 !text-gray-500">Studied at Abc University , Btech(cse)
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -410,14 +410,14 @@
                                         <table class="ti-custom-table border-0 whitespace-nowrap">
                                             <tbody>
                                             <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70 w-[252px]">Work1</td>
+                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">Work1</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Web Designer at abc ,2015 - 2018</td>
+                                                <td class="!p-2 !text-gray-500">Web Designer at abc ,2015 - 2018</td>
                                             </tr>
                                             <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 dark:!text-white/70 w-[252px]">Work2</td>
+                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">Work2</td>
                                                 <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500 dark:!text-white/70">Sr. Ui Developer at abc ,2018 - present
+                                                <td class="!p-2 !text-gray-500">Sr. Ui Developer at abc ,2018 - present
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -429,7 +429,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -439,11 +439,11 @@
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Elida
-                                                    Distefa</span> added a comment to <span class="text-dark dark:text-white">Anderson
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Elida
+                                                    Distefa</span> added a comment to <span class="text-dark">Anderson
                                                     Itumay</span> post</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     Today, 04:30 PM
                                                 </p>
                                                 </div>
@@ -463,7 +463,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -473,11 +473,11 @@
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Samantha
-                                                    Melon</span> added a 😎 reaction to <span class="text-dark dark:text-white">Anderson
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Samantha
+                                                    Melon</span> added a 😎 reaction to <span class="text-dark">Anderson
                                                     Itumay</span> post</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     Today, 04:30 PM
                                                 </p>
                                                 </div>
@@ -487,7 +487,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -497,10 +497,10 @@
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Samantha
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Samantha
                                                     Melon</span> like an Image</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     Today, 05:45 PM
                                                 </p>
                                                 </div>
@@ -512,7 +512,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -522,10 +522,10 @@
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Dennis
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Dennis
                                                     Trexy</span> Shared an image</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     yesterday, 10:20 am
                                                 </p>
                                                 </div>
@@ -542,7 +542,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -552,15 +552,15 @@
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Anesthesia</span>
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Anesthesia</span>
                                                     commented on today's meeting</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     yesterday, 05:06 pm
                                                 </p>
                                                 </div>
                                                 <div
-                                                class="border border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10 p-4 rounded-sm">
+                                                class="border border-gray-200 bg-gray-50 p-4 rounded-sm">
                                                 <p class="text-xs textbg-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                     Nostrum sit consequuntur quia aperiam quibusdam rerum ut! Id ducimus nobis rerum modi
                                                     veniam odit totam rem asperiores adipisci, sed quia voluptas?</p>
@@ -571,20 +571,20 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
-                                                class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 dark:bg-bgdark2 shadow text-center ltr:-left-[4px] rtl:-right-[4px] leading-[2.3]">
+                                                class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px] leading-[2.3]">
                                                 H
                                             </div>
                                             </div>
                                             <div class="flex w-full pb-8">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Harvey
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Harvey
                                                     Mattos</span> Followed You</h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     03-12-20222, 12:06 pm
                                                 </p>
                                                 </div>
@@ -594,7 +594,7 @@
                                         <div class="flex flex-row">
                                             <div class="mx-auto relative">
                                             <div class="h-full w-6 flex items-center justify-center">
-                                                <div class="h-full w-[3px] bg-gray-100 dark:bg-black/20 pointer-events-none"></div>
+                                                <div class="h-full w-[3px] bg-gray-100 pointer-events-none"></div>
                                             </div>
                                             <div
                                                 class="avatar avatar-xs absolute top-0 rounded-full bg-gray-200 shadow text-center ltr:-left-[4px] rtl:-right-[4px]">
@@ -604,15 +604,15 @@
                                             <div class="flex w-full">
                                             <div class="ltr:ml-5 rtl:mr-5 rounded-sm ltr:mr-auto rtl:ml-auto my-auto w-full space-y-3">
                                                 <div class="sm:flex">
-                                                <h3 class="my-auto text-gray-500 dark:text-white/70"><span
-                                                    class="text-dark dark:text-white">Anesthesia</span>
+                                                <h3 class="my-auto text-gray-500"><span
+                                                    class="text-dark">Anesthesia</span>
                                                     5 Days left for Montly submission of progress report </h3>
-                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 dark:text-white/70 text-xs">
+                                                <p class="my-auto ltr:ml-auto rtl:mr-auto text-gray-500 text-xs">
                                                     02-12-2022, 6:20 pm
                                                 </p>
                                                 </div>
                                                 <div
-                                                class="border border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10 p-4 rounded-sm">
+                                                class="border border-gray-200 bg-gray-50 p-4 rounded-sm">
                                                 <p class="text-xs textbg-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Nostrum sit consequuntur quia aperiam quibusdam rerum ut! Id ducimus nobis rerum
                                                     modi veniam odit totam rem asperiores adipisci, sed quia voluptas?</p>
@@ -629,21 +629,21 @@
                                         <div class="box text-start">
                                         <div class="box-body p-0">
                                             <div
-                                            class="sm:flex sm:space-x-3 space-y-2 sm:space-y-0 p-6 border-b border-gray-200 dark:border-white/10 rtl:space-x-reverse">
+                                            class="sm:flex sm:space-x-3 space-y-2 sm:space-y-0 p-6 border-b border-gray-200 rtl:space-x-reverse">
                                             <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/1.jpg')}}" alt="profile-img">
                                             <div class="relative w-full">
                                                 <input type="text"
-                                                class="ti-form-input ltr:pr-16 rtl:pl-16 rounded-full shadow-sm focus:z-10 bg-gray-100 dark:bg-black/20"
+                                                class="ti-form-input ltr:pr-16 rtl:pl-16 rounded-full shadow-sm focus:z-10 bg-gray-100"
                                                 placeholder="What's On Your Mind ..........">
                                                 <div
                                                 class="absolute inset-y-0 ltr:right-8 rtl:left-8 flex items-center z-20 ltr:pr-4 rtl:pl-4">
                                                 <a aria-label="anchor" href="javascript:void(0);"><i
-                                                    class="ri ri-emotion-line text-gray-500 dark:text-white/70 text-lg leading-none"></i></a>
+                                                    class="ri ri-emotion-line text-gray-500 text-lg leading-none"></i></a>
                                                 </div>
                                                 <div
                                                 class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center z-20 ltr:pr-4 rtl:pl-4">
                                                 <a aria-label="anchor" href="javascript:void(0);"><i
-                                                    class="ri ri-pencil-line text-gray-500 dark:text-white/70 text-lg leading-none"></i></a>
+                                                    class="ri ri-pencil-line text-gray-500 text-lg leading-none"></i></a>
                                                 </div>
                                             </div>
                                             </div>
@@ -651,7 +651,7 @@
                                             <li>
                                                 <a class="flex space-x-1 rtl:space-x-reverse" href="javascript:void(0);">
                                                 <i class="ri ri-image-2-line text-lg leading-none text-primary"></i>
-                                                <span class="text-gray-500 dark:text-white/70">
+                                                <span class="text-gray-500">
                                                     Image
                                                 </span>
                                                 </a>
@@ -659,7 +659,7 @@
                                             <li>
                                                 <a class="flex space-x-1 rtl:space-x-reverse" href="javascript:void(0);">
                                                 <i class="ri ri-vidicon-line text-lg leading-none text-secondary"></i>
-                                                <span class="text-gray-500 dark:text-white/70">
+                                                <span class="text-gray-500">
                                                     Video
                                                 </span>
                                                 </a>
@@ -667,7 +667,7 @@
                                             <li>
                                                 <a class="flex space-x-1 rtl:space-x-reverse" href="javascript:void(0);">
                                                 <i class="ri ri-attachment-2 text-lg leading-none text-warning"></i>
-                                                <span class="text-gray-500 dark:text-white/70">
+                                                <span class="text-gray-500">
                                                     Attachment
                                                 </span>
                                                 </a>
@@ -675,7 +675,7 @@
                                             <li class="hidden md:flex">
                                                 <a class="flex space-x-1 rtl:space-x-reverse" href="javascript:void(0);">
                                                 <i class="ri ri-hashtag text-lg leading-none text-danger"></i>
-                                                <span class="text-gray-500 dark:text-white/70">
+                                                <span class="text-gray-500">
                                                     Hashtag
                                                 </span>
                                                 </a>
@@ -683,7 +683,7 @@
                                             <li class="hidden xxxl:flex">
                                                 <a class="flex space-x-1 rtl:space-x-reverse" href="javascript:void(0);">
                                                 <i class="ri ri-at-line text-lg leading-none text-info"></i>
-                                                <span class="text-gray-500 dark:text-white/70">
+                                                <span class="text-gray-500">
                                                     Mention
                                                 </span>
                                                 </a>
@@ -705,17 +705,17 @@
                                         </div>
                                         <div class="box p-5 text-start">
                                         <div class="sm:flex flex-row space-y-2 sm:space-y-0">
-                                            <img class="sm:w-1/4 rounded-sm border border-gray-200 dark:border-white/10"
+                                            <img class="sm:w-1/4 rounded-sm border border-gray-200"
                                             src="{{asset('build/assets/img/gallery/9.jpg')}}" alt="Image Description">
                                             <div class="box-body ltr:sm:pl-5 rtl:sm:pr-5 px-0 py-0 space-y-4 my-auto w-full">
                                             <h5 class="font-semibold mb-0 text-base leading-none">Lorem ipsum dolor sit amet consectetur
                                                 adipisicing.</h5>
                                             <div class="space-x-2 sm:space-y-0 rtl:space-x-reverse flex">
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-heart-line"></i><span class="my-auto">30</span></a>
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-thumb-up-line"></i><span class="my-auto">25k</span></a>
                                             </div>
                                             <div class="md:flex md:justify-between space-y-2 md:space-y-0">
@@ -725,10 +725,10 @@
                                                     alt="avatar">
                                                 </div>
                                                 <div>
-                                                    <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                                    <p class="text-slate-700 font-semibold text-sm">
                                                     Json Taylor
                                                     </p>
-                                                    <p class="text-xs text-gray-500 dark:text-white/70">
+                                                    <p class="text-xs text-gray-500">
                                                     20 min ago
                                                     </p>
                                                 </div>
@@ -743,8 +743,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}"
                                                     alt="Image Description">
                                                 <span
-                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">2+</span>
+                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">2+</span>
                                                 </span>
                                                 </div>
                                             </div>
@@ -753,17 +753,17 @@
                                         </div>
                                         <div class="box p-5 text-start">
                                         <div class="sm:flex flex-row space-y-2 sm:space-y-0">
-                                            <img class="sm:w-1/4 rounded-sm border border-gray-200 dark:border-white/10"
+                                            <img class="sm:w-1/4 rounded-sm border border-gray-200"
                                             src="{{asset('build/assets/img/gallery/3.jpg')}}" alt="Image Description">
                                             <div class="box-body ltr:sm:pl-5 rtl:sm:pr-5 px-0 py-0 space-y-4 my-auto w-full">
                                             <h5 class="font-semibold mb-0 text-base leading-none">Deserunt dolore ad incididunt excepteur
                                                 excepteur Lorem amet excepteur.</h5>
                                             <div class="space-x-2 sm:space-y-0 rtl:space-x-reverse flex">
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-heart-line"></i><span class="my-auto">30</span></a>
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-thumb-up-line"></i><span class="my-auto">25k</span></a>
                                             </div>
                                             <div class="md:flex md:justify-between space-y-2 md:space-y-0">
@@ -773,10 +773,10 @@
                                                     alt="avatar">
                                                 </div>
                                                 <div>
-                                                    <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                                    <p class="text-slate-700 font-semibold text-sm">
                                                     Sujika
                                                     </p>
-                                                    <p class="text-xs text-gray-500 dark:text-white/70">
+                                                    <p class="text-xs text-gray-500">
                                                     5 hrs ago
                                                     </p>
                                                 </div>
@@ -791,8 +791,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/13.jpg')}}"
                                                     alt="Image Description">
                                                 <span
-                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">4+</span>
                                                 </span>
                                                 </div>
                                             </div>
@@ -801,17 +801,17 @@
                                         </div>
                                         <div class="box p-5 text-start">
                                         <div class="sm:flex flex-row space-y-2 sm:space-y-0">
-                                            <img class="sm:w-1/4 rounded-sm border border-gray-200 dark:border-white/10"
+                                            <img class="sm:w-1/4 rounded-sm border border-gray-200"
                                             src="{{asset('build/assets/img/gallery/4.jpg')}}" alt="Image Description">
                                             <div class="box-body ltr:sm:pl-5 rtl:sm:pr-5 px-0 py-0 space-y-4 my-auto w-full">
                                             <h5 class="font-semibold mb-0 text-base leading-none">Minim Lorem sunt in sunt adipisicing anim
                                                 est enim duis...</h5>
                                             <div class="space-x-2 sm:space-y-0 rtl:space-x-reverse flex">
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-heart-line"></i><span class="my-auto">30</span></a>
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-thumb-up-line"></i><span class="my-auto">25k</span></a>
                                             </div>
                                             <div class="md:flex md:justify-between space-y-2 md:space-y-0">
@@ -821,10 +821,10 @@
                                                     alt="avatar">
                                                 </div>
                                                 <div>
-                                                    <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                                    <p class="text-slate-700 font-semibold text-sm">
                                                     King Berunda
                                                     </p>
-                                                    <p class="text-xs text-gray-500 dark:text-white/70">
+                                                    <p class="text-xs text-gray-500">
                                                     Yesterday, 10:27AM
                                                     </p>
                                                 </div>
@@ -839,8 +839,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}"
                                                     alt="Image Description">
                                                 <span
-                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">4+</span>
                                                 </span>
                                                 </div>
                                             </div>
@@ -849,17 +849,17 @@
                                         </div>
                                         <div class="box p-5 text-start">
                                         <div class="sm:flex flex-row space-y-2 sm:space-y-0">
-                                            <img class="sm:w-1/4 rounded-sm border border-gray-200 dark:border-white/10"
+                                            <img class="sm:w-1/4 rounded-sm border border-gray-200"
                                             src="{{asset('build/assets/img/gallery/5.jpg')}}" alt="Image Description">
                                             <div class="box-body ltr:sm:pl-5 rtl:sm:pr-5 px-0 py-0 space-y-4 my-auto w-full">
                                             <h5 class="font-semibold mb-0 text-base leading-none">Minim Lorem sunt in sunt adipisicing anim
                                                 est enim duis...</h5>
                                             <div class="space-x-2 sm:space-y-0 rtl:space-x-reverse flex">
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-heart-line"></i><span class="my-auto">30</span></a>
                                                 <a href="javascript:void(0);"
-                                                class="text-xs leading-[0] text-gray-500 dark:text-white/70 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 dark:bg-black/20 dark:hover:bg-bgdark inline-flex"><i
+                                                class="text-xs leading-[0] text-gray-500 space-x-2 rtl:space-x-reverse rounded-full bg-gray-100 px-3 py-1 font-normal hover:bg-gray-300 focus:bg-gary-800 inline-flex"><i
                                                     class="text-xs ri ri-thumb-up-line"></i><span class="my-auto">25k</span></a>
                                             </div>
                                             <div class="md:flex md:justify-between space-y-2 md:space-y-0">
@@ -869,10 +869,10 @@
                                                     alt="avatar">
                                                 </div>
                                                 <div>
-                                                    <p class="text-slate-700 font-semibold text-sm dark:text-white">
+                                                    <p class="text-slate-700 font-semibold text-sm">
                                                     Michael Jeremy
                                                     </p>
-                                                    <p class="text-xs text-gray-500 dark:text-white/70">
+                                                    <p class="text-xs text-gray-500">
                                                     08 Aug 2022
                                                     </p>
                                                 </div>
@@ -887,8 +887,8 @@
                                                 <img class="avatar avatar-xs rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}"
                                                     alt="Image Description">
                                                 <span
-                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                    class="inline-flex items-center justify-center avatar avatar-xs rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">4+</span>
                                                 </span>
                                                 </div>
                                             </div>
@@ -904,7 +904,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/2.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Tailwind Ui Web Application</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -915,8 +915,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">2+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">2+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -926,7 +926,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-success/40 rounded-full"></span>
                                                     Completed
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">15-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">15-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -936,7 +936,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/1.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Synto Ui Mobile Application</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -949,8 +949,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">4+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -960,7 +960,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-warning/40 rounded-full"></span>
                                                     Inprogress
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">10-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">10-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -970,7 +970,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/3.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Valex Laravel Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -983,8 +983,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">4+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -994,7 +994,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-warning/40 rounded-full"></span>
                                                     Inprogress
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">10-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">10-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1004,7 +1004,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/4.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Zanex Laravel Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1017,8 +1017,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">4+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1028,7 +1028,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-primary/40 rounded-full"></span>
                                                     New Project
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1038,7 +1038,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/5.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Adminor Laravel Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1051,8 +1051,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">4+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1062,7 +1062,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-primary/40 rounded-full"></span>
                                                     New Project
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1072,7 +1072,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/6.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Client Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1085,8 +1085,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">4+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">4+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1096,7 +1096,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-danger/40 rounded-full"></span>
                                                     Aborted
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1106,7 +1106,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/7.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">React Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1119,8 +1119,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">5+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1130,7 +1130,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-info/40 rounded-full"></span>
                                                     Approved
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1140,7 +1140,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/8.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Angular Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1153,8 +1153,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">5+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1164,7 +1164,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-primary/40 rounded-full"></span>
                                                     New Project
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1174,7 +1174,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/9.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Vue Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1187,8 +1187,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">5+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1198,7 +1198,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-success/40 rounded-full"></span>
                                                     Completed
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1208,7 +1208,7 @@
                                             <div class="box-body space-y-3">
                                                 <div class="sm:flex sm:space-x-3 sm:space-y-0 space-y-2 rtl:space-x-reverse">
                                                 <img src="{{asset('build/assets/img/logos/10.png')}}"
-                                                    class="p-2 avatar w-14 h-14  bg-gray-100 dark:bg-black/20 rounded-sm" alt="profile-img">
+                                                    class="p-2 avatar w-14 h-14  bg-gray-100 rounded-sm" alt="profile-img">
                                                 <div class="my-auto space-y-2">
                                                     <h5 class="text-sm font-semibold">Nextjs Project</h5>
                                                     <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1221,8 +1221,8 @@
                                                     <img class="avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/12.jpg')}}"
                                                         alt="Image Description">
                                                     <span
-                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">5+</span>
+                                                        class="inline-flex items-center justify-center avatar w-6 h-6 rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">5+</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -1232,7 +1232,7 @@
                                                     <span class="w-1.5 h-1.5 inline-block bg-warning/40 rounded-full"></span>
                                                     Inprogress
                                                 </span>
-                                                <p class="text-gray-500 dark:text-white/70 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
+                                                <p class="text-gray-500 text-sm font-medium my-auto whitespace-nowrap">05-12-2022</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -1249,15 +1249,15 @@
                                     <h5 class="box-title">Skills</h5>
                                     </div>
                                     <div class="box-body">
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Laravel</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Angular</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Html</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">VueJs</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">React</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Codeignator</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Javascript</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Bootstarp</span>
-                                    <span class="badge bg-gray-100 text-gray-800 dark:bg-black/20 dark:text-gray-200">Php</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Laravel</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Angular</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Html</span>
+                                    <span class="badge bg-gray-100 text-gray-800">VueJs</span>
+                                    <span class="badge bg-gray-100 text-gray-800">React</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Codeignator</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Javascript</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Bootstarp</span>
+                                    <span class="badge bg-gray-100 text-gray-800">Php</span>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -1266,45 +1266,45 @@
                                     </div>
                                     <div class="box-body">
                                     <ul class="flex flex-col">
-                                        <li class="ti-list-group pt-0 px-0 border-0 text-gray-800 dark:text-white">
+                                        <li class="ti-list-group pt-0 px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                             <img src="{{asset('build/assets/img/gallery/1.jpg')}}" class="avatar rounded-sm ring-0" alt="profile-img">
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-xs leading-none">Minim Lorem sunt in sunt adipisicing anim est
                                                 enim duis..</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>Sept 29 , 2022</span></p>
                                             </div>
                                         </a>
                                         </li>
-                                        <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                        <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                             <img src="{{asset('build/assets/img/gallery/2.jpg')}}" class="avatar rounded-sm ring-0" alt="profile-img">
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-xs leading-none">Deserunt dolore ad incididunt excepteur excepteur
                                                 Lorem amet excepteur.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>3 hours ago</span></p>
                                             </div>
                                         </a>
                                         </li>
-                                        <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                        <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                             <img src="{{asset('build/assets/img/gallery/3.jpg')}}" class="avatar rounded-sm ring-0" alt="profile-img">
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-xs leading-none">Exercitation officia Lorem amet commodo.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>30 mins ago</span></p>
                                             </div>
                                         </a>
                                         </li>
-                                        <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                        <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="space-x-3 flex rtl:space-x-reverse">
                                             <img src="{{asset('build/assets/img/gallery/4.jpg')}}" class="avatar rounded-sm ring-0" alt="profile-img">
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-xs leading-none">Sunt occaecat ut dolor veniam id cillum laboris
                                                 ad et.</h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>l day ago</span></p>
                                             </div>
                                         </a>

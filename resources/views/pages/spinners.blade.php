@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Spinners</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Spinners</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Components
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Spinners
                                     </li>
                                 </ol>
@@ -91,7 +91,7 @@
                                                 <div class="ti-spinner text-info" role="status" aria-label="loading">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
-                                                <div class="ti-spinner text-gray-800 dark:text-white" role="status"
+                                                <div class="ti-spinner text-gray-800" role="status"
                                                     aria-label="loading">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
@@ -192,7 +192,7 @@
                                                     aria-label="loading">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
-                                                <div class="ti-spinner animate-ping border-transparent  bg-black/20 dark:animate-ping "
+                                                <div class="ti-spinner animate-ping border-transparent  bg-black/20 "
                                                     role="status" aria-label="loading">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
@@ -325,7 +325,7 @@
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="absolute top-0 ltr:left-0 rtl:right-0 w-full h-full bg-white/[.5] rounded-sm dark:bg-bgdark/[.4]">
+                                                    class="absolute top-0 ltr:left-0 rtl:right-0 w-full h-full bg-white/[.5] rounded-sm">
                                                 </div>
                                                 <div class="absolute top-1/2 ltr:left-1/2 rtl:right-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                                     <div class="ti-spinner text-primary" role="status" aria-label="loading">

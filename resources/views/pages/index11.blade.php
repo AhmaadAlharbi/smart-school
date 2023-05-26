@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Stocks Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Stocks Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Stocks Dashboard
                                     </li>
                                 </ol>
@@ -41,8 +41,8 @@
                                     </div>
                                     <div class="flex-1 sm:flex justify-between items-center">
                                         <div class="flex-1">
-                                        <p class="mb-1 text-gray-500 dark:text-white/70 text-sm">Total Amount Invested</p>
-                                        <h5 class="text-xl text-gray-800 dark:text-white font-semibold">$23,8998.99</h5>
+                                        <p class="mb-1 text-gray-500 text-sm">Total Amount Invested</p>
+                                        <h5 class="text-xl text-gray-800 font-semibold">$23,8998.99</h5>
                                         </div>
                                         <div id="totalInvested" class="min-w-fit"></div>
                                     </div>
@@ -59,8 +59,8 @@
                                     </div>
                                     <div class="flex-1 sm:flex justify-between items-center">
                                         <div class="flex-1">
-                                        <p class="mb-1 text-gray-500 dark:text-white/70 text-sm">No Of Investments</p>
-                                        <h5 class="text-xl text-gray-800 dark:text-white font-semibold">1,116</h5>
+                                        <p class="mb-1 text-gray-500 text-sm">No Of Investments</p>
+                                        <h5 class="text-xl text-gray-800 font-semibold">1,116</h5>
                                         </div>
                                         <div id="totalInvestments" class="min-w-fit"></div>
                                     </div>
@@ -77,8 +77,8 @@
                                     </div>
                                     <div class="flex-1 sm:flex justify-between items-center">
                                         <div class="flex-1">
-                                        <p class="mb-1 text-gray-500 dark:text-white/70 text-sm">Portfolio Value</p>
-                                        <h5 class="text-xl text-gray-800 dark:text-white font-semibold">$12,920.20</h5>
+                                        <p class="mb-1 text-gray-500 text-sm">Portfolio Value</p>
+                                        <h5 class="text-xl text-gray-800 font-semibold">$12,920.20</h5>
                                         </div>
                                         <div id="totalReturns" class="min-w-fit"></div>
                                     </div>
@@ -95,8 +95,8 @@
                                     </div>
                                     <div class="flex-1 flex justify-between items-center">
                                         <div class="flex-1">
-                                        <p class="mb-1 text-gray-500 dark:text-white/70 text-sm">Returns Rate</p>
-                                        <h5 class="text-xl text-gray-800 dark:text-white font-semibold">+12.08% <i class="fe fe-arrow-up ltr:ml-1 rtl:mr-1 text-success"></i> </h5>
+                                        <p class="mb-1 text-gray-500 text-sm">Returns Rate</p>
+                                        <h5 class="text-xl text-gray-800 font-semibold">+12.08% <i class="fe fe-arrow-up ltr:ml-1 rtl:mr-1 text-success"></i> </h5>
                                         </div>
                                         <div id="returnsRate" class="min-w-fit"></div>
                                     </div>
@@ -140,21 +140,21 @@
                                     <div class="sm:flex justify-between items-center text-sm text-center mb-4">
                                     <div class="sm:flex items-center mb-4 sm:mb-0 space-y-4 sm:space-y-0">
                                         <div class="ltr:mr-6 rtl:ml-6">
-                                        <span class="text-gray-500 dark:text-white/70">Invested Value</span>
+                                        <span class="text-gray-500">Invested Value</span>
                                         <p class="mt-1 mb-0">$1,290.94 <span class="ltr:ml-1 rtl:mr-1 text-success"><i class="ti ti-trending-up"></i> 1.22%</span></p>
                                         </div>
                                         <div class="ltr:mr-0 rtl:ml-0">
-                                        <span class="text-gray-500 dark:text-white/70">Total Returns</span>
+                                        <span class="text-gray-500">Total Returns</span>
                                         <p class="mt-1 mb-0">$25,458.20 <span class="ltr:ml-1 rtl:mr-1 text-success"><i class="ti ti-trending-up"></i> 12.22%</span></p>
                                         </div>
                                     </div>
                                     <div class="sm:flex items-center space-y-4 sm:space-y-0">
                                         <div class="ltr:mr-6 rtl:ml-6">
-                                        <span class="text-gray-500 dark:text-white/70">Today Change</span>
+                                        <span class="text-gray-500">Today Change</span>
                                         <p class="mt-1 mb-0">$112.09</p>
                                         </div>
                                         <div class="ltr:mr-0 rtl:ml-0">
-                                        <span class="text-gray-500 dark:text-white/70">Change In %</span>
+                                        <span class="text-gray-500">Change In %</span>
                                         <p class="mt-1 mb-0">+0.01% <span class="ltr:ml-1 rtl:mr-1 text-success"><i class="ti ti-trending-up"></i> 0.03%</span></p>
                                         </div>
                                     </div>
@@ -169,7 +169,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">My Stocks</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         All Stocks <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">All Stocks</a>
@@ -186,7 +186,7 @@
                                     <div class="hs-accordion-group my-stocks-container">
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-one">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-one">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -199,7 +199,7 @@
                                                 <span class="text-end">$12,390.02</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">12 shares</span>
+                                                <span class="text-gray-500">12 shares</span>
                                                 <span class="text-success"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>0.14%</span>
                                                 </span>
                                             </span>
@@ -210,7 +210,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-fill"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -228,7 +228,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -236,11 +236,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -249,7 +249,7 @@
                                     </div>
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-two">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-two">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -262,7 +262,7 @@
                                                 <span class="text-end">$15,526.01</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">1,290 shares</span>
+                                                <span class="text-gray-500">1,290 shares</span>
                                                 <span class="text-success"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>2.14%</span>
                                                 </span>
                                             </span>
@@ -273,7 +273,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-line"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -291,7 +291,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -299,11 +299,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -312,7 +312,7 @@
                                     </div>
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-three">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-three">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -325,7 +325,7 @@
                                                 <span class="text-end">$41,250.50</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">230 shares</span>
+                                                <span class="text-gray-500">230 shares</span>
                                                 <span class="text-danger"><i class="ti ti-trending-down ltr:mr-1 rtl:ml-1"></i>4.02%</span>
                                                 </span>
                                             </span>
@@ -336,7 +336,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-fill"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -354,7 +354,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -362,11 +362,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -375,7 +375,7 @@
                                     </div>
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-four">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-four">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -388,7 +388,7 @@
                                                 <span class="text-end">$30,500.15</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">325 shares</span>
+                                                <span class="text-gray-500">325 shares</span>
                                                 <span class="text-danger"><i class="ti ti-trending-down ltr:mr-1 rtl:ml-1"></i>2.73%</span>
                                                 </span>
                                             </span>
@@ -399,7 +399,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-line"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -417,7 +417,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -425,11 +425,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -438,7 +438,7 @@
                                     </div>
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-five">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-five">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -451,7 +451,7 @@
                                                 <span class="text-end">$1,80,520.02</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">1,523 shares</span>
+                                                <span class="text-gray-500">1,523 shares</span>
                                                 <span class="text-success"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>8.63%</span>
                                                 </span>
                                             </span>
@@ -462,7 +462,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-fill"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -480,7 +480,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -488,11 +488,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -501,7 +501,7 @@
                                     </div>
 
                                     <div class="hs-accordion stock-item" id="hs-basic-heading-six">
-                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        <button type="button" class="hs-accordion-toggle  group py-0 inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-six">
                                         <span class="flex items-center w-full">
                                             <span class="flex justify-between items-center w-full">
@@ -514,7 +514,7 @@
                                                 <span class="text-end">$21,093.20</span>
                                                 </span>
                                                 <span class="flex justify-between items-center text-xs">
-                                                <span class="text-gray-500 dark:text-white/70">30 shares</span>
+                                                <span class="text-gray-500">30 shares</span>
                                                 <span class="text-danger"><i class="ti ti-trending-down ltr:mr-1 rtl:ml-1"></i>4.10%</span>
                                                 </span>
                                             </span>
@@ -525,7 +525,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-light">
                                                 <i class="ri-star-fill"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Whishlist
                                                 </span>
@@ -543,7 +543,7 @@
                                             <span class="hs-tooltip ti-main-tooltip">
                                                 <span class="m-0 hs-tooltip-toggle relative w-7 h-7 ti-btn transition-none focus:outline-none ti-btn-light">
                                                 <i class="ti ti-chart-candle"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1818px, -249px);">
                                                     Market Cap
                                                 </span>
                                                 </span>
@@ -551,11 +551,11 @@
                                             </div>
                                             <div class="min-w-fit flex items-center">
                                             <p class="mb-0 ltr:mr-3 rtl:ml-3">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                 <span class="text-success">$20,399,08</span>
                                             </p>
                                             <p class="mb-0">
-                                                <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                 <span class="text-danger">$11,021,36</span>
                                             </p>
                                             </div>
@@ -582,11 +582,11 @@
                                     </a>
                                     <div class="flex-1">
                                         <div class="flex justify-between items-center mb-1 text-sm">
-                                        <span class="text-base font-semibold text-gray-800 dark:text-white">Apple</span>
+                                        <span class="text-base font-semibold text-gray-800">Apple</span>
                                         <span class="text-success text-end"><i class="ti ti-trending-up text-xs ltr:mr-1 rtl:ml-1"></i>0.14%</span>
                                         </div>
                                         <div class="flex justify-between items-center text-xs">
-                                        <span class="text-gray-500 dark:text-white/70">$12,289.44</span>
+                                        <span class="text-gray-500">$12,289.44</span>
                                         <span class="text-success text-end">+$1,780.80</span>
                                         </div>
                                     </div>
@@ -608,11 +608,11 @@
                                     </a>
                                     <div class="flex-1">
                                         <div class="flex justify-between items-center mb-1 text-sm">
-                                        <span class="text-base font-semibold text-gray-800 dark:text-white">Bitcion</span>
+                                        <span class="text-base font-semibold text-gray-800">Bitcion</span>
                                         <span class="text-success text-end"><i class="ti ti-trending-up text-xs ltr:mr-1 rtl:ml-1"></i>2.14%</span>
                                         </div>
                                         <div class="flex justify-between items-center text-xs">
-                                        <span class="text-gray-500 dark:text-white/70">$58,151.02</span>
+                                        <span class="text-gray-500">$58,151.02</span>
                                         <span class="text-success text-end">+$5,745.62</span>
                                         </div>
                                     </div>
@@ -634,11 +634,11 @@
                                     </a>
                                     <div class="flex-1">
                                         <div class="flex justify-between items-center mb-1 text-sm">
-                                        <span class="text-base font-semibold text-gray-800 dark:text-white">Telsa</span>
+                                        <span class="text-base font-semibold text-gray-800">Telsa</span>
                                         <span class="text-success text-end"><i class="ti ti-trending-up text-xs ltr:mr-1 rtl:ml-1"></i>4.02%</span>
                                         </div>
                                         <div class="flex justify-between items-center text-xs">
-                                        <span class="text-gray-500 dark:text-white/70">$14,452.36</span>
+                                        <span class="text-gray-500">$14,452.36</span>
                                         <span class="text-success text-end">+$4,125.63</span>
                                         </div>
                                     </div>
@@ -660,11 +660,11 @@
                                     </a>
                                     <div class="flex-1">
                                         <div class="flex justify-between items-center mb-1 text-sm">
-                                        <span class="text-base font-semibold text-gray-800 dark:text-white">Amozan</span>
+                                        <span class="text-base font-semibold text-gray-800">Amozan</span>
                                         <span class="text-success text-end"><i class="ti ti-trending-up text-xs ltr:mr-1 rtl:ml-1"></i>5.14%</span>
                                         </div>
                                         <div class="flex justify-between items-center text-xs">
-                                        <span class="text-gray-500 dark:text-white/70">$63,251.11</span>
+                                        <span class="text-gray-500">$63,251.11</span>
                                         <span class="text-success text-end">+$9,36.20</span>
                                         </div>
                                     </div>
@@ -687,7 +687,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">Transaction History</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         All <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">All</a>
@@ -757,7 +757,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">Market Movers</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         All <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">All</a>
@@ -843,48 +843,48 @@
                                                 </div>
                                                 <div class="flex-1 flex justify-between items-center">
                                                     <div class="">
-                                                        <p class="mb-0 text-gray-800 dark:text-white font-semibold">Gituhb, Demo Inc.</p>
-                                                        <span class="text-xs text-gray-500 dark:text-white/70">GTHB <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> NSE</span>
+                                                        <p class="mb-0 text-gray-800 font-semibold">Gituhb, Demo Inc.</p>
+                                                        <span class="text-xs text-gray-500">GTHB <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> NSE</span>
                                                     </div>
                                                     <div class="flex-1 text-end">
-                                                        <span class="text-gray-800 dark:text-white font-semibold">$12,390.02<span class="text-success ltr:ml-2 rtl:mr-2 text-xs"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>0.14%</span></span>
-                                                        <p class="mb-0 mt-1 text-gray-500 dark:text-white/70 text-xs">16-06-2022 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> 14:17 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> Live</p>
+                                                        <span class="text-gray-800 font-semibold">$12,390.02<span class="text-success ltr:ml-2 rtl:mr-2 text-xs"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>0.14%</span></span>
+                                                        <p class="mb-0 mt-1 text-gray-500 text-xs">16-06-2022 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> 14:17 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> Live</p>
                                                     </div>
                                                 </div>
                                 </div>
                                 <div class="ti-modal-body !p-0">
-                                <div class="px-3 py-2 border-b border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-black/20 flex items-center">
+                                <div class="px-3 py-2 border-b border-gray-200 bg-gray-100 flex items-center">
                                                     <p class="mb-0 ltr:mr-0 rtl:ml-0 flex-1 text-start">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Avg. Bid Price:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Avg. Bid Price:</span>
                                                         <span class="text-primary">~$12,578</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Open:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Open:</span>
                                                         <span class="text-info">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                         <span class="text-success">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                         <span class="text-secondary">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Close:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Close:</span>
                                                         <span class="text-danger">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-0 rtl:ml-0 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Vol:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Vol:</span>
                                                         <span class="text-warning">$20,399</span>
                                                     </p>
                                                 </div>
 
-                                <div class="hs-accordion-group border-b border-gray-200 dark:border-white/10">
+                                <div class="hs-accordion-group border-b border-gray-200">
 
                                     <div class="hs-accordion p-3" id="hs-basic-heading-1">
                                     <button
-                                        class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:pb-3 group inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:pb-3 group inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-1" type="button">
                                         <span class="text-primary ltr:ml-auto rtl:mr-auto">Market Depth</span>
                                     </button>
@@ -1027,48 +1027,48 @@
                                                 </div>
                                                 <div class="flex-1 flex justify-between items-center">
                                                     <div class="">
-                                                        <p class="mb-0 text-gray-800 dark:text-white font-semibold">Gituhb, Demo Inc.</p>
-                                                        <span class="text-xs text-gray-500 dark:text-white/70">GTHB <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> NSE</span>
+                                                        <p class="mb-0 text-gray-800 font-semibold">Gituhb, Demo Inc.</p>
+                                                        <span class="text-xs text-gray-500">GTHB <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> NSE</span>
                                                     </div>
                                                     <div class="flex-1 text-end">
-                                                        <span class="text-gray-800 dark:text-white font-semibold">$12,390.02<span class="text-success ltr:ml-2 rtl:mr-2 text-xs"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>0.14%</span></span>
-                                                        <p class="mb-0 mt-1 text-gray-500 dark:text-white/70 text-xs">16-06-2022 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> 14:17 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> Live</p>
+                                                        <span class="text-gray-800 font-semibold">$12,390.02<span class="text-success ltr:ml-2 rtl:mr-2 text-xs"><i class="ti ti-trending-up ltr:mr-1 rtl:ml-1"></i>0.14%</span></span>
+                                                        <p class="mb-0 mt-1 text-gray-500 text-xs">16-06-2022 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> 14:17 <i class="ri-checkbox-blank-circle-fill text-[3px]"></i> Live</p>
                                                     </div>
                                                 </div>
                                 </div>
                                 <div class="ti-modal-body !p-0">
-                                <div class="px-3 py-2 border-b border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-black/20 flex items-center">
+                                <div class="px-3 py-2 border-b border-gray-200 bg-gray-100 flex items-center">
                                                     <p class="mb-0 ltr:mr-0 rtl:ml-0 flex-1 text-start">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Avg. Ask Price:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Avg. Ask Price:</span>
                                                         <span class="text-primary">~$12,578</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Open:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Open:</span>
                                                         <span class="text-info">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">High:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">High:</span>
                                                         <span class="text-success">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Low:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Low:</span>
                                                         <span class="text-secondary">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-3 rtl:ml-3 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Close:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Close:</span>
                                                         <span class="text-danger">$20,399</span>
                                                     </p>
                                                     <p class="mb-0 ltr:mr-0 rtl:ml-0 text-end">
-                                                        <span class="text-gray-500 dark:text-white/70 ltr:mr-1 rtl:ml-1">Vol:</span>
+                                                        <span class="text-gray-500 ltr:mr-1 rtl:ml-1">Vol:</span>
                                                         <span class="text-warning">$20,399</span>
                                                     </p>
                                                 </div>
 
-                                <div class="hs-accordion-group border-b border-gray-200 dark:border-white/10">
+                                <div class="hs-accordion-group border-b border-gray-200">
 
                                     <div class="hs-accordion p-3" id="hs-basic-heading-2">
                                     <button
-                                        class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:pb-3 group inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-primary dark:text-gray-200 dark:hover:text-white/80"
+                                        class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:pb-3 group inline-flex items-center gap-x-3 w-full font-medium text-start text-gray-800 transition hover:text-gray-500"
                                         aria-controls="hs-basic-collapse-2" type="button">
                                         <span class="text-primary ltr:ml-auto rtl:mr-auto">Market Depth</span>
                                     </button>

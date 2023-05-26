@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Product List</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Product List</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Product List
                                     </li>
                                 </ol>
@@ -40,13 +40,13 @@
                             <div class="box-body">
                                 <div class="table-bordered whitespace-nowrap rounded-sm overflow-auto">
                                 <table class="ti-custom-table ti-custom-table-head edit-table">
-                                    <thead class="bg-gray-100 dark:bg-black/20">
+                                    <thead class="bg-gray-100">
                                     <tr class="">
                                         <th scope="col" class="dark:text-white/70">
                                         <div class="flex leading-[0] justify-center">
                                             <input type="checkbox" class="border-gray-500 ti-form-checkbox mt-0.5 check-all"
                                             id="hs-default-checkbox">
-                                            <label for="hs-default-checkbox" class="text-sm text-gray-500 dark:text-white/70"></label>
+                                            <label for="hs-default-checkbox" class="text-sm text-gray-500"></label>
                                         </div>
                                         </th>
                                         <th scope="col" class="dark:text-white/70">Product Id</th>
@@ -56,7 +56,7 @@
                                         <th scope="col" class="dark:text-white/70">Stock</th>
                                         <th scope="col" class="dark:text-white/70">Status</th>
                                         <th scope="col" class="dark:text-white/70">Date</th>
-                                        <th scope="col" class="!text-end dark:text-white/70">Action</th>
+                                        <th scope="col" class="!text-end">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -70,10 +70,10 @@
                                         <td class="font-semibold">#spk1521</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/2.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">
                                             Shirts For Men</span>
                                         </div>
                                         </td>
@@ -107,10 +107,10 @@
                                         <td class="font-semibold">#spk1522</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/16.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Smart
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Smart
                                             Watch</span>
                                         </div>
                                         </td>
@@ -144,10 +144,10 @@
                                         <td class="font-semibold">#spk1523</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/18.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">HandBag
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">HandBag
                                             For Womens</span>
                                         </div>
                                         </td>
@@ -181,10 +181,10 @@
                                         <td class="font-semibold">#spk1524</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/11.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Frock
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Frock
                                             For Girls</span>
                                         </div>
                                         </td>
@@ -218,10 +218,10 @@
                                         <td class="font-semibold">#spk1525</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/4.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Bluetooth
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Bluetooth
                                             Headphones</span>
                                         </div>
                                         </td>
@@ -255,10 +255,10 @@
                                         <td class="font-semibold">#spk1526</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/19.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Purse
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Purse
                                             For Women</span>
                                         </div>
                                         </td>
@@ -292,10 +292,10 @@
                                         <td class="font-semibold">#spk1527</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/3.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Blue
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Blue
                                             Jacket For Men</span>
                                         </div>
                                         </td>
@@ -329,10 +329,10 @@
                                         <td class="font-semibold">#spk1528</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/8.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Men's
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Men's
                                             Cowboy's Hat</span>
                                         </div>
                                         </td>
@@ -366,10 +366,10 @@
                                         <td class="font-semibold">#spk1529</td>
                                         <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse">
-                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 dark:bg-black/20 p-1"
+                                            <img class="avatar avatar-sm rounded-sm bg-gray-100 p-1"
                                             src="{{asset('build/assets/img/ecommerce/products/10.png')}}" alt="Image Description">
                                             <span
-                                            class="block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">Leather
+                                            class="block text-sm font-semibold text-gray-800 my-auto truncate lg:max-w-[100px]">Leather
                                             Wallet For Grils</span>
                                         </div>
                                         </td>

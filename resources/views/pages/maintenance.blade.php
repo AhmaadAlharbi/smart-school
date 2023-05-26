@@ -5,7 +5,7 @@
 @endsection
 
 @section('custom-body')
-    <body class="flex h-full !py-0 bg-white dark:bg-bgdark">
+    <body class="flex h-full !py-0 bg-white">
 @endsection
 
 @section('content')
@@ -29,8 +29,8 @@
                             <div class="mt-7">
                                 <div class="p-0 md:p-7">
                                     <div class="text-center">
-                                        <h1 class="block text-2xl sm:text-5xl font-bold text-gray-800 dark:text-white">Under Maintenance</h1>
-                                        <p class="mt-3 text-sm text-gray-600 dark:text-white/70">
+                                        <h1 class="block text-2xl sm:text-5xl font-bold text-gray-800">Under Maintenance</h1>
+                                        <p class="mt-3 text-sm text-gray-600">
                                             The Site You are looking For is Currently Under Maintenance And it will be back shortly , We will notify you when we are back..!
                                         </p>
                                     </div>
@@ -40,32 +40,32 @@
                                         <!-- Form -->
                                         <div class="">
                                             <div class="grid md:grid-cols-4 gap-4 max-w-xl mx-auto">
-                                                <div class="p-5 text-center bg-gray-100 dark:bg-black/20 rounded-sm space-y-5">
+                                                <div class="p-5 text-center bg-gray-100 rounded-sm space-y-5">
                                                     <h4 class="font-semibold text-3xl leading-none">
                                                         365
                                                     </h4>
-                                                    <p class="mb-1 text-sm font-semibold text-gray-500 dark:text-white/70">DAYS
+                                                    <p class="mb-1 text-sm font-semibold text-gray-500">DAYS
                                                     </p>
                                                 </div>
-                                                <div class="p-5 text-center bg-gray-100 dark:bg-black/20 rounded-sm space-y-5">
+                                                <div class="p-5 text-center bg-gray-100 rounded-sm space-y-5">
                                                     <h4 class="font-semibold text-3xl leading-none">
                                                         24
                                                     </h4>
-                                                    <p class="mb-1 text-sm font-semibold text-gray-500 dark:text-white/70">Hours
+                                                    <p class="mb-1 text-sm font-semibold text-gray-500">Hours
                                                     </p>
                                                 </div>
-                                                <div class="p-5 text-center bg-gray-100 dark:bg-black/20 rounded-sm space-y-5">
+                                                <div class="p-5 text-center bg-gray-100 rounded-sm space-y-5">
                                                     <h4 class="font-semibold text-3xl leading-none">
                                                         60
                                                     </h4>
-                                                    <p class="mb-1 text-sm font-semibold text-gray-500 dark:text-white/70">
+                                                    <p class="mb-1 text-sm font-semibold text-gray-500">
                                                         MINUTES</p>
                                                 </div>
-                                                <div class="p-5 text-center bg-gray-100 dark:bg-black/20 rounded-sm space-y-5">
+                                                <div class="p-5 text-center bg-gray-100 rounded-sm space-y-5">
                                                     <h4 class="font-semibold text-3xl leading-none">
                                                         60
                                                     </h4>
-                                                    <p class="mb-1 text-sm font-semibold text-gray-500 dark:text-white/70">
+                                                    <p class="mb-1 text-sm font-semibold text-gray-500">
                                                         SECONDS</p>
                                                 </div>
                                             </div>
@@ -73,7 +73,7 @@
                                         <!-- End Form -->
 
                                         <div>
-                                            <p class="mb-2 text-center text-sm text-gray-600 dark:text-white/70">
+                                            <p class="mb-2 text-center text-sm text-gray-600">
                                             Follow Us
                                             </p>
                                             <div class="flex space-x-1 rtl:space-x-reverse justify-center text-center">

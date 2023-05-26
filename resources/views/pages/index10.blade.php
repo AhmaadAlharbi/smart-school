@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Personal Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Personal Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Personal Dashboard
                                     </li>
                                 </ol>
@@ -40,10 +40,10 @@
                                             <div class="flex justify-between">
                                             <div class="flex-1">
                                                 <h6 class="mb-2 text-base font-medium">Total Balance</h6>
-                                                <h5 class="mb-1 text-3xl text-gray-800 dark:text-white font-semibold">$75,234
-                                                <span class="text-xs text-gray-500 dark:text-white/70 font-normal ">/ month</span>
+                                                <h5 class="mb-1 text-3xl text-gray-800 font-semibold">$75,234
+                                                <span class="text-xs text-gray-500 font-normal ">/ month</span>
                                                 </h5>
-                                                <span class="text-gray-500 dark:text-white/70"><i class="ti ti-trending-up text-success"></i>
+                                                <span class="text-gray-500"><i class="ti ti-trending-up text-success"></i>
                                                 +5%
                                                 than last month</span>
                                             </div>
@@ -61,10 +61,10 @@
                                             <div class="flex justify-between">
                                             <div class="flex-1">
                                                 <h6 class="mb-2 text-base font-medium">Total Income</h6>
-                                                <h5 class="mb-1 text-3xl text-gray-800 dark:text-white font-semibold">$45,234
-                                                <span class="text-xs text-gray-500 dark:text-white/70 font-normal ">/ month</span>
+                                                <h5 class="mb-1 text-3xl text-gray-800 font-semibold">$45,234
+                                                <span class="text-xs text-gray-500 font-normal ">/ month</span>
                                                 </h5>
-                                                <span class="text-gray-500 dark:text-white/70"><i class="ti ti-trending-up text-success"></i>
+                                                <span class="text-gray-500"><i class="ti ti-trending-up text-success"></i>
                                                 +5%
                                                 than last month</span>
                                             </div>
@@ -82,10 +82,10 @@
                                             <div class="flex justify-between">
                                             <div class="flex-1">
                                                 <h6 class="mb-2 text-base font-medium">Total Expenses</h6>
-                                                <h5 class="mb-1 text-3xl text-gray-800 dark:text-white font-semibold">$35,234
-                                                <span class="text-xs text-gray-500 dark:text-white/70 font-normal ">/ month</span>
+                                                <h5 class="mb-1 text-3xl text-gray-800 font-semibold">$35,234
+                                                <span class="text-xs text-gray-500 font-normal ">/ month</span>
                                                 </h5>
-                                                <span class="text-gray-500 dark:text-white/70"><i class="ti ti-trending-down text-danger"></i>
+                                                <span class="text-gray-500"><i class="ti ti-trending-down text-danger"></i>
                                                 -10%
                                                 than last month</span>
                                             </div>
@@ -136,7 +136,7 @@
                                             <h5 class="box-title my-auto">Contacts </h5>
                                             <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                 <button type="button" aria-label="button"
-                                                class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                                 <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                 <div class="hs-dropdown-menu ti-dropdown-menu">
                                                 <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -148,7 +148,7 @@
                                         </div>
                                         <div class="box-body">
                                             <ul class="flex flex-col">
-                                            <li class="px-0 pt-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 pt-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/2.jpg')}}"
@@ -156,25 +156,25 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Socrates Itumay</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(72)-86976972</p>
                                                     </div>
                                                     </div>
                                                 </a>
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto space-x-2 rtl:space-x-reverse">
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500">
                                                     <i class="ri-heart-line text-base hover:text-danger"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/3.jpg')}}"
@@ -182,10 +182,10 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Ryan Gercia</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-05147532</p>
                                                     </div>
                                                     </div>
@@ -195,12 +195,12 @@
                                                 <a aria-label="anchor" href="{{url('contacts')}}" class="text-danger">
                                                     <i class="ri-heart-line text-base"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/10.jpg')}}"
@@ -208,10 +208,10 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Prax Bhav</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-05147532</p>
                                                     </div>
                                                     </div>
@@ -221,12 +221,12 @@
                                                 <a aria-label="anchor" href="{{url('contacts')}}" class="text-danger">
                                                     <i class="ri-heart-line text-base"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/12.jpg')}}"
@@ -234,25 +234,25 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Jackie Chen</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-26556658</p>
                                                     </div>
                                                     </div>
                                                 </a>
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto space-x-2 rtl:space-x-reverse">
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500">
                                                     <i class="ri-heart-line text-base hover:text-danger"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/5.jpg')}}"
@@ -260,25 +260,25 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Samantha Sam</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-26556658</p>
                                                     </div>
                                                     </div>
                                                 </a>
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto space-x-2 rtl:space-x-reverse">
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500">
                                                     <i class="ri-heart-line text-base hover:text-danger"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/15.jpg')}}"
@@ -286,25 +286,25 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Robert Lewis</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-26556658</p>
                                                     </div>
                                                     </div>
                                                 </a>
                                                 </div>
                                                 <div class="ltr:ml-auto rtl:mr-auto space-x-2 rtl:space-x-reverse">
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500">
                                                     <i class="ri-heart-line text-base hover:text-danger"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
                                             </li>
-                                            <li class="px-0 pb-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                            <li class="px-0 pb-0 ti-list-group border-0 text-gray-800 w-full">
                                                 <div class="">
                                                 <a href="{{url('profile')}}" class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/3.jpg')}}"
@@ -312,10 +312,10 @@
                                                     <div class="flex">
                                                     <div class="block my-auto">
                                                         <p
-                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto  dark:text-white dark:hover:text-gray-200">
+                                                        class="block text-sm font-semibold text-gray-800 hover:text-gray-900 my-auto ">
                                                         Ryan Gercia</p>
                                                         <p
-                                                        class="text-xs text-gray-400 dark:text-white/80 truncate sm:max-w-max max-w-[100px] font-normal">
+                                                        class="text-xs text-gray-400 truncate sm:max-w-max max-w-[100px] font-normal">
                                                         +(12)-05147532</p>
                                                     </div>
                                                     </div>
@@ -325,7 +325,7 @@
                                                 <a aria-label="anchor" href="{{url('contacts')}}" class="text-danger">
                                                     <i class="ri-heart-line text-base"></i>
                                                 </a>
-                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 dark:text-white/70 rtl:rotate-180 inline-flex">
+                                                <a aria-label="anchor" href="{{url('contacts')}}" class="text-gray-500 rtl:rotate-180 inline-flex">
                                                     <i class="ri-arrow-right-s-line text-base"></i>
                                                 </a>
                                                 </div>
@@ -368,7 +368,7 @@
                                         <h5 class="box-title my-auto">On Going Tasks</h5>
                                         <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                             Today <i class="ti ti-chevron-down"></i></button>
                                             <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                             <a class="ti-dropdown-item" href="javascript:void(0)">Today</a>
@@ -390,11 +390,11 @@
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex items-center justify-between mb-1">
-                                                <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Designing a landing page
+                                                <h5 class="mb-1 text-sm font-semibold text-gray-800">Designing a landing page
                                                 </h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button type="button" aria-label="button"
-                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -414,7 +414,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/7.jpg')}}"
                                                     alt="Image Description">
                                                 </div>
-                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i
+                                                <span class="text-gray-500 flex text-xs"><i
                                                     class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                 </div>
                                             </div>
@@ -429,11 +429,11 @@
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex items-center justify-between mb-1">
-                                                <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Responsive Issues
+                                                <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Responsive Issues
                                                 </h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button type="button" aria-label="button"
-                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -451,11 +451,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/6.jpg')}}"
                                                     alt="Image Description">
                                                     <span
-                                                    class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">9+</span>
+                                                    class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">9+</span>
                                                     </span>
                                                 </div>
-                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i
+                                                <span class="text-gray-500 flex text-xs"><i
                                                     class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                 </div>
                                             </div>
@@ -470,10 +470,10 @@
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex items-center justify-between mb-1">
-                                                <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Bugs</h5>
+                                                <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Bugs</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button type="button" aria-label="button"
-                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -489,7 +489,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}"
                                                     alt="Image Description">
                                                 </div>
-                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i
+                                                <span class="text-gray-500 flex text-xs"><i
                                                     class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                 </div>
                                             </div>
@@ -504,11 +504,11 @@
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex items-center justify-between mb-1">
-                                                <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Javascript Issues
+                                                <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Javascript Issues
                                                 </h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button type="button" aria-label="button"
-                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -526,7 +526,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}"
                                                     alt="Image Description">
                                                 </div>
-                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i
+                                                <span class="text-gray-500 flex text-xs"><i
                                                     class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                 </div>
                                             </div>
@@ -541,9 +541,9 @@
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex items-center justify-between mb-1">
-                                                <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Adding New Pages</h5>
+                                                <h5 class="mb-1 text-sm font-semibold text-gray-800">Adding New Pages</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                     <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -558,7 +558,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}" alt="Image Description">
                                                 </div>
-                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                 </div>
                                             </div>
                                             </div>
@@ -578,13 +578,13 @@
                                     <div class="flex justify-between">
                                     <h5 class="box-title my-auto">Recent Messages</h5>
                                     <button type="button"
-                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <ul class="">
-                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 w-full">
                                         <div class="flex items-start w-full">
                                         <a href="{{url('chat')}}" class="ltr:mr-2 rtl:ml-2 avatar rounded-full">
                                             <img src="{{asset('build/assets/img/users/17.jpg')}}" alt="img" class="rounded-full">
@@ -592,17 +592,17 @@
                                         <div class="flex justify-between relative w-full">
                                             <a aria-label="anchor" href="{{url('chat')}}" class="absolute h-full w-full inset-0"></a>
                                             <div class="">
-                                            <h5 class="text-sm text-gray-800 dark:text-white font-semibold">Elon Isk</h5>
-                                            <span class="text-xs text-gray-500 dark:text-white/70">Hello there! How are you doing? Call me when...</span>
+                                            <h5 class="text-sm text-gray-800 font-semibold">Elon Isk</h5>
+                                            <span class="text-xs text-gray-500">Hello there! How are you doing? Call me when...</span>
                                             </div>
                                             <div class="min-w-fit ltr:ml-2 rtl:mr-2 text-end">
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-1">2 min</p>
+                                            <p class="text-xs text-gray-500 mb-1">2 min</p>
                                             <span class="relative inline-flex rounded-full h-5 w-5 bg-primary text-white justify-center items-center">2</span>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 w-full">
                                         <div class="flex items-start w-full">
                                         <a href="{{url('chat')}}" class="ltr:mr-2 rtl:ml-2 avatar rounded-full">
                                             <img src="{{asset('build/assets/img/users/2.jpg')}}" alt="img" class="rounded-full">
@@ -610,16 +610,16 @@
                                         <div class="flex justify-between relative w-full">
                                             <a aria-label="anchor" href="{{url('chat')}}" class="absolute h-full w-full inset-0"></a>
                                             <div class="">
-                                            <h5 class="text-sm text-gray-800 dark:text-white font-semibold">Shakira Sen</h5>
-                                            <span class="text-xs text-gray-500 dark:text-white/70">I would like to discuss about that assets...</span>
+                                            <h5 class="text-sm text-gray-800 font-semibold">Shakira Sen</h5>
+                                            <span class="text-xs text-gray-500">I would like to discuss about that assets...</span>
                                             </div>
                                             <div class="min-w-fit ltr:ml-2 rtl:mr-2 text-end">
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-1">09:43</p>
+                                            <p class="text-xs text-gray-500 mb-1">09:43</p>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 w-full">
                                         <div class="flex items-start w-full">
                                         <a href="{{url('chat')}}" class="ltr:mr-2 rtl:ml-2 avatar rounded-full">
                                             <img src="{{asset('build/assets/img/users/21.jpg')}}" alt="img" class="rounded-full">
@@ -627,17 +627,17 @@
                                         <div class="flex justify-between relative w-full">
                                             <a aria-label="anchor" href="{{url('chat')}}" class="absolute h-full w-full inset-0"></a>
                                             <div class="">
-                                            <h5 class="text-sm text-gray-800 dark:text-white font-semibold">Sebastian</h5>
-                                            <span class="text-xs text-gray-500 dark:text-white/70">Shall we go to the cafe at downtown...</span>
+                                            <h5 class="text-sm text-gray-800 font-semibold">Sebastian</h5>
+                                            <span class="text-xs text-gray-500">Shall we go to the cafe at downtown...</span>
                                             </div>
                                             <div class="min-w-fit ltr:ml-2 rtl:mr-2 text-end">
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-1">yesterday</p>
+                                            <p class="text-xs text-gray-500 mb-1">yesterday</p>
                                             <span class="relative inline-flex rounded-full h-5 w-5 bg-primary text-white justify-center items-center">2</span>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                    <li class="p-0 mb-5 ti-list-group border-0 text-gray-800 w-full">
                                         <div class="flex items-start w-full">
                                         <a href="{{url('chat')}}" class="ltr:mr-2 rtl:ml-2 avatar rounded-full">
                                             <img src="{{asset('build/assets/img/users/11.jpg')}}" alt="img" class="rounded-full">
@@ -645,16 +645,16 @@
                                         <div class="flex justify-between relative w-full">
                                             <a aria-label="anchor" href="{{url('chat')}}" class="absolute h-full w-full inset-0"></a>
                                             <div class="">
-                                            <h5 class="text-sm text-gray-800 dark:text-white font-semibold">Charlie Davieson</h5>
-                                            <span class="text-xs text-gray-500 dark:text-white/70">Lorem ipsum dolor sit amet, consectetur</span>
+                                            <h5 class="text-sm text-gray-800 font-semibold">Charlie Davieson</h5>
+                                            <span class="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur</span>
                                             </div>
                                             <div class="min-w-fit ltr:ml-2 rtl:mr-2 text-end">
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-1">yesterday</p>
+                                            <p class="text-xs text-gray-500 mb-1">yesterday</p>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 w-full">
                                         <div class="flex items-start w-full">
                                         <a href="{{url('chat')}}" class="ltr:mr-2 rtl:ml-2 avatar rounded-full">
                                             <img src="{{asset('build/assets/img/users/3.jpg')}}" alt="img" class="rounded-full">
@@ -662,11 +662,11 @@
                                         <div class="flex justify-between relative w-full">
                                             <a aria-label="anchor" href="{{url('chat')}}" class="absolute h-full w-full inset-0"></a>
                                             <div class="">
-                                            <h5 class="text-sm text-gray-800 dark:text-white font-semibold">Selena Deoyl</h5>
-                                            <span class="text-xs text-gray-500 dark:text-white/70">Phasellus vehicula at enim a pulvinar</span>
+                                            <h5 class="text-sm text-gray-800 font-semibold">Selena Deoyl</h5>
+                                            <span class="text-xs text-gray-500">Phasellus vehicula at enim a pulvinar</span>
                                             </div>
                                             <div class="min-w-fit ltr:ml-2 rtl:mr-2 text-end">
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-1">yesterday</p>
+                                            <p class="text-xs text-gray-500 mb-1">yesterday</p>
                                             </div>
                                         </div>
                                         </div>
@@ -681,7 +681,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">Pending Bills </h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" aria-label="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" aria-label="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -693,7 +693,7 @@
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white pb-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 pb-1 rounded-sm mb-3">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -706,16 +706,16 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Bills
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$250</p>
+                                                <p class="text-xs text-gray-500">$250</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -728,16 +728,16 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Shopping
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$236</p>
+                                                <p class="text-xs text-gray-500">$236</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -750,16 +750,16 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Travel
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$236</p>
+                                                <p class="text-xs text-gray-500">$236</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -772,16 +772,16 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Food
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$2635</p>
+                                                <p class="text-xs text-gray-500">$2635</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white py-1 rounded-sm mb-3">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 py-1 rounded-sm mb-3">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -794,16 +794,16 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Stocks
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$2663</p>
+                                                <p class="text-xs text-gray-500">$2663</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white pt-1 rounded-sm">
+                                    <li class="flex flex-col gap-x-3.5 bg-white text-gray-800 pt-1 rounded-sm">
                                         <a href="javascript:void(0);">
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -816,11 +816,11 @@
                                                 <h3 class="text-sm font-semibold">
                                                 Others
                                                 </h3>
-                                                <p class="text-xs text-gray-500 dark:text-white/70">$3656</p>
+                                                <p class="text-xs text-gray-500">$3656</p>
                                             </div>
                                             </div>
                                             <div class="space-x-2 rtl:rotate-180">
-                                            <i class="ri ri-arrow-right-s-line text-gray-500 dark:text-white/70 text-lg"></i>
+                                            <i class="ri ri-arrow-right-s-line text-gray-500 text-lg"></i>
                                             </div>
                                         </div>
                                         </a>
@@ -836,7 +836,7 @@
                                     Upcoming Events
                                     </div>
                                     <div>
-                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                 </div>
@@ -847,14 +847,14 @@
                                         <div class="flex w-full">
                                             <div class="ltr:mr-12 rtl:ml-12 text-center">
                                             <span class="block text-sm font-semibold">02</span>
-                                            <span class="block text-xs text-gray-500 dark:text-white/70">Mon</span>
+                                            <span class="block text-xs text-gray-500">Mon</span>
                                             </div>
                                             <div class="flex flex-wrap flex-auto items-center justify-between">
                                             <div>
                                                 <a href="javascript:void(0);">
                                                 <p class="mb-1 truncate timeline-widget-content text-sm text-wrap !max-w-[15rem]">You have
                                                     an announcement - Ipsum Est Diam Eirmod</p>
-                                                <p class="mb-0 text-xs leading-none text-gray-500 dark:text-white/70">10:00AM<span class="badge bg-primary/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-primary rounded-sm">Announcement</span>
+                                                <p class="mb-0 text-xs leading-none text-gray-500">10:00AM<span class="badge bg-primary/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-primary rounded-sm">Announcement</span>
                                                 </p>
                                                 </a>
                                             </div>
@@ -881,14 +881,14 @@
                                         <div class="flex w-full">
                                             <div class="ltr:mr-12 rtl:ml-12 text-center">
                                             <span class="block text-sm font-semibold">15</span>
-                                            <span class="block text-xs text-gray-500 dark:text-white/70">Sun</span>
+                                            <span class="block text-xs text-gray-500">Sun</span>
                                             </div>
                                             <div class="flex flex-wrap flex-auto items-center justify-between">
                                             <div>
                                                 <a href="javascript:void(0);">
                                                 <p class="mb-1 truncate timeline-widget-content text-sm text-wrap !max-w-[15rem]">National
                                                     holiday - Vero Jayanti</p>
-                                                <p class="mb-0 text-xs leading-none text-gray-500 dark:text-white/70"><span class="badge bg-warning/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-warning rounded-sm">Holiday</span>
+                                                <p class="mb-0 text-xs leading-none text-gray-500"><span class="badge bg-warning/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-warning rounded-sm">Holiday</span>
                                                 </p>
                                                 </a>
                                             </div>
@@ -915,17 +915,17 @@
                                         <div class="flex w-full">
                                             <div class="ltr:mr-12 rtl:ml-12 text-center">
                                             <span class="block text-sm font-semibold">23</span>
-                                            <span class="block text-xs text-gray-500 dark:text-white/70">Mon</span>
+                                            <span class="block text-xs text-gray-500">Mon</span>
                                             </div>
                                             <div class="flex flex-wrap flex-auto items-center justify-between">
                                             <div>
                                                 <a href="javascript:void(0);">
                                                 <p class="mb-1 truncate timeline-widget-content text-sm text-wrap !max-w-[15rem]">John pup
                                                     birthday - Team Member</p>
-                                                <p class="mb-4 text-xs leading-none text-gray-500 dark:text-white/70">09:00AM<span class="badge bg-success/10 ltr:ml-2 rtl:mr-2">Birthday</span></p>
+                                                <p class="mb-4 text-xs leading-none text-gray-500">09:00AM<span class="badge bg-success/10 ltr:ml-2 rtl:mr-2">Birthday</span></p>
                                                 <p class="mb-1 truncate timeline-widget-content text-sm text-wrap !max-w-[15rem]">Amet sed
                                                     no dolor kasd - Et Dolores Tempor Erat</p>
-                                                <p class="mb-0 text-xs leading-none text-gray-500 dark:text-white/70">04:00PM<span class="badge bg-primary/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-primary rounded-sm">Announcement</span>
+                                                <p class="mb-0 text-xs leading-none text-gray-500">04:00PM<span class="badge bg-primary/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-primary rounded-sm">Announcement</span>
                                                 </p>
                                                 </a>
                                             </div>
@@ -952,14 +952,14 @@
                                         <div class="flex w-full">
                                             <div class="ltr:mr-12 rtl:ml-12 text-center">
                                             <span class="block text-sm font-semibold">31</span>
-                                            <span class="block text-xs text-gray-500 dark:text-white/70">Tue</span>
+                                            <span class="block text-xs text-gray-500">Tue</span>
                                             </div>
                                             <div class="flex flex-wrap flex-auto items-center justify-between">
                                             <div>
                                                 <a href="javascript:void(0);">
                                                 <p class="mb-1 truncate timeline-widget-content text-sm text-wrap !max-w-[15rem]">National
                                                     Holiday - Dolore Ipsum</p>
-                                                <p class="mb-0 text-xs leading-none text-gray-500 dark:text-white/70"><span class="badge bg-warning/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-warning rounded-sm">Holiday</span>
+                                                <p class="mb-0 text-xs leading-none text-gray-500"><span class="badge bg-warning/10 ltr:ml-2 rtl:mr-2 py-1 text-xs text-warning rounded-sm">Holiday</span>
                                                 </p>
                                                 </a>
                                             </div>
@@ -994,7 +994,7 @@
                                     Quick Transfer
                                     </div>
                                     <div>
-                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                    <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                 </div>
@@ -1012,7 +1012,7 @@
                                     <a href="javascript:void(0);">
                                         <img class="avatar avatar-sm rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}" alt="Image Description">
                                     </a>
-                                    <a href="javascript:void(0);" aria-label="anchor" class="m-0 w-[2.375rem] h-[2.375rem] rounded-full ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                    <a href="javascript:void(0);" aria-label="anchor" class="m-0 w-[2.375rem] h-[2.375rem] rounded-full ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                         <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                     </a>
                                     </div>
@@ -1046,7 +1046,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">Recent Trasaction history</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -1059,7 +1059,7 @@
                                 <div class="box-body">
                                     <div class="table-bordered rounded-sm ti-custom-table-head overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
-                                        <thead class="bg-gray-50 dark:bg-black/20">
+                                        <thead class="bg-gray-50">
                                         <tr class="">
                                             <th scope="col" class="dark:text-white/80 !text-center">S.no</th>
                                             <th scope="col" class="dark:text-white/80">Recipient</th>
@@ -1078,9 +1078,9 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/2.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">Socrates
+                                                <p class="block text-sm font-semibold my-auto text-gray-800">Socrates
                                                     Itumay</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto min-w-[180px]">socratesitumay@gmail.com</span>
+                                                <span class="block text-xs text-gray-400 !font-normal my-auto min-w-[180px]">socratesitumay@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -1094,7 +1094,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1102,7 +1102,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1115,8 +1115,8 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/12.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">Luke Cooper</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto min-w-[180px]">LukeCooper@gmail.com</span>
+                                                <p class="block text-sm font-semibold my-auto text-gray-800">Luke Cooper</p>
+                                                <span class="block text-xs text-gray-400 !font-normal my-auto min-w-[180px]">LukeCooper@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -1130,7 +1130,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1138,7 +1138,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1151,8 +1151,8 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">Rony Brad</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto min-w-[180px]">RonyBrad@gmail.com</span>
+                                                <p class="block text-sm font-semibold my-auto text-gray-800">Rony Brad</p>
+                                                <span class="block text-xs text-gray-400 !font-normal my-auto min-w-[180px]">RonyBrad@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -1166,7 +1166,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1174,7 +1174,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1187,8 +1187,8 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">Sophia Khud</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto min-w-[180px]">RonyBrad@gmail.com</span>
+                                                <p class="block text-sm font-semibold my-auto text-gray-800">Sophia Khud</p>
+                                                <span class="block text-xs text-gray-400 !font-normal my-auto min-w-[180px]">RonyBrad@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -1202,7 +1202,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1210,7 +1210,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1223,8 +1223,8 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/users/3.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">Cooper Hard</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto min-w-[180px]">CooperHard@gmail.com</span>
+                                                <p class="block text-sm font-semibold my-auto text-gray-800">Cooper Hard</p>
+                                                <span class="block text-xs text-gray-400 !font-normal my-auto min-w-[180px]">CooperHard@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -1238,7 +1238,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1246,7 +1246,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>

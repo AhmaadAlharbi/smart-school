@@ -32,16 +32,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Edit Blog</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Edit Blog</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Edit Blog
                                     </li>
                                 </ol>
@@ -79,18 +79,18 @@
                                         <div class="flex-1" id="blog-edit">
                                         <h1 class="text-xl">Blog Heading</h1>
                                         <br>
-                                        <p class="text-gray-500 dark:text-white/70 text-sm">I must explain to you how all this mistaken idea
+                                        <p class="text-gray-500 text-sm">I must explain to you how all this mistaken idea
                                             of denouncing pleasure and praising pain was born and I will give you a complete account of the
                                             system, and expound the actual teachings of the great explorer of the truth, the master-builder of
                                             human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
                                         <br>
-                                        <p class="text-gray-500 dark:text-white/70 text-sm">but because those who do not know how to pursue
+                                        <p class="text-gray-500 text-sm">but because those who do not know how to pursue
                                             pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone
                                             who loves or pursues or desires to obtain pain of itself, because it is pain, but because
                                             occasionally circumstances occur in which toil and pain can procure him some great pleasure. To
                                             take a trivial example.</p>
                                         <br>
-                                        <p class="text-gray-500 dark:text-white/70 text-sm">Those who do not know how to pursue
+                                        <p class="text-gray-500 text-sm">Those who do not know how to pursue
                                             pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone
                                             who loves or pursues or desires to obtain pain of itself, because it is pain, but because
                                             occasionally circumstances occur in which toil and pain can procure him some great pleasure. To
@@ -131,8 +131,8 @@
                                         <label for="input-label" class="ti-form-label">Blog Published Date</label>
                                         <div class="flex rounded-sm shadow-sm">
                                         <div
-                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                            <span class="text-sm text-gray-500 dark:text-white/70"><i
+                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-gray-500"><i
                                                 class="ri ri-calendar-line"></i></span>
                                         </div>
                                         <input type="text" class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input" id="blog-date"
@@ -143,8 +143,8 @@
                                         <label for="input-label" class="ti-form-label">Blog Published Time</label>
                                         <div class="flex rounded-sm shadow-sm">
                                         <div
-                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                            <span class="text-sm text-gray-500 dark:text-white/70"><i class="ri ri-time-line"></i></span>
+                                            class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-gray-500"><i class="ri ri-time-line"></i></span>
                                         </div>
                                         <input type="text" class="ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10 flatpickr-input" id="blog-time"
                                             placeholder="Choose date" readonly>
@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="ti-list-group pt-0 px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group pt-0 px-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/7.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -242,18 +242,18 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>Sept 29 , 2022</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/9.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -261,18 +261,18 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>3 hours ago</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/8.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -280,18 +280,18 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>30 mins ago</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/3.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -299,18 +299,18 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>l day ago</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group px-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/2.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -318,18 +318,18 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-calendar-line text-xs"></i><span>l day ago</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group px-0 pb-0 border-0 text-gray-800 dark:text-white">
+                                    <li class="ti-list-group px-0 pb-0 border-0 text-gray-800">
                                         <div class="space-x-3 flex w-full rtl:space-x-reverse">
                                         <img src="{{asset('build/assets/img/gallery/8.jpg')}}" class="avatar avatar-lg rounded-sm ring-0"
                                             alt="Image Description">
@@ -337,12 +337,12 @@
                                             <div class="space-y-1 my-auto">
                                             <h3 class="font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </h3>
-                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 dark:text-white/70 text-xs"><i
+                                            <p class="flex space-x-2 rtl:space-x-reverse text-gray-500 text-xs"><i
                                                 class="ri ri-time-line text-xs"></i><span>30 mins ago</span></p>
                                             </div>
                                             <div class="my-auto ltr:ml-auto rtl:mr-auto hidden sm:block">
                                             <button type="button" aria-label="button"
-                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10"><i
+                                                class="m-0 p-2 ti-btn bg-gray-100 text-gray-500 hover:text-white hover:bg-gray-500 ring-offset-white focus:ring-gray-500"><i
                                                 class="leading-none ri-arrow-right-s-line rtl:rotate-180"></i></button>
                                             </div>
                                         </div>

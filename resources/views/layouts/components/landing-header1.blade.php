@@ -29,7 +29,7 @@
                     <i class="ri-more-2-line text-base"></i>
                     </button>
                     <div id="headercollapse-heading"
-                    class="hs-collapse w-full overflow-hidden transition-[height] duration-300 hidden absolute top-[4.45rem] inset-x-0 p-5 bg-white dark:bg-bgdark"
+                    class="hs-collapse w-full overflow-hidden transition-[height] duration-300 hidden absolute top-[4.45rem] inset-x-0 p-5 bg-white"
                     aria-labelledby="headercollapse">
                     <div class="flex space-x-3 rtl:space-x-reverse">
                         <a href="{{url('signup')}}" class="ti-btn w-[6.375rem] ti-btn-dark m-0 p-2">Sign

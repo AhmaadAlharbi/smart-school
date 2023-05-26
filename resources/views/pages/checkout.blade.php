@@ -20,16 +20,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Check Out</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Check Out</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Pages
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Check Out
                                     </li>
                                 </ol>
@@ -42,16 +42,16 @@
                                 <div class="box shadow-none border-0 !bg-transparent">
                                 <div class="box-body space-y-2 p-0">
                                     <div class="sm:flex justify-between space-y-2 sm:space-y-0">
-                                    <h3 class="text-xl my-auto font-semibold text-gray-800 dark:text-white">Billing Address</h3>
+                                    <h3 class="text-xl my-auto font-semibold text-gray-800">Billing Address</h3>
                                     <button type="button" data-hs-overlay="#addadress"
                                         class="hs-dropdown-toggle ti-btn ti-btn-primary m-0"><i class="ri-map-pin-add-line"></i>Add New
                                         Address</button>
                                     </div>
                                     <div class="sm:grid grid-cols-12 gap-6 space-y-4 sm:space-y-0">
                                     <div class="col-span-12 lg:col-span-6">
-                                        <label class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70">
+                                        <label class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary">
                                         <input type="radio" name="address" class="ti-form-radio" id="address1" checked>
-                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70 w-full">
+                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 w-full">
                                             <span class="sm:flex">
                                             <span>
                                                 <span class="text-base font-semibold text-primary block"> Address 1</span>
@@ -74,9 +74,9 @@
                                     </div>
                                     <div class="col-span-12 lg:col-span-6">
                                         <label
-                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70">
+                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary">
                                         <input type="radio" name="address" class="ti-form-radio" id="address2">
-                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70 w-full">
+                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 w-full">
                                             <span class="sm:flex">
                                             <span>
                                                 <span class="text-base font-semibold text-primary block"> Address 2 </span>
@@ -102,13 +102,13 @@
                                 </div>
                                 <div class="box shadow-none border-0 !bg-transparent">
                                 <div class="box-body space-y-2 p-0">
-                                    <h3 class="text-xl my-auto font-semibold text-gray-800 dark:text-white">Shipping Address</h3>
+                                    <h3 class="text-xl my-auto font-semibold text-gray-800">Shipping Address</h3>
                                     <div class="sm:grid grid-cols-12 gap-6 space-y-4 sm:space-y-0">
                                     <div class="col-span-12 lg:col-span-6">
                                         <label 
-                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70">
+                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary">
                                         <input type="radio" name="address2" class="ti-form-radio" id="address3">
-                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70 w-full">
+                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 w-full">
                                             <span class="sm:flex">
                                             <span>
                                                 <span class="text-base font-semibold text-primary block"> Address 1</span>
@@ -131,10 +131,10 @@
                                     </div>
                                     <div class="col-span-12 lg:col-span-6">
                                         <label 
-                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70">
+                                        class="flex p-3 w-full bg-white border border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary">
                                         <input type="radio" name="address2" class="ti-form-radio" id="address4" checked>
 
-                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 dark:text-white/70 w-full">
+                                        <span class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2 w-full">
                                             <span class="sm:flex">
                                             <span>
                                                 <span class="text-base font-semibold text-primary block"> Address 2 </span>
@@ -160,18 +160,18 @@
                                 </div>
                                 <div class="box shadow-none border-0 !bg-transparent">
                                 <div class="box-body space-y-2 p-0">
-                                    <h3 class="text-xl my-auto font-semibold text-gray-800 dark:text-white">Delivery Method</h3>
+                                    <h3 class="text-xl my-auto font-semibold text-gray-800">Delivery Method</h3>
                                     <div class="sm:grid grid-cols-12 gap-6 space-y-4 sm:space-y-0">
                                     <div class="col-span-12 lg:col-span-6">
                                         <div class="box mb-0">
                                         <div class="box-body">
                                             <div class="flex flex-col">
-                                                <label class="flex rounded-sm text-base font-semibold focus:ring-primary dark:bg-bgdark dark:text-white/70">
+                                                <label class="flex rounded-sm text-base font-semibold focus:ring-primary">
                                                 <input type="radio" name="delivery" class="ti-form-radio" id="delivery-1">
                                                 <span class="sm:flex w-full ltr:ml-3 rtl:mr-3">
                                                     <span class="block">
-                                                    <span class="text-base dark:text-white leading-none block">Free Delivery</span>
-                                                    <span class="text-sm text-gray-500 dark:text-white/70 font-normal"> Expected Deilivery on 20 Nov</span>
+                                                    <span class="text-base leading-none block">Free Delivery</span>
+                                                    <span class="text-sm text-gray-500 font-normal"> Expected Deilivery on 20 Nov</span>
                                                     </span>
                                                     <span class="ltr:ml-auto rtl:mr-auto my-auto">
                                                     <span class="text-xl font-semibold">$0</span>
@@ -187,12 +187,12 @@
                                         <div class="box-body">
                                             <div class="flex flex-col">
                                                 <label
-                                                class="flex rounded-sm text-base font-semibold focus:ring-primary dark:bg-bgdark dark:text-white/70">
+                                                class="flex rounded-sm text-base font-semibold focus:ring-primary">
                                                 <input type="radio" name="delivery" class="ti-form-radio" id="delivery-2">
                                                 <span class="sm:flex w-full ltr:ml-3 rtl:mr-3">
                                                     <span class="block">
-                                                    <span class="text-base dark:text-white leading-none block">Standard Delivery</span>
-                                                    <span class="text-sm text-gray-500 dark:text-white/70 font-normal"> Expected Deilivery on 15 Nov</span>
+                                                    <span class="text-base leading-none block">Standard Delivery</span>
+                                                    <span class="text-sm text-gray-500 font-normal"> Expected Deilivery on 15 Nov</span>
                                                     </span>
                                                     <span class="ltr:ml-auto rtl:mr-auto my-auto">
                                                     <span class="text-xl font-semibold">$3.99</span>
@@ -208,12 +208,12 @@
                                         <div class="box-body">
                                             <div class="flex flex-col">
                                             <label
-                                                class="flex rounded-sm text-base font-semibold focus:ring-primary dark:bg-bgdark dark:text-white/70">
+                                                class="flex rounded-sm text-base font-semibold focus:ring-primary">
                                                 <input type="radio" name="delivery" class="ti-form-radio" id="delivery-3">
                                                 <span class="sm:flex w-full ltr:ml-3 rtl:mr-3">
                                                 <span class="block">
-                                                    <span class="text-base dark:text-white leading-none block">Courier Delivery</span>
-                                                    <span class="text-sm text-gray-500 dark:text-white/70 font-normal"> Expected Deilivery on 10 Nov</span>
+                                                    <span class="text-base leading-none block">Courier Delivery</span>
+                                                    <span class="text-sm text-gray-500 font-normal"> Expected Deilivery on 10 Nov</span>
                                                 </span>
                                                 <span class="ltr:ml-auto rtl:mr-auto my-auto">
                                                     <span class="text-xl font-semibold">$5.99</span>
@@ -229,12 +229,12 @@
                                         <div class="box-body">
                                             <div class="flex flex-col">
                                                 <label
-                                                class="flex rounded-sm text-base font-semibold focus:ring-primary dark:bg-bgdark dark:text-white/70">
+                                                class="flex rounded-sm text-base font-semibold focus:ring-primary">
                                                 <input type="radio" name="delivery" class="ti-form-radio" id="delivery-4">
                                                 <span class="sm:flex w-full ltr:ml-3 rtl:mr-3">
                                                     <span class="block">
-                                                    <span class="text-base dark:text-white leading-none block">Express Delivery</span>
-                                                    <span class="text-sm text-gray-500 dark:text-white/70 font-normal"> Expected Deilivery Tommorrow</span>
+                                                    <span class="text-base leading-none block">Express Delivery</span>
+                                                    <span class="text-sm text-gray-500 font-normal"> Expected Deilivery Tommorrow</span>
                                                     </span>
                                                     <span class="ltr:ml-auto rtl:mr-auto my-auto">
                                                     <span class="text-xl font-semibold">$10.99</span>
@@ -250,7 +250,7 @@
                                 </div>
                                 <div class="box shadow-none border-0 !bg-transparent">
                                 <div class="box-body space-y-2 p-0">
-                                    <h3 class="text-xl my-auto font-semibold text-gray-800 dark:text-white">Payment Method</h3>
+                                    <h3 class="text-xl my-auto font-semibold text-gray-800">Payment Method</h3>
                                     <div class="sm:grid grid-cols-12 gap-6 text-center space-y-4 sm:space-y-0">
                                     <div class="col-span-12 md:col-span-2">
                                         <label class="payment-box">
@@ -410,17 +410,17 @@
                                     <h5 class="box-titile">Order Summary</h5>
                                 </div>
                                 <div class="box-body px-0 space-y-5">
-                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200 dark:border-white/10">
+                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200">
                                     <div class="flex items-center">
                                         <img
-                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border dark:border-white/10 bg-gray-100 dark:bg-black/20"
+                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border bg-gray-100"
                                         src="{{asset('build/assets/img/ecommerce/products/1.png')}}" alt="Image Description">
                                         <div class="ltr:ml-4 rtl:mr-4 space-y-1">
-                                        <h5 class="font-semibold text-gray-800 dark:text-white">Black Heals For Women</h5>
-                                        <p class="text-xs tetext-gray-400 dark:text-white/70">Quantity : 2 ,Discount : 20%</p>
+                                        <h5 class="font-semibold text-gray-800">Black Heals For Women</h5>
+                                        <p class="text-xs tetext-gray-400">Quantity : 2 ,Discount : 20%</p>
                                         <div class="">
                                             <span class="font-semibold text-base">$699</span>
-                                            <span class="text-sm font-normal text-gray-500 dark:text-white/70 line-through">$999</span>
+                                            <span class="text-sm font-normal text-gray-500 line-through">$999</span>
                                         </div>
                                         </div>
                                     </div>
@@ -431,17 +431,17 @@
                                         </a>
                                     </div>
                                     </div>
-                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200 dark:border-white/10">
+                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200">
                                     <div class="flex items-center">
                                         <img
-                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border dark:border-white/10 bg-gray-100 dark:bg-black/20"
+                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border bg-gray-100"
                                         src="{{asset('build/assets/img/ecommerce/products/7.png')}}" alt="Image Description">
                                         <div class="ltr:ml-4 rtl:mr-4 space-y-1">
-                                        <h5 class="font-semibold text-gray-800 dark:text-white">Sun Glasses</h5>
-                                        <p class="text-xs tetext-gray-400 dark:text-white/70">Quantity : 2 ,Discount : 10%</p>
+                                        <h5 class="font-semibold text-gray-800">Sun Glasses</h5>
+                                        <p class="text-xs tetext-gray-400">Quantity : 2 ,Discount : 10%</p>
                                         <div class="">
                                             <span class="font-semibold text-base">$599</span>
-                                            <span class="text-sm font-normal text-gray-500 dark:text-white/70 line-through">$699</span>
+                                            <span class="text-sm font-normal text-gray-500 line-through">$699</span>
                                         </div>
                                         </div>
                                     </div>
@@ -452,17 +452,17 @@
                                         </a>
                                     </div>
                                     </div>
-                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200 dark:border-white/10">
+                                    <div class="flex flex-row justify-between border-b pb-5 px-6 border-gray-200">
                                     <div class="flex items-center">
                                         <img
-                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border dark:border-white/10 bg-gray-100 dark:bg-black/20"
+                                        class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-sm p-2 border bg-gray-100"
                                         src="{{asset('build/assets/img/ecommerce/products/10.png')}}" alt="Image Description">
                                         <div class="ltr:ml-4 rtl:mr-4 space-y-1">
-                                        <h5 class="font-semibold text-gray-800 dark:text-white">Leather Wallet For Grils</h5>
-                                        <p class="text-xs tetext-gray-400 dark:text-white/70">Quantity : 1 ,Discount : 10%</p>
+                                        <h5 class="font-semibold text-gray-800">Leather Wallet For Grils</h5>
+                                        <p class="text-xs tetext-gray-400">Quantity : 1 ,Discount : 10%</p>
                                         <div class="">
                                             <span class="font-semibold text-base">$100</span>
-                                            <span class="text-sm font-normal text-gray-500 dark:text-white/70 line-through">$150</span>
+                                            <span class="text-sm font-normal text-gray-500 line-through">$150</span>
                                         </div>
                                         </div>
                                     </div>
@@ -474,43 +474,43 @@
                                     </div>
                                     </div>
                                     <ul class="flex flex-col px-6">
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         Total Items
                                         <span class="">4</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         SubTotal
                                         <span class="">$1100</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         Other Charges
                                         <span class="">$200</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         Delivery Charges
                                         <span class="text-success">-0% (Free)</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         Coupon Discount
                                         <span class="text-success">-5%</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full">
                                         Over all Discount
                                         <span class="text-success">-10%</span>
                                         </div>
                                     </li>
-                                    <li class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white">
+                                    <li class="ti-list-group bg-white text-gray-800">
                                         <div class="flex justify-between w-full text-xl font-semibold">
                                         Total
                                         <span class="">$1500</span>
@@ -609,7 +609,7 @@
                                 </div>
                                 <div class="ti-modal-footer">
                                     <button type="button"
-                                    class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                    class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
                                     data-hs-overlay="#addadress">
                                     Discard
                                     </button>
@@ -631,7 +631,7 @@
                                     </div>
                                     <div class="text-center">
                                         <h5 class="text-base font-semibold mb-1">Hurray !..Your Order Has Been confirmed </h5>
-                                        <p class="text-sm font-semibold text-gray-500 dark:text-white/70">Order Has Been Placed Successfully Now You Can Track Your Order ...</p>
+                                        <p class="text-sm font-semibold text-gray-500">Order Has Been Placed Successfully Now You Can Track Your Order ...</p>
                                         <a href="{{url('order-details')}}" class="ti-btn ti-btn-secondary mt-4">Track Your Order</a>
                                     </div>
                                     </div>

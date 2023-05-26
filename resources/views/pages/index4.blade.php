@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Jobs Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Jobs Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Jobs Dashboard
                                     </li>
                                 </ol>
@@ -50,7 +50,7 @@
                                                                 </div>
                                                             </div>
                                                             <p
-                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500 dark:text-white/70">
+                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500">
                                                                 Total Applicants</p>
                                                         </div>
                                                     </div>
@@ -73,7 +73,7 @@
                                                                 </div>
                                                             </div>
                                                             <p
-                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500 dark:text-white/70">
+                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500">
                                                                 Total Shortlisted</p>
                                                         </div>
                                                     </div>
@@ -96,7 +96,7 @@
                                                                 </div>
                                                             </div>
                                                             <p
-                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500 dark:text-white/70">
+                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500">
                                                                 Hired Candidates</p>
                                                         </div>
                                                     </div>
@@ -119,7 +119,7 @@
                                                                 </div>
                                                             </div>
                                                             <p
-                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500 dark:text-white/70">
+                                                                class="mb-0 text-xs leading-none opacity-70 text-gray-500">
                                                                 Rejected Applicants</p>
                                                         </div>
                                                     </div>
@@ -132,7 +132,7 @@
                                                     <div class="sm:flex justify-between sm:space-y-0 space-y-2">
                                                         <h5 class="box-title my-auto">Applications Overview</h5>
                                                         <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                            <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                            <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                             This Week <i class="ti ti-chevron-down"></i></button>
                                                             <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                             <a class="ti-dropdown-item" href="javascript:void(0)">This Week</a>
@@ -144,11 +144,11 @@
                                                 </div>
                                                 <div class="box-body p-0">
                                                     <div
-                                                        class="grid grid-cols-12 gap-6 border-b border-dashed border-gray-200 dark:border-white/10 px-6">
+                                                        class="grid grid-cols-12 gap-6 border-b border-dashed border-gray-200 px-6">
                                                         <div class="col-span-12 sm:col-span-4">
                                                             <div class="py-4 sm:text-start text-center">
                                                                 <p class="text-xl font-semibold mb-0">1,117</p>
-                                                                <p class="mb-0 text-sm text-gray-500 dark:text-white/70">Total
+                                                                <p class="mb-0 text-sm text-gray-500">Total
                                                                     Candidates
                                                                 </p>
                                                             </div>
@@ -157,7 +157,7 @@
                                                             <div class="p-3 sm:text-start text-center">
                                                                 <p class="text-xl font-semibold mb-0"><span
                                                                         class="basic-subscription">742</span></p>
-                                                                <p class="mb-0 text-sm text-gray-500 dark:text-white/70">
+                                                                <p class="mb-0 text-sm text-gray-500">
                                                                     Applications
                                                                 </p>
                                                             </div>
@@ -166,7 +166,7 @@
                                                             <div class="p-3 text-sm-start text-center">
                                                                 <p class="text-xl font-semibold mb-0"><span
                                                                         class="pro-subscription">259</span></p>
-                                                                <p class="mb-0 text-sm text-gray-500 dark:text-white/70">Shortlisted
+                                                                <p class="mb-0 text-sm text-gray-500">Shortlisted
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -180,81 +180,81 @@
                                                 <div class="box-header">
                                                     <div class="sm:flex justify-between sm:space-y-0 space-y-2">
                                                         <h5 class="box-title my-auto">New Applicants</h5>
-                                                        <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                        <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                             View All</button>
                                                     </div>
                                                 </div>
                                                 <div class="box-body">
                                                     <ul>
-                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 w-full">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center">
                                                                     <img class="avatar avatar-sm rounded-full"
                                                                         src="{{asset('build/assets/img/users/9.jpg')}}" alt="image">
                                                                     <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                         <p
-                                                                            class="text-sm font-semibold mb-0 text-gray-800 dark:text-white">
+                                                                            class="text-sm font-semibold mb-0 text-gray-800">
                                                                             Charlie Davieson</p>
                                                                         <p class="text-xs mb-0 !font-normal"><span
-                                                                                class="text-gray-400 dark:text-white/80 ">Applied For
+                                                                                class="text-gray-400 ">Applied For
                                                                             </span> <span class="font-medium">Java Developer</span></p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 w-full">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center">
                                                                     <img class="avatar avatar-sm rounded-full"
                                                                         src="{{asset('build/assets/img/users/2.jpg')}}" alt="image">
                                                                     <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                                                         <p
-                                                                            class="text-sm font-semibold mb-0 text-gray-800 dark:text-white">
+                                                                            class="text-sm font-semibold mb-0 text-gray-800">
                                                                             Nasiha</p>
                                                                         <p class="text-xs mb-0 !font-normal"><span
-                                                                                class="text-gray-400 dark:text-white/80 ">Applied For
+                                                                                class="text-gray-400 ">Applied For
                                                                             </span> <span class="font-medium">Data Analyst</span></p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 w-full">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center">
                                                                     <img class="avatar avatar-sm rounded-full"
                                                                         src="{{asset('build/assets/img/users/4.jpg')}}" alt="image">
                                                                     <div class="flex-auto ltr:ml-2 rtl:mr-2">
-                                                                        <p class="text-sm font-semibold mb-0 text-gray-800 dark:text-white">Hasi Nah</p>
+                                                                        <p class="text-sm font-semibold mb-0 text-gray-800">Hasi Nah</p>
                                                                         <p class="text-xs mb-0 !font-normal"><span
-                                                                                class="text-gray-400 dark:text-white/80 ">Applied For
+                                                                                class="text-gray-400 ">Applied For
                                                                             </span> <span class="font-medium">Executive Officer</span></p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                        <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 w-full">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center">
                                                                     <img class="avatar avatar-sm rounded-full"
                                                                         src="{{asset('build/assets/img/users/14.jpg')}}" alt="image">
                                                                     <div class="flex-auto ltr:ml-2 rtl:mr-2">
-                                                                        <p class="text-sm font-semibold mb-0 text-gray-800 dark:text-white">David</p>
+                                                                        <p class="text-sm font-semibold mb-0 text-gray-800">David</p>
                                                                         <p class="text-xs mb-0 !font-normal"><span
-                                                                                class="text-gray-400 dark:text-white/80 ">Applied For
+                                                                                class="text-gray-400 ">Applied For
                                                                             </span> <span class="font-medium">Developer</span></p>
                                                                     </div>
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                        <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 w-full">
                                                             <a href="javascript:void(0);" class="w-full">
                                                                 <div class="flex items-center">
                                                                     <img class="avatar avatar-sm rounded-full"
                                                                         src="{{asset('build/assets/img/users/16.jpg')}}" alt="image">
                                                                     <div class="flex-auto ltr:ml-2 rtl:mr-2">
-                                                                        <p class="text-sm font-semibold mb-0 text-gray-800 dark:text-white">Jack Bruce</p>
+                                                                        <p class="text-sm font-semibold mb-0 text-gray-800">Jack Bruce</p>
                                                                         <p class="text-xs mb-0 !font-normal"><span
-                                                                                class="text-gray-400 dark:text-white/80 ">Applied For
+                                                                                class="text-gray-400 ">Applied For
                                                                             </span> <span class="font-medium">Data Scientist</span></p>
                                                                     </div>
                                                                 </div>
@@ -272,7 +272,7 @@
                                             <div class="sm:flex justify-between sm:space-y-0 space-y-2">
                                                 <h5 class="box-title my-auto">Acceptance Ratio</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                    <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                     This Week <i class="ti ti-chevron-down"></i></button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">This Week</a>
@@ -284,9 +284,9 @@
                                         </div>
                                         <div class="box-body p-0">
                                             <div id="candidates-chart"
-                                                class="p-4  border-b border-dashed border-gray-200 dark:border-white/10"></div>
+                                                class="p-4  border-b border-dashed border-gray-200"></div>
                                             <div class="grid grid-cols-2">
-                                                <div class="p-5 ltr:border-r rtl:border-l border-gray-200 dark:border-white/10">
+                                                <div class="p-5 ltr:border-r rtl:border-l border-gray-200">
                                                     <div class="flex items-center">
                                                         <div class="ltr:mr-2 rtl:ml-2">
                                                             <span
@@ -294,8 +294,8 @@
                                                                     class="ri-checkbox-circle-line text-xl leading-none"></i></span>
                                                         </div>
                                                         <div class="flex-1">
-                                                            <p class="mb-0 font-semibold text-gray-800 dark:text-white">Accepted</p>
-                                                            <span class="text-gray-500 dark:text-white/70 text-xs">565</span>
+                                                            <p class="mb-0 font-semibold text-gray-800">Accepted</p>
+                                                            <span class="text-gray-500 text-xs">565</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -307,8 +307,8 @@
                                                                     class="ri-close-circle-line text-xl leading-none"></i></span>
                                                         </div>
                                                         <div class="flex-1">
-                                                            <p class="mb-0 font-semibold text-gray-800 dark:text-white">Rejected</p>
-                                                            <span class="text-gray-500 dark:text-white/70 text-xs">208</span>
+                                                            <p class="mb-0 font-semibold text-gray-800">Rejected</p>
+                                                            <span class="text-gray-500 text-xs">208</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -332,32 +332,32 @@
                                         <div class="box-header">
                                             <div class="sm:flex justify-between sm:space-y-0 space-y-2">
                                                 <h5 class="box-title my-auto">Recent Recruiter Registrations</h5>
-                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                     View All</button>
                                             </div>
                                         </div>
                                         <div class="box-body p-0">
                                             <div class="grid md:grid-cols-3  xxl:grid-cols-5">
-                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200 dark:border-white/10">
+                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200">
                                                     <div class="flex items-start mb-6">
                                                         <img src="{{asset('build/assets/img/users/4.jpg')}}" alt=""
                                                             class="avatar avatar-sm rounded-full ltr:mr-2 rtl:ml-2 leading-none">
                                                         <div class="flex-auto">
                                                             <div class="recent-recruiter">
                                                                 <p class="text-sm font-semibold mb-0 truncate">Hr@Spruko</p>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70 truncate">
+                                                                <p class="mb-0 text-xs text-gray-500 truncate">
                                                                     hr.spruko@gmail.com</p>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <button type="button" aria-label="button"
-                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-white/10">
+                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                                                 <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-2">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Vacancies
                                                         </div>
                                                         <div class="font-semibold text-sm">
@@ -365,7 +365,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-0">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Position
                                                         </div>
                                                         <div>
@@ -375,26 +375,26 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200 dark:border-white/10">
+                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200">
                                                     <div class="flex items-start mb-6">
                                                         <img src="{{asset('build/assets/img/users/21.jpg')}}" alt=""
                                                             class="avatar avatar-sm rounded-full ltr:mr-2 rtl:ml-2 leading-none">
                                                         <div class="flex-auto">
                                                             <div class="recent-recruiter">
                                                                 <p class="text-sm font-semibold mb-0 truncate">Hr@Nicero</p>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70 truncate">
+                                                                <p class="mb-0 text-xs text-gray-500 truncate">
                                                                     nicero.help@gmail.com</p>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <button type="button" aria-label="button"
-                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                                                 <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-2">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Vacancies
                                                         </div>
                                                         <div class="font-semibold text-sm">
@@ -402,7 +402,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-0">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Position
                                                         </div>
                                                         <div>
@@ -412,26 +412,26 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200 dark:border-white/10">
+                                                <div class="p-4 ltr:md:border-r rtl:md:border-l xxl:border-b-0 border-b border-gray-200">
                                                     <div class="flex items-start mb-6">
                                                         <img src="{{asset('build/assets/img/users/12.jpg')}}" alt=""
                                                             class="avatar avatar-sm rounded-full ltr:mr-2 rtl:ml-2 leading-none">
                                                         <div class="flex-auto">
                                                             <div class="recent-recruiter">
                                                                 <p class="text-sm font-semibold mb-0 truncate">Hr@David</p>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70 truncate">
+                                                                <p class="mb-0 text-xs text-gray-500 truncate">
                                                                     David.525@gmail.com</p>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <button type="button" aria-label="button"
-                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                                                 <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-2">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Vacancies
                                                         </div>
                                                         <div class="font-semibold text-sm">
@@ -439,7 +439,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-0">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Position
                                                         </div>
                                                         <div>
@@ -449,26 +449,26 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="p-4 ltr:md:border-r rtl:md:border-l md:border-b-0 border-b border-gray-200 dark:border-white/10">
+                                                <div class="p-4 ltr:md:border-r rtl:md:border-l md:border-b-0 border-b border-gray-200">
                                                     <div class="flex items-start mb-6">
                                                         <img src="{{asset('build/assets/img/users/15.jpg')}}" alt=""
                                                             class="avatar avatar-sm rounded-full ltr:mr-2 rtl:ml-2 leading-none">
                                                         <div class="flex-auto">
                                                             <div class="recent-recruiter">
                                                                 <p class="text-sm font-semibold mb-0 truncate">JosephSmith</p>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70 truncate">
+                                                                <p class="mb-0 text-xs text-gray-500 truncate">
                                                                     josephsmith@gmail.com</p>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <button type="button" aria-label="button"
-                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                                                 <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-2">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Vacancies
                                                         </div>
                                                         <div class="font-semibold text-sm">
@@ -476,7 +476,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-0">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Position
                                                         </div>
                                                         <div>
@@ -493,19 +493,19 @@
                                                         <div class="flex-auto">
                                                             <div class="recent-recruiter">
                                                                 <p class="text-sm font-semibold mb-0 truncate">Kristie Nah</p>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70 truncate">
+                                                                <p class="mb-0 text-xs text-gray-500 truncate">
                                                                     Kristie Nah@gmail.com</p>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <button type="button" aria-label="button"
-                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500 dark:bg-black/20 dark:hover:bg-black/30 dark:focus:ring-gray-600 dark:text-white/70 dark:focus:ring-offset-white/10">
+                                                                class="ti-btn bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 ring-offset-white focus:ring-gray-500">
                                                                 <i class="ri-arrow-right-s-line rtl:rotate-180"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-2">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Vacancies
                                                         </div>
                                                         <div class="font-semibold text-sm">
@@ -513,7 +513,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex  justify-between mb-0">
-                                                        <div class="text-gray-500 dark:text-white/70 text-xs">
+                                                        <div class="text-gray-500 text-xs">
                                                             Position
                                                         </div>
                                                         <div>
@@ -538,7 +538,7 @@
                                                 <h5 class="box-title my-auto">Registers By Country</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                                     <button id="hs-dropdown-custom-icon-trigger5" type="button" aria-label="button"
-                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200 dark:bg-black/20 dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                        class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-2 bg-white !border border-gray-200 text-gray-500 hover:bg-gray-100  focus:ring-gray-200">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu"
                                                         aria-labelledby="hs-dropdown-custom-icon-trigger5">
@@ -678,7 +678,7 @@
                                         <div class="box-header">
                                             <div class="flex justify-between">
                                                 <h5 class="box-title my-auto">Top Recruiters</h5>
-                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                     View All</button>
                                             </div>
                                         </div>
@@ -706,7 +706,7 @@
                                                                     <div>
                                                                         <p class="text-xs font-semibold mb-0">Obligation Pvt.Ltd</p>
                                                                         <p
-                                                                            class="font-normal text-xs text-gray-500 dark:text-white/70 mb-0">
+                                                                            class="font-normal text-xs text-gray-500 mb-0">
                                                                             Remote/Onsite</p>
                                                                     </div>
                                                                 </div>
@@ -730,7 +730,7 @@
                                                                     <div>
                                                                         <p class="text-xs font-semibold mb-0">Voluptatem Pvt.Ltd</p>
                                                                         <p
-                                                                            class="font-normal text-xs text-gray-500 dark:text-white/70 mb-0">
+                                                                            class="font-normal text-xs text-gray-500 mb-0">
                                                                             Remote/Onsite</p>
                                                                     </div>
                                                                 </div>
@@ -754,7 +754,7 @@
                                                                     <div>
                                                                         <p class="text-xs font-semibold mb-0">BloomTech.Inc</p>
                                                                         <p
-                                                                            class="font-normal text-xs text-gray-500 dark:text-white/70 mb-0">
+                                                                            class="font-normal text-xs text-gray-500 mb-0">
                                                                             Remote/Onsite</p>
                                                                     </div>
                                                                 </div>
@@ -778,7 +778,7 @@
                                                                     <div>
                                                                         <p class="text-xs font-semibold mb-0">Beatae Industries</p>
                                                                         <p
-                                                                            class="font-normal text-xs text-gray-500 dark:text-white/70 mb-0">
+                                                                            class="font-normal text-xs text-gray-500 mb-0">
                                                                             Remote/Onsite</p>
                                                                     </div>
                                                                 </div>
@@ -802,7 +802,7 @@
                                                                     <div>
                                                                         <p class="text-xs font-semibold mb-0">Jack Pvt.Ltd</p>
                                                                         <p
-                                                                            class="font-normal text-xs text-gray-500 dark:text-white/70 mb-0">
+                                                                            class="font-normal text-xs text-gray-500 mb-0">
                                                                             Remote/Onsite</p>
                                                                     </div>
                                                                 </div>
@@ -825,13 +825,13 @@
                                         <div class="box-header">
                                             <div class="flex justify-between">
                                                 <h5 class="box-title my-auto">Recent Jobs</h5>
-                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                <button type="button" class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                     View All</button>
                                             </div>
                                         </div>
                                         <div class="box-body">
                                             <ul class="">
-                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 w-full">
                                                     <div class="flex items-center w-full">
                                                         <a aria-label="anchor" href="javascript:void(0);" class="ltr:pr-3 rtl:pl-3">
                                                             <span class="avatar rounded-sm bg-primary/20 text-primary p-3"><i class="ri-smartphone-line text-2xl leading-none"></i></span>
@@ -839,17 +839,17 @@
                                                         <div class="flex-1 flex justify-between items-center relative">
                                                             <div class="flex-1">
                                                                 <a href="javascript:void(0);" class="text-sm font-semibold">Sr. Mobile App Developer</a>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Georgia, XY</p>
+                                                                <p class="mb-0 text-xs text-gray-500"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Georgia, XY</p>
                                                                 <a href="javascript:void(0);" class="text-xs">1116 Applicants</a>
                                                             </div>
                                                             <div class="min-w-fit text-end">
-                                                                <span class="text-xs text-gray-500 dark:text-white/70">1 day ago</span>
+                                                                <span class="text-xs text-gray-500">1 day ago</span>
                                                                 <p class="mb-0 text-xs">29 days left
                                                             </p></div>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 w-full">
                                                     <div class="flex items-center w-full">
                                                         <a aria-label="anchor" href="javascript:void(0);" class="ltr:pr-3 rtl:pl-3">
                                                             <span class="avatar rounded-sm bg-secondary/20 text-secondary p-3"><i class="ri-briefcase-5-line text-2xl leading-none"></i></span>
@@ -857,17 +857,17 @@
                                                         <div class="flex-1 flex justify-between items-center relative">
                                                             <div class="flex-1">
                                                                 <a href="javascript:void(0);" class="text-sm font-semibold">Data Scientist Trainee</a>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Siberia, PQ</p>
+                                                                <p class="mb-0 text-xs text-gray-500"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Siberia, PQ</p>
                                                                 <a href="javascript:void(0);" class="text-xs">773 Applicants</a>
                                                             </div>
                                                             <div class="min-w-fit text-end">
-                                                                <span class="text-xs text-gray-500 dark:text-white/70">3 days ago</span>
+                                                                <span class="text-xs text-gray-500">3 days ago</span>
                                                                 <p class="mb-0 text-xs">27 days left
                                                             </p></div>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 w-full">
                                                     <div class="flex items-center w-full">
                                                         <a aria-label="anchor" href="javascript:void(0);" class="ltr:pr-3 rtl:pl-3">
                                                             <span class="avatar rounded-sm bg-warning/20 text-warning p-3"><i class="ri-stack-line text-2xl leading-none"></i></span>
@@ -875,17 +875,17 @@
                                                         <div class="flex-1 flex justify-between items-center relative">
                                                             <div class="flex-1">
                                                                 <a href="javascript:void(0);" class="text-sm font-semibold">Sr. Backend Developer</a>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Italy, RS</p>
+                                                                <p class="mb-0 text-xs text-gray-500"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>Italy, RS</p>
                                                                 <a href="javascript:void(0);" class="text-xs">16 Applicants</a>
                                                             </div>
                                                             <div class="min-w-fit text-end">
-                                                                <span class="text-xs text-gray-500 dark:text-white/70">1 week ago</span>
+                                                                <span class="text-xs text-gray-500">1 week ago</span>
                                                                 <p class="mb-0 text-xs">22  days left
                                                             </p></div>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                <li class="p-0 mb-3 ti-list-group border-0 text-gray-800 w-full">
                                                     <div class="flex items-center w-full">
                                                         <a aria-label="anchor" href="javascript:void(0);" class="ltr:pr-3 rtl:pl-3">
                                                             <span class="avatar rounded-sm bg-success/20 text-success p-3"><i class="ri-bar-chart-2-line text-2xl leading-none"></i></span>
@@ -893,18 +893,18 @@
                                                         <div class="flex-1 flex justify-between items-center relative">
                                                             <div class="flex-1">
                                                                 <a href="javascript:void(0);" class="text-sm font-semibold"> Data Visualization Engineer</a>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>India, IN</p>
+                                                                <p class="mb-0 text-xs text-gray-500"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>India, IN</p>
                                                                 <a href="javascript:void(0);" class="text-xs">11 Applicants</a>
                                                             </div>
                                                             <div class="min-w-fit text-end">
-                                                                <span class="text-xs text-gray-500 dark:text-white/70">
+                                                                <span class="text-xs text-gray-500">
                                                                     1 month ago</span>
                                                                 <p class="mb-0 text-xs text-danger">1 day left
                                                             </p></div>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white w-full">
+                                                <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 w-full">
                                                     <div class="flex items-center w-full">
                                                         <a aria-label="anchor" href="javascript:void(0);" class="ltr:pr-3 rtl:pl-3">
                                                             <span class="avatar rounded-sm bg-danger/20 text-danger p-3"><i class="ri-bar-chart-2-line text-2xl leading-none"></i></span>
@@ -912,11 +912,11 @@
                                                         <div class="flex-1 flex justify-between items-center relative">
                                                             <div class="flex-1">
                                                                 <a href="javascript:void(0);" class="text-sm font-semibold"> Executive Officer</a>
-                                                                <p class="mb-0 text-xs text-gray-500 dark:text-white/70"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>England, EN</p>
+                                                                <p class="mb-0 text-xs text-gray-500"><i class="ri-map-pin-line text-xs ltr:mr-1 rtl:ml-1"></i>England, EN</p>
                                                                 <a href="javascript:void(0);" class="text-xs">15 Applicants</a>
                                                             </div>
                                                             <div class="min-w-fit text-end">
-                                                                <span class="text-xs text-gray-500 dark:text-white/70">
+                                                                <span class="text-xs text-gray-500">
                                                                     1 month ago</span>
                                                                 <p class="mb-0 text-xs text-danger">closing soon
                                                             </p></div>
@@ -983,7 +983,7 @@
                                                             <td>
                                                                 <div class="inline-flex items-center">
                                                                     <i
-                                                                        class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
+                                                                        class="ri-map-pin-fill text-gray-500 text-xs"></i>
                                                                     <span class="ltr:ml-1 rtl:mr-1">Germany</span>
                                                                 </div>
                                                             </td>
@@ -1018,7 +1018,7 @@
                                                             <td>
                                                                 <div class="inline-flex items-center">
                                                                     <i
-                                                                        class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
+                                                                        class="ri-map-pin-fill text-gray-500 text-xs"></i>
                                                                     <span class="ltr:ml-1 rtl:mr-1">Canada</span>
                                                                 </div>
                                                             </td>
@@ -1053,7 +1053,7 @@
                                                             <td>
                                                                 <div class="inline-flex items-center">
                                                                     <i
-                                                                        class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
+                                                                        class="ri-map-pin-fill text-gray-500 text-xs"></i>
                                                                     <span class="ltr:ml-1 rtl:mr-1">Europe</span>
                                                                 </div>
                                                             </td>
@@ -1088,7 +1088,7 @@
                                                             <td>
                                                                 <div class="inline-flex items-center">
                                                                     <i
-                                                                        class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
+                                                                        class="ri-map-pin-fill text-gray-500 text-xs"></i>
                                                                     <span class="ltr:ml-1 rtl:mr-1">USA</span>
                                                                 </div>
                                                             </td>
@@ -1123,7 +1123,7 @@
                                                             <td>
                                                                 <div class="inline-flex items-center">
                                                                     <i
-                                                                        class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
+                                                                        class="ri-map-pin-fill text-gray-500 text-xs"></i>
                                                                     <span class="ltr:ml-1 rtl:mr-1">London</span>
                                                                 </div>
                                                             </td>

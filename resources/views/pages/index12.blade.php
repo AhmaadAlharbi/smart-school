@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Course Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Course Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                        <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Course Dashboard
                                     </li>
                                 </ol>
@@ -42,9 +42,9 @@
                                             class="ti ti-wallet text-2xl leading-none"></i></span>
                                     </a>
                                     <div class="flex-1 font-semibold">
-                                        <h4 class="text-2xl text-gray-800 dark:text-white font-semibold">$98,450</h4>
+                                        <h4 class="text-2xl text-gray-800 font-semibold">$98,450</h4>
                                         <div class="flex justify-between items-center">
-                                        <span class="text-gray-500 dark:text-white/70 text-xs">YTD Earning</span>
+                                        <span class="text-gray-500 text-xs">YTD Earning</span>
                                         <span class="text-success text-xs inline-flex"><i
                                             class="ti ti-trending-up text-base ltr:mr-1 rtl:ml-1"></i><span class="my-auto">+2.02%</span></span>
                                         </div>
@@ -63,9 +63,9 @@
                                             class="ti ti-users  text-2xl leading-none"></i></span>
                                     </a>
                                     <div class="flex-1 font-semibold">
-                                        <h4 class="text-2xl text-gray-800 dark:text-white font-semibold">15,379</h4>
+                                        <h4 class="text-2xl text-gray-800 font-semibold">15,379</h4>
                                         <div class="flex justify-between items-center">
-                                        <span class="text-gray-500 dark:text-white/70 text-xs">Total Students</span>
+                                        <span class="text-gray-500 text-xs">Total Students</span>
                                         <span class="text-danger text-xs inline-flex">
                                             <i class="ti ti-trending-down text-base ltr:mr-1 rtl:ml-1"></i>
                                             <span class="my-auto">+2.02%</span>
@@ -86,9 +86,9 @@
                                             class="ti ti-id text-2xl leading-none"></i></span>
                                     </a>
                                     <div class="flex-1 font-semibold">
-                                        <h4 class="text-2xl text-gray-800 dark:text-white font-semibold">377</h4>
+                                        <h4 class="text-2xl text-gray-800 font-semibold">377</h4>
                                         <div class="flex justify-between items-center">
-                                        <span class="text-gray-500 dark:text-white/70 text-xs">Total Instructors</span>
+                                        <span class="text-gray-500 text-xs">Total Instructors</span>
                                         <span class="text-danger text-xs inline-flex"><i
                                             class="ti ti-trending-down text-base ltr:mr-1 rtl:ml-1"></i><span class="my-auto">+2.02%</span></span>
                                         </div>
@@ -107,9 +107,9 @@
                                             class="ti ti-gift text-2xl leading-none"></i></span>
                                     </a>
                                     <div class="flex-1 font-semibold">
-                                        <h4 class="text-2xl text-gray-800 dark:text-white font-semibold">11,016</h4>
+                                        <h4 class="text-2xl text-gray-800 font-semibold">11,016</h4>
                                         <div class="flex justify-between items-center">
-                                        <span class="text-gray-500 dark:text-white/70 text-xs">Total Courses</span>
+                                        <span class="text-gray-500 text-xs">Total Courses</span>
                                         <span class="text-success text-xs inline-flex"><i
                                             class="ti ti-trending-up text-base ltr:mr-1 rtl:ml-1"></i><span class="my-auto">+2.02%</span></span>
                                         </div>
@@ -161,7 +161,7 @@
                                     <h5 class="box-title my-auto">New Students</h5>
                                     <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
                                     <button type="button"
-                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                 </div>
@@ -182,11 +182,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/11.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Richard Dom</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">richarddom1116@demo.com</span>
+                                                <p class="text-sm mb-0 text-gray-800">Richard Dom</p>
+                                                <span class="text-xs text-gray-500">richarddom1116@demo.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -198,7 +198,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -209,7 +209,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -220,7 +220,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -233,11 +233,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/4.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Jonathan Ion</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">john.ion@demo</span>
+                                                <p class="text-sm mb-0 text-gray-800">Jonathan Ion</p>
+                                                <span class="text-xs text-gray-500">john.ion@demo</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -249,7 +249,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -260,7 +260,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -271,7 +271,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -284,11 +284,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/3.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Mary Curie</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">mary.11@demo.com</span>
+                                                <p class="text-sm mb-0 text-gray-800">Mary Curie</p>
+                                                <span class="text-xs text-gray-500">mary.11@demo.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -300,7 +300,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -311,7 +311,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -322,7 +322,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -335,11 +335,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/13.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Richard Nike</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">richard.16@demo.com</span>
+                                                <p class="text-sm mb-0 text-gray-800">Richard Nike</p>
+                                                <span class="text-xs text-gray-500">richard.16@demo.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -351,7 +351,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -362,7 +362,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -373,7 +373,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -386,11 +386,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/2.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Socrates Itumay</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">socratesitumay@gmail.com</span>
+                                                <p class="text-sm mb-0 text-gray-800">Socrates Itumay</p>
+                                                <span class="text-xs text-gray-500">socratesitumay@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -402,7 +402,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -413,7 +413,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -424,7 +424,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -437,11 +437,11 @@
                                             <div class="flex items-center min-w-[200px]">
                                                 <div class="ltr:mr-2 rtl:ml-2 leading-none">
                                                 <img src="{{asset('build/assets/img/users/12.jpg')}}" alt=""
-                                                    class="avatar avatar-xs rounded-full bg-gray-100 dark:bg-black/20">
+                                                    class="avatar avatar-xs rounded-full bg-gray-100">
                                                 </div>
                                                 <div class="items-center">
-                                                <p class="text-sm mb-0 text-gray-800 dark:text-white">Charlie Davieson</p>
-                                                <span class="text-xs text-gray-500 dark:text-white/70">charliedavieson@gmail.com</span>
+                                                <p class="text-sm mb-0 text-gray-800">Charlie Davieson</p>
+                                                <span class="text-xs text-gray-500">charliedavieson@gmail.com</span>
                                                 </div>
                                             </div>
                                             </td>
@@ -453,7 +453,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     View
                                                 </span>
@@ -464,7 +464,7 @@
                                                 class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Edit
                                                 </span>
@@ -475,7 +475,7 @@
                                                 class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
                                                 <span
-                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                    class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                     role="tooltip">
                                                     Delete
                                                 </span>
@@ -501,14 +501,14 @@
                                     <h5 class="box-title my-auto">Top Instructors</h5>
                                     <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button"
-                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -516,16 +516,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">John Hny</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">M.tech</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">M.tech</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">321 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Digital Marketing</p>
+                                            <span class="text-sm text-gray-800 font-semibold">321 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Digital Marketing</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -533,16 +533,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Mortal Yun</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">Phd</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">Phd</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">25 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Stocks &amp; Trading</p>
+                                            <span class="text-sm text-gray-800 font-semibold">25 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Stocks &amp; Trading</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -550,16 +550,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Trex Con</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">MBBS</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">MBBS</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">39 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Science</p>
+                                            <span class="text-sm text-gray-800 font-semibold">39 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Science</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -567,16 +567,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Saiu Sarah</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">Phd</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">Phd</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">11 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Science</p>
+                                            <span class="text-sm text-gray-800 font-semibold">11 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Science</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -584,16 +584,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Ion Hao</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">M.tech</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">M.tech</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">124 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Web Development</p>
+                                            <span class="text-sm text-gray-800 font-semibold">124 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Web Development</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -601,16 +601,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Roman Killon</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">M.tech</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">M.tech</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">163 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Ui / Ux Designing</p>
+                                            <span class="text-sm text-gray-800 font-semibold">163 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Ui / Ux Designing</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -618,16 +618,16 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Suzika Stallone</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">Phd</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">Phd</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">110 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Machine Leadning</p>
+                                            <span class="text-sm text-gray-800 font-semibold">110 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Machine Leadning</p>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <div class="leading-none">
@@ -635,11 +635,11 @@
                                             </div>
                                             <div class="flex-auto ltr:ml-2 rtl:mr-2">
                                             <p class="text-sm font-semibold mb-0">Robert Lewis</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0 !font-normal">Phd</p>
+                                            <p class="text-xs text-gray-500 mb-0 !font-normal">Phd</p>
                                             </div>
                                             <div class="block text-end">
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">150 Courses</span>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 !font-normal">Java Development</p>
+                                            <span class="text-sm text-gray-800 font-semibold">150 Courses</span>
+                                            <p class="text-xs text-gray-500 !font-normal">Java Development</p>
                                             </div>
                                         </div>
                                         </a>
@@ -655,21 +655,21 @@
                                     <h5 class="box-title my-auto">Popular Courses</h5>
                                     <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button"
-                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="mb-6 !rounded-sm ti-list-group text-gray-800 dark:text-white w-full">
+                                    <li class="mb-6 !rounded-sm ti-list-group text-gray-800 w-full">
                                         <div class="sm:flex items-center w-full">
                                         <a href="javascript:void(0);" class="ltr:pr-4 rtl:pl-4 inline-block">
                                             <img src="{{asset('build/assets/img/media/1.jpg')}}" alt="img" class="avatar w-28 h-28 rounded-sm">
                                         </a>
                                         <div class="mt-4 sm:mt-0 flex-1 font-semibold">
                                             <a href="javascript:void(0);"
-                                            class="text-gray-500 dark:text-white/70 block mb-1 font-medium text-xs" title="Category"><i
+                                            class="text-gray-500 block mb-1 font-medium text-xs" title="Category"><i
                                                 class="ri-price-tag-3-line text-xs"></i>&nbsp;UI/UX</a>
                                             <a href="javascript:void(0);" class="block mb-3 text-sm font-semibold">CSS Zero to Hero
                                             Class-11: What are Pseudo Classes In CSS? How To Write Pseudo Classes?</a>
@@ -678,10 +678,10 @@
                                                 <a href="javascript:void(0);" class="ltr:pr-2 rtl:pl-2">
                                                 <img src="{{asset('build/assets/img/users/3.jpg')}}" alt="img" class="avatar avatar-xs rounded-full">
                                                 </a>
-                                                <a href="javascript:void(0);" class="flex-1 text-gray-500 dark:text-white/70">Natasha
+                                                <a href="javascript:void(0);" class="flex-1 text-gray-500">Natasha
                                                 Sil</a>
                                             </div>
-                                            <div class="min-w-fit text-xs text-gray-500 dark:text-white/70 inline-flex">
+                                            <div class="min-w-fit text-xs text-gray-500 inline-flex">
                                                 <span class="ltr:mr-2 rtl:ml-2 my-auto">2,189 Views</span>
                                                 <span><i class="ri-star-fill text-warning"></i>&nbsp;(4.2)</span>
                                             </div>
@@ -689,14 +689,14 @@
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="mb-6 !rounded-sm ti-list-group text-gray-800 dark:text-white w-full">
+                                    <li class="mb-6 !rounded-sm ti-list-group text-gray-800 w-full">
                                         <div class="sm:flex items-center w-full">
                                         <a href="javascript:void(0);" class="ltr:pr-4 rtl:pl-4 inline-block">
                                             <img src="{{asset('build/assets/img/media/4.jpg')}}" alt="img" class="avatar w-28 h-28 rounded-sm">
                                         </a>
                                         <div class="mt-4 sm:mt-0 flex-1 font-semibold">
                                             <a href="javascript:void(0);"
-                                            class="text-gray-500 dark:text-white/70 block mb-1 font-medium text-xs" title="Category"><i
+                                            class="text-gray-500 block mb-1 font-medium text-xs" title="Category"><i
                                                 class="ri-price-tag-3-line text-xs"></i>&nbsp; Marketing</a>
                                             <a href="javascript:void(0);" class="block mb-3 text-sm font-semibold">Marketing Class-27: What
                                             Is Marketing? How Marketing Helpful To Business? Basic Introduction To Marketing.</a>
@@ -705,9 +705,9 @@
                                                 <a href="javascript:void(0);" class="ltr:pr-2 rtl:pl-2">
                                                 <img src="{{asset('build/assets/img/users/4.jpg')}}" alt="img" class="avatar avatar-xs rounded-full">
                                                 </a>
-                                                <a href="javascript:void(0);" class="flex-1 text-gray-500 dark:text-white/70">Mosh Nah</a>
+                                                <a href="javascript:void(0);" class="flex-1 text-gray-500">Mosh Nah</a>
                                             </div>
-                                            <div class="min-w-fit text-xs text-gray-500 dark:text-white/70 inline-flex">
+                                            <div class="min-w-fit text-xs text-gray-500 inline-flex">
                                                 <span class="ltr:mr-2 rtl:ml-2 my-auto">1,116 Views</span>
                                                 <span><i class="ri-star-fill text-warning"></i>&nbsp;(4.5)</span>
                                             </div>
@@ -715,14 +715,14 @@
                                         </div>
                                         </div>
                                     </li>
-                                    <li class="mb-0 !rounded-sm ti-list-group text-gray-800 dark:text-white w-full">
+                                    <li class="mb-0 !rounded-sm ti-list-group text-gray-800 w-full">
                                         <div class="sm:flex items-center w-full">
                                         <a href="javascript:void(0);" class="ltr:pr-4 rtl:pl-4 inline-block">
                                             <img src="{{asset('build/assets/img/media/23.jpg')}}" alt="img" class="avatar w-28 h-28 rounded-sm">
                                         </a>
                                         <div class="mt-4 sm:mt-0 flex-1 font-semibold">
                                             <a href="javascript:void(0);"
-                                            class="text-gray-500 dark:text-white/70 block mb-1 font-medium text-xs" title="Category"><i
+                                            class="text-gray-500 block mb-1 font-medium text-xs" title="Category"><i
                                                 class="ri-price-tag-3-line text-xs"></i>&nbsp; Programming</a>
                                             <a href="javascript:void(0);" class="block mb-3 text-sm font-semibold">Learn Python-16: What Is
                                             The Difference Between Shallow Copy and Deep Copy? Implementing Deep Copy In Python.</a>
@@ -731,10 +731,10 @@
                                                 <a href="javascript:void(0);" class="ltr:pr-2 rtl:pl-2">
                                                 <img src="{{asset('build/assets/img/users/12.jpg')}}" alt="img" class="avatar avatar-xs rounded-full">
                                                 </a>
-                                                <a href="javascript:void(0);" class="flex-1 text-gray-500 dark:text-white/70">Telsko
+                                                <a href="javascript:void(0);" class="flex-1 text-gray-500">Telsko
                                                 Navin</a>
                                             </div>
-                                            <div class="min-w-fit text-xs text-gray-500 dark:text-white/70 inline-flex">
+                                            <div class="min-w-fit text-xs text-gray-500 inline-flex">
                                                 <span class="ltr:mr-2 rtl:ml-2 my-auto">2,125 Views</span>
                                                 <span><i class="ri-star-fill text-warning"></i>&nbsp;(4.8)</span>
                                             </div>
@@ -753,114 +753,114 @@
                                     <h5 class="box-title my-auto">Top Categories</h5>
                                     <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
                                         <button type="button"
-                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All</button>
                                     </div>
                                     </div>
                                 </div>
                                 <div class="box-body">
                                     <ul class="flex flex-col">
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-primary/20 text-primary p-3"><i
                                                 class="ri-dashboard-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">UI / UX Design</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">10,000 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">10,000 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$199.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$199.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-secondary/20 text-secondary p-3"><i
                                                 class="ri-advertisement-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">Digital Marketing</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">90 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">90 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$599.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$599.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-success/20 text-success p-3"><i
                                                 class="ri-code-box-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">Web Development</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">250 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">250 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$299.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$299.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-warning/20 text-warning p-3"><i
                                                 class="ri-bar-chart-2-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">Stocks &amp; Trading</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">100 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">100 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$999.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$999.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-danger/20 text-danger p-3"><i
                                                 class="ri-angularjs-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">Angular Course</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">300 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">300 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$399.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$399.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-6 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-info/20 text-info p-3"><i
                                                 class="ri-reactjs-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">React Course</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">150 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">150 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$599.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$599.99</span>
                                             </div>
                                         </div>
                                         </a>
                                     </li>
-                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800 dark:text-white">
+                                    <li class="p-0 mb-0 ti-list-group border-0 text-gray-800">
                                         <a href="javascript:void(0);" class="w-full">
                                         <div class="flex items-center">
                                             <span class="avatar rounded-sm bg-pink-500/20 text-pink-500 p-3"><i
                                                 class="ri-database-2-line text-2xl leading-none"></i></span>
                                             <div class="flex-auto ltr:ml-3 rtl:mr-3">
                                             <p class="text-sm font-semibold mb-0">Full Stack Course</p>
-                                            <p class="text-xs text-gray-500 dark:text-white/70 mb-0">500 + Courses</p>
+                                            <p class="text-xs text-gray-500 mb-0">500 + Courses</p>
                                             </div>
                                             <div>
-                                            <span class="text-sm text-gray-800 dark:text-white font-semibold">$199.99</span>
+                                            <span class="text-sm text-gray-800 font-semibold">$199.99</span>
                                             </div>
                                         </div>
                                         </a>
@@ -880,7 +880,7 @@
                                     <div class="flex">
                                     <h5 class="box-title my-auto">Course List</h5>
                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                        <button type="button" class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                         View All <i class="ti ti-chevron-down"></i></button>
                                         <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                         <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -893,7 +893,7 @@
                                 <div class="box-body">
                                     <div class="table-bordered rounded-sm ti-custom-table-head overflow-auto">
                                     <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
-                                        <thead class="bg-gray-50 dark:bg-black/20">
+                                        <thead class="bg-gray-50">
                                         <tr class="">
                                             <th scope="col" class="dark:text-white/80">S.no</th>
                                             <th scope="col" class="dark:text-white/80">Course</th>
@@ -912,7 +912,7 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/media/1.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="  block text-sm font-semibold my-auto text-gray-800 dark:text-white min-w-[400px]">CSS Zero to Hero Master Class</p>
+                                                <p class="  block text-sm font-semibold my-auto text-gray-800 min-w-[400px]">CSS Zero to Hero Master Class</p>
                                                 </div>
                                             </div>
                                             </td>
@@ -925,7 +925,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -933,7 +933,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     Edit
                                                 </span>
                                                 </a>
@@ -941,7 +941,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -954,7 +954,7 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/media/4.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="  block text-sm font-semibold my-auto text-gray-800 dark:text-white min-w-[400px]">Digital Marketing Course From Scratch</p>
+                                                <p class="  block text-sm font-semibold my-auto text-gray-800 min-w-[400px]">Digital Marketing Course From Scratch</p>
                                                 </div>
                                             </div>
                                             </td>
@@ -967,7 +967,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -975,7 +975,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     Edit
                                                 </span>
                                                 </a>
@@ -983,7 +983,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -996,7 +996,7 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/media/10.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="  block text-sm font-semibold my-auto text-gray-800 dark:text-white min-w-[400px]">Data Structures &amp; Algorithms For Beginners</p>
+                                                <p class="  block text-sm font-semibold my-auto text-gray-800 min-w-[400px]">Data Structures &amp; Algorithms For Beginners</p>
                                                 </div>
                                             </div>
                                             </td>
@@ -1009,7 +1009,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1017,7 +1017,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     Edit
                                                 </span>
                                                 </a>
@@ -1025,7 +1025,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1038,7 +1038,7 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/media/15.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="  block text-sm font-semibold my-auto text-gray-800 dark:text-white min-w-[400px]">Master Linear Algebra Medium Level</p>
+                                                <p class="  block text-sm font-semibold my-auto text-gray-800 min-w-[400px]">Master Linear Algebra Medium Level</p>
                                                 </div>
                                             </div>
                                             </td>
@@ -1051,7 +1051,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1059,7 +1059,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     Edit
                                                 </span>
                                                 </a>
@@ -1067,7 +1067,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>
@@ -1080,7 +1080,7 @@
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start">
                                                 <img class="avatar avatar-sm rounded-sm" src="{{asset('build/assets/img/media/23.jpg')}}" alt="Image Description">
                                                 <div class="block my-auto">
-                                                <p class="  block text-sm font-semibold my-auto text-gray-800 dark:text-white min-w-[400px]">Learn How to Trade &amp; Invest - For Absolute Beginners</p>
+                                                <p class="  block text-sm font-semibold my-auto text-gray-800 min-w-[400px]">Learn How to Trade &amp; Invest - For Absolute Beginners</p>
                                                 </div>
                                             </div>
                                             </td>
@@ -1093,7 +1093,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                 <i class="ti ti-eye"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     View
                                                 </span>
                                                 </a>
@@ -1101,7 +1101,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                 <i class="ti ti-pencil"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm hidden" role="tooltip" data-popper-placement="top" style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
                                                     Edit
                                                 </span>
                                                 </a>
@@ -1109,7 +1109,7 @@
                                             <div class="hs-tooltip ti-main-tooltip">
                                                 <a href="javascript:void(0);" class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                 <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                                     Delete
                                                 </span>
                                                 </a>

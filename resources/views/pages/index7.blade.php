@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Projects Dashboard</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Projects Dashboard</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Dashboards
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Projects Dashboard
                                     </li>
                                 </ol>
@@ -39,11 +39,11 @@
                                             <div class="box-body">
                                                 <div class="flex flex-wrap">
                                                 <div class="flex-1">
-                                                    <p class="mb-2 font-semibold text-sm text-gray-500 dark:text-white/70">Total Projects</p>
-                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800 dark:text-white">1,293</h3>
+                                                    <p class="mb-2 font-semibold text-sm text-gray-500">Total Projects</p>
+                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800">1,293</h3>
                                                     <p class="mb-0 text-xs"><span
                                                         class="badge bg-danger/20 text-danger py-1 rounded-full font-semibold ltr:mr-1 rtl:ml-1">1.35%</span><span
-                                                        class="tx-muted font-semibold text-gray-500 dark:text-white/70">Since Last Month</span></p>
+                                                        class="tx-muted font-semibold text-gray-500">Since Last Month</span></p>
                                                 </div>
                                                 <div class="min-w-fit ltr:ml-2 rtl:mr-2">
                                                     <div class="avatar bg-primary text-white rounded-sm p-2.5">
@@ -57,11 +57,11 @@
                                             <div class="box-body">
                                                 <div class="flex flex-wrap">
                                                 <div class="flex-1">
-                                                    <p class="mb-2 font-semibold text-sm text-gray-500 dark:text-white/70">Completed</p>
-                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800 dark:text-white">853</h3>
+                                                    <p class="mb-2 font-semibold text-sm text-gray-500">Completed</p>
+                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800">853</h3>
                                                     <p class="mb-0 text-xs"><span
                                                         class="badge bg-success/20 text-success py-1 rounded-full font-semibold ltr:mr-1 rtl:ml-1">1.25%</span><span
-                                                        class="tx-muted font-semibold text-gray-500 dark:text-white/70">Since Last Month</span></p>
+                                                        class="tx-muted font-semibold text-gray-500">Since Last Month</span></p>
                                                 </div>
                                                 <div class="min-w-fit ltr:ml-2 rtl:mr-2">
                                                     <div class="avatar bg-secondary text-white rounded-sm p-2.5">
@@ -75,11 +75,11 @@
                                             <div class="box-body">
                                                 <div class="flex flex-wrap">
                                                 <div class="flex-1">
-                                                    <p class="mb-2 font-semibold text-sm text-gray-500 dark:text-white/70">In Complete</p>
-                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800 dark:text-white">625</h3>
+                                                    <p class="mb-2 font-semibold text-sm text-gray-500">In Complete</p>
+                                                    <h3 class="mb-2 font-semibold text-2xl text-gray-800">625</h3>
                                                     <p class="mb-0 text-xs"><span
                                                         class="badge bg-danger/20 text-danger py-1 rounded-full font-semibold ltr:mr-1 rtl:ml-1">2.23%</span><span
-                                                        class="tx-muted font-semibold text-gray-500 dark:text-white/70">Since Last Month</span></p>
+                                                        class="tx-muted font-semibold text-gray-500">Since Last Month</span></p>
                                                 </div>
                                                 <div class="min-w-fit ltr:ml-2 rtl:mr-2">
                                                     <div class="avatar bg-info text-white rounded-sm p-2.5">
@@ -97,7 +97,7 @@
                                                 <h5 class="box-title my-auto">Project Analysis</h5>
                                                 <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto open">
                                                     <button type="button"
-                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                                     This Week <i class="ti ti-chevron-down"></i></button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                                     <a class="ti-dropdown-item" href="javascript:void(0)">Today</a>
@@ -118,8 +118,8 @@
                                                 <div class="box-body text-center">
                                                     <img src="{{asset('build/assets/img/png-images/15.png')}}" alt="Project-img" class="h-40 w-40 mx-auto">
                                                     <div>
-                                                    <h5 class="font-semibold text-gray-800 dark:text-white text-xl mb-1"> Welcome Back ...!</h5>
-                                                    <p class="text-xs text-gray-500 dark:text-white/70 mb-4">Start Working On the Assigned project....
+                                                    <h5 class="font-semibold text-gray-800 text-xl mb-1"> Welcome Back ...!</h5>
+                                                    <p class="text-xs text-gray-500 mb-4">Start Working On the Assigned project....
                                                     </p>
                                                     <button type="button" class="ti-btn ti-btn-primary">Let's Start</button>
                                                     </div>
@@ -209,95 +209,95 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td class="leading-none !text-gray-800 dark:!text-white !p-[0.75rem]">
+                                                <td class="leading-none !text-gray-800 !p-[0.75rem]">
                                                 <div class="flex">
                                                     <div class="ltr:mr-3 rtl:ml-3">
                                                     <span class="avatar avatar-sm"><img src="{{asset('build/assets/img/users/2.jpg')}}" alt="img" class="rounded-full"></span>
                                                     </div>
                                                     <div class="flex-1">
                                                     <h6 class="font-semibold text-sm">Richard Dom</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">richarddom1116@demo.com</span>
+                                                    <span class="text-xs text-gray-500">richarddom1116@demo.com</span>
                                                     </div>
                                                 </div>
                                                 </td>
                                                 <td class="!p-[0.75rem]">Team Leader</td>
-                                                <td class="!p-[0.75rem]">31h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 dark:text-white/70 opacity-50">/ 36h</span></td>
+                                                <td class="!p-[0.75rem]">31h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 opacity-50">/ 36h</span></td>
                                                 <td class="!p-[0.75rem]">
                                                 <span class="text-sm font-semibold">143</span>
                                                 </td>
                                                 <td class="!p-[0.75rem] text-sm"><span class="badge leading-none bg-success/10 text-success rounded-sm py-1">Online</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="leading-none !text-gray-800 dark:!text-white !p-[0.75rem]">
+                                                <td class="leading-none !text-gray-800 !p-[0.75rem]">
                                                 <div class="flex">
                                                     <div class="ltr:mr-3 rtl:ml-3">
                                                     <span class="avatar avatar-sm"><img src="{{asset('build/assets/img/users/21.jpg')}}" alt="img" class="rounded-full"></span>
                                                     </div>
                                                     <div class="flex-1">
                                                     <h6 class="font-semibold text-sm">Jennifer Tab</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">jenny258@demo.com</span>
+                                                    <span class="text-xs text-gray-500">jenny258@demo.com</span>
                                                     </div>
                                                 </div>
                                                 </td>
                                                 <td class="!p-[0.75rem]">Project Manager</td>
-                                                <td class="!p-[0.75rem]">11h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 dark:text-white/70 opacity-50">/ 20h</span></td>
+                                                <td class="!p-[0.75rem]">11h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 opacity-50">/ 20h</span></td>
                                                 <td class="!p-[0.75rem]">
                                                 <span class="text-sm font-semibold">186</span>
                                                 </td>
                                                 <td class="!p-[0.75rem] text-sm"><span class="badge leading-none bg-success/10 text-success rounded-sm py-1">Online</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="leading-none !text-gray-800 dark:!text-white !p-[0.75rem]">
+                                                <td class="leading-none !text-gray-800 !p-[0.75rem]">
                                                 <div class="flex">
                                                     <div class="ltr:mr-3 rtl:ml-3">
                                                     <span class="avatar avatar-sm"><img src="{{asset('build/assets/img/users/3.jpg')}}" alt="img" class="rounded-full"></span>
                                                     </div>
                                                     <div class="flex-1">
                                                     <h6 class="font-semibold text-sm">Nikki Jey</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">nikkiJ141@demo.com</span>
+                                                    <span class="text-xs text-gray-500">nikkiJ141@demo.com</span>
                                                     </div>
                                                 </div>
                                                 </td>
                                                 <td class="!p-[0.75rem]">UI Developer</td>
-                                                <td class="!p-[0.75rem]">20h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 dark:text-white/70 opacity-50">/ 22h</span></td>
+                                                <td class="!p-[0.75rem]">20h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 opacity-50">/ 22h</span></td>
                                                 <td class="!p-[0.75rem]">
                                                 <span class="text-sm font-semibold">652</span>
                                                 </td>
                                                 <td class="!p-[0.75rem] text-sm"><span class="badge leading-none bg-gray-200 text-gray-500 rounded-sm py-1">Offline</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="leading-none !text-gray-800 dark:!text-white !p-[0.75rem]">
+                                                <td class="leading-none !text-gray-800 !p-[0.75rem]">
                                                 <div class="flex">
                                                     <div class="ltr:mr-3 rtl:ml-3">
                                                     <span class="avatar avatar-sm"><img src="{{asset('build/assets/img/users/21.jpg')}}" alt="img" class="rounded-full"></span>
                                                     </div>
                                                     <div class="flex-1">
                                                     <h6 class="font-semibold text-sm">Arifa Zed</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">arifaZ@demo.com</span>
+                                                    <span class="text-xs text-gray-500">arifaZ@demo.com</span>
                                                     </div>
                                                 </div>
                                                 </td>
                                                 <td class="!p-[0.75rem]">Web Developer</td>
-                                                <td class="!p-[0.75rem]">83h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 dark:text-white/70 opacity-50">/ 83h</span></td>
+                                                <td class="!p-[0.75rem]">83h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 opacity-50">/ 83h</span></td>
                                                 <td class="!p-[0.75rem]">
                                                 <span class="text-sm font-semibold">752</span>
                                                 </td>
                                                 <td class="!p-[0.75rem] text-sm"><span class="badge leading-none bg-success/10 text-success rounded-sm py-1">Online</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="leading-none !text-gray-800 dark:!text-white !p-[0.75rem]">
+                                                <td class="leading-none !text-gray-800 !p-[0.75rem]">
                                                 <div class="flex">
                                                     <div class="ltr:mr-3 rtl:ml-3">
                                                     <span class="avatar avatar-sm"><img src="{{asset('build/assets/img/users/4.jpg')}}" alt="img" class="rounded-full"></span>
                                                     </div>
                                                     <div class="flex-1">
                                                     <h6 class="font-semibold text-sm">Xiong Yu</h6>
-                                                    <span class="text-xs text-gray-500 dark:text-white/70">xingzing444@demo.com</span>
+                                                    <span class="text-xs text-gray-500">xingzing444@demo.com</span>
                                                     </div>
                                                 </div>
                                                 </td>
                                                 <td class="!p-[0.75rem]">Team Member</td>
-                                                <td class="!p-[0.75rem]">51h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 dark:text-white/70 opacity-50">/ 62h</span></td>
+                                                <td class="!p-[0.75rem]">51h<span class="ltr:ml-2 rtl:mr-2 text-gray-500 opacity-50">/ 62h</span></td>
                                                 <td class="!p-[0.75rem]">
                                                 <span class="text-sm font-semibold">268</span>
                                                 </td>
@@ -322,31 +322,31 @@
                                         <div class="box-body">
                                             <div class="overflow-auto">
                                             <nav class="flex space-x-1 rtl:space-x-reverse justify-between mb-6" aria-label="Tabs" role="tablist">
-                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300 active" id="mon-item-1" data-hs-tab="#mon-1" aria-controls="mon-1" role="tab">
+                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 active" id="mon-item-1" data-hs-tab="#mon-1" aria-controls="mon-1" role="tab">
                                                     <span class="block mb-1">09</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Mon</span>
                                                 </button>
-                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="tue-item-2" data-hs-tab="#tue-2" aria-controls="tue-2" role="tab">
+                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="tue-item-2" data-hs-tab="#tue-2" aria-controls="tue-2" role="tab">
                                                     <span class="block mb-1">10</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Tue</span>
                                                 </button>
-                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="wed-item-2" data-hs-tab="#wed-2" aria-controls="wed-2" role="tab">
+                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="wed-item-2" data-hs-tab="#wed-2" aria-controls="wed-2" role="tab">
                                                     <span class="block mb-1">11</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Wed</span>
                                                 </button>
-                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="thu-item-2" data-hs-tab="#thu-2" aria-controls="thu-2" role="tab">
+                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="thu-item-2" data-hs-tab="#thu-2" aria-controls="thu-2" role="tab">
                                                     <span class="block mb-1">12</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Thu</span>
                                                 </button>
-                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="fri-item-2" data-hs-tab="#fri-2" aria-controls="fri-2" role="tab">
+                                                <button type="button" class="hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="fri-item-2" data-hs-tab="#fri-2" aria-controls="fri-2" role="tab">
                                                     <span class="block mb-1">13</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Fri</span>
                                                 </button>
-                                                <button type="button" class="hidden sm:block hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="sat-item-2" data-hs-tab="#sat-2" aria-controls="sat-2" role="tab">
+                                                <button type="button" class="hidden sm:block hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="sat-item-2" data-hs-tab="#sat-2" aria-controls="sat-2" role="tab">
                                                     <span class="block mb-1">14</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Sat</span>
                                                 </button>
-                                                <button type="button" class="hidden sm:block hs-tab-active:text-white hs-tab-active:bg-primary dark:hs-tab-active:bg-primary dark:hs-tab-active:text-white p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700 dark:bg-black/20 dark:text-white/70 dark:hover:text-gray-300" id="sun-item-2" data-hs-tab="#sun-2" aria-controls="sun-2" role="tab">
+                                                <button type="button" class="hidden sm:block hs-tab-active:text-white hs-tab-active:bg-primary p-2 sm:p-3 w-full text-sm leading-none font-medium text-center bg-gray-100 text-gray-500 rounded-sm hover:text-gray-700" id="sun-item-2" data-hs-tab="#sun-2" aria-controls="sun-2" role="tab">
                                                     <span class="block mb-1">15</span>
                                                     <span class="block mb-0 opacity-70 text-xs">Sun</span>
                                                 </button>
@@ -358,10 +358,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -369,10 +369,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -380,10 +380,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -391,10 +391,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -406,10 +406,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -417,10 +417,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -428,10 +428,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -439,10 +439,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -454,10 +454,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -465,10 +465,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -476,10 +476,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -487,10 +487,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -502,10 +502,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -513,10 +513,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -524,10 +524,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -535,10 +535,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -550,10 +550,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -561,10 +561,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -572,10 +572,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -583,10 +583,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -598,10 +598,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -609,10 +609,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -620,10 +620,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -631,10 +631,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -646,10 +646,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Meeting with client</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Video Conference</p>
+                                                                    <p class="mb-0 text-gray-500">Video Conference</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>9:00am - 10:00am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -657,10 +657,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Lunch with team members</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Dolores Ait Labore Sit</p>
+                                                                    <p class="mb-0 text-gray-500">Dolores Ait Labore Sit</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>12:00pm - 12:45am</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -668,10 +668,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">General board meeting</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">Golden PArk</p>
+                                                                    <p class="mb-0 text-gray-500">Golden PArk</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>4:00pm - 5:30pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -679,10 +679,10 @@
                                                             <div class="sm:flex justify-between w-full">
                                                                 <div class="flex-auto">
                                                                     <p class="mb-0 text-sm">Create New Registration Page</p>
-                                                                    <p class="mb-0 text-gray-500 dark:text-white/70">2UA Project</p>
+                                                                    <p class="mb-0 text-gray-500">2UA Project</p>
                                                                 </div>
                                                                 <div>
-                                                                    <span class="text-gray-500 dark:text-white/70 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
+                                                                    <span class="text-gray-500 inline-flex"><i class="ri-time-line align-middle ltr:mr-1 rtl:ml-1"></i>5:00pm - 5:45pm</span>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -700,7 +700,7 @@
                                         <h5 class="box-title my-auto">On Going Tasks</h5>
                                         <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                             Today <i class="ti ti-chevron-down"></i></button>
                                             <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                             <a class="ti-dropdown-item" href="javascript:void(0)">Today</a>
@@ -722,9 +722,9 @@
                                                                         </div>
                                                                         <div class="flex-1">
                                                                             <div class="flex items-center justify-between mb-1">
-                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Designing a landing page</h5>
+                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800">Designing a landing page</h5>
                                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden" >
                                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -740,7 +740,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/6.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/7.jpg')}}" alt="Image Description">
                                                     </div>
-                                                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -754,9 +754,9 @@
                                                                         </div>
                                                                         <div class="flex-1">
                                                                             <div class="flex items-center justify-between mb-1">
-                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Responsive Issues</h5>
+                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Responsive Issues</h5>
                                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden" >
                                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -770,11 +770,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/8.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/6.jpg')}}" alt="Image Description">
-                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                        <span class="font-medium text-gray-500 leading-none dark:text-white/70">9+</span>
+                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                        <span class="font-medium text-gray-500 leading-none">9+</span>
                                                     </span>
                                                     </div>
-                                                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -788,9 +788,9 @@
                                                                         </div>
                                                                         <div class="flex-1">
                                                                             <div class="flex items-center justify-between mb-1">
-                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Bugs</h5>
+                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Bugs</h5>
                                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden" >
                                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -804,7 +804,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/8.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     </div>
-                                                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -818,9 +818,9 @@
                                                                         </div>
                                                                         <div class="flex-1">
                                                                             <div class="flex items-center justify-between mb-1">
-                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Fixing Javascript Issues</h5>
+                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800">Fixing Javascript Issues</h5>
                                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden" >
                                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -835,7 +835,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}" alt="Image Description">
                                                     </div>
-                                                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -849,9 +849,9 @@
                                                                         </div>
                                                                         <div class="flex-1">
                                                                             <div class="flex items-center justify-between mb-1">
-                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800 dark:text-white">Adding New Pages</h5>
+                                                    <h5 class="mb-1 text-sm font-semibold text-gray-800">Adding New Pages</h5>
                                                     <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
-                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500 dark:bg-transparent">
+                                                    <button type="button" aria-label="button" class="shadow-none hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-0 bg-transparent border-0 text-gray-500">
                                                         <i class="text-sm leading-none ti ti-dots-vertical"></i> </button>
                                                     <div class="hs-dropdown-menu ti-dropdown-menu hidden" >
                                                         <a class="ti-dropdown-item" href="javascript:void(0)">Action</a>
@@ -866,7 +866,7 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}" alt="Image Description">
                                                     </div>
-                                                                                <span class="text-gray-500 dark:text-white/70 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
+                                                                                <span class="text-gray-500 flex text-xs"><i class="ri-time-line ltr:mr-1 rtl:ml-1 my-auto "></i>10-04-23</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -887,7 +887,7 @@
                                         <h5 class="box-title my-auto">Project Summary</h5>
                                         <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
                                             <button type="button"
-                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                            class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200 ">
                                             View All <i class="ti ti-chevron-down"></i></button>
                                             <div class="hs-dropdown-menu ti-dropdown-menu hidden">
                                             <a class="ti-dropdown-item" href="javascript:void(0)">Download</a>
@@ -900,7 +900,7 @@
                                     <div class="box-body">
                                         <div class="table-bordered rounded-sm ti-custom-table-head overflow-auto">
                                         <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
-                                            <thead class="bg-gray-50 dark:bg-black/20">
+                                            <thead class="bg-gray-50">
                                             <tr class="">
                                                 <th scope="col" class="dark:text-white/80">S.no</th>
                                                 <th scope="col" class="dark:text-white/80">Project Title</th>
@@ -916,7 +916,7 @@
                                             <tr class="">
                                                 <td>1</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Home Page</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Home Page</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -926,11 +926,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/7.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>110<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 180</span></td>
+                                                <td>110<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 180</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -947,7 +947,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -958,7 +958,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -969,7 +969,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -980,7 +980,7 @@
                                             <tr class="">
                                                 <td>2</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Landing Design</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Landing Design</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -991,11 +991,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/19.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>95<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 100</span></td>
+                                                <td>95<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 100</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1012,7 +1012,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1023,7 +1023,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1034,7 +1034,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1045,7 +1045,7 @@
                                             <tr class="">
                                                 <td>3</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">New Template Design</span>
+                                                <span class="text-sm text-gray-800 font-semibold">New Template Design</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1054,11 +1054,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/16.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>0<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 50</span></td>
+                                                <td>0<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 50</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1075,7 +1075,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1086,7 +1086,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1097,7 +1097,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1108,7 +1108,7 @@
                                             <tr class="">
                                                 <td>4</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">HR Management Template Design</span>
+                                                <span class="text-sm text-gray-800 font-semibold">HR Management Template Design</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1116,16 +1116,16 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/16.jpg')}}" alt="Image Description">
-                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">2+</span>
+                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">2+</span>
                                                     </span>
                                                 </div>
                                                 </td>
-                                                <td>30<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 70</span></td>
+                                                <td>30<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 70</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1142,7 +1142,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1153,7 +1153,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1164,7 +1164,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1175,7 +1175,7 @@
                                             <tr class="">
                                                 <td>5</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Designing New Template</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Designing New Template</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1183,16 +1183,16 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/16.jpg')}}" alt="Image Description">
-                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">3+</span>
+                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">3+</span>
                                                     </span>
                                                 </div>
                                                 </td>
-                                                <td>120<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 120</span></td>
+                                                <td>120<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 120</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1209,7 +1209,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1220,7 +1220,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1231,7 +1231,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1242,7 +1242,7 @@
                                             <tr class="">
                                                 <td>6</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Documentation Project</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Documentation Project</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1253,11 +1253,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>40<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 80</span></td>
+                                                <td>40<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 80</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1274,7 +1274,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1285,7 +1285,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1296,7 +1296,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1307,7 +1307,7 @@
                                             <tr class="">
                                                 <td>7</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Developing Backend</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Developing Backend</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1315,16 +1315,16 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/4.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/21.jpg')}}" alt="Image Description">
-                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">3+</span>
+                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">3+</span>
                                                     </span>
                                                 </div>
                                                 </td>
-                                                <td>50<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 60</span></td>
+                                                <td>50<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 60</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1341,7 +1341,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1352,7 +1352,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1363,7 +1363,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1374,7 +1374,7 @@
                                             <tr class="">
                                                 <td>8</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Multipurpose Dashboard Template</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Multipurpose Dashboard Template</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1382,11 +1382,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>0<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 60</span></td>
+                                                <td>0<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 60</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1403,7 +1403,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1414,7 +1414,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1425,7 +1425,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1436,7 +1436,7 @@
                                             <tr class="">
                                                 <td>9</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Design New Dashboard Template</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Design New Dashboard Template</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
@@ -1446,11 +1446,11 @@
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/3.jpg')}}" alt="Image Description">
                                                 </div>
                                                 </td>
-                                                <td>100<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 100</span></td>
+                                                <td>100<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 100</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1467,7 +1467,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1478,7 +1478,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1489,7 +1489,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>
@@ -1500,23 +1500,23 @@
                                             <tr class="">
                                                 <td>10</td>
                                                 <td>
-                                                <span class="text-sm text-gray-800 dark:text-white font-semibold">Server Side Validation</span>
+                                                <span class="text-sm text-gray-800 font-semibold">Server Side Validation</span>
                                                 </td>
                                                 <td>
                                                 <div class="flex -space-x-2 rtl:space-x-reverse">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/8.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/14.jpg')}}" alt="Image Description">
                                                     <img class="inline-block avatar w-6 h-6 rounded-full" src="{{asset('build/assets/img/users/16.jpg')}}" alt="Image Description">
-                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="font-medium text-gray-500 leading-none dark:text-white/70">2+</span>
+                                                    <span class="inline-flex items-center justify-center avatar w-6 h-6  rounded-full bg-gray-100 border-2 border-gray-200">
+                                                    <span class="font-medium text-gray-500 leading-none">2+</span>
                                                     </span>
                                                 </div>
                                                 </td>
-                                                <td>80<span class="ltr:ml-1 rtl:mr-1 text-gray-500 dark:text-white/70 opacity-70">/ 160</span></td>
+                                                <td>80<span class="ltr:ml-1 rtl:mr-1 text-gray-500 opacity-70">/ 160</span></td>
                                                 <td>
                                                 <div class="flex items-center">
                                                     <div class="w-2/3">
-                                                    <div class="ti-main-progress h-2 bg-gray-200 dark:bg-black/20">
+                                                    <div class="ti-main-progress h-2 bg-gray-200">
                                                         <div class="ti-main-progress-bar bg-primary text-xs text-white text-center" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     </div>
@@ -1533,7 +1533,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
                                                     <i class="ti ti-eye"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         View
                                                     </span>
@@ -1544,7 +1544,7 @@
                                                     class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
                                                     <i class="ti ti-pencil"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Edit
                                                     </span>
@@ -1555,7 +1555,7 @@
                                                     class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
                                                     <i class="ti ti-trash"></i>
                                                     <span
-                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
+                                                        class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm"
                                                         role="tooltip">
                                                         Delete
                                                     </span>

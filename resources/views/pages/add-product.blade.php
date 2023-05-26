@@ -28,16 +28,16 @@
                                 <!-- Page Header -->
                                 <div class="block justify-between page-header sm:flex">
                                         <div>
-                                        <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Add Product</h3>
+                                        <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Add Product</h3>
                                         </div>
                                         <ol class="flex items-center whitespace-nowrap min-w-0">
                                         <li class="text-sm">
-                                                <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                                <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                                 Pages
-                                                <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                                <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                                 </a>
                                         </li>
-                                        <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                        <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                                 Add Product
                                         </li>
                                         </ol>
@@ -71,7 +71,7 @@
                                                         <label class="ti-form-label">Product Features</label>
                                                         <textarea class="ti-form-input" rows="2"></textarea>
                                                         <label
-                                                        class="ti-form-label mt-1 text-sm font-normal opacity-70 text-gray-500 dark:text-white/70 mb-0">*Description
+                                                        class="ti-form-label mt-1 text-sm font-normal opacity-70 text-gray-500 mb-0">*Description
                                                         should not exceed 500 letters</label>
                                                 </div>
                                                 <div class="grid grid-cols-12 gap-4">

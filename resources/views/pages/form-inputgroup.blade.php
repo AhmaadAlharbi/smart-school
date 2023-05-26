@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Input-Group</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Input-Group</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Forms
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Input-Group
                                     </li>
                                 </ol>
@@ -41,21 +41,21 @@
                                             <div class="space-y-3">
                                                 <div>
                                                 <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">Small</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">Small</span>
                                                     <input type="text" class="py-2 px-3  ltr:pr-11 rtl:pl-11 ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
                                                 </div>
                                                 </div>
 
                                                 <div>
                                                 <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">Default</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">Default</span>
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
                                                 </div>
                                                 </div>
 
                                                 <div>
                                                 <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">Large</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">Large</span>
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10 sm:p-5">
                                                 </div>
                                                 </div>
@@ -72,7 +72,7 @@
                                             <div class="space-y-3">
                                                 <div>
                                                     <div class="sm:flex rounded-sm">
-                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm dark:bg-black/20 dark:border-white/10 dark:text-white/70">First and last name</span>
+                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm">First and last name</span>
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm relative focus:z-10">
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm relative focus:z-10">
                                                     </div>
@@ -82,18 +82,18 @@
                                                     <div class="sm:flex rounded-sm">
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm relative focus:z-10">
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm relative focus:z-10">
-                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm dark:bg-black/20 dark:border-white/10 dark:text-white/70">First and last name</span>
+                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm">First and last name</span>
                                                     </div>
                                                 </div>
 
                                                 <div>
                                                     <div class="sm:flex rounded-sm">
                                                     <input type="text" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm relative focus:z-10">
-                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm dark:bg-black/20 dark:border-white/10 dark:text-white/70">
-                                                        <svg class="hidden sm:block h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                    <span class="py-2 px-3 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-gray-500 -mt-px ltr:-ml-px rtl:-mr-px first:rounded-t-sm last:rounded-b-sm sm:w-auto ltr:sm:first:rounded-l-sm rtl:sm:first:rounded-r-sm sm:mt-0 ltr:sm:first:ml-0 rtl:sm:first:mr-0  ltr:sm:first:rounded-tr-none rtl:sm:first:rounded-tl-none ltr:sm:last:rounded-bl-none rtl:sm:last:rounded-br-none ltr:sm:last:rounded-r-sm rtl:sm:last:rounded-l-sm">
+                                                        <svg class="hidden sm:block h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                         <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
                                                         </svg>
-                                                        <svg class="sm:hidden mx-auto h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                        <svg class="sm:hidden mx-auto h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                         <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                                                         </svg>
                                                     </span>
@@ -120,7 +120,7 @@
                                                 <div class="relative">
                                                 <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="ti-form-input ltr:pl-11 rtl:pr-11 focus:z-10" placeholder="you@site.com">
                                                 <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none z-20 ltr:pl-4 rtl:pr-4">
-                                                    <svg class="h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                                                     </svg>
                                                 </div>
@@ -140,7 +140,7 @@
                                                 <div class="relative">
                                                 <input type="text" id="hs-trailing-icon" name="hs-trailing-icon" class="ti-form-input  ltr:pr-11 rtl:pl-11 focus:z-10" placeholder="xxxx-xxxx-xxxx-xxxx">
                                                 <div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center pointer-events-none z-20 ltr:pr-4 rtl:pl-4">
-                                                    <svg class="h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                     <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
                                                     <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
                                                     </svg>
@@ -161,10 +161,10 @@
                                                 <div class="relative">
                                                 <input type="text" id="hs-input-with-leading-and-trailing-icon" name="hs-input-with-leading-and-trailing-icon" class="ti-form-input ltr:pl-9 ltr:pr-16 rtl:pr-9 rtl:pl-16 focus:z-10" placeholder="0.00">
                                                 <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none z-20 ltr:pl-4 rtl:pr-4">
-                                                    <span class="text-gray-500 dark:text-white/70">$</span>
+                                                    <span class="text-gray-500">$</span>
                                                 </div>
                                                 <div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center pointer-events-none z-20 ltr:pr-4 rtl:pl-4">
-                                                    <span class="text-gray-500 dark:text-white/70">USD</span>
+                                                    <span class="text-gray-500">USD</span>
                                                 </div>
                                                 </div>
                                             </div>
@@ -178,10 +178,10 @@
                                         </div>
                                         <div class="box-body">
                                             <div>
-                                                <label for="hs-input-with-add-on-url" class="block text-sm text-gray-700 font-medium dark:text-white">Website URL</label>
+                                                <label for="hs-input-with-add-on-url" class="block text-sm text-gray-700 font-medium">Website URL</label>
                                                 <div class="flex rounded-sm">
-                                                <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">http://</span>
+                                                <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                                    <span class="text-sm text-gray-500">http://</span>
                                                 </div>
                                                 <input type="text" name="hs-input-with-add-on-url" id="hs-input-with-add-on-url" class="ti-form-input rounded-none  ltr:pr-11 rtl:pl-11 ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10" placeholder="www.example.com">
                                                 </div>
@@ -205,7 +205,7 @@
                                                 <div class="relative">
                                                 <input type="text" id="hs-inline-add-on" name="hs-inline-add-on" class="ti-form-input ltr:pl-16 rtl:pr-16 focus:z-10" placeholder="www.example.com">
                                                 <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none z-20 ltr:pl-4 rtl:pr-4">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">http://</span>
+                                                    <span class="text-sm text-gray-500">http://</span>
                                                 </div>
                                                 </div>
                                             </div>
@@ -222,9 +222,9 @@
                                                 <label for="hs-inline-leading-select-label" class="ti-form-label">Phone number</label>
                                                 <div class="relative">
                                                 <input type="text" id="hs-inline-leading-select-label" class="ti-form-input ltr:pl-20 rtl:pr-20 focus:z-10" placeholder="+1 (000) 000-0000">
-                                                <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center text-gray-500 dark:text-white/70 ltr:pl-px rtl:pr-px">
+                                                <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center text-gray-500 ltr:pl-px rtl:pr-px">
                                                     <label for="hs-inline-leading-select-country" class="sr-only">Country</label>
-                                                    <select id="hs-inline-leading-select-country" name="hs-inline-leading-select-country" class="block w-full border-transparent rounded-sm focus:ring-primary focus:border-primary dark:bg-bgdark">
+                                                    <select id="hs-inline-leading-select-country" name="hs-inline-leading-select-country" class="block w-full border-transparent rounded-sm focus:ring-primary focus:border-primary">
                                                     <option>US</option>
                                                     <option>CA</option>
                                                     <option>EU</option>
@@ -246,11 +246,11 @@
                                                 <div class="relative">
                                                 <input type="text" id="hs-inline-leading-pricing-select-label" class="ti-form-input ltr:pl-9 rtl:pr-9 ltr:pr-20 rtl:pl-20 focus:z-10" placeholder="0.00">
                                                 <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none z-20 ltr:pl-4 rtl:pr-4">
-                                                    <span class="text-gray-500 dark:text-white/70">$</span>
+                                                    <span class="text-gray-500">$</span>
                                                 </div>
-                                                <div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center text-gray-500 dark:text-white/70 ltr:pr-px rtl:pl-px">
+                                                <div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center text-gray-500 ltr:pr-px rtl:pl-px">
                                                     <label for="hs-inline-leading-select-currency" class="sr-only">Currency</label>
-                                                    <select id="hs-inline-leading-select-currency" name="hs-inline-leading-select-currency" class="block w-full border-transparent rounded-sm focus:ring-primary focus:border-primary dark:bg-bgdark">
+                                                    <select id="hs-inline-leading-select-currency" name="hs-inline-leading-select-currency" class="block w-full border-transparent rounded-sm focus:ring-primary focus:border-primary">
                                                     <option>USD</option>
                                                     <option>CAD</option>
                                                     <option>EUR</option>
@@ -270,7 +270,7 @@
                                             <div class="space-y-3">
                                                 <div>
                                                     <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">
                                                         <span class="flex">
                                                         <input type="checkbox" class="ti-form-checkbox" id="hs-input-group-with-checkbox">
                                                         <label for="hs-input-group-with-checkbox" class="sr-only">Checkbox</label>
@@ -282,7 +282,7 @@
 
                                                 <div>
                                                     <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">
                                                         <span class="flex">
                                                         <input type="radio" class="ti-form-radio" id="hs-input-group-with-radio">
                                                         <label for="hs-input-group-with-radio" class="sr-only">Radio</label>
@@ -305,11 +305,11 @@
                                                 <div>
                                                 <label for="hs-leading-multiple-add-on" class="sr-only">Multiple add-on</label>
                                                 <div class="flex rounded-sm">
-                                                    <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">$</span>
+                                                    <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                                    <span class="text-sm text-gray-500">$</span>
                                                     </div>
-                                                    <div class="px-4 inline-flex items-center min-w-fit border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">0.00</span>
+                                                    <div class="px-4 inline-flex items-center min-w-fit border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50">
+                                                    <span class="text-sm text-gray-500">0.00</span>
                                                     </div>
                                                     <input type="text" id="hs-leading-multiple-add-on" class=" ti-form-input ltr:rounded-l-none rtl:rounded-r-none focus:z-10" placeholder="www.example.com">
                                                 </div>
@@ -319,11 +319,11 @@
                                                 <label for="hs-trailing-multiple-add-on" class="sr-only">Multiple add-on</label>
                                                 <div class="flex rounded-sm">
                                                     <input type="text" id="hs-trailing-multiple-add-on" class="ti-form-input ltr:rounded-r-none rtl:rounded-l-none focus:z-10" placeholder="www.example.com">
-                                                    <div class="px-4 inline-flex items-center min-w-fit border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">$</span>
+                                                    <div class="px-4 inline-flex items-center min-w-fit border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50">
+                                                    <span class="text-sm text-gray-500">$</span>
                                                     </div>
-                                                    <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-r-sm rtl:rounded-l-sm border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10">
-                                                    <span class="text-sm text-gray-500 dark:text-white/70">0.00</span>
+                                                    <div class="px-4 inline-flex items-center min-w-fit ltr:rounded-r-sm rtl:rounded-l-sm border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50">
+                                                    <span class="text-sm text-gray-500">0.00</span>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -353,8 +353,8 @@
                                                 <div>
                                                     <label for="hs-trailing-button-add-on-with-leading-and-trailing" class="sr-only">Label</label>
                                                     <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm dark:bg-black/20 dark:border-white/10">
-                                                        <span class="text-sm text-gray-500 dark:text-white/70">http://</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm">
+                                                        <span class="text-sm text-gray-500">http://</span>
                                                     </span>
                                                     <input type="text" id="hs-trailing-button-add-on-with-leading-and-trailing" name="hs-trailing-button-add-on-with-leading-and-trailing" class="ti-form-input rounded-none focus:z-10">
                                                     <button aria-label="button" type="button" class="inline-flex flex-shrink-0 justify-center items-center h-[2.875rem] w-[2.875rem] ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
@@ -370,7 +370,7 @@
                                                     <div class="relative flex rounded-sm">
                                                         <input type="text" id="hs-trailing-button-add-on-with-icon-and-button" name="hs-trailing-button-add-on-with-icon-and-button" class="ti-form-input ltr:pl-11 rtl:pr-11 rounded-none ltr:rounded-l-sm rtl:rounded-r-sm focus:z-10">
                                                         <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none z-20 ltr:pl-4 rtl:pr-4">
-                                                        <svg class="h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                                         </svg>
                                                         </div>
@@ -392,7 +392,7 @@
                                                     <label for="hs-trailing-button-add-on-multiple-add-ons" class="sr-only">Label</label>
                                                     <div class="flex rounded-sm">
                                                         <input type="text" id="hs-trailing-button-add-on-multiple-add-ons" name="hs-trailing-button-add-on-multiple-add-ons" class="ti-form-input rounded-none ltr:rounded-l-sm rtl:rounded-r-sm focus:z-10 ">
-                                                        <button type="button" class="ltr:-ml-px rtl:-mr-px py-2 px-3 inline-flex justify-center items-center gap-2 border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white">
+                                                        <button type="button" class="ltr:-ml-px rtl:-mr-px py-2 px-3 inline-flex justify-center items-center gap-2 border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
                                                         Button
                                                         </button>
                                                         <button type="button" class="py-2 px-3 inline-flex flex-shrink-0 justify-center items-center gap-2 ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
@@ -432,8 +432,8 @@
                                                         </svg>
                                                     </button>
                                                     <input type="text" id="hs-leading-button-add-on-with-leading-and-leading" name="hs-leading-button-add-on-with-leading-and-leading" class="ti-form-input rounded-none focus:z-10">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-r-sm rtl:rounded-l-sm border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50 text-sm dark:bg-black/20 dark:border-white/10">
-                                                        <span class="text-sm text-gray-500 dark:text-white/70">http://</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-r-sm rtl:rounded-l-sm border ltr:border-l-0 rtl:border-r-0 border-gray-200 bg-gray-50 text-sm">
+                                                        <span class="text-sm text-gray-500">http://</span>
                                                     </span>
                                                     </div>
                                                 </div>
@@ -444,7 +444,7 @@
                                                     <button type="button" class="py-2 px-3 inline-flex flex-shrink-0 justify-center items-center ltr:rounded-l-sm rtl:rounded-r-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">Search</button>
                                                     <input type="text" id="hs-leading-button-add-on-with-icon-and-button" name="hs-leading-button-add-on-with-icon-and-button" class="ti-form-input ltr:pr-11 rtl:pl-11 rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
                                                     <div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center pointer-events-none z-20 ltr:pr-4 rtl:pl-4">
-                                                        <svg class="h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                                         </svg>
                                                     </div>
@@ -467,7 +467,7 @@
                                                     <button type="button" class="py-2 px-3 inline-flex flex-shrink-0 justify-center items-center gap-2 ltr:rounded-l-sm rtl:rounded-r-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
                                                         Button
                                                     </button>
-                                                    <button type="button" class="-mr-px py-2 px-3 inline-flex justify-center items-center gap-2 border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white">
+                                                    <button type="button" class="-mr-px py-2 px-3 inline-flex justify-center items-center gap-2 border font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
                                                         Button
                                                     </button>
                                                     <input type="text" id="hs-leading-button-add-on-multiple-add-ons" name="hs-leading-button-add-on-multiple-add-ons" class="ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
@@ -511,7 +511,7 @@
                                                 <div>
                                                     <label for="hs-search-box-with-loading-3" class="ti-form-label">Search</label>
                                                     <div class="flex rounded-sm">
-                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-black/20 dark:border-white/10 dark:text-white/70">http://</span>
+                                                    <span class="px-4 inline-flex items-center min-w-fit ltr:rounded-l-sm rtl:rounded-r-sm border ltr:border-r-0 rtl:border-l-0 border-gray-200 bg-gray-50 text-sm text-gray-500">http://</span>
                                                     <input type="text" id="hs-search-box-with-loading-3" name="hs-search-box-with-loading-3" class="ti-form-input rounded-none focus:z-10" placeholder="Input search">
                                                     <button type="button" class="inline-flex flex-shrink-0 justify-center items-center h-[2.875rem] w-[2.875rem] ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
                                                         <span class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full" role="status" aria-label="loading">
@@ -539,7 +539,7 @@
                                                     <div class="relative flex rounded-sm">
                                                     <input type="text" id="hs-search-box-with-loading-5" name="hs-search-box-with-loading-5" class="rounded-none ti-form-input ltr:pl-11 rtl:pr-11 ltr:rounded-l-sm rtl:rounded-r-sm" placeholder="Input search">
                                                     <div class="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center pointer-events-none ltr:pl-4 rtl:pr-4">
-                                                        <svg class="h-4 w-4 text-gray-500 dark:text-white/70" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                                         </svg>
                                                     </div>

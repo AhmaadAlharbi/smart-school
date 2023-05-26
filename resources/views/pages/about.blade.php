@@ -32,7 +32,7 @@
                         <div class="main-content sm:-mt-32 -mt-16">
 
                             <!-- Start::Container -->
-                            <div class="container mx-auto bg-white dark:bg-bgdark rounded-sm relative py-8 px-8 mb-6">
+                            <div class="container mx-auto bg-white rounded-sm relative py-8 px-8 mb-6">
 
                             <!-- Start::row-1 -->
                             <div class="box">
@@ -42,22 +42,22 @@
                                     <img class="rounded-sm" src="{{asset('build/assets/img/gallery/10.jpg')}}" alt="">
                                     </div>
                                     <div class="space-y-3">
-                                    <h2 class="font-semibold text-3xl text-gray-800 dark:text-white">Hello! This is <span class="text-primary">Synto.</span></h2>
+                                    <h2 class="font-semibold text-3xl text-gray-800">Hello! This is <span class="text-primary">Synto.</span></h2>
                                     <p class="text-base font-semibold">This is Our Story.</p>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         It is a long established fact that a reader will be distracted by the readable content of a page
                                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                                         distribution of letters, as opposed to using 'Content here, content here', making it look like
                                         readable English. .
                                     </p>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                                         believable. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
                                         structures, to generate Lorem Ipsum which looks reasonable.
                                     </p>
 
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                                         believable. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
@@ -76,25 +76,25 @@
                                 <div class="box-body">
                                 <div class="grid xl:grid-cols-2 gap-6">
                                     <div class="space-y-3">
-                                    <h2 class="font-semibold text-3xl text-gray-800 dark:text-white">Our Mission</h2>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <h2 class="font-semibold text-3xl text-gray-800">Our Mission</h2>
+                                    <p class="text-gray-500">
                                         It is a long established fact that a reader will be distracted by the readable content of a page
                                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                                         distribution of letters, as opposed to using 'Content here, content here', making it look like
                                         readable English. .
                                     </p>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                                         believable. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
                                         structures, to generate Lorem Ipsum which looks reasonable.
                                     </p>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         If you are going to use a passage of Lorem Ipsum, you need to as necessary All the Lorem Ipsum
                                         generators on the Internet tend to repeat Various versions have evolved over the years, sometimes by
                                         accident, sometimes on purpose (injected humour and the like).
                                     </p>
-                                    <p class="text-gray-500 dark:text-white/70">
+                                    <p class="text-gray-500">
                                         If you are going to use a passage of Lorem Ipsum, you need to as necessary All the Lorem Ipsum
                                         generators on the Internet tend to repeat Various versions have evolved over the years, sometimes by
                                         accident, sometimes on purpose (injected humour and the like).
@@ -114,8 +114,8 @@
                             <div class="box bg-transparent border-0 shadow-none">
                                 <div class="box-body px-0">
                                 <div class="mb-6 text-center">
-                                    <h2 class="font-semibold text-3xl text-gray-800 dark:text-white">Our Services</h2>
-                                    <h5 class="text-sm text-gray-500 dark:text-white/70">If you are going to use a passage of Lorem Ipsum, you
+                                    <h2 class="font-semibold text-3xl text-gray-800">Our Services</h2>
+                                    <h5 class="text-sm text-gray-500">If you are going to use a passage of Lorem Ipsum, you
                                     need to as necessary All the Lorem Ipsum generators on the Internet</h5>
                                 </div>
                                 <div class="sm:grid sm:space-y-0 space-y-6 grid-cols-12 gap-6">
@@ -126,7 +126,7 @@
                                             <img alt="service-img" src="{{asset('build/assets/img/png-images/3.png')}}">
                                         </div>
                                         <h5 class="text-lg font-semibold">Branding</h5>
-                                        <p class="mb-0 text-gray-500 dark:text-white/70 text-xs"> Rerum dignissimos, architecto asperiores
+                                        <p class="mb-0 text-gray-500 text-xs"> Rerum dignissimos, architecto asperiores
                                             optio ducimus voluptatibus earum corrupti.</p>
                                         </div>
                                     </div>
@@ -138,7 +138,7 @@
                                             <img alt="service-img" src="{{asset('build/assets/img/png-images/4.png')}}">
                                         </div>
                                         <h5 class="text-lg font-semibold">Development</h5>
-                                        <p class="mb-0 text-gray-500 dark:text-white/70 text-xs"> Rerum dignissimos, architecto asperiores
+                                        <p class="mb-0 text-gray-500 text-xs"> Rerum dignissimos, architecto asperiores
                                             optio ducimus voluptatibus earum corrupti.</p>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@
                                             <img alt="service-img" src="{{asset('build/assets/img/png-images/6.png')}}">
                                         </div>
                                         <h5 class="text-lg font-semibold">Social Media</h5>
-                                        <p class="mb-0 text-gray-500 dark:text-white/70 text-xs"> Rerum dignissimos, architecto asperiores
+                                        <p class="mb-0 text-gray-500 text-xs"> Rerum dignissimos, architecto asperiores
                                             optio ducimus voluptatibus earum corrupti.</p>
                                         </div>
                                     </div>
@@ -162,7 +162,7 @@
                                             <img alt="service-img" src="{{asset('build/assets/img/png-images/5.png')}}">
                                         </div>
                                         <h5 class="text-lg font-semibold">E-commerce</h5>
-                                        <p class="mb-0 text-gray-500 dark:text-white/70 text-xs"> Rerum dignissimos, architecto asperiores
+                                        <p class="mb-0 text-gray-500 text-xs"> Rerum dignissimos, architecto asperiores
                                             optio ducimus voluptatibus earum corrupti.</p>
                                         </div>
                                     </div>
@@ -176,8 +176,8 @@
                             <div class="box bg-transparent border-0 shadow-none">
                                 <div class="box-body px-0">
                                 <div class="mb-6 text-center">
-                                    <h2 class="font-semibold text-3xl text-gray-800 dark:text-white">What Our Clients Say</h2>
-                                    <h5 class="text-sm text-gray-500 dark:text-white/70">
+                                    <h2 class="font-semibold text-3xl text-gray-800">What Our Clients Say</h2>
+                                    <h5 class="text-sm text-gray-500">
                                     If you are going to use a passage of Lorem Ipsum, you need to as necessary All the Lorem Ipsum generators on the Internet</h5>
                                 </div>
                                 <div class="swiper about-swipe2">
@@ -331,8 +331,8 @@
                                 <div class="box-body">
                                     <div class="space-y-8 my-auto text-center">
                                     <div class="">
-                                        <h2 class="font-semibold text-3xl text-gray-800 dark:text-white mb-3 leading-none">Contact Us</h2>
-                                        <p class="text-gray-500 dark:text-white/70">Have any questions ? We would love to hear from you.</p>
+                                        <h2 class="font-semibold text-3xl text-gray-800 mb-3 leading-none">Contact Us</h2>
+                                        <p class="text-gray-500">Have any questions ? We would love to hear from you.</p>
                                     </div>
                                     <div>
                                         <div class="space-y-6 mb-6 text-start">

@@ -14,16 +14,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Badges</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Badges</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Components
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Badges
                                     </li>
                                 </ol>
@@ -102,7 +102,7 @@
                                             <span class="badge bg-purple-100 text-purple-800">Purple</span>
                                             <span class="badge bg-pink-100 text-pink-800">Pink</span>
                                             <span class="badge bg-gray-100 text-gray-500">Light</span>
-                                            <span class="badge bg-gray-900/10 text-gray-900 dark:text-gray-300">Dark</span>
+                                            <span class="badge bg-gray-900/10 text-gray-900">Dark</span>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                             <span class="badge rounded-sm bg-purple-100 text-purple-800">Purple</span>
                                             <span class="badge rounded-sm bg-pink-100 text-pink-800">Pink</span>
                                             <span class="badge rounded-sm bg-gray-100 text-gray-500">Light</span>
-                                            <span class="badge rounded-sm bg-gray-900/10 text-gray-900 dark:text-gray-300">Dark</span>
+                                            <span class="badge rounded-sm bg-gray-900/10 text-gray-900">Dark</span>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@
                                             <span class="badge border border-purple-500 text-purple-500">Purple</span>
                                             <span class="badge border border-pink-500 text-pink-500">Pink</span>
                                             <span class="badge border border-gray-500 text-gray-500">Light</span>
-                                            <span class="badge border border-gray-900 text-gray-900 dark:text-gray-300">Dark</span>
+                                            <span class="badge border border-gray-900 text-gray-900">Dark</span>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@
                                             <span class="badge rounded-sm border border-purple-500 text-purple-500">Purple</span>
                                             <span class="badge rounded-sm border border-pink-500 text-pink-500">Pink</span>
                                             <span class="badge rounded-sm border border-gray-500 text-gray-500">Light</span>
-                                            <span class="badge rounded-sm border border-gray-900 text-gray-900 dark:text-gray-300">Dark</span>
+                                            <span class="badge rounded-sm border border-gray-900 text-gray-900">Dark</span>
                                         </div>
                                     </div>
                                 </div>
@@ -218,27 +218,27 @@
                                             <h5 class="box-title">Badge With Button</h5>
                                         </div>
                                         <div class="box-body xl:space-y-0 space-y-2">
-                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10"
+                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-0 transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 Notifications
                                                 <span class="badge py-0.5 px-1.5 bg-black/50 text-white">5</span>
                                             </a>
-                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-0 focus:ring-red-500 focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10"
+                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-0 focus:ring-red-500 focus:ring-offset-0 transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 Notifications
                                                 <span class="badge py-0.5 px-1.5 bg-red-800 text-white">5</span>
                                             </a>
-                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-green-500 text-white hover:bg-green-600 focus:outline-none focus:ring-0 focus:ring-green-500 focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10"
+                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-green-500 text-white hover:bg-green-600 focus:outline-none focus:ring-0 focus:ring-green-500 focus:ring-offset-0 transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 Notifications
                                                 <span class="badge py-0.5 px-1.5 bg-green-800 text-white">5</span>
                                             </a>
-                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-yellow-500 text-white hover:bg-yellow-600 focus:outline-none focus:ring-0 focus:ring-yellow-500 focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10"
+                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-yellow-500 text-white hover:bg-yellow-600 focus:outline-none focus:ring-0 focus:ring-yellow-500 focus:ring-offset-0 transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 Notifications
                                                 <span class="badge py-0.5 px-1.5 bg-yellow-800 text-white">5</span>
                                             </a>
-                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-0 focus:ring-orange-500 focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10"
+                                            <a class="relative py-2 px-3 inline-flex justify-center items-center gap-1 rounded-sm border border-transparent font-semibold bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-0 focus:ring-orange-500 focus:ring-offset-0 transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 Notifications
                                                 <span class="badge py-0.5 px-1.5 bg-orange-800 text-white">5</span>
@@ -356,7 +356,7 @@
                                             <span class="badge bg-gray-100 text-gray-800">
                                                 Badge
                                                 <button type="button"
-                                                    class="flex-shrink-0 h-4 w-4 inline-flex items-center justify-center rounded-full text-gray-500 dark:text-white/70 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-black/20 dark:hover:text-white focus:outline-none focus:bg-gray-200 focus:text-gray-500">
+                                                    class="flex-shrink-0 h-4 w-4 inline-flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-200 hover:text-gray-500 focus:outline-none focus:bg-gray-200 focus:text-gray-500">
                                                     <span class="sr-only">Remove badge</span>
                                                     <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" viewBox="0 0 16 16">
@@ -424,22 +424,22 @@
                                             <h5 class="box-title">Badge With Position</h5>
                                         </div>
                                         <div class="box-body grid">
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <i class="ti ti-bell text-xl"></i>
                                                 <span class="absolute top-0 ltr:left-0 rtl:right-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 bg-rose-500 text-white">99+</span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <i class="ti ti-bell text-xl"></i>
                                                 <span class="absolute top-0 ltr:right-0 rtl:left-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform -translate-y-1/2 ltr:translate-x-1/2 rtl:-translate-x-1/2 bg-rose-500 text-white">99+</span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <i class="ti ti-bell text-xl"></i>
                                                 <span class="absolute bottom-0 ltr:left-0 rtl:right-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 bg-rose-500 text-white">99+</span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <i class="ti ti-bell text-xl"></i>
                                                 <span class="absolute bottom-0 ltr:right-0 rtl:left-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform translate-y-1/2 ltr:translate-x-1/2 rtl:-translate-x-1/2 bg-rose-500 text-white">99+</span>
@@ -453,7 +453,7 @@
                                             <h5 class="box-title">Badge With Profile</h5>
                                         </div>
                                         <div class="box-body grid">
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <img src="{{asset('build/assets/img/users/1.jpg')}}" alt="profile-img" class="rounded-sm">
                                                 <span
@@ -461,7 +461,7 @@
                                                     <span class="sr-only">Badge value</span>
                                                 </span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <img src="{{asset('build/assets/img/users/1.jpg')}}" alt="profile-img" class="rounded-sm">
                                                 <span
@@ -469,7 +469,7 @@
                                                     <span class="sr-only">Badge value</span>
                                                 </span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <img src="{{asset('build/assets/img/users/1.jpg')}}" alt="profile-img" class="rounded-sm">
                                                 <span
@@ -477,7 +477,7 @@
                                                     <span class="sr-only">Badge value</span>
                                                 </span>
                                             </a>
-                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
+                                            <a class="mb-4 relative inline-flex flex-shrink-0 justify-center items-center h-[3.375rem] w-[3.375rem] rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm"
                                                 href="javascript:void(0);">
                                                 <img src="{{asset('build/assets/img/users/1.jpg')}}" alt="profile-img" class="rounded-sm">
                                                 <span
@@ -496,7 +496,7 @@
                                         <div class="box-body space-x-5 rtl:space-x-reverse flex jusftify-center items-center">
                                             <span class="badge rounded-sm border border-danger text-base text-danger shadow-sm"><i class="ti ti-flame text-xl leading-none"></i>Hot</span>
                                             <span class="badge rounded-sm bg-gray-100 text-gray-500"><i class="fe fe-eye"></i>13.2k</span>
-                                            <span class="relative inline-flex flex-shrink-0 justify-center items-center rounded-sm font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:text-white/70 dark:hover:text-white">
+                                            <span class="relative inline-flex flex-shrink-0 justify-center items-center rounded-sm font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 transition-all text-sm">
                                                 <span class="text-lg">Inbox</span>
                                                 <span class="absolute top-0 ltr:right-0 rtl:left-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform -translate-y-1/2 translate-x-1/2 rtl:-translate-x-1/2 bg-green-500 text-white">32</span>
                                             </span>

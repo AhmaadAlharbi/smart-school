@@ -15,16 +15,16 @@
                             <!-- Page Header -->
                             <div class="block justify-between page-header sm:flex">
                                 <div>
-                                    <h3 class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium"> Tooltip &amp; Popovers</h3>
+                                    <h3 class="text-gray-700 hover:text-gray-900 text-2xl font-medium"> Tooltip &amp; Popovers</h3>
                                 </div>
                                 <ol class="flex items-center whitespace-nowrap min-w-0">
                                     <li class="text-sm">
-                                    <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
+                                    <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Basic Ui
-                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                     </a>
                                     </li>
-                                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
+                                    <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
                                         Tooltip &amp; Popovers
                                     </li>
                                 </ol>
@@ -43,7 +43,7 @@
                                             
                                         <div class="hs-tooltip ti-main-tooltip [--trigger:click]">
                                             <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
@@ -56,7 +56,7 @@
 
                                         <div class="hs-tooltip ti-main-tooltip [--trigger:click] [--placement:left]">
                                             <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M11.2792 1.64001L5.63273 7.28646C5.43747 7.48172 5.43747 7.79831 5.63273 7.99357L11.2792 13.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
@@ -69,7 +69,7 @@
 
                                         <div class="hs-tooltip ti-main-tooltip [--trigger:click] [--placement:right]">
                                             <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
@@ -82,7 +82,7 @@
 
                                         <div class="hs-tooltip ti-main-tooltip [--trigger:click] [--placement:bottom]">
                                             <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                            <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M2.27921 4.64001L7.92565 10.2865C8.12091 10.4817 8.4375 10.4817 8.63276 10.2865L14.2792 4.64001" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
@@ -107,7 +107,7 @@
                                     <div class="flex justify-center">
                                     <div class="hs-tooltip ti-main-tooltip [--trigger:focus]">
                                         <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                             </svg>
@@ -135,7 +135,7 @@
                                     <div class="flex justify-center">
                                     <div class="hs-tooltip ti-main-tooltip [--trigger:hover]">
                                         <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                             </svg>
@@ -158,14 +158,14 @@
                                     <div class="flex justify-center">
                                     <div class="hs-tooltip ti-main-tooltip [--trigger:click]">
                                         <a class="hs-tooltip-toggle ti-main-tooltip-toggle" href="javascript:;">
-                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <span class="w-10 h-10 ti-btn p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                             </svg>
                                         </span>
                                         <div class="hs-tooltip-content ti-main-tooltip-content hidden p-0 max-w-xs border-gray-200 text-start rounded-sm" role="tooltip">
-                                            <span class="pt-3 px-4 block text-lg font-bold text-gray-800 dark:text-white">Overview</span>
-                                            <div class="py-2 px-3 text-sm text-gray-600 dark:text-white/70">
+                                            <span class="pt-3 px-4 block text-lg font-bold text-gray-800">Overview</span>
+                                            <div class="py-2 px-3 text-sm text-gray-600">
                                             <svg class="rounded-sm mb-3" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="500" height="300" fill="#F9FAFB"/>
                                                 <path d="M215.232 131.849L237.249 58.489C237.723 56.9116 239.379 56.0108 240.961 56.4707L309.463 76.3953C311.062 76.8604 311.977 78.5394 311.499 80.1352L289.482 153.776C289.009 155.36 287.344 156.262 285.759 155.794L217.256 135.589C215.662 135.119 214.754 133.442 215.232 131.849Z" fill="#9CA3AF"/>
@@ -188,10 +188,10 @@
                                             </svg>
                                             <p>This is a popover body with supporting text below as a natural lead-in to additional content.</p>
                                             <dl class="mt-3">
-                                                <dt class="font-bold pt-3 first:pt-0 dark:text-white">Assigned to:</dt>
-                                                <dd class="m-0 text-gray-600 dark:text-white/70">Mark Welson</dd>
-                                                <dt class="font-bold pt-3 first:pt-0 dark:text-white">Due:</dt>
-                                                <dd class="m-0 text-gray-600 dark:text-white/70">December 21, 2021</dd>
+                                                <dt class="font-bold pt-3 first:pt-0">Assigned to:</dt>
+                                                <dd class="m-0 text-gray-600">Mark Welson</dd>
+                                                <dt class="font-bold pt-3 first:pt-0">Due:</dt>
+                                                <dd class="m-0 text-gray-600">December 21, 2021</dd>
                                             </dl>
                                             </div>
                                         </div>
@@ -216,11 +216,11 @@
                                     <div class="grid grid-cols-3 gap-y-4 gap-x-2 max-w-[15rem] mx-auto">
                                     <div class="col-start-2 text-center">
                                         <div class="hs-tooltip ti-main-tooltip">
-                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                             </svg>
-                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                             Tooltip on top
                                             </span>
                                         </button>
@@ -231,11 +231,11 @@
                                     <!-- Col -->
                                     <div class="col-start-1 text-end">
                                         <div class="hs-tooltip ti-main-tooltip [--placement:left]">
-                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M11.2792 1.64001L5.63273 7.28646C5.43747 7.48172 5.43747 7.79831 5.63273 7.99357L11.2792 13.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                             </svg>
-                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                             Tooltip on left
                                             </span>
                                         </button>
@@ -246,11 +246,11 @@
                                     <!-- Col -->
                                     <div class="col-start-3">
                                         <div class="hs-tooltip ti-main-tooltip [--placement:right]">
-                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                             </svg>
-                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                             Tooltip on right
                                             </span>
                                         </button>
@@ -261,11 +261,11 @@
                                     <!-- Col -->
                                     <div class="col-start-2 text-center">
                                         <div class="hs-tooltip ti-main-tooltip [--placement:bottom]">
-                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
+                                        <button type="button" class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none bg-gray-50 border-gray-200 text-gray-600 hover:bg-primary/30 hover:border-primary hover:text-primary">
                                             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <path d="M2.27921 4.64001L7.92565 10.2865C8.12091 10.4817 8.4375 10.4817 8.63276 10.2865L14.2792 4.64001" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                             </svg>
-                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700" role="tooltip">
+                                            <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm" role="tooltip">
                                             Tooltip on bottom
                                             </span>
                                         </button>

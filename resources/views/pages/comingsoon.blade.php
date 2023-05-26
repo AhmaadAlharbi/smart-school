@@ -5,7 +5,7 @@
 @endsection
 
 @section('custom-body')
-<body class="flex h-full !py-0 bg-white dark:bg-bgdark">
+<body class="flex h-full !py-0 bg-white">
 @endsection
 
 @section('content')
@@ -29,8 +29,8 @@
                             <div class="mt-7">
                                 <div class="p-4 sm:p-7">
                                     <div class="text-center">
-                                        <h1 class="block text-5xl font-bold text-gray-800 dark:text-white">Coming Soon</h1>
-                                        <p class="mt-3 text-sm text-gray-600 dark:text-white/70">
+                                        <h1 class="block text-5xl font-bold text-gray-800">Coming Soon</h1>
+                                        <p class="mt-3 text-sm text-gray-600">
                                             Our website is almost Done, mean while enter your email id to get latest updates and
                                             notifications about the website.
                                         </p>
@@ -52,7 +52,7 @@
                                         <!-- End Form Group -->
 
                                         <div>
-                                            <p class="mb-2 text-center text-sm text-gray-600 dark:text-white/70">
+                                            <p class="mb-2 text-center text-sm text-gray-600">
                                             Follow Us
                                             </p>
                                             <div class="flex space-x-1 rtl:space-x-reverse justify-center text-center">
