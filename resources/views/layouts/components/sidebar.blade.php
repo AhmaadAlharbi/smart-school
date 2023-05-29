@@ -1,4 +1,4 @@
-        
+
             <aside class="app-sidebar" id="sidebar">
 
                 <!-- Start::main-sidebar-header -->
@@ -76,6 +76,8 @@
                             <li class="slide__category"><span class="category-name">General</span></li>
                             <!-- End::slide__category -->
                             {{-- start my customization --}}
+
+                            {{--المراحل الدراسية--}}
                             <li class="slide has-sub">
                                 <a href="javascript:void(0);" class="side-menu__item">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
@@ -89,9 +91,30 @@
                                 </a>
                                 <ul class="slide-menu child1">
                                     <li class="slide"><a href="{{route('grades.index')}}" class="side-menu__item">{{trans('main_trans.Grades_list')}}</a></li>
-                                   
+
                                 </ul>
                             </li>
+                            {{-- نهاية المراحل الدراسية--}}
+
+                            {{--الصفوف الدراسية--}}
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
+                                        <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                                        <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                                        <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                                        <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
+                                    </svg>
+                                    <span class="side-menu__label">{{trans('main_trans.classes')}}</span>
+                                    <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide"><a href="{{route('grades.index')}}" class="side-menu__item">{{trans('main_trans.List_classes')}}</a></li>
+
+                                </ul>
+                            </li>
+                            {{-- نهاية الصفوف الدراسية--}}
+
                             {{-- end my customization --}}
 
                             <!-- Start::slide -->

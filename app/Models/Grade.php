@@ -10,6 +10,11 @@ class Grade extends Model
 {
     use HasFactory;
     use HasTranslations;
+
+    /**
+     * @var array|mixed
+     */
+
     protected $fillable = ['Name', 'Notes'];
 
     public $translatable = ['Name'];
