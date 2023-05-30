@@ -31,7 +31,16 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $My_Classes = new Classroom();
+
+        $My_Classes->Name_Class = ['en' => $request->input('Name_class_en'), 'ar' => $request->input('Name')];
+
+        $My_Classes->Grade_id = $request->input('grade_id');
+
+        $My_Classes->save();
+        return redirect()->route('classrooms.index');
+
     }
 
     /**
@@ -55,14 +64,29 @@ class ClassroomController extends Controller
      */
     public function update(Request $request, Classroom $classroom)
     {
-        //
+        try {
+
+            $Classrooms = Classroom::findOrFail($request->id);
+
+            $Classrooms->update([
+
+                $Classrooms->Name_Class = ['ar' => $request->Name, 'en' => $request->Name_en],
+                $Classrooms->Grade_id = $request->Grade_id,
+            ]);
+//            toastr()->success(trans('messages.Update'));
+            return redirect()->route('classrooms.index');
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Classroom $classroom)
+    public function destroy(Request $request)
     {
-        //
+        $Classrooms = Classroom::findOrFail($request->id)->delete();
+//        toastr()->success(trans('messages.Delete'));
+        return redirect()->route('classrooms.index');
     }
 }
