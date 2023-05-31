@@ -161,11 +161,12 @@
                                                     trans('My_Classes_trans.Name_Grade') }}:</label>
                                                                                 <select name="Grade_id"
                                                                                         class="ti-form-select">
-                                                                                    <option value="{{$My_Class->Grades->id}}">{{$My_Class->Grades->Name}}</option>
+                                                                                    <option
+                                                                                        value="{{$My_Class->Grades->id}}">{{$My_Class->Grades->Name}}</option>
                                                                                     @foreach ($Grades as $Grade)
                                                                                         @if($Grade->id !== $My_Class->Grades->id)
-                                                                                        <option
-                                                                                            value="{{ $Grade->id }}">{{ $Grade->Name }}</option>
+                                                                                            <option
+                                                                                                value="{{ $Grade->id }}">{{ $Grade->Name }}</option>
                                                                                         @endif
                                                                                     @endforeach
                                                                                 </select>

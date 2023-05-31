@@ -18,4 +18,8 @@ class Grade extends Model
     protected $fillable = ['Name', 'Notes'];
 
     public $translatable = ['Name'];
+
+    public function Sections(){
+        return $this->hasMany(Section::class);
+    }
 }

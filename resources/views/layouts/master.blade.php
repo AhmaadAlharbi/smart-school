@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-@if (App::getLocale() == 'en')
 
-<html lang="en" dir="ltr" data-nav-layout="vertical" class="light" data-header-styles="light" data-menu-styles="dark">
-    @else 
+@if (App::getLocale() == 'en')
+    <html lang="en" dir="ltr" data-nav-layout="vertical" class="light" data-header-styles="light" data-menu-styles="dark">
+    @else
     <html lang="en" dir="rtl" data-nav-layout="vertical" class="light" data-header-styles="light" data-menu-styles="dark">
 @endif
 	<head>
@@ -77,20 +77,20 @@
         <!-- END PAGE-->
 
         <!-- SCRIPTS -->
-        
+
         @include('layouts.components.scripts')
 
         <!-- STICKY JS -->
 		<script src="{{asset('build/assets/sticky.js')}}"></script>
-        
+
         <!-- SWITCH JS -->
         @vite('resources/assets/js/switch.js')
 
 
         <!-- APP JS -->
 		@vite('resources/js/app.js')
-        
-        
+
+
         <!-- END SCRIPTS -->
 
 	</body>

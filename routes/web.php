@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClassroomController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SectionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardsController;
 use App\Http\Controllers\AdvanceduiController;
@@ -35,6 +36,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/', [DashboardsController::class, 'index']);
     Route::resource('grades', GradeController::class);
     Route::resource('classrooms',ClassroomController::class);
+    Route::resource('sections',SectionController::class);
+    Route::get('/classes/{id}', [SectionController::class,'getclasses']);
+
+
 
     Route::get('/dashboard', function () {
         return view('dashboard');
