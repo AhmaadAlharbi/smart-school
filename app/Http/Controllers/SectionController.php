@@ -10,10 +10,11 @@ use Illuminate\Http\Request;
 class SectionController extends Controller
 {
     public function index(){
-        $Grades = Grade::with(['Sections'])->get();
-
-        $list_Grades = Grade::all();
-        return view('pages.Sections.index',compact('Grades','list_Grades'));
+         $Grades = Grade::with(['Sections'])->get();
+         $first_grade = Grade::first();
+         $sections_first_grade = Section::where('Grade_id',$first_grade->id)->get();
+         $list_Grades = Grade::all();
+        return view('pages.Sections.index',compact('Grades','list_Grades','first_grade','sections_first_grade'));
     }
     public function getclasses($id)
     {
@@ -32,11 +33,64 @@ class SectionController extends Controller
             $Sections->Status = 1;
             $Sections->save();
 //            $Sections->teachers()->attach($request->teacher_id);
-//            toastr()->success(trans('messages.success'));
-
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.success'),
+                'key' => 'delete',
+            ]);
             return redirect()->route('sections.index');
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+    }
+    public function update(Request $request){
+        $Sections = Section::findOrFail($request->id);
+        try {
+            $Sections->Name_Section = ['ar' => $request->Name_Section_Ar, 'en' => $request->Name_Section_En];
+            $Sections->Grade_id = $request->Grade_id1;
+            $Sections->Class_id = $request->Class_id1;
+
+            if (isset($request->Status)) {
+                $Sections->Status = 1;
+            } else {
+                $Sections->Status = 2;
+            }
+            // update pivot tABLE
+//            if (isset($request->teacher_id)) {
+//                $Sections->teachers()->sync($request->teacher_id);
+//            } else {
+//                $Sections->teachers()->sync(array());
+//            }
+
+            $Sections->save();
+
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.Update'),
+                'key' => 'update',
+            ]);
+            return redirect()->route('sections.index');
+        }catch (\Exception $e){
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+    }
+    public function destroy(request $request)
+    {
+
+        Section::findOrFail($request->id)->delete();
+
+        session()->flash('toast', [
+            'type' => 'success',
+            'message' => trans('messages.Delete'),
+            'key' => 'delete',
+        ]);
+        return redirect()->route('sections.index');
+    }
+    public  function getSectionInGrade($id){
+        $Grades = Grade::with(['Sections'])->get();
+        $Grade = Grade::findOrFail($id);
+        $sections_first_grade = Section::where('Grade_id',$Grade->id)->get();
+        $list_Grades = Grade::all();
+        return view('pages.Sections.sections_grade',compact('Grades','Grade','list_Grades','sections_first_grade'));
     }
 }

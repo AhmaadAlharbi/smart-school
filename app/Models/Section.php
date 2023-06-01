@@ -17,10 +17,14 @@ class Section extends Model
 
     // علاقة بين الاقسام والصفوف لجلب اسم الصف في جدول الاقسام
 
+    public function grades(){
+        return $this->belongsTo('App\Models\Grade','Grade_id');
+    }
     public function My_classs()
     {
         return $this->belongsTo('App\Models\Classroom', 'Class_id');
     }
+
     // علاقة الاقسام مع المعلمين
     public function teachers()
     {

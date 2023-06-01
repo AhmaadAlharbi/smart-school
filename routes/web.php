@@ -38,7 +38,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('classrooms',ClassroomController::class);
     Route::resource('sections',SectionController::class);
     Route::get('/classes/{id}', [SectionController::class,'getclasses']);
-
+    //find sections classes
+    Route::get('/sections/grade/{id}',[SectionController::class,'getSectionInGrade'])->name('sections.grade');
 
 
     Route::get('/dashboard', function () {
