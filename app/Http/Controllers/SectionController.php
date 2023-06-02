@@ -9,20 +9,24 @@ use Illuminate\Http\Request;
 
 class SectionController extends Controller
 {
-    public function index(){
-         $Grades = Grade::with(['Sections'])->get();
-         $first_grade = Grade::first();
-         $sections_first_grade = Section::where('Grade_id',$first_grade->id)->get();
-         $list_Grades = Grade::all();
-        return view('pages.Sections.index',compact('Grades','list_Grades','first_grade','sections_first_grade'));
+    public function index()
+    {
+        $Grades = Grade::with(['Sections'])->get();
+        $first_grade = Grade::first();
+        $sections_first_grade = Section::where('Grade_id', $first_grade->id)->get();
+        $list_Grades = Grade::all();
+        return view('pages.Sections.index', compact('Grades', 'list_Grades', 'first_grade', 'sections_first_grade'));
     }
+
     public function getclasses($id)
     {
         $list_classes = Classroom::where("Grade_id", $id)->pluck("Name_Class", "id");
 
         return $list_classes;
     }
-    public  function store(Request $request){
+
+    public function store(Request $request)
+    {
         try {
 
 //            $validated = $request->validated();
@@ -38,12 +42,15 @@ class SectionController extends Controller
                 'message' => trans('messages.success'),
                 'key' => 'delete',
             ]);
-            return redirect()->route('sections.index');
+            return back()->withInput(['grade' => $request->id]);
+
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
     }
-    public function update(Request $request){
+
+    public function update(Request $request)
+    {
         $Sections = Section::findOrFail($request->id);
         try {
             $Sections->Name_Section = ['ar' => $request->Name_Section_Ar, 'en' => $request->Name_Section_En];
@@ -69,11 +76,13 @@ class SectionController extends Controller
                 'message' => trans('messages.Update'),
                 'key' => 'update',
             ]);
-            return redirect()->route('sections.index');
-        }catch (\Exception $e){
+            return back()->withInput(['grade' => $request->id]);
+
+        } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
     }
+
     public function destroy(request $request)
     {
 
@@ -84,13 +93,16 @@ class SectionController extends Controller
             'message' => trans('messages.Delete'),
             'key' => 'delete',
         ]);
-        return redirect()->route('sections.index');
+        return back()->withInput(['grade' => $request->id]);
     }
-    public  function getSectionInGrade($id){
+
+    public function getSectionInGrade($id)
+    {
         $Grades = Grade::with(['Sections'])->get();
         $Grade = Grade::findOrFail($id);
-        $sections_first_grade = Section::where('Grade_id',$Grade->id)->get();
+        $sections_first_grade = Section::where('Grade_id', $Grade->id)->get();
         $list_Grades = Grade::all();
-        return view('pages.Sections.sections_grade',compact('Grades','Grade','list_Grades','sections_first_grade'));
+        return view('pages.Sections.sections_grade', compact('Grades', 'Grade', 'list_Grades', 'sections_first_grade'));
     }
+
 }
