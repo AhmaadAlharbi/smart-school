@@ -15,6 +15,11 @@ class GradeController extends Controller
 
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'Name' => 'required|max:255',
+            'Name_en'=>'required|max:255'
+
+        ]);
         try {
             // $validated = $request->validated();
             $Grade = new Grade();
@@ -28,6 +33,11 @@ class GradeController extends Controller
             $Grade->Name = ['en' => $request->Name_en, 'ar' => $request->Name];
             $Grade->Notes = $request->Notes;
             $Grade->save();
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.success'),
+                'key' => 'add',
+            ]);
             // toastr()->success(trans('messages.success'));
             return redirect()->route('grades.index');
         } catch (\Exception $e) {
@@ -44,6 +54,11 @@ class GradeController extends Controller
                 $Grades->Name = ['ar' => $request->Name, 'en' => $request->Name_en],
                 $Grades->Notes = $request->Notes,
             ]);
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.Update'),
+                'key' => 'update',
+            ]);
 //            toastr()->success(trans('messages.Update'));
             return redirect()->route('grades.index');
         } catch (\Exception $e) {
@@ -57,6 +72,11 @@ class GradeController extends Controller
         try {
             $grades = Grade::findOrFail($request->id)->delete();
 //            toastr()->error(trans('messages.Delete'));
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.Delete'),
+                'key' => 'delete',
+            ]);
             return redirect()->route('grades.index');
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);

@@ -27,6 +27,14 @@ class SectionController extends Controller
 
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'Name_Section_Ar' => 'required|max:255',
+            'Name_Section_En'=>'required|max:255',
+            'Grade_id'=>'required',
+            'Class_id'=>'required'
+
+        ]);
+
         try {
 
 //            $validated = $request->validated();
@@ -40,7 +48,7 @@ class SectionController extends Controller
             session()->flash('toast', [
                 'type' => 'success',
                 'message' => trans('messages.success'),
-                'key' => 'delete',
+                'key' => 'add',
             ]);
             return back()->withInput(['grade' => $request->id]);
 

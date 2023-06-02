@@ -31,6 +31,12 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'Name' => 'required|max:255',
+            'Name_class_en'=>'required|max:255',
+            'grade_id'=>'required',
+
+        ]);
 
         $My_Classes = new Classroom();
 
@@ -39,6 +45,11 @@ class ClassroomController extends Controller
         $My_Classes->Grade_id = $request->input('grade_id');
 
         $My_Classes->save();
+        session()->flash('toast', [
+            'type' => 'success',
+            'message' => trans('messages.success'),
+            'key' => 'add',
+        ]);
         return redirect()->route('classrooms.index');
 
     }
@@ -74,6 +85,11 @@ class ClassroomController extends Controller
                 $Classrooms->Grade_id = $request->Grade_id,
             ]);
 //            toastr()->success(trans('messages.Update'));
+            session()->flash('toast', [
+                'type' => 'success',
+                'message' => trans('messages.Update'),
+                'key' => 'update',
+            ]);
             return redirect()->route('classrooms.index');
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
@@ -87,6 +103,11 @@ class ClassroomController extends Controller
     {
         $Classrooms = Classroom::findOrFail($request->id)->delete();
 //        toastr()->success(trans('messages.Delete'));
+        session()->flash('toast', [
+            'type' => 'success',
+            'message' => trans('messages.Delete'),
+            'key' => 'delete',
+        ]);
         return redirect()->route('classrooms.index');
     }
 }
