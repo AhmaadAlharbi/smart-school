@@ -1,5 +1,18 @@
 <div>
+    @if (!empty($successMessage))
 
+
+        <div class="bg-success/10 border border-success/10 alert text-success" role="alert">
+            {{ $successMessage }}
+        </div>
+    @endif
+
+    @if ($catchError)
+
+            <div class="bg-danger/10 border border-danger/10 alert text-danger" role="alert">
+                {{ $catchError }}
+            </div>
+    @endif
     @if($show_table)
         @include('livewire.Parent_Table')
     @else
@@ -20,7 +33,7 @@
 
                     <button  type="button"
                             class="ti-btn ti-btn-dark ti-custom-validate-btn"  wire:click="back(2)">{{trans('Parent_trans.Back')}}</button>
-                    <button wire:click="secondStepSubmit" type="button"
+                    <button  wire:click="submitForm" type="button"
                             class="ti-btn ti-btn-primary ti-custom-validate-btn">{{trans('Parent_trans.Finish')}}</button>
                 </div>
             </div>

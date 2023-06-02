@@ -19,18 +19,23 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td class="font-medium">John Brown</td>
-                <td>45</td>
-                <td>New York No. 1 Lake Park</td>
-                <td class="!text-end font-medium">
-                    <a class="text-primary hover:text-primary" href="javascript:void(0);">Delete</a>
-                </td>
-                <td>New York No. 1 Lake Park</td>
-                <td>New York No. 1 Lake Park</td>
-                <td>New York No. 1 Lake Park</td>
+            @foreach ($my_parents as $my_parent)
+                <tr>
 
-            </tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $my_parent->Name_Father }}</td>
+                    <td>{{ $my_parent->National_ID_Father }}</td>
+                    <td>{{ $my_parent->Passport_ID_Father }}</td>
+                    <td>{{ $my_parent->Phone_Father }}</td>
+                    <td>{{ $my_parent->Job_Father }}</td>
+                    <td>
+                        <button wire:click="edit({{ $my_parent->id }})" title="{{ trans('Grades_trans.Edit') }}"
+                                class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></button>
+                        <button type="button" class="btn btn-danger btn-sm" wire:click="delete({{ $my_parent->id }})"
+                                title="{{ trans('Grades_trans.Delete') }}"><i class="fa fa-trash"></i></button>
+                    </td>
+                </tr>
+            @endforeach
 
             </tbody>
         </table>
