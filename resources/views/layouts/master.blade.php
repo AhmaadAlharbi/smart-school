@@ -36,7 +36,7 @@
 
 
         @yield('styles')
-
+        @livewireStyles
 	</head>
 
 	<body class="">
@@ -92,6 +92,6 @@
 
 
         <!-- END SCRIPTS -->
-
+        @livewireScripts
 	</body>
 </html>

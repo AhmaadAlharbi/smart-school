@@ -12,7 +12,7 @@ class MyParentController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
