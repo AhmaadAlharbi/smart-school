@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('styles')
+    <link rel="stylesheet" href="{{asset('build/assets/libs/sweetalert2/sweetalert2.min.css')}}">
 
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="{{asset('build/assets/libs/animate.css/animate.min.css')}}">
 @endsection
 
 @section('content')
@@ -51,4 +54,5 @@
 
 @section('js')
     @livewireScripts
+
 @endsection

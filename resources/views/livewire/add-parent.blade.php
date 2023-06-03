@@ -33,8 +33,14 @@
 
                     <button  type="button"
                             class="ti-btn ti-btn-dark ti-custom-validate-btn"  wire:click="back(2)">{{trans('Parent_trans.Back')}}</button>
-                    <button  wire:click="submitForm" type="button"
-                            class="ti-btn ti-btn-primary ti-custom-validate-btn">{{trans('Parent_trans.Finish')}}</button>
+                    @if($updateMode)
+                        <button class="ti-btn ti-btn-primary ti-custom-validate-btn" wire:click="submitForm_edit"
+                                type="button">{{trans('Parent_trans.Finish')}}
+                        </button>
+                    @else
+                        <button class="ti-btn ti-btn-primary ti-custom-validate-btn" wire:click="submitForm" type="button">{{
+                        trans('Parent_trans.Finish') }}</button>
+                    @endif
                 </div>
             </div>
 

@@ -93,5 +93,6 @@
 
         <!-- END SCRIPTS -->
         @livewireScripts
-	</body>
+
+    </body>
 </html>

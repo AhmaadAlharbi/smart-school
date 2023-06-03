@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { viteStaticCopy } from 'vite-plugin-static-copy'
+import Swal from 'sweetalert2'
 
 export default defineConfig({
     plugins: [
@@ -8,8 +9,8 @@ export default defineConfig({
             input: [
 
                 // Resources paths
-                'resources/css/app.css', 
-                'resources/sass/app.scss', 
+                'resources/css/app.css',
+                'resources/sass/app.scss',
                 'resources/js/app.js',
 
                 // Resources assets js file paths
@@ -93,7 +94,7 @@ export default defineConfig({
         viteStaticCopy({
             targets: [
               {
-                src: (['resources/assets/img/', 'resources/assets/libs/', 'resources/assets/iconfonts/', 'resources/assets/js/apexcharts-stock-prices.js', 
+                src: (['resources/assets/img/', 'resources/assets/libs/', 'resources/assets/iconfonts/', 'resources/assets/js/apexcharts-stock-prices.js',
                 'resources/assets/js/dataseries.js', 'resources/assets/js/two-step-verification.js', 'resources/assets/js/sticky.js',]),
                 dest: 'assets/'
               }
