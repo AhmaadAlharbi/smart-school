@@ -38,7 +38,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('grades', GradeController::class);
     Route::resource('classrooms',ClassroomController::class);
     Route::resource('sections',SectionController::class);
-    Route::view('add_parent', 'livewire.show_Form');
+    Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class,'getclasses']);
     //find sections classes
     Route::get('/sections/grade/{id}',[SectionController::class,'getSectionInGrade'])->name('sections.grade');
