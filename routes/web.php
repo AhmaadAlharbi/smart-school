@@ -4,6 +4,7 @@ use App\Http\Controllers\ClassroomController;
 use App\Http\Controllers\MyParentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardsController;
 use App\Http\Controllers\AdvanceduiController;
@@ -38,8 +39,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('grades', GradeController::class);
     Route::resource('classrooms',ClassroomController::class);
     Route::resource('sections',SectionController::class);
+    Route::resource('students',StudentController::class);
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class,'getclasses']);
+    Route::get('/Get_classrooms/{id}', [StudentController::class,'Get_classrooms']);
+    Route::get('/Get_Sections/{id}',[StudentController::class,'Get_Sections']);
+
+
     //find sections classes
     Route::get('/sections/grade/{id}',[SectionController::class,'getSectionInGrade'])->name('sections.grade');
     Route::get('/dashboard', function () {

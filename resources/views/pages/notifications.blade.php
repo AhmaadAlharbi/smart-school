@@ -24,6 +24,7 @@
                                         <a class="flex items-center font-semibold text-primary hover:text-primary truncate" href="javascript:void(0);">
                                         Advanced Ui
                                         <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
+                                        <i class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 rtl:rotate-180"></i>
                                         </a>
                                     </li>
                                     <li class="text-sm text-gray-500 hover:text-primary " aria-current="page">
@@ -170,6 +171,6 @@
         <!-- RATING JS -->
         <script src="{{asset('build/assets/libs/awesome-notifications/index.var.js')}}"></script>
         @vite('resources/assets/js/notifications.js')
-        
+
 
 @endsection
