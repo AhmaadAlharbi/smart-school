@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->text('name');
-            $table->string('email')->unique();
-            $table->string('password');
+
             $table->bigInteger('gender_id')->unsigned();
             $table->foreign('gender_id')->references('id')->on('genders')->onDelete('cascade');
             $table->bigInteger('nationalitie_id')->unsigned();

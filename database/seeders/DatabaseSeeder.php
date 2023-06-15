@@ -3,12 +3,16 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Seeders\GradeSeeder;
+use Database\Seeders\ClassroomSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\RoleSeeder;
 use Database\Seeders\UserSeeder;
 use Database\Seeders\religionTableSeeder;
 use Database\Seeders\BloodTableSeeder;
-
+use Database\Seeders\SectionsSeeder;
+use Database\Seeders\ParentsSeeder;
+use Database\Seeders\StudentsSeeder;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -28,5 +32,11 @@ class DatabaseSeeder extends Seeder
         $this->call(NationalitiesTableSeeder::class);
         $this->call(religionTableSeeder::class);
         $this->call(GenderTableSeeder::class);
+        $this->call(GradeSeeder::class);
+        $this->call(ClassroomSeeder::class);
+        $this->call(SectionsSeeder::class);
+        $this->call(ParentsSeeder::class);
+        $this->call(StudentsSeeder::class);
+
     }
 }
