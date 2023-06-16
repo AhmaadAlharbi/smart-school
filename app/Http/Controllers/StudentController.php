@@ -11,6 +11,7 @@ use App\Models\Section;
 use App\Models\Student;
 use App\Models\Type_Blood;
 use Illuminate\Http\Request;
+use function Symfony\Component\String\s;
 
 class StudentController extends Controller
 {
@@ -19,12 +20,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $Genders = Gender::all();
-        $nationals = Nationalitie::all();
-        $bloods = Type_Blood::all();
-        $Grades = Grade::all();
-        $parents = My_Parent::all();
-        return view('Pages.students.index', compact('Genders', 'nationals', 'bloods', 'Grades', 'parents'));
+        $students = Student::all();
+        return view('pages.students.index', compact('students',));
     }
 
     public function Get_classrooms($id)
@@ -47,7 +44,12 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        $Genders = Gender::all();
+        $nationals = Nationalitie::all();
+        $bloods = Type_Blood::all();
+        $Grades = Grade::all();
+        $parents = My_Parent::all();
+        return view('pages.students.create', compact('Genders', 'nationals', 'bloods', 'Grades', 'parents'));
     }
 
     /**
@@ -89,7 +91,16 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        //
+        if(!$student){
+           return abort(404);
+        }
+        $Genders = Gender::all();
+        $nationals = Nationalitie::all();
+        $bloods = Type_Blood::all();
+        $Grades = Grade::all();
+        $parents = My_Parent::all();
+        return view('pages.students.edit', compact('student','Genders','nationals','bloods','Grades','parents'));
+
     }
 
     /**
@@ -97,7 +108,33 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        //
+        // Get the student from the database
+        $student = Student::findOrFail($student->id);
+
+        // Update the student's data
+        $student->name = ['en' => $request->name_en, 'ar' => $request->name_ar];
+        $student->gender_id = $request->gender_id;
+        $student->nationalitie_id = $request->nationalitie_id;
+        $student->blood_id = $request->blood_id;
+        $student->Date_Birth = $request->Date_Birth;
+        $student->Grade_id = $request->Grade_id;
+        $student->Classroom_id = $request->Classroom_id;
+        $student->section_id = $request->section_id;
+        $student->parent_id = $request->parent_id;
+        $student->academic_year = $request->academic_year;
+
+        // Save the student
+        $student->save();
+
+        // Flash a success message
+        session()->flash('success', [
+            'type' => 'success',
+            'message' => trans('messages.Update'),
+            'key' => 'update',
+        ]);
+
+        // Redirect to the students index page
+        return back();
     }
 
     /**
@@ -105,6 +142,15 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        if(!$student){
+            return abort(404);
+        }
+        Student::destroy($student->id);
+        session()->flash('toast', [
+            'type' => 'success',
+            'message' => trans('messages.Delete'),
+            'key' => 'delete',
+        ]);
+        return redirect()->route('students.index');
     }
 }

@@ -31,5 +31,7 @@ return [
     'created_at' => 'created_at',
     'Download' => 'Download',
     'delete' => 'Delete',
+    'edit_student'=>'update student data'
+
 
 ];

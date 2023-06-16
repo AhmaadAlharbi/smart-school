@@ -235,7 +235,16 @@
             { title: "Salary", field: "salary", sorter: "string" },
         ],
     });
-
+    var fieldEl = document.getElementById("sort-field");
+    var dirEl = document.getElementById("sort-direction");
+    document
+        .getElementById("sort-trigger")
+        .addEventListener("click", function () {
+            table1.setSort(
+                fieldEl.options[fieldEl.selectedIndex].value,
+                dirEl.options[dirEl.selectedIndex].value
+            );
+        });
     //Sortable Tabulator
 
     var fieldEl = document.getElementById("sort-field");
