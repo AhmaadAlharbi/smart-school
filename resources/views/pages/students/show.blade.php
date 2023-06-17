@@ -48,7 +48,7 @@
             <!-- Start::row-1 -->
             <div class="grid grid-cols-12 gap-x-6">
 
-                <div class="col-span-12 xxl:col-span-12">
+                <div class="col-span-12">
                     <div class="box">
                         <div class="box-header">
                             <nav class="sm:flex sm:space-x-2 space-y-2 sm:space-y-0 rtl:space-x-reverse block"
@@ -73,99 +73,70 @@
                         </div>
                         <div class="box-body">
                             <div id="profile-1" class="" role="tabpanel" aria-labelledby="profile-item-1">
-                                <h5 class="box-title mb-3">{{ trans('Students_trans.personal_information') }}</h5>
-                                <div class="overflow-auto">
-                                    <table class="ti-custom-table border-0 whitespace-nowrap">
-                                        <tbody>
-                                            <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500">
-                                                    {{ trans('Students_trans.name') }}</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->name }}</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">
-                                                    {{ trans('Students_trans.Date_of_Birth') }}</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->Date_Birth }}</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">
-                                                    {{ trans('Students_trans.gender') }}</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->Gender->Name }}</td>
-                                            </tr>
+                                <div class="flex justify-around items-center">
+                                    <div class="overflow-auto">
+                                        <h5 class="box-title mb-3">{{ trans('Students_trans.personal_information') }}</h5>
 
-                                        </tbody>
-                                    </table>
-                                </div>
-                                {{-- <h5 class="box-title my-3">Contact Information</h5>
-                                <div class="overflow-auto">
-                                    <table class="ti-custom-table border-0 whitespace-nowrap">
-                                        <tbody>
-                                            <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500">Personal Contact No</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">+123(45)-158-90.</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">Email Id</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">andersonitumay@abc.com</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">Address</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">andersonitumay@abc.com</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">Website link</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">www.andersonitumay.com</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500">Linked in link</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">https://in.linkedin.com/andersonitumay
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> --}}
-                                <h5 class="box-title my-3">{{ trans('Students_trans.education_information') }}</h5>
-                                <div class="overflow-auto">
-                                    <table class="ti-custom-table border-0 whitespace-nowrap">
-                                        <tbody>
-                                            <tr class="">
-                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">
-                                                    {{ trans('Students_trans.Grade') }}
-                                                </td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->grade->Name }}</td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">
-                                                    {{ trans('Students_trans.classrooms') }}</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->classroom->Name_Class }}
-                                                </td>
-                                            </tr>
-                                            <tr class="!border-0">
-                                                <td class="!p-2 font-medium !text-gray-500 w-[252px]">
-                                                    {{ trans('Students_trans.section') }}</td>
-                                                <td class="!p-2">:</td>
-                                                <td class="!p-2 !text-gray-500">{{ $student->section->Name_Section }}
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <table class="ti-custom-table border-0 whitespace-nowrap">
+                                            <tbody>
+                                                <tr class="!border-0">
+                                                    <td class="!p-2 font-medium !text-gray-500">
+                                                        {{ trans('Students_trans.name') }}</td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->name }}</td>
+                                                </tr>
+                                                <tr class="!border-0">
+                                                    <td class="!p-2 font-medium !text-gray-500">
+                                                        {{ trans('Students_trans.Date_of_Birth') }}</td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->Date_Birth }}</td>
+                                                </tr>
+                                                <tr class="!border-0">
+                                                    <td class="!p-2 font-medium !text-gray-500">
+                                                        {{ trans('Students_trans.gender') }}</td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->Gender->Name }}</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="overflow-auto">
+                                        <h5 class="box-title my-3">{{ trans('Students_trans.education_information') }}</h5>
+
+                                        <table class="ti-custom-table border-0 whitespace-nowrap">
+                                            <tbody>
+                                                <tr class="">
+                                                    <td class="!p-2 font-medium !text-gray-500 w-[252px]">
+                                                        {{ trans('Students_trans.Grade') }}
+                                                    </td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->grade->Name }}</td>
+                                                </tr>
+                                                <tr class="!border-0">
+                                                    <td class="!p-2 font-medium !text-gray-500 w-[252px]">
+                                                        {{ trans('Students_trans.classrooms') }}</td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->classroom->Name_Class }}
+                                                    </td>
+                                                </tr>
+                                                <tr class="!border-0">
+                                                    <td class="!p-2 font-medium !text-gray-500 w-[252px]">
+                                                        {{ trans('Students_trans.section') }}</td>
+                                                    <td class="!p-2">:</td>
+                                                    <td class="!p-2 !text-gray-500">{{ $student->section->Name_Section }}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
 
                             </div>
                             <div id="profile-2" class="hidden" role="tabpanel" aria-labelledby="profile-item-2">
                                 <div class="grid lg:grid-cols-2 gap-4 ">
 
-                                    <div class="overflow-auto bg-blue-100 p-5">
+                                    <div class="overflow-auto bg-green-100 p-5">
                                         <h5 class="box-title mb-3">{{ trans('Parent_trans.Step1') }}</h5>
                                         <table class="ti-custom-table border-0 whitespace-nowrap">
                                             <tbody>
