@@ -99,9 +99,13 @@
                                                 </button>
                                                 <div class="hs-dropdown-menu ti-dropdown-menu"
                                                      aria-labelledby="hs-dropdown-default1">
+                                                    <a class="ti-dropdown-item" href="{{route('students.show',$student->id)}}">
+                                                        {{trans('Students_trans.show_student')}}
+                                                    </a>
                                                     <a class="ti-dropdown-item" href="{{route('students.edit',$student->id)}}">
                                                         {{trans('Students_trans.edit_student')}}
                                                     </a>
+
 {{--                                                    <a class="ti-dropdown-item" href="javascript:void(0);">--}}
 {{--                                                        {{trans('Students_trans.delete')}}--}}
 {{--                                                    </a>--}}

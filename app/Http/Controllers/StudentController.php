@@ -83,7 +83,11 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        //
+        if (!$student){
+
+           return abort(404);
+        }
+        return view('pages.students.show',compact('student'));
     }
 
     /**

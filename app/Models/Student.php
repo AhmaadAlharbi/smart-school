@@ -40,4 +40,10 @@ class Student extends Model
     {
         return $this->belongsTo('App\Models\Section', 'section_id');
     }
+    // علاقة بين الطلاب والاباء لجلب اسم الاب في جدول الاباء
+
+    public function myparent()
+    {
+        return $this->belongsTo('App\Models\My_Parent', 'parent_id');
+    }
 }

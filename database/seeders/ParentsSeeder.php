@@ -4,7 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
+use App\Models\Nationalitie;
+use App\Models\Type_Blood;
+use App\Models\Religion;
 
 class ParentsSeeder extends Seeder
 {
@@ -22,18 +24,18 @@ class ParentsSeeder extends Seeder
                 'Passport_ID_Father' => '1236544123',
                 'Phone_Father' => '1234567890',
                 'Job_Father' => json_encode(['en' => 'Engineer', 'ar' => 'مهندس']),
-                'Nationality_Father_id' => 1, // Assuming nationality ID
-                'Blood_Type_Father_id' => 1, // Assuming blood type ID
-                'Religion_Father_id' => 1, // Assuming religion ID
+                'Nationality_Father_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
+                'Blood_Type_Father_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
+                'Religion_Father_id' => Religion::pluck('id')->random(), // Assuming religion ID
                 'Address_Father' => '123 Main St, City',
-                'Name_Mother' => 'Jane Doe',
+                'Name_Mother' => json_encode(['en' => 'Aloya', 'ar' => 'عالية']),
                 'National_ID_Mother' => '7452154796',
                 'Passport_ID_Mother' => '23146879665',
                 'Phone_Mother' => '9876543210',
-                'Job_Mother' => 'Teacher',
-                'Nationality_Mother_id' => 1, // Assuming nationality ID
-                'Blood_Type_Mother_id' => 2, // Assuming blood type ID
-                'Religion_Mother_id' => 2, // Assuming religion ID
+                'Job_Mother' => json_encode(['en' => 'Teacher', 'ar' => 'معلمة']),
+                'Nationality_Mother_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
+                'Blood_Type_Mother_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
+                'Religion_Mother_id' => Religion::pluck('id')->random(), // Assuming religion ID
                 'Address_Mother' => '456 Elm St, City',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -44,18 +46,18 @@ class ParentsSeeder extends Seeder
                 'Passport_ID_Father' => 'ABC123',
                 'Phone_Father' => '1234567890',
                 'Job_Father' => json_encode(['en' => 'Engineer', 'ar' => 'مهندس']),
-                'Nationality_Father_id' => 1, // Assuming nationality ID
-                'Blood_Type_Father_id' => 1, // Assuming blood type ID
-                'Religion_Father_id' => 1, // Assuming religion ID
+                'Nationality_Father_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
+                'Blood_Type_Father_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
+                'Religion_Father_id' => Religion::pluck('id')->random(), // Assuming religion ID
                 'Address_Father' => '123 Main St, City',
-                'Name_Mother' => 'Jane Doe',
+                'Name_Mother' => json_encode(['en' => 'ِAbrar', 'ar' => 'أبرار']),
                 'National_ID_Mother' => '987654321',
                 'Passport_ID_Mother' => 'XYZ789',
                 'Phone_Mother' => '9876543210',
-                'Job_Mother' => 'Teacher',
-                'Nationality_Mother_id' => 1, // Assuming nationality ID
-                'Blood_Type_Mother_id' => 2, // Assuming blood type ID
-                'Religion_Mother_id' => 2, // Assuming religion ID
+                'Job_Mother' => json_encode(['en' => 'Teacher', 'ar' => 'معلمة']),
+                'Nationality_Mother_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
+                'Blood_Type_Mother_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
+                'Religion_Mother_id' => Religion::pluck('id')->random(), // Assuming religion ID
                 'Address_Mother' => '456 Elm St, City',
                 'created_at' => now(),
                 'updated_at' => now(),

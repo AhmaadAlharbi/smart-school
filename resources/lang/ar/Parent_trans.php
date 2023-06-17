@@ -12,8 +12,10 @@ return [
     'Password' => 'كلمة المرور',
     'Name_Father' => 'اسم الاب باللغة العربية',
     'Name_Father_en' => 'اسم الاب  باللغة الانجليزية',
+    'Father_Name' => 'اسم الأب',
     'Job_Father' => 'اسم الوظيفة باللغة العربية',
     'Job_Father_en' => 'اسم الوظيفة باللغة الانجليزية',
+    'Job_Father' => 'الوظيفة',
     'National_ID_Father' => 'رقم الهوية',
     'Passport_ID_Father' => 'رقم جواز السفر',
     'Phone_Father' => 'رقم الهاتف',
@@ -22,11 +24,13 @@ return [
     'Religion_Father_id' => 'الديانة',
     'Address_Father' => 'عنوان الاب',
 
-     //معلومات الام
+    //معلومات الام
     'Name_Mother' => 'اسم الام باللغة العربية',
     'Name_Mother_en' => 'اسم الام  باللغة الانجليزية',
+    'Mother_Name' => 'اسم الأم',
     'Job_Mother' => 'اسم الوظيفة باللغة العربية',
     'Job_Mother_en' => 'اسم الوظيفة باللغة الانجليزية',
+
     'National_ID_Mother' => 'رقم الهوية',
     'Passport_ID_Mother' => 'رقم جواز السفر',
     'Phone_Mother' => 'رقم الهاتف',

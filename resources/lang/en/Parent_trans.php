@@ -9,11 +9,14 @@ return [
     'Password' => 'Password',
     'Name_Father' => 'Father Name Arabic',
     'Name_Father_en' => 'Father Name English',
+    'Father_Name' => 'Father Name',
     'Job_Father' => 'Job Title Arabic',
     'Job_Father_en' => 'Job Title English',
     'National_ID_Father' => 'Identification Number',
     'Passport_ID_Father' => 'Passport Number',
     'Phone_Father' => 'Telephone Number',
+    'Job_Father' => 'Job',
+
     'Nationality_Father_id' => 'Nationality',
     'Blood_Type_Father_id' => 'Blood Type',
     'Religion_Father_id' => 'Religion',
@@ -22,6 +25,7 @@ return [
     //معلومات الام
     'Name_Mother' => 'Mother Name Arabic',
     'Name_Mother_en' => 'Mother Name English',
+    'Mother_Name' => 'Mother Name',
     'Job_Mother' => 'Job Title Arabic',
     'Job_Mother_en' => 'Job Title English',
     'National_ID_Mother' => 'Identification Number',
