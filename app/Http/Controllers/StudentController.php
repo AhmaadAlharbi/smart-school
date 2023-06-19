@@ -75,6 +75,7 @@ class StudentController extends Controller
             'key' => 'delete',
         ]);
         return back();
+        return back();
     }
 
 

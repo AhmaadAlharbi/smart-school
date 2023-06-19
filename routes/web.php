@@ -40,6 +40,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('classrooms',ClassroomController::class);
     Route::resource('sections',SectionController::class);
     Route::resource('students',StudentController::class);
+    Route::resource('promotion', \App\Http\Controllers\PromotionController::class);
+
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class,'getclasses']);
     Route::get('/Get_classrooms/{id}', [StudentController::class,'Get_classrooms']);
