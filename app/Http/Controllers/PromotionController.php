@@ -10,16 +10,16 @@ use Illuminate\Support\Facades\DB;
 
 class PromotionController extends Controller
 {
-    public  function index(){
+    public  function index()
+    {
         $Grades = Grade::all();
-        return view('pages.students.promotion.index',compact('Grades'));
+        return view('pages.students.promotion.index', compact('Grades'));
     }
     public function store(Request $request)
     {
         DB::beginTransaction();
 
         try {
-
             $students = Student::where('Grade_id', $request->Grade_id)->where('Classroom_id', $request->Classroom_id)->where('section_id', $request->section_id)->where('academic_year', $request->academic_year)->get();
 
             if ($students->count() < 1) {
@@ -52,11 +52,16 @@ class PromotionController extends Controller
                 ]);
             }
             DB::commit();
-//            toastr()->success(trans('messages.success'));
             return redirect()->back();
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+    }
+
+    public function create()
+    {
+        $promotions = promotion::all();
+        return view('pages.students.promotion.management', compact('promotions'));
     }
 }

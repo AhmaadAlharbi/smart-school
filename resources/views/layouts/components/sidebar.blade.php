@@ -179,7 +179,7 @@
                                              class="side-menu__item">{{trans('main_trans.add_student')}}</a></li>
                         <li class="slide"><a href="{{route('students.index')}}"
                                              class="side-menu__item">{{trans('main_trans.list_students')}}</a></li>
-                        <li class="slide"><a href="{{route('students.index')}}"
+                        <li class="slide"><a href="{{route('promotion.index')}}"
                                              class="side-menu__item">{{trans('main_trans.add_Promotion')}}</a></li>
 
 
