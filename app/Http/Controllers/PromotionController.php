@@ -7,6 +7,8 @@ use App\Models\Promotion;
 use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redis;
+use PhpParser\Node\Stmt\TryCatch;
 
 class PromotionController extends Controller
 {
@@ -63,5 +65,27 @@ class PromotionController extends Controller
     {
         $promotions = promotion::all();
         return view('pages.students.promotion.management', compact('promotions'));
+    }
+    public function destroy(Request $request)
+    {
+        DB::beginTransaction();
+        try {
+            $Promotion = Promotion::findorfail($request->id);
+            student::where('id', $Promotion->student_id)
+                ->update([
+                    'Grade_id' => $Promotion->from_grade,
+                    'Classroom_id' => $Promotion->from_Classroom,
+                    'section_id' => $Promotion->from_section,
+                    'academic_year' => $Promotion->academic_year,
+                ]);
+
+
+            Promotion::destroy($request->id);
+            DB::commit();
+            return redirect()->back();
+        } catch (\Exception $e) {
+            DB::rollback();
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
     }
 }
