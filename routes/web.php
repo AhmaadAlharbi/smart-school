@@ -13,6 +13,7 @@ use App\Http\Controllers\BasicuiController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\ComponentsController;
 use App\Http\Controllers\ElementsController;
+use App\Http\Controllers\FeeController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\IconsController;
 use App\Http\Controllers\MapsController;
@@ -37,19 +38,19 @@ use App\Http\Controllers\GradeController;
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/', [DashboardsController::class, 'index']);
     Route::resource('grades', GradeController::class);
-    Route::resource('classrooms',ClassroomController::class);
-    Route::resource('sections',SectionController::class);
-    Route::resource('students',StudentController::class);
+    Route::resource('classrooms', ClassroomController::class);
+    Route::resource('sections', SectionController::class);
+    Route::resource('students', StudentController::class);
     Route::resource('promotion', \App\Http\Controllers\PromotionController::class);
-
+    Route::resource('fees', FeeController::class);
     Route::view('/add_parent', 'livewire.show_Form');
-    Route::get('/classes/{id}', [SectionController::class,'getclasses']);
-    Route::get('/Get_classrooms/{id}', [StudentController::class,'Get_classrooms']);
-    Route::get('/Get_Sections/{id}',[StudentController::class,'Get_Sections']);
+    Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
+    Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
+    Route::get('/Get_Sections/{id}', [StudentController::class, 'Get_Sections']);
 
 
     //find sections classes
-    Route::get('/sections/grade/{id}',[SectionController::class,'getSectionInGrade'])->name('sections.grade');
+    Route::get('/sections/grade/{id}', [SectionController::class, 'getSectionInGrade'])->name('sections.grade');
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
