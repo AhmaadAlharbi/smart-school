@@ -35,6 +35,7 @@ return [
     'show_student' => 'عرض بيانات الطالب',
     'education_information' => 'المعلومات الدارسية',
     'parents_information' => 'معلومات ولي الأمر',
+    'add_fees' => 'اضافة رسوم'
 
 
 

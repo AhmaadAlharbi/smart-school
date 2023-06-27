@@ -14,6 +14,7 @@ use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\ComponentsController;
 use App\Http\Controllers\ElementsController;
 use App\Http\Controllers\FeeController;
+use App\Http\Controllers\FeeInvoiceController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\IconsController;
 use App\Http\Controllers\MapsController;
@@ -47,6 +48,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
     Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
     Route::get('/Get_Sections/{id}', [StudentController::class, 'Get_Sections']);
+    Route::resource('Fees_Invoices', FeeInvoiceController::class);
 
 
     //find sections classes

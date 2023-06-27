@@ -35,6 +35,7 @@ return [
     'show_student' => 'Show student data',
     'education_information' => 'Education Information',
     'parents_information' => 'Parents Information',
+    'add_fees' => 'Add Fees'
 
 
 ];

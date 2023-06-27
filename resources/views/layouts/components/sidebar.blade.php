@@ -206,6 +206,8 @@
                     <ul class="slide-menu child1">
                         <li class="slide"><a href="{{route('fees.index')}}" class="side-menu__item">الرسوم
                                 الدراسية</a></li>
+                        <li class="slide"> <a class="side-menu__item"
+                                href="{{route('Fees_Invoices.index')}}">الفواتير</a> </li>
 
                     </ul>
                 </li>

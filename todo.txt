@@ -4,3 +4,4 @@ Todo
 3- re-design Students List page to show each grade with its students
 4-add translate
 5-re-design promotion student page to select student to promotion
+7- Make A new Table fore Fees and make a relationship with Fees_Invoices
