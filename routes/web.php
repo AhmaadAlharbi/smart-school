@@ -24,6 +24,7 @@ use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\ReceiptStudentController;
 use App\Http\Controllers\ProcessingFeeController;
 use App\Http\Controllers\PaymentStudentController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('Fees_Invoices', FeeInvoiceController::class);
     Route::resource('ProcessingFee', ProcessingFeeController::class);
     Route::resource('Payment_students', PaymentStudentController::class);
+    Route::resource('Attendance', AttendanceController::class);
 
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
