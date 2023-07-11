@@ -12,19 +12,20 @@ use App\Http\Controllers\BasicuiController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\WidgetsController;
 use App\Http\Controllers\ElementsController;
 use App\Http\Controllers\MyParentController;
 use App\Http\Controllers\ClassroomController;
 use App\Http\Controllers\AdvanceduiController;
+use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\ComponentsController;
 use App\Http\Controllers\DashboardsController;
 use App\Http\Controllers\FeeInvoiceController;
-use App\Http\Controllers\AuthenticationController;
-use App\Http\Controllers\ReceiptStudentController;
 use App\Http\Controllers\ProcessingFeeController;
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\PaymentStudentController;
-use App\Http\Controllers\AttendanceController;
+use App\Http\Controllers\ReceiptStudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +54,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('ProcessingFee', ProcessingFeeController::class);
     Route::resource('Payment_students', PaymentStudentController::class);
     Route::resource('Attendance', AttendanceController::class);
-
+    Route::resource('subjects',  \App\Http\Controllers\SubjectController::class);
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
     Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);

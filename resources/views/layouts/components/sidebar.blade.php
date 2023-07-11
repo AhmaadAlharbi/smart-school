@@ -21,8 +21,7 @@
         <!-- Start::nav -->
         <nav class="main-menu-container nav nav-pills flex-column sub-open">
             <div class="slide-left" id="slide-left">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24"
-                    viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
                 </svg>
             </div>
@@ -86,21 +85,17 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.Grades') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide"><a href="{{ route('grades.index') }}"
-                                class="side-menu__item">{{ trans('main_trans.Grades_list') }}</a></li>
+                        <li class="slide"><a href="{{ route('grades.index') }}" class="side-menu__item">{{
+                                trans('main_trans.Grades_list') }}</a></li>
 
                     </ul>
                 </li>
@@ -110,21 +105,17 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.classes') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide"><a href="{{ route('classrooms.index') }}"
-                                class="side-menu__item">{{ trans('main_trans.List_classes') }}</a></li>
+                        <li class="slide"><a href="{{ route('classrooms.index') }}" class="side-menu__item">{{
+                                trans('main_trans.List_classes') }}</a></li>
 
 
                     </ul>
@@ -134,21 +125,17 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.sections') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide"><a href="{{ route('sections.index') }}"
-                                class="side-menu__item">{{ trans('main_trans.List_sections') }}</a></li>
+                        <li class="slide"><a href="{{ route('sections.index') }}" class="side-menu__item">{{
+                                trans('main_trans.List_sections') }}</a></li>
 
 
                     </ul>
@@ -158,21 +145,17 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.Parents') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide"><a href="{{ url('add_parent') }}"
-                                class="side-menu__item">{{ trans('main_trans.List_Parents') }}</a></li>
+                        <li class="slide"><a href="{{ url('add_parent') }}" class="side-menu__item">{{
+                                trans('main_trans.List_Parents') }}</a></li>
 
 
                     </ul>
@@ -182,28 +165,24 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.students') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
-                        <li class="slide"><a href="{{ route('students.create') }}"
-                                class="side-menu__item">{{ trans('main_trans.add_student') }}</a></li>
-                        <li class="slide"><a href="{{ route('students.index') }}"
-                                class="side-menu__item">{{ trans('main_trans.list_students') }}</a></li>
-                        <li class="slide"> <a class="side-menu__item"
-                                href="{{ route('promotion.index') }}">{{ trans('main_trans.add_Promotion') }}</a>
+                        <li class="slide"><a href="{{ route('students.create') }}" class="side-menu__item">{{
+                                trans('main_trans.add_student') }}</a></li>
+                        <li class="slide"><a href="{{ route('students.index') }}" class="side-menu__item">{{
+                                trans('main_trans.list_students') }}</a></li>
+                        <li class="slide"> <a class="side-menu__item" href="{{ route('promotion.index') }}">{{
+                                trans('main_trans.add_Promotion') }}</a>
                         </li>
-                        <li class="slide"> <a class="side-menu__item"
-                                href="{{ route('promotion.create') }}">{{ trans('main_trans.list_Promotions') }}</a>
+                        <li class="slide"> <a class="side-menu__item" href="{{ route('promotion.create') }}">{{
+                                trans('main_trans.list_Promotions') }}</a>
                         </li>
                     </ul>
 
@@ -218,14 +197,10 @@
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">{{ trans('main_trans.Accounts') }}</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
@@ -236,30 +211,66 @@
                         <li class="slide"> <a class="side-menu__item"
                                 href="{{ route('Fees_Invoices.index') }}">الفواتير</a> </li>
 
-                        <li class="slide"><a href="{{ route('receipt_students.index') }}"
-                                class="side-menu__item">سندات القبض</a></li>
-                        <li class="slide"><a href="{{ route('ProcessingFee.index') }}"
-                                class="side-menu__item">استبعاد رسوم</a></li>
-                        <li class="slide"><a href="{{ route('Payment_students.index') }}"
-                                class="side-menu__item">سندات صرف</a></li>
+                        <li class="slide"><a href="{{ route('receipt_students.index') }}" class="side-menu__item">سندات
+                                القبض</a></li>
+                        <li class="slide"><a href="{{ route('ProcessingFee.index') }}" class="side-menu__item">استبعاد
+                                رسوم</a></li>
+                        <li class="slide"><a href="{{ route('Payment_students.index') }}" class="side-menu__item">سندات
+                                صرف</a></li>
 
                     </ul>
                 </li>
                 {{-- نهاية الحسابات --}}
+                {{-- بداية الحضور --}}
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
+                        </svg>
+                        <span class="side-menu__label">{{trans('main_trans.Attendance')}}</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+
+                        <li class="slide"> <a class="side-menu__item" href="{{route('Attendance.index')}}">قائمة
+                                الطلاب</a> </li>
+
+                    </ul>
+                </li>
+                {{-- نهاية الحضور --}}
+                {{-- بداية المواد الدراسية --}}
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
+                        </svg>
+                        <span class="side-menu__label">المواد الدراسية</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+
+                        <li class="slide"> <a class="side-menu__item" href="{{route('subjects.index')}}">قائمة
+                                المواد</a> </li>
+
+                    </ul>
+                </li>
+                {{-- نهاية المواد الدراسية --}}
                 {{-- end my customization --}}
 
                 <!-- Start::slide -->
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                            <rect width="9" height="9" x="2" y="2" fill="#4b5563"
-                                rx="1" />
-                            <rect width="9" height="9" x="2" y="13" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="2" fill="#9399a1"
-                                rx="1" />
-                            <rect width="9" height="9" x="13" y="13" fill="#9399a1"
-                                rx="1" />
+                            <rect width="9" height="9" x="2" y="2" fill="#4b5563" rx="1" />
+                            <rect width="9" height="9" x="2" y="13" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="2" fill="#9399a1" rx="1" />
+                            <rect width="9" height="9" x="13" y="13" fill="#9399a1" rx="1" />
                         </svg>
                         <span class="side-menu__label">Components</span>
                         <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
@@ -271,8 +282,8 @@
                         <li class="slide"><a href="{{ url('alerts') }}" class="side-menu__item">Alerts</a></li>
                         <li class="slide"><a href="{{ url('avatars') }}" class="side-menu__item">Avatars</a></li>
                         <li class="slide"><a href="{{ url('badges') }}" class="side-menu__item">Badges</a></li>
-                        <li class="slide"><a href="{{ url('blockquotes') }}"
-                                class="side-menu__item">Blockquotes</a></li>
+                        <li class="slide"><a href="{{ url('blockquotes') }}" class="side-menu__item">Blockquotes</a>
+                        </li>
                         <li class="slide"><a href="{{ url('buttons') }}" class="side-menu__item">Buttons</a></li>
                         <li class="slide"><a href="{{ url('cards') }}" class="side-menu__item">Cards</a></li>
                         <li class="slide"><a href="{{ url('collapse') }}" class="side-menu__item">Collapse</a></li>
@@ -336,8 +347,7 @@
                     </a>
                     <ul class="slide-menu child1">
                         <li class="slide side-menu__label1"><a href="javascript:void(0)">Forms</a></li>
-                        <li class="slide"><a href="{{ url('form-elements') }}"
-                                class="side-menu__item">FormElements</a>
+                        <li class="slide"><a href="{{ url('form-elements') }}" class="side-menu__item">FormElements</a>
                         <li class="slide"><a href="{{ url('advanced-forms') }}"
                                 class="side-menu__item">AdvancedForms</a>
                         </li>
@@ -346,23 +356,21 @@
                         </li>
                         <li class="slide"><a href="{{ url('file-upload') }}" class="side-menu__item">File
                                 Uploads</a></li>
-                        <li class="slide"><a href="{{ url('form-checkbox') }}"
-                                class="side-menu__item">Form-Checkbox</a>
+                        <li class="slide"><a href="{{ url('form-checkbox') }}" class="side-menu__item">Form-Checkbox</a>
                         </li>
                         <li class="slide"><a href="{{ url('form-radio') }}" class="side-menu__item">Form-Radio</a>
                         </li>
-                        <li class="slide"><a href="{{ url('form-switch') }}"
-                                class="side-menu__item">Form-Switch</a></li>
-                        <li class="slide"><a href="{{ url('form-select') }}"
-                                class="side-menu__item">Form-Select</a></li>
-                        <li class="slide"><a href="{{ url('form-layouts') }}"
-                                class="side-menu__item">Form-Layouts</a>
+                        <li class="slide"><a href="{{ url('form-switch') }}" class="side-menu__item">Form-Switch</a>
+                        </li>
+                        <li class="slide"><a href="{{ url('form-select') }}" class="side-menu__item">Form-Select</a>
+                        </li>
+                        <li class="slide"><a href="{{ url('form-layouts') }}" class="side-menu__item">Form-Layouts</a>
                         </li>
                         <li class="slide"><a href="{{ url('form-validations') }}"
                                 class="side-menu__item">Form-Validations</a>
                         </li>
-                        <li class="slide"><a href="{{ url('quil-editor') }}"
-                                class="side-menu__item">Form-Editor</a></li>
+                        <li class="slide"><a href="{{ url('quil-editor') }}" class="side-menu__item">Form-Editor</a>
+                        </li>
                     </ul>
                 </li>
                 <!-- End::slide -->
@@ -384,8 +392,8 @@
                     </a>
                     <ul class="slide-menu child1">
                         <li class="slide side-menu__label1"><a href="javascript:void(0)">Advanced Ui</a></li>
-                        <li class="slide"><a href="{{ url('rangeslider') }}"
-                                class="side-menu__item">Rangeslider</a></li>
+                        <li class="slide"><a href="{{ url('rangeslider') }}" class="side-menu__item">Rangeslider</a>
+                        </li>
                         <li class="slide"><a href="{{ url('calendar') }}" class="side-menu__item">Calendar</a></li>
                         <li class="slide"><a href="{{ url('carousel') }}" class="side-menu__item">Carousel</a></li>
                         <li class="slide"><a href="{{ url('gallery') }}" class="side-menu__item">Gallery</a></li>
@@ -395,8 +403,7 @@
                         <li class="slide"><a href="{{ url('draggable') }}" class="side-menu__item">Draggable
                                 Cards</a>
                         </li>
-                        <li class="slide"><a href="{{ url('notifications') }}"
-                                class="side-menu__item">Notifications</a>
+                        <li class="slide"><a href="{{ url('notifications') }}" class="side-menu__item">Notifications</a>
                         </li>
                         <li class="slide"><a href="{{ url('treeview') }}" class="side-menu__item">Treeview</a></li>
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">File Manger<i
@@ -405,8 +412,7 @@
                                 <li class="slide"><a href="{{ url('filemanager') }}" class="side-menu__item">File
                                         Manger</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('filemanager-list') }}"
-                                        class="side-menu__item">File
+                                <li class="slide"><a href="{{ url('filemanager-list') }}" class="side-menu__item">File
                                         Manger
                                         List</a></li>
                                 <li class="slide"><a href="{{ url('file-details') }}" class="side-menu__item">File
@@ -445,8 +451,7 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Tables<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('tables') }}"
-                                        class="side-menu__item">BasicTables</a>
+                                <li class="slide"><a href="{{ url('tables') }}" class="side-menu__item">BasicTables</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('datatables') }}"
                                         class="side-menu__item">DataTables</a>
@@ -484,8 +489,7 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Nested-2<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="javascript:void(0);"
-                                        class="side-menu__item">Nested-2-1</a>
+                                <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Nested-2-1</a>
                                 </li>
                                 <li class="slide has-sub"><a href="javascript:void(0);"
                                         class="side-menu__item">Nested-2-2<i
@@ -546,8 +550,7 @@
                     </a>
                     <ul class="slide-menu child1">
                         <li class="slide side-menu__label1"><a href="javascript:void(0)">Charts</a></li>
-                        <li class="slide"><a href="{{ url('apex-charts') }}"
-                                class="side-menu__item">ApexCharts</a></li>
+                        <li class="slide"><a href="{{ url('apex-charts') }}" class="side-menu__item">ApexCharts</a></li>
                         <li class="slide"><a href="{{ url('chartjs') }}" class="side-menu__item">ChartJS</a></li>
                         <li class="slide"><a href="{{ url('echartjs') }}" class="side-menu__item">EchartJs</a>
                         </li>
@@ -592,8 +595,7 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Invoice<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('invoice-list') }}"
-                                        class="side-menu__item">Invoice
+                                <li class="slide"><a href="{{ url('invoice-list') }}" class="side-menu__item">Invoice
                                         List</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('invoice') }}" class="side-menu__item">Invoice
@@ -617,8 +619,8 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Mail<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('mail-inbox') }}"
-                                        class="side-menu__item">Mail</a></li>
+                                <li class="slide"><a href="{{ url('mail-inbox') }}" class="side-menu__item">Mail</a>
+                                </li>
                                 <li class="slide"><a href="{{ url('chat') }}" class="side-menu__item">Chat</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('mail-settings') }}"
@@ -629,11 +631,9 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Ecommerce<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('products') }}"
-                                        class="side-menu__item">Products</a>
+                                <li class="slide"><a href="{{ url('products') }}" class="side-menu__item">Products</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('product-list') }}"
-                                        class="side-menu__item">Product
+                                <li class="slide"><a href="{{ url('product-list') }}" class="side-menu__item">Product
                                         list</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('add-product') }}" class="side-menu__item">Add
@@ -647,17 +647,14 @@
                                 </li>
                                 <li class="slide"><a href="{{ url('cart') }}" class="side-menu__item">Cart</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('checkout') }}"
-                                        class="side-menu__item">Checkout</a>
+                                <li class="slide"><a href="{{ url('checkout') }}" class="side-menu__item">Checkout</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('orders') }}" class="side-menu__item">Orders</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('order-details') }}"
-                                        class="side-menu__item">Order
+                                <li class="slide"><a href="{{ url('order-details') }}" class="side-menu__item">Order
                                         Details</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('wishlist') }}"
-                                        class="side-menu__item">Whislist</a>
+                                <li class="slide"><a href="{{ url('wishlist') }}" class="side-menu__item">Whislist</a>
                                 </li>
                             </ul>
                         </li>
@@ -676,8 +673,7 @@
                         <li class="slide"><a href="{{ url('faqs') }}" class="side-menu__item">Faq's</a></li>
                         <li class="slide"><a href="{{ url('contactus') }}" class="side-menu__item">Contact Us</a>
                         </li>
-                        <li class="slide"><a href="{{ url('terms') }}"
-                                class="side-menu__item">Terms&amp;conditions</a>
+                        <li class="slide"><a href="{{ url('terms') }}" class="side-menu__item">Terms&amp;conditions</a>
                         </li>
                         <li class="slide"><a href="{{ url('empty-page') }}" class="side-menu__item">Empty Page</a>
                         </li>
@@ -780,8 +776,7 @@
                             <ul class="slide-menu child2">
                                 <li class="slide"><a href="{{ url('reset') }}" class="side-menu__item">Basic</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('reset-cover') }}"
-                                        class="side-menu__item">Cover-1</a>
+                                <li class="slide"><a href="{{ url('reset-cover') }}" class="side-menu__item">Cover-1</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('reset-cover2') }}"
                                         class="side-menu__item">Cover-2</a>
@@ -791,8 +786,8 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Lockscreen<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('lockscreen') }}"
-                                        class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="{{ url('lockscreen') }}" class="side-menu__item">Basic</a>
+                                </li>
                                 <li class="slide"><a href="{{ url('lockscreen-cover') }}"
                                         class="side-menu__item">Cover-1</a>
                                 </li>
@@ -804,8 +799,7 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Two-Step
                                 Verfication<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('verfication') }}"
-                                        class="side-menu__item">Basic</a>
+                                <li class="slide"><a href="{{ url('verfication') }}" class="side-menu__item">Basic</a>
                                 </li>
                                 <li class="slide"><a href="{{ url('verfication-cover') }}"
                                         class="side-menu__item">Cover-1</a>
@@ -826,11 +820,9 @@
                         <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Error Pages<i
                                     class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
                             <ul class="slide-menu child2">
-                                <li class="slide"><a href="{{ url('error404') }}"
-                                        class="side-menu__item">404Error</a>
+                                <li class="slide"><a href="{{ url('error404') }}" class="side-menu__item">404Error</a>
                                 </li>
-                                <li class="slide"><a href="{{ url('error500') }}"
-                                        class="side-menu__item">500Error</a>
+                                <li class="slide"><a href="{{ url('error500') }}" class="side-menu__item">500Error</a>
                                 </li>
                             </ul>
                         </li>
@@ -839,8 +831,7 @@
                 <!-- End::slide -->
             </ul>
             <div class="slide-right" id="slide-right">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24"
-                    viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
                 </svg>
             </div>
