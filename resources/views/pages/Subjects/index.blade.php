@@ -37,6 +37,7 @@
             <div class="col-span-12">
                 <div class="box">
                     <div class="box-body">
+                        <a href="{{route('subjects.create')}}" class="ti-btn ti-btn-primary">add</a>
                         <table class="ti-custom-table ti-custom-table-head ti-striped-table">
                             <thead>
                                 <tr>

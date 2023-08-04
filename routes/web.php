@@ -13,6 +13,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\WidgetsController;
 use App\Http\Controllers\ElementsController;
 use App\Http\Controllers\MyParentController;
@@ -55,6 +56,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('Payment_students', PaymentStudentController::class);
     Route::resource('Attendance', AttendanceController::class);
     Route::resource('subjects',  \App\Http\Controllers\SubjectController::class);
+    Route::resource('teachers', TeacherController::class);
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
     Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
