@@ -37,6 +37,38 @@
             <div class="col-span-12">
                 <div class="box">
                     <div class="box-body">
+                        <a href="{{route('teachers.create')}}" class="ti-btn ti-btn-primary">
+                            add teacher
+                        </a>
+                        <table class="ti-custom-table ti-custom-table-head ti-striped-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الاسم</th>
+                                    <th>التخصص</th>
+                                    <th>تاريخ الانضمام</th>
+                                    <th>العمليات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($teachers as $teacher)
+                                <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{$teacher->Name}}</td>
+                                    <td>{{$teacher->Specialization_id}}</td>
+                                    <td>{{$teacher->Joining_Date}}</td>
+                                    {{-- <td>
+                                        <a href="{{route('subjects.edit',$subject->id)}}" class="btn btn-info btn-sm"
+                                            role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
+                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#delete_subject{{ $subject->id }}" title="حذف"><i
+                                                class="fa fa-trash"></i></button>
+                                    </td> --}}
+                                </tr>
+
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
