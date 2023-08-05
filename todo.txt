@@ -5,3 +5,4 @@ Todo
 4-add translate
 5-re-design promotion student page to select student to promotion
 7- Make A new Table fore Fees and make a relationship with Fees_Invoices
+8- change delete and edit icons to Template icons
