@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Classroom;
 use App\Models\Grade;
 use App\Models\Section;
+use App\Models\Teacher;
+use App\Models\Classroom;
 use Illuminate\Http\Request;
+use App\Models\Specialization;
+use Illuminate\Support\Facades\DB;
 
 class SectionController extends Controller
 {
@@ -15,7 +18,9 @@ class SectionController extends Controller
         $first_grade = Grade::first();
         $sections_first_grade = Section::where('Grade_id', $first_grade->id)->get();
         $list_Grades = Grade::all();
-        return view('pages.Sections.index', compact('Grades', 'list_Grades', 'first_grade', 'sections_first_grade'));
+        $teachers = Teacher::all();
+        $specializations = Specialization::all();
+        return view('pages.Sections.index', compact('Grades', 'list_Grades', 'first_grade', 'sections_first_grade', 'teachers', 'specializations'));
     }
 
     public function getclasses($id)
@@ -29,29 +34,33 @@ class SectionController extends Controller
     {
         $validated = $request->validate([
             'Name_Section_Ar' => 'required|max:255',
-            'Name_Section_En'=>'required|max:255',
-            'Grade_id'=>'required',
-            'Class_id'=>'required'
+            'Name_Section_En' => 'required|max:255',
+            'Grade_id' => 'required',
+            'Class_id' => 'required'
 
         ]);
 
         try {
-
-//            $validated = $request->validated();
+            // Start a database transaction
+            DB::beginTransaction();
+            //            $validated = $request->validated();
             $Sections = new Section();
             $Sections->Name_Section = ['ar' => $request->Name_Section_Ar, 'en' => $request->Name_Section_En];
             $Sections->Grade_id = $request->Grade_id;
             $Sections->Class_id = $request->Class_id;
             $Sections->Status = 1;
             $Sections->save();
-//            $Sections->teachers()->attach($request->teacher_id);
+            $Sections->teachers()->attach($request->teacher_id);
+
+            // $Sections->teachers()->attach($request->teacher_id);
+            // Commit the transaction
+            DB::commit();
             session()->flash('toast', [
                 'type' => 'success',
                 'message' => trans('messages.success'),
                 'key' => 'add',
             ]);
             return back()->withInput(['grade' => $request->id]);
-
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
@@ -71,11 +80,11 @@ class SectionController extends Controller
                 $Sections->Status = 2;
             }
             // update pivot tABLE
-//            if (isset($request->teacher_id)) {
-//                $Sections->teachers()->sync($request->teacher_id);
-//            } else {
-//                $Sections->teachers()->sync(array());
-//            }
+            //            if (isset($request->teacher_id)) {
+            //                $Sections->teachers()->sync($request->teacher_id);
+            //            } else {
+            //                $Sections->teachers()->sync(array());
+            //            }
 
             $Sections->save();
 
@@ -85,7 +94,6 @@ class SectionController extends Controller
                 'key' => 'update',
             ]);
             return back()->withInput(['grade' => $request->id]);
-
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
@@ -112,5 +120,4 @@ class SectionController extends Controller
         $list_Grades = Grade::all();
         return view('pages.Sections.sections_grade', compact('Grades', 'Grade', 'list_Grades', 'sections_first_grade'));
     }
-
 }
