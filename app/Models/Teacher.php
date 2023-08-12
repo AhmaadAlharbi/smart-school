@@ -29,4 +29,8 @@ class Teacher extends  Authenticatable
     {
         return $this->belongsToMany('App\Models\Section', 'teacher_section');
     }
+    public function grades()
+    {
+        return $this->belongsToMany('App\Models\Grade', 'grade_teacher');
+    }
 }

@@ -21,7 +21,13 @@ class Grade extends Model
 
 
 
-    public function Sections(){
+    public function Sections()
+    {
         return $this->hasMany(Section::class);
+    }
+    // علاقة  المراحل مع المعلمين
+    public function teachers()
+    {
+        return $this->belongsToMany('App\Models\Teacher', 'grade_teacher');
     }
 }

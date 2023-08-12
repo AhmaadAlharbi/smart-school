@@ -108,7 +108,35 @@
                                 <textarea class="form-control ti-form-input" name="Address" id="address"
                                     rows="4">{{ $teacher->Address }}</textarea>
                             </div>
+                            <div class="col my-2">
+                                <label for="address" class="block text-gray-700 text-sm mb-2">Grades</label>
+                                <ul class="max-w-sm flex flex-col">
+                                    @foreach($grades as $grade)
+                                    <li class="ti-list-group bg-white text-gray-800">
+                                        <div class="relative flex items-start w-full">
+                                            <div class="flex items-center h-5">
+                                                <!-- Check if the current grade is associated with the teacher's grades -->
+                                                <input id="hs-list-group-item-checkbox-1" name="grades[]"
+                                                    type="checkbox" class="ti-form-checkbox" value="{{$grade->id}}" {{
+                                                    in_array($grade->id, $teacher->grades->pluck('id')->toArray()) ?
+                                                'checked' : '' }}>
+                                                <!-- ^^^ The in_array() function checks if the current grade's ID is present in the array of grade IDs associated with the teacher -->
+                                                <!-- If the grade is associated with the teacher, add the 'checked' attribute to the checkbox -->
 
+
+
+                                            </div>
+                                            <label for="hs-list-group-item-checkbox-1"
+                                                class="ltr:ml-2.5 rtl:mr-2.5 block w-full text-sm text-gray-600">
+                                                {{$grade->Name}}
+                                            </label>
+                                        </div>
+                                    </li>
+                                    @endforeach
+
+                                </ul>
+
+                            </div>
                             <button class="ti-btn ti-btn-primary"
                                 type="submit">{{trans('main_trans.edit_teacher')}}</button>
                         </form>

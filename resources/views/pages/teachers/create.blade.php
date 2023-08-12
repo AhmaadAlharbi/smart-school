@@ -39,24 +39,21 @@
         <!-- Page Header Close -->
 
         <!-- Start::row-1 -->
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-6 place-content-center">
             <div class="col-span-12">
                 <div class="box">
                     <div class="box-body">
                         <form action="{{route('teachers.store')}}" method="post"
                             class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 grid gird-cols-1 md:grid-cols-2 gap-4">
                             @csrf
-
-
-
                             <div class="form-row mb-4">
-                                <div class="col">
+                                <div class="">
                                     <label for="name_ar"
                                         class="block text-gray-700 text-sm mb-2">{{trans('Teacher_trans.Name_ar')}}</label>
                                     <input type="text" name="Name_ar" class="form-control ti-form-input"
                                         placeholder="{{trans('Teacher_trans.Name_ar')}}">
                                 </div>
-                                <div class="col">
+                                <div class="">
                                     <label for="name_en"
                                         class="block text-gray-700 text-sm mb-2">{{trans('Teacher_trans.Name_en')}}</label>
                                     <input type="text" name="Name_en" class="form-control ti-form-input"
@@ -85,6 +82,7 @@
                                         @endforeach
                                     </select>
                                 </div>
+
                             </div>
 
                             <div class="form-row mb-4">
@@ -104,28 +102,50 @@
                                 <textarea class="form-control ti-form-input" name="Address" id="address"
                                     rows="4"></textarea>
                             </div>
+                            <div class="col my-2">
+                                <label for="address" class="block text-gray-700 text-sm mb-2">Grades</label>
+                                <ul class="max-w-sm flex flex-col">
+                                    @foreach($grades as $grade)
+                                    <li class="ti-list-group bg-white text-gray-800">
+                                        <div class="relative flex items-start w-full">
+                                            <div class="flex items-center h-5">
+                                                <input id="hs-list-group-item-checkbox-1" name="grades[]"
+                                                    type="checkbox" class="ti-form-checkbox" value="{{$grade->id}}">
+                                            </div>
+                                            <label for="hs-list-group-item-checkbox-1"
+                                                class="ltr:ml-2.5 rtl:mr-2.5 block w-full text-sm text-gray-600">
+                                                {{$grade->Name}}
+                                            </label>
+                                        </div>
+                                    </li>
+                                    @endforeach
 
-                            <button class="ti-btn ti-btn-primary"
-                                type="submit">{{trans('main_trans.add_teacher')}}</button </div>
+                                </ul>
+                                <div>
+                                    <button class="ti-btn ti-btn-primary"
+                                        type="submit">{{trans('main_trans.add_teacher')}}</button>
+                                </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- End::row-1 -->
-
         </div>
-        <!-- Start::main-content -->
+        <!-- End::row-1 -->
 
     </div>
+    <!-- Start::main-content -->
 
-    @endsection
+</div>
 
-    @section('scripts')
-    <!-- FLATPICKR JS -->
-    <script src="{{asset('build/assets/libs/flatpickr/flatpickr.min.js')}}"></script>
-    @vite('resources/assets/js/flatpickr.js')
+@endsection
+
+@section('scripts')
+<!-- FLATPICKR JS -->
+<script src="{{asset('build/assets/libs/flatpickr/flatpickr.min.js')}}"></script>
+@vite('resources/assets/js/flatpickr.js')
 
 
-    <!-- COLOR PICKER JS -->
-    <script src="{{asset('build/assets/libs/@simonwep/pickr/pickr.es5.min.js')}}"></script>
-    @vite('resources/assets/js/colorpicker.js')
-    @endsection
+<!-- COLOR PICKER JS -->
+<script src="{{asset('build/assets/libs/@simonwep/pickr/pickr.es5.min.js')}}"></script>
+@vite('resources/assets/js/colorpicker.js')
+@endsection

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Grade;
 use App\Models\Gender;
 use App\Models\Teacher;
 use Illuminate\Http\Request;
@@ -18,10 +19,12 @@ class TeacherController extends Controller
     {
         $specializations = Specialization::all();
         $genders = Gender::all();
-        return view('pages.teachers.create', compact('specializations', 'genders'));
+        $grades = Grade::all();
+        return view('pages.teachers.create', compact('specializations', 'genders', 'grades'));
     }
     public function store(Request $request)
     {
+
         try {
             $Teachers = new Teacher();
             $Teachers->Name = ['en' => $request->Name_en, 'ar' => $request->Name_ar];
@@ -30,6 +33,8 @@ class TeacherController extends Controller
             $Teachers->Joining_Date = $request->Joining_Date;
             $Teachers->Address = $request->Address;
             $Teachers->save();
+            $Teachers->grades()->attach($request->grades);
+
             toastr()->success(trans('messages.success'));
             return redirect()->route('teachers.create');
         } catch (Exception $e) {
@@ -38,12 +43,14 @@ class TeacherController extends Controller
     }
     public function edit(Teacher $teacher)
     {
+        // return $teacher->grades->pluck('id')->toArray();
         if (!$teacher) {
             abort(404);
         }
         $specializations = Specialization::all();
         $genders = Gender::all();
-        return view('pages.teachers.edit', compact('teacher', 'specializations', 'genders'));
+        $grades = Grade::all();
+        return view('pages.teachers.edit', compact('teacher', 'specializations', 'genders', 'grades'));
     }
     public function update(Request $request, $id)
     {
@@ -68,7 +75,8 @@ class TeacherController extends Controller
         $teacher->Joining_Date = $request->input('Joining_Date');
         $teacher->Address = $request->input('Address');
         $teacher->save();
-
+        // Update the teacher's grades using the sync method to prevent duplication
+        $teacher->grades()->sync($request->grades);
         // Redirect back to the teachers list with a success message
         return redirect()->route('teachers.index')->with('success', 'Teacher updated successfully.');
     }

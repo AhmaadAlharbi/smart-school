@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Grade;
+use App\Models\GradeTeacher;
+use Illuminate\Http\Request;
 
 class GradeController extends Controller
 {
@@ -17,7 +18,7 @@ class GradeController extends Controller
     {
         $validated = $request->validate([
             'Name' => 'required|max:255',
-            'Name_en'=>'required|max:255'
+            'Name_en' => 'required|max:255'
 
         ]);
         try {
@@ -48,7 +49,7 @@ class GradeController extends Controller
     public function update(Request $request)
     {
         try {
-//            $validated = $request->validated();
+            //            $validated = $request->validated();
             $Grades = Grade::findOrFail($request->id);
             $Grades->update([
                 $Grades->Name = ['ar' => $request->Name, 'en' => $request->Name_en],
@@ -59,7 +60,7 @@ class GradeController extends Controller
                 'message' => trans('messages.Update'),
                 'key' => 'update',
             ]);
-//            toastr()->success(trans('messages.Update'));
+            //            toastr()->success(trans('messages.Update'));
             return redirect()->route('grades.index');
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
@@ -71,7 +72,7 @@ class GradeController extends Controller
 
         try {
             $grades = Grade::findOrFail($request->id)->delete();
-//            toastr()->error(trans('messages.Delete'));
+            //            toastr()->error(trans('messages.Delete'));
             session()->flash('toast', [
                 'type' => 'success',
                 'message' => trans('messages.Delete'),
@@ -81,7 +82,11 @@ class GradeController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
-
-
+    }
+    public function gradesTeachers($id)
+    {
+        $grade = Grade::findOrFail($id);
+        $teachers = $grade->teachers;
+        return view('pages.grades.teachers.index', compact('teachers'));
     }
 }
