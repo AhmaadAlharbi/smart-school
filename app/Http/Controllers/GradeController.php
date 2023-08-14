@@ -89,4 +89,10 @@ class GradeController extends Controller
         $teachers = $grade->teachers;
         return view('pages.grades.teachers.index', compact('teachers'));
     }
+    public function gradesSubjects($id)
+    {
+        $grade = Grade::findOrFail($id);
+        $subjects = $grade->subjects;
+        return view('pages.Subjects.index', compact('subjects'));
+    }
 }

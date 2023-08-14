@@ -43,9 +43,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>اسم المادة</th>
-                                    <th>المرحلة الدراسية</th>
-                                    <th>الصف الدراسي</th>
-                                    <th>اسم المعلم</th>
+                                    <th>التخصص</th>
                                     <th>العمليات</th>
                                 </tr>
                             </thead>
@@ -54,10 +52,11 @@
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
                                     <td>{{$subject->name}}</td>
-                                    <td>{{$subject->grade->Name}}</td>
-                                    <td>{{$subject->classroom->Name_Class}}</td>
-                                    <td>{{$subject->teacher->Name}}</td>
+                                    <td>{{$subject->department->Name}}</td>
                                     <td>
+                                    <td class="text-end font-medium">
+                                        <a href="" class="ti-btn rounded-full ti-btn-ghost-primary">
+                                            teachers</a>
                                         <a href="{{route('subjects.edit',$subject->id)}}" class="btn btn-info btn-sm"
                                             role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"

@@ -51,9 +51,39 @@
                                     <input type="text" name="Name_en"
                                         class="ti-form-input border border-gray-300 rounded-md p-2 w-full">
                                 </div>
+                                <div class="mb-4">
+                                    <label for="title" class="block mb-1">القسم | Department</label>
+                                    <select class="ti-form-select border border-gray-300 rounded-md p-2 w-full"
+                                        name="specialization_id">
+                                        <option selected disabled>{{ trans('Parent_trans.Choose') }}...</option>
+                                        @foreach ($specializations as $specialization)
+                                        <option value="{{ $specialization->id }}">{{ $specialization->Name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col my-2">
+                                    <label for="address" class="block text-gray-700 text-sm mb-2">Grades</label>
+                                    <ul class="max-w-sm flex flex-col">
+                                        @foreach($grades as $grade)
+                                        <li class="ti-list-group bg-white text-gray-800">
+                                            <div class="relative flex items-start w-full">
+                                                <div class="flex items-center h-5">
+                                                    <input id="hs-list-group-item-checkbox-1" name="grades[]"
+                                                        type="checkbox" class="ti-form-checkbox" value="{{$grade->id}}">
+                                                </div>
+                                                <label for="hs-list-group-item-checkbox-1"
+                                                    class="ltr:ml-2.5 rtl:mr-2.5 block w-full text-sm text-gray-600">
+                                                    {{$grade->Name}}
+                                                </label>
+                                            </div>
+                                        </li>
+                                        @endforeach
+
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="grid grid-cols-3 gap-4">
+                            {{-- <div class="grid grid-cols-3 gap-4">
                                 <div class="mb-4">
                                     <label for="inputState" class="block">المرحلة الدراسية</label>
                                     <select class="ti-form-select border border-gray-300 rounded-md p-2 w-full"
@@ -81,7 +111,7 @@
                                         @endforeach
                                     </select>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <button class="bg-green-500 text-white rounded-md px-4 py-2" type="submit">حفظ
                                 البيانات</button>

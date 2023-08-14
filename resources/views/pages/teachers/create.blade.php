@@ -125,6 +125,7 @@
                                     <button class="ti-btn ti-btn-primary"
                                         type="submit">{{trans('main_trans.add_teacher')}}</button>
                                 </div>
+                            </div>
                         </form>
                     </div>
                 </div>

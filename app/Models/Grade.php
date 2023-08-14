@@ -30,4 +30,8 @@ class Grade extends Model
     {
         return $this->belongsToMany('App\Models\Teacher', 'grade_teacher');
     }
+    public function subjects()
+    {
+        return $this->belongsToMany('App\Models\Subject', 'grade_subject');
+    }
 }

@@ -137,6 +137,9 @@
                                                                 <td>{{$grade->Name}}</td>
                                                                 <td>{{$grade->Notes}}</td>
                                                                 <td class="text-end font-medium">
+                                                                    <a href="{{route('grades.subjects',$grade->id)}}"
+                                                                        class="ti-btn rounded-full ti-btn-ghost-warning">
+                                                                        subjects</a>
                                                                     <a href="{{route('grades.teachers',$grade->id)}}"
                                                                         class="ti-btn rounded-full ti-btn-ghost-primary">
                                                                         teachers</a>

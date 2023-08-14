@@ -46,6 +46,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/', [DashboardsController::class, 'index']);
     Route::resource('grades', GradeController::class);
     Route::get('/grades/{grade_id}/teachers', [GradeController::class, 'gradesTeachers'])->name('grades.teachers');
+    Route::get('/grades/{grade_id}/subjects', [GradeController::class, 'gradesSubjects'])->name('grades.subjects');
     Route::resource('classrooms', ClassroomController::class);
     Route::resource('sections', SectionController::class);
     Route::resource('students', StudentController::class);

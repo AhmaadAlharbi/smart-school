@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subject;
-use Illuminate\Http\Request;
 use App\Models\Grade;
+use App\Models\Subject;
 use App\Models\Teacher;
+use Illuminate\Http\Request;
+use App\Models\Specialization;
 
 class SubjectController extends Controller
 {
@@ -19,7 +20,8 @@ class SubjectController extends Controller
     {
         $grades = Grade::get();
         $teachers = Teacher::get();
-        return view('pages.Subjects.create', compact('grades', 'teachers'));
+        $specializations = Specialization::all();
+        return view('pages.Subjects.create', compact('grades', 'teachers', 'specializations'));
     }
 
 
@@ -28,10 +30,13 @@ class SubjectController extends Controller
         try {
             $subjects = new Subject();
             $subjects->name = ['en' => $request->Name_en, 'ar' => $request->Name_ar];
-            $subjects->grade_id = $request->Grade_id;
-            $subjects->classroom_id = $request->Class_id;
-            $subjects->teacher_id = 1;
+            $subjects->specialization_id = $request->specialization_id;
+            // $subjects->grade_id = $request->Grade_id;
+            // $subjects->classroom_id = $request->Class_id;
+            // $subjects->teacher_id = 1;
             $subjects->save();
+            $subjects->grades()->attach($request->grades);
+
             toastr()->success(trans('messages.success'));
             return redirect()->route('subjects.create');
         } catch (\Exception $e) {

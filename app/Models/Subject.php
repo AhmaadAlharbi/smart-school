@@ -20,7 +20,10 @@ class Subject extends Model
     {
         return $this->belongsTo('App\Models\Grade', 'grade_id');
     }
-
+    public function grades()
+    {
+        return $this->belongsToMany('App\Models\Grade', 'grade_subject');
+    }
     // جلب اسم الصفوف الدراسية
     public function classroom()
     {
@@ -31,5 +34,10 @@ class Subject extends Model
     public function teacher()
     {
         return $this->belongsTo('App\Models\Teacher', 'teacher_id');
+    }
+    //
+    public function department()
+    {
+        return $this->belongsTo('App\Models\Specialization', 'specialization_id');
     }
 }
