@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
+
 use App\Models\Grade;
 use App\Models\Gender;
 use App\Models\Teacher;
@@ -15,12 +17,15 @@ class TeacherController extends Controller
         $teachers = Teacher::all();
         return view('pages.teachers.index', compact('teachers'));
     }
+
     public function create()
     {
+        $locale = App::currentLocale();
         $specializations = Specialization::all();
         $genders = Gender::all();
         $grades = Grade::all();
-        return view('pages.teachers.create', compact('specializations', 'genders', 'grades'));
+        $subjects = [];
+        return view('pages.teachers.create', compact('specializations', 'genders', 'grades', 'subjects', 'locale'));
     }
     public function store(Request $request)
     {
@@ -34,6 +39,7 @@ class TeacherController extends Controller
             $Teachers->Address = $request->Address;
             $Teachers->save();
             $Teachers->grades()->attach($request->grades);
+            $Teachers->subjects()->attach($request->selected_subjects);
 
             toastr()->success(trans('messages.success'));
             return redirect()->route('teachers.create');

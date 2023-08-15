@@ -55,7 +55,8 @@
                                     <td>{{$subject->department->Name}}</td>
                                     <td>
                                     <td class="text-end font-medium">
-                                        <a href="" class="ti-btn rounded-full ti-btn-ghost-primary">
+                                        <a href="{{route('subjects.grades',$subject->id)}}"
+                                            class="ti-btn rounded-full ti-btn-ghost-primary">
                                             teachers</a>
                                         <a href="{{route('subjects.edit',$subject->id)}}" class="btn btn-info btn-sm"
                                             role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>

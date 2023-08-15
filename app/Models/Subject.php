@@ -35,6 +35,10 @@ class Subject extends Model
     {
         return $this->belongsTo('App\Models\Teacher', 'teacher_id');
     }
+    public function teachers()
+    {
+        return $this->belongsToMany('App\Models\Teacher', 'subject_teacher');
+    }
     //
     public function department()
     {

@@ -36,7 +36,6 @@ class SubjectController extends Controller
             // $subjects->teacher_id = 1;
             $subjects->save();
             $subjects->grades()->attach($request->grades);
-
             toastr()->success(trans('messages.success'));
             return redirect()->route('subjects.create');
         } catch (\Exception $e) {
@@ -79,5 +78,16 @@ class SubjectController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+    }
+    public function subjectsTeachers($id)
+    {
+        $subject = Subject::findOrFail($id);
+        $teachers =  $subject->teachers;
+        return view('pages.teachers.index', compact('teachers'));
+    }
+    public function getSubjectDepartment($id)
+    {
+        $subjects = Subject::where('specialization_id', $id)->get();
+        return $subjects;
     }
 }

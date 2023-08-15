@@ -58,12 +58,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('Payment_students', PaymentStudentController::class);
     Route::resource('Attendance', AttendanceController::class);
     Route::resource('subjects',  \App\Http\Controllers\SubjectController::class);
+    Route::get('/subjects/{subject_id}/teachers', [SubjectController::class, 'subjectsTeachers'])->name('subjects.grades');
     Route::resource('teachers', TeacherController::class);
     Route::view('/add_parent', 'livewire.show_Form');
     Route::get('/classes/{id}', [SectionController::class, 'getclasses']);
     Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
     Route::get('/Get_Sections/{id}', [StudentController::class, 'Get_Sections']);
-
+    Route::get('/subject/get-department/{id}', [SubjectController::class, 'getSubjectDepartment'])->name('subject.getDepartment');
     //find sections classes
     Route::get('/sections/grade/{id}', [SectionController::class, 'getSectionInGrade'])->name('sections.grade');
     Route::get('/dashboard', function () {
