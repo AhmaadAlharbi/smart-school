@@ -55,7 +55,7 @@
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
                                     <td>{{$teacher->Name}}</td>
-                                    <td>{{$teacher->Specialization_id}}</td>
+                                    <td>{{$teacher->specializations->Name}}</td>
                                     <td>{{$teacher->Joining_Date}}</td>
                                     <td>
                                         <a href="{{route('teachers.edit',$teacher)}}" class="ti-btn ti-btn-soft-success"

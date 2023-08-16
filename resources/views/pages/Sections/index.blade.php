@@ -168,7 +168,14 @@
                                                                 </td>
                                                                 <td class="text-start font-medium">
 
-
+                                                                    {{-- <a
+                                                                        class="ti-btn rounded-full ti-btn-ghost-warning"
+                                                                        href="{{route('sections.teachers',$section->id)}}">teachers</a>
+                                                                    --}}
+                                                                    <a href="{{route('sectionsAndTeachers',$section->id)}}"
+                                                                        class="ti-btn bg-pink-500 text-white hover:bg-pink-600 focus:ring-pink-500">
+                                                                        Subjects & teacher
+                                                                    </a>
                                                                     <button type="button"
                                                                         class="ti-btn rounded-full ti-btn-ghost-success"
                                                                         data-hs-overlay="#edit{{ $section->id }}"
@@ -329,7 +336,7 @@
                                 <span class="text-red-500 block">{{ $errors->first('Class_id') }}</span>
                                 @endif
                             </div>
-                            <div class="my-5 py-5">
+                            <div class="my-5 py-20">
                                 <select class="ti-form-select" data-trigger id="choices-single-groups" multiple
                                     name="teacher_id[]">
                                     <option value="">Choose a teacher</option>

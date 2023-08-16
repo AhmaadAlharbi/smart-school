@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Grade;
 use App\Models\Section;
+use App\Models\Subject;
 use App\Models\Teacher;
 use App\Models\Classroom;
 use Illuminate\Http\Request;
@@ -119,5 +120,72 @@ class SectionController extends Controller
         $sections_first_grade = Section::where('Grade_id', $Grade->id)->get();
         $list_Grades = Grade::all();
         return view('pages.Sections.sections_grade', compact('Grades', 'Grade', 'list_Grades', 'sections_first_grade'));
+    }
+    // public function sectionsTeachers($id)
+    // {
+    //     $section = Section::findOrFail($id);
+    //     $teachers = $section->teachers;
+    //     return view('Pages.teachers.index', compact('teachers'));
+    // }
+    public function sectionsAndTeachers($id)
+    {
+        // Find the section and its associated grade
+        $section = Section::findOrFail($id);
+        $grade = $section->grades;
+        // Retrieve teachers and subjects associated with the grade
+        $teachers = $grade->teachers;
+        $subjects = $grade->subjects;
+        // Retrieve all departments for dropdown selection
+        $departments = Specialization::all();
+        // Pass data to the view
+        return view('Pages.Sections.set_subjects_teachers', [
+            'section' => $section,
+            'grade' => $grade,
+            'teachers' => $teachers,
+            'subjects' => $subjects,
+            'departments' => $departments,
+        ]);
+    }
+    public function submitSectionsAndTeachers(Request $request, $id)
+    {
+        // Wrap the operations in a transaction
+        try {
+            DB::beginTransaction();
+
+            $section = Section::findOrFail($id);
+
+            // Sync the subjects and teachers for the section
+            $section->subjects()->sync($request->subjects);
+            $section->teachers()->sync($request->teachers);
+
+            DB::commit(); // Commit the transaction
+            toastr()->success(trans('messages.success'));
+        } catch (Exception $e) {
+            DB::rollback(); // Rollback the transaction on error
+            toastr()->error('An error occurred.');
+        }
+
+        return back();
+    }
+    public function updateSectionsAndTeachers(Request $request, $id)
+    {
+        // Wrap the operations in a transaction
+        try {
+            DB::beginTransaction();
+
+            $section = Section::findOrFail($id);
+
+            // Sync the subjects and teachers for the section
+            $section->subjects()->syncWithoutDetaching($request->subjects);
+            $section->teachers()->syncWithoutDetaching($request->teachers);
+
+            DB::commit(); // Commit the transaction
+            toastr()->success(trans('messages.success'));
+        } catch (Exception $e) {
+            DB::rollback(); // Rollback the transaction on error
+            toastr()->error('An error occurred.');
+        }
+
+        return back();
     }
 }

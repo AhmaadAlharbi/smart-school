@@ -49,6 +49,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/grades/{grade_id}/subjects', [GradeController::class, 'gradesSubjects'])->name('grades.subjects');
     Route::resource('classrooms', ClassroomController::class);
     Route::resource('sections', SectionController::class);
+    // Route::get('/sections/{section_id}/teachers', [SectionController::class, 'sectionsTeachers'])->name('sections.teachers');
+    Route::get('/section/{section_id}/add-teachers&subjects', [SectionController::class, 'sectionsAndTeachers'])->name('sectionsAndTeachers');
+    Route::post('/section/{section_id}/add-teachers&subjects', [SectionController::class, 'submitSectionsAndTeachers'])->name('submitSectionsAndTeachers');
+    Route::post('/section/{section_id}/update-teachers&subjects', [SectionController::class, 'updateSectionsAndTeachers'])->name('updateSectionsAndTeachers');
+
     Route::resource('students', StudentController::class);
     Route::resource('promotion', \App\Http\Controllers\PromotionController::class);
     Route::resource('fees', FeeController::class);
