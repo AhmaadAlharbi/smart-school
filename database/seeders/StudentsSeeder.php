@@ -15,49 +15,26 @@ class StudentsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('students')->insert([
-            [
-                'name' => json_encode(['en' => 'Yousef ahamd ', 'ar' => ' يوسف احمد']),
-                'gender_id' => 1, // Assuming gender ID
-                'nationalitie_id' => 1, // Assuming nationality ID
-                'blood_id' => 1, // Assuming blood type ID
-                'Date_Birth' => '2005-06-15',
-                'Grade_id' => 1, // Assuming grade ID
-                'Classroom_id' => 1, // Assuming classroom ID
-                'section_id' => 1, // Assuming section ID
-                'parent_id' => 1, // Assuming parent ID
+        $arabicNames = ['يوسف احمد', 'زيد محمد', 'عيسي محمد', 'علي أحمد', 'محمد زياد', 'أحمد يوسف', 'عبدالله زين', 'مصطفى خالد', 'أمين علي', 'عبدالرحمن جمال'];
+
+        $numberOfRecords = 10;
+
+        for ($i = 1; $i <= $numberOfRecords; $i++) {
+            $studentArabicName = $arabicNames[array_rand($arabicNames)];
+            DB::table('students')->insert([
+                'name' => json_encode(['en' => 'Student Name ' . $i, 'ar' => $studentArabicName]),
+                'gender_id' => rand(1, 2), // Assuming gender IDs 1 and 2
+                'nationalitie_id' => rand(1, 2), // Assuming nationality IDs
+                'blood_id' => rand(1, 2), // Assuming blood type IDs
+                'Date_Birth' => '2005-06-15', // Modify the birthdate as needed
+                'Grade_id' => rand(1, 2), // Assuming grade IDs
+                'Classroom_id' => rand(1, 3), // Assuming classroom IDs
+                'section_id' => rand(1, 3), // Assuming section IDs
+                'parent_id' => rand(1, 10), // Assuming parent IDs
                 'academic_year' => '2023/2024',
                 'created_at' => now(),
                 'updated_at' => now(),
-            ],
-            [
-                'name' => json_encode(['en' => 'Zaid mohammed', 'ar' => 'زيد محمد']),
-                'gender_id' => 2, // Assuming gender ID
-                'nationalitie_id' => 2, // Assuming nationality ID
-                'blood_id' => 2, // Assuming blood type ID
-                'Date_Birth' => '2006-07-20',
-                'Grade_id' => 1, // Assuming grade ID
-                'Classroom_id' => 1, // Assuming classroom ID
-                'section_id' => 1, // Assuming section ID
-                'parent_id' => 2, // Assuming parent ID
-                'academic_year' => '2023/2024',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'name' => json_encode(['en' => 'Eissa Mohammed', 'ar' => 'عيسي محمد']),
-                'gender_id' => 2, // Assuming gender ID
-                'nationalitie_id' => 2, // Assuming nationality ID
-                'blood_id' => 2, // Assuming blood type ID
-                'Date_Birth' => '2006-07-20',
-                'Grade_id' => 1, // Assuming grade ID
-                'Classroom_id' => 1, // Assuming classroom ID
-                'section_id' => 1, // Assuming section ID
-                'parent_id' => 2, // Assuming parent ID
-                'academic_year' => '2023/2024',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-        ]);
+            ]);
+        }
     }
 }

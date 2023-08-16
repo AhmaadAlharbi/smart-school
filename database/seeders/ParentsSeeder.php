@@ -17,52 +17,36 @@ class ParentsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('my__parents')->insert([
-            [
-                'Name_Father' => json_encode(['en' => 'Mohammed Alharbi', 'ar' => 'محمد الحربي']),
-                'National_ID_Father' => '9658745233',
-                'Passport_ID_Father' => '1236544123',
-                'Phone_Father' => '1234567890',
+        $arabicNames = ['أحمد', 'محمد', 'علي', 'عمر', 'محمود', 'ياسين', 'أيمن', 'خالد', 'صالح', 'فهد'];
+
+        $numberOfRecords = 10;
+
+        for ($i = 1; $i <= $numberOfRecords; $i++) {
+            $fatherArabicName = $arabicNames[array_rand($arabicNames)];
+            $motherArabicName = $arabicNames[array_rand($arabicNames)];
+
+            DB::table('my__parents')->insert([
+                'Name_Father' => json_encode(['en' => 'Father Name ' . $i, 'ar' => $fatherArabicName]),
+                'National_ID_Father' => 'F-NID-' . $i,
+                'Passport_ID_Father' => 'F-Passport-' . $i,
+                'Phone_Father' => 'F-Phone-' . $i,
                 'Job_Father' => json_encode(['en' => 'Engineer', 'ar' => 'مهندس']),
-                'Nationality_Father_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
-                'Blood_Type_Father_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
-                'Religion_Father_id' => Religion::pluck('id')->random(), // Assuming religion ID
-                'Address_Father' => '123 Main St, City',
-                'Name_Mother' => json_encode(['en' => 'Aloya', 'ar' => 'عالية']),
-                'National_ID_Mother' => '7452154796',
-                'Passport_ID_Mother' => '23146879665',
-                'Phone_Mother' => '9876543210',
+                'Nationality_Father_id' => rand(1, 10), // Replace with valid IDs
+                'Blood_Type_Father_id' => rand(1, 5),  // Replace with valid IDs
+                'Religion_Father_id' => rand(1, 3),    // Replace with valid IDs
+                'Address_Father' => 'Father Address ' . $i,
+                'Name_Mother' => json_encode(['en' => 'Mother Name ' . $i, 'ar' => $motherArabicName]),
+                'National_ID_Mother' => 'M-NID-' . $i,
+                'Passport_ID_Mother' => 'M-Passport-' . $i,
+                'Phone_Mother' => 'M-Phone-' . $i,
                 'Job_Mother' => json_encode(['en' => 'Teacher', 'ar' => 'معلمة']),
-                'Nationality_Mother_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
-                'Blood_Type_Mother_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
-                'Religion_Mother_id' => Religion::pluck('id')->random(), // Assuming religion ID
-                'Address_Mother' => '456 Elm St, City',
+                'Nationality_Mother_id' => rand(1, 10), // Replace with valid IDs
+                'Blood_Type_Mother_id' => rand(1, 5),  // Replace with valid IDs
+                'Religion_Mother_id' => rand(1, 3),    // Replace with valid IDs
+                'Address_Mother' => 'Mother Address ' . $i,
                 'created_at' => now(),
                 'updated_at' => now(),
-            ],
-            [
-                'Name_Father' => json_encode(['en' => 'Ahmad Zaid', 'ar' => 'أحمد زيد']),
-                'National_ID_Father' => '123456789',
-                'Passport_ID_Father' => 'ABC123',
-                'Phone_Father' => '1234567890',
-                'Job_Father' => json_encode(['en' => 'Engineer', 'ar' => 'مهندس']),
-                'Nationality_Father_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
-                'Blood_Type_Father_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
-                'Religion_Father_id' => Religion::pluck('id')->random(), // Assuming religion ID
-                'Address_Father' => '123 Main St, City',
-                'Name_Mother' => json_encode(['en' => 'ِAbrar', 'ar' => 'أبرار']),
-                'National_ID_Mother' => '987654321',
-                'Passport_ID_Mother' => 'XYZ789',
-                'Phone_Mother' => '9876543210',
-                'Job_Mother' => json_encode(['en' => 'Teacher', 'ar' => 'معلمة']),
-                'Nationality_Mother_id' => Nationalitie::pluck('id')->random(), // Assuming nationality ID
-                'Blood_Type_Mother_id' => Type_Blood::pluck('id')->random(), // Assuming blood type ID
-                'Religion_Mother_id' => Religion::pluck('id')->random(), // Assuming religion ID
-                'Address_Mother' => '456 Elm St, City',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            // Add more parent records as needed
-        ]);
+            ]);
+        }
     }
 }

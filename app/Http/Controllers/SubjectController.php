@@ -83,11 +83,18 @@ class SubjectController extends Controller
     {
         $subject = Subject::findOrFail($id);
         $teachers =  $subject->teachers;
-        return view('pages.teachers.index', compact('teachers'));
+        return view('pages.teachers.index', compact('teachers', 'subject'));
     }
     public function getSubjectDepartment($id)
     {
         $subjects = Subject::where('specialization_id', $id)->get();
         return $subjects;
+    }
+    public function setTeacher($id)
+    {
+        $subject = Subject::findOrFail($id);
+        $grades = Grade::all();
+        $specializations = Specialization::all();
+        return view('Pages.subjects.setTeacher', compact('subject', 'grades', 'specializations'));
     }
 }

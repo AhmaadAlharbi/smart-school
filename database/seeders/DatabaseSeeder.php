@@ -11,10 +11,12 @@ use Database\Seeders\ParentsSeeder;
 use Database\Seeders\SectionsSeeder;
 use Database\Seeders\StudentsSeeder;
 use Database\Seeders\TeachersSeeder;
+use Database\Seeders\SubjectSeeder;
 use Database\Seeders\ClassroomSeeder;
 use Database\Seeders\BloodTableSeeder;
 use Database\Seeders\religionTableSeeder;
 use Database\Seeders\SpecializationsSeeder;
+use Database\Seeders\SubjectTeacherTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -42,5 +44,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ParentsSeeder::class);
         $this->call(StudentsSeeder::class);
         $this->call(TeachersSeeder::class);
+        $this->call(SubjectSeeder::class);
     }
 }

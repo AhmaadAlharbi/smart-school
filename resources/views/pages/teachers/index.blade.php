@@ -40,6 +40,11 @@
                         <a href="{{route('teachers.create')}}" class="ti-btn ti-btn-primary">
                             add teacher
                         </a>
+                        @isset($subject)
+                        <a href="{{route('subjects.setTeacher',$subject->id)}}" class="ti-btn ti-btn-dark">
+                            add teachers to this subject
+                        </a>
+                        @endisset
                         <table class="ti-custom-table ti-custom-table-head ti-striped-table">
                             <thead>
                                 <tr>

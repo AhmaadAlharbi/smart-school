@@ -14,22 +14,24 @@ class TeachersSeeder extends Seeder
      */
     public function run()
     {
-        // Define the data to be inserted
-        $teachers = [
-            [
+        $arabicNames = ['محمد', 'أحمد', 'علي', 'عمر', 'خالد', 'يوسف', 'زيد', 'طارق', 'عبدالله', 'جمال'];
 
-                'Name' => 'Teacher 1',
-                'Specialization_id' => 1, // Assuming the specialization ID
-                'Gender_id' => 1, // Assuming the gender ID
+        $teachers = [];
+
+        for ($i = 1; $i <= 10; $i++) {
+            $teacherArabicName = $arabicNames[array_rand($arabicNames)];
+
+            $teachers[] = [
+                'Name' => json_encode(['en' => 'Teacher ' . $i, 'ar' => 'مدرس ' . $teacherArabicName]),
+                'Specialization_id' => rand(1, 4), // Assuming specialization IDs
+                'Gender_id' => rand(1, 2), // Assuming gender IDs
                 'Joining_Date' => '2022-01-01',
-                'Address' => 'Teacher 1 Address',
+                'Address' => 'Teacher ' . $i . ' Address',
                 'created_at' => now(),
                 'updated_at' => now(),
-            ],
-            // Add more teacher data as needed
-        ];
+            ];
+        }
 
-        // Insert the data into the teachers table
         DB::table('teachers')->insert($teachers);
     }
 }
