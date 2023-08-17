@@ -98,4 +98,17 @@ class SubjectController extends Controller
 
         return view('Pages.subjects.setTeacher', compact('subject', 'grades', 'specializations'));
     }
+    public function deleteTeacher($subject_id, $teacher_id)
+    {
+        try {
+            $subject = Subject::findOrFail($subject_id);
+            $subject->teachers()->detach($teacher_id);
+
+            toastr()->success(trans('messages.success'));
+        } catch (Exception $e) {
+            toastr()->error('An error occurred.');
+        }
+
+        return back();
+    }
 }

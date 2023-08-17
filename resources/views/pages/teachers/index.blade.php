@@ -63,15 +63,25 @@
                                     <td>{{$teacher->specializations->Name}}</td>
                                     <td>{{$teacher->Joining_Date}}</td>
                                     <td>
-                                        <a href="{{route('teachers.edit',$teacher)}}" class="ti-btn ti-btn-soft-success"
-                                            role=" button" aria-pressed="true">Edit</a>
+                                        @if(isset($subject))
                                         <button type="button" data-target="#delete{{ $teacher->id }}"
                                             data-hs-overlay="#delete{{ $teacher->id }}"
-                                            class="ti-btn  ti-btn-soft-danger">
-                                            {{trans('Grades_trans.Delete')}}
+                                            class="ti-btn ti-btn-soft-danger">
+                                            Remove Teacher
                                         </button>
-
+                                        @else
+                                        <a href="{{ route('teachers.edit', $teacher) }}"
+                                            class="ti-btn ti-btn-soft-success" role="button" aria-pressed="true">
+                                            Edit
+                                        </a>
+                                        <button type="button" data-target="#delete{{ $teacher->id }}"
+                                            data-hs-overlay="#delete{{ $teacher->id }}"
+                                            class="ti-btn ti-btn-soft-danger">
+                                            {{ trans('Grades_trans.Delete') }}
+                                        </button>
+                                        @endif
                                     </td>
+
                                 </tr>
                                 {{--delete section --}}
                                 <div id="delete{{ $teacher->id }}" class="hs-overlay ti-modal hidden">
@@ -93,15 +103,27 @@
                                                 </button>
                                             </div>
                                             <div class="ti-modal-body">
-
-                                                <form action="{{ route('teachers.destroy', 'test') }}" method="post">
+                                                <!-- Determine the action URL based on whether a subject is set or not -->
+                                                <form
+                                                    action="{{ isset($subject) ? route('subjects.destroy_teacher', ['subject_id' => $subject->id, 'teacher_id' => $teacher->id]) : route('teachers.destroy', 'test') }}"
+                                                    method="post">
                                                     @method('DELETE')
+                                                    <!-- Use method spoofing to indicate the DELETE request -->
                                                     @csrf
+                                                    <!-- CSRF protection for security -->
+
+                                                    <!-- Display a warning message to confirm the action -->
                                                     {{ trans('Grades_trans.Warning_Grade') }}
+
+                                                    <!-- Store the teacher's ID as a hidden input field -->
                                                     <input id="id" type="hidden" name="id" class="form-control"
                                                         value="{{ $teacher->id }}">
 
                                             </div>
+
+
+
+
                                             <div class="ti-modal-footer">
                                                 <button type="button"
                                                     class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
