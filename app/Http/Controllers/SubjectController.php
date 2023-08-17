@@ -95,6 +95,7 @@ class SubjectController extends Controller
         $subject = Subject::findOrFail($id);
         $grades = Grade::all();
         $specializations = Specialization::all();
+
         return view('Pages.subjects.setTeacher', compact('subject', 'grades', 'specializations'));
     }
 }

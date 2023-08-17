@@ -37,18 +37,8 @@
             <div class="col-span-12">
                 <div class="box">
                     <div class="box-body">
-                        <form action="" method="POST">
-                            <div>
-                                <input type="text" value="{{$subject->name}}">
-                            </div>
-                            <div>
-                                <select name="" id="">
-                                    @foreach($grades as $grade)
-                                    <option value="{{$grade->id}}">{{$grade->Name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </form>
+                        @livewire('set-teacher-to-subject', ['subject_id' => $subject->id])
+
                     </div>
                 </div>
             </div>
