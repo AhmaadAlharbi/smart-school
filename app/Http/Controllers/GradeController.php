@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Grade;
 use App\Models\GradeTeacher;
 use Illuminate\Http\Request;
+use App\Models\Specialization;
 
 class GradeController extends Controller
 {
@@ -87,12 +88,31 @@ class GradeController extends Controller
     {
         $grade = Grade::findOrFail($id);
         $teachers = $grade->teachers;
-        return view('pages.grades.teachers.index', compact('teachers'));
+        return view('pages.teachers.index', compact('teachers', 'grade'));
+    }
+    public function setTeacher($id)
+    {
+        $grade = Grade::findOrFail($id);
+        $grades = Grade::all();
+        $specializations = Specialization::all();
+        return view('Pages.Grades.setTeacher', compact('grade', 'grades', 'specializations'));
     }
     public function gradesSubjects($id)
     {
         $grade = Grade::findOrFail($id);
         $subjects = $grade->subjects;
         return view('pages.Subjects.index', compact('subjects'));
+    }
+    public function deleteTeacher($grade_id, $teacher_id)
+    {
+        try {
+            $grade = Grade::findOrFail($grade_id);
+            $grade->teachers()->detach($teacher_id);
+            toastr()->success(trans('messages.success'));
+        } catch (Exception $e) {
+            toastr()->error('An error occurred.');
+        }
+
+        return back();
     }
 }

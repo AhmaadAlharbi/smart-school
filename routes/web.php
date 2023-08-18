@@ -47,6 +47,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::resource('grades', GradeController::class);
     Route::get('/grades/{grade_id}/teachers', [GradeController::class, 'gradesTeachers'])->name('grades.teachers');
     Route::get('/grades/{grade_id}/subjects', [GradeController::class, 'gradesSubjects'])->name('grades.subjects');
+    Route::get('/grades/{grade_id}/teachers/add', [GradeController::class, 'setTeacher'])->name('grades.setTeacher');
+    Route::delete('/grades/{grade_id}/delete-teacher/{teacher_id}', [GradeController::class, 'deleteTeacher'])->name('grades.destroy_teacher');
+
     Route::resource('classrooms', ClassroomController::class);
     Route::resource('sections', SectionController::class);
     // Route::get('/sections/{section_id}/teachers', [SectionController::class, 'sectionsTeachers'])->name('sections.teachers');

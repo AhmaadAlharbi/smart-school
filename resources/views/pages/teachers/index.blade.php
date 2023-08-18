@@ -37,14 +37,22 @@
             <div class="col-span-12">
                 <div class="box">
                     <div class="box-body">
-                        <a href="{{route('teachers.create')}}" class="ti-btn ti-btn-primary">
-                            add teacher
+                        <a href="{{ route('teachers.create') }}" class="ti-btn ti-btn-primary">
+                            New Teacher
                         </a>
+
                         @isset($subject)
-                        <a href="{{route('subjects.setTeacher',$subject->id)}}" class="ti-btn ti-btn-dark">
-                            add teachers to this subject
+                        <a href="{{ route('subjects.setTeacher', $subject->id) }}" class="ti-btn ti-btn-dark">
+                            Add Teachers to Subject
                         </a>
                         @endisset
+
+                        @isset($grade)
+                        <a href="{{ route('grades.setTeacher', $grade->id) }}" class="ti-btn ti-btn-success">
+                            Add Teachers to Grade
+                        </a>
+                        @endisset
+
                         <table class="ti-custom-table ti-custom-table-head ti-striped-table">
                             <thead>
                                 <tr>
@@ -64,6 +72,12 @@
                                     <td>{{$teacher->Joining_Date}}</td>
                                     <td>
                                         @if(isset($subject))
+                                        <button type="button" data-target="#delete{{ $teacher->id }}"
+                                            data-hs-overlay="#delete{{ $teacher->id }}"
+                                            class="ti-btn ti-btn-soft-danger">
+                                            Remove Teacher
+                                        </button>
+                                        @elseif(isset($grade))
                                         <button type="button" data-target="#delete{{ $teacher->id }}"
                                             data-hs-overlay="#delete{{ $teacher->id }}"
                                             class="ti-btn ti-btn-soft-danger">
@@ -104,14 +118,17 @@
                                             </div>
                                             <div class="ti-modal-body">
                                                 <!-- Determine the action URL based on whether a subject is set or not -->
-                                                <form
-                                                    action="{{ isset($subject) ? route('subjects.destroy_teacher', ['subject_id' => $subject->id, 'teacher_id' => $teacher->id]) : route('teachers.destroy', 'test') }}"
-                                                    method="post">
+                                                <form action="@if(isset($subject))
+                                                {{ route('subjects.destroy_teacher', ['subject_id' => $subject->id, 'teacher_id' => $teacher->id]) }}
+                                              @elseif(isset($grade))
+                                                {{ route('grades.destroy_teacher', ['grade_id' => $grade->id, 'teacher_id' => $teacher->id]) }}
+                                              @else
+                                                {{ route('teachers.destroy', 'test') }}
+                                              @endif" method="post">
                                                     @method('DELETE')
                                                     <!-- Use method spoofing to indicate the DELETE request -->
                                                     @csrf
                                                     <!-- CSRF protection for security -->
-
                                                     <!-- Display a warning message to confirm the action -->
                                                     {{ trans('Grades_trans.Warning_Grade') }}
 
@@ -120,10 +137,6 @@
                                                         value="{{ $teacher->id }}">
 
                                             </div>
-
-
-
-
                                             <div class="ti-modal-footer">
                                                 <button type="button"
                                                     class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary"
