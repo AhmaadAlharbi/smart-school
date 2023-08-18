@@ -38,6 +38,11 @@
                 <div class="box">
                     <div class="box-body">
                         <a href="{{route('subjects.create')}}" class="ti-btn ti-btn-primary">add</a>
+                        @isset($grade)
+                        <a href="{{ route('grades.setSubject', $grade->id) }}" class="ti-btn ti-btn-success">
+                            Add subjects to Grade
+                        </a>
+                        @endisset
                         <table class="ti-custom-table ti-custom-table-head ti-striped-table">
                             <thead>
                                 <tr>

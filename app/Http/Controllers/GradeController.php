@@ -101,7 +101,7 @@ class GradeController extends Controller
     {
         $grade = Grade::findOrFail($id);
         $subjects = $grade->subjects;
-        return view('pages.Subjects.index', compact('subjects'));
+        return view('pages.Subjects.index', compact('subjects', 'grade'));
     }
     public function deleteTeacher($grade_id, $teacher_id)
     {
@@ -114,5 +114,12 @@ class GradeController extends Controller
         }
 
         return back();
+    }
+    public function setSubject($id)
+    {
+        $grade = Grade::findOrFail($id);
+        $grades = Grade::all();
+        $specializations = Specialization::all();
+        return view('Pages.Grades.setSubject', compact('grade'));
     }
 }
