@@ -50,20 +50,26 @@ class SubjectController extends Controller
         $subject = Subject::findorfail($id);
         $grades = Grade::get();
         $teachers = Teacher::get();
-        return view('pages.Subjects.edit', compact('subject', 'grades', 'teachers'));
+        $specializations = Specialization::all();
+
+        return view('Pages.Subjects.edit', compact('subject', 'grades', 'teachers', 'specializations'));
     }
 
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
         try {
-            $subjects =  Subject::findorfail($request->id);
-            $subjects->name = ['en' => $request->Name_en, 'ar' => $request->Name_ar];
-            $subjects->grade_id = $request->Grade_id;
-            $subjects->classroom_id = $request->Class_id;
-            $subjects->teacher_id = 1;
-            $subjects->save();
+            $subject = Subject::findOrFail($id);
+
+            $subject->setTranslation('name', 'en', $request->Name_en);
+            $subject->setTranslation('name', 'ar', $request->Name_ar);
+
+            $subject->specialization_id = $request->specialization_id;
+            $subject->grades()->sync($request->grades);
+
+            $subject->save();
+
             toastr()->success(trans('messages.Update'));
-            return redirect()->route('subjects.create');
+            return redirect()->route('subjects.index');
         } catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
         }

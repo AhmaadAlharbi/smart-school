@@ -59,7 +59,7 @@
                                             class="ti-btn rounded-full ti-btn-ghost-primary">
                                             teachers</a>
                                         <a href="{{route('subjects.edit',$subject->id)}}" class="btn btn-info btn-sm"
-                                            role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
+                                            role="button" aria-pressed="true">Edit</a>
                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                                             data-target="#delete_subject{{ $subject->id }}" title="حذف"><i
                                                 class="fa fa-trash"></i></button>
