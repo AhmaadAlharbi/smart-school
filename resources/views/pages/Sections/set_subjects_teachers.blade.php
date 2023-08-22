@@ -59,7 +59,7 @@
                     <div class="box-body">
                         <div>
 
-                            <form class="grid md:grid-cols-3 lg:grid-cols-4"
+                            {{-- <form class="grid md:grid-cols-3 lg:grid-cols-4"
                                 action="{{ route('submitSectionsAndTeachers', $section->id) }}" method="POST">
                                 @csrf
                                 @foreach ($subjects as $subject)
@@ -75,20 +75,66 @@
                                     <div class="teacher-radio-group">
                                         <p>Select a teacher:</p>
                                         @foreach($subject->teachers as $teacher)
-                                        <label>
-                                            <input type="radio" name="teachers[{{ $subject->id }}]"
-                                                value="{{ $teacher->id }}" {{ $savedData->where('subject_id',
+                                        <label class="tr:ml-2 rtl:mr-2 block w-full text-sm text-gray-600">
+                                            <input class="ti-form-radio" type="radio"
+                                                name="teachers[{{ $subject->id }}]" value="{{ $teacher->id }}" {{
+                                                $savedData->where('subject_id',
                                             $subject->id)->pluck('teacher_id')->contains($teacher->id) ? 'checked' : ''
                                             }}>
                                             {{ $teacher->Name }}
                                         </label><br>
                                         @endforeach
+
+
+
+
                                     </div>
                                 </div>
                                 @endforeach
                                 <button type="submit">Submit</button>
-                            </form>
+                            </form> --}}
 
+                            <form class="grid md:grid-cols-3 lg:grid-cols-4"
+                                action="{{ route('submitSectionsAndTeachers', $section->id) }}" method="POST">
+                                @csrf
+                                @foreach ($subjects as $subject)
+                                <div class="box-body">
+                                    <div class="flex items-center mb-4">
+                                        <input class="mx-1 subject-checkbox" type="checkbox" name="subjects[]"
+                                            value="{{ $subject->id }}" id="subject_{{ $subject->id }}" {{
+                                            in_array($subject->id, $savedData->pluck('subject_id')->toArray()) ?
+                                        'checked' : '' }}>
+                                        <label class="box-title" for="subject_{{ $subject->id }}">{{ $subject->name
+                                            }}</label>
+                                    </div>
+
+                                    <ul class="flex flex-col">
+                                        @foreach($subject->teachers as $teacher)
+                                        <li class="ti-list-group bg-white border text-gray-800">
+                                            <div class="relative flex items-start w-full">
+                                                <div class="flex items-center h-5">
+                                                    <input id="hs-list-group-item-radio-{{$teacher->id}}"
+                                                        class="ti-form-radio" type="radio"
+                                                        name="teachers[{{ $subject->id }}]" value="{{ $teacher->id }}"
+                                                        {{ $savedData->where('subject_id',
+                                                    $subject->id)->pluck('teacher_id')->contains($teacher->id) ?
+                                                    'checked' : ''
+                                                    }}>
+                                                </div>
+                                                <label for="hs-list-group-item-radio-{{$teacher->id}}"
+                                                    class="ltr:ml-2 rtl:mr-2 block w-full text-sm text-gray-600">
+                                                    {{ $teacher->Name }}
+                                                </label>
+                                            </div>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endforeach
+                                <button type="submit" class="ti-btn ti-btn-primary">
+                                    submit
+                                </button>
+                            </form>
 
 
 
@@ -109,53 +155,6 @@
 
 @section('scripts')
 
-<script>
-    // Wait for the DOM to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get all subject checkboxes and teacher checkboxes
-        const subjectCheckboxes = document.querySelectorAll(".subject-checkbox");
-        const teacherCheckboxes = document.querySelectorAll(".teacher-checkbox");
 
-        // Add event listeners to subject checkboxes
-        subjectCheckboxes.forEach(subjectCheckbox => {
-            subjectCheckbox.addEventListener("change", function () {
-                // Find the closest container for this subject checkbox
-                const container = this.closest(".box-body");
-                const teachersInContainer = container.querySelectorAll(".teacher-checkbox");
-
-                if (this.checked) {
-                    // Enable teacher checkboxes when a subject is selected
-                    teachersInContainer.forEach(teacherCheckbox => {
-                        teacherCheckbox.disabled = false;
-                    });
-                } else {
-                    // Disable and uncheck teacher checkboxes when the subject is deselected
-                    teachersInContainer.forEach(teacherCheckbox => {
-                        teacherCheckbox.disabled = true;
-                        teacherCheckbox.checked = false; // Uncheck the teacher checkbox
-                    });
-                }
-            });
-        });
-
-        // Add event listeners to teacher checkboxes
-        teacherCheckboxes.forEach(teacherCheckbox => {
-            teacherCheckbox.addEventListener("change", function () {
-                // Get all selected subject checkboxes
-                const selectedSubjects = document.querySelectorAll(".subject-checkbox:checked");
-
-                if (selectedSubjects.length === 0) {
-                    // Show an error alert if no subject is selected
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Please select a subject first.',
-                    });
-                    this.checked = false; // Uncheck the teacher checkbox
-                }
-            });
-        });
-    });
-</script>
 
 @endsection

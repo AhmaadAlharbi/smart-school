@@ -183,6 +183,7 @@ class SectionController extends Controller
 
     public function submitSectionsAndTeachers(Request $request, $id)
     {
+
         try {
             DB::beginTransaction();
             $section = Section::findOrFail($id);
