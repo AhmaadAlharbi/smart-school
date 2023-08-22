@@ -9,6 +9,8 @@ use App\Models\Teacher;
 use App\Models\Classroom;
 use Illuminate\Http\Request;
 use App\Models\Specialization;
+use App\Models\SectionSubjectTeacher;
+
 use Illuminate\Support\Facades\DB;
 
 class SectionController extends Controller
@@ -127,16 +129,45 @@ class SectionController extends Controller
     //     $teachers = $section->teachers;
     //     return view('Pages.teachers.index', compact('teachers'));
     // }
+    // public function sectionsAndTeachers($id)
+    // {
+    //     // Find the section and its associated grade
+    //     $section = Section::findOrFail($id);
+    //     $grade = $section->grades;
+    //     $savedData = SectionSubjectTeacher::where('section_id', $section->id)->get();
+
+    //     // Retrieve teachers and subjects associated with the grade
+    //     $teachers = $grade->teachers;
+    //     $subjects = $grade->subjects;
+    //     // Retrieve all departments for dropdown selection
+    //     $departments = Specialization::all();
+    //     // Pass data to the view
+    //     return view('Pages.Sections.set_subjects_teachers', [
+    //         'section' => $section,
+    //         'grade' => $grade,
+    //         'teachers' => $teachers,
+    //         'subjects' => $subjects,
+    //         'departments' => $departments,
+    //         'savedData' => $savedData
+    //     ]);
+    // }
+
     public function sectionsAndTeachers($id)
     {
         // Find the section and its associated grade
         $section = Section::findOrFail($id);
         $grade = $section->grades;
+        $savedData = SectionSubjectTeacher::where('section_id', $section->id)->get();
+
         // Retrieve teachers and subjects associated with the grade
         $teachers = $grade->teachers;
         $subjects = $grade->subjects;
         // Retrieve all departments for dropdown selection
         $departments = Specialization::all();
+
+        // Initialize submittedSubjects based on request data
+        $submittedSubjects = request()->has('teachers') ? array_keys(request()->teachers) : [];
+
         // Pass data to the view
         return view('Pages.Sections.set_subjects_teachers', [
             'section' => $section,
@@ -144,29 +175,61 @@ class SectionController extends Controller
             'teachers' => $teachers,
             'subjects' => $subjects,
             'departments' => $departments,
+            'savedData' => $savedData,
+            'submittedSubjects' => $submittedSubjects,
         ]);
     }
+
+
     public function submitSectionsAndTeachers(Request $request, $id)
     {
-        // Wrap the operations in a transaction
         try {
             DB::beginTransaction();
-
             $section = Section::findOrFail($id);
 
-            // Sync the subjects and teachers for the section
-            $section->subjects()->sync($request->subjects);
-            $section->teachers()->sync($request->teachers);
+            // Get the submitted subjects and teachers
+            $submittedSubjects = $request->input('subjects');
+            $submittedTeachers = $request->input('teachers', []);
 
-            DB::commit(); // Commit the transaction
+            // Delete records for unchecked subjects and their teachers
+            SectionSubjectTeacher::where('section_id', $section->id)
+                ->whereNotIn('subject_id', $submittedSubjects)
+                ->delete();
+
+            foreach ($submittedSubjects as $subjectId) {
+                $teacherId = isset($submittedTeachers[$subjectId]) ? $submittedTeachers[$subjectId] : null;
+
+                // Only create or update a record if both subject ID and teacher ID are valid
+                if ($subjectId && $teacherId !== null) {
+                    SectionSubjectTeacher::updateOrCreate(
+                        ['section_id' => $section->id, 'subject_id' => $subjectId],
+                        ['teacher_id' => $teacherId]
+                    );
+                }
+            }
+
+            DB::commit();
             toastr()->success(trans('messages.success'));
         } catch (Exception $e) {
-            DB::rollback(); // Rollback the transaction on error
+            DB::rollback();
             toastr()->error('An error occurred.');
         }
 
         return back();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function updateSectionsAndTeachers(Request $request, $id)
     {
         // Wrap the operations in a transaction

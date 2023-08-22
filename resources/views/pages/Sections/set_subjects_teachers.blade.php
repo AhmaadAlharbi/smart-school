@@ -58,35 +58,40 @@
                 <div class="box">
                     <div class="box-body">
                         <div>
+
                             <form class="grid md:grid-cols-3 lg:grid-cols-4"
-                                action="{{route('submitSectionsAndTeachers',$section->id)}}" method="POST">
+                                action="{{ route('submitSectionsAndTeachers', $section->id) }}" method="POST">
                                 @csrf
-                                @foreach($subjects as $subject)
+                                @foreach ($subjects as $subject)
                                 <div class="box-body">
                                     <div class="flex items-center mb-4">
                                         <input class="mx-1 subject-checkbox" type="checkbox" name="subjects[]"
-                                            value="{{ $subject->id }}" id="subject_{{ $subject->id }}">
+                                            value="{{ $subject->id }}" id="subject_{{ $subject->id }}" {{
+                                            in_array($subject->id, $savedData->pluck('subject_id')->toArray()) ?
+                                        'checked' : '' }}>
                                         <label for="subject_{{ $subject->id }}">{{ $subject->name }}</label>
                                     </div>
 
-                                    <ul class="max-w-xs flex flex-col">
+                                    <div class="teacher-radio-group">
+                                        <p>Select a teacher:</p>
                                         @foreach($subject->teachers as $teacher)
-                                        <li class="ti-list-group bg-white text-gray-800">
-                                            <input type="checkbox" id="teacher_{{ $teacher->id }}"
-                                                class="ti-form-checkbox mt-0.5 teacher-checkbox"
-                                                id="hs-disabled-checkbox" name="teachers[]" value="{{ $teacher->id }}"
-                                                disabled>
-                                            <label for="teacher_{{ $teacher->id }}"
-                                                class="text-sm text-gray-500 ltr:ml-2 rtl:mr-2">{{ $teacher->Name
-                                                }}</label>
-                                        </li>
+                                        <label>
+                                            <input type="radio" name="teachers[{{ $subject->id }}]"
+                                                value="{{ $teacher->id }}" {{ $savedData->where('subject_id',
+                                            $subject->id)->pluck('teacher_id')->contains($teacher->id) ? 'checked' : ''
+                                            }}>
+                                            {{ $teacher->Name }}
+                                        </label><br>
                                         @endforeach
-                                    </ul>
+                                    </div>
                                 </div>
                                 @endforeach
-
                                 <button type="submit">Submit</button>
                             </form>
+
+
+
+
                         </div>
 
                     </div>
