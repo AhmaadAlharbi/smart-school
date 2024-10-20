@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 
 class DashboardsController extends Controller
 {
     public function index()
     {
-        return view('pages.index');
+        return view('pages.landing');
     }
     public function index2()
     {
@@ -54,5 +56,11 @@ class DashboardsController extends Controller
     {
         return view('pages.index12');
     }
-    
+    public function adminIndex()
+    {
+        $studentsCount = Student::all()->count();
+        $teachersCount = Teacher::all()->count();
+        $latestStudents = Student::orderBy('id', 'desc')->take(7)->get();
+        return view('dashboard.admin.index', compact('studentsCount', 'teachersCount', 'latestStudents'));
+    }
 }
