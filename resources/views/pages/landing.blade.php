@@ -1,7 +1,55 @@
 @extends('layouts.landing-master')
 
 @section('styles')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
 
+<style>
+    .dynapuff {
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    .dynapuff-normal {
+        font-weight: 400;
+    }
+
+    .dynapuff-bold {
+        font-weight: 700;
+    }
+</style>
+<style>
+    .fredoka-one {
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .float {
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
 <!-- SWIPER CSS -->
 <link rel="stylesheet" href="{{asset('build/assets/libs/swiper/swiper-bundle.min.css')}}">
 
@@ -9,33 +57,99 @@
 
 @section('content')
 
-<div class="main-content landing-main !p-0">
+<div class="main-content landing-main !p-0 ">
 
-    <!-- Start::Home Content -->
-    <div class="landing-wrapper bg-blue-700" id="home">
-        <div class="container lg:pt-40 lg:pb-24 pt-28 pb-12 relative z-10 mx-auto flex items-center justify-center ">
-            <div class="text-center max-w-3xl">
-                <div class="landing-content">
-                    <div class="space-y-6">
-                        <h1 class="leading-tight text-5xl font-semibold text-blue-50">
-                            Your School Will Shine Brightly with
-                            <span class="text-blue-200">Sehab Code!</span>
-                        </h1>
-                        <p class="text-lg text-white/70 font-medium">
-                            Sehab Code provides custom websites for schools that improve communication and make
-                            managing tasks easier. Let us help your school stand out with a professional online
-                            presence.
-                        </p>
+    <!-- Start::Home Content new one -->
+    {{-- <div class="bg-gradient-to-b from-purple-100 via-pink-100 to-yellow-100 min-h-screen py-10">
+        <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-24">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+                    <h1 class="fredoka-one text-5xl lg:text-6xl text-purple-600 leading-tight mb-6">
+                        Your School Will
+                        <span class="block text-pink-500 mt-2">SOAR</span>
+                        <span class="block text-yellow-500 mt-2">with Sahab Code!</span>
+                    </h1>
+                    <p class="nunito text-xl text-gray-700 leading-relaxed mb-8">
+                        We craft delightful websites that make school life a joyful adventure!
+                        Let's give your school a vibrant online home as colorful as your students' imaginations!
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#"
+                            class="fredoka-one py-3 px-8 rounded-full text-white bg-purple-500 hover:bg-purple-600 transition duration-300 inline-flex items-center justify-center text-lg">
+                            See The Magic <i data-feather="star" class="ml-2"></i>
+                        </a>
+                        <a href="#"
+                            class="fredoka-one py-3 px-8 rounded-full text-white bg-pink-500 hover:bg-pink-600 transition duration-300 inline-flex items-center justify-center text-lg">
+                            Start Your Adventure <i data-feather="rocket" class="ml-2"></i>
+                        </a>
                     </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-300 transform rotate-3 rounded-3xl">
+                    </div>
+                    <img src="{{asset('build/assets/img/landing/hero.jpg')}}" alt="Happy kids using a computer"
+                        class="relative rounded-3xl shadow-2xl border-8 border-white float">
 
-                    <!-- Buttons -->
-                    <div class="mt-10 lg:flex justify-center lg:space-x-2 space-y-2 lg:space-y-0 rtl:space-x-reverse">
-                        <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-secondary">
-                            See How it Works <i class="ri-arrow-right-line rtl:rotate-180"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-danger">
-                            Discover More <i class="ri-arrow-right-line rtl:rotate-180"></i>
-                        </a>
+                    <div
+                        class="absolute -top-12 -left-12 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center transform rotate-12">
+                        <i data-feather="sun" class="text-white w-12 h-12"></i>
+                    </div>
+                    <div
+                        class="absolute -bottom-12 -right-12 w-24 h-24 bg-pink-400 rounded-full flex items-center justify-center transform -rotate-12">
+                        <i data-feather="heart" class="text-white w-12 h-12"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            feather.replace()
+        </script>
+    </div> --}}
+    <div class="landing-wrapper bg-gradient-to-b from-blue-100 to-amber-100" id="home">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between lg:pt-40 lg:pb-24 pt-28 pb-12">
+                <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+                    <div class="landing-content max-w-xl mx-auto lg:mx-0">
+                        <div class="space-y-6">
+                            <h1 class="text-4xl lg:text-5xl dynapuff font-bold text-blue-600 leading-relaxed"> Your
+                                School Will SOAR On The Web With <span class="block text-amber-500 mt-2">Sahab
+                                    Code!</span> </h1>
+                            <p class="text-lg text-gray-700 leading-relaxed"> Sahab Code crafts delightful websites for
+                                schools that make communication a breeze and task management child's play. Let's give
+                                your school a shining online presence that's as special as your little learners! </p>
+                        </div> <!-- Buttons -->
+                        <div
+                            class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4">
+                            <a href="javascript:void(0);"
+                                class="py-3 px-6 rounded-full text-white bg-blue-500 hover:bg-blue-600 transition duration-300 inline-flex items-center justify-center dynapuff">
+                                See The Magic <i class="ri-magic-line ml-2"></i> </a> <a href="javascript:void(0);"
+                                class="py-3 px-6 rounded-full text-white bg-amber-500 hover:bg-amber-600 transition duration-300 inline-flex items-center justify-center dynapuff">
+                                Start Your Adventure <i class="ri-rocket-line ml-2"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="lg:w-1/2 relative">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-blue-200 to-amber-200 transform -rotate-3 rounded-xl">
+                    </div> <img alt="Happy kids using a computer" src="{{asset('build/assets/img/landing/hero.jpg')}}"
+                        class="relative rounded-xl shadow-xl max-w-full h-auto border-4 border-white float">
+                </div> --}}
+                <div class="lg:w-1/2 relative">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-300 transform rotate-3 rounded-3xl">
+                    </div>
+                    <img src="{{asset('build/assets/img/landing/hero.jpg')}}" alt="Happy kids using a computer"
+                        class="relative rounded-3xl shadow-2xl border-8 border-white float">
+                    <div
+                        class="absolute -top-12 -left-12 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center transform rotate-12">
+                        <i data-feather="sun" class="text-white w-12 h-12"></i>
+                    </div>
+                    <div
+                        class="absolute -bottom-12 -right-12 w-24 h-24 bg-pink-400 rounded-full flex items-center justify-center transform -rotate-12">
+                        <i data-feather="heart" class="text-white w-12 h-12"></i>
                     </div>
                 </div>
             </div>
@@ -45,87 +159,75 @@
     <!-- End::Home Content -->
 
     <!-- Start::Services Content -->
-    <div class="" id="services">
-        <div class="section container mx-auto space-y-6">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">Our
-                        Services</span>
+    <div class="bg-gradient-to-b from-blue-50 to-purple-50" id="services">
+        <div class="container mx-auto px-4 py-16 space-y-12">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-4">
+                    Our Magical Services
                 </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing
-                    elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus
-                    cumque
-                    odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                <p class="text-lg text-gray-700">
+                    At Sahab Code, we sprinkle a little magic on every kindergarten website we create.
+                    Our services are designed to make your school shine online and make life easier for teachers and
+                    parents alike!
+                </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:!grid-cols-4 gap-6">
-                <div class="box landing-service text-center mb-0">
-                    <div class="box-body">
-                        <div class="landing-service-img mb-4 avatar avatar-lg rounded-full bg-primary p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-blue-500 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-gray-800 text-xl font-semibold my-auto mb-2">Design Quality</h3>
-                            <p class="text-gray-500 text-base">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing
-                                elit. Pariatur quam saepe enim maxime!</p>
-                        </div>
                     </div>
+                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Playful Design</h3>
+                    <p class="text-gray-600 text-center">We create colorful, fun designs that capture the joy of
+                        learning and make your school stand out!</p>
                 </div>
-                <div class="box landing-service text-center mb-0">
-                    <div class="box-body">
-                        <div class="landing-service-img mb-4 avatar avatar-lg rounded-full bg-primary p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-green-500 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                             </svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-gray-800 text-xl font-semibold my-auto mb-2">Customization</h3>
-                            <p class="text-gray-500 text-base">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing
-                                elit. Pariatur quam saepe enim maxime! </p>
-                        </div>
                     </div>
+                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Easy Customization</h3>
+                    <p class="text-gray-600 text-center">Tailor your site to fit your school's unique personality with
+                        our simple customization tools.</p>
                 </div>
-                <div class="box landing-service text-center mb-0">
-                    <div class="box-body">
-                        <div class="landing-service-img mb-4 avatar avatar-lg rounded-full bg-primary p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-yellow-500 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-gray-800 text-xl font-semibold my-auto mb-2">Documentation</h3>
-                            <p class="text-gray-500 text-base">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing
-                                elit. Pariatur quam saepe enim maxime!</p>
-                        </div>
                     </div>
+                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Parent-Friendly Features
+                    </h3>
+                    <p class="text-gray-600 text-center">Keep parents in the loop with easy communication tools and
+                        event calendars.</p>
                 </div>
-                <div class="box landing-service text-center mb-0">
-                    <div class="box-body">
-                        <div class="landing-service-img mb-4 avatar avatar-lg rounded-full bg-primary p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m0-3l-3-3m0 0l-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75" />
+                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-pink-500 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                             </svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-gray-800 text-xl font-semibold my-auto mb-2">Regular Updates</h3>
-                            <p class="text-gray-500 text-base">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing
-                                elit. Pariatur quam saepe enim maxime! </p>
-                        </div>
                     </div>
+                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Always Up-to-Date</h3>
+                    <p class="text-gray-600 text-center">We keep your site fresh and secure with regular updates and
+                        improvements.</p>
                 </div>
             </div>
         </div>
@@ -133,40 +235,50 @@
     <!-- End::Services Content -->
 
     <!-- Start::About Content -->
-    <div class="bg-white" id="about">
-        <div class="section container mx-auto">
-            <div class="grid lg:grid-cols-2 gap-6">
-                <div class="relative bg-gradient-radial from-gray-100 to-white">
-                    <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
-                        <img src="{{asset('build/assets/img/landing/3.png')}}"
-                            class="mx-auto h-80 w-96 rounded-t-sm object-cover object-top shadow-2xl sm:h-[28rem]"
-                            alt="Landing page design example">
-                    </div>
-                </div>
-                <div class="my-auto">
-                    <div class="space-y-2">
-                        <h2 class="section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                            <span class="">Designing the Perfect Landing Page for Schools</span>
+    <div class="bg-gradient-to-b from-blue-50 to-yellow-50" id="about">
+        <div class="container mx-auto px-4 py-16 sm:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="space-y-6">
+                        <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-blue-600">
+                            Custom School Landing Pages
+                            <span class="block text-amber-500 mt-2">Designed With Love!</span>
                         </h2>
-                        <h5 class="font-medium text-2xl text-gray-800">Create an Impactful First Impression.</h5>
-                        <h6 class="font-normal text-base">Our team specializes in building modern, engaging landing
-                            pages tailored for schools.</h6>
-                        <p class="text-base text-gray-500">
-                            A well-designed landing page is the cornerstone of your school’s online presence. It
-                            provides an easy way for prospective students, parents, and educators to learn more about
-                            your offerings, apply, and stay engaged. We focus on clean, mobile-responsive designs that
-                            highlight key information, from curriculum details to event registrations.
+                        <h3 class="dynapuff font-semibold text-2xl text-purple-600">Your School, Your Style!</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            We create delightful landing pages that capture your school's unique spirit. From colorful,
+                            mobile-friendly designs to fun features like interactive calendars and virtual tours,
+                            we make sure your site is as special as your little learners!
                         </p>
-                        <p class="text-base text-gray-500">
-                            Our landing pages are tailored to capture your school’s unique identity, with features like
-                            online registration forms, event sign-ups, and integrated maps. We ensure that your landing
-                            page is not only visually appealing but also fully functional and optimized for a smooth
-                            user experience on all devices.
-                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
+                                <span>Playful and professional designs</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
+                                <span>Easy-to-use features for parents and staff</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
+                                <span>Mobile-friendly for on-the-go access</span>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="{{url('about')}}" class="py-2 px-3 ti-btn m-0 ti-btn-primary mt-6">
-                        Read More <i class="ri-arrow-right-line rtl:rotate-180"></i>
+                    <a href="{{url('about')}}"
+                        class="dynapuff inline-block mt-8 py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300">
+                        Discover the Magic <i class="ri-magic-line ml-2"></i>
                     </a>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 transform -rotate-6 rounded-lg">
+                        </div>
+                        <img src="{{asset('build/assets/img/landing/design.jpg')}}"
+                            class="relative rounded-lg shadow-xl object-cover object-center w-full h-[28rem]"
+                            alt="Colorful kindergarten website design example">
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,39 +287,54 @@
     <!-- End::About Content -->
 
     <!-- Start::Mission Content -->
-    <div class="" id="our-mission">
-        <div class="section container mx-auto">
-            <div class="grid lg:grid-cols-2 gap-6">
-                <div class="my-auto">
-                    <div class="space-y-2">
-                        <h2 class="section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                            <span class="">Customized Dashboard</span>
+    <div class="bg-gradient-to-b from-green-50 to-blue-50" id="our-mission">
+        <div class="container mx-auto px-4 py-16 sm:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-pink-200 transform rotate-3 rounded-lg">
+                        </div>
+                        <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}"
+                            class="relative rounded-lg shadow-xl border-4 border-white w-full h-auto"
+                            alt="Colorful and intuitive kindergarten dashboard">
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="space-y-6">
+                        <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-purple-600">
+                            Magic Dashboard
+                            <span class="block text-green-500 mt-2">for Happy Little Schools!</span>
                         </h2>
-                        <div class="space-y-3">
-                            <p class="text-base text-gray-500">
-                                Our customizable dashboard offers a beautiful and intuitive design, allowing schools to
-                                manage their operations efficiently.
+                        <div class="space-y-4">
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Our colorful and easy-to-use dashboard makes running your kindergarten a breeze!
+                                It's like having a friendly assistant who knows everything about your school.
                             </p>
-                            <p class="text-base text-gray-500">
-                                The dashboard provides an overview of key aspects such as student information, parent
-                                communication, classroom management, and teacher performance.
-                            </p>
-                            <p class="text-base text-gray-500">
-                                Additionally, it includes features for tracking fees and payments, helping you stay
-                                organized and transparent. With user-friendly navigation, you can access all the
-                                essential tools you need to enhance your school's management.
-                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="ri-parent-line text-blue-500 text-2xl mr-3 mt-1"></i>
+                                    <span>Keep all your little stars' info in one bright, shiny place!</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-message-3-line text-pink-500 text-2xl mr-3 mt-1"></i>
+                                    <span>Chat with parents as easily as planning playtime.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-calendar-todo-line text-yellow-500 text-2xl mr-3 mt-1"></i>
+                                    <span>Manage classes and see how awesome your teachers are doing!</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-money-dollar-box-line text-green-500 text-2xl mr-3 mt-1"></i>
+                                    <span>Keep track of fees and payments, as easy as counting to three!</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <a href="{{url('about')}}" class="py-2 px-3 ti-btn m-0 ti-btn-primary mt-6">
-                        Read More <i class="ri-arrow-right-line rtl:rotate-180"></i>
+                    <a href="{{url('about')}}"
+                        class="dynapuff inline-block mt-8 py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300">
+                        See the Magic in Action <i class="ri-sparkle-line ml-2"></i>
                     </a>
-                </div>
-                <div class="relative bg-gradient-radial from-white to-gray-100">
-                    <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] ">
-                        <img src="{{asset('build/assets/img/landing/Dashboard.png')}}"
-                            class="mx-auto h-full w-full rounded-t-sm border shadow-2xl sm:h-full" alt="">
-                    </div>
                 </div>
 
             </div>
@@ -218,24 +345,21 @@
 
 
     <!-- Start::Banner Content -->
-    <div
-        class="section flex relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover before:bg-primary/90 before:absolute before:w-full before:h-full before:top-0 before:inset-x-0">
-        <div class="container mx-auto z-[0] text-center">
-            <h2 class="section-title text-center text-3xl font-bold text-white md:text-4xl justify-center">
-                We Create Engaging Solutions for Schools.
+    <div class="relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover bg-center py-20">
+        <div class="absolute inset-0 bg-blue-600/80"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="dynapuff text-4xl font-bold text-white mb-6">
+                Bringing Joy to Learning, One Click at a Time!
             </h2>
-            <p class="w-2/3 mx-auto my-6 text-base text-white/70">
-                Our team specializes in designing and developing modern, responsive websites tailored for educational
-                institutions. We focus on creating user-friendly interfaces that enhance the experience for students,
-                parents, and educators alike. From visually appealing landing pages to comprehensive school management
-                dashboards, we ensure your online presence is both impactful and efficient.
+            <p class="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+                We create colorful, fun websites that make school life easier for little learners,
+                busy parents, and amazing teachers. From playful homepages to easy-to-use dashboards,
+                we're here to make your kindergarten shine online!
             </p>
-            <p class="w-2/3 mx-auto my-6 text-base text-white/70">
-                We believe in delivering timely solutions that meet the unique needs of schools. Our goal is to provide
-                long-term strategies that foster engagement and visibility for your institution, helping you connect
-                with your community effectively.
-            </p>
-            <a href="{{url('contactus')}}" class="ti-btn m-0 py-3 px-6 ti-btn-danger">Contact Us</a>
+            <a href="{{url('contactus')}}"
+                class="dynapuff inline-block py-3 px-8 bg-yellow-400 hover:bg-yellow-500 text-blue-800 rounded-full transition duration-300 text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Let's Create Magic Together!
+            </a>
         </div>
     </div>
 
@@ -402,205 +526,146 @@
     <!-- End::Statistics Content -->
 
     <!-- Start::Testinominals Content -->
-    <div class="" id="testimonials">
-        <div class="section container mx-auto">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">What Our Clients Say ...!</span>
-                </h2>
-                {{-- <p class="text-center text-gray-500 text-base mt-4">
-                    At Bright Kids Kindergarten, we prioritize creating a vibrant and nurturing environment for our
-                    children.
-                    Our mission is to foster creativity, curiosity, and a love for learning that lasts a lifetime.
-                </p> --}}
-            </div>
-            <div class="flex items-center justify-center bg-gray-100">
-                <div class="max-w-2xl w-full ">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <div class="swiper-slide flex justify-center !bg-transparent">
-                            <div class="box mb-0 text-center w-full px-6 py-8">
-                                <div class="box-body">
-                                    <div class="flex justify-center space-x-1 rtl:space-x-reverse">
-                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                                class="ri-star-fill"></i></div>
-                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                                class="ri-star-fill"></i></div>
-                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                                class="ri-star-fill"></i></div>
-                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                                class="ri-star-fill"></i></div>
-                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                                class="ri-star-fill"></i></div>
-                                    </div>
-                                    <p class="text-base text-gray-500 mt-4">
-                                        "The landing page designed for Bright Kids Kindergarten exceeded our
-                                        expectations!
-                                        The design is vibrant and engaging, perfectly capturing the spirit of our
-                                        kindergarten.
-                                        We are thrilled with the results!"
-                                    </p>
-                                </div>
-                                <div class="box-footer mt-6">
-                                    <div class="flex justify-center">
-                                        <a class="flex items-center">
-                                            <img alt="testimonial" src="{{asset('build/assets/img/users/owner.jpg')}}"
-                                                class="avatar avatar-sm !rounded-full">
-                                            <div class="ltr:pl-4 rtl:pr-4">
-                                                <p class="font-semibold text-base leading-none text-gray-800">Jessica
-                                                    Smith</p>
-                                                <span class="dark:text-white/70 text-gray-500 text-xs">Owner, Bright
-                                                    Kids Kindergarten</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <p class="text-center text-gray-500 mt-2">Just now</p>
-                                </div>
-                            </div>
+    <div class="bg-gradient-to-b from-yellow-100 to-blue-100 py-16" id="testimonials">
+        <div class="container mx-auto px-4">
+            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-12">
+                Happy Voices from Our Playground!
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl p-8 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="bg-yellow-400 rounded-full p-3 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-1 mb-4">
+                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                    </div>
+                    <p class="text-lg text-gray-700 text-center mb-6">
+                        "The landing page designed for Bright Kids Kindergarten is absolutely magical!
+                        It's like they sprinkled fairy dust on our website. The design is so vibrant and
+                        engaging, it perfectly captures the joy and energy of our little learners.
+                        We're over the moon with the results!"
+                    </p>
+                    <div class="flex items-center justify-center">
+                        <img alt="Jessica Smith" src="{{asset('build/assets/img/users/owner.jpg')}}"
+                            class="w-16 h-16 rounded-full border-4 border-purple-200">
+                        <div class="ml-4">
+                            <p class="dynapuff font-bold text-lg text-purple-600">Jessica Smith</p>
+                            <p class="text-gray-600">Principal, Bright Kids Kindergarten</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination !relative !bottom-0"></div>
         </div>
     </div>
 
     <!-- End::Testinominals Content -->
 
     <!-- Start::Pricing Content -->
-    <div class="bg-white" id="pricing">
-        <div class="section container mx-auto">
-            <div class="grid grid-cols-12 gap-6">
-                <div class="col-span-12 lg:col-span-4 my-auto">
-                    <div class="space-y-3 my-auto">
-                        <h2 class="section-title text-center text-3xl font-bold text-gray-800 md:text-4xl mb-2">
-                            <span class="">Pricing Plans</span>
-                        </h2>
-                        <h6 class="font-medium text-xl mb-2">Choose the Plan that Suits You</h6>
-                        <p class="text-base text-gray-500">
-                            Select a plan that fits your needs. Our services are designed to help you succeed, whether
-                            you need a custom landing page or a comprehensive dashboard solution.
+    <div class="bg-gradient-to-b from-blue-100 to-purple-100 py-16" id="pricing">
+        <div class="container mx-auto px-4">
+            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-8">
+                Choose Your Adventure!
+            </h2>
+            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+                Pick the perfect plan for your school's online journey. Whether you need a magical landing page or a
+                full dashboard wonderland, we've got you covered!
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Landing Page Plan -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-layout-4-line text-3xl text-purple-600"></i>
+                        </div>
+                        <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">Sunny Landing</h3>
+                        <p class="text-center text-gray-600 mb-6">Perfect for showcasing your school's sparkle!</p>
+                        <p class="text-center">
+                            <span class="dynapuff text-4xl font-bold text-purple-600">150 KD</span>
                         </p>
-                        <a class="ti-btn ti-btn-primary mt-3" href="javascript:void(0);">Read More<i
-                                class="ri ri-arrow-right-s-line rtl:rotate-180"></i></a>
+                    </div>
+                    <div class="bg-purple-50 p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Colorful Custom Design</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Mobile-Friendly Magic</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>SEO Sprinkles</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Parent-Teacher Chat</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Social Media Fun</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-8">
+                        <button
+                            class="dynapuff w-full py-3 px-6 bg-yellow-400 hover:bg-yellow-500 text-purple-700 rounded-full transition duration-300 text-lg font-bold">
+                            Start the Fun!
+                        </button>
                     </div>
                 </div>
-                <div class="col-span-12 lg:col-span-8">
-                    <div class="grid grid-cols-12 gap-6 max-w-6xl mx-auto">
-                        <!-- Landing Page Plan -->
-                        <div class="lg:col-span-6 col-span-12">
-                            <div class="shadow border rounded-sm h-full">
-                                <div class="p-6">
-                                    <h3 class="text-2xl font-semibold text-gray-800">Landing Page</h3>
-                                    <p class="text-gray-500 text-xs">Perfect for startups and individual projects.</p>
-                                    <div class="flex mt-4 items-baseline">
-                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">150
-                                            KD</span>
-                                        {{-- <span class="text-gray-500 font-normal">/ Year</span> --}}
-                                    </div>
-                                </div>
-                                <div class="p-6 border-y border-gray-200 flex-grow">
-                                    <h6 class="font-medium text-base mb-4">What's Included</h6>
-                                    <ul class="p-0 space-y-3">
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Custom Design</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Mobile Responsive</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">SEO Optimization</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Contact Form Integration</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Social Media Integration</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">1 Custom Domain</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">24/7 Support</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="p-6 text-center">
-                                    <button type="button" class="ti-btn w-full ti-btn-primary m-0">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Dashboard Plan -->
-                        <div class="lg:col-span-6 col-span-12">
-                            <div class="shadow border rounded-sm h-full">
-                                <div class="p-6">
-                                    <h3 class="text-2xl font-semibold text-gray-800">Dashboard</h3>
-                                    <p class="text-gray-500 text-xs">Ideal for data management and analytics.</p>
-                                    <div class="flex mt-4 items-baseline">
-                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">300
-                                            KD</span>
-                                        <span class="text-gray-500 font-normal"></span>
-                                    </div>
-                                </div>
-                                <div class="p-6 border-y border-gray-200 flex-grow">
-                                    <h6 class="font-medium text-base mb-4">What's Included</h6>
-                                    <ul class="p-0 space-y-3">
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">All Landing Page Features</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Advanced Analytics Tools</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">User Management Features</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Custom Integrations</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Data Visualization Tools</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Real-time Data Updates</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Priority Support</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="p-6 text-center">
-                                    <button type="button" class="ti-btn w-full ti-btn-primary m-0">Get Started</button>
-                                </div>
-                            </div>
+                <!-- Dashboard Plan -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-dashboard-3-line text-3xl text-yellow-400"></i>
                         </div>
+                        <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">Rainbow Dashboard</h3>
+                        <p class="text-center text-gray-600 mb-6">For the ultimate school management adventure!</p>
+                        <p class="text-center">
+                            <span class="dynapuff text-4xl font-bold text-purple-600">300 KD</span>
+                        </p>
+                    </div>
+                    <div class="bg-purple-50 p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>All Sunny Landing Features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Super Smart Analytics</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Easy User Management</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Custom Integrations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
+                                <span>Colorful Data Visualizations</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-8">
+                        <button
+                            class="dynapuff w-full py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 text-lg font-bold">
+                            Dive into Adventure!
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1163,75 +1228,205 @@
         </div>
     </div> --}}
     <!-- End::Blog Content -->
-
-    <!-- Start::Contact Content -->
-    <div class="bg-white" id="contact">
-        <div class="section container mx-auto space-y-6">
+    {{--Start : Projects --}}
+    <section class="" id="projects">
+        <div class="section container mx-auto">
             <div class="text-center max-w-[80rem] mx-auto mb-12">
                 <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">Feel Free To
-                        Contact Us..!</span>
+                    <span class="px-3">My School Website Projects</span>
                 </h2>
-                <p class="text-center text-gray-500 text-base mt-4">
-                    We're here to turn your vision into reality. Whether you have questions about our services, need
-                    technical support, or want to discuss a custom project, our team is ready to assist. Your success is
-                    our priority, and we're committed to providing prompt, professional, and personalized support. Don't
-                    hesitate to reach out – let's start a conversation about how we can help your school shine online!
-                </p>
+                <p class="text-center text-gray-500 text-base mt-4">Showcasing my expertise in creating modern,
+                    functional, and user-friendly websites for educational institutions.
+                    From elementary schools to universities, each project is tailored to meet the unique needs of the
+                    institution and its community.</p>
             </div>
-            <div>
-                <div class="grid sm:grid-cols-2 gap-0 max-w-xl mx-auto">
-                    <div class="p-6">
-                        <div class="space-x-3 flex rtl:space-x-reverse items-center">
-                            <div
-                                class="bg-primary/20 text-primary p-2 rounded-full leading-none text-center avatar avatar-sm">
-                                <i class="ri-smartphone-line text-lg leading-tight"></i>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-base text-gray-800">Phone number</h5>
-                                <a href="javascript:void(0);" class="text-sm font-normal text-gray-500"> +
-                                    965 66579000</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="space-x-3 flex rtl:space-x-reverse items-center">
-                            <div
-                                class="bg-primary/20 text-primary p-2 rounded-full leading-none text-center avatar avatar-sm">
-                                <i class="ri-mail-line text-lg leading-tight"></i>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-base text-gray-800">Email Address</h5>
-                                <a href="javascript:void(0);" class="text-sm font-normal text-gray-500">
-                                    ahmaadzaid7@gmail.com</a>
+            <div class="grid grid-cols-12 gap-6 max-w-[80rem] mx-auto">
+                <div class="col-span-12 lg:col-span-6">
+                    <div class="box mb-0">
+                        <div class="box-body p-0">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
+                                <img src="{{ asset('path/to/your/image1.jpg') }}" class="w-full"
+                                    alt="Elementary School Website Redesign">
+                                <a href="{{ url('project-details') }}">
+                                    <div
+                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
+                                        <div class="flex justify-start items-end h-full">
+                                            <div class="text-white m-6">
+                                                <h5 class="font-bold text-xl">Elementary School Website Redesign</h5>
+                                                <p class="text-gray-300 text-sm mt-2">A modern, user-friendly website
+                                                    for a local elementary school.</p>
+                                                <p class="text-gray-400 text-sm">Completed <span
+                                                        class="text-white">15.03.2024</span> for <span
+                                                        class="text-white">Sunshine Elementary</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="sm:grid lg:grid-cols-12 gap-x-5 space-y-6 sm:space-y-0">
-                    <div class="col-span-3">
-                    </div>
-                    <div class="col-span-6">
-                        <div class="box shadow-none border-0">
-                            <div class="box-body">
-                                <div class="my-auto text-center">
-                                    <div class="space-y-4 text-start">
-                                        <input type="text" class="col-span-9 ti-form-input"
-                                            placeholder="Enter Full Name">
-                                        <input type="email" class="col-span-9 ti-form-input"
-                                            placeholder="Enter Email Id">
-                                        <input type="number" class="col-span-9 ti-form-input"
-                                            placeholder="Enter Phone No">
-                                        <textarea class="col-span-9 ti-form-input" rows="4"
-                                            placeholder="Enter Your Messaage"></textarea>
-                                        <a class="ti-btn ti-btn-primary mb-0 w-full" href="javascript:void(0);">Send
-                                            Message</a>
+                <div class="col-span-12 lg:col-span-3">
+                    <div class="box">
+                        <div class="box-body p-0">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
+                                <img src="{{ asset('path/to/your/image2.jpg') }}" class="w-full" alt="High School LMS">
+                                <a href="{{ url('project-details') }}">
+                                    <div
+                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
+                                        <div class="flex justify-start items-end h-full">
+                                            <div class="text-white m-6">
+                                                <h5 class="font-bold text-xl">High School Learning Management System
+                                                </h5>
+                                                <p class="text-gray-400 text-sm">Completed <span
+                                                        class="text-white">22.02.2024</span> for <span
+                                                        class="text-white">Evergreen High School</span></p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-3">
+                    <div class="box mb-0">
+                        <div class="box-body p-0">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
+                                <img src="{{ asset('path/to/your/image3.jpg') }}" class="w-full"
+                                    alt="University Department Portal">
+                                <a href="{{ url('project-details') }}">
+                                    <div
+                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
+                                        <div class="flex justify-start items-end h-full">
+                                            <div class="text-white m-6">
+                                                <h5 class="font-bold text-xl">University Department Portal</h5>
+                                                <p class="text-gray-400 text-sm">Completed <span
+                                                        class="text-white">10.01.2024</span> for <span
+                                                        class="text-white">Tech University</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-3">
+                    <div class="box">
+                        <div class="box-body p-0">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
+                                <img src="{{ asset('path/to/your/image4.jpg') }}" class="w-full"
+                                    alt="K-12 School District Website">
+                                <a href="{{ url('project-details') }}">
+                                    <div
+                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
+                                        <div class="flex justify-start items-end h-full">
+                                            <div class="text-white m-6">
+                                                <h5 class="font-bold text-xl">K-12 School District Website</h5>
+                                                <p class="text-gray-400 text-sm">Completed <span
+                                                        class="text-white">05.12.2023</span> for <span
+                                                        class="text-white">Oakville School District</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box mb-0">
+                        <div class="box-body p-0">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
+                                <img src="{{ asset('path/to/your/image5.jpg') }}" class="w-full" alt="Educational App">
+                                <a href="{{ url('project-details') }}">
+                                    <div
+                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
+                                        <div class="flex justify-start items-end h-full">
+                                            <div class="text-white m-6">
+                                                <h5 class="font-bold text-xl">Educational App Development</h5>
+                                                <p class="text-gray-400 text-sm">Completed <span
+                                                        class="text-white">20.11.2023</span> for <span
+                                                        class="text-white">EduTech Startup</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{--END : Projects --}}
+    <!-- Start::Contact Content -->
+    <div class="bg-gradient-to-b from-green-100 to-blue-100 py-16" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-6">
+                Let's Chat and Create Magic!
+            </h2>
+            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+                Have a question or ready to start your school's online adventure? We're all ears!
+                Drop us a line, and we'll get back to you faster than you can say "recess time"!
+            </p>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-yellow-50 p-8 flex flex-col justify-center">
+                        <div class="mb-8">
+                            <h3 class="dynapuff text-2xl font-bold text-purple-700 mb-4">Quick Reach</h3>
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-600 rounded-full p-2 mr-4">
+                                    <i class="ri-smartphone-line text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-purple-700">Phone</h5>
+                                    <a href="tel:+96566579000" class="text-purple-800">+ 965 66579000</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-purple-600 rounded-full p-2 mr-4">
+                                    <i class="ri-mail-line text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-purple-700">Email</h5>
+                                    <a href="mailto:ahmaadzaid7@gmail.com"
+                                        class="text-purple-800">ahmaadzaid7@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="{{asset('build/assets/img/landing/contact.jpg')}}" />
+                    </div>
+                    <div class="md:w-1/2 p-8 bg-yellow-500">
+                        <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
+                                    placeholder="e.g., Super Parent">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
+                                    placeholder="you@example.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                                <input type="tel" id="phone"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
+                                    placeholder="e.g., +965 1234 5678">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Your Message</label>
+                                <textarea id="message" rows="4"
+                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
+                                    placeholder="Tell us about your magical idea!"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="dynapuff w-full py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition duration-300 text-lg font-bold">
+                                Send Some Joy Our Way!
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
