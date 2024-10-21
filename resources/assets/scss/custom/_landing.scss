@@ -99,9 +99,9 @@
       }
     }
 
-    .landing-wrapper {
-      @apply bg-[url(http://127.0.0.1:8000/build/assets/img/landing/2.png)] w-full text-white leading-normal relative before:bg-primary/60 before:absolute before:w-full before:h-full before:inset-0;
-    }
+    // .landing-wrapper {
+    //   @apply bg-[url(http://127.0.0.1:8000/build/assets/img/landing/2.png)] w-full text-white leading-normal relative before:bg-primary/60 before:absolute before:w-full before:h-full before:inset-0;
+    // }
 
     .section {
       @apply py-16;

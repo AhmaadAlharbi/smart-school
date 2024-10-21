@@ -12,41 +12,36 @@
 <div class="main-content landing-main !p-0">
 
     <!-- Start::Home Content -->
-    <div class="landing-wrapper" id="home">
-        <div class="container lg:pt-40 lg:pb-24 pt-28 pb-12 relative z-10 mx-auto">
-            <div class="grid grid-cols-12 lg:gap-0 gap-6">
-                <div class="col-span-12 xxl:col-span-7 my-auto">
-                    <div class="landing-content">
-                        <div class="space-y-6">
-                            <h1 class="leading-tight text-5xl font-semibold">
-                                Your School Will Shine Brightly with
-                                <span class="text-secondary">Sehab Code!</span>
-                            </h1>
-                            <p class="text-lg text-white/70 font-medium">
-                                Sehab Code provides custom websites for schools that improve communication and make
-                                managing tasks easier. Let us help your school stand out with a professional online
-                                presence.
-                            </p>
-
-                        </div>
-                        <div
-                            class="mt-10 lg:flex justify-start lg:space-x-2 lg:space-y-0 space-y-2 rtl:space-x-reverse">
-                            <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-secondary">
-                                See How it Works <i class="ri-arrow-right-line rtl:rotate-180"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-danger">
-                                Discover More <i class="ri-arrow-right-line rtl:rotate-180"></i>
-                            </a>
-                        </div>
+    <div class="landing-wrapper bg-blue-700" id="home">
+        <div class="container lg:pt-40 lg:pb-24 pt-28 pb-12 relative z-10 mx-auto flex items-center justify-center ">
+            <div class="text-center max-w-3xl">
+                <div class="landing-content">
+                    <div class="space-y-6">
+                        <h1 class="leading-tight text-5xl font-semibold text-blue-50">
+                            Your School Will Shine Brightly with
+                            <span class="text-blue-200">Sehab Code!</span>
+                        </h1>
+                        <p class="text-lg text-white/70 font-medium">
+                            Sehab Code provides custom websites for schools that improve communication and make
+                            managing tasks easier. Let us help your school stand out with a professional online
+                            presence.
+                        </p>
                     </div>
-                </div>
-                <div class="col-span-12 xxl:col-span-5">
-                    <img alt="landing-banner" src="{{asset('build/assets/img/landing/banner.png')}}"
-                        class="ltr:ml-auto rtl:mr-auto">
+
+                    <!-- Buttons -->
+                    <div class="mt-10 lg:flex justify-center lg:space-x-2 space-y-2 lg:space-y-0 rtl:space-x-reverse">
+                        <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-secondary">
+                            See How it Works <i class="ri-arrow-right-line rtl:rotate-180"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="py-3 px-3 ti-btn m-0 ti-btn-danger">
+                            Discover More <i class="ri-arrow-right-line rtl:rotate-180"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- End::Home Content -->
 
     <!-- Start::Services Content -->
@@ -209,12 +204,12 @@
                     </a>
                 </div>
                 <div class="relative bg-gradient-radial from-white to-gray-100">
-                    <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
-                        <img src="{{asset('build/assets/img/landing/4.png')}}"
-                            class="mx-auto h-80 w-96 rounded-t-sm border object-cover object-top shadow-2xl sm:h-[28rem]"
-                            alt="">
+                    <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] ">
+                        <img src="{{asset('build/assets/img/landing/Dashboard.png')}}"
+                            class="mx-auto h-full w-full rounded-t-sm border shadow-2xl sm:h-full" alt="">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -413,57 +408,56 @@
                 <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
                     <span class="px-3">What Our Clients Say ...!</span>
                 </h2>
-                <p class="text-center text-gray-500 text-base mt-4">
+                {{-- <p class="text-center text-gray-500 text-base mt-4">
                     At Bright Kids Kindergarten, we prioritize creating a vibrant and nurturing environment for our
                     children.
                     Our mission is to foster creativity, curiosity, and a love for learning that lasts a lifetime.
-                </p>
+                </p> --}}
             </div>
-            <div class="swiper testimonials-swipe mb-6">
-                <div class="swiper-wrapper">
-                    <!-- Your new testimonial -->
-                    <div class="swiper-slide flex justify-center !bg-transparent">
-                        <div class="box mb-0 text-center">
-                            <div class="box-body">
-                                <div class="flex justify-center space-x-1 rtl:space-x-reverse">
-                                    <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                            class="ri-star-fill"></i></div>
-                                    <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                            class="ri-star-fill"></i></div>
-                                    <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                            class="ri-star-fill"></i></div>
-                                    <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                            class="ri-star-fill"></i></div>
-                                    <div class="text-yellow-500 text-base hover:text-yellow-500"><i
-                                            class="ri-star-fill"></i></div>
+            <div class="flex items-center justify-center bg-gray-100">
+                <div class="max-w-2xl w-full ">
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <div class="swiper-slide flex justify-center !bg-transparent">
+                            <div class="box mb-0 text-center w-full px-6 py-8">
+                                <div class="box-body">
+                                    <div class="flex justify-center space-x-1 rtl:space-x-reverse">
+                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
+                                                class="ri-star-fill"></i></div>
+                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
+                                                class="ri-star-fill"></i></div>
+                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
+                                                class="ri-star-fill"></i></div>
+                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
+                                                class="ri-star-fill"></i></div>
+                                        <div class="text-yellow-500 text-base hover:text-yellow-500"><i
+                                                class="ri-star-fill"></i></div>
+                                    </div>
+                                    <p class="text-base text-gray-500 mt-4">
+                                        "The landing page designed for Bright Kids Kindergarten exceeded our
+                                        expectations!
+                                        The design is vibrant and engaging, perfectly capturing the spirit of our
+                                        kindergarten.
+                                        We are thrilled with the results!"
+                                    </p>
                                 </div>
-                                <p class="text-base text-gray-500 mt-4">
-                                    "The landing page designed for Bright Kids Kindergarten exceeded our expectations!
-                                    The design is vibrant and engaging, perfectly capturing the spirit of our
-                                    kindergarten.
-                                    We are thrilled with the results!"
-                                </p>
-                            </div>
-                            <div class="box-footer">
-                                <div class="flex justify-center ">
-                                    <a class="flex my-auto">
-                                        <img alt="testimonial" src="{{asset('build/assets/img/users/owner.jpg')}}"
-                                            class="avatar avatar-sm !rounded-full">
-                                        <div class="ltr:pl-4 rtl:pr-4 my-auto">
-                                            <p class="font-semibold text-base leading-none text-gray-800">Jessica Smith
-                                            </p>
-                                            <span class="dark:text-white/70 text-gray-500 text-xs">Owner, Bright Kids
-                                                Kindergarten</span>
-                                        </div>
-                                    </a>
+                                <div class="box-footer mt-6">
+                                    <div class="flex justify-center">
+                                        <a class="flex items-center">
+                                            <img alt="testimonial" src="{{asset('build/assets/img/users/owner.jpg')}}"
+                                                class="avatar avatar-sm !rounded-full">
+                                            <div class="ltr:pl-4 rtl:pr-4">
+                                                <p class="font-semibold text-base leading-none text-gray-800">Jessica
+                                                    Smith</p>
+                                                <span class="dark:text-white/70 text-gray-500 text-xs">Owner, Bright
+                                                    Kids Kindergarten</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="text-center text-gray-500 mt-2">Just now</p>
                                 </div>
-                                <p class="text-center text-gray-500 my-auto mt-2">Just now</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Additional existing testimonials -->
-
                 </div>
             </div>
             <div class="swiper-pagination !relative !bottom-0"></div>
@@ -484,7 +478,7 @@
                         <h6 class="font-medium text-xl mb-2">Choose the Plan that Suits You</h6>
                         <p class="text-base text-gray-500">
                             Select a plan that fits your needs. Our services are designed to help you succeed, whether
-                            you need a simple landing page or a comprehensive dashboard solution.
+                            you need a custom landing page or a comprehensive dashboard solution.
                         </p>
                         <a class="ti-btn ti-btn-primary mt-3" href="javascript:void(0);">Read More<i
                                 class="ri ri-arrow-right-s-line rtl:rotate-180"></i></a>
@@ -493,33 +487,49 @@
                 <div class="col-span-12 lg:col-span-8">
                     <div class="grid grid-cols-12 gap-6 max-w-6xl mx-auto">
                         <!-- Landing Page Plan -->
-                        <div class="lg:col-span-4 col-span-12">
-                            <div class="shadow border rounded-sm ">
+                        <div class="lg:col-span-6 col-span-12">
+                            <div class="shadow border rounded-sm h-full">
                                 <div class="p-6">
                                     <h3 class="text-2xl font-semibold text-gray-800">Landing Page</h3>
                                     <p class="text-gray-500 text-xs">Perfect for startups and individual projects.</p>
                                     <div class="flex mt-4 items-baseline">
-                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">$29</span>
-                                        <span class="text-gray-500 font-normal"> / Month</span>
+                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">150
+                                            KD</span>
+                                        {{-- <span class="text-gray-500 font-normal">/ Year</span> --}}
                                     </div>
                                 </div>
-                                <div class="p-6 border-y border-gray-200">
+                                <div class="p-6 border-y border-gray-200 flex-grow">
                                     <h6 class="font-medium text-base mb-4">What's Included</h6>
                                     <ul class="p-0 space-y-3">
                                         <li class="flex space-x-4 rtl:space-x-reverse">
                                             <i
                                                 class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Custom Design</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Mobile Responsive</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">SEO Optimization</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Contact Form Integration</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Social Media Integration</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
                                             <span class="my-auto text-gray-500">1 Custom Domain</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Responsive Design</span>
-                                        </li>
-                                        <li class="flex space-x-4 rtl:space-x-reverse">
-                                            <i
-                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
-                                            <span class="my-auto text-gray-500">Basic SEO Optimization</span>
                                         </li>
                                         <li class="flex space-x-4 rtl:space-x-reverse">
                                             <i
@@ -535,19 +545,25 @@
                         </div>
 
                         <!-- Dashboard Plan -->
-                        <div class="lg:col-span-4 col-span-12">
-                            <div class="shadow border rounded-sm ">
+                        <div class="lg:col-span-6 col-span-12">
+                            <div class="shadow border rounded-sm h-full">
                                 <div class="p-6">
                                     <h3 class="text-2xl font-semibold text-gray-800">Dashboard</h3>
                                     <p class="text-gray-500 text-xs">Ideal for data management and analytics.</p>
                                     <div class="flex mt-4 items-baseline">
-                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">$49</span>
-                                        <span class="text-gray-500 font-normal"> / Month</span>
+                                        <span class="ltr:mr-2 rtl:ml-2 text-5xl font-semibold text-gray-800">300
+                                            KD</span>
+                                        <span class="text-gray-500 font-normal"></span>
                                     </div>
                                 </div>
-                                <div class="p-6 border-y border-gray-200">
+                                <div class="p-6 border-y border-gray-200 flex-grow">
                                     <h6 class="font-medium text-base mb-4">What's Included</h6>
                                     <ul class="p-0 space-y-3">
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">All Landing Page Features</span>
+                                        </li>
                                         <li class="flex space-x-4 rtl:space-x-reverse">
                                             <i
                                                 class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
@@ -566,6 +582,16 @@
                                         <li class="flex space-x-4 rtl:space-x-reverse">
                                             <i
                                                 class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Data Visualization Tools</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
+                                            <span class="my-auto text-gray-500">Real-time Data Updates</span>
+                                        </li>
+                                        <li class="flex space-x-4 rtl:space-x-reverse">
+                                            <i
+                                                class="ri ri-checkbox-circle-line text-success text-base leading-none"></i>
                                             <span class="my-auto text-gray-500">Priority Support</span>
                                         </li>
                                     </ul>
@@ -575,8 +601,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Additional Plans can be added here -->
                     </div>
                 </div>
             </div>
@@ -586,7 +610,7 @@
     <!-- End::Pricing Content -->
 
     <!-- Start::Team Content -->
-    <div class="" id="team">
+    {{-- <div class="" id="team">
         <div class="section container mx-auto">
             <div class="text-center max-w-[80rem] mx-auto mb-12">
                 <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
@@ -683,11 +707,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End::Team Content -->
 
     <!-- Start::faqs Content -->
-    <div class="bg-white" id="faq">
+    {{-- <div class="bg-white" id="faq">
         <div class="section container mx-auto">
             <div class="text-center max-w-[80rem] mx-auto mb-12">
                 <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
@@ -1010,11 +1034,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End::faqs Content -->
 
     <!-- Start::Blog Content -->
-    <div class="" id="blogs">
+    {{-- <div class="" id="blogs">
         <div class="section container mx-auto">
             <div class="text-center max-w-[80rem] mx-auto mb-12">
                 <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
@@ -1137,7 +1161,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End::Blog Content -->
 
     <!-- Start::Contact Content -->
@@ -1148,11 +1172,12 @@
                     <span class="px-3">Feel Free To
                         Contact Us..!</span>
                 </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing
-                    elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus
-                    cumque
-                    odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                <p class="text-center text-gray-500 text-base mt-4">
+                    We're here to turn your vision into reality. Whether you have questions about our services, need
+                    technical support, or want to discuss a custom project, our team is ready to assist. Your success is
+                    our priority, and we're committed to providing prompt, professional, and personalized support. Don't
+                    hesitate to reach out – let's start a conversation about how we can help your school shine online!
+                </p>
             </div>
             <div>
                 <div class="grid sm:grid-cols-2 gap-0 max-w-xl mx-auto">
@@ -1165,7 +1190,7 @@
                             <div>
                                 <h5 class="font-semibold text-base text-gray-800">Phone number</h5>
                                 <a href="javascript:void(0);" class="text-sm font-normal text-gray-500"> +
-                                    01-234-567-252-6</a>
+                                    965 66579000</a>
                             </div>
                         </div>
                     </div>
@@ -1178,7 +1203,7 @@
                             <div>
                                 <h5 class="font-semibold text-base text-gray-800">Email Address</h5>
                                 <a href="javascript:void(0);" class="text-sm font-normal text-gray-500">
-                                    info12323@example.com</a>
+                                    ahmaadzaid7@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -1215,7 +1240,7 @@
     <!-- End::Contact Content -->
 
     <!-- Start::Banner Content -->
-    <div
+    {{-- <div
         class="section flex relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover before:bg-primary/90 before:absolute before:w-full before:h-full before:top-0 before:inset-x-0">
         <div class="container mx-auto z-[0] text-center space-y-5">
             <h2 class="section-title text-center text-3xl font-bold text-white md:text-4xl justify-center">Get
@@ -1231,7 +1256,7 @@
                 <a href="javascript:void(0);" class="ti-btn m-0 p-2 px-5 ti-btn-danger whitespace-nowrap">Notify Me</a>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End::Banner Content -->
 
 </div>
