@@ -6,7 +6,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
     rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 <style>
     .dynapuff {
         font-family: "DynaPuff", system-ui;
@@ -52,6 +54,217 @@
 </style>
 <!-- SWIPER CSS -->
 <link rel="stylesheet" href="{{asset('build/assets/libs/swiper/swiper-bundle.min.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<style>
+    .fredoka-one {
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px) rotate(3deg);
+        }
+
+        50% {
+            transform: translateY(-20px) rotate(3deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotate(3deg);
+        }
+    }
+
+    .float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .wave-bg {
+        background: linear-gradient(45deg, #3b82f6 25%, #fbbf24 75%);
+        background-size: 200% 200%;
+        animation: wave 15s ease infinite;
+    }
+
+    @keyframes wave {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .blob {
+        animation: blob 7s ease-in-out infinite;
+        transition: all 1s ease-in-out;
+    }
+
+    @keyframes blob {
+
+        0%,
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+    }
+</style>
+<style>
+    .fredoka-one {
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;
+    }
+
+    @keyframes float-1 {
+        0% {
+            transform: translateY(0px) rotate(3deg);
+        }
+
+        50% {
+            transform: translateY(-15px) rotate(3deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotate(3deg);
+        }
+    }
+
+    @keyframes float-2 {
+        0% {
+            transform: translateY(0px) rotate(-3deg);
+        }
+
+        50% {
+            transform: translateY(-20px) rotate(-3deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotate(-3deg);
+        }
+    }
+
+    @keyframes float-3 {
+        0% {
+            transform: translateY(0px) rotate(2deg);
+        }
+
+        50% {
+            transform: translateY(-12px) rotate(2deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotate(2deg);
+        }
+    }
+
+    .float-1 {
+        animation: float-1 6s ease-in-out infinite;
+    }
+
+    .float-2 {
+        animation: float-2 7s ease-in-out infinite 0.5s;
+    }
+
+    .float-3 {
+        animation: float-3 5s ease-in-out infinite 1s;
+    }
+
+    .wave-bg {
+        background: linear-gradient(45deg, #3b82f6 25%, #fbbf24 75%);
+        background-size: 200% 200%;
+        animation: wave 15s ease infinite;
+    }
+
+    @keyframes wave {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+<style>
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(2deg);
+        }
+
+        50% {
+            transform: translateY(-20px) rotate(2deg);
+        }
+    }
+
+    @keyframes floatShadow {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 0.3;
+        }
+
+        50% {
+            transform: scale(0.85);
+            opacity: 0.2;
+        }
+    }
+
+    @keyframes soarIn {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .float-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .shadow-animation {
+        animation: floatShadow 6s ease-in-out infinite;
+    }
+
+    .soar-in {
+        animation: soarIn 1s ease-out forwards;
+    }
+
+    .soar-in-delay-1 {
+        opacity: 0;
+        animation: soarIn 1s ease-out 0.2s forwards;
+    }
+
+    .soar-in-delay-2 {
+        opacity: 0;
+        animation: soarIn 1s ease-out 0.4s forwards;
+    }
+</style>
 
 @endsection
 
@@ -107,71 +320,129 @@
             feather.replace()
         </script>
     </div> --}}
-    <div class="landing-wrapper bg-gradient-to-b from-blue-100 to-amber-100" id="home">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center justify-between lg:pt-40 lg:pb-24 pt-28 pb-12">
-                <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-                    <div class="landing-content max-w-xl mx-auto lg:mx-0">
-                        <div class="space-y-6">
-                            <h1 class="text-4xl lg:text-5xl dynapuff font-bold text-blue-600 leading-relaxed"> Your
-                                School Will SOAR On The Web With <span class="block text-amber-500 mt-2">Sahab
-                                    Code!</span> </h1>
-                            <p class="text-lg text-gray-700 leading-relaxed"> Sahab Code crafts delightful websites for
-                                schools that make communication a breeze and task management child's play. Let's give
-                                your school a shining online presence that's as special as your little learners! </p>
-                        </div> <!-- Buttons -->
-                        <div
-                            class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4">
-                            <a href="javascript:void(0);"
-                                class="py-3 px-6 rounded-full text-white bg-blue-500 hover:bg-blue-600 transition duration-300 inline-flex items-center justify-center dynapuff">
-                                See The Magic <i class="ri-magic-line ml-2"></i> </a> <a href="javascript:void(0);"
-                                class="py-3 px-6 rounded-full text-white bg-amber-500 hover:bg-amber-600 transition duration-300 inline-flex items-center justify-center dynapuff">
-                                Start Your Adventure <i class="ri-rocket-line ml-2"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                {{-- <div class="lg:w-1/2 relative">
+    <div class="bg-gradient-to-b from-blue-50 to-green-50">
+        <div class="container mx-auto px-4 py-16 relative">
+            <!-- Animated Decorative Elements -->
+            <div
+                class="absolute top-20 left-10 w-24 h-24 bg-yellow-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+            </div>
+            <div
+                class="absolute bottom-20 right-10 w-32 h-32 bg-blue-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+            </div>
 
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-blue-200 to-amber-200 transform -rotate-3 rounded-xl">
-                    </div> <img alt="Happy kids using a computer" src="{{asset('build/assets/img/landing/hero.jpg')}}"
-                        class="relative rounded-xl shadow-xl max-w-full h-auto border-4 border-white float">
-                </div> --}}
-                <div class="lg:w-1/2 relative">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-300 transform rotate-3 rounded-3xl">
-                    </div>
-                    <img src="{{asset('build/assets/img/landing/hero.jpg')}}" alt="Happy kids using a computer"
-                        class="relative rounded-3xl shadow-2xl border-8 border-white float">
-                    <div
-                        class="absolute -top-12 -left-12 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center transform rotate-12">
-                        <i data-feather="sun" class="text-white w-12 h-12"></i>
-                    </div>
-                    <div
-                        class="absolute -bottom-12 -right-12 w-24 h-24 bg-pink-400 rounded-full flex items-center justify-center transform -rotate-12">
-                        <i data-feather="heart" class="text-white w-12 h-12"></i>
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-24 pt-12 pb-12 relative ">
+                <div class="container max-w-7xl mx-auto px-4 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 py-10">
+                        <!-- Left Content -->
+                        <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 z-10">
+                            <div class="max-w-xl mx-auto lg:mx-0">
+                                <div class="space-y-8">
+                                    <h1 class="dynapuff text-5xl lg:text-6xl font-bold">
+                                        <span class="block soar-in">Your School Will</span>
+                                        <span class="text-blue-600 block soar-in-delay-1">SOAR</span>
+                                        <span class="block text-green-600 mt-2 soar-in-delay-2">With Sahab Code!</span>
+                                    </h1>
+                                    <p class="text-lg text-gray-700 soar-in-delay-2">
+                                        At Sahab Code, we sprinkle a little magic on every kindergarten website we
+                                        create.
+                                        Let's give your school a brilliant online presence that sparkles like your
+                                        students'
+                                        imaginations!
+                                    </p>
+
+                                    <div
+                                        class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2">
+                                        <a href="#"
+                                            class="dynapuff inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            See The Magic
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block ml-2"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                            </svg>
+                                        </a>
+                                        <a href="#"
+                                            class="dynapuff inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            Start Adventure
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block ml-2"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Content with Single Image -->
+                        <div class="w-full lg:w-1/2 px-4 sm:px-6 relative">
+                            <!-- Shadow Element - Responsive width -->
+                            <div
+                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] sm:w-4/5 h-6 sm:h-8 bg-black/10 rounded-full blur-xl shadow-animation">
+                            </div>
+
+                            <!-- Floating Image Container - Added padding for smaller screens -->
+                            <div class="float-animation mx-auto max-w-2xl">
+                                <div class="bg-white rounded-xl shadow-lg p-2 sm:p-3 relative">
+                                    <!-- Gradient Background -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200 rounded-xl rotate-2 blur-sm">
+                                    </div>
+
+                                    <!-- Image Container with Fixed Height -->
+                                    <div class="relative w-full aspect-[4/3] md:aspect-[16/9]">
+                                        <img src="{{asset('build/assets/img/landing/hero3.jpg')}}"
+                                            alt="Happy kids using a computer"
+                                            class="relative rounded-xl w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Top Left Decorative Circle -->
+                                    <div
+                                        class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500 rounded-full flex items-center justify-center rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+
+                                    <!-- Bottom Right Decorative Circle -->
+                                    <div
+                                        class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center -rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- End::Home Content -->
-
+    <!-- End::Services Content -->
     <!-- Start::Services Content -->
-    <div class="bg-gradient-to-b from-blue-50 to-purple-50" id="services">
-        <div class="container mx-auto px-4 py-16 space-y-12">
-            <div class="text-center max-w-3xl mx-auto">
-                <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-4">
+    <div class="bg-gradient-to-b from-blue-50 to-purple-50 min-h-screen flex items-center" id="services">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <!-- Header Section -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-6">
                     Our Magical Services
                 </h2>
-                <p class="text-lg text-gray-700">
+                <p class="text-lg text-gray-700 px-4">
                     At Sahab Code, we sprinkle a little magic on every kindergarten website we create.
                     Our services are designed to make your school shine online and make life easier for teachers and
                     parents alike!
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Grid Section -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
+                <!-- Service Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
                     <div class="flex justify-center mb-4">
                         <div class="bg-blue-500 rounded-full p-3">
@@ -186,6 +457,8 @@
                     <p class="text-gray-600 text-center">We create colorful, fun designs that capture the joy of
                         learning and make your school stand out!</p>
                 </div>
+
+                <!-- Service Card 2 -->
                 <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
                     <div class="flex justify-center mb-4">
                         <div class="bg-green-500 rounded-full p-3">
@@ -200,6 +473,8 @@
                     <p class="text-gray-600 text-center">Tailor your site to fit your school's unique personality with
                         our simple customization tools.</p>
                 </div>
+
+                <!-- Service Card 3 -->
                 <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
                     <div class="flex justify-center mb-4">
                         <div class="bg-yellow-500 rounded-full p-3">
@@ -215,6 +490,8 @@
                     <p class="text-gray-600 text-center">Keep parents in the loop with easy communication tools and
                         event calendars.</p>
                 </div>
+
+                <!-- Service Card 4 -->
                 <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
                     <div class="flex justify-center mb-4">
                         <div class="bg-pink-500 rounded-full p-3">
@@ -233,51 +510,63 @@
         </div>
     </div>
     <!-- End::Services Content -->
-
     <!-- Start::About Content -->
-    <div class="bg-gradient-to-b from-blue-50 to-yellow-50" id="about">
-        <div class="container mx-auto px-4 py-16 sm:py-24">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="space-y-6">
-                        <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-blue-600">
-                            Custom School Landing Pages
-                            <span class="block text-amber-500 mt-2">Designed With Love!</span>
-                        </h2>
-                        <h3 class="dynapuff font-semibold text-2xl text-purple-600">Your School, Your Style!</h3>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            We create delightful landing pages that capture your school's unique spirit. From colorful,
-                            mobile-friendly designs to fun features like interactive calendars and virtual tours,
-                            we make sure your site is as special as your little learners!
-                        </p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
-                                <span>Playful and professional designs</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
-                                <span>Easy-to-use features for parents and staff</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="ri-check-line text-green-500 text-xl mr-2"></i>
-                                <span>Mobile-friendly for on-the-go access</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="{{url('about')}}"
-                        class="dynapuff inline-block mt-8 py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300">
-                        Discover the Magic <i class="ri-magic-line ml-2"></i>
-                    </a>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 transform -rotate-6 rounded-lg">
+    <div class="bg-gradient-to-b from-blue-50 to-yellow-50 min-h-screen flex items-center" id="about">
+        <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Content Column -->
+                    <div class="order-2 lg:order-1 max-w-xl mx-auto lg:mx-0">
+                        <div class="space-y-6">
+                            <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-blue-600">
+                                Custom School Landing Pages
+                                <span class="block text-green-500 mt-2">Designed With Love!</span>
+                            </h2>
+                            <h3 class="dynapuff font-semibold text-2xl text-purple-600 text-center lg:text-left">Your
+                                School, Your Style!</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed text-center lg:text-left">
+                                We create delightful landing pages that capture your school's unique spirit. From
+                                colorful,
+                                mobile-friendly designs to fun features like interactive calendars and virtual tours,
+                                we make sure your site is as special as your little learners!
+                            </p>
+                            <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
+                                    <span class="text-gray-700">Playful and professional designs</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
+                                    <span class="text-gray-700">Easy-to-use features for parents and staff</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
+                                    <span class="text-gray-700">Mobile-friendly for on-the-go access</span>
+                                </li>
+                            </ul>
                         </div>
-                        <img src="{{asset('build/assets/img/landing/design.jpg')}}"
-                            class="relative rounded-lg shadow-xl object-cover object-center w-full h-[28rem]"
-                            alt="Colorful kindergarten website design example">
+                        <div class="text-center lg:text-left mt-8">
+                            <a href="{{url('about')}}"
+                                class="dynapuff inline-block py-3 px-8 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
+                                Discover the Magic <i class="ri-magic-line ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="order-1 lg:order-2 max-w-2xl mx-auto lg:mx-0 w-full">
+                        <div class="relative">
+                            <!-- Gradient Background -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 transform -rotate-6 rounded-lg blur-sm">
+                            </div>
+                            <!-- Image Container -->
+                            <div class="relative p-2">
+                                <img src="{{asset('build/assets/img/landing/design.jpg')}}"
+                                    class="rounded-lg shadow-xl object-cover object-center w-full h-[24rem] sm:h-[28rem]"
+                                    alt="Colorful kindergarten website design example">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,56 +576,75 @@
     <!-- End::About Content -->
 
     <!-- Start::Mission Content -->
-    <div class="bg-gradient-to-b from-green-50 to-blue-50" id="our-mission">
-        <div class="container mx-auto px-4 py-16 sm:py-24">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-pink-200 transform rotate-3 rounded-lg">
-                        </div>
-                        <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}"
-                            class="relative rounded-lg shadow-xl border-4 border-white w-full h-auto"
-                            alt="Colorful and intuitive kindergarten dashboard">
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="space-y-6">
-                        <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-purple-600">
-                            Magic Dashboard
-                            <span class="block text-green-500 mt-2">for Happy Little Schools!</span>
-                        </h2>
-                        <div class="space-y-4">
-                            <p class="text-lg text-gray-700 leading-relaxed">
-                                Our colorful and easy-to-use dashboard makes running your kindergarten a breeze!
-                                It's like having a friendly assistant who knows everything about your school.
-                            </p>
-                            <ul class="space-y-3">
-                                <li class="flex items-start">
-                                    <i class="ri-parent-line text-blue-500 text-2xl mr-3 mt-1"></i>
-                                    <span>Keep all your little stars' info in one bright, shiny place!</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="ri-message-3-line text-pink-500 text-2xl mr-3 mt-1"></i>
-                                    <span>Chat with parents as easily as planning playtime.</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="ri-calendar-todo-line text-yellow-500 text-2xl mr-3 mt-1"></i>
-                                    <span>Manage classes and see how awesome your teachers are doing!</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="ri-money-dollar-box-line text-green-500 text-2xl mr-3 mt-1"></i>
-                                    <span>Keep track of fees and payments, as easy as counting to three!</span>
-                                </li>
-                            </ul>
+    <div class="bg-gradient-to-b from-green-50 to-blue-50 min-h-screen flex items-center" id="our-mission">
+        <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Image Column -->
+                    <div class="order-2 lg:order-1 max-w-2xl mx-auto lg:mx-0 w-full">
+                        <div class="relative p-3">
+                            <!-- Gradient Background -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-pink-200 transform rotate-3 rounded-lg blur-sm">
+                            </div>
+                            <!-- Image Container -->
+                            <div class="relative">
+                                <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}"
+                                    class="rounded-lg shadow-xl border-4 border-white w-full h-[24rem] sm:h-[28rem] object-cover object-center"
+                                    alt="Colorful and intuitive kindergarten dashboard">
+                            </div>
                         </div>
                     </div>
-                    <a href="{{url('about')}}"
-                        class="dynapuff inline-block mt-8 py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300">
-                        See the Magic in Action <i class="ri-sparkle-line ml-2"></i>
-                    </a>
-                </div>
 
+                    <!-- Content Column -->
+                    <div class="order-1 lg:order-2 max-w-xl mx-auto lg:mx-0">
+                        <div class="space-y-8">
+                            <h2
+                                class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-purple-600">
+                                Magic Dashboard
+                                <span class="block text-green-500 mt-2">for Happy Little Schools!</span>
+                            </h2>
+                            <div class="space-y-6">
+                                <p class="text-lg text-gray-700 leading-relaxed text-center lg:text-left">
+                                    Our colorful and easy-to-use dashboard makes running your kindergarten a breeze!
+                                    It's like having a friendly assistant who knows everything about your school.
+                                </p>
+                                <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
+                                    <li
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
+                                        <i class="ri-parent-line text-blue-500 text-2xl mr-3 mt-1"></i>
+                                        <span class="text-gray-700">Keep all your little stars' info in one bright,
+                                            shiny place!</span>
+                                    </li>
+                                    <li
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
+                                        <i class="ri-message-3-line text-pink-500 text-2xl mr-3 mt-1"></i>
+                                        <span class="text-gray-700">Chat with parents as easily as planning
+                                            playtime.</span>
+                                    </li>
+                                    <li
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
+                                        <i class="ri-calendar-todo-line text-yellow-500 text-2xl mr-3 mt-1"></i>
+                                        <span class="text-gray-700">Manage classes and see how awesome your teachers are
+                                            doing!</span>
+                                    </li>
+                                    <li
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
+                                        <i class="ri-money-dollar-box-line text-green-500 text-2xl mr-3 mt-1"></i>
+                                        <span class="text-gray-700">Keep track of fees and payments, as easy as counting
+                                            to three!</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center lg:text-left mt-8">
+                            <a href="{{url('about')}}"
+                                class="dynapuff inline-block py-3 px-8 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
+                                See the Magic in Action <i class="ri-sparkle-line ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1229,126 +1537,125 @@
     </div> --}}
     <!-- End::Blog Content -->
     {{--Start : Projects --}}
-    <section class="" id="projects">
-        <div class="section container mx-auto">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">My School Website Projects</span>
+    <style>
+        @keyframes shine {
+            from {
+                transform: translateX(-100%) rotate(45deg);
+            }
+
+            to {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+
+        .project-card:hover .shine-effect::after {
+            animation: shine 1s ease-in-out;
+        }
+
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent 45%,
+                    rgba(255, 255, 255, 0.1) 48%,
+                    rgba(255, 255, 255, 0.3) 50%,
+                    rgba(255, 255, 255, 0.1) 52%,
+                    transparent 55%);
+            transform: translateX(-100%) rotate(45deg);
+        }
+    </style>
+
+    <section class="py-20 bg-gradient-to-b from-blue-50/50 to-green-50/50" id="projects">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-[80rem] mx-auto mb-16">
+                <h2 class="dynapuff text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-blue-600">Magical</span>
+                    <span class="text-purple-600">School Websites</span>
                 </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Showcasing my expertise in creating modern,
-                    functional, and user-friendly websites for educational institutions.
-                    From elementary schools to universities, each project is tailored to meet the unique needs of the
-                    institution and its community.</p>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Take a peek at how we transform school websites into enchanting digital spaces
+                    that bring joy to students, teachers, and parents alike!
+                </p>
             </div>
-            <div class="grid grid-cols-12 gap-6 max-w-[80rem] mx-auto">
-                <div class="col-span-12 lg:col-span-6">
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{ asset('path/to/your/image1.jpg') }}" class="w-full"
-                                    alt="Elementary School Website Redesign">
-                                <a href="{{ url('project-details') }}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Elementary School Website Redesign</h5>
-                                                <p class="text-gray-300 text-sm mt-2">A modern, user-friendly website
-                                                    for a local elementary school.</p>
-                                                <p class="text-gray-400 text-sm">Completed <span
-                                                        class="text-white">15.03.2024</span> for <span
-                                                        class="text-white">Sunshine Elementary</span></p>
-                                            </div>
-                                        </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Project 1 -->
+                <div class="project-card group">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
+                        <img src="/api/placeholder/600/400" alt="Elementary School Website"
+                            class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-90">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <div
+                                    class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                                    <h3 class="dynapuff text-2xl font-bold text-white">
+                                        Sunshine Elementary
+                                    </h3>
+                                    <p class="text-gray-200">
+                                        A joyful and intuitive website redesign that brings the
+                                        elementary school experience to life.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 pt-2">
+                                        <span
+                                            class="px-3 py-1 bg-blue-500/20 text-blue-100 rounded-full text-sm">Website
+                                            Redesign</span>
+                                        <span class="px-3 py-1 bg-green-500/20 text-green-100 rounded-full text-sm">User
+                                            Experience</span>
                                     </div>
-                                </a>
+                                    <a href="#view-project"
+                                        class="inline-block mt-2 text-white dynapuff hover:text-blue-300 transition-colors duration-300">
+                                        View Project →
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-12 lg:col-span-3">
-                    <div class="box">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{ asset('path/to/your/image2.jpg') }}" class="w-full" alt="High School LMS">
-                                <a href="{{ url('project-details') }}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">High School Learning Management System
-                                                </h5>
-                                                <p class="text-gray-400 text-sm">Completed <span
-                                                        class="text-white">22.02.2024</span> for <span
-                                                        class="text-white">Evergreen High School</span></p>
-                                            </div>
-                                        </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
+                        <img src="/api/placeholder/600/400" alt="High School Learning Portal"
+                            class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-90">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <div
+                                    class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                                    <h3 class="dynapuff text-2xl font-bold text-white">
+                                        Evergreen High School
+                                    </h3>
+                                    <p class="text-gray-200">
+                                        A comprehensive learning management system that connects
+                                        students, teachers, and parents.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 pt-2">
+                                        <span
+                                            class="px-3 py-1 bg-blue-500/20 text-blue-100 rounded-full text-sm">Learning
+                                            Portal</span>
+                                        <span
+                                            class="px-3 py-1 bg-green-500/20 text-green-100 rounded-full text-sm">Communication
+                                            Hub</span>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{ asset('path/to/your/image3.jpg') }}" class="w-full"
-                                    alt="University Department Portal">
-                                <a href="{{ url('project-details') }}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">University Department Portal</h5>
-                                                <p class="text-gray-400 text-sm">Completed <span
-                                                        class="text-white">10.01.2024</span> for <span
-                                                        class="text-white">Tech University</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-3">
-                    <div class="box">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{ asset('path/to/your/image4.jpg') }}" class="w-full"
-                                    alt="K-12 School District Website">
-                                <a href="{{ url('project-details') }}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">K-12 School District Website</h5>
-                                                <p class="text-gray-400 text-sm">Completed <span
-                                                        class="text-white">05.12.2023</span> for <span
-                                                        class="text-white">Oakville School District</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{ asset('path/to/your/image5.jpg') }}" class="w-full" alt="Educational App">
-                                <a href="{{ url('project-details') }}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Educational App Development</h5>
-                                                <p class="text-gray-400 text-sm">Completed <span
-                                                        class="text-white">20.11.2023</span> for <span
-                                                        class="text-white">EduTech Startup</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                    <a href="#view-project"
+                                        class="inline-block mt-2 text-white dynapuff hover:text-green-300 transition-colors duration-300">
+                                        View Project →
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

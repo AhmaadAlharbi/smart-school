@@ -1,124 +1,159 @@
-<aside class="app-sidebar" id="sidebar">
-    <div class="container mx-auto lg:p-6 !p-0">
-        <!-- Start::main-sidebar -->
-        <div class="main-sidebar">
-
-            <!-- Start::nav -->
-            <div class="bg-gradient-to-r from-purple-100 via-pink-100 to-yellow-100">
-                <nav class="bg-white shadow-lg">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="flex justify-between h-16">
-                            <div class="flex-shrink-0 flex items-center">
-                                <img class="h-12 w-auto" src="/api/placeholder/120/48" alt="Sahab Code Logo">
-                            </div>
-                            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                                <a href="#home"
-                                    class="fredoka-one text-purple-600 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium menu-item-hover">Home</a>
-                                <a href="#services"
-                                    class="fredoka-one text-purple-600 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium menu-item-hover">Services</a>
-                                <div class="relative group">
-                                    <button
-                                        class="fredoka-one text-purple-600 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium inline-flex items-center menu-item-hover">
-                                        More
-                                        <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                            fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                    <div
-                                        class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0 hidden group-hover:block">
-                                        <div
-                                            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                                            <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                                <a href="#about"
-                                                    class="nunito -m-3 p-3 flex items-start rounded-lg hover:bg-purple-50">
-                                                    <i data-feather="smartphone"
-                                                        class="flex-shrink-0 h-6 w-6 text-purple-600"></i>
-                                                    <div class="ml-4">
-                                                        <p class="text-base font-medium text-gray-900">Mobile View</p>
-                                                    </div>
-                                                </a>
-                                                <a href="#features"
-                                                    class="nunito -m-3 p-3 flex items-start rounded-lg hover:bg-purple-50">
-                                                    <i data-feather="star"
-                                                        class="flex-shrink-0 h-6 w-6 text-purple-600"></i>
-                                                    <div class="ml-4">
-                                                        <p class="text-base font-medium text-gray-900">Features</p>
-                                                    </div>
-                                                </a>
-                                                <!-- Add more menu items here -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#pricing"
-                                    class="fredoka-one text-purple-600 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium menu-item-hover">Pricing</a>
-                                <a href="#contact"
-                                    class="fredoka-one text-purple-600 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium menu-item-hover">Contact</a>
-                            </div>
-                            <div class="hidden sm:ml-6 sm:flex sm:items-center">
-                                <a href="#signup"
-                                    class="fredoka-one inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700">
-                                    Sign Up
-                                </a>
-                                <a href="#get-started"
-                                    class="fredoka-one ml-3 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600">
-                                    Get Started
-                                </a>
-                            </div>
-                            <div class="-mr-2 flex items-center sm:hidden">
-                                <button type="button"
-                                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500"
-                                    aria-controls="mobile-menu" aria-expanded="false">
-                                    <span class="sr-only">Open main menu</span>
-                                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 6h16M4 12h16M4 18h16" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sm:hidden" id="mobile-menu">
-                        <div class="pt-2 pb-3 space-y-1">
-                            <a href="#home"
-                                class="fredoka-one text-purple-600 hover:bg-purple-50 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                            <a href="#services"
-                                class="fredoka-one text-purple-600 hover:bg-purple-50 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                            <a href="#more"
-                                class="fredoka-one text-purple-600 hover:bg-purple-50 block px-3 py-2 rounded-md text-base font-medium">More</a>
-                            <a href="#pricing"
-                                class="fredoka-one text-purple-600 hover:bg-purple-50 block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-                            <a href="#contact"
-                                class="fredoka-one text-purple-600 hover:bg-purple-50 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                        </div>
-                        <div class="pt-4 pb-3 border-t border-gray-200">
-                            <div class="flex items-center px-4">
-                                <a href="#signup"
-                                    class="fredoka-one flex-shrink-0 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700">
-                                    Sign Up
-                                </a>
-                            </div>
-                            <div class="mt-3 flex items-center px-4">
-                                <a href="#get-started"
-                                    class="fredoka-one flex-shrink-0 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600">
-                                    Get Started
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <script>
-                    feather.replace()
-                </script>
-            </div>
-            <!-- End::nav -->
-
+<nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-blue-50 to-green-50">
+    <div class="container mx-auto px-4 relative">
+        <!-- Decorative Elements -->
+        <div
+            class="absolute top-2 left-10 w-16 h-16 bg-yellow-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
         </div>
-        <!-- End::main-sidebar -->
+        <div
+            class="absolute bottom-2 right-10 w-20 h-20 bg-blue-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+        </div>
+
+        <!-- Main navbar content -->
+        <div class="max-w-7xl mx-auto relative">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 relative z-10">
+                    <img class="h-12 w-auto transform hover:-rotate-6 transition-transform duration-300"
+                        src="/api/placeholder/120/48" alt="Sahab Code Logo">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home"
+                        class="dynapuff text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
+                        Home
+                    </a>
+                    <a href="#services"
+                        class="dynapuff text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
+                        Services
+                    </a>
+                    <a href="#about"
+                        class="dynapuff text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
+                        About
+                    </a>
+                    <a href="#contact"
+                        class="dynapuff text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- CTA Buttons -->
+
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden relative z-10">
+                    <button type="button"
+                        class="dynapuff inline-flex items-center justify-center p-2 rounded-lg text-blue-600 hover:text-green-500 hover:bg-blue-50/50 focus:outline-none transition-colors duration-300 transform hover:-translate-y-1"
+                        id="mobile-menu-button" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="hidden md:hidden relative z-20" id="mobile-menu">
+                <div class="p-4 bg-white/90 backdrop-blur-lg rounded-xl shadow-lg mt-2 border border-gray-100/50">
+                    <div class="space-y-3">
+                        <a href="#home"
+                            class="dynapuff text-blue-600 hover:text-green-500 block px-3 py-2 text-base font-medium hover:bg-blue-50/50 rounded-lg transition-all duration-300">
+                            Home
+                        </a>
+                        <a href="#services"
+                            class="dynapuff text-blue-600 hover:text-green-500 block px-3 py-2 text-base font-medium hover:bg-blue-50/50 rounded-lg transition-all duration-300">
+                            Services
+                        </a>
+                        <a href="#about"
+                            class="dynapuff text-blue-600 hover:text-green-500 block px-3 py-2 text-base font-medium hover:bg-blue-50/50 rounded-lg transition-all duration-300">
+                            About
+                        </a>
+                        <a href="#contact"
+                            class="dynapuff text-blue-600 hover:text-green-500 block px-3 py-2 text-base font-medium hover:bg-blue-50/50 rounded-lg transition-all duration-300">
+                            Contact
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-</aside>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+
+    // Toggle mobile menu with animation
+    function toggleMobileMenu() {
+        isMenuOpen = !isMenuOpen;
+        
+        if (isMenuOpen) {
+            // Show menu
+            mobileMenu.classList.remove('hidden');
+            requestAnimationFrame(() => {
+                mobileMenu.classList.add('fade-in');
+            });
+            
+            // Change to close icon
+            mobileMenuButton.querySelector('svg').innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            `;
+        } else {
+            // Hide menu
+            mobileMenu.classList.remove('fade-in');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+            
+            // Change to menu icon
+            mobileMenuButton.querySelector('svg').innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            `;
+        }
+        
+        mobileMenuButton.setAttribute('aria-expanded', isMenuOpen);
+    }
+
+    // Close menu on window resize
+    function handleResize() {
+        if (window.innerWidth >= 768 && isMenuOpen) {
+            isMenuOpen = false;
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('fade-in');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            mobileMenuButton.querySelector('svg').innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            `;
+        }
+    }
+
+    // Add animation styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Event listeners
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    window.addEventListener('resize', handleResize);
+});
+</script>
