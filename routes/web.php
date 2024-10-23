@@ -42,6 +42,9 @@ use App\Http\Controllers\ReceiptStudentController;
 
 
 ////////////////////////////////////
+Route::get('/demo-dashboard', function () {
+    return view('pages.demo-dashboard.index');
+});
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/', [DashboardsController::class, 'index']);
     Route::resource('grades', GradeController::class);

@@ -273,53 +273,7 @@
 <div class="main-content landing-main !p-0 ">
 
     <!-- Start::Home Content new one -->
-    {{-- <div class="bg-gradient-to-b from-purple-100 via-pink-100 to-yellow-100 min-h-screen py-10">
-        <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-24">
-            <div class="flex flex-col lg:flex-row items-center justify-between">
-                <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
-                    <h1 class="fredoka-one text-5xl lg:text-6xl text-purple-600 leading-tight mb-6">
-                        Your School Will
-                        <span class="block text-pink-500 mt-2">SOAR</span>
-                        <span class="block text-yellow-500 mt-2">with Sahab Code!</span>
-                    </h1>
-                    <p class="nunito text-xl text-gray-700 leading-relaxed mb-8">
-                        We craft delightful websites that make school life a joyful adventure!
-                        Let's give your school a vibrant online home as colorful as your students' imaginations!
-                    </p>
-                    <div
-                        class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#"
-                            class="fredoka-one py-3 px-8 rounded-full text-white bg-purple-500 hover:bg-purple-600 transition duration-300 inline-flex items-center justify-center text-lg">
-                            See The Magic <i data-feather="star" class="ml-2"></i>
-                        </a>
-                        <a href="#"
-                            class="fredoka-one py-3 px-8 rounded-full text-white bg-pink-500 hover:bg-pink-600 transition duration-300 inline-flex items-center justify-center text-lg">
-                            Start Your Adventure <i data-feather="rocket" class="ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 relative">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-300 transform rotate-3 rounded-3xl">
-                    </div>
-                    <img src="{{asset('build/assets/img/landing/hero.jpg')}}" alt="Happy kids using a computer"
-                        class="relative rounded-3xl shadow-2xl border-8 border-white float">
 
-                    <div
-                        class="absolute -top-12 -left-12 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center transform rotate-12">
-                        <i data-feather="sun" class="text-white w-12 h-12"></i>
-                    </div>
-                    <div
-                        class="absolute -bottom-12 -right-12 w-24 h-24 bg-pink-400 rounded-full flex items-center justify-center transform -rotate-12">
-                        <i data-feather="heart" class="text-white w-12 h-12"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            feather.replace()
-        </script>
-    </div> --}}
     <div class="bg-gradient-to-b from-blue-50 to-green-50">
         <div class="container mx-auto px-4 py-16 relative">
             <!-- Animated Decorative Elements -->
