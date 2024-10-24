@@ -35,6 +35,45 @@
                         class="dynapuff text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
                         Contact
                     </a>
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <!-- Language Toggle -->
+                        <button
+                            class="dynapuff flex items-center space-x-2 text-blue-600 hover:text-green-500 px-3 py-2 text-sm font-medium transform hover:-translate-y-1 transition-all duration-300">
+                            <span>Language</span>
+                            <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-lg rounded-xl shadow-lg border border-gray-100/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
+                            <ul class="py-2">
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <li>
+                                    <a rel="alternate" hreflang="{{ $localeCode }}"
+                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                        class="dynapuff flex items-center px-4 py-2 text-sm text-blue-600 hover:text-green-500 hover:bg-blue-50/50 transition-colors duration-300">
+                                        <span class="w-6 text-center mr-2">
+                                            @if($localeCode == 'en')
+                                            🇺🇸
+                                            @elseif($localeCode == 'ar')
+                                            🇰🇼
+                                            @elseif($localeCode == 'fr')
+                                            🇫🇷
+                                            @elseif($localeCode == 'es')
+                                            🇪🇸
+                                            @endif
+                                        </span>
+                                        {{ $properties['native'] }}
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- CTA Buttons -->

@@ -9,6 +9,7 @@ use App\Http\Controllers\IconsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\BasicuiController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StudentController;
@@ -250,6 +251,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
     Route::get('widgets', [WidgetsController::class, 'widgets']);
     Route::get('navbar', [ElementsController::class, 'navbar']);
+
+    Route::get('/quick-payment', [PaymentController::class, 'showForm'])->name('payment.form');
+    Route::post('/quick-payment/initiate', [PaymentController::class, 'initiatePayment'])->name('payment.initiate');
+    Route::get('/quick-payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
+    Route::get('/quick-payment/error', function () {
+        return view('payment-error');
+    })->name('payment.error');
 });
 
 
