@@ -385,85 +385,274 @@
             <!-- Header Section -->
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-6">
-                    Our Magical Services
+                    Our Expert Services
                 </h2>
                 <p class="text-lg text-gray-700 px-4">
-                    At Sahab Code, we sprinkle a little magic on every kindergarten website we create.
-                    Our services are designed to make your school shine online and make life easier for teachers and
-                    parents alike!
+                    We offer comprehensive web solutions tailored specifically for schools, from fresh designs to
+                    complete redesigns.
                 </p>
             </div>
 
-            <!-- Grid Section -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
-                <!-- Service Card 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-4">
-                        <div class="bg-blue-500 rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            <!-- Grid Section - 3 Main Services -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+                <!-- Web Design Service -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-blue-500 rounded-full p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Playful Design</h3>
-                    <p class="text-gray-600 text-center">We create colorful, fun designs that capture the joy of
-                        learning and make your school stand out!</p>
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Web Design</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Custom and responsive designs
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            User-friendly interfaces
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Brand integration
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Modern visual elements
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Service Card 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-4">
-                        <div class="bg-green-500 rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                <!-- Web Development Service -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-purple-500 rounded-full p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Easy Customization</h3>
-                    <p class="text-gray-600 text-center">Tailor your site to fit your school's unique personality with
-                        our simple customization tools.</p>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-4">
-                        <div class="bg-yellow-500 rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Web Development</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    d="M5 13l4 4L19 7"></path>
                             </svg>
-                        </div>
-                    </div>
-                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Parent-Friendly Features
-                    </h3>
-                    <p class="text-gray-600 text-center">Keep parents in the loop with easy communication tools and
-                        event calendars.</p>
+                            Custom CMS integration
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Student portal systems
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Event calendar features
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Optimized performance
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Service Card 4 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-4">
-                        <div class="bg-pink-500 rounded-full p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                <!-- Website Redesign Service -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-pink-500 rounded-full p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-xl font-semibold text-purple-600 mb-2 text-center">Always Up-to-Date</h3>
-                    <p class="text-gray-600 text-center">We keep your site fresh and secure with regular updates and
-                        improvements.</p>
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Website Redesign</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Site analysis & audit
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Modern UI/UX upgrade
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Content migration
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            SEO preservation
+                        </li>
+                    </ul>
                 </div>
+            </div>
+
+            <!-- Optional CTA -->
+            <div class="text-center mt-16">
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                    Discuss Your Project
+                </a>
             </div>
         </div>
     </div>
     <!-- End::Services Content -->
+    <div class="max-w-6xl mx-auto px-4 py-16 bg-gradient-to-b from-blue-50 to-purple-50">
+        <h3 class="dynapuff text-4xl font-bold text-blue-600 text-center mb-12">How We Work</h3>
+
+        <!-- Process Timeline -->
+        <div class="grid lg:grid-cols-4 gap-8 relative">
+            <!-- Connecting Line (hidden on mobile) -->
+            <div
+                class="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+            </div>
+
+            <!-- Step 1 -->
+            <div class="relative group">
+                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
+                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                        <div
+                            class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <h4 class="dynapuff text-xl font-semibold text-blue-600 mb-3">Discovery Meeting</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Initial consultation</li>
+                            <li>• Requirements gathering</li>
+                            <li>• Goals definition</li>
+                            <li>• Timeline planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative group">
+                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
+                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                        <div
+                            class="bg-gradient-to-r from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <h4 class="dynapuff text-xl font-semibold text-purple-600 mb-3">Design Creation</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Wireframe design</li>
+                            <li>• Visual mockups</li>
+                            <li>• Design revision</li>
+                            <li>• Client approval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative group">
+                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
+                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                        <div
+                            class="bg-gradient-to-r from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <h4 class="dynapuff text-xl font-semibold text-green-600 mb-3">Development</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Frontend coding</li>
+                            <li>• Backend integration</li>
+                            <li>• Content upload</li>
+                            <li>• Testing phase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative group">
+                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
+                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                        <div
+                            class="bg-gradient-to-r from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
+                            <span class="text-2xl font-bold text-white">4</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <h4 class="dynapuff text-xl font-semibold text-pink-600 mb-3">Launch & Support</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Final review</li>
+                            <li>• Site deployment</li>
+                            <li>• Training session</li>
+                            <li>• Ongoing support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional CTA -->
+        <div class="text-center mt-12">
+            <a href="#contact"
+                class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                Start Your Project
+            </a>
+        </div>
+    </div>
     <!-- Start::About Content -->
     <div class="bg-gradient-to-b from-blue-50 to-yellow-50 min-h-screen flex items-center" id="about">
         <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
