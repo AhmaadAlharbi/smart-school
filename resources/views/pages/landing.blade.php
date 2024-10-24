@@ -290,8 +290,16 @@
 
     <!-- Start::Home Content new one -->
 
-    <div class="bg-gradient-to-b from-blue-50 to-green-50">
+    <div class="bg-gradient-to-b from-blue-100 to-green-100">
         <div class="container mx-auto px-4 py-16 relative">
+            <!-- Restored Animated Decorative Elements -->
+            <div
+                class="absolute top-20 left-10 w-24 h-24 bg-yellow-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+            </div>
+            <div
+                class="absolute bottom-20 right-10 w-32 h-32 bg-blue-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+            </div>
+
             <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-24 pt-12 pb-12 relative">
                 <div class="container max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="flex flex-col lg:flex-row items-center justify-between gap-12 py-10">
@@ -311,37 +319,83 @@
                                         {{ __('landing.description') }}
                                     </p>
 
-                                    <div class="flex flex-col sm:flex-row 
-                                    {{ app()->getLocale() == 'ar' ? 'sm:flex-row-reverse' : '' }} 
-                                    justify-center space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2">
-
+                                    <div
+                                        class=" flex flex-col sm:flex-row {{ app()->getLocale() == 'ar' ? 'sm:flex-row-reverse justify-center' : '' }} justify-center {{ app()->getLocale() == 'ar' ? '' : 'lg:justify-start' }} space-y-4 sm:space-y-0 {{ app()->getLocale() == 'ar' ? 'sm:space-x-reverse' : '' }} sm:space-x-6 soar-in-delay-2">
                                         <a href="#"
-                                            class="dynapuff inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            {{ __('landing.button_see') }}
+                                            class="dynapuff inline-block px-8 py-4 mx-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            <span
+                                                class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                                {{ __('landing.button_see') }}
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="w-6 h-6 inline-block {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                                </svg>
+                                            </span>
                                         </a>
-
                                         <a href="#"
                                             class="dynapuff inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            {{ __('landing.button_adventure') }}
+                                            <span
+                                                class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                                {{ __('landing.button_adventure') }}
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="w-6 h-6 inline-block {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                                </svg>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Right Content -->
+                        <!-- Right Content with Single Image -->
                         <div class="w-full lg:w-1/2 px-4 sm:px-6 relative">
-                            <div class="float-animation mx-auto max-w-2xl">
+                            <!-- Shadow Element -->
+                            <div
+                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] sm:w-4/5 h-6 sm:h-8 bg-black/10 rounded-full blur-xl shadow-animation">
+                            </div>
+
+                            <!-- Floating Image Container -->
+                            <div class="float-animation mx-auto max-w-2xl ">
                                 <div class="bg-white rounded-xl shadow-lg p-2 sm:p-3 relative">
+                                    <!-- Gradient Background -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200 rounded-xl rotate-2 blur-sm">
+                                    </div>
+
+                                    <!-- Image Container -->
                                     <div class="relative w-full aspect-[4/3] md:aspect-[16/9]">
-                                        <img src="{{ asset('build/assets/img/landing/hero3.jpg') }}"
+                                        <img src="{{asset('build/assets/img/landing/hero3.jpg')}}"
                                             alt="Happy kids using a computer"
                                             class="relative rounded-xl w-full h-full object-cover">
                                     </div>
+
+                                    <!-- Restored Decorative Circles -->
+                                    <div
+                                        class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500 rounded-full flex items-center justify-center rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+
+                                    <div
+                                        class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center -rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -351,16 +405,15 @@
 
     <!-- End::Services Content -->
     <!-- Start::Services Content -->
-    <div class="bg-gradient-to-b from-blue-50 to-purple-50 min-h-screen flex items-center" id="services">
+    <div class="bg-gradient-to-b from-blue-100 to-purple-100 min-h-screen flex items-center" id="services">
         <div class="container mx-auto px-4 py-16 md:py-24">
             <!-- Header Section -->
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-6">
-                    Our Expert Services
+                    {{ __('services.title') }}
                 </h2>
                 <p class="text-lg text-gray-700 px-4">
-                    We offer comprehensive web solutions tailored specifically for schools, from fresh designs to
-                    complete redesigns.
+                    {{ __('services.description') }}
                 </p>
             </div>
 
@@ -377,39 +430,40 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Web Design</h3>
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
+                        __('services.web_design.title') }}</h3>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Custom and responsive designs
+                            {{ __('services.web_design.feature_1') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            User-friendly interfaces
+                            {{ __('services.web_design.feature_2') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Brand integration
+                            {{ __('services.web_design.feature_3') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Modern visual elements
+                            {{ __('services.web_design.feature_4') }}
                         </li>
                     </ul>
                 </div>
@@ -425,39 +479,40 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Web Development</h3>
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
+                        __('services.web_development.title') }}</h3>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Custom CMS integration
+                            {{ __('services.web_development.feature_1') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Student portal systems
+                            {{ __('services.web_development.feature_2') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Event calendar features
+                            {{ __('services.web_development.feature_3') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Optimized performance
+                            {{ __('services.web_development.feature_4') }}
                         </li>
                     </ul>
                 </div>
@@ -473,39 +528,40 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">Website Redesign</h3>
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
+                        __('services.redesign.title') }}</h3>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Site analysis & audit
+                            {{ __('services.redesign.feature_1') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Modern UI/UX upgrade
+                            {{ __('services.redesign.feature_2') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Content migration
+                            {{ __('services.redesign.feature_3') }}
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            SEO preservation
+                            {{ __('services.redesign.feature_4') }}
                         </li>
                     </ul>
                 </div>
@@ -515,20 +571,21 @@
             <div class="text-center mt-16">
                 <a href="#contact"
                     class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
-                    Discuss Your Project
+                    {{ __('services.cta_button') }}
                 </a>
             </div>
         </div>
     </div>
     <!-- End::Services Content -->
+    <!-- start::How we work Content -->
     <div class="max-w-6xl mx-auto px-4 py-16 bg-gradient-to-b from-blue-50 to-purple-50">
-        <h3 class="dynapuff text-4xl font-bold text-blue-600 text-center mb-12">How We Work</h3>
+        <h3 class="dynapuff text-4xl font-bold text-blue-600 text-center mb-12">{{ __('process.title') }}</h3>
 
         <!-- Process Timeline -->
         <div class="grid lg:grid-cols-4 gap-8 relative">
             <!-- Connecting Line (hidden on mobile) -->
             <div
-                class="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+                class="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-pink-400 via-purple-400 to-blue-400' : 'from-blue-400 via-purple-400 to-pink-400' }}">
             </div>
 
             <!-- Step 1 -->
@@ -541,12 +598,13 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-blue-600 mb-3">Discovery Meeting</h4>
+                        <h4 class="dynapuff text-xl font-semibold text-blue-600 mb-3">{{ __('process.step1.title') }}
+                        </h4>
                         <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• Initial consultation</li>
-                            <li>• Requirements gathering</li>
-                            <li>• Goals definition</li>
-                            <li>• Timeline planning</li>
+                            <li>• {{ __('process.step1.point1') }}</li>
+                            <li>• {{ __('process.step1.point2') }}</li>
+                            <li>• {{ __('process.step1.point3') }}</li>
+                            <li>• {{ __('process.step1.point4') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -562,12 +620,13 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-purple-600 mb-3">Design Creation</h4>
+                        <h4 class="dynapuff text-xl font-semibold text-purple-600 mb-3">{{ __('process.step2.title') }}
+                        </h4>
                         <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• Wireframe design</li>
-                            <li>• Visual mockups</li>
-                            <li>• Design revision</li>
-                            <li>• Client approval</li>
+                            <li>• {{ __('process.step2.point1') }}</li>
+                            <li>• {{ __('process.step2.point2') }}</li>
+                            <li>• {{ __('process.step2.point3') }}</li>
+                            <li>• {{ __('process.step2.point4') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -583,12 +642,13 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-green-600 mb-3">Development</h4>
+                        <h4 class="dynapuff text-xl font-semibold text-green-600 mb-3">{{ __('process.step3.title') }}
+                        </h4>
                         <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• Frontend coding</li>
-                            <li>• Backend integration</li>
-                            <li>• Content upload</li>
-                            <li>• Testing phase</li>
+                            <li>• {{ __('process.step3.point1') }}</li>
+                            <li>• {{ __('process.step3.point2') }}</li>
+                            <li>• {{ __('process.step3.point3') }}</li>
+                            <li>• {{ __('process.step3.point4') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -604,12 +664,13 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-pink-600 mb-3">Launch & Support</h4>
+                        <h4 class="dynapuff text-xl font-semibold text-pink-600 mb-3">{{ __('process.step4.title') }}
+                        </h4>
                         <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• Final review</li>
-                            <li>• Site deployment</li>
-                            <li>• Training session</li>
-                            <li>• Ongoing support</li>
+                            <li>• {{ __('process.step4.point1') }}</li>
+                            <li>• {{ __('process.step4.point2') }}</li>
+                            <li>• {{ __('process.step4.point3') }}</li>
+                            <li>• {{ __('process.step4.point4') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -620,10 +681,12 @@
         <div class="text-center mt-12">
             <a href="#contact"
                 class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
-                Start Your Project
+                {{ __('process.cta_button') }}
             </a>
         </div>
     </div>
+    <!-- end::How we work Content -->
+
     <!-- Start::About Content -->
     <div class="bg-gradient-to-b from-blue-50 to-yellow-50 min-h-screen flex items-center" id="about">
         <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
@@ -632,37 +695,45 @@
                     <!-- Content Column -->
                     <div class="order-2 lg:order-1 max-w-xl mx-auto lg:mx-0">
                         <div class="space-y-6">
-                            <h2 class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-blue-600">
-                                Custom School Landing Pages
-                                <span class="block text-green-500 mt-2">Designed With Love!</span>
+                            <h2
+                                class="dynapuff text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} text-3xl sm:text-4xl font-bold text-blue-600">
+                                {{ __('about.title') }}
+                                <span class="block text-green-500 mt-2">{{ __('about.subtitle') }}</span>
                             </h2>
-                            <h3 class="dynapuff font-semibold text-2xl text-purple-600 text-center lg:text-left">Your
-                                School, Your Style!</h3>
-                            <p class="text-lg text-gray-700 leading-relaxed text-center lg:text-left">
-                                We create delightful landing pages that capture your school's unique spirit. From
-                                colorful,
-                                mobile-friendly designs to fun features like interactive calendars and virtual tours,
-                                we make sure your site is as special as your little learners!
+                            <h3
+                                class="dynapuff font-semibold text-2xl text-purple-600 text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+                                {{ __('about.tagline') }}
+                            </h3>
+                            <p
+                                class="text-lg text-gray-700 leading-relaxed text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+                                {{ __('about.description') }}
                             </p>
                             <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
-                                <li class="flex items-center">
-                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
-                                    <span class="text-gray-700">Playful and professional designs</span>
+                                <li
+                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                    <i
+                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+                                    <span class="text-gray-700">{{ __('about.feature1') }}</span>
                                 </li>
-                                <li class="flex items-center">
-                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
-                                    <span class="text-gray-700">Easy-to-use features for parents and staff</span>
+                                <li
+                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                    <i
+                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+                                    <span class="text-gray-700">{{ __('about.feature2') }}</span>
                                 </li>
-                                <li class="flex items-center">
-                                    <i class="ri-check-line text-green-500 text-xl mr-3"></i>
-                                    <span class="text-gray-700">Mobile-friendly for on-the-go access</span>
+                                <li
+                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                    <i
+                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+                                    <span class="text-gray-700">{{ __('about.feature3') }}</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-center lg:text-left mt-8">
+                        <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
                             <a href="{{url('about')}}"
                                 class="dynapuff inline-block py-3 px-8 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
-                                Discover the Magic <i class="ri-magic-line ml-2"></i>
+                                {{ __('about.cta_button') }}
+                                <i class="ri-magic-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
                             </a>
                         </div>
                     </div>
@@ -672,13 +743,13 @@
                         <div class="relative">
                             <!-- Gradient Background -->
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 transform -rotate-6 rounded-lg blur-sm">
+                                class="absolute inset-0 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-purple-200 to-blue-200' : 'from-blue-200 to-purple-200' }} transform -rotate-6 rounded-lg blur-sm">
                             </div>
                             <!-- Image Container -->
                             <div class="relative p-2">
                                 <img src="{{asset('build/assets/img/landing/design.jpg')}}"
                                     class="rounded-lg shadow-xl object-cover object-center w-full h-[24rem] sm:h-[28rem]"
-                                    alt="Colorful kindergarten website design example">
+                                    alt="{{ __('about.image_alt') }}">
                             </div>
                         </div>
                     </div>
@@ -699,13 +770,13 @@
                         <div class="relative p-3">
                             <!-- Gradient Background -->
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-pink-200 transform rotate-3 rounded-lg blur-sm">
+                                class="absolute inset-0 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-pink-200 to-yellow-200' : 'from-yellow-200 to-pink-200' }} transform rotate-3 rounded-lg blur-sm">
                             </div>
                             <!-- Image Container -->
                             <div class="relative">
                                 <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}"
                                     class="rounded-lg shadow-xl border-4 border-white w-full h-[24rem] sm:h-[28rem] object-cover object-center"
-                                    alt="Colorful and intuitive kindergarten dashboard">
+                                    alt="{{ __('mission.image_alt') }}">
                             </div>
                         </div>
                     </div>
@@ -714,47 +785,48 @@
                     <div class="order-1 lg:order-2 max-w-xl mx-auto lg:mx-0">
                         <div class="space-y-8">
                             <h2
-                                class="dynapuff text-center lg:text-left text-3xl sm:text-4xl font-bold text-purple-600">
-                                Magic Dashboard
-                                <span class="block text-green-500 mt-2">for Happy Little Schools!</span>
+                                class="dynapuff text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} text-3xl sm:text-4xl font-bold text-purple-600">
+                                {{ __('mission.title') }}
+                                <span class="block text-green-500 mt-2">{{ __('mission.subtitle') }}</span>
                             </h2>
                             <div class="space-y-6">
-                                <p class="text-lg text-gray-700 leading-relaxed text-center lg:text-left">
-                                    Our colorful and easy-to-use dashboard makes running your kindergarten a breeze!
-                                    It's like having a friendly assistant who knows everything about your school.
+                                <p
+                                    class="text-lg text-gray-700 leading-relaxed text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+                                    {{ __('mission.description') }}
                                 </p>
                                 <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
-                                        <i class="ri-parent-line text-blue-500 text-2xl mr-3 mt-1"></i>
-                                        <span class="text-gray-700">Keep all your little stars' info in one bright,
-                                            shiny place!</span>
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        <i
+                                            class="ri-parent-line text-blue-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
+                                        <span class="text-gray-700">{{ __('mission.feature1') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
-                                        <i class="ri-message-3-line text-pink-500 text-2xl mr-3 mt-1"></i>
-                                        <span class="text-gray-700">Chat with parents as easily as planning
-                                            playtime.</span>
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        <i
+                                            class="ri-message-3-line text-pink-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
+                                        <span class="text-gray-700">{{ __('mission.feature2') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
-                                        <i class="ri-calendar-todo-line text-yellow-500 text-2xl mr-3 mt-1"></i>
-                                        <span class="text-gray-700">Manage classes and see how awesome your teachers are
-                                            doing!</span>
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        <i
+                                            class="ri-calendar-todo-line text-yellow-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
+                                        <span class="text-gray-700">{{ __('mission.feature3') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300">
-                                        <i class="ri-money-dollar-box-line text-green-500 text-2xl mr-3 mt-1"></i>
-                                        <span class="text-gray-700">Keep track of fees and payments, as easy as counting
-                                            to three!</span>
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        <i
+                                            class="ri-money-dollar-box-line text-green-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
+                                        <span class="text-gray-700">{{ __('mission.feature4') }}</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="text-center lg:text-left mt-8">
+                        <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
                             <a href="{{url('about')}}"
                                 class="dynapuff inline-block py-3 px-8 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
-                                See the Magic in Action <i class="ri-sparkle-line ml-2"></i>
+                                {{ __('mission.cta_button') }}
+                                <i class="ri-sparkle-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
                             </a>
                         </div>
                     </div>
@@ -770,18 +842,18 @@
     <div class="relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover bg-center py-20">
         <div class="absolute inset-0 bg-blue-600/80"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h2 class="dynapuff text-4xl font-bold text-white mb-6">
-                Bringing Joy to Learning, One Click at a Time!
-            </h2>
-            <p class="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-                We create colorful, fun websites that make school life easier for little learners,
-                busy parents, and amazing teachers. From playful homepages to easy-to-use dashboards,
-                we're here to make your kindergarten shine online!
-            </p>
-            <a href="{{url('contactus')}}"
-                class="dynapuff inline-block py-3 px-8 bg-yellow-400 hover:bg-yellow-500 text-blue-800 rounded-full transition duration-300 text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Let's Create Magic Together!
-            </a>
+            <div class="max-w-4xl mx-auto" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                <h2 class="dynapuff text-4xl font-bold text-white mb-6">
+                    {{ __('banner.title') }}
+                </h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+                    {{ __('banner.description') }}
+                </p>
+                <a href="{{url('contactus')}}"
+                    class="dynapuff inline-flex items-center py-3 px-8 bg-yellow-400 hover:bg-yellow-500 text-blue-800 rounded-full transition duration-300 text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    {{ __('banner.cta_button') }}
+                </a>
+            </div>
         </div>
     </div>
 
@@ -951,10 +1023,11 @@
     <div class="bg-gradient-to-b from-yellow-100 to-blue-100 py-16" id="testimonials">
         <div class="container mx-auto px-4">
             <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-12">
-                Happy Voices from Our Playground!
+                {{ __('testimonials.title') }}
             </h2>
             <div class="max-w-3xl mx-auto">
                 <div class="bg-white rounded-3xl shadow-xl p-8 relative">
+                    <!-- Message Icon -->
                     <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <div class="bg-yellow-400 rounded-full p-3 shadow-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
@@ -964,25 +1037,35 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex justify-center space-x-1 mb-4">
+
+                    <!-- Stars -->
+                    <div class="flex justify-center {{ app()->getLocale() == 'ar' ? 'space-x-reverse' : 'space-x-1' }} mb-4"
+                        dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                         <i class="ri-star-fill text-yellow-400 text-2xl"></i>
                         <i class="ri-star-fill text-yellow-400 text-2xl"></i>
                         <i class="ri-star-fill text-yellow-400 text-2xl"></i>
                         <i class="ri-star-fill text-yellow-400 text-2xl"></i>
                         <i class="ri-star-fill text-yellow-400 text-2xl"></i>
                     </div>
-                    <p class="text-lg text-gray-700 text-center mb-6">
-                        "The landing page designed for Bright Kids Kindergarten is absolutely magical!
-                        It's like they sprinkled fairy dust on our website. The design is so vibrant and
-                        engaging, it perfectly captures the joy and energy of our little learners.
-                        We're over the moon with the results!"
-                    </p>
-                    <div class="flex items-center justify-center">
-                        <img alt="Jessica Smith" src="{{asset('build/assets/img/users/owner.jpg')}}"
+
+                    <!-- Testimonial Text -->
+                    <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                        <p class="text-lg text-gray-700 text-center mb-6">
+                            {{ __('testimonials.quote') }}
+                        </p>
+                    </div>
+
+                    <!-- Profile Section -->
+                    <div
+                        class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                        <img alt="{{ __('testimonials.profile.name') }}"
+                            src="{{asset('build/assets/img/users/owner.jpg')}}"
                             class="w-16 h-16 rounded-full border-4 border-purple-200">
-                        <div class="ml-4">
-                            <p class="dynapuff font-bold text-lg text-purple-600">Jessica Smith</p>
-                            <p class="text-gray-600">Principal, Bright Kids Kindergarten</p>
+                        <div
+                            class="{{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }} text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+                            <p class="dynapuff font-bold text-lg text-purple-600">{{ __('testimonials.profile.name') }}
+                            </p>
+                            <p class="text-gray-600">{{ __('testimonials.profile.title') }}</p>
                         </div>
                     </div>
                 </div>
@@ -995,13 +1078,15 @@
     <!-- Start::Pricing Content -->
     <div class="bg-gradient-to-b from-blue-100 to-purple-100 py-16" id="pricing">
         <div class="container mx-auto px-4">
-            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-8">
-                Choose Your Adventure!
-            </h2>
-            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
-                Pick the perfect plan for your school's online journey. Whether you need a magical landing page or a
-                full dashboard wonderland, we've got you covered!
-            </p>
+            <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-8">
+                    {{ __('pricing.title') }}
+                </h2>
+                <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+                    {{ __('pricing.description') }}
+                </p>
+            </div>
+
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Landing Page Plan -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
@@ -1009,40 +1094,49 @@
                         <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="ri-layout-4-line text-3xl text-purple-600"></i>
                         </div>
-                        <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">Sunny Landing</h3>
-                        <p class="text-center text-gray-600 mb-6">Perfect for showcasing your school's sparkle!</p>
-                        <p class="text-center">
-                            <span class="dynapuff text-4xl font-bold text-purple-600">150 KD</span>
-                        </p>
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">{{
+                                __('pricing.basic.title') }}</h3>
+                            <p class="text-center text-gray-600 mb-6">{{ __('pricing.basic.subtitle') }}</p>
+                            <p class="text-center">
+                                <span class="dynapuff text-4xl font-bold text-purple-600">{{ __('pricing.basic.price')
+                                    }}</span>
+                            </p>
+                        </div>
                     </div>
                     <div class="bg-purple-50 p-8">
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Colorful Custom Design</span>
+                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.basic.features.1') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Mobile-Friendly Magic</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.basic.features.2') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>SEO Sprinkles</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.basic.features.3') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Parent-Teacher Chat</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.basic.features.4') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Social Media Fun</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.basic.features.5') }}</span>
                             </li>
                         </ul>
                     </div>
                     <div class="p-8">
                         <button
                             class="dynapuff w-full py-3 px-6 bg-yellow-400 hover:bg-yellow-500 text-purple-700 rounded-full transition duration-300 text-lg font-bold">
-                            Start the Fun!
+                            {{ __('pricing.basic.button') }}
                         </button>
                     </div>
                 </div>
@@ -1053,40 +1147,49 @@
                         <div class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="ri-dashboard-3-line text-3xl text-yellow-400"></i>
                         </div>
-                        <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">Rainbow Dashboard</h3>
-                        <p class="text-center text-gray-600 mb-6">For the ultimate school management adventure!</p>
-                        <p class="text-center">
-                            <span class="dynapuff text-4xl font-bold text-purple-600">300 KD</span>
-                        </p>
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">{{
+                                __('pricing.pro.title') }}</h3>
+                            <p class="text-center text-gray-600 mb-6">{{ __('pricing.pro.subtitle') }}</p>
+                            <p class="text-center">
+                                <span class="dynapuff text-4xl font-bold text-purple-600">{{ __('pricing.pro.price')
+                                    }}</span>
+                            </p>
+                        </div>
                     </div>
                     <div class="bg-purple-50 p-8">
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>All Sunny Landing Features</span>
+                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.1') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Super Smart Analytics</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.2') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Easy User Management</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.3') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Custom Integrations</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.4') }}</span>
                             </li>
-                            <li class="flex items-center">
-                                <i class="ri-checkbox-circle-fill text-green-500 text-xl mr-2"></i>
-                                <span>Colorful Data Visualizations</span>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.5') }}</span>
                             </li>
                         </ul>
                     </div>
                     <div class="p-8">
                         <button
                             class="dynapuff w-full py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 text-lg font-bold">
-                            Dive into Adventure!
+                            {{ __('pricing.pro.button') }}
                         </button>
                     </div>
                 </div>
@@ -1688,24 +1791,26 @@
         }
     </style>
 
-    <section class="py-20 bg-gradient-to-b from-blue-50/50 to-green-50/50" id="projects">
+    <!-- Projects Section -->
+    <div class="py-20 bg-gradient-to-b from-pink-50/50 to-purple-50/50" id="projects">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <div class="text-center max-w-[80rem] mx-auto mb-16">
-                <h2 class="dynapuff text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-blue-600">Magical</span>
-                    <span class="text-purple-600">School Websites</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 rtl:font-[Tajawal]">
+                    <span class="text-pink-600">{{ __('projects.projects.magical') }}</span>
+                    <span class="text-purple-600">{{ __('projects.projects.learning_journey') }}</span>
                 </h2>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-                    Take a peek at how we transform school websites into enchanting digital spaces
-                    that bring joy to students, teachers, and parents alike!
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto rtl:font-[Tajawal]">
+                    {{ __('projects.projects.description') }}
                 </p>
             </div>
 
+            <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <!-- Project 1 -->
+                <!-- Project 1: Learning Activities -->
                 <div class="project-card group">
                     <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
-                        <img src="/api/placeholder/600/400" alt="Elementary School Website"
+                        <img src="/images/learning-activities.jpg" alt="{{ __('projects.projects.activities.alt') }}"
                             class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
 
                         <!-- Overlay -->
@@ -1714,23 +1819,25 @@
                             <div class="absolute bottom-0 left-0 right-0 p-6">
                                 <div
                                     class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 class="dynapuff text-2xl font-bold text-white">
-                                        Sunshine Elementary
+                                    <h3 class="text-2xl font-bold text-white rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.activities.title') }}
                                     </h3>
-                                    <p class="text-gray-200">
-                                        A joyful and intuitive website redesign that brings the
-                                        elementary school experience to life.
+                                    <p class="text-gray-200 rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.activities.description') }}
                                     </p>
                                     <div class="flex flex-wrap gap-2 pt-2">
                                         <span
-                                            class="px-3 py-1 bg-blue-500/20 text-blue-100 rounded-full text-sm">Website
-                                            Redesign</span>
-                                        <span class="px-3 py-1 bg-green-500/20 text-green-100 rounded-full text-sm">User
-                                            Experience</span>
+                                            class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
+                                            {{ __('projects.projects.activities.tag1') }}
+                                        </span>
+                                        <span
+                                            class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
+                                            {{ __('projects.projects.activities.tag2') }}
+                                        </span>
                                     </div>
-                                    <a href="#view-project"
-                                        class="inline-block mt-2 text-white dynapuff hover:text-blue-300 transition-colors duration-300">
-                                        View Project →
+                                    <a href="#"
+                                        class="inline-block mt-2 text-white hover:text-pink-300 transition-colors duration-300 rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.view_more') }} →
                                     </a>
                                 </div>
                             </div>
@@ -1738,10 +1845,10 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Parent Portal -->
                 <div class="project-card group">
                     <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
-                        <img src="/api/placeholder/600/400" alt="High School Learning Portal"
+                        <img src="/images/parent-portal.jpg" alt="{{ __('projects.projects.portal.alt') }}"
                             class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
 
                         <!-- Overlay -->
@@ -1750,24 +1857,25 @@
                             <div class="absolute bottom-0 left-0 right-0 p-6">
                                 <div
                                     class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 class="dynapuff text-2xl font-bold text-white">
-                                        Evergreen High School
+                                    <h3 class="text-2xl font-bold text-white rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.portal.title') }}
                                     </h3>
-                                    <p class="text-gray-200">
-                                        A comprehensive learning management system that connects
-                                        students, teachers, and parents.
+                                    <p class="text-gray-200 rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.portal.description') }}
                                     </p>
                                     <div class="flex flex-wrap gap-2 pt-2">
                                         <span
-                                            class="px-3 py-1 bg-blue-500/20 text-blue-100 rounded-full text-sm">Learning
-                                            Portal</span>
+                                            class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
+                                            {{ __('projects.projects.portal.tag1') }}
+                                        </span>
                                         <span
-                                            class="px-3 py-1 bg-green-500/20 text-green-100 rounded-full text-sm">Communication
-                                            Hub</span>
+                                            class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
+                                            {{ __('projects.projects.portal.tag2') }}
+                                        </span>
                                     </div>
-                                    <a href="#view-project"
-                                        class="inline-block mt-2 text-white dynapuff hover:text-green-300 transition-colors duration-300">
-                                        View Project →
+                                    <a href="#"
+                                        class="inline-block mt-2 text-white hover:text-purple-300 transition-colors duration-300 rtl:font-[Tajawal]">
+                                        {{ __('projects.projects.view_more') }} →
                                     </a>
                                 </div>
                             </div>
@@ -1776,76 +1884,91 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
     {{--END : Projects --}}
     <!-- Start::Contact Content -->
     <div class="bg-gradient-to-b from-green-100 to-blue-100 py-16" id="contact">
         <div class="container mx-auto px-4">
-            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-6">
-                Let's Chat and Create Magic!
+            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-6 rtl:font-[Tajawal]">
+                {{ __('contact.contact.title') }}
             </h2>
-            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
-                Have a question or ready to start your school's online adventure? We're all ears!
-                Drop us a line, and we'll get back to you faster than you can say "recess time"!
+            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12 rtl:font-[Tajawal]">
+                {{ __('contact.contact.subtitle') }}
             </p>
 
             <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
                 <div class="md:flex">
                     <div class="md:w-1/2 bg-yellow-50 p-8 flex flex-col justify-center">
                         <div class="mb-8">
-                            <h3 class="dynapuff text-2xl font-bold text-purple-700 mb-4">Quick Reach</h3>
+                            <h3 class="dynapuff text-2xl font-bold text-purple-700 mb-4 rtl:font-[Tajawal]">
+                                {{ __('contact.contact.quick_reach') }}
+                            </h3>
                             <div class="flex items-center mb-4">
-                                <div class="bg-purple-600 rounded-full p-2 mr-4">
+                                <div class="bg-purple-600 rounded-full p-2 ltr:mr-4 rtl:ml-4">
                                     <i class="ri-smartphone-line text-xl text-white"></i>
                                 </div>
                                 <div>
-                                    <h5 class="font-semibold text-purple-700">Phone</h5>
-                                    <a href="tel:+96566579000" class="text-purple-800">+ 965 66579000</a>
+                                    <h5 class="font-semibold text-purple-700 rtl:font-[Tajawal]">{{
+                                        __('contact.contact.phone') }}</h5>
+                                    <a href="tel:+96566579000" class="text-purple-800" dir="ltr">+ 965 66579000</a>
                                 </div>
                             </div>
                             <div class="flex items-center">
-                                <div class="bg-purple-600 rounded-full p-2 mr-4">
+                                <div class="bg-purple-600 rounded-full p-2 ltr:mr-4 rtl:ml-4">
                                     <i class="ri-mail-line text-xl text-white"></i>
                                 </div>
                                 <div>
-                                    <h5 class="font-semibold text-purple-700">Email</h5>
-                                    <a href="mailto:ahmaadzaid7@gmail.com"
-                                        class="text-purple-800">ahmaadzaid7@gmail.com</a>
+                                    <h5 class="font-semibold text-purple-700 rtl:font-[Tajawal]">{{
+                                        __('contact.contact.email') }}</h5>
+                                    <a href="mailto:ahmaadzaid7@gmail.com" class="text-purple-800"
+                                        dir="ltr">ahmaadzaid7@gmail.com</a>
                                 </div>
                             </div>
                         </div>
-                        <img src="{{asset('build/assets/img/landing/contact.jpg')}}" />
+                        <img src="{{asset('build/assets/img/landing/contact.jpg')}}"
+                            alt="{{ __('contact.contact.image_alt') }}" />
                     </div>
                     <div class="md:w-1/2 p-8 bg-yellow-500">
-                        <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6">Send Us a Message</h3>
+                        <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6 rtl:font-[Tajawal]">
+                            {{ __('contact.contact.form_title') }}
+                        </h3>
                         <form>
                             <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
+                                    {{ __('contact.contact.name_label') }}
+                                </label>
                                 <input type="text" id="name"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                                    placeholder="e.g., Super Parent">
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
+                                    placeholder="{{ __('contact.contact.name_placeholder') }}">
                             </div>
                             <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
+                                    {{ __('contact.contact.email_label') }}
+                                </label>
                                 <input type="email" id="email"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                                    placeholder="you@example.com">
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
+                                    placeholder="{{ __('contact.contact.email_placeholder') }}">
                             </div>
                             <div class="mb-4">
-                                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
+                                    {{ __('contact.contact.phone_label') }}
+                                </label>
                                 <input type="tel" id="phone"
                                     class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                                    placeholder="e.g., +965 1234 5678">
+                                    placeholder="{{ __('contact.contact.phone_placeholder') }}" dir="ltr">
                             </div>
                             <div class="mb-6">
-                                <label for="message" class="block text-gray-700 font-semibold mb-2">Your Message</label>
+                                <label for="message" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
+                                    {{ __('contact.contact.message_label') }}
+                                </label>
                                 <textarea id="message" rows="4"
-                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                                    placeholder="Tell us about your magical idea!"></textarea>
+                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
+                                    placeholder="{{ __('contact.contact.message_placeholder') }}"></textarea>
                             </div>
                             <button type="submit"
-                                class="dynapuff w-full py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition duration-300 text-lg font-bold">
-                                Send Some Joy Our Way!
+                                class="dynapuff w-full py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition duration-300 text-lg font-bold rtl:font-[Tajawal]">
+                                {{ __('contact.contact.submit_button') }}
                             </button>
                         </form>
                     </div>

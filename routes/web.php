@@ -45,6 +45,14 @@ use App\Http\Controllers\ReceiptStudentController;
 Route::get('/demo-dashboard', function () {
     return view('pages.demo-dashboard.index');
 });
+Route::get('/language/{lang}', function () {
+    if (in_array($lang, ['en', 'ar'])) {
+        Session::put('applocale', $lang);
+        App::setLocale($lang);
+    }
+    return redirect()->back();
+})->name('lang.switch');
+
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('landing', [PagesController::class, 'landing']);
 
