@@ -13,7 +13,17 @@
 
     <!-- TITLE -->
     <title> Synto - Laravel Tailwind Admin Template </title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="{{asset('build/assets/img/brand-logos/favicon.ico')}}">
 
@@ -36,6 +46,47 @@
 
 
     @yield('styles')
+    <style>
+        /* Base styles for DynaPuff */
+        .en-font {
+            font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        /* Styles for El Messiri */
+        .ar-font {
+            font-family: "El Messiri", system-ui;
+            font-optical-sizing: auto;
+        }
+
+        /* Enhanced typography for Arabic */
+        html[lang="ar"] .section-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        html[lang="ar"] .service-title {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        /* Enhanced typography for English */
+        html[lang="en"] .section-title {
+            font-size: 3rem;
+            line-height: 1.3;
+            font-weight: bold;
+        }
+
+        html[lang="en"] .service-title {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+    </style>
 
 </head>
 

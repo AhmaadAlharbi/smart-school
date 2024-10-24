@@ -1,29 +1,9 @@
 @extends('layouts.landing-master')
 
 @section('styles')
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
-    rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
-    rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+
 <style>
-    .dynapuff {
-        font-family: "DynaPuff", system-ui;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-    }
 
-    .dynapuff-normal {
-        font-weight: 400;
-    }
-
-    .dynapuff-bold {
-        font-weight: 700;
-    }
 </style>
 <style>
     .fredoka-one {
@@ -308,13 +288,15 @@
                             class="lg:w-1/2 text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mb-8 lg:mb-0 z-10">
                             <div class="max-w-xl mx-auto lg:mx-0">
                                 <div class="space-y-8">
-                                    <h1 class="dynapuff text-5xl lg:text-6xl font-bold">
+                                    <h1
+                                        class="{{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }} text-5xl lg:text-6xl font-bold">
                                         <span class="block soar-in">{{ __('landing.headline_1') }}</span>
                                         <span class="text-blue-600 block soar-in-delay-1">{{ __('landing.headline_2')
                                             }}</span>
                                         <span class="block text-green-600 mt-2 soar-in-delay-2">{{
                                             __('landing.headline_3') }}</span>
                                     </h1>
+
                                     <p class="text-lg text-gray-700 soar-in-delay-2">
                                         {{ __('landing.description') }}
                                     </p>
@@ -409,7 +391,9 @@
         <div class="container mx-auto px-4 py-16 md:py-24">
             <!-- Header Section -->
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="dynapuff text-4xl font-bold text-blue-600 mb-6">
+
+                <h2
+                    class="dynapuff text-4xl font-bold text-blue-600 mb-6 {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }} text-5xl lg:text-6xl font-bold">
                     {{ __('services.title') }}
                 </h2>
                 <p class="text-lg text-gray-700 px-4">
@@ -430,7 +414,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
+                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center ">{{
                         __('services.web_design.title') }}</h3>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
@@ -709,20 +693,17 @@
                                 {{ __('about.description') }}
                             </p>
                             <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
-                                <li
-                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                     <i
                                         class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
                                     <span class="text-gray-700">{{ __('about.feature1') }}</span>
                                 </li>
-                                <li
-                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                     <i
                                         class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
                                     <span class="text-gray-700">{{ __('about.feature2') }}</span>
                                 </li>
-                                <li
-                                    class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                     <i
                                         class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
                                     <span class="text-gray-700">{{ __('about.feature3') }}</span>
@@ -796,28 +777,28 @@
                                 </p>
                                 <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
-                                            class="ri-parent-line text-blue-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700">{{ __('mission.feature1') }}</span>
+                                            class="ri-parent-line text-blue-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0 ' : 'mr-3' }} mt-1"></i>
+                                        <span class="text-gray-700 mt-2">{{ __('mission.feature1') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
                                             class="ri-message-3-line text-pink-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700">{{ __('mission.feature2') }}</span>
+                                        <span class="text-gray-700 mt-2">{{ __('mission.feature2') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
                                             class="ri-calendar-todo-line text-yellow-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700">{{ __('mission.feature3') }}</span>
+                                        <span class="text-gray-700 mt-2">{{ __('mission.feature3') }}</span>
                                     </li>
                                     <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
                                             class="ri-money-dollar-box-line text-green-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700">{{ __('mission.feature4') }}</span>
+                                        <span class="text-gray-700 mt-2">{{ __('mission.feature4') }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1106,27 +1087,27 @@
                     </div>
                     <div class="bg-purple-50 p-8">
                         <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.1') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.2') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.3') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.4') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.5') }}</span>
@@ -1159,27 +1140,27 @@
                     </div>
                     <div class="bg-purple-50 p-8">
                         <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.1') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.2') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.3') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.4') }}</span>
                             </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                 <i
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.5') }}</span>
