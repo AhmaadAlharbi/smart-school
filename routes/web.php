@@ -46,6 +46,8 @@ Route::get('/demo-dashboard', function () {
     return view('pages.demo-dashboard.index');
 });
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+    Route::get('landing', [PagesController::class, 'landing']);
+
     Route::get('/', [DashboardsController::class, 'index']);
     Route::resource('grades', GradeController::class);
     Route::get('/grades/{grade_id}/teachers', [GradeController::class, 'gradesTeachers'])->name('grades.teachers');
@@ -230,7 +232,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('pricing', [PagesController::class, 'pricing']);
     Route::get('timeline', [PagesController::class, 'timeline']);
     Route::get('teams', [PagesController::class, 'teams']);
-    Route::get('landing', [PagesController::class, 'landing']);
     Route::get('todo', [PagesController::class, 'todo']);
     Route::get('tasks', [PagesController::class, 'tasks']);
     Route::get('reviews', [PagesController::class, 'reviews']);

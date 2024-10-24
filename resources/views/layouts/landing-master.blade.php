@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full" dir="ltr" data-nav-layout="horizontal" data-nav-style="menu-click"
-    data-menu-position="fixed">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" data-menu-position="fixed">
+>
 
 <head>
 
@@ -39,7 +39,7 @@
 
 </head>
 
-<body class="landing-body">
+<body class="landing-body {{ app()->getLocale() == 'ar' ? 'rtl-layout' : 'ltr-layout' }}">
 
     <!-- SWITCHER -->
     {{-- @include('layouts.components.landing-switcher') --}}
