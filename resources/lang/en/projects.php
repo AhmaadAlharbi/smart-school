@@ -2,9 +2,9 @@
 
 return [
     'projects' => [
-        'magical' => 'Magical',
+        'magical' => 'Our Projects',
         'learning_journey' => 'Learning Journey',
-        'description' => 'Discover our enchanting learning spaces where every child\'s imagination comes to life through play, creativity, and discovery!',
+        'description' => 'Discover how web design and development can enhance our partners\' websites.',
         'activities' => [
             'title' => 'Learning Activities',
             'description' => 'Interactive and engaging activities designed to nurture young minds through play-based learning.',

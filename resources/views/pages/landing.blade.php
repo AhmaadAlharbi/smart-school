@@ -782,12 +782,12 @@
                                             class="ri-parent-line text-blue-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0 ' : 'mr-3' }} mt-1"></i>
                                         <span class="text-gray-700 mt-2">{{ __('mission.feature1') }}</span>
                                     </li>
-                                    <li
+                                    {{-- <li
                                         class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
                                             class="ri-message-3-line text-pink-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
                                         <span class="text-gray-700 mt-2">{{ __('mission.feature2') }}</span>
-                                    </li>
+                                    </li> --}}
                                     <li
                                         class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
                                         <i
@@ -820,7 +820,8 @@
 
 
     <!-- Start::Banner Content -->
-    <div class="relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover bg-center py-20">
+    {{-- <div
+        class="relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover bg-center py-20">
         <div class="absolute inset-0 bg-blue-600/80"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
             <div class="max-w-4xl mx-auto" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
@@ -836,7 +837,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- End::Banner Content -->
 
@@ -1112,6 +1113,7 @@
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.5') }}</span>
                             </li>
+
                         </ul>
                     </div>
                     <div class="p-8">
@@ -1165,18 +1167,66 @@
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.pro.features.5') }}</span>
                             </li>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.6') }}</span>
+                            </li>
+                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
+                                <i
+                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                                <span>{{ __('pricing.pro.features.10') }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 via-white to-yellow-50 p-6 mt-4 rounded-2xl shadow-lg">
+                        <h4 class="text-center text-xl font-semibold text-purple-700 mb-6">
+                            <i class="ri-rocket-line text-yellow-500 text-2xl align-middle mr-2"></i>
+                            الميزات القادمة
+                        </h4>
+                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <li
+                                class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }} transform transition-all hover:scale-102">
+                                <div
+                                    class="flex items-center w-full p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                                    <div
+                                        class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'ml-3' : 'mr-3' }}">
+                                        <i class="ri-settings-line text-purple-600 text-xl"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('pricing.pro.soon_features.1') }}</span>
+                                    <div class="flex-grow"></div>
+                                    <i class="ri-time-line text-yellow-500 text-xl"></i>
+                                </div>
+                            </li>
+                            <li
+                                class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }} transform transition-all hover:scale-102">
+                                <div
+                                    class="flex items-center w-full p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                                    <div
+                                        class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'ml-3' : 'mr-3' }}">
+                                        <i class="ri-dashboard-line text-purple-600 text-xl"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('pricing.pro.soon_features.2') }}</span>
+                                    <div class="flex-grow"></div>
+                                    <i class="ri-time-line text-yellow-500 text-xl"></i>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                     <div class="p-8">
                         <button
-                            class="dynapuff w-full py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 text-lg font-bold">
+                            class="dynapuff w-full py-3 px-6 bg-purple-400 hover:bg-purple-500 text-white rounded-full transition duration-300 text-lg font-bold">
                             {{ __('pricing.pro.button') }}
                         </button>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
+
 
     <!-- End::Pricing Content -->
 
@@ -1778,8 +1828,8 @@
             <!-- Section Header -->
             <div class="text-center max-w-[80rem] mx-auto mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 rtl:font-[Tajawal]">
-                    <span class="text-pink-600">{{ __('projects.projects.magical') }}</span>
-                    <span class="text-purple-600">{{ __('projects.projects.learning_journey') }}</span>
+                    <span class="text-purple-600">{{ __('projects.projects.magical') }}</span>
+                    {{-- <span class="text-purple-600">{{ __('projects.projects.learning_journey') }}</span> --}}
                 </h2>
                 <p class="text-gray-600 text-lg max-w-3xl mx-auto rtl:font-[Tajawal]">
                     {{ __('projects.projects.description') }}
