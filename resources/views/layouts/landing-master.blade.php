@@ -98,7 +98,7 @@
     <!-- END SWITCHER -->
 
     <!-- LANDING ALERTS -->
-    @include('layouts.components.landing-alerts')
+    {{-- @include('layouts.components.landing-alerts') --}}
 
     <!-- END LANDING ALERTS -->
 

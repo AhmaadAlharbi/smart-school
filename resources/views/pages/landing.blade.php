@@ -1,10 +1,6 @@
 @extends('layouts.landing-master')
 
 @section('styles')
-
-<style>
-
-</style>
 <style>
     .fredoka-one {
         font-family: 'Fredoka One', cursive;
@@ -1227,10 +1223,11 @@
                     </div>
 
                     <div class="bg-gradient-to-br from-purple-50 via-white to-yellow-50 p-6 mt-4 rounded-2xl shadow-lg">
-                        <h4 class="text-center text-xl font-semibold text-purple-700 mb-6">
+                        <h4 class="text-center text-xl font-semibold text-purple-700 mb-6"
+                            style="{{ app()->getLocale() === 'ar' ? 'font-family: Tajawal' : '' }}">
                             <i
-                                class="ri-rocket-line text-yellow-500 text-2xl align-middle {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                            الميزات القادمة
+                                class="ri-rocket-line text-yellow-500 text-2xl align-middle {{ app()->getLocale() === 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                            {{ app()->getLocale() === 'ar' ? 'الميزات القادمة' : 'Upcoming Features' }}
                         </h4>
                         <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                             <li
@@ -1883,16 +1880,18 @@
             </div>
 
             <!-- Projects Grid -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Project 1: Learning Activities -->
                 <div class="project-card group">
                     <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
-                        <img src="/images/learning-activities.jpg" alt="{{ __('projects.projects.activities.alt') }}"
+                        <img src="{{asset('build/assets/img/landing/bright-kids.png')}}"
+                            alt="{{ __('projects.projects.activities.alt') }}"
                             class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
 
-                        <!-- Overlay -->
+                        <!-- Purple Overlay -->
                         <div
-                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-90">
+                            class="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/40 to-transparent opacity-90">
                             <div class="absolute bottom-0 left-0 right-0 p-6">
                                 <div
                                     class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
@@ -1902,7 +1901,7 @@
                                     <p class="text-gray-200 rtl:font-[Tajawal]">
                                         {{ __('projects.projects.activities.description') }}
                                     </p>
-                                    <div class="flex flex-wrap gap-2 pt-2">
+                                    {{-- <div class="flex flex-wrap gap-2 pt-2">
                                         <span
                                             class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
                                             {{ __('projects.projects.activities.tag1') }}
@@ -1911,7 +1910,7 @@
                                             class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
                                             {{ __('projects.projects.activities.tag2') }}
                                         </span>
-                                    </div>
+                                    </div> --}}
                                     <a href="#"
                                         class="inline-block mt-2 text-white hover:text-pink-300 transition-colors duration-300 rtl:font-[Tajawal]">
                                         {{ __('projects.projects.view_more') }} →
@@ -1925,12 +1924,13 @@
                 <!-- Project 2: Parent Portal -->
                 <div class="project-card group">
                     <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
-                        <img src="/images/parent-portal.jpg" alt="{{ __('projects.projects.portal.alt') }}"
+                        <img src="{{asset('build/assets/img/landing/school-system-dashboard.png')}}"
+                            alt="{{ __('projects.projects.portal.alt') }}"
                             class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
 
-                        <!-- Overlay -->
+                        <!-- Purple Overlay -->
                         <div
-                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-90">
+                            class="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/40 to-transparent opacity-90">
                             <div class="absolute bottom-0 left-0 right-0 p-6">
                                 <div
                                     class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
@@ -1940,7 +1940,7 @@
                                     <p class="text-gray-200 rtl:font-[Tajawal]">
                                         {{ __('projects.projects.portal.description') }}
                                     </p>
-                                    <div class="flex flex-wrap gap-2 pt-2">
+                                    {{-- <div class="flex flex-wrap gap-2 pt-2">
                                         <span
                                             class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
                                             {{ __('projects.projects.portal.tag1') }}
@@ -1949,7 +1949,7 @@
                                             class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
                                             {{ __('projects.projects.portal.tag2') }}
                                         </span>
-                                    </div>
+                                    </div> --}}
                                     <a href="#"
                                         class="inline-block mt-2 text-white hover:text-purple-300 transition-colors duration-300 rtl:font-[Tajawal]">
                                         {{ __('projects.projects.view_more') }} →
@@ -1981,8 +1981,9 @@
                             <h3 class="dynapuff text-2xl font-bold text-purple-700 mb-4 rtl:font-[Tajawal]">
                                 {{ __('contact.contact.quick_reach') }}
                             </h3>
-                            <div class="flex items-center mb-4">
-                                <div class="bg-purple-600 rounded-full p-2 ltr:mr-4 rtl:ml-4">
+                            <div class="flex items-center mb-4 ">
+                                <div
+                                    class="bg-purple-600 rounded-full p-2 {{ app()->getLocale() === 'ar' ? 'ml-4' : 'mr-4' }}">
                                     <i class="ri-smartphone-line text-xl text-white"></i>
                                 </div>
                                 <div>
@@ -1992,7 +1993,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center">
-                                <div class="bg-purple-600 rounded-full p-2 ltr:mr-4 rtl:ml-4">
+                                <div
+                                    class="bg-purple-600 rounded-full p-2 {{ app()->getLocale() === 'ar' ? 'ml-4' : 'mr-4' }}">
                                     <i class="ri-mail-line text-xl text-white"></i>
                                 </div>
                                 <div>
