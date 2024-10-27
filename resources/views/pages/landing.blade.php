@@ -299,7 +299,7 @@
 
                                     <div
                                         class=" flex flex-col sm:flex-row {{ app()->getLocale() == 'ar' ? 'sm:flex-row-reverse justify-center' : '' }} justify-center {{ app()->getLocale() == 'ar' ? '' : 'lg:justify-start' }} space-y-4 sm:space-y-0 {{ app()->getLocale() == 'ar' ? 'sm:space-x-reverse' : '' }} sm:space-x-6 soar-in-delay-2">
-                                        <a href="#"
+                                        <a href="#projects"
                                             class="dynapuff inline-block px-8 py-4 mx-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
                                             <span
                                                 class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
@@ -313,7 +313,7 @@
                                                 </svg>
                                             </span>
                                         </a>
-                                        <a href="#"
+                                        <a href="#contact"
                                             class="dynapuff inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
                                             <span
                                                 class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
@@ -707,7 +707,7 @@
                             </ul>
                         </div>
                         <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
-                            <a href="{{url('about')}}"
+                            <a href="#projects"
                                 class="dynapuff inline-block py-3 px-8 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
                                 {{ __('about.cta_button') }}
                                 <i class="ri-magic-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
@@ -800,7 +800,7 @@
                             </div>
                         </div>
                         <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
-                            <a href="{{url('about')}}"
+                            <a href="#projects"
                                 class="dynapuff inline-block py-3 px-8 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
                                 {{ __('mission.cta_button') }}
                                 <i class="ri-sparkle-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
@@ -1130,10 +1130,10 @@
                         </ul>
                     </div>
                     <div class="p-8">
-                        <button
+                        <a href="#contact"
                             class="dynapuff w-full py-3 px-6 bg-yellow-400 hover:bg-yellow-500 text-purple-700 rounded-full transition duration-300 text-lg font-bold">
                             {{ __('pricing.basic.button') }}
-                        </button>
+                        </a>
                     </div>
                 </div>
 
