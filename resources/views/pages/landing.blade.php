@@ -2147,42 +2147,78 @@
                             alt="{{ __('contact.contact.image_alt') }}" />
                     </div>
                     <div class="md:w-1/2 p-8 bg-yellow-500">
-                        <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6 rtl:font-[Tajawal]">
-                            {{ __('contact.contact.form_title') }}
-                        </h3>
-                        <form>
+                        {{-- resources/views/components/contact-form.blade.php --}}
+                        <form action="{{ route('contact.store') }}" method="POST" class="bg-yellow-500 p-8">
+                            @csrf
+                            <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6 rtl:font-[Tajawal]">
+                                {{ __('contact.contact.form_title') }}
+                            </h3>
+
+                            @if(session('success'))
+                            <div class="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+                                {{ session('success') }}
+                            </div>
+                            @endif
+
+                            @if($errors->any())
+                            <div class="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
                                     {{ __('contact.contact.name_label') }}
                                 </label>
-                                <input type="text" id="name"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
-                                    placeholder="{{ __('contact.contact.name_placeholder') }}">
+                                <input type="text" id="name" name="name" value="{{ old('name') }}"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('name') border-red-500 @enderror"
+                                    placeholder="{{ __('contact.contact.name_placeholder') }}" required>
+                                @error('name')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
+
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
                                     {{ __('contact.contact.email_label') }}
                                 </label>
-                                <input type="email" id="email"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
-                                    placeholder="{{ __('contact.contact.email_placeholder') }}">
+                                <input type="email" id="email" name="email" value="{{ old('email') }}"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('email') border-red-500 @enderror"
+                                    placeholder="{{ __('contact.contact.email_placeholder') }}" required>
+                                @error('email')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
+
                             <div class="mb-4">
                                 <label for="phone" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
                                     {{ __('contact.contact.phone_label') }}
                                 </label>
-                                <input type="tel" id="phone"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none"
-                                    placeholder="{{ __('contact.contact.phone_placeholder') }}" dir="ltr">
+                                <input type="tel" id="phone" name="phone" value="{{ old('phone') }}"
+                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none @error('phone') border-red-500 @enderror"
+                                    placeholder="{{ __('contact.contact.phone_placeholder') }}" dir="ltr" required>
+                                @error('phone')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
+
                             <div class="mb-6">
                                 <label for="message" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
                                     {{ __('contact.contact.message_label') }}
                                 </label>
-                                <textarea id="message" rows="4"
-                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal]"
-                                    placeholder="{{ __('contact.contact.message_placeholder') }}"></textarea>
+                                <textarea id="message" name="message" rows="4"
+                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('message') border-red-500 @enderror"
+                                    placeholder="{{ __('contact.contact.message_placeholder') }}"
+                                    required>{{ old('message') }}</textarea>
+                                @error('message')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
+
                             <button type="submit"
                                 class="dynapuff w-full py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition duration-300 text-lg font-bold rtl:font-[Tajawal]">
                                 {{ __('contact.contact.submit_button') }}

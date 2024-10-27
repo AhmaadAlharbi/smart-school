@@ -9,6 +9,7 @@ use App\Http\Controllers\IconsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\BasicuiController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
@@ -258,6 +259,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/quick-payment/error', function () {
         return view('payment-error');
     })->name('payment.error');
+    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 });
 
 
