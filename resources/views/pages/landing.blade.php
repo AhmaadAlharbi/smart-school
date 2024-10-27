@@ -1036,9 +1036,9 @@
                     <!-- Profile Section -->
                     <div
                         class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
-                        <img alt="{{ __('testimonials.profile.name') }}"
+                        {{-- <img alt="{{ __('testimonials.profile.name') }}"
                             src="{{asset('build/assets/img/users/owner.jpg')}}"
-                            class="w-16 h-16 rounded-full border-4 border-purple-200">
+                            class="w-16 h-16 rounded-full border-4 border-purple-200"> --}}
                         <div
                             class="{{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }} text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
                             <p class="dynapuff font-bold text-lg text-purple-600">{{ __('testimonials.profile.name') }}
