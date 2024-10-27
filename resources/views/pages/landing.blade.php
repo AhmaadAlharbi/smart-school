@@ -1067,6 +1067,19 @@
                 <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
                     {{ __('pricing.description') }}
                 </p>
+                <!-- Added Note -->
+                <div class="max-w-2xl mx-auto mb-12">
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+                        <p class="text-center text-sm text-yellow-700">
+                            {{ app()->getLocale() == 'ar'
+                            ? 'ملاحظة: الأسعار لا تشمل اسم النطاق واستضافة الموقع. يجب على العميل توفير خدمات الاستضافة
+                            واسم النطاق بشكل منفصل.'
+                            : 'Note: Prices do not include domain name and hosting. Client must provide their own
+                            hosting and domain services.'
+                            }}
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -1077,12 +1090,17 @@
                             <i class="ri-layout-4-line text-3xl text-purple-600"></i>
                         </div>
                         <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">{{
-                                __('pricing.basic.title') }}</h3>
+                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">
+                                {{ __('pricing.basic.title') }}
+                            </h3>
                             <p class="text-center text-gray-600 mb-6">{{ __('pricing.basic.subtitle') }}</p>
                             <p class="text-center">
-                                <span class="dynapuff text-4xl font-bold text-purple-600">{{ __('pricing.basic.price')
-                                    }}</span>
+                                <span class="dynapuff text-4xl font-bold text-purple-600">
+                                    {{ app()->getLocale() == 'ar' ? '١٥٠' : '150' }}
+                                </span>
+                                <span class="text-2xl font-bold text-purple-600">
+                                    {{ app()->getLocale() == 'ar' ? 'د.ك' : 'KWD' }}
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -1113,7 +1131,6 @@
                                     class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                                 <span>{{ __('pricing.basic.features.5') }}</span>
                             </li>
-
                         </ul>
                     </div>
                     <div class="p-8">
@@ -1126,20 +1143,49 @@
 
                 <!-- Dashboard Plan -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
+                    <!-- Popular Badge -->
+                    <div class="absolute top-4 {{ app()->getLocale() == 'ar' ? 'left-4' : 'right-4' }}">
+                        <span
+                            class="bg-gradient-to-r from-yellow-400 to-purple-400 text-white px-4 py-1 rounded-full text-sm font-bold">
+                            {{ app()->getLocale() == 'ar' ? 'وفر ٢٥٪' : 'Save 25%' }}
+                        </span>
+                    </div>
+
                     <div class="p-8">
                         <div class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="ri-dashboard-3-line text-3xl text-yellow-400"></i>
                         </div>
                         <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">{{
-                                __('pricing.pro.title') }}</h3>
+                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">
+                                {{ __('pricing.pro.title') }}
+                            </h3>
                             <p class="text-center text-gray-600 mb-6">{{ __('pricing.pro.subtitle') }}</p>
-                            <p class="text-center">
-                                <span class="dynapuff text-4xl font-bold text-purple-600">{{ __('pricing.pro.price')
-                                    }}</span>
-                            </p>
+                            <div class="text-center space-y-2">
+                                <p class="text-center">
+                                    <span class="dynapuff text-4xl font-bold text-purple-600">
+                                        {{ app()->getLocale() == 'ar' ? '٣٩٩' : '399' }}
+                                    </span>
+                                    <span class="text-2xl font-bold text-purple-600">
+                                        {{ app()->getLocale() == 'ar' ? 'د.ك' : 'KWD' }}
+                                    </span>
+                                    <span class="text-gray-500">{{ app()->getLocale() == 'ar' ? '/سنوياً' : '/year'
+                                        }}</span>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    <span class="line-through">
+                                        {{ app()->getLocale() == 'ar' ? '٥٤٠ د.ك/سنوياً' : '540 KWD/year' }}
+                                    </span>
+                                    •
+                                    {{ app()->getLocale() == 'ar' ? 'وفر ١٤١ د.ك' : 'Save 141 KWD' }}
+                                </p>
+                                <p class="text-sm text-purple-500 font-medium">
+                                    {{ app()->getLocale() == 'ar' ? 'فقط ٣٣٫٢٥ د.ك شهرياً، تدفع سنوياً' : 'Only 33.25
+                                    KWD/month, billed annually' }}
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="bg-purple-50 p-8">
                         <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                             <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
@@ -1179,9 +1225,11 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="bg-gradient-to-br from-purple-50 via-white to-yellow-50 p-6 mt-4 rounded-2xl shadow-lg">
                         <h4 class="text-center text-xl font-semibold text-purple-700 mb-6">
-                            <i class="ri-rocket-line text-yellow-500 text-2xl align-middle mr-2"></i>
+                            <i
+                                class="ri-rocket-line text-yellow-500 text-2xl align-middle {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
                             الميزات القادمة
                         </h4>
                         <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
@@ -1211,9 +1259,9 @@
                                     <i class="ri-time-line text-yellow-500 text-xl"></i>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
+
                     <div class="p-8">
                         <button
                             class="dynapuff w-full py-3 px-6 bg-purple-400 hover:bg-purple-500 text-white rounded-full transition duration-300 text-lg font-bold">
@@ -1222,8 +1270,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
