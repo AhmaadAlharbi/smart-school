@@ -1138,133 +1138,271 @@
                 </div>
 
                 <!-- Dashboard Plan -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
-                    <!-- Popular Badge -->
-                    <div class="absolute top-4 {{ app()->getLocale() == 'ar' ? 'left-4' : 'right-4' }}">
-                        <span
-                            class="bg-gradient-to-r from-yellow-400 to-purple-400 text-white px-4 py-1 rounded-full text-sm font-bold">
-                            {{ app()->getLocale() == 'ar' ? 'وفر ٢٥٪' : 'Save 25%' }}
-                        </span>
+                <div class="pricing-card" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
+                    <style>
+                        .pricing-card {
+                            max-width: 400px;
+                            background: white;
+                            border-radius: 24px;
+                            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                            overflow: hidden;
+                            position: relative;
+                            transition: transform 0.3s ease;
+                        }
+
+                        .pricing-card[dir="rtl"] .coming-soon-ribbon {
+                            right: auto;
+                            left: -35px;
+                            transform: rotate(-45deg);
+                        }
+
+                        .pricing-card[dir="rtl"] .feature-item i {
+                            margin-right: 0;
+                            margin-left: 12px;
+                        }
+
+                        .pricing-card[dir="rtl"] .soon-feature-icon {
+                            margin-right: 0;
+                            margin-left: 12px;
+                        }
+
+                        .pricing-card:hover {
+                            transform: translateY(-5px);
+                        }
+
+                        .coming-soon-ribbon {
+                            position: absolute;
+                            top: 30px;
+                            right: -35px;
+                            background: linear-gradient(45deg, #f59e0b, #d97706);
+                            color: white;
+                            padding: 8px 40px;
+                            transform: rotate(45deg);
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                            z-index: 10;
+                        }
+
+                        .pricing-header {
+                            padding: 32px;
+                            text-align: center;
+                            background: linear-gradient(135deg, #f3e8ff, #faf5ff);
+                        }
+
+                        .pricing-icon {
+                            width: 64px;
+                            height: 64px;
+                            background: #a855f7;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto 16px;
+                        }
+
+                        .pricing-title {
+                            font-size: 24px;
+                            font-weight: bold;
+                            color: #6b21a8;
+                            margin-bottom: 8px;
+
+                            font-family: {
+                                    {
+                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
+                                }
+                            }
+
+                            ;
+                        }
+
+                        .pricing-subtitle {
+                            color: #64748b;
+                            margin-bottom: 16px;
+
+                            font-family: {
+                                    {
+                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
+                                }
+                            }
+
+                            ;
+                        }
+
+                        .launch-alert {
+                            background: #fef3c7;
+                            color: #92400e;
+                            padding: 8px 16px;
+                            border-radius: 16px;
+                            font-size: 14px;
+                            display: inline-block;
+                            margin-top: 8px;
+                        }
+
+                        .features-list {
+                            padding: 32px;
+                            background: #faf5ff;
+                        }
+
+                        .feature-item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+                            color: #334155;
+                        }
+
+                        .feature-item i {
+                            color: #22c55e;
+                            margin-right: 12px;
+                            font-size: 20px;
+                        }
+
+                        .coming-soon-features {
+                            padding: 32px;
+                            background: linear-gradient(135deg, #faf5ff, #fff);
+                        }
+
+                        .coming-soon-title {
+                            text-align: center;
+                            color: #6b21a8;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 24px;
+
+                            font-family: {
+                                    {
+                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
+                                }
+                            }
+
+                            ;
+                        }
+
+                        .soon-feature {
+                            background: white;
+                            padding: 12px;
+                            border-radius: 12px;
+                            margin-bottom: 12px;
+                            display: flex;
+                            align-items: center;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                            transition: transform 0.2s ease;
+                        }
+
+                        .soon-feature:hover {
+                            transform: scale(1.02);
+                        }
+
+                        .soon-feature-icon {
+                            width: 40px;
+                            height: 40px;
+                            background: #f3e8ff;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 12px;
+                        }
+
+                        .cta-button {
+                            display: block;
+                            width: calc(100% - 64px);
+                            margin: 32px;
+                            padding: 16px;
+                            background: #a855f7;
+                            color: white;
+                            border: none;
+                            border-radius: 999px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: background 0.3s ease;
+                            opacity: 0.7;
+
+                            font-family: {
+                                    {
+                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
+                                }
+                            }
+
+                            ;
+                        }
+
+                        .cta-button:hover {
+                            background: #9333ea;
+                        }
+
+                        .notification-text {
+                            text-align: center;
+                            color: #64748b;
+                            font-size: 14px;
+                            margin-top: -24px;
+                            margin-bottom: 24px;
+                            padding: 0 32px;
+
+                            font-family: {
+                                    {
+                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
+                                }
+                            }
+
+                            ;
+                        }
+                    </style>
+
+                    <div class="coming-soon-ribbon">
+                        {{ app()->getLocale() === 'ar' ? 'قريباً' : 'Coming Soon' }}
                     </div>
 
-                    <div class="p-8">
-                        <div class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
                             <i class="ri-dashboard-3-line text-3xl text-yellow-400"></i>
                         </div>
-                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">
-                                {{ __('pricing.pro.title') }}
-                            </h3>
-                            <p class="text-center text-gray-600 mb-6">{{ __('pricing.pro.subtitle') }}</p>
-                            <div class="text-center space-y-2">
-                                <p class="text-center">
-                                    <span class="dynapuff text-4xl font-bold text-purple-600">
-                                        {{ app()->getLocale() == 'ar' ? '٣٩٩' : '399' }}
-                                    </span>
-                                    <span class="text-2xl font-bold text-purple-600">
-                                        {{ app()->getLocale() == 'ar' ? 'د.ك' : 'KWD' }}
-                                    </span>
-                                    <span class="text-gray-500">{{ app()->getLocale() == 'ar' ? '/سنوياً' : '/year'
-                                        }}</span>
-                                </p>
-                                <p class="text-sm text-gray-500">
-                                    <span class="line-through">
-                                        {{ app()->getLocale() == 'ar' ? '٥٤٠ د.ك/سنوياً' : '540 KWD/year' }}
-                                    </span>
-                                    •
-                                    {{ app()->getLocale() == 'ar' ? 'وفر ١٤١ د.ك' : 'Save 141 KWD' }}
-                                </p>
-                                <p class="text-sm text-purple-500 font-medium">
-                                    {{ app()->getLocale() == 'ar' ? 'فقط ٣٣٫٢٥ د.ك شهرياً، تدفع سنوياً' : 'Only 33.25
-                                    KWD/month, billed annually' }}
-                                </p>
-                            </div>
+                        <h3 class="pricing-title">{{ __('pricing.pro.title') }}</h3>
+                        <p class="pricing-subtitle">{{ __('pricing.pro.subtitle') }}</p>
+                        <div class="launch-alert">
+                            <i class="ri-notification-3-line"></i>
+                            {{ app()->getLocale() === 'ar' ? 'أسعار خاصة عند الإطلاق' : 'Launch Special Pricing Coming
+                            Soon' }}
                         </div>
                     </div>
 
-                    <div class="bg-purple-50 p-8">
-                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.1') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.2') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.3') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.4') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.5') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.6') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.pro.features.10') }}</span>
-                            </li>
-                        </ul>
+                    <div class="features-list">
+                        @foreach(range(1, 6) as $i)
+                        <div class="feature-item">
+                            <i class="ri-checkbox-circle-fill"></i>
+                            <span>{{ __("pricing.pro.features.$i") }}</span>
+                        </div>
+                        @endforeach
                     </div>
 
-                    <div class="bg-gradient-to-br from-purple-50 via-white to-yellow-50 p-6 mt-4 rounded-2xl shadow-lg">
-                        <h4 class="text-center text-xl font-semibold text-purple-700 mb-6"
-                            style="{{ app()->getLocale() === 'ar' ? 'font-family: Tajawal' : '' }}">
-                            <i
-                                class="ri-rocket-line text-yellow-500 text-2xl align-middle {{ app()->getLocale() === 'ar' ? 'ml-2' : 'mr-2' }}"></i>
+                    <div class="coming-soon-features">
+                        <h4 class="coming-soon-title">
+                            <i class="ri-rocket-line text-yellow-500"></i>
                             {{ app()->getLocale() === 'ar' ? 'الميزات القادمة' : 'Upcoming Features' }}
                         </h4>
-                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <li
-                                class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }} transform transition-all hover:scale-102">
-                                <div
-                                    class="flex items-center w-full p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                                    <div
-                                        class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'ml-3' : 'mr-3' }}">
-                                        <i class="ri-settings-line text-purple-600 text-xl"></i>
-                                    </div>
-                                    <span class="text-gray-700">{{ __('pricing.pro.soon_features.1') }}</span>
-                                    <div class="flex-grow"></div>
-                                    <i class="ri-time-line text-yellow-500 text-xl"></i>
-                                </div>
-                            </li>
-                            <li
-                                class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }} transform transition-all hover:scale-102">
-                                <div
-                                    class="flex items-center w-full p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                                    <div
-                                        class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'ml-3' : 'mr-3' }}">
-                                        <i class="ri-dashboard-line text-purple-600 text-xl"></i>
-                                    </div>
-                                    <span class="text-gray-700">{{ __('pricing.pro.soon_features.2') }}</span>
-                                    <div class="flex-grow"></div>
-                                    <i class="ri-time-line text-yellow-500 text-xl"></i>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="soon-feature">
+                            <div class="soon-feature-icon">
+                                <i class="ri-settings-line text-purple-600"></i>
+                            </div>
+                            <span>{{ __('pricing.pro.soon_features.1') }}</span>
+                        </div>
+                        <div class="soon-feature">
+                            <div class="soon-feature-icon">
+                                <i class="ri-dashboard-line text-purple-600"></i>
+                            </div>
+                            <span>{{ __('pricing.pro.soon_features.2') }}</span>
+                        </div>
                     </div>
 
-                    <div class="p-8">
-                        <button
-                            class="dynapuff w-full py-3 px-6 bg-purple-400 hover:bg-purple-500 text-white rounded-full transition duration-300 text-lg font-bold">
-                            {{ __('pricing.pro.button') }}
-                        </button>
-                    </div>
+                    <p class="notification-text">
+                        {{ app()->getLocale() === 'ar' ? 'كن أول من يعرف عند الإطلاق!' : 'Be the first to know when we
+                        launch!' }}
+                    </p>
+                    <button class="cta-button">
+                        {{ app()->getLocale() === 'ar' ? 'انضم لقائمة الانتظار' : 'Join Waitlist' }}
+                    </button>
                 </div>
             </div>
         </div>
