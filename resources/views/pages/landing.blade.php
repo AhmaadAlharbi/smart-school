@@ -258,6 +258,623 @@
     }
 </style>
 
+{{-- <style>
+    :root {
+        --primary: #2563eb;
+        --secondary: #7c3aed;
+        --accent: #f59e0b;
+        --text: #1f2937;
+        --rain-color: rgba(147, 197, 253, 0.7);
+        /* Lighter blue rain */
+
+        /* New vibrant background colors */
+        --background-start: #4C1D95;
+        /* Deep purple */
+        --background-mid1: #5B21B6;
+        /* Purple */
+        --background-mid2: #1E40AF;
+        /* Royal blue */
+        --background-mid3: #1D4ED8;
+        /* Bright blue */
+        --background-end: #2563EB;
+        /* Light blue */
+
+        /* Additional accent colors */
+        --accent-pink: #EC4899;
+        --accent-orange: #F59E0B;
+        --accent-cyan: #06B6D4;
+    }
+
+    /* Main Container */
+    .hero-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg,
+                var(--background-start) 0%,
+                var(--background-mid1) 25%,
+                var(--background-mid2) 50%,
+                var(--background-mid3) 75%,
+                var(--background-end) 100%);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        animation: gradientShift 15s ease infinite;
+    }
+
+    /* Sun */
+    .sun {
+        position: absolute;
+        top: 5rem;
+        right: 8rem;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle at center,
+                #FEF3C7 0%,
+                /* Lighter yellow */
+                #FCD34D 30%,
+                /* Medium yellow */
+                #F59E0B 60%,
+                /* Orange */
+                #EA580C 100%
+                /* Deep orange */
+            );
+        border-radius: 50%;
+        box-shadow:
+            0 0 60px rgba(245, 158, 11, 0.3),
+            0 0 120px rgba(245, 158, 11, 0.2);
+        animation: glow 4s ease-in-out infinite;
+        z-index: 2;
+    }
+
+    .sun::before {
+        content: '';
+        position: absolute;
+        top: -25%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
+        background: repeating-conic-gradient(from 0deg,
+                transparent 0deg 20deg,
+                rgba(245, 158, 11, 0.1) 20deg 40deg);
+        animation: rotate 20s linear infinite;
+        border-radius: 50%;
+    }
+
+    /* Sun Overlay Cloud */
+    .sun-overlay {
+        position: absolute;
+        top: 4.5rem;
+        right: 7.5rem;
+        width: 160px;
+        height: 50px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+        border-radius: 6rem;
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 -6px 12px rgba(0, 0, 0, 0.05);
+        opacity: 0.8;
+        backdrop-filter: blur(4px);
+        z-index: 4;
+        animation: floatOverSun 4s ease-in-out infinite;
+    }
+
+    .sun-overlay::before,
+    .sun-overlay::after {
+        content: '';
+        position: absolute;
+        background: inherit;
+        box-shadow: inherit;
+        border-radius: 50%;
+    }
+
+    .sun-overlay::before {
+        width: 70px;
+        height: 70px;
+        top: -35px;
+        left: 25px;
+    }
+
+    .sun-overlay::after {
+        width: 50px;
+        height: 50px;
+        top: -20px;
+        left: 75px;
+    }
+
+    /* Regular Clouds */
+    .cloud {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+        border-radius: 6rem;
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.15),
+            inset 0 -6px 12px rgba(0, 0, 0, 0.1);
+        opacity: 0.9;
+        backdrop-filter: blur(4px);
+        z-index: 3;
+    }
+
+    .cloud::before,
+    .cloud::after {
+        content: '';
+        position: absolute;
+        background: inherit;
+        box-shadow: inherit;
+        border-radius: 50%;
+    }
+
+    .cloud-1 {
+        width: 200px;
+        height: 60px;
+        top: 100px;
+        left: 20%;
+        animation: floatHorizontal 15s ease-in-out infinite;
+    }
+
+    .cloud-1::before {
+        width: 90px;
+        height: 90px;
+        top: -45px;
+        left: 35px;
+    }
+
+    .cloud-1::after {
+        width: 70px;
+        height: 70px;
+        top: -30px;
+        left: 100px;
+    }
+
+    .cloud-2 {
+        width: 240px;
+        height: 70px;
+        top: 200px;
+        right: 20%;
+        animation: floatHorizontalReverse 18s ease-in-out infinite;
+    }
+
+    .cloud-2::before {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: 45px;
+    }
+
+    .cloud-2::after {
+        width: 80px;
+        height: 80px;
+        top: -35px;
+        left: 120px;
+    }
+
+    /* Rain Container and Drops */
+    .rain-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    /* Cloud 1 Rain */
+    .rain-drop:nth-child(-n+20) {
+        position: absolute;
+        width: 2px;
+        height: 30px;
+        background: linear-gradient(to bottom, transparent, var(--rain-color));
+        filter: blur(0.5px);
+        pointer-events: none;
+        opacity: 0.8;
+        top: 160px;
+        animation: rainFallFromCloud1 linear infinite;
+    }
+
+    /* Cloud 2 Rain */
+    .rain-drop:nth-child(n+21) {
+        position: absolute;
+        width: 2px;
+        height: 30px;
+        background: linear-gradient(to bottom, transparent, var(--rain-color));
+        filter: blur(0.5px);
+        pointer-events: none;
+        opacity: 0.8;
+        top: 270px;
+        animation: rainFallFromCloud2 linear infinite;
+    }
+
+    /* Rain Drop Distribution for Cloud 1 */
+    .rain-drop:nth-child(1) {
+        left: calc(20% + 35px);
+        animation-duration: 0.7s;
+    }
+
+    .rain-drop:nth-child(2) {
+        left: calc(20% + 55px);
+        animation-duration: 0.9s;
+    }
+
+    .rain-drop:nth-child(3) {
+        left: calc(20% + 75px);
+        animation-duration: 0.8s;
+        height: 35px;
+    }
+
+    .rain-drop:nth-child(4) {
+        left: calc(20% + 95px);
+        animation-duration: 1s;
+    }
+
+    .rain-drop:nth-child(5) {
+        left: calc(20% + 115px);
+        animation-duration: 0.75s;
+        height: 25px;
+    }
+
+    .rain-drop:nth-child(6) {
+        left: calc(20% + 135px);
+        animation-duration: 0.85s;
+    }
+
+    .rain-drop:nth-child(7) {
+        left: calc(20% + 155px);
+        animation-duration: 0.95s;
+        height: 35px;
+    }
+
+    .rain-drop:nth-child(8) {
+        left: calc(20% + 175px);
+        animation-duration: 0.8s;
+    }
+
+    .rain-drop:nth-child(9) {
+        left: calc(20% + 45px);
+        animation-duration: 0.7s;
+        height: 25px;
+    }
+
+    .rain-drop:nth-child(10) {
+        left: calc(20% + 65px);
+        animation-duration: 0.9s;
+    }
+
+    .rain-drop:nth-child(11) {
+        left: calc(20% + 85px);
+        animation-duration: 0.85s;
+    }
+
+    .rain-drop:nth-child(12) {
+        left: calc(20% + 105px);
+        animation-duration: 0.95s;
+    }
+
+    .rain-drop:nth-child(13) {
+        left: calc(20% + 125px);
+        animation-duration: 0.75s;
+    }
+
+    .rain-drop:nth-child(14) {
+        left: calc(20% + 145px);
+        animation-duration: 0.8s;
+    }
+
+    .rain-drop:nth-child(15) {
+        left: calc(20% + 165px);
+        animation-duration: 0.9s;
+    }
+
+    .rain-drop:nth-child(16) {
+        left: calc(20% + 40px);
+        animation-duration: 0.7s;
+    }
+
+    .rain-drop:nth-child(17) {
+        left: calc(20% + 60px);
+        animation-duration: 0.85s;
+    }
+
+    .rain-drop:nth-child(18) {
+        left: calc(20% + 80px);
+        animation-duration: 0.95s;
+    }
+
+    .rain-drop:nth-child(19) {
+        left: calc(20% + 100px);
+        animation-duration: 0.8s;
+    }
+
+    .rain-drop:nth-child(20) {
+        left: calc(20% + 120px);
+        animation-duration: 0.75s;
+    }
+
+    /* Rain Drop Distribution for Cloud 2 */
+    .rain-drop:nth-child(21) {
+        right: calc(20% + 35px);
+        animation-duration: 0.82s;
+    }
+
+    .rain-drop:nth-child(22) {
+        right: calc(20% + 55px);
+        animation-duration: 0.88s;
+    }
+
+    .rain-drop:nth-child(23) {
+        right: calc(20% + 75px);
+        animation-duration: 0.93s;
+    }
+
+    .rain-drop:nth-child(24) {
+        right: calc(20% + 95px);
+        animation-duration: 0.78s;
+    }
+
+    .rain-drop:nth-child(25) {
+        right: calc(20% + 115px);
+        animation-duration: 0.86s;
+    }
+
+    .rain-drop:nth-child(26) {
+        right: calc(20% + 135px);
+        animation-duration: 0.92s;
+    }
+
+    .rain-drop:nth-child(27) {
+        right: calc(20% + 155px);
+        animation-duration: 0.77s;
+    }
+
+    .rain-drop:nth-child(28) {
+        right: calc(20% + 175px);
+        animation-duration: 0.84s;
+    }
+
+    .rain-drop:nth-child(29) {
+        right: calc(20% + 195px);
+        animation-duration: 0.91s;
+    }
+
+    .rain-drop:nth-child(30) {
+        right: calc(20% + 215px);
+        animation-duration: 0.79s;
+    }
+
+    /* Content Styles */
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: white;
+    }
+
+    .title {
+        font-size: 5rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        color: #e2e8f0;
+        max-width: 700px;
+        margin: 0 auto 3rem;
+        line-height: 1.6;
+        animation: fadeInUp 1s ease-out 0.2s backwards;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        padding: 1.25rem 3rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 1.125rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease-out 0.4s backwards;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(135deg, var(--secondary), var(--primary));
+    }
+
+    /* Animations */
+    @keyframes glow {
+
+        0%,
+        100% {
+            box-shadow:
+                0 0 40px rgba(245, 158, 11, 0.2),
+                0 0 80px rgba(245, 158, 11, 0.1);
+        }
+
+        50% {
+            box-shadow:
+                0 0 60px rgba(245, 158, 11, 0.3),
+                0 0 100px rgba(245, 158, 11, 0.2);
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes floatHorizontal {
+
+        0%,
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+
+        25% {
+            transform: translateX(50px) translateY(-10px);
+        }
+
+        50% {
+            transform: translateX(100px) translateY(0);
+        }
+
+        75% {
+            transform: translateX(50px) translateY(10px);
+        }
+    }
+
+    @keyframes floatHorizontalReverse {
+
+        0%,
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+
+        25% {
+            transform: translateX(-50px) translateY(10px);
+        }
+
+        50% {
+            transform: translateX(-100px) translateY(0);
+        }
+
+        75% {
+            transform: translateX(-50px) translateY(-10px);
+        }
+    }
+
+    @keyframes floatOverSun {
+
+        0%,
+        100% {
+            transform: translateX(0) translateY(0);
+            opacity: 0.8;
+        }
+
+        50% {
+            transform: translateX(-30px) translateY(0);
+            opacity: 0.95;
+        }
+    }
+
+    @keyframes rainFallFromCloud1 {
+        0% {
+            transform: translateY(0) rotate(-20deg);
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: translateY(calc(100vh - 160px)) rotate(-20deg);
+            opacity: 0.8;
+        }
+    }
+
+    @keyframes rainFallFromCloud2 {
+        0% {
+            transform: translateY(0) rotate(-20deg);
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: translateY(calc(100vh - 270px)) rotate(-20deg);
+            opacity: 0.8;
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+
+
+    /* Enhanced Clouds */
+    .cloud {
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.95) 0%,
+                rgba(248, 250, 252, 0.9) 50%,
+                rgba(241, 245, 249, 0.85) 100%);
+        box-shadow:
+            0 8px 32px rgba(147, 197, 253, 0.2),
+            inset 0 -6px 12px rgba(147, 197, 253, 0.1);
+    }
+
+    /* Enhanced Rain */
+    .rain-drop {
+        background: linear-gradient(to bottom,
+                transparent,
+                rgba(147, 197, 253, 0.4) 20%,
+                rgba(147, 197, 253, 0.7) 50%,
+                rgba(147, 197, 253, 0.9) 100%);
+        filter: drop-shadow(0 0 2px rgba(147, 197, 253, 0.3));
+        backdrop-filter: blur(0.5px);
+    }
+
+    /* Enhanced Content */
+    .title {
+        background: linear-gradient(135deg,
+                #FFFFFF 0%,
+                #F3F4F6 25%,
+                #E5E7EB 50%,
+                #D1D5DB 75%,
+                #9CA3AF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-button {
+        background: linear-gradient(135deg,
+                var(--accent-cyan) 0%,
+                var(--primary) 50%,
+                var(--secondary) 100%);
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background: linear-gradient(135deg,
+                var(--secondary) 0%,
+                var(--primary) 50%,
+                var(--accent-cyan) 100%);
+        box-shadow: 0 8px 16px rgba(147, 197, 253, 0.3);
+    }
+</style> --}}
 @endsection
 
 @section('content')
@@ -266,47 +883,106 @@
 
     <!-- Start::Home Content new one -->
 
-    <div class="bg-gradient-to-b from-blue-100 to-green-100">
-        <div class="container mx-auto px-4 py-16 relative">
-            <!-- Restored Animated Decorative Elements -->
-            <div
-                class="absolute top-20 left-10 w-24 h-24 bg-yellow-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
-            </div>
-            <div
-                class="absolute bottom-20 right-10 w-32 h-32 bg-blue-200 rounded-full opacity-50 blur-xl transform-gpu transition-transform hover:scale-110 duration-1000">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-b from-blue-300 to-green-300">
+        <div class="container mx-auto px-4 py-16 relative min-h-screen">
+            <!-- Weather Elements -->
+            <div class="sun"></div>
+            <div class="sun-overlay"></div>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+
+            <!-- Rain Container -->
+            <div class="rain-container">
+                <!-- Cloud 1 Rain (20 drops) -->
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+
+                <!-- Cloud 2 Rain (20 drops) -->
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
             </div>
 
+            <!-- Main Content -->
             <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-24 pt-12 pb-12 relative">
                 <div class="container max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="flex flex-col lg:flex-row items-center justify-between gap-12 py-10">
+
                         <!-- Left Content -->
-                        <div
-                            class="lg:w-1/2 text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mb-8 lg:mb-0 z-10">
+                        <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 z-10">
                             <div class="max-w-xl mx-auto lg:mx-0">
                                 <div class="space-y-8">
-                                    <h1
-                                        class="{{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }} text-5xl lg:text-6xl font-bold">
-                                        <span class="block soar-in">{{ __('landing.headline_1') }}</span>
-                                        <span class="text-blue-600 block soar-in-delay-1">{{ __('landing.headline_2')
-                                            }}</span>
-                                        <span class="block text-green-600 mt-2 soar-in-delay-2">{{
-                                            __('landing.headline_3') }}</span>
+                                    @if (app()->getLocale() === 'en')
+                                    <h1 class="text-5xl lg:text-6xl font-bold en-font">
+                                        <span class="block soar-in">Our Cloud Will</span>
+                                        <span class="text-blue-600 block soar-in-delay-1">Rain Creativity</span>
+                                        <span class="block text-green-600 mt-2 soar-in-delay-2">On Your Website</span>
                                     </h1>
+                                    @elseif (app()->getLocale() === 'ar')
+                                    <h1 class="text-5xl lg:text-6xl font-bold ar-font" dir="rtl">
+                                        <span class="block soar-in">سحابنا سوف</span>
+                                        <span class="text-blue-600 block soar-in-delay-1">يمطر الإبداع</span>
+                                        <span class="block text-green-600 mt-2 soar-in-delay-2">على موقعك</span>
+                                    </h1>
+                                    @endif
 
                                     <p class="text-lg text-gray-700 soar-in-delay-2">
-                                        {{ __('landing.description') }}
+                                        @if (app()->getLocale() === 'en')
+                                        Transform your ideas into reality with our cutting-edge development solutions
+                                        and innovative technologies.
+                                        @else
+                                        حوّل أفكارك إلى واقع مع حلولنا المتطورة في تطوير الويب والتقنيات الحديثة.
+                                        @endif
                                     </p>
 
                                     <div
-                                        class=" flex flex-col sm:flex-row {{ app()->getLocale() == 'ar' ? 'sm:flex-row-reverse justify-center' : '' }} justify-center {{ app()->getLocale() == 'ar' ? '' : 'lg:justify-start' }} space-y-4 sm:space-y-0 {{ app()->getLocale() == 'ar' ? 'sm:space-x-reverse' : '' }} sm:space-x-6 soar-in-delay-2">
+                                        class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2">
                                         <a href="#projects"
-                                            class="dynapuff inline-block px-8 py-4 mx-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            <span
-                                                class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
-                                                {{ __('landing.button_see') }}
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="w-6 h-6 inline-block {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            class="dynapuff inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            <span class="flex items-center justify-center">
+                                                @if (app()->getLocale() === 'en')
+                                                See Our Work
+                                                @else
+                                                شاهد أعمالنا
+                                                @endif
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2"
                                                         d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -315,12 +991,14 @@
                                         </a>
                                         <a href="#contact"
                                             class="dynapuff inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            <span
-                                                class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
-                                                {{ __('landing.button_adventure') }}
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="w-6 h-6 inline-block {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <span class="flex items-center justify-center">
+                                                @if (app()->getLocale() === 'en')
+                                                Start Creating
+                                                @else
+                                                ابدأ الإنشاء
+                                                @endif
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                                 </svg>
@@ -331,29 +1009,22 @@
                             </div>
                         </div>
 
-                        <!-- Right Content with Single Image -->
+                        <!-- Right Content with Image -->
                         <div class="w-full lg:w-1/2 px-4 sm:px-6 relative">
-                            <!-- Shadow Element -->
                             <div
                                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] sm:w-4/5 h-6 sm:h-8 bg-black/10 rounded-full blur-xl shadow-animation">
                             </div>
-
-                            <!-- Floating Image Container -->
-                            <div class="float-animation mx-auto max-w-2xl ">
+                            <div class="float-animation mx-auto max-w-2xl">
                                 <div class="bg-white rounded-xl shadow-lg p-2 sm:p-3 relative">
-                                    <!-- Gradient Background -->
                                     <div
                                         class="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200 rounded-xl rotate-2 blur-sm">
                                     </div>
-
-                                    <!-- Image Container -->
                                     <div class="relative w-full aspect-[4/3] md:aspect-[16/9]">
-                                        <img src="{{asset('build/assets/img/landing/hero3.jpg')}}"
-                                            alt="Happy kids using a computer"
+                                        <img src="{{ asset('/build/assets/img/landing/hero2.jpg') }}" alt="Hero Image"
                                             class="relative rounded-xl w-full h-full object-cover">
                                     </div>
 
-                                    <!-- Restored Decorative Circles -->
+                                    <!-- Decorative Elements -->
                                     <div
                                         class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500 rounded-full flex items-center justify-center rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
@@ -377,10 +1048,412 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --text: #1f2937;
+            --rain-color: rgba(255, 255, 255, 0.8);
+            /* Brighter rain color */
+        }
+
+        /* Sun */
+        .sun {
+            position: absolute;
+            top: 5rem;
+            right: 8rem;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at center,
+                    #FEF3C7 0%,
+                    #FCD34D 30%,
+                    #F59E0B 60%,
+                    #EA580C 100%);
+            border-radius: 50%;
+            box-shadow:
+                0 0 60px rgba(245, 158, 11, 0.3),
+                0 0 120px rgba(245, 158, 11, 0.2);
+            animation: glow 4s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .sun::before {
+            content: '';
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            background: repeating-conic-gradient(from 0deg,
+                    transparent 0deg 20deg,
+                    rgba(245, 158, 11, 0.1) 20deg 40deg);
+            animation: rotate 20s linear infinite;
+            border-radius: 50%;
+        }
+
+        /* Sun Overlay Cloud */
+        .sun-overlay {
+            position: absolute;
+            top: 4.5rem;
+            right: 7.5rem;
+            width: 160px;
+            height: 50px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+            border-radius: 6rem;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                inset 0 -6px 12px rgba(0, 0, 0, 0.05);
+            opacity: 0.8;
+            backdrop-filter: blur(4px);
+            z-index: 4;
+            animation: floatOverSun 4s ease-in-out infinite;
+        }
+
+        .sun-overlay::before,
+        .sun-overlay::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            box-shadow: inherit;
+            border-radius: 50%;
+        }
+
+        .sun-overlay::before {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            left: 25px;
+        }
+
+        .sun-overlay::after {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: 75px;
+        }
+
+        /* Clouds */
+        .cloud {
+            position: absolute;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+            border-radius: 6rem;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.15),
+                inset 0 -6px 12px rgba(0, 0, 0, 0.1);
+            opacity: 0.9;
+            backdrop-filter: blur(4px);
+            z-index: 3;
+        }
+
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            box-shadow: inherit;
+            border-radius: 50%;
+        }
+
+        .cloud-1 {
+            width: 200px;
+            height: 60px;
+            top: 100px;
+            left: 20%;
+            animation: floatHorizontal 15s ease-in-out infinite;
+        }
+
+        .hero-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg,
+                    var(--background-start) 0%,
+                    var(--background-mid1) 25%,
+                    var(--background-mid2) 75%,
+                    var(--background-end) 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Update text colors for better contrast */
+        .title {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            color: #e2e8f0;
+            /* Slate 200 */
+        }
+
+        /* Make rain more visible */
+        .rain-drop {
+            position: absolute;
+            width: 3px;
+            /* Wider drops */
+            height: 40px;
+            /* Longer drops */
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0.1),
+                    rgba(255, 255, 255, 0.8) 40%,
+                    rgba(255, 255, 255, 0.9));
+            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
+            pointer-events: none;
+            opacity: 0.9;
+        }
 
 
+        .cloud-1::before {
+            width: 90px;
+            height: 90px;
+            top: -45px;
+            left: 35px;
+        }
+
+        .cloud-1::after {
+            width: 70px;
+            height: 70px;
+            top: -30px;
+            left: 100px;
+        }
+
+        .cloud-2 {
+            width: 240px;
+            height: 70px;
+            top: 200px;
+            right: 20%;
+            animation: floatHorizontalReverse 18s ease-in-out infinite;
+        }
+
+        .cloud-2::before {
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: 45px;
+        }
+
+        .cloud-2::after {
+            width: 80px;
+            height: 80px;
+            top: -35px;
+            left: 120px;
+        }
+
+        /* Rain Container and Drops */
+        .rain-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        /* Cloud 1 Rain */
+        .rain-drop:nth-child(-n+20) {
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            background: linear-gradient(to bottom, transparent, var(--rain-color));
+            filter: blur(0.5px);
+            pointer-events: none;
+            opacity: 0.8;
+            top: 160px;
+            animation: rainFallFromCloud1 linear infinite;
+        }
+
+        /* Cloud 2 Rain */
+        .rain-drop:nth-child(n+21) {
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            background: linear-gradient(to bottom, transparent, var(--rain-color));
+            filter: blur(0.5px);
+            pointer-events: none;
+            opacity: 0.8;
+            top: 270px;
+            animation: rainFallFromCloud2 linear infinite;
+        }
+
+        /* Rain Drop Distribution for Cloud 1 */
+        .rain-drop:nth-child(1) {
+            left: calc(20% + 35px);
+            animation-duration: 1.2s;
+        }
+
+        .rain-drop:nth-child(2) {
+            left: calc(20% + 55px);
+            animation-duration: 1.4s;
+        }
+
+        .rain-drop:nth-child(3) {
+
+            left: calc(20% + 75px);
+            animation-duration: 1.3s;
+            height: 45px;
+        }
+
+        .rain-drop:nth-child(4) {
+            left: calc(20% + 95px);
+            animation-duration: 1.5s;
+        }
+
+        .rain-drop:nth-child(5) {
+            left: calc(20% + 115px);
+            animation-duration: 1.1s;
+            height: 35px;
+        }
+
+        /* Continue for all 20 drops from cloud 1 */
+
+        /* Rain Drop Distribution for Cloud 2 */
+        .rain-drop:nth-child(21) {
+            right: calc(20% + 35px);
+            animation-duration: 1.3s;
+        }
+
+        .rain-drop:nth-child(22) {
+            right: calc(20% + 55px);
+            animation-duration: 1.4s;
+        }
+
+        .rain-drop:nth-child(23) {
+            right: calc(20% + 75px);
+            animation-duration: 1.5s;
+        }
+
+        .rain-drop:nth-child(24) {
+            right: calc(20% + 95px);
+            animation-duration: 1.2s;
+        }
+
+        .rain-drop:nth-child(25) {
+            right: calc(20% + 115px);
+            animation-duration: 1.4s;
+        }
+
+        /* Continue for all 20 drops from cloud 2 */
+
+        /* Animations */
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow:
+                    0 0 40px rgba(245, 158, 11, 0.2),
+                    0 0 80px rgba(245, 158, 11, 0.1);
+            }
+
+            50% {
+                box-shadow:
+                    0 0 60px rgba(245, 158, 11, 0.3),
+                    0 0 100px rgba(245, 158, 11, 0.2);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes floatHorizontal {
+
+            0%,
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+
+            25% {
+                transform: translateX(50px) translateY(-10px);
+            }
+
+            50% {
+                transform: translateX(100px) translateY(0);
+            }
+
+            75% {
+                transform: translateX(50px) translateY(10px);
+            }
+        }
+
+        @keyframes floatHorizontalReverse {
+
+            0%,
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+
+            25% {
+                transform: translateX(-50px) translateY(10px);
+            }
+
+            50% {
+                transform: translateX(-100px) translateY(0);
+            }
+
+            75% {
+                transform: translateX(-50px) translateY(-10px);
+            }
+        }
+
+        @keyframes floatOverSun {
+
+            0%,
+            100% {
+                transform: translateX(0) translateY(0);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: translateX(-30px) translateY(0);
+                opacity: 0.95;
+            }
+        }
+
+        @keyframes rainFallFromCloud1 {
+            0% {
+                transform: translateY(0) rotate(-20deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: translateY(calc(100vh - 160px)) rotate(-20deg);
+                opacity: 0.9;
+            }
+        }
+
+        @keyframes rainFallFromCloud2 {
+            0% {
+                transform: translateY(0) rotate(-20deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: translateY(calc(100vh - 270px)) rotate(-20deg);
+                opacity: 0.9;
+            }
+        }
+    </style>
     <!-- End::Services Content -->
     <!-- Start::Services Content -->
     <div class="bg-gradient-to-b from-blue-100 to-purple-100 min-h-screen flex items-center" id="services">
@@ -417,7 +1490,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_design.feature_1') }}
                         </li>
@@ -425,7 +1499,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_design.feature_2') }}
                         </li>
@@ -433,7 +1508,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_design.feature_3') }}
                         </li>
@@ -441,7 +1517,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_design.feature_4') }}
                         </li>
@@ -466,7 +1543,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_development.feature_1') }}
                         </li>
@@ -474,7 +1552,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_development.feature_2') }}
                         </li>
@@ -482,7 +1561,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_development.feature_3') }}
                         </li>
@@ -490,7 +1570,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.web_development.feature_4') }}
                         </li>
@@ -515,7 +1596,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.redesign.feature_1') }}
                         </li>
@@ -523,7 +1605,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.redesign.feature_2') }}
                         </li>
@@ -531,7 +1614,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.redesign.feature_3') }}
                         </li>
@@ -539,7 +1623,8 @@
                             <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
+                                    d="M5 13l4 4L19 7">
+                                </path>
                             </svg>
                             {{ __('services.redesign.feature_4') }}
                         </li>
@@ -967,21 +2052,24 @@
                 <div class="">
                     <div class="text-center space-y-3 p-4">
                         <p class="text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="137">137</span>+</p>
+                                data-count="137">137</span>+
+                        </p>
                         <span class="text-lg font-semibold text-white/70">Total Projects</span>
                     </div>
                 </div>
                 <div class="">
                     <div class="text-center space-y-3 p-4">
                         <p class=" text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="200">200</span>+</p>
+                                data-count="200">200</span>+
+                        </p>
                         <span class="text-lg font-semibold text-white/70">Profesional Team</span>
                     </div>
                 </div>
                 <div class="">
                     <div class="text-center space-y-3 p-4">
                         <p class=" text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="1000">1000</span>+</p>
+                                data-count="1000">1000</span>+
+                        </p>
                         <span class="text-lg font-semibold text-white/70">Happy Customers</span>
                     </div>
                 </div>
