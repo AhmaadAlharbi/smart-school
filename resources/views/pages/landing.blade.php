@@ -1,185 +1,14 @@
 @extends('layouts.landing-master')
 
 @section('styles')
-<style>
-    .fredoka-one {
-        font-family: 'Fredoka One', cursive;
-    }
 
-    .nunito {
-        font-family: 'Nunito', sans-serif;
-    }
-
-    @keyframes float {
-        0% {
-            transform: translateY(0px);
-        }
-
-        50% {
-            transform: translateY(-20px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    .float {
-        animation: float 6s ease-in-out infinite;
-    }
-</style>
 <!-- SWIPER CSS -->
 <link rel="stylesheet" href="{{asset('build/assets/libs/swiper/swiper-bundle.min.css')}}">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap"
     rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
-<style>
-    .fredoka-one {
-        font-family: 'Fredoka One', cursive;
-    }
 
-    .nunito {
-        font-family: 'Nunito', sans-serif;
-    }
 
-    @keyframes float {
-        0% {
-            transform: translateY(0px) rotate(3deg);
-        }
-
-        50% {
-            transform: translateY(-20px) rotate(3deg);
-        }
-
-        100% {
-            transform: translateY(0px) rotate(3deg);
-        }
-    }
-
-    .float {
-        animation: float 6s ease-in-out infinite;
-    }
-
-    .wave-bg {
-        background: linear-gradient(45deg, #3b82f6 25%, #fbbf24 75%);
-        background-size: 200% 200%;
-        animation: wave 15s ease infinite;
-    }
-
-    @keyframes wave {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    .blob {
-        animation: blob 7s ease-in-out infinite;
-        transition: all 1s ease-in-out;
-    }
-
-    @keyframes blob {
-
-        0%,
-        100% {
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-        }
-
-        50% {
-            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-        }
-    }
-</style>
-<style>
-    .fredoka-one {
-        font-family: 'Fredoka One', cursive;
-    }
-
-    .nunito {
-        font-family: 'Nunito', sans-serif;
-    }
-
-    @keyframes float-1 {
-        0% {
-            transform: translateY(0px) rotate(3deg);
-        }
-
-        50% {
-            transform: translateY(-15px) rotate(3deg);
-        }
-
-        100% {
-            transform: translateY(0px) rotate(3deg);
-        }
-    }
-
-    @keyframes float-2 {
-        0% {
-            transform: translateY(0px) rotate(-3deg);
-        }
-
-        50% {
-            transform: translateY(-20px) rotate(-3deg);
-        }
-
-        100% {
-            transform: translateY(0px) rotate(-3deg);
-        }
-    }
-
-    @keyframes float-3 {
-        0% {
-            transform: translateY(0px) rotate(2deg);
-        }
-
-        50% {
-            transform: translateY(-12px) rotate(2deg);
-        }
-
-        100% {
-            transform: translateY(0px) rotate(2deg);
-        }
-    }
-
-    .float-1 {
-        animation: float-1 6s ease-in-out infinite;
-    }
-
-    .float-2 {
-        animation: float-2 7s ease-in-out infinite 0.5s;
-    }
-
-    .float-3 {
-        animation: float-3 5s ease-in-out infinite 1s;
-    }
-
-    .wave-bg {
-        background: linear-gradient(45deg, #3b82f6 25%, #fbbf24 75%);
-        background-size: 200% 200%;
-        animation: wave 15s ease infinite;
-    }
-
-    @keyframes wave {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-</style>
 <style>
     @keyframes float {
 
@@ -950,14 +779,14 @@
                                 <div class="space-y-8">
                                     @if (app()->getLocale() === 'en')
                                     <h1 class="text-5xl lg:text-6xl font-bold en-font">
-                                        <span class="block soar-in">Our Cloud Will</span>
-                                        <span class="text-blue-600 block soar-in-delay-1">Rain Creativity</span>
-                                        <span class="block text-green-600 mt-2 soar-in-delay-2">On Your Website</span>
+                                        <span class="block soar-in">We</span>
+                                        <span class="text-blue-600 block soar-in-delay-1">Shower Your Website</span>
+                                        <span class="block text-green-600 mt-2 soar-in-delay-2"> With Creativity</span>
                                     </h1>
                                     @elseif (app()->getLocale() === 'ar')
                                     <h1 class="text-5xl lg:text-6xl font-bold ar-font" dir="rtl">
-                                        <span class="block soar-in">سحابنا سوف</span>
-                                        <span class="text-blue-600 block soar-in-delay-1">يمطر الإبداع</span>
+                                        <span class="block soar-in">سحابنا </span>
+                                        <span class="text-blue-600 block soar-in-delay-1">سيمطر الإبداع</span>
                                         <span class="block text-green-600 mt-2 soar-in-delay-2">على موقعك</span>
                                     </h1>
                                     @endif
@@ -972,10 +801,10 @@
                                     </p>
 
                                     <div
-                                        class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2">
+                                        class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2 {{ app()->getLocale() == 'en' ? 'lg:justify-start' : 'lg:justify-end ' }}">
                                         <a href="#projects"
-                                            class="dynapuff inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            <span class="flex items-center justify-center">
+                                            class="dynapuff inline-block px-8 ml-5 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            <span class="flex items-center justify-center ">
                                                 @if (app()->getLocale() === 'en')
                                                 See Our Work
                                                 @else
@@ -990,7 +819,7 @@
                                             </span>
                                         </a>
                                         <a href="#contact"
-                                            class="dynapuff inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                            class="dynapuff  inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
                                             <span class="flex items-center justify-center">
                                                 @if (app()->getLocale() === 'en')
                                                 Start Creating
@@ -1020,7 +849,7 @@
                                         class="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200 rounded-xl rotate-2 blur-sm">
                                     </div>
                                     <div class="relative w-full aspect-[4/3] md:aspect-[16/9]">
-                                        <img src="{{ asset('/build/assets/img/landing/hero2.jpg') }}" alt="Hero Image"
+                                        <img src="{{ asset('/build/assets/img/landing/hero5.jpg') }}" alt="Hero Image"
                                             class="relative rounded-xl w-full h-full object-cover">
                                     </div>
 
