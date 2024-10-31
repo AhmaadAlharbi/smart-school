@@ -1,93 +1,304 @@
-<footer class="bg-gray-900 py-10">
-    <div class="border-b border-white/10 pb-8">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-12 gap-6">
-                <div class="col-span-12 lg:col-span-4">
-                    <div class="space-y-4 px-4">
-                        <div>
-                            <h6 class="text-white text-lg leading-none dynapuff rtl:font-[Tajawal]">{{
-                                __('footer.about.title') }}</h6>
-                            <hr class="w-10 border-t-4 border-blue-500 inline-block">
-                        </div>
-                        <img src="/images/sahabcode-logo.png" class="w-auto" alt="Sahab Code Logo">
-                        <p class="text-base text-gray-400 rtl:font-[Tajawal]">{{ __('footer.about.description') }}</p>
-                        <div class="flex {{ app()->getLocale() === 'ar' ? 'space-x-reverse' : 'space-x-3' }}">
-                            <!-- Social Media Links -->
-                        </div>
-                    </div>
+<style>
+    /* Footer Base */
+    .footer {
+        background: linear-gradient(to bottom, #1e293b, #0f172a);
+        position: relative;
+        overflow: hidden;
+        padding-top: 4rem;
+    }
+
+    /* Background Elements */
+    .footer-glow {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+        opacity: 0.1;
+    }
+
+    .footer-glow-1 {
+        background: #2563eb;
+        width: 300px;
+        height: 300px;
+        top: -150px;
+        left: -100px;
+    }
+
+    .footer-glow-2 {
+        background: #22c55e;
+        width: 250px;
+        height: 250px;
+        bottom: -100px;
+        right: -50px;
+    }
+
+    /* Footer Content */
+    .footer-content {
+        position: relative;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 2rem;
+    }
+
+    /* Section Titles */
+    .footer-title {
+        color: white;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .footer-title-line {
+        display: inline-block;
+        height: 3px;
+        width: 2rem;
+        background: linear-gradient(to right, #2563eb, #22c55e);
+        border-radius: 1rem;
+        transition: width 0.3s ease;
+    }
+
+    .footer-section:hover .footer-title-line {
+        width: 3rem;
+    }
+
+    /* About Section */
+    .footer-logo {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-logo:hover {
+        transform: translateY(-5px);
+    }
+
+    .footer-description {
+        color: #94a3b8;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Links Styling */
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #94a3b8;
+        text-decoration: none;
+        padding: 0.5rem 0;
+        transition: all 0.3s ease;
+    }
+
+    .footer-link:hover {
+        color: #2563eb;
+        transform: translateX(5px);
+    }
+
+    .footer-link-icon {
+        color: #22c55e;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-link:hover .footer-link-icon {
+        transform: scale(1.2);
+    }
+
+    /* Contact Links */
+    .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #94a3b8;
+        text-decoration: none;
+        padding: 0.5rem 0;
+        transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+        color: #2563eb;
+    }
+
+    .contact-icon {
+        color: #22c55e;
+        transition: transform 0.3s ease;
+    }
+
+    .contact-link:hover .contact-icon {
+        transform: rotate(15deg);
+    }
+
+    /* Copyright Section */
+    .footer-copyright {
+        padding: 2rem 0;
+        text-align: center;
+        color: #94a3b8;
+        position: relative;
+    }
+
+    .copyright-text {
+        opacity: 0.8;
+    }
+
+    .copyright-link {
+        color: #2563eb;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .copyright-link:hover {
+        color: #22c55e;
+    }
+
+    .heart-icon {
+        display: inline-block;
+        color: #ef4444;
+        animation: heartbeat 1.5s infinite;
+    }
+
+    /* RTL Support */
+    [dir="rtl"] .footer-link:hover {
+        transform: translateX(-5px);
+    }
+
+    [dir="rtl"] .footer-link {
+        flex-direction: row-reverse;
+    }
+
+    /* Animations */
+    @keyframes heartbeat {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer-title {
+            justify-content: center;
+        }
+
+        .footer-description {
+            text-align: center;
+        }
+
+        .footer-links {
+            text-align: center;
+        }
+
+        .footer-link {
+            justify-content: center;
+        }
+
+        .footer-logo {
+            margin: 0 auto 1rem;
+            display: block;
+        }
+    }
+</style>
+<footer class="footer" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+    <!-- Background Glows -->
+    <div class="footer-glow footer-glow-1"></div>
+    <div class="footer-glow footer-glow-2"></div>
+
+    <div class="container mx-auto px-4">
+        <div class="footer-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h6 class="footer-title dynapuff">
+                        {{ __('footer.about.title') }}
+                        <span class="footer-title-line"></span>
+                    </h6>
+                    <img src="/images/sahabcode-logo.png" alt="Sahab Code Logo" class="footer-logo">
+                    <p class="footer-description">
+                        {{ __('footer.about.description') }}
+                    </p>
                 </div>
-                <div class="col-span-12 lg:col-span-4">
-                    <div class="grid lg:grid-cols-2 gap-6">
-                        <div class="space-y-3 px-4">
-                            <div>
-                                <h6 class="text-white text-lg leading-none dynapuff rtl:font-[Tajawal]">{{
-                                    __('footer.services.title') }}</h6>
-                                <hr class="w-10 border-t-4 border-green-500 inline-block">
-                            </div>
-                            <ul class="space-y-3 text-gray-400">
-                                <li>
-                                    <a href="#"
-                                        class="hover:text-blue-400 transition-colors duration-300 rtl:font-[Tajawal]">
-                                        {{ __('footer.services.web_design') }}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="hover:text-blue-400 transition-colors duration-300 rtl:font-[Tajawal]">
-                                        {{ __('footer.services.web_development') }}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="space-y-3 px-4">
-                            <div>
-                                <h6 class="text-white text-lg leading-none dynapuff rtl:font-[Tajawal]">{{
-                                    __('footer.quick_links.title') }}</h6>
-                                <hr class="w-10 border-t-4 border-blue-500 inline-block">
-                            </div>
-                            <ul class="space-y-3 text-gray-400">
-                                <li>
-                                    <a href="/demo-dashboard"
-                                        class="hover:text-green-400 transition-colors duration-300 rtl:font-[Tajawal]">
-                                        {{ __('footer.quick_links.dashboard') }}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
+                <!-- Services Section -->
+                <div class="footer-section">
+                    <h6 class="footer-title dynapuff">
+                        {{ __('footer.services.title') }}
+                        <span class="footer-title-line"></span>
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="ri-code-line footer-link-icon"></i>
+                                {{ __('footer.services.web_design') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <i class="ri-terminal-line footer-link-icon"></i>
+                                {{ __('footer.services.web_development') }}
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-span-12 lg:col-span-4">
-                    <div class="space-y-3 px-4">
-                        <div>
-                            <h6 class="text-white text-lg leading-none dynapuff rtl:font-[Tajawal]">{{
-                                __('footer.contact.title') }}</h6>
-                            <hr class="w-10 border-t-4 border-green-500 inline-block">
-                        </div>
-                        <ul class="space-y-3 text-gray-400">
-                            <li>
-                                <a href="mailto:contact@sahabcode.com"
-                                    class="inline-flex items-center hover:text-blue-400 transition-colors duration-300 rtl:font-[Tajawal] {{ app()->getLocale() === 'ar' ? 'flex-row-reverse' : '' }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="{{ app()->getLocale() === 'ar' ? 'ml-2' : 'mr-2' }} w-5 h-5 text-green-500"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                    {{ __('footer.contact.email') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h6 class="footer-title dynapuff">
+                        {{ __('footer.quick_links.title') }}
+                        <span class="footer-title-line"></span>
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="/demo-dashboard" class="footer-link">
+                                <i class="ri-dashboard-line footer-link-icon"></i>
+                                {{ __('footer.quick_links.dashboard') }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-section">
+                    <h6 class="footer-title dynapuff">
+                        {{ __('footer.contact.title') }}
+                        <span class="footer-title-line"></span>
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="mailto:contact@sahabcode.com" class="contact-link">
+                                <i class="ri-mail-line contact-icon"></i>
+                                {{ __('footer.contact.email') }}
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mx-auto px-4 py-6">
-        <p class="text-center text-gray-400 rtl:font-[Tajawal]">
-            © <span id="year">2024</span>
-            <a href="#" class="text-blue-500 hover:text-blue-400">Sahab Code</a>.
-            {{ __('footer.copyright.made_with') }} <span class="text-red-500">♥</span>.
-            {{ __('footer.copyright.rights') }}.
-        </p>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            <p class="copyright-text">
+                © <span id="year">2024</span>
+                <a href="#" class="copyright-link">Sahab Code</a>.
+                {{ __('footer.copyright.made_with') }}
+                <span class="heart-icon">♥</span>
+                {{ __('footer.copyright.rights') }}.
+            </p>
+        </div>
     </div>
 </footer>

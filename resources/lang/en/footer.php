@@ -1,4 +1,3 @@
-// resources/lang/en/footer.php
 <?php
 
 return [

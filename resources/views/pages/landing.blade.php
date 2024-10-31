@@ -87,895 +87,75 @@
     }
 </style>
 
-{{-- <style>
-    :root {
-        --primary: #2563eb;
-        --secondary: #7c3aed;
-        --accent: #f59e0b;
-        --text: #1f2937;
-        --rain-color: rgba(147, 197, 253, 0.7);
-        /* Lighter blue rain */
 
-        /* New vibrant background colors */
-        --background-start: #4C1D95;
-        /* Deep purple */
-        --background-mid1: #5B21B6;
-        /* Purple */
-        --background-mid2: #1E40AF;
-        /* Royal blue */
-        --background-mid3: #1D4ED8;
-        /* Bright blue */
-        --background-end: #2563EB;
-        /* Light blue */
-
-        /* Additional accent colors */
-        --accent-pink: #EC4899;
-        --accent-orange: #F59E0B;
-        --accent-cyan: #06B6D4;
-    }
-
-    /* Main Container */
-    .hero-container {
-        min-height: 100vh;
-        background: linear-gradient(135deg,
-                var(--background-start) 0%,
-                var(--background-mid1) 25%,
-                var(--background-mid2) 50%,
-                var(--background-mid3) 75%,
-                var(--background-end) 100%);
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        padding: 2rem;
-        animation: gradientShift 15s ease infinite;
-    }
-
-    /* Sun */
-    .sun {
-        position: absolute;
-        top: 5rem;
-        right: 8rem;
-        width: 100px;
-        height: 100px;
-        background: radial-gradient(circle at center,
-                #FEF3C7 0%,
-                /* Lighter yellow */
-                #FCD34D 30%,
-                /* Medium yellow */
-                #F59E0B 60%,
-                /* Orange */
-                #EA580C 100%
-                /* Deep orange */
-            );
-        border-radius: 50%;
-        box-shadow:
-            0 0 60px rgba(245, 158, 11, 0.3),
-            0 0 120px rgba(245, 158, 11, 0.2);
-        animation: glow 4s ease-in-out infinite;
-        z-index: 2;
-    }
-
-    .sun::before {
-        content: '';
-        position: absolute;
-        top: -25%;
-        left: -25%;
-        width: 150%;
-        height: 150%;
-        background: repeating-conic-gradient(from 0deg,
-                transparent 0deg 20deg,
-                rgba(245, 158, 11, 0.1) 20deg 40deg);
-        animation: rotate 20s linear infinite;
-        border-radius: 50%;
-    }
-
-    /* Sun Overlay Cloud */
-    .sun-overlay {
-        position: absolute;
-        top: 4.5rem;
-        right: 7.5rem;
-        width: 160px;
-        height: 50px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
-        border-radius: 6rem;
-        box-shadow:
-            0 8px 32px rgba(0, 0, 0, 0.1),
-            inset 0 -6px 12px rgba(0, 0, 0, 0.05);
-        opacity: 0.8;
-        backdrop-filter: blur(4px);
-        z-index: 4;
-        animation: floatOverSun 4s ease-in-out infinite;
-    }
-
-    .sun-overlay::before,
-    .sun-overlay::after {
-        content: '';
-        position: absolute;
-        background: inherit;
-        box-shadow: inherit;
-        border-radius: 50%;
-    }
-
-    .sun-overlay::before {
-        width: 70px;
-        height: 70px;
-        top: -35px;
-        left: 25px;
-    }
-
-    .sun-overlay::after {
-        width: 50px;
-        height: 50px;
-        top: -20px;
-        left: 75px;
-    }
-
-    /* Regular Clouds */
-    .cloud {
-        position: absolute;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
-        border-radius: 6rem;
-        box-shadow:
-            0 8px 32px rgba(0, 0, 0, 0.15),
-            inset 0 -6px 12px rgba(0, 0, 0, 0.1);
-        opacity: 0.9;
-        backdrop-filter: blur(4px);
-        z-index: 3;
-    }
-
-    .cloud::before,
-    .cloud::after {
-        content: '';
-        position: absolute;
-        background: inherit;
-        box-shadow: inherit;
-        border-radius: 50%;
-    }
-
-    .cloud-1 {
-        width: 200px;
-        height: 60px;
-        top: 100px;
-        left: 20%;
-        animation: floatHorizontal 15s ease-in-out infinite;
-    }
-
-    .cloud-1::before {
-        width: 90px;
-        height: 90px;
-        top: -45px;
-        left: 35px;
-    }
-
-    .cloud-1::after {
-        width: 70px;
-        height: 70px;
-        top: -30px;
-        left: 100px;
-    }
-
-    .cloud-2 {
-        width: 240px;
-        height: 70px;
-        top: 200px;
-        right: 20%;
-        animation: floatHorizontalReverse 18s ease-in-out infinite;
-    }
-
-    .cloud-2::before {
-        width: 100px;
-        height: 100px;
-        top: -50px;
-        left: 45px;
-    }
-
-    .cloud-2::after {
-        width: 80px;
-        height: 80px;
-        top: -35px;
-        left: 120px;
-    }
-
-    /* Rain Container and Drops */
-    .rain-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        pointer-events: none;
-        overflow: hidden;
-    }
-
-    /* Cloud 1 Rain */
-    .rain-drop:nth-child(-n+20) {
-        position: absolute;
-        width: 2px;
-        height: 30px;
-        background: linear-gradient(to bottom, transparent, var(--rain-color));
-        filter: blur(0.5px);
-        pointer-events: none;
-        opacity: 0.8;
-        top: 160px;
-        animation: rainFallFromCloud1 linear infinite;
-    }
-
-    /* Cloud 2 Rain */
-    .rain-drop:nth-child(n+21) {
-        position: absolute;
-        width: 2px;
-        height: 30px;
-        background: linear-gradient(to bottom, transparent, var(--rain-color));
-        filter: blur(0.5px);
-        pointer-events: none;
-        opacity: 0.8;
-        top: 270px;
-        animation: rainFallFromCloud2 linear infinite;
-    }
-
-    /* Rain Drop Distribution for Cloud 1 */
-    .rain-drop:nth-child(1) {
-        left: calc(20% + 35px);
-        animation-duration: 0.7s;
-    }
-
-    .rain-drop:nth-child(2) {
-        left: calc(20% + 55px);
-        animation-duration: 0.9s;
-    }
-
-    .rain-drop:nth-child(3) {
-        left: calc(20% + 75px);
-        animation-duration: 0.8s;
-        height: 35px;
-    }
-
-    .rain-drop:nth-child(4) {
-        left: calc(20% + 95px);
-        animation-duration: 1s;
-    }
-
-    .rain-drop:nth-child(5) {
-        left: calc(20% + 115px);
-        animation-duration: 0.75s;
-        height: 25px;
-    }
-
-    .rain-drop:nth-child(6) {
-        left: calc(20% + 135px);
-        animation-duration: 0.85s;
-    }
-
-    .rain-drop:nth-child(7) {
-        left: calc(20% + 155px);
-        animation-duration: 0.95s;
-        height: 35px;
-    }
-
-    .rain-drop:nth-child(8) {
-        left: calc(20% + 175px);
-        animation-duration: 0.8s;
-    }
-
-    .rain-drop:nth-child(9) {
-        left: calc(20% + 45px);
-        animation-duration: 0.7s;
-        height: 25px;
-    }
-
-    .rain-drop:nth-child(10) {
-        left: calc(20% + 65px);
-        animation-duration: 0.9s;
-    }
-
-    .rain-drop:nth-child(11) {
-        left: calc(20% + 85px);
-        animation-duration: 0.85s;
-    }
-
-    .rain-drop:nth-child(12) {
-        left: calc(20% + 105px);
-        animation-duration: 0.95s;
-    }
-
-    .rain-drop:nth-child(13) {
-        left: calc(20% + 125px);
-        animation-duration: 0.75s;
-    }
-
-    .rain-drop:nth-child(14) {
-        left: calc(20% + 145px);
-        animation-duration: 0.8s;
-    }
-
-    .rain-drop:nth-child(15) {
-        left: calc(20% + 165px);
-        animation-duration: 0.9s;
-    }
-
-    .rain-drop:nth-child(16) {
-        left: calc(20% + 40px);
-        animation-duration: 0.7s;
-    }
-
-    .rain-drop:nth-child(17) {
-        left: calc(20% + 60px);
-        animation-duration: 0.85s;
-    }
-
-    .rain-drop:nth-child(18) {
-        left: calc(20% + 80px);
-        animation-duration: 0.95s;
-    }
-
-    .rain-drop:nth-child(19) {
-        left: calc(20% + 100px);
-        animation-duration: 0.8s;
-    }
-
-    .rain-drop:nth-child(20) {
-        left: calc(20% + 120px);
-        animation-duration: 0.75s;
-    }
-
-    /* Rain Drop Distribution for Cloud 2 */
-    .rain-drop:nth-child(21) {
-        right: calc(20% + 35px);
-        animation-duration: 0.82s;
-    }
-
-    .rain-drop:nth-child(22) {
-        right: calc(20% + 55px);
-        animation-duration: 0.88s;
-    }
-
-    .rain-drop:nth-child(23) {
-        right: calc(20% + 75px);
-        animation-duration: 0.93s;
-    }
-
-    .rain-drop:nth-child(24) {
-        right: calc(20% + 95px);
-        animation-duration: 0.78s;
-    }
-
-    .rain-drop:nth-child(25) {
-        right: calc(20% + 115px);
-        animation-duration: 0.86s;
-    }
-
-    .rain-drop:nth-child(26) {
-        right: calc(20% + 135px);
-        animation-duration: 0.92s;
-    }
-
-    .rain-drop:nth-child(27) {
-        right: calc(20% + 155px);
-        animation-duration: 0.77s;
-    }
-
-    .rain-drop:nth-child(28) {
-        right: calc(20% + 175px);
-        animation-duration: 0.84s;
-    }
-
-    .rain-drop:nth-child(29) {
-        right: calc(20% + 195px);
-        animation-duration: 0.91s;
-    }
-
-    .rain-drop:nth-child(30) {
-        right: calc(20% + 215px);
-        animation-duration: 0.79s;
-    }
-
-    /* Content Styles */
-    .content {
-        max-width: 1200px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        color: white;
-    }
-
-    .title {
-        font-size: 5rem;
-        font-weight: 800;
-        background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        animation: fadeInUp 1s ease-out;
-    }
-
-    .subtitle {
-        font-size: 1.5rem;
-        color: #e2e8f0;
-        max-width: 700px;
-        margin: 0 auto 3rem;
-        line-height: 1.6;
-        animation: fadeInUp 1s ease-out 0.2s backwards;
-    }
-
-    .cta-button {
-        display: inline-block;
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        color: white;
-        padding: 1.25rem 3rem;
-        border-radius: 9999px;
-        font-weight: 600;
-        font-size: 1.125rem;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: fadeInUp 1s ease-out 0.4s backwards;
-    }
-
-    .cta-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        background: linear-gradient(135deg, var(--secondary), var(--primary));
-    }
-
-    /* Animations */
-    @keyframes glow {
-
-        0%,
-        100% {
-            box-shadow:
-                0 0 40px rgba(245, 158, 11, 0.2),
-                0 0 80px rgba(245, 158, 11, 0.1);
-        }
-
-        50% {
-            box-shadow:
-                0 0 60px rgba(245, 158, 11, 0.3),
-                0 0 100px rgba(245, 158, 11, 0.2);
-        }
-    }
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes floatHorizontal {
-
-        0%,
-        100% {
-            transform: translateX(0) translateY(0);
-        }
-
-        25% {
-            transform: translateX(50px) translateY(-10px);
-        }
-
-        50% {
-            transform: translateX(100px) translateY(0);
-        }
-
-        75% {
-            transform: translateX(50px) translateY(10px);
-        }
-    }
-
-    @keyframes floatHorizontalReverse {
-
-        0%,
-        100% {
-            transform: translateX(0) translateY(0);
-        }
-
-        25% {
-            transform: translateX(-50px) translateY(10px);
-        }
-
-        50% {
-            transform: translateX(-100px) translateY(0);
-        }
-
-        75% {
-            transform: translateX(-50px) translateY(-10px);
-        }
-    }
-
-    @keyframes floatOverSun {
-
-        0%,
-        100% {
-            transform: translateX(0) translateY(0);
-            opacity: 0.8;
-        }
-
-        50% {
-            transform: translateX(-30px) translateY(0);
-            opacity: 0.95;
-        }
-    }
-
-    @keyframes rainFallFromCloud1 {
-        0% {
-            transform: translateY(0) rotate(-20deg);
-            opacity: 0;
-        }
-
-        10% {
-            opacity: 0.8;
-        }
-
-        100% {
-            transform: translateY(calc(100vh - 160px)) rotate(-20deg);
-            opacity: 0.8;
-        }
-    }
-
-    @keyframes rainFallFromCloud2 {
-        0% {
-            transform: translateY(0) rotate(-20deg);
-            opacity: 0;
-        }
-
-        10% {
-            opacity: 0.8;
-        }
-
-        100% {
-            transform: translateY(calc(100vh - 270px)) rotate(-20deg);
-            opacity: 0.8;
-        }
-    }
-
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-
-
-
-
-    /* Enhanced Clouds */
-    .cloud {
-        background: linear-gradient(180deg,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(248, 250, 252, 0.9) 50%,
-                rgba(241, 245, 249, 0.85) 100%);
-        box-shadow:
-            0 8px 32px rgba(147, 197, 253, 0.2),
-            inset 0 -6px 12px rgba(147, 197, 253, 0.1);
-    }
-
-    /* Enhanced Rain */
-    .rain-drop {
-        background: linear-gradient(to bottom,
-                transparent,
-                rgba(147, 197, 253, 0.4) 20%,
-                rgba(147, 197, 253, 0.7) 50%,
-                rgba(147, 197, 253, 0.9) 100%);
-        filter: drop-shadow(0 0 2px rgba(147, 197, 253, 0.3));
-        backdrop-filter: blur(0.5px);
-    }
-
-    /* Enhanced Content */
-    .title {
-        background: linear-gradient(135deg,
-                #FFFFFF 0%,
-                #F3F4F6 25%,
-                #E5E7EB 50%,
-                #D1D5DB 75%,
-                #9CA3AF 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .cta-button {
-        background: linear-gradient(135deg,
-                var(--accent-cyan) 0%,
-                var(--primary) 50%,
-                var(--secondary) 100%);
-        transition: all 0.3s ease;
-    }
-
-    .cta-button:hover {
-        background: linear-gradient(135deg,
-                var(--secondary) 0%,
-                var(--primary) 50%,
-                var(--accent-cyan) 100%);
-        box-shadow: 0 8px 16px rgba(147, 197, 253, 0.3);
-    }
-</style> --}}
 @endsection
 
 @section('content')
 
 <div class="main-content landing-main !p-0  {{ app()->getLocale() == 'ar' ? 'rtl-layout' : 'ltr-layout' }}">
-
     <!-- Start::Home Content new one -->
-
     <!-- Hero Section -->
-    <div class="bg-gradient-to-b from-blue-300 to-green-300">
-        <div class="container mx-auto px-4 py-16 relative min-h-screen">
-            <!-- Weather Elements -->
-            <div class="sun"></div>
-            <div class="sun-overlay"></div>
-            <div class="cloud cloud-1"></div>
-            <div class="cloud cloud-2"></div>
-
-            <!-- Rain Container -->
-            <div class="rain-container">
-                <!-- Cloud 1 Rain (20 drops) -->
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-
-                <!-- Cloud 2 Rain (20 drops) -->
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-                <div class="rain-drop"></div>
-            </div>
-
-            <!-- Main Content -->
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:pt-20 lg:pb-24 pt-12 pb-12 relative">
-                <div class="container max-w-7xl mx-auto px-4 lg:px-8">
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 py-10">
-
-                        <!-- Left Content -->
-                        <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 z-10">
-                            <div class="max-w-xl mx-auto lg:mx-0">
-                                <div class="space-y-8">
-                                    @if (app()->getLocale() === 'en')
-                                    <h1 class="text-5xl lg:text-6xl font-bold en-font">
-                                        <span class="block soar-in">We</span>
-                                        <span class="text-blue-600 block soar-in-delay-1">Shower Your Website</span>
-                                        <span class="block text-green-600 mt-2 soar-in-delay-2"> With Creativity</span>
-                                    </h1>
-                                    @elseif (app()->getLocale() === 'ar')
-                                    <h1 class="text-5xl lg:text-6xl font-bold ar-font" dir="rtl">
-                                        <span class="block soar-in">سحابنا </span>
-                                        <span class="text-blue-600 block soar-in-delay-1">سيمطر الإبداع</span>
-                                        <span class="block text-green-600 mt-2 soar-in-delay-2">على موقعك</span>
-                                    </h1>
-                                    @endif
-
-                                    <p class="text-lg text-gray-700 soar-in-delay-2">
-                                        @if (app()->getLocale() === 'en')
-                                        Transform your ideas into reality with our cutting-edge development solutions
-                                        and innovative technologies.
-                                        @else
-                                        حوّل أفكارك إلى واقع مع حلولنا المتطورة في تطوير الويب والتقنيات الحديثة.
-                                        @endif
-                                    </p>
-
-                                    <div
-                                        class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 soar-in-delay-2 {{ app()->getLocale() == 'en' ? 'lg:justify-start' : 'lg:justify-end ' }}">
-                                        <a href="#projects"
-                                            class="dynapuff inline-block px-8 ml-5 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            <span class="flex items-center justify-center ">
-                                                @if (app()->getLocale() === 'en')
-                                                See Our Work
-                                                @else
-                                                شاهد أعمالنا
-                                                @endif
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" fill="none"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                                </svg>
-                                            </span>
-                                        </a>
-                                        <a href="#contact"
-                                            class="dynapuff  inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                            <span class="flex items-center justify-center">
-                                                @if (app()->getLocale() === 'en')
-                                                Start Creating
-                                                @else
-                                                ابدأ الإنشاء
-                                                @endif
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" fill="none"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right Content with Image -->
-                        <div class="w-full lg:w-1/2 px-4 sm:px-6 relative">
-                            <div
-                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] sm:w-4/5 h-6 sm:h-8 bg-black/10 rounded-full blur-xl shadow-animation">
-                            </div>
-                            <div class="float-animation mx-auto max-w-2xl">
-                                <div class="bg-white rounded-xl shadow-lg p-2 sm:p-3 relative">
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200 rounded-xl rotate-2 blur-sm">
-                                    </div>
-                                    <div class="relative w-full aspect-[4/3] md:aspect-[16/9]">
-                                        <img src="{{ asset('/build/assets/img/landing/hero5.jpg') }}" alt="Hero Image"
-                                            class="relative rounded-xl w-full h-full object-cover">
-                                    </div>
-
-                                    <!-- Decorative Elements -->
-                                    <div
-                                        class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500 rounded-full flex items-center justify-center rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                                        </svg>
-                                    </div>
-
-                                    <div
-                                        class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center -rotate-12 shadow-lg transform hover:rotate-45 transition-transform duration-300">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <style>
+        /* Root Variables */
         :root {
-            --primary: #2563eb;
-            --secondary: #7c3aed;
-            --accent: #f59e0b;
-            --text: #1f2937;
-            --rain-color: rgba(255, 255, 255, 0.8);
-            /* Brighter rain color */
+            --cloud-color: rgba(255, 255, 255, 0.95);
+            --rain-color: rgba(37, 99, 235, 0.4);
+            --primary-blue: #2563eb;
+            --primary-green: #22c55e;
         }
 
-        /* Sun */
-        .sun {
+        /* Base Styles */
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding-top: 5rem;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* Giant Logo Styling */
+        .giant-logo {
             position: absolute;
-            top: 5rem;
-            right: 8rem;
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle at center,
-                    #FEF3C7 0%,
-                    #FCD34D 30%,
-                    #F59E0B 60%,
-                    #EA580C 100%);
-            border-radius: 50%;
-            box-shadow:
-                0 0 60px rgba(245, 158, 11, 0.3),
-                0 0 120px rgba(245, 158, 11, 0.2);
-            animation: glow 4s ease-in-out infinite;
-            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.05;
+            pointer-events: none;
         }
 
-        .sun::before {
-            content: '';
+        .giant-cloud {
             position: absolute;
-            top: -25%;
-            left: -25%;
-            width: 150%;
-            height: 150%;
-            background: repeating-conic-gradient(from 0deg,
-                    transparent 0deg 20deg,
-                    rgba(245, 158, 11, 0.1) 20deg 40deg);
-            animation: rotate 20s linear infinite;
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--primary-blue), var(--primary-green));
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 15.5C21.7 15.5 23 14.2 23 12.5C23 10.8 21.7 9.5 20 9.5H19.7C19.4 6.8 17.1 4.5 14.4 4.5C13.1 4.5 11.8 5 10.9 5.8C10.2 3.6 8.2 2 5.9 2C3.1 2 1 4.1 1 6.9C1 7.2 1 7.4 1.1 7.7C2.4 8.2 3.3 9.4 3.3 10.9C3.3 12.8 1.8 14.3 0 14.3'/%3E%3C/svg%3E") center/contain no-repeat;
         }
 
-        /* Sun Overlay Cloud */
-        .sun-overlay {
-            position: absolute;
-            top: 4.5rem;
-            right: 7.5rem;
-            width: 160px;
-            height: 50px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
-            border-radius: 6rem;
-            box-shadow:
-                0 8px 32px rgba(0, 0, 0, 0.1),
-                inset 0 -6px 12px rgba(0, 0, 0, 0.05);
-            opacity: 0.8;
-            backdrop-filter: blur(4px);
-            z-index: 4;
-            animation: floatOverSun 4s ease-in-out infinite;
-        }
-
-        .sun-overlay::before,
-        .sun-overlay::after {
-            content: '';
-            position: absolute;
-            background: inherit;
-            box-shadow: inherit;
-            border-radius: 50%;
-        }
-
-        .sun-overlay::before {
-            width: 70px;
-            height: 70px;
-            top: -35px;
-            left: 25px;
-        }
-
-        .sun-overlay::after {
-            width: 50px;
-            height: 50px;
-            top: -20px;
-            left: 75px;
-        }
-
-        /* Clouds */
+        /* Animated Cloud Elements */
         .cloud {
             position: absolute;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+            background: linear-gradient(to right, var(--primary-blue), var(--primary-green));
             border-radius: 6rem;
-            box-shadow:
-                0 8px 32px rgba(0, 0, 0, 0.15),
-                inset 0 -6px 12px rgba(0, 0, 0, 0.1);
-            opacity: 0.9;
-            backdrop-filter: blur(4px);
-            z-index: 3;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 200px;
+            height: 60px;
+        }
+
+        .cloud-2 {
+            top: 25%;
+            right: 15%;
+            width: 240px;
+            height: 70px;
+            animation-delay: -2s;
         }
 
         .cloud::before,
@@ -983,371 +163,1014 @@
             content: '';
             position: absolute;
             background: inherit;
-            box-shadow: inherit;
             border-radius: 50%;
         }
 
-        .cloud-1 {
-            width: 200px;
-            height: 60px;
-            top: 100px;
-            left: 20%;
-            animation: floatHorizontal 15s ease-in-out infinite;
-        }
-
-        .hero-container {
-            min-height: 100vh;
-            background: linear-gradient(135deg,
-                    var(--background-start) 0%,
-                    var(--background-mid1) 25%,
-                    var(--background-mid2) 75%,
-                    var(--background-end) 100%);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        /* Update text colors for better contrast */
-        .title {
-            color: white;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .subtitle {
-            color: #e2e8f0;
-            /* Slate 200 */
-        }
-
-        /* Make rain more visible */
-        .rain-drop {
-            position: absolute;
-            width: 3px;
-            /* Wider drops */
-            height: 40px;
-            /* Longer drops */
-            background: linear-gradient(to bottom,
-                    rgba(255, 255, 255, 0.1),
-                    rgba(255, 255, 255, 0.8) 40%,
-                    rgba(255, 255, 255, 0.9));
-            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
-            pointer-events: none;
-            opacity: 0.9;
-        }
-
-
         .cloud-1::before {
-            width: 90px;
-            height: 90px;
-            top: -45px;
-            left: 35px;
+            width: 80px;
+            height: 80px;
+            top: -40px;
+            left: 30px;
         }
 
         .cloud-1::after {
-            width: 70px;
-            height: 70px;
-            top: -30px;
-            left: 100px;
-        }
-
-        .cloud-2 {
-            width: 240px;
-            height: 70px;
-            top: 200px;
-            right: 20%;
-            animation: floatHorizontalReverse 18s ease-in-out infinite;
+            width: 60px;
+            height: 60px;
+            top: -25px;
+            left: 90px;
         }
 
         .cloud-2::before {
-            width: 100px;
-            height: 100px;
-            top: -50px;
-            left: 45px;
+            width: 90px;
+            height: 90px;
+            top: -45px;
+            left: 40px;
         }
 
         .cloud-2::after {
-            width: 80px;
-            height: 80px;
-            top: -35px;
-            left: 120px;
+            width: 70px;
+            height: 70px;
+            top: -30px;
+            left: 110px;
         }
 
-        /* Rain Container and Drops */
+        /* Rain Styling */
         .rain-container {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
-            z-index: 1;
             pointer-events: none;
             overflow: hidden;
         }
 
-        /* Cloud 1 Rain */
-        .rain-drop:nth-child(-n+20) {
+        .rain-drop {
             position: absolute;
-            width: 2px;
-            height: 30px;
-            background: linear-gradient(to bottom, transparent, var(--rain-color));
-            filter: blur(0.5px);
             pointer-events: none;
-            opacity: 0.8;
-            top: 160px;
-            animation: rainFallFromCloud1 linear infinite;
+            width: 1px;
+            height: 20px;
+            opacity: 0;
         }
 
-        /* Cloud 2 Rain */
-        .rain-drop:nth-child(n+21) {
-            position: absolute;
-            width: 2px;
-            height: 30px;
-            background: linear-gradient(to bottom, transparent, var(--rain-color));
-            filter: blur(0.5px);
-            pointer-events: none;
-            opacity: 0.8;
-            top: 270px;
-            animation: rainFallFromCloud2 linear infinite;
+        .rain-drop.front {
+            height: 25px;
+            opacity: 0.6;
+            animation: frontRainDrop linear infinite;
+            animation-duration: 0.8s;
         }
 
-        /* Rain Drop Distribution for Cloud 1 */
-        .rain-drop:nth-child(1) {
-            left: calc(20% + 35px);
+        .rain-drop.mid {
+            height: 20px;
+            opacity: 0.4;
+            animation: midRainDrop linear infinite;
+            animation-duration: 1s;
+        }
+
+        .rain-drop.back {
+            height: 15px;
+            opacity: 0.2;
+            animation: backRainDrop linear infinite;
             animation-duration: 1.2s;
         }
 
-        .rain-drop:nth-child(2) {
-            left: calc(20% + 55px);
-            animation-duration: 1.4s;
+        .rain-drop.blue {
+            background: linear-gradient(180deg,
+                    rgba(37, 99, 235, 0) 0%,
+                    rgba(37, 99, 235, 0.3) 30%,
+                    rgba(37, 99, 235, 0.5) 100%);
         }
 
-        .rain-drop:nth-child(3) {
-
-            left: calc(20% + 75px);
-            animation-duration: 1.3s;
-            height: 45px;
+        .rain-drop.green {
+            background: linear-gradient(180deg,
+                    rgba(34, 197, 94, 0) 0%,
+                    rgba(34, 197, 94, 0.3) 30%,
+                    rgba(34, 197, 94, 0.5) 100%);
         }
 
-        .rain-drop:nth-child(4) {
-            left: calc(20% + 95px);
-            animation-duration: 1.5s;
+        /* Content Styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .rain-drop:nth-child(5) {
-            left: calc(20% + 115px);
-            animation-duration: 1.1s;
-            height: 35px;
+        .content-container {
+            min-height: calc(100vh - 5rem);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
         }
 
-        /* Continue for all 20 drops from cloud 1 */
-
-        /* Rain Drop Distribution for Cloud 2 */
-        .rain-drop:nth-child(21) {
-            right: calc(20% + 35px);
-            animation-duration: 1.3s;
+        .text-content {
+            flex: 1;
+            max-width: 600px;
         }
 
-        .rain-drop:nth-child(22) {
-            right: calc(20% + 55px);
-            animation-duration: 1.4s;
+        .brand-title {
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
         }
 
-        .rain-drop:nth-child(23) {
-            right: calc(20% + 75px);
-            animation-duration: 1.5s;
+        .brand-title .blue-text {
+            background: linear-gradient(to right, #2563eb, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
-        .rain-drop:nth-child(24) {
-            right: calc(20% + 95px);
-            animation-duration: 1.2s;
+        .brand-title .green-text {
+            background: linear-gradient(to right, #16a34a, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
-        .rain-drop:nth-child(25) {
-            right: calc(20% + 115px);
-            animation-duration: 1.4s;
+        .image-content {
+            flex: 1;
+            position: relative;
         }
 
-        /* Continue for all 20 drops from cloud 2 */
+        .image-frame {
+            background: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .image-frame:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            display: block;
+        }
+
+        /* Buttons */
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .primary-button {
+            background: linear-gradient(to right, var(--primary-blue), var(--primary-green));
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .secondary-button {
+            background: white;
+            color: var(--primary-blue);
+            padding: 0.875rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .secondary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+            color: var(--primary-green);
+        }
 
         /* Animations */
-        @keyframes glow {
+        @keyframes float {
 
             0%,
             100% {
-                box-shadow:
-                    0 0 40px rgba(245, 158, 11, 0.2),
-                    0 0 80px rgba(245, 158, 11, 0.1);
+                transform: translateY(0);
             }
 
             50% {
-                box-shadow:
-                    0 0 60px rgba(245, 158, 11, 0.3),
-                    0 0 100px rgba(245, 158, 11, 0.2);
+                transform: translateY(-20px);
             }
         }
 
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes floatHorizontal {
-
-            0%,
-            100% {
-                transform: translateX(0) translateY(0);
-            }
-
-            25% {
-                transform: translateX(50px) translateY(-10px);
-            }
-
-            50% {
-                transform: translateX(100px) translateY(0);
-            }
-
-            75% {
-                transform: translateX(50px) translateY(10px);
-            }
-        }
-
-        @keyframes floatHorizontalReverse {
-
-            0%,
-            100% {
-                transform: translateX(0) translateY(0);
-            }
-
-            25% {
-                transform: translateX(-50px) translateY(10px);
-            }
-
-            50% {
-                transform: translateX(-100px) translateY(0);
-            }
-
-            75% {
-                transform: translateX(-50px) translateY(-10px);
-            }
-        }
-
-        @keyframes floatOverSun {
-
-            0%,
-            100% {
-                transform: translateX(0) translateY(0);
-                opacity: 0.8;
-            }
-
-            50% {
-                transform: translateX(-30px) translateY(0);
-                opacity: 0.95;
-            }
-        }
-
-        @keyframes rainFallFromCloud1 {
+        @keyframes frontRainDrop {
             0% {
-                transform: translateY(0) rotate(-20deg);
+                transform: translate3d(0, -100%, 0) skewX(-20deg);
                 opacity: 0;
             }
 
-            10% {
-                opacity: 0.9;
+            15% {
+                opacity: 0.6;
+            }
+
+            90% {
+                opacity: 0.6;
             }
 
             100% {
-                transform: translateY(calc(100vh - 160px)) rotate(-20deg);
-                opacity: 0.9;
+                transform: translate3d(20px, 100vh, 0) skewX(-20deg);
+                opacity: 0;
             }
         }
 
-        @keyframes rainFallFromCloud2 {
+        @keyframes midRainDrop {
             0% {
-                transform: translateY(0) rotate(-20deg);
+                transform: translate3d(0, -100%, 0) skewX(-15deg);
                 opacity: 0;
             }
 
-            10% {
-                opacity: 0.9;
+            20% {
+                opacity: 0.4;
+            }
+
+            90% {
+                opacity: 0.4;
             }
 
             100% {
-                transform: translateY(calc(100vh - 270px)) rotate(-20deg);
-                opacity: 0.9;
+                transform: translate3d(15px, 100vh, 0) skewX(-15deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes backRainDrop {
+            0% {
+                transform: translate3d(0, -100%, 0) skewX(-10deg);
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0.2;
+            }
+
+            90% {
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translate3d(10px, 100vh, 0) skewX(-10deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 2rem;
+            }
+
+            .giant-logo {
+                opacity: 0.03;
+            }
+
+            .button-container {
+                justify-content: center;
+            }
+
+            .brand-title {
+                font-size: 2.5rem;
+            }
+
+            .image-frame {
+                transform: none;
+            }
+
+            .cloud-1,
+            .cloud-2 {
+                transform: scale(0.8);
+            }
+        }
+
+        /* Font settings */
+        .font-arabic {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+    <div class="hero-section">
+        <!-- Giant Background Logo -->
+        <div class="giant-logo">
+            <div class="giant-cloud"></div>
+        </div>
+
+        <!-- Animated Clouds -->
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+
+        <!-- Rain Container -->
+        <div class="rain-container"></div>
+
+        <div class="container">
+            <div class="content-container">
+                <div class="text-content">
+                    <!-- English Content -->
+                    <div dir="ltr" class="en-content">
+                        <h1 class="brand-title dynapuff">
+                            <span class="blue-text">Sahab</span>
+                            <span class="green-text">Code</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Transform your digital presence with our cloud-powered web solutions.
+                            Where innovation meets excellence in web design and development.
+                        </p>
+                    </div>
+
+                    <!-- Arabic Content -->
+                    <div dir="rtl" class="ar-content" style="display: none;">
+                        <h1 class="brand-title dynapuff">
+                            <span class="blue-text">سحاب</span>
+                            <span class="green-text">كود</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8">
+                            حول حضورك الرقمي مع حلولنا السحابية المتطورة.
+                            حيث يلتقي الابتكار مع التميز في تصميم وتطوير المواقع
+                        </p>
+                    </div>
+
+                    <div class="button-container">
+                        <a href="#projects" class="secondary-button dynapuff">
+                            See Our Work
+                        </a>
+                        <a href="#contact" class="primary-button dynapuff">
+                            Start Creating
+                        </a>
+                    </div>
+                </div>
+
+                <div class="image-content">
+                    <div class="image-frame">
+                        <img src="{{asset('build/assets/img/landing/hero5.jpg')}}" alt="Web Development">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Rain Drop Class
+class RainDrop {
+    constructor(container, cloudPosition) {
+        this.container = container;
+        this.cloudPosition = cloudPosition;
+        this.element = document.createElement('div');
+        this.init();
+    }
+
+    init() {
+        // Randomize layer and properties
+        const layer = Math.random();
+        const isBlue = Math.random() > 0.5;
+        
+        // Set class based on layer and color
+        if (layer < 0.3) {
+            this.element.className = `rain-drop front ${isBlue ? 'blue' : 'green'}`;
+        } else if (layer < 0.6) {
+            this.element.className = `rain-drop mid ${isBlue ? 'blue' : 'green'}`;
+        } else {
+            this.element.className = `rain-drop back ${isBlue ? 'blue' : 'green'}`;
+        }
+
+        // Position the drop relative to the cloud
+        const cloudWidth = this.cloudPosition.width || 200;
+        const randomOffset = Math.random() * cloudWidth;
+        this.element.style.left = `${this.cloudPosition.x + randomOffset}px`;
+        
+        // Add random delay and variation
+        this.element.style.animationDelay = `${Math.random() * 2}s`;
+        const scale = 0.8 + Math.random() * 0.4; // Random size variation
+        this.element.style.transform = `scale(${scale})`;
+
+        // Append to container
+        this.container.appendChild(this.element);
+
+        // Cleanup after animation
+        this.element.addEventListener('animationend', () => {
+            this.element.remove();
+        });
+    }
+}
+
+// Rain Manager Class
+class RainManager {
+    constructor() {
+        this.container = document.querySelector('.rain-container');
+        this.cloudPositions = [
+            { x: window.innerWidth * 0.15, width: 200 }, // cloud-1
+            { x: window.innerWidth * 0.65, width: 240 }  // cloud-2
+        ];
+        this.isRaining = false;
+        this.dropsPerCloud = 15; // Number of drops per cloud
+        this.dropInterval = 100; // Time between drops
+    }
+
+    updateCloudPositions() {
+        this.cloudPositions = [
+            { x: window.innerWidth * 0.15, width: 200 },
+            { x: window.innerWidth * 0.65, width: 240 }
+        ];
+    }
+
+    createDrop() {
+        if (!this.isRaining) return;
+        
+        // Create drops for each cloud
+        this.cloudPositions.forEach(cloudPos => {
+            if (Math.random() > 0.3) { // 70% chance to create a drop (makes rain more natural)
+                new RainDrop(this.container, cloudPos);
+            }
+        });
+
+        // Schedule next drop
+        const nextDrop = this.dropInterval * (0.5 + Math.random());
+        setTimeout(() => this.createDrop(), nextDrop);
+    }
+
+    startRain() {
+        if (this.isRaining) return;
+        this.isRaining = true;
+        this.updateCloudPositions();
+
+        // Create initial batch of drops
+        for (let i = 0; i < this.dropsPerCloud; i++) {
+            setTimeout(() => {
+                this.cloudPositions.forEach(cloudPos => {
+                    new RainDrop(this.container, cloudPos);
+                });
+            }, Math.random() * 2000); // Stagger initial drops
+        }
+
+        // Start continuous rain
+        this.createDrop();
+    }
+
+    stopRain() {
+        this.isRaining = false;
+    }
+
+    // Adjust rain intensity
+    setIntensity(level) { // level: 0 to 1
+        this.dropsPerCloud = Math.floor(10 + (level * 20)); // 10-30 drops
+        this.dropInterval = 200 - (level * 150); // 200-50ms between drops
+    }
+}
+
+// Initialize rain when document is ready
+document.addEventListener('DOMContentLoaded', () => {
+    const rainManager = new RainManager();
+    
+    // Start with medium intensity
+    rainManager.setIntensity(0.5);
+    rainManager.startRain();
+
+    // Update rain positions on window resize
+    window.addEventListener('resize', () => {
+        rainManager.updateCloudPositions();
+    });
+
+    // Stop rain when section is not visible
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    rainManager.startRain();
+                } else {
+                    rainManager.stopRain();
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    observer.observe(document.querySelector('.hero-section'));
+});
+
+// Language toggle function
+function toggleLanguage() {
+    const enContent = document.querySelector('.en-content');
+    const arContent = document.querySelector('.ar-content');
+    const isEnglish = enContent.style.display !== 'none';
+    
+    enContent.style.display = isEnglish ? 'none' : 'block';
+    arContent.style.display = isEnglish ? 'block' : 'none';
+}
+
+// Optional: Add intensity controls
+function updateRainIntensity(intensity) {
+    const rainManager = window.rainManager;
+    if (rainManager) {
+        rainManager.setIntensity(intensity);
+    }
+}
+    </script>
+    <!-- End::Services Content -->
+    <!-- Start::Services Content -->
+
+    <style>
+        /* Services Section Styles */
+        .services-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+        }
+
+        /* Background Elements */
+        .services-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .services-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .services-cloud-1 {
+            top: 10%;
+            left: 5%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .services-cloud-2 {
+            top: 70%;
+            right: 5%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        .services-cloud::before,
+        .services-cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 50%;
+        }
+
+        .services-cloud-1::before {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            left: 25px;
+        }
+
+        .services-cloud-1::after {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: 75px;
+        }
+
+        .services-cloud-2::before {
+            width: 80px;
+            height: 80px;
+            top: -40px;
+            left: 35px;
+        }
+
+        .services-cloud-2::after {
+            width: 60px;
+            height: 60px;
+            top: -25px;
+            left: 95px;
+        }
+
+        /* Service Card Styles */
+        .service-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #2563eb, #22c55e);
+            border-radius: 1rem;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon-bg {
+            transform: rotate(225deg);
+        }
+
+        .service-icon {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-title {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            color: #22c55e;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 4rem 0;
+            }
+
+            .service-card {
+                margin-bottom: 2rem;
+            }
+
+            .services-cloud {
+                transform: scale(0.7);
             }
         }
     </style>
-    <!-- End::Services Content -->
-    <!-- Start::Services Content -->
-    <div class="bg-gradient-to-b from-blue-100 to-purple-100 min-h-screen flex items-center" id="services">
-        <div class="container mx-auto px-4 py-16 md:py-24">
-            <!-- Header Section -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
 
+
+    <style>
+        /* Services Section Styles */
+        .services-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+        }
+
+        /* Background Elements */
+        .services-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .services-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .services-cloud-1 {
+            top: 10%;
+            left: 5%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .services-cloud-2 {
+            top: 70%;
+            right: 5%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        .services-cloud::before,
+        .services-cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 50%;
+        }
+
+        .services-cloud-1::before {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            left: 25px;
+        }
+
+        .services-cloud-1::after {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: 75px;
+        }
+
+        .services-cloud-2::before {
+            width: 80px;
+            height: 80px;
+            top: -40px;
+            left: 35px;
+        }
+
+        .services-cloud-2::after {
+            width: 60px;
+            height: 60px;
+            top: -25px;
+            left: 95px;
+        }
+
+        /* Service Card Styles */
+        .service-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #2563eb, #22c55e);
+            border-radius: 1rem;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon-bg {
+            transform: rotate(225deg);
+        }
+
+        .service-icon {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-title {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            color: #22c55e;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 4rem 0;
+            }
+
+            .service-card {
+                margin-bottom: 2rem;
+            }
+
+            .services-cloud {
+                transform: scale(0.7);
+            }
+        }
+    </style>
+
+
+
+
+    <div class="services-section" id="services">
+        <!-- Background Elements -->
+        <div class="services-giant-logo">
+            <div class="giant-cloud"></div>
+        </div>
+        <div class="services-cloud services-cloud-1"></div>
+        <div class="services-cloud services-cloud-2"></div>
+
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2
-                    class="dynapuff text-4xl font-bold text-blue-600 mb-6 {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }} text-5xl lg:text-6xl font-bold">
+                    class="dynapuff text-4xl lg:text-5xl font-bold mb-6 {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }}">
                     {{ __('services.title') }}
                 </h2>
-                <p class="text-lg text-gray-700 px-4">
+                <p class="text-lg text-gray-600">
                     {{ __('services.description') }}
                 </p>
             </div>
 
-            <!-- Grid Section - 3 Main Services -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Web Design Service -->
-                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-blue-500 rounded-full p-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon">
+                            <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center ">{{
-                        __('services.web_design.title') }}</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <h3 class="service-title dynapuff text-2xl font-semibold">
+                        {{ __('services.web_design.title') }}
+                    </h3>
+                    <ul class="feature-list text-gray-600">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_design.feature_1') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_design.feature_2') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_design.feature_3') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_design.feature_4') }}
                         </li>
@@ -1355,52 +1178,45 @@
                 </div>
 
                 <!-- Web Development Service -->
-                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-purple-500 rounded-full p-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon">
+                            <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
-                        __('services.web_development.title') }}</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <h3 class="service-title dynapuff text-2xl font-semibold">
+                        {{ __('services.web_development.title') }}
+                    </h3>
+                    <ul class="feature-list text-gray-600">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_development.feature_1') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_development.feature_2') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_development.feature_3') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.web_development.feature_4') }}
                         </li>
@@ -1408,52 +1224,45 @@
                 </div>
 
                 <!-- Website Redesign Service -->
-                <div class="bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105">
-                    <div class="flex justify-center mb-6">
-                        <div class="bg-pink-500 rounded-full p-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon">
+                            <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                             </svg>
                         </div>
                     </div>
-                    <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-4 text-center">{{
-                        __('services.redesign.title') }}</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <h3 class="service-title dynapuff text-2xl font-semibold">
+                        {{ __('services.redesign.title') }}
+                    </h3>
+                    <ul class="feature-list text-gray-600">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.redesign.feature_1') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.redesign.feature_2') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.redesign.feature_3') }}
                         </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-green-500 {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }} mt-1"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <li>
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7">
-                                </path>
+                                    d="M5 13l4 4L19 7" />
                             </svg>
                             {{ __('services.redesign.feature_4') }}
                         </li>
@@ -1461,185 +1270,682 @@
                 </div>
             </div>
 
-            <!-- Optional CTA -->
+            <!-- CTA Button -->
             <div class="text-center mt-16">
-                <a href="#contact"
-                    class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                <a href="#contact" class="cta-button dynapuff">
                     {{ __('services.cta_button') }}
                 </a>
             </div>
         </div>
     </div>
+
     <!-- End::Services Content -->
     <!-- start::How we work Content -->
-    <div class="max-w-6xl mx-auto px-4 py-16 bg-gradient-to-b from-blue-50 to-purple-50">
-        <h3 class="dynapuff text-4xl font-bold text-blue-600 text-center mb-12">{{ __('process.title') }}</h3>
+    <style>
+        /* Process Section Base */
+        .process-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+        }
 
-        <!-- Process Timeline -->
-        <div class="grid lg:grid-cols-4 gap-8 relative">
-            <!-- Connecting Line (hidden on mobile) -->
-            <div
-                class="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-pink-400 via-purple-400 to-blue-400' : 'from-blue-400 via-purple-400 to-pink-400' }}">
-            </div>
+        /* Background Elements */
+        .process-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
 
-            <!-- Step 1 -->
-            <div class="relative group">
-                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
-                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                        <div
-                            class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
-                            <span class="text-2xl font-bold text-white">1</span>
-                        </div>
-                    </div>
-                    <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-blue-600 mb-3">{{ __('process.step1.title') }}
-                        </h4>
-                        <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• {{ __('process.step1.point1') }}</li>
-                            <li>• {{ __('process.step1.point2') }}</li>
-                            <li>• {{ __('process.step1.point3') }}</li>
-                            <li>• {{ __('process.step1.point4') }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        .process-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
 
-            <!-- Step 2 -->
-            <div class="relative group">
-                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
-                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                        <div
-                            class="bg-gradient-to-r from-purple-500 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
-                            <span class="text-2xl font-bold text-white">2</span>
-                        </div>
-                    </div>
-                    <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-purple-600 mb-3">{{ __('process.step2.title') }}
-                        </h4>
-                        <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• {{ __('process.step2.point1') }}</li>
-                            <li>• {{ __('process.step2.point2') }}</li>
-                            <li>• {{ __('process.step2.point3') }}</li>
-                            <li>• {{ __('process.step2.point4') }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        .process-cloud-1 {
+            top: 10%;
+            left: 5%;
+            width: 160px;
+            height: 45px;
+        }
 
-            <!-- Step 3 -->
-            <div class="relative group">
-                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
-                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                        <div
-                            class="bg-gradient-to-r from-green-500 to-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
-                            <span class="text-2xl font-bold text-white">3</span>
-                        </div>
-                    </div>
-                    <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-green-600 mb-3">{{ __('process.step3.title') }}
-                        </h4>
-                        <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• {{ __('process.step3.point1') }}</li>
-                            <li>• {{ __('process.step3.point2') }}</li>
-                            <li>• {{ __('process.step3.point3') }}</li>
-                            <li>• {{ __('process.step3.point4') }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        .process-cloud-2 {
+            bottom: 10%;
+            right: 5%;
+            width: 200px;
+            height: 55px;
+            animation-delay: -3s;
+        }
 
-            <!-- Step 4 -->
-            <div class="relative group">
-                <div class="bg-white rounded-xl p-6 shadow-lg transition-transform hover:scale-105">
-                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                        <div
-                            class="bg-gradient-to-r from-pink-500 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto ring-4 ring-white">
-                            <span class="text-2xl font-bold text-white">4</span>
-                        </div>
-                    </div>
-                    <div class="mt-8 text-center">
-                        <h4 class="dynapuff text-xl font-semibold text-pink-600 mb-3">{{ __('process.step4.title') }}
-                        </h4>
-                        <ul class="text-gray-600 space-y-2 text-sm">
-                            <li>• {{ __('process.step4.point1') }}</li>
-                            <li>• {{ __('process.step4.point2') }}</li>
-                            <li>• {{ __('process.step4.point3') }}</li>
-                            <li>• {{ __('process.step4.point4') }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        .process-cloud::before,
+        .process-cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 50%;
+        }
+
+        .process-cloud-1::before {
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            left: 25px;
+        }
+
+        .process-cloud-1::after {
+            width: 40px;
+            height: 40px;
+            top: -15px;
+            left: 70px;
+        }
+
+        .process-cloud-2::before {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            left: 30px;
+        }
+
+        .process-cloud-2::after {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: 85px;
+        }
+
+        /* Timeline Connection */
+        .timeline-connection {
+            position: absolute;
+            top: 24px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            transform-origin: left;
+            animation: expandLine 1.5s ease-out forwards;
+        }
+
+        @keyframes expandLine {
+            from {
+                transform: scaleX(0);
+            }
+
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+        /* Process Cards */
+        .process-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Number Circles */
+        .number-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            position: absolute;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .process-card:hover .number-circle {
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        /* Step Colors */
+        .step-1 .number-circle {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+        }
+
+        .step-2 .number-circle {
+            background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+        }
+
+        .step-3 .number-circle {
+            background: linear-gradient(135deg, #059669, #10b981);
+        }
+
+        .step-4 .number-circle {
+            background: linear-gradient(135deg, #db2777, #ec4899);
+        }
+
+        /* List Styling */
+        .process-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: start;
+        }
+
+        .process-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .process-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+
+        .process-list li:hover {
+            opacity: 1;
+        }
+
+        /* CTA Button */
+        .process-cta {
+            display: inline-block;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 1s;
+        }
+
+        .process-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline-connection {
+                display: none;
+            }
+
+            .process-card {
+                margin-bottom: 3rem;
+            }
+
+            .process-cloud {
+                transform: scale(0.7);
+            }
+        }
+    </style>
+    <div class="process-section" id="process">
+        <!-- Background Elements -->
+        <div class="process-giant-logo">
+            <div class="giant-cloud"></div>
         </div>
+        <div class="process-cloud process-cloud-1"></div>
+        <div class="process-cloud process-cloud-2"></div>
 
-        <!-- Optional CTA -->
-        <div class="text-center mt-12">
-            <a href="#contact"
-                class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
-                {{ __('process.cta_button') }}
-            </a>
+        <div class="container max-w-6xl mx-auto px-4">
+            <!-- Section Title -->
+            <h3 class="dynapuff text-4xl font-bold text-center mb-16"
+                style="background: linear-gradient(to right, #2563eb, #22c55e); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                {{ __('process.title') }}
+            </h3>
+
+            <!-- Process Timeline -->
+            <div class="grid lg:grid-cols-4 gap-8 relative">
+                <!-- Timeline Connection -->
+                <div class="hidden lg:block timeline-connection"></div>
+
+                <!-- Step 1 -->
+                <div class="process-card step-1" style="animation-delay: 0.2s">
+                    <div class="number-circle">1</div>
+                    <div class="mt-8">
+                        <h4 class="dynapuff text-xl font-semibold mb-4" style="color: #2563eb">
+                            {{ __('process.step1.title') }}
+                        </h4>
+                        <ul class="process-list text-gray-600">
+                            <li>{{ __('process.step1.point1') }}</li>
+                            <li>{{ __('process.step1.point2') }}</li>
+                            <li>{{ __('process.step1.point3') }}</li>
+                            <li>{{ __('process.step1.point4') }}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-card step-2" style="animation-delay: 0.4s">
+                    <div class="number-circle">2</div>
+                    <div class="mt-8">
+                        <h4 class="dynapuff text-xl font-semibold mb-4" style="color: #7c3aed">
+                            {{ __('process.step2.title') }}
+                        </h4>
+                        <ul class="process-list text-gray-600">
+                            <li>{{ __('process.step2.point1') }}</li>
+                            <li>{{ __('process.step2.point2') }}</li>
+                            <li>{{ __('process.step2.point3') }}</li>
+                            <li>{{ __('process.step2.point4') }}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-card step-3" style="animation-delay: 0.6s">
+                    <div class="number-circle">3</div>
+                    <div class="mt-8">
+                        <h4 class="dynapuff text-xl font-semibold mb-4" style="color: #059669">
+                            {{ __('process.step3.title') }}
+                        </h4>
+                        <ul class="process-list text-gray-600">
+                            <li>{{ __('process.step3.point1') }}</li>
+                            <li>{{ __('process.step3.point2') }}</li>
+                            <li>{{ __('process.step3.point3') }}</li>
+                            <li>{{ __('process.step3.point4') }}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-card step-4" style="animation-delay: 0.8s">
+                    <div class="number-circle">4</div>
+                    <div class="mt-8">
+                        <h4 class="dynapuff text-xl font-semibold mb-4" style="color: #db2777">
+                            {{ __('process.step4.title') }}
+                        </h4>
+                        <ul class="process-list text-gray-600">
+                            <li>{{ __('process.step4.point1') }}</li>
+                            <li>{{ __('process.step4.point2') }}</li>
+                            <li>{{ __('process.step4.point3') }}</li>
+                            <li>{{ __('process.step4.point4') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-16">
+                <a href="#contact" class="process-cta dynapuff">
+                    {{ __('process.cta_button') }}
+                </a>
+            </div>
         </div>
     </div>
     <!-- end::How we work Content -->
 
     <!-- Start::About Content -->
-    <div class="bg-gradient-to-b from-blue-50 to-yellow-50 min-h-screen flex items-center" id="about">
-        <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <style>
+        /* About Section Base */
+        .about-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Background Elements */
+        .about-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .about-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .about-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .about-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        .about-cloud::before,
+        .about-cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 50%;
+        }
+
+        .about-cloud-1::before {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            left: 25px;
+        }
+
+        .about-cloud-1::after {
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: 75px;
+        }
+
+        .about-cloud-2::before {
+            width: 80px;
+            height: 80px;
+            top: -40px;
+            left: 35px;
+        }
+
+        .about-cloud-2::after {
+            width: 60px;
+            height: 60px;
+            top: -25px;
+            left: 95px;
+        }
+
+        /* Content Styling */
+        .about-content {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .about-title {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .about-subtitle {
+            background: linear-gradient(to right, #22c55e, #2563eb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(10px);
+        }
+
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #2563eb, #22c55e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        [dir="rtl"] .feature-item:hover {
+            transform: translateX(-10px);
+        }
+
+        [dir="rtl"] .feature-icon {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+
+        /* Image Styling */
+        .image-wrapper {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.3s;
+        }
+
+        .image-background {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            transform: rotate(-6deg);
+            border-radius: 1rem;
+            opacity: 0.1;
+            filter: blur(10px);
+        }
+
+        .image-container {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: translateY(-10px);
+        }
+
+        .about-image {
+            width: 100%;
+            height: 28rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+
+        /* CTA Button */
+        .about-cta {
+            display: inline-block;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.6s;
+        }
+
+        .about-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-cloud {
+                transform: scale(0.7);
+            }
+
+            .about-content {
+                text-align: center;
+            }
+
+            .feature-list {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .image-wrapper {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <div class="about-section" id="about">
+        <!-- Background Elements -->
+        <div class="about-giant-logo">
+            <div class="giant-cloud"></div>
+        </div>
+        <div class="about-cloud about-cloud-1"></div>
+        <div class="about-cloud about-cloud-2"></div>
+
+        <div class="container mx-auto px-4">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <!-- Content Column -->
-                    <div class="order-2 lg:order-1 max-w-xl mx-auto lg:mx-0">
-                        <div class="space-y-6">
-                            <h2
-                                class="dynapuff text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} text-3xl sm:text-4xl font-bold text-blue-600">
-                                {{ __('about.title') }}
-                                <span class="block text-green-500 mt-2">{{ __('about.subtitle') }}</span>
+                    <div class="order-2 lg:order-1" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                        <div class="about-content">
+                            <h2 class="dynapuff text-3xl sm:text-4xl font-bold mb-4">
+                                <span class="about-title block">{{ __('about.title') }}</span>
+                                <span class="about-subtitle block">{{ __('about.subtitle') }}</span>
                             </h2>
-                            <h3
-                                class="dynapuff font-semibold text-2xl text-purple-600 text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+
+                            <h3 class="dynapuff text-2xl font-semibold text-purple-600 mb-6">
                                 {{ __('about.tagline') }}
                             </h3>
-                            <p
-                                class="text-lg text-gray-700 leading-relaxed text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
+
+                            <p class="text-lg text-gray-700 leading-relaxed mb-8">
                                 {{ __('about.description') }}
                             </p>
-                            <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
-                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                    <i
-                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+
+                            <ul class="feature-list space-y-4">
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
                                     <span class="text-gray-700">{{ __('about.feature1') }}</span>
                                 </li>
-                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                    <i
-                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
                                     <span class="text-gray-700">{{ __('about.feature2') }}</span>
                                 </li>
-                                <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                    <i
-                                        class="ri-check-line text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'mr-0 ml-3' : 'mr-3' }}"></i>
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
                                     <span class="text-gray-700">{{ __('about.feature3') }}</span>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
-                            <a href="#projects"
-                                class="dynapuff inline-block py-3 px-8 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
-                                {{ __('about.cta_button') }}
-                                <i class="ri-magic-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
-                            </a>
+
+                            <div class="mt-8">
+                                <a href="#projects" class="about-cta dynapuff">
+                                    {{ __('about.cta_button') }}
+                                    <i class="ri-magic-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Image Column -->
-                    <div class="order-1 lg:order-2 max-w-2xl mx-auto lg:mx-0 w-full">
-                        <div class="relative">
-                            <!-- Gradient Background -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-purple-200 to-blue-200' : 'from-blue-200 to-purple-200' }} transform -rotate-6 rounded-lg blur-sm">
-                            </div>
-                            <!-- Image Container -->
-                            <div class="relative p-2">
-                                <img src="{{asset('build/assets/img/landing/design.jpg')}}"
-                                    class="rounded-lg shadow-xl object-cover object-center w-full h-[24rem] sm:h-[28rem]"
+                    <div class="order-1 lg:order-2">
+                        <div class="image-wrapper">
+                            <div class="image-background"></div>
+                            <div class="image-container">
+                                <img src="{{asset('build/assets/img/landing/design.jpg')}}" class="about-image"
                                     alt="{{ __('about.image_alt') }}">
                             </div>
                         </div>
@@ -1652,73 +1958,290 @@
     <!-- End::About Content -->
 
     <!-- Start::Mission Content -->
-    <div class="bg-gradient-to-b from-green-50 to-blue-50 min-h-screen flex items-center" id="our-mission">
-        <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <style>
+        /* Mission Section Base */
+        .mission-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Background Elements */
+        .mission-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .mission-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .mission-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .mission-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        .mission-cloud::before,
+        .mission-cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 50%;
+        }
+
+        /* Content Styling */
+        .mission-content {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .mission-title {
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .mission-subtitle {
+            background: linear-gradient(to right, #22c55e, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Feature List */
+        .mission-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .mission-feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .mission-feature-item:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-size: 24px;
+        }
+
+        /* Image Styling */
+        .mission-image-wrapper {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.3s;
+        }
+
+        .mission-image-background {
+            position: absolute;
+            inset: -10px;
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            transform: rotate(-6deg);
+            border-radius: 1rem;
+            opacity: 0.1;
+            filter: blur(10px);
+        }
+
+        .mission-image-container {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .mission-image-container:hover {
+            transform: translateY(-10px);
+        }
+
+        .mission-image {
+            width: 100%;
+            height: 28rem;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 4px solid white;
+        }
+
+        /* CTA Button */
+        .mission-cta {
+            display: inline-block;
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .mission-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2);
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .mission-feature-item:hover {
+            transform: translateX(-10px);
+        }
+
+        [dir="rtl"] .mission-feature-icon {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mission-cloud {
+                transform: scale(0.7);
+            }
+
+            .mission-content {
+                text-align: center;
+                padding: 0 1rem;
+            }
+
+            .mission-feature-list {
+                max-width: 400px;
+                margin: 2rem auto;
+            }
+
+            .mission-image-wrapper {
+                max-width: 500px;
+                margin: 2rem auto 0;
+            }
+        }
+    </style>
+    <div class="mission-section" id="our-mission">
+        <!-- Background Elements -->
+        <div class="mission-giant-logo"></div>
+        <div class="mission-cloud mission-cloud-1"></div>
+        <div class="mission-cloud mission-cloud-2"></div>
+
+        <div class="container mx-auto px-4">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <!-- Image Column -->
-                    <div class="order-2 lg:order-1 max-w-2xl mx-auto lg:mx-0 w-full">
-                        <div class="relative p-3">
-                            <!-- Gradient Background -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-r {{ app()->getLocale() == 'ar' ? 'from-pink-200 to-yellow-200' : 'from-yellow-200 to-pink-200' }} transform rotate-3 rounded-lg blur-sm">
-                            </div>
-                            <!-- Image Container -->
-                            <div class="relative">
-                                <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}"
-                                    class="rounded-lg shadow-xl border-4 border-white w-full h-[24rem] sm:h-[28rem] object-cover object-center"
+                    <div class="order-2 lg:order-1">
+                        <div class="mission-image-wrapper">
+                            <div class="mission-image-background"></div>
+                            <div class="mission-image-container">
+                                <img src="{{asset('build/assets/img/landing/dashboard.jpg')}}" class="mission-image"
                                     alt="{{ __('mission.image_alt') }}">
                             </div>
                         </div>
                     </div>
 
                     <!-- Content Column -->
-                    <div class="order-1 lg:order-2 max-w-xl mx-auto lg:mx-0">
-                        <div class="space-y-8">
-                            <h2
-                                class="dynapuff text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} text-3xl sm:text-4xl font-bold text-purple-600">
-                                {{ __('mission.title') }}
-                                <span class="block text-green-500 mt-2">{{ __('mission.subtitle') }}</span>
+                    <div class="order-1 lg:order-2" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                        <div class="mission-content">
+                            <h2 class="dynapuff text-3xl sm:text-4xl font-bold mb-4">
+                                <span class="mission-title block">{{ __('mission.title') }}</span>
+                                <span class="mission-subtitle block">{{ __('mission.subtitle') }}</span>
                             </h2>
-                            <div class="space-y-6">
-                                <p
-                                    class="text-lg text-gray-700 leading-relaxed text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
-                                    {{ __('mission.description') }}
-                                </p>
-                                <ul class="space-y-4 max-w-lg mx-auto lg:mx-0">
-                                    <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                        <i
-                                            class="ri-parent-line text-blue-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0 ' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700 mt-2">{{ __('mission.feature1') }}</span>
-                                    </li>
-                                    {{-- <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                        <i
-                                            class="ri-message-3-line text-pink-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700 mt-2">{{ __('mission.feature2') }}</span>
-                                    </li> --}}
-                                    <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                        <i
-                                            class="ri-calendar-todo-line text-yellow-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700 mt-2">{{ __('mission.feature3') }}</span>
-                                    </li>
-                                    <li
-                                        class="flex items-start group hover:transform hover:scale-105 transition-transform duration-300 {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                        <i
-                                            class="ri-money-dollar-box-line text-green-500 text-2xl {{ app()->getLocale() == 'ar' ? 'ml-3 mr-0' : 'mr-3' }} mt-1"></i>
-                                        <span class="text-gray-700 mt-2">{{ __('mission.feature4') }}</span>
-                                    </li>
-                                </ul>
+
+                            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                                {{ __('mission.description') }}
+                            </p>
+
+                            <ul class="mission-feature-list">
+                                <li class="mission-feature-item">
+                                    <div class="mission-feature-icon text-blue-500">
+                                        <i class="ri-parent-line"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('mission.feature1') }}</span>
+                                </li>
+                                <li class="mission-feature-item">
+                                    <div class="mission-feature-icon text-yellow-500">
+                                        <i class="ri-calendar-todo-line"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('mission.feature3') }}</span>
+                                </li>
+                                <li class="mission-feature-item">
+                                    <div class="mission-feature-icon text-green-500">
+                                        <i class="ri-money-dollar-box-line"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('mission.feature4') }}</span>
+                                </li>
+                            </ul>
+
+                            <div class="mt-8">
+                                <a href="#projects" class="mission-cta dynapuff">
+                                    {{ __('mission.cta_button') }}
+                                    <i class="ri-sparkle-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
+                                </a>
                             </div>
-                        </div>
-                        <div class="text-center lg:text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }} mt-8">
-                            <a href="#projects"
-                                class="dynapuff inline-block py-3 px-8 bg-purple-500 hover:bg-purple-600 text-white rounded-full transition duration-300 shadow-lg hover:shadow-xl">
-                                {{ __('mission.cta_button') }}
-                                <i class="ri-sparkle-line {{ app()->getLocale() == 'ar' ? 'mr-2' : 'ml-2' }}"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -1729,238 +2252,316 @@
     <!-- End::Mission Content -->
 
 
-    <!-- Start::Banner Content -->
-    {{-- <div
-        class="relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover bg-center py-20">
-        <div class="absolute inset-0 bg-blue-600/80"></div>
-        <div class="container mx-auto px-4 relative z-10 text-center">
-            <div class="max-w-4xl mx-auto" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                <h2 class="dynapuff text-4xl font-bold text-white mb-6">
-                    {{ __('banner.title') }}
-                </h2>
-                <p class="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-                    {{ __('banner.description') }}
-                </p>
-                <a href="{{url('contactus')}}"
-                    class="dynapuff inline-flex items-center py-3 px-8 bg-yellow-400 hover:bg-yellow-500 text-blue-800 rounded-full transition duration-300 text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                    {{ __('banner.cta_button') }}
-                </a>
-            </div>
-        </div>
-    </div> --}}
-
-    <!-- End::Banner Content -->
-
-    <!-- Start::Features Content -->
-    {{-- <div class="bg-gray-100 py-12" id="features">
-        <div class="container mx-auto max-w-7xl space-y-10">
-            <div class="text-center mb-12">
-                <h2 class="section-title text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-4 py-2 bg-white rounded-md shadow-md">Our Advanced Features</span>
-                </h2>
-                <p class="text-gray-500 text-lg mt-4">Explore our innovative features designed to enhance your project’s
-                    performance with minimal dependencies.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature Box 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24"
-                                id="award">
-                                <circle cx="12" cy="9.25" r="6" fill="#b7bbc0"></circle>
-                                <path fill="#9399a1"
-                                    d="m19.574 17.013-2.565-4.453-.01.004A5.992 5.992 0 0 1 12 15.25c-.129 0-.254-.011-.381-.02l.39.67 2.374 4.112a.5.5 0 0 0 .862.006L16.57 17.8l2.579-.038a.5.5 0 0 0 .426-.75z">
-                                </path>
-                                <path fill="#4b5563"
-                                    d="M11.619 15.23a5.99 5.99 0 0 1-4.62-2.668l-2.564 4.45a.5.5 0 0 0 .426.75l2.579.038 1.324 2.218a.5.5 0 0 0 .862-.006L12 15.9l.004-.007-.385-.662z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h2 class="text-gray-800 text-xl font-semibold ml-4">Quality & Clean Code</h2>
-                    </div>
-                    <p class="text-base text-gray-500 mb-4">Our code is meticulously structured, ensuring clarity and
-                        maintainability with comprehensive comments.</p>
-                    <a class="font-semibold text-blue-600 text-sm flex items-center" href="javascript:void(0);">
-                        Learn More <i class="ri ri-arrow-right-line ml-2"></i>
-                    </a>
-                </div>
-                <!-- Feature Box 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-green-100 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-500" viewBox="0 0 24 24"
-                                id="layer-group">
-                                <path fill="#b7bbc0"
-                                    d="M12,14.19531c-0.17551-0.00004-0.34793-0.04618-0.5-0.13379l-9-5.19726C2.02161,8.58794,1.85779,7.97612,2.13411,7.49773C2.22187,7.34579,2.34806,7.2196,2.5,7.13184l9-5.19336c0.30964-0.17774,0.69036-0.17774,1,0l9,5.19336c0.4784,0.27632,0.64221,0.88814,0.36589,1.36653C21.77813,8.65031,21.65194,8.7765,21.5,8.86426l-9,5.19726C12.34793,14.14913,12.17551,14.19527,12,14.19531z">
-                                </path>
-                                <path fill="#9399a1"
-                                    d="M21.5,11.13184l-1.96411-1.13337L12.5,14.06152c-0.30947,0.17839-0.69053,0.17839-1,0L4.46411,9.99847L2.5,11.13184c-0.47839,0.27632-0.64221,0.88814-0.36589,1.36653C2.22187,12.65031,2.34806,12.7765,2.5,12.86426l9,5.19726c0.30947,0.17838,0.69053,0.17838,1,0l9-5.19726c0.4784-0.27632,0.64221-0.88814,0.36589-1.36653C21.77813,11.34579,21.65194,11.2196,21.5,11.13184z">
-                                </path>
-                                <path fill="#4b5563"
-                                    d="M21.5,15.13184l-1.96411-1.13337L12.5,18.06152c-0.30947,0.17838-0.69053,0.17838-1,0l-7.03589-4.06305L2.5,15.13184c-0.47839,0.27632-0.64221,0.88814-0.36589,1.36653C2.22187,16.65031,2.34806,16.7765,2.5,16.86426l9,5.19726c0.30947,0.17838,0.69053,0.17838,1,0l9-5.19726c0.4784-0.27632,0.64221-0.88814,0.36589-1.36653C21.77813,15.34579,21.65194,15.2196,21.5,15.13184z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h2 class="text-gray-800 text-xl font-semibold ml-4">Multiple Demos</h2>
-                    </div>
-                    <p class="text-base text-gray-500 mb-4">We offer various demos to provide a quick overview of our
-                        features and capabilities.</p>
-                    <a class="font-semibold text-green-600 text-sm flex items-center" href="javascript:void(0);">
-                        Learn More <i class="ri ri-arrow-right-line ml-2"></i>
-                    </a>
-                </div>
-                <!-- Feature Box 3 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="flex-shrink-0 w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-yellow-500" viewBox="0 0 24 24"
-                                id="calculator">
-                                <path fill="#b7bbc0"
-                                    d="M16 11H8a1 1 0 0 1-1-.999V6a1 1 0 0 1 .999-1H16a1 1 0 0 1 1 .999V10a1 1 0 0 1-.999 1H16z">
-                                </path>
-                                <path fill="#9399a1"
-                                    d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-1 4v4a1 1 0 0 1-.999 1H8a1 1 0 0 1-1-.999V6a1 1 0 0 1 .999-1H16a1 1 0 0 1 1 .999V6z">
-                                </path>
-                                <circle cx="8" cy="18" r="1" fill="#4b5563"></circle>
-                                <circle cx="12" cy="18" r="1" fill="#4b5563"></circle>
-                                <circle cx="16" cy="18" r="1" fill="#4b5563"></circle>
-                            </svg>
-                        </div>
-                        <h2 class="text-gray-800 text-xl font-semibold ml-4">Affordable Pricing</h2>
-                    </div>
-                    <p class="text-base text-gray-500 mb-4">We provide high-quality solutions at competitive prices
-                        without compromising on quality.</p>
-                    <a class="font-semibold text-yellow-600 text-sm flex items-center" href="javascript:void(0);">
-                        Learn More <i class="ri ri-arrow-right-line ml-2"></i>
-                    </a>
-                </div>
-                <!-- Feature Box 4 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-red-100 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24"
-                                id="shield">
-                                <path fill="#b7bbc0"
-                                    d="M12 2c-1.1 0-2 .9-2 2v3c0 1.11-.9 2-2 2H4v6.91c0 1.1.85 1.99 1.93 2l6.07.09c1.07 0 1.99-.89 1.99-2V8h1c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2h-4z">
-                                </path>
-                                <path fill="#9399a1" d="M12 20c-1.66 0-3-1.34-3-3h6c0 1.66-1.34 3-3 3z"></path>
-                                <path fill="#4b5563"
-                                    d="M20 8v10c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h1c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2h1c1.1 0 2 .9 2 2zm-6 4H8c-1.1 0-2 .9-2 2v2h12v-2c0-1.1-.9-2-2-2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h2 class="text-gray-800 text-xl font-semibold ml-4">Reliable Support</h2>
-                    </div>
-                    <p class="text-base text-gray-500 mb-4">Our team is available 24/7 to assist you with any queries or
-                        issues you may encounter.</p>
-                    <a class="font-semibold text-red-600 text-sm flex items-center" href="javascript:void(0);">
-                        Learn More <i class="ri ri-arrow-right-line ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-    <!-- End::Features Content -->
-
-    <!-- Start::Statistics Content -->
-    {{-- <div id="statistics"
-        class="section flex relative bg-[url('http://127.0.0.1:8000/build/assets/img/landing/1.jpg')] bg-cover before:bg-primary/90 before:absolute before:w-full before:h-full before:top-0 before:inset-x-0">
-        <div class="container  mx-auto z-[0]">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="section-title text-center text-3xl font-bold text-white md:text-4xl justify-center">
-                    <span class="px-3">Why Does
-                        People Love US ...!!</span>
-                </h2>
-                <p class="w-2/3 mx-auto my-4 text-base text-white/70">We are proud to have top class clients and
-                    customers,which motivates us to work more on projects.</p>
-            </div>
-            <div class="grid lg:grid-cols-4 gap-0  rounded-sm">
-                <div class="">
-                    <div class="text-center space-y-3 p-4">
-                        <p class="text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="137">137</span>+
-                        </p>
-                        <span class="text-lg font-semibold text-white/70">Total Projects</span>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="text-center space-y-3 p-4">
-                        <p class=" text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="200">200</span>+
-                        </p>
-                        <span class="text-lg font-semibold text-white/70">Profesional Team</span>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="text-center space-y-3 p-4">
-                        <p class=" text-4xl text-white mb-0 font-bold"><span class="count-up"
-                                data-count="1000">1000</span>+
-                        </p>
-                        <span class="text-lg font-semibold text-white/70">Happy Customers</span>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="text-center space-y-3 p-4">
-                        <p class=" text-4xl text-white mb-0 font-bold"><span class="count-up" data-count="5">5</span>+
-                        </p>
-                        <span class="text-lg font-semibold text-white/70">Years of Experience</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End::Statistics Content -->
 
     <!-- Start::Testinominals Content -->
-    <div class="bg-gradient-to-b from-yellow-100 to-blue-100 py-16" id="testimonials">
+    <style>
+        /* Testimonials Section Base */
+        .testimonials-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Background Elements */
+        .testimonials-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .testimonials-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #eab308, #a855f7);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .testimonials-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .testimonials-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        .testimonials-title {
+            background: linear-gradient(to right, #eab308, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Testimonial Card */
+        .testimonial-card-wrapper {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.3s;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            padding: 2rem;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Message Icon */
+        .testimonial-icon-wrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #eab308, #a855f7);
+            border-radius: 50%;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+
+        .testimonial-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            color: white;
+        }
+
+        /* Stars */
+        .testimonial-stars {
+            display: flex;
+            justify-content: center;
+            gap: 0.25rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .star {
+            color: #eab308;
+            font-size: 1.5rem;
+            animation: starPulse 1.5s infinite;
+        }
+
+        .star:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .star:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .star:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .star:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        .star:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+
+        /* Quote */
+        .testimonial-quote {
+            position: relative;
+            color: #4b5563;
+            line-height: 1.7;
+            margin: 1.5rem 0;
+            padding: 0 1.5rem;
+        }
+
+        .testimonial-quote::before,
+        .testimonial-quote::after {
+            content: '"';
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.1;
+            font-family: serif;
+        }
+
+        .testimonial-quote::before {
+            left: -1rem;
+            top: -1rem;
+        }
+
+        .testimonial-quote::after {
+            right: -1rem;
+            bottom: -2rem;
+        }
+
+        /* Profile */
+        .testimonial-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .profile-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: 4px solid;
+            border-image: linear-gradient(to right, #eab308, #a855f7) 1;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
+        .profile-name {
+            background: linear-gradient(to right, #eab308, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.05);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        @keyframes starPulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .profile-info {
+            text-align: right;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .testimonial-card {
+                margin: 0 1rem;
+                padding: 1.5rem;
+            }
+
+            .testimonial-quote {
+                padding: 0 1rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+    <div class="testimonials-section" id="testimonials">
+        <!-- Background Elements -->
+        <div class="testimonials-giant-logo"></div>
+        <div class="testimonials-cloud testimonials-cloud-1"></div>
+        <div class="testimonials-cloud testimonials-cloud-2"></div>
+
         <div class="container mx-auto px-4">
-            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-12">
+            <h2 class="testimonials-title dynapuff text-4xl font-bold mb-12">
                 {{ __('testimonials.title') }}
             </h2>
+
             <div class="max-w-3xl mx-auto">
-                <div class="bg-white rounded-3xl shadow-xl p-8 relative">
-                    <!-- Message Icon -->
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <div class="bg-yellow-400 rounded-full p-3 shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                <div class="testimonial-card-wrapper">
+                    <div class="testimonial-card">
+                        <!-- Message Icon -->
+                        <div class="testimonial-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="testimonial-icon" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
                         </div>
-                    </div>
 
-                    <!-- Stars -->
-                    <div class="flex justify-center {{ app()->getLocale() == 'ar' ? 'space-x-reverse' : 'space-x-1' }} mb-4"
-                        dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
-                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
-                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
-                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
-                        <i class="ri-star-fill text-yellow-400 text-2xl"></i>
-                    </div>
+                        <!-- Stars -->
+                        <div class="testimonial-stars" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <i class="ri-star-fill star"></i>
+                            <i class="ri-star-fill star"></i>
+                            <i class="ri-star-fill star"></i>
+                            <i class="ri-star-fill star"></i>
+                            <i class="ri-star-fill star"></i>
+                        </div>
 
-                    <!-- Testimonial Text -->
-                    <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                        <p class="text-lg text-gray-700 text-center mb-6">
-                            {{ __('testimonials.quote') }}
-                        </p>
-                    </div>
-
-                    <!-- Profile Section -->
-                    <div
-                        class="flex items-center justify-center {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
-                        {{-- <img alt="{{ __('testimonials.profile.name') }}"
-                            src="{{asset('build/assets/img/users/owner.jpg')}}"
-                            class="w-16 h-16 rounded-full border-4 border-purple-200"> --}}
-                        <div
-                            class="{{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }} text-{{ app()->getLocale() == 'ar' ? 'right' : 'left' }}">
-                            <p class="dynapuff font-bold text-lg text-purple-600">{{ __('testimonials.profile.name') }}
+                        <!-- Testimonial Text -->
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <p class="testimonial-quote text-center">
+                                {{ __('testimonials.quote') }}
                             </p>
-                            <p class="text-gray-600">{{ __('testimonials.profile.title') }}</p>
+                        </div>
+
+                        <!-- Profile Section -->
+                        <div class="testimonial-profile {{ app()->getLocale() == 'ar' ? 'flex-row-reverse' : '' }}">
+                            <div class="{{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }}">
+                                <p class="profile-name dynapuff">{{ __('testimonials.profile.name') }}</p>
+                                <p class="text-gray-600">{{ __('testimonials.profile.title') }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1971,43 +2572,336 @@
     <!-- End::Testinominals Content -->
 
     <!-- Start::Pricing Content -->
-    <div class="bg-gradient-to-b from-blue-100 to-purple-100 py-16" id="pricing">
+    <style>
+        /* Pricing Section Base */
+        .pricing-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Background Elements */
+        .pricing-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .pricing-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .pricing-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .pricing-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        /* Header Styling */
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .pricing-title {
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-description {
+            color: #4b5563;
+            max-width: 36rem;
+            margin: 0 auto;
+        }
+
+        /* Notice Box */
+        .pricing-notice {
+            background: rgba(254, 243, 199, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid #fcd34d;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 36rem;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-notice:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Pricing Cards Container */
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 64rem;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.3s;
+        }
+
+        /* Basic Plan Card */
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card Header */
+        .card-header {
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(34, 197, 94, 0.1));
+            z-index: 0;
+        }
+
+        .pricing-icon {
+            width: 4rem;
+            height: 4rem;
+            background: linear-gradient(135deg, #a855f7, #22c55e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* Feature List */
+        .feature-list {
+            background: rgba(250, 245, 255, 0.5);
+            padding: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(10px);
+        }
+
+        .feature-icon {
+            color: #22c55e;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* Coming Soon Features */
+        .coming-soon-features {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(250, 245, 255, 0.5), rgba(255, 255, 255, 0.5));
+        }
+
+        .soon-feature {
+            background: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .soon-feature:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Coming Soon Ribbon */
+        .coming-soon-ribbon {
+            position: absolute;
+            top: 2rem;
+            right: -2.5rem;
+            background: linear-gradient(45deg, #eab308, #a855f7);
+            color: white;
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        /* CTA Button */
+        .pricing-cta {
+            display: block;
+            background: linear-gradient(to right, #a855f7, #22c55e);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            text-align: center;
+            margin: 2rem;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2);
+        }
+
+        .pricing-cta.disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .feature-item:hover {
+            transform: translateX(-10px);
+        }
+
+        [dir="rtl"] .soon-feature:hover {
+            transform: translateX(-10px);
+        }
+
+        [dir="rtl"] .feature-icon {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+
+        [dir="rtl"] .coming-soon-ribbon {
+            right: auto;
+            left: -2.5rem;
+            transform: rotate(-45deg);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pricing-cards {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
+            .pricing-notice {
+                margin: 2rem 1rem;
+            }
+        }
+    </style>
+    <div class="pricing-section" id="pricing">
+        <!-- Background Elements -->
+        <div class="pricing-giant-logo"></div>
+        <div class="pricing-cloud pricing-cloud-1"></div>
+        <div class="pricing-cloud pricing-cloud-2"></div>
+
         <div class="container mx-auto px-4">
-            <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-8">
+            <div class="pricing-header" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                <h2 class="pricing-title dynapuff text-4xl font-bold mb-4">
                     {{ __('pricing.title') }}
                 </h2>
-                <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+                <p class="pricing-description text-lg">
                     {{ __('pricing.description') }}
                 </p>
-                <!-- Added Note -->
-                <div class="max-w-2xl mx-auto mb-12">
-                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-                        <p class="text-center text-sm text-yellow-700">
-                            {{ app()->getLocale() == 'ar'
-                            ? 'ملاحظة: الأسعار لا تشمل اسم النطاق واستضافة الموقع. يجب على العميل توفير خدمات الاستضافة
-                            واسم النطاق بشكل منفصل.'
-                            : 'Note: Prices do not include domain name and hosting. Client must provide their own
-                            hosting and domain services.'
-                            }}
-                        </p>
-                    </div>
+
+                <div class="pricing-notice">
+                    <p class="text-yellow-800 text-sm">
+                        {{ app()->getLocale() == 'ar'
+                        ? 'ملاحظة: الأسعار لا تشمل اسم النطاق واستضافة الموقع. يجب على العميل توفير خدمات الاستضافة
+                        واسم النطاق بشكل منفصل.'
+                        : 'Note: Prices do not include domain name and hosting. Client must provide their own
+                        hosting and domain services.'
+                        }}
+                    </p>
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Landing Page Plan -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105">
-                    <div class="p-8">
-                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="ri-layout-4-line text-3xl text-purple-600"></i>
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="pricing-icon">
+                            <i class="ri-layout-4-line"></i>
                         </div>
                         <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <h3 class="dynapuff text-2xl font-bold text-center text-purple-600 mb-2">
+                            <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-2">
                                 {{ __('pricing.basic.title') }}
                             </h3>
-                            <p class="text-center text-gray-600 mb-6">{{ __('pricing.basic.subtitle') }}</p>
-                            <p class="text-center">
+                            <p class="text-gray-600 mb-4">{{ __('pricing.basic.subtitle') }}</p>
+                            <p>
                                 <span class="dynapuff text-4xl font-bold text-purple-600">
                                     {{ app()->getLocale() == 'ar' ? '٢٥٠' : '250' }}
                                 </span>
@@ -2017,307 +2911,76 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-purple-50 p-8">
-                        <ul class="space-y-4" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.basic.features.1') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.basic.features.2') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.basic.features.3') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.basic.features.4') }}</span>
-                            </li>
-                            <li class="flex items-center {{ app()->getLocale() == 'ar' ? 'flex-row' : '' }}">
-                                <i
-                                    class="ri-checkbox-circle-fill text-green-500 text-xl {{ app()->getLocale() == 'ar' ? 'ml-2' : 'mr-2' }}"></i>
-                                <span>{{ __('pricing.basic.features.5') }}</span>
-                            </li>
-                        </ul>
+
+                    <div class="feature-list">
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            @foreach(range(1, 5) as $i)
+                            <div class="feature-item">
+                                <i class="ri-checkbox-circle-fill feature-icon"></i>
+                                <span class="text-gray-700">{{ __("pricing.basic.features.$i") }}</span>
+                            </div>
+                            @endforeach
+                        </div>
                     </div>
-                    <div class="p-8">
-                        <a href="#contact"
-                            class="dynapuff w-full py-3 px-6 bg-yellow-400 hover:bg-yellow-500 text-purple-700 rounded-full transition duration-300 text-lg font-bold">
-                            {{ __('pricing.basic.button') }}
-                        </a>
-                    </div>
+
+                    <a href="#contact" class="pricing-cta dynapuff">
+                        {{ __('pricing.basic.button') }}
+                    </a>
                 </div>
 
-                <!-- Dashboard Plan -->
-                <div class="pricing-card" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
-                    <style>
-                        .pricing-card {
-                            max-width: 400px;
-                            background: white;
-                            border-radius: 24px;
-                            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-                            overflow: hidden;
-                            position: relative;
-                            transition: transform 0.3s ease;
-                        }
-
-                        .pricing-card[dir="rtl"] .coming-soon-ribbon {
-                            right: auto;
-                            left: -35px;
-                            transform: rotate(-45deg);
-                        }
-
-                        .pricing-card[dir="rtl"] .feature-item i {
-                            margin-right: 0;
-                            margin-left: 12px;
-                        }
-
-                        .pricing-card[dir="rtl"] .soon-feature-icon {
-                            margin-right: 0;
-                            margin-left: 12px;
-                        }
-
-                        .pricing-card:hover {
-                            transform: translateY(-5px);
-                        }
-
-                        .coming-soon-ribbon {
-                            position: absolute;
-                            top: 30px;
-                            right: -35px;
-                            background: linear-gradient(45deg, #f59e0b, #d97706);
-                            color: white;
-                            padding: 8px 40px;
-                            transform: rotate(45deg);
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            font-size: 14px;
-                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                            z-index: 10;
-                        }
-
-                        .pricing-header {
-                            padding: 32px;
-                            text-align: center;
-                            background: linear-gradient(135deg, #f3e8ff, #faf5ff);
-                        }
-
-                        .pricing-icon {
-                            width: 64px;
-                            height: 64px;
-                            background: #a855f7;
-                            border-radius: 50%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin: 0 auto 16px;
-                        }
-
-                        .pricing-title {
-                            font-size: 24px;
-                            font-weight: bold;
-                            color: #6b21a8;
-                            margin-bottom: 8px;
-
-                            font-family: {
-                                    {
-                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
-                                }
-                            }
-
-                            ;
-                        }
-
-                        .pricing-subtitle {
-                            color: #64748b;
-                            margin-bottom: 16px;
-
-                            font-family: {
-                                    {
-                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
-                                }
-                            }
-
-                            ;
-                        }
-
-                        .launch-alert {
-                            background: #fef3c7;
-                            color: #92400e;
-                            padding: 8px 16px;
-                            border-radius: 16px;
-                            font-size: 14px;
-                            display: inline-block;
-                            margin-top: 8px;
-                        }
-
-                        .features-list {
-                            padding: 32px;
-                            background: #faf5ff;
-                        }
-
-                        .feature-item {
-                            display: flex;
-                            align-items: center;
-                            margin-bottom: 16px;
-                            color: #334155;
-                        }
-
-                        .feature-item i {
-                            color: #22c55e;
-                            margin-right: 12px;
-                            font-size: 20px;
-                        }
-
-                        .coming-soon-features {
-                            padding: 32px;
-                            background: linear-gradient(135deg, #faf5ff, #fff);
-                        }
-
-                        .coming-soon-title {
-                            text-align: center;
-                            color: #6b21a8;
-                            font-size: 20px;
-                            font-weight: bold;
-                            margin-bottom: 24px;
-
-                            font-family: {
-                                    {
-                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
-                                }
-                            }
-
-                            ;
-                        }
-
-                        .soon-feature {
-                            background: white;
-                            padding: 12px;
-                            border-radius: 12px;
-                            margin-bottom: 12px;
-                            display: flex;
-                            align-items: center;
-                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-                            transition: transform 0.2s ease;
-                        }
-
-                        .soon-feature:hover {
-                            transform: scale(1.02);
-                        }
-
-                        .soon-feature-icon {
-                            width: 40px;
-                            height: 40px;
-                            background: #f3e8ff;
-                            border-radius: 8px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-right: 12px;
-                        }
-
-                        .cta-button {
-                            display: block;
-                            width: calc(100% - 64px);
-                            margin: 32px;
-                            padding: 16px;
-                            background: #a855f7;
-                            color: white;
-                            border: none;
-                            border-radius: 999px;
-                            font-size: 18px;
-                            font-weight: bold;
-                            cursor: pointer;
-                            transition: background 0.3s ease;
-                            opacity: 0.7;
-
-                            font-family: {
-                                    {
-                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
-                                }
-                            }
-
-                            ;
-                        }
-
-                        .cta-button:hover {
-                            background: #9333ea;
-                        }
-
-                        .notification-text {
-                            text-align: center;
-                            color: #64748b;
-                            font-size: 14px;
-                            margin-top: -24px;
-                            margin-bottom: 24px;
-                            padding: 0 32px;
-
-                            font-family: {
-                                    {
-                                    app()->getLocale()==='ar' ? 'Tajawal': 'inherit'
-                                }
-                            }
-
-                            ;
-                        }
-                    </style>
-
+                <!-- Pro Plan -->
+                <div class="pricing-card">
                     <div class="coming-soon-ribbon">
                         {{ app()->getLocale() === 'ar' ? 'قريباً' : 'Coming Soon' }}
                     </div>
 
-                    <div class="pricing-header">
+                    <div class="card-header">
                         <div class="pricing-icon">
-                            <i class="ri-dashboard-3-line text-3xl text-yellow-400"></i>
+                            <i class="ri-dashboard-3-line"></i>
                         </div>
-                        <h3 class="pricing-title">{{ __('pricing.pro.title') }}</h3>
-                        <p class="pricing-subtitle">{{ __('pricing.pro.subtitle') }}</p>
-                        <div class="launch-alert">
-                            <i class="ri-notification-3-line"></i>
-                            {{ app()->getLocale() === 'ar' ? 'أسعار خاصة عند الإطلاق' : 'Launch Special Pricing Coming
-                            Soon' }}
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-2">
+                                {{ __('pricing.pro.title') }}
+                            </h3>
+                            <p class="text-gray-600 mb-4">{{ __('pricing.pro.subtitle') }}</p>
+                            <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full inline-block text-sm">
+                                <i class="ri-notification-3-line"></i>
+                                {{ app()->getLocale() === 'ar' ? 'أسعار خاصة عند الإطلاق' : 'Launch Special Pricing
+                                Coming Soon' }}
+                            </div>
                         </div>
                     </div>
 
-                    <div class="features-list">
-                        @foreach(range(1, 6) as $i)
-                        <div class="feature-item">
-                            <i class="ri-checkbox-circle-fill"></i>
-                            <span>{{ __("pricing.pro.features.$i") }}</span>
+                    <div class="feature-list">
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            @foreach(range(1, 6) as $i)
+                            <div class="feature-item">
+                                <i class="ri-checkbox-circle-fill feature-icon"></i>
+                                <span class="text-gray-700">{{ __("pricing.pro.features.$i") }}</span>
+                            </div>
+                            @endforeach
                         </div>
-                        @endforeach
                     </div>
 
                     <div class="coming-soon-features">
-                        <h4 class="coming-soon-title">
+                        <h4 class="dynapuff text-xl font-bold text-purple-600 mb-4 text-center">
                             <i class="ri-rocket-line text-yellow-500"></i>
                             {{ app()->getLocale() === 'ar' ? 'الميزات القادمة' : 'Upcoming Features' }}
                         </h4>
-                        <div class="soon-feature">
-                            <div class="soon-feature-icon">
-                                <i class="ri-settings-line text-purple-600"></i>
+
+                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <div class="soon-feature">
+                                <i class="ri-settings-line text-purple-600 text-xl mr-3"></i>
+                                <span>{{ __('pricing.pro.soon_features.1') }}</span>
                             </div>
-                            <span>{{ __('pricing.pro.soon_features.1') }}</span>
-                        </div>
-                        <div class="soon-feature">
-                            <div class="soon-feature-icon">
-                                <i class="ri-dashboard-line text-purple-600"></i>
+                            <div class="soon-feature">
+                                <i class="ri-dashboard-line text-purple-600 text-xl mr-3"></i>
+                                <span>{{ __('pricing.pro.soon_features.2') }}</span>
                             </div>
-                            <span>{{ __('pricing.pro.soon_features.2') }}</span>
                         </div>
                     </div>
 
-                    <p class="notification-text">
-                        {{ app()->getLocale() === 'ar' ? 'كن أول من يعرف عند الإطلاق!' : 'Be the first to know when we
-                        launch!' }}
-                    </p>
-                    <button class="cta-button">
+                    <button class="pricing-cta disabled dynapuff">
                         {{ app()->getLocale() === 'ar' ? 'انضم لقائمة الانتظار' : 'Join Waitlist' }}
                     </button>
                 </div>
@@ -2328,688 +2991,313 @@
 
     <!-- End::Pricing Content -->
 
-    <!-- Start::Team Content -->
-    {{-- <div class="" id="team">
-        <div class="section container mx-auto">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">Master
-                        Brains Behind The Project..!</span>
-                </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing
-                    elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus
-                    cumque
-                    odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
-            </div>
-            <div class="grid sm:grid-cols-5 lg:!grid-cols-9 gap-6">
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/1.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Socrat Itumay</h6>
-                            <p class="text-sm text-gray-500">Founder &amp; CEO</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/10.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Eos Tempor</h6>
-                            <p class="text-sm text-gray-500">Director</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/2.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Airi Satou</h6>
-                            <p class="text-sm text-gray-500">Hr</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/12.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Et Kasd</h6>
-                            <p class="text-sm text-gray-500">Manager</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/3.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Aderson tumay</h6>
-                            <p class="text-sm text-gray-500">Team Lead</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/4.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Samantha Paul</h6>
-                            <p class="text-sm text-gray-500">Sr.Ui Developer</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/15.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Mc Greggor</h6>
-                            <p class="text-sm text-gray-500">Java Developer</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/6.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Emiley Jackson</h6>
-                            <p class="text-sm text-gray-500">Full Stacker</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="space-y-2 text-center">
-                    <a href="{{url('team')}}">
-                        <img src="{{asset('build/assets/img/users/7.jpg')}}" alt="team" class="avatar rounded-full">
-                        <div class="">
-                            <h6 class="font-semibold text-base text-gray-800">Lilly Donovan</h6>
-                            <p class="text-sm text-gray-500">javascript</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End::Team Content -->
 
-    <!-- Start::faqs Content -->
-    {{-- <div class="bg-white" id="faq">
-        <div class="section container mx-auto">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">Frequently
-                        Asked Questions..!</span>
-                </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing
-                    elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus
-                    cumque
-                    odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-6 max-w-[80rem] mx-auto ">
-                <div>
-                    <div class="hs-accordion-group space-y-3">
-                        <div class="hs-accordion active bg-white border -mt-px rounded-sm" id="faq-one">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-one">
-                                How To Insert All The Plugins?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-one"
-                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby="faq-one">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-two">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-two">
-                                How Can I contact?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-two"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby="faq-two">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-three">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-three"> Can I use this Plugins in Another Template?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-three"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby=" faq-three">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-four">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-four"> Does it Easy to Customizable?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-four"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby=" faq-four">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="hs-accordion-group space-y-3">
-                        <div class="hs-accordion active bg-white border -mt-px rounded-sm" id="faq-five">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-five"> How Can I Add another page in Template?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-five"
-                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby=" faq-five">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-six">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-six"> How can I download This template?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-six"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby=" faq-six">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-seven">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-seven"> How To Add additional plugins?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-seven"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby=" faq-seven">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hs-accordion bg-white border -mt-px rounded-sm" id="faq-eight">
-                            <button type="button"
-                                class="hs-accordion-toggle hs-accordion-active:text-primary hs-accordion-active:border-b hs-accordion-active:border-gray-200 justify-between inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 transition py-4 px-5 hover:text-gray-500 text-lg"
-                                aria-controls="faq-collapse-eight">
-                                How To Insert All The Plugins?
-                                <svg class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path d="M8 15.36L8 2.35999" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
-                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8.85999L14.5 8.85998" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </button>
-                            <div id="faq-collapse-eight"
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                                aria-labelledby="faq-eight">
-                                <div class="p-5">
-                                    <p class="text-gray-500 text-base">
-                                        I must explain to you how all this mistaken idea of denouncing pleasure and
-                                        praising pain was
-                                        born and I will give you a complete account of the system, and expound the
-                                        actual teachings of
-                                        the great explorer of the truth, the master-builder of human happiness. No one
-                                        rejects,
-                                        dislikes, or avoids pleasure itself, because it is pleasure, but because those
-                                        who do not know
-                                        how to pursue pleasure rationally encounter consequences.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End::faqs Content -->
 
-    <!-- Start::Blog Content -->
-    {{-- <div class="" id="blogs">
-        <div class="section container mx-auto">
-            <div class="text-center max-w-[80rem] mx-auto mb-12">
-                <h2 class="justify-center section-title text-center text-3xl font-bold text-gray-800 md:text-4xl">
-                    <span class="px-3">Latest Blog
-                        news</span>
-                </h2>
-                <p class="text-center text-gray-500 text-base mt-4">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing
-                    elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus
-                    cumque
-                    odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
-            </div>
-            <div class="grid grid-cols-12 gap-6 max-w-[80rem] mx-auto">
-                <div class="col-span-12 lg:col-span-6">
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{asset('build/assets/img/gallery/2.jpg')}}" class="w-full" alt="blog-img">
-                                <a href="{{url('blog-details')}}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Lorem ipsum dolor sit amet consectetur
-                                                    adipisicing elit.</h5>
-                                                <p class="text-gray-500 text-sm">Published <span
-                                                        class="text-white">12.04.2023</span> by <span
-                                                        class="text-white">Mark Equel</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-3">
-                    <div class="box">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{asset('build/assets/img/gallery/3.jpg')}}" class="w-full" alt="blog-img">
-                                <a href="{{url('blog-details')}}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Ui Review Presentations</h5>
-                                                <p class="text-gray-500 text-sm">Published <span
-                                                        class="text-white">12.04.2023</span> by <span
-                                                        class="text-white">Mark Equel</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{asset('build/assets/img/gallery/9.jpg')}}" class="w-full" alt="blog-img">
-                                <a href="{{url('blog-details')}}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Bussines Of Design</h5>
-                                                <p class="text-gray-500 text-sm">Published <span
-                                                        class="text-white">12.04.2023</span> by <span
-                                                        class="text-white">Mark Equel</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-3">
-                    <div class="box">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{asset('build/assets/img/gallery/8.jpg')}}" class="w-full" alt="blog-img">
-                                <a href="{{url('blog-details')}}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Study In Nature</h5>
-                                                <p class="text-gray-500 text-sm">Published <span
-                                                        class="text-white">12.04.2023</span> by <span
-                                                        class="text-white">Mark Equel</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box mb-0">
-                        <div class="box-body p-0">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-sm">
-                                <img src="{{asset('build/assets/img/gallery/10.jpg')}}" class="w-full" alt="blog-img">
-                                <a href="{{url('blog-details')}}">
-                                    <div
-                                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/50">
-                                        <div class="flex justify-start items-end h-full">
-                                            <div class="text-white m-6">
-                                                <h5 class="font-bold text-xl">Stories That Matters</h5>
-                                                <p class="text-gray-500 text-sm">Published <span
-                                                        class="text-white">12.04.2023</span> by <span
-                                                        class="text-white">Mark Equel</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End::Blog Content -->
     {{--Start : Projects --}}
     <style>
-        @keyframes shine {
-            from {
-                transform: translateX(-100%) rotate(45deg);
-            }
-
-            to {
-                transform: translateX(100%) rotate(45deg);
-            }
-        }
-
-        .project-card:hover .shine-effect::after {
-            animation: shine 1s ease-in-out;
-        }
-
-        .shine-effect {
+        /* Projects Section Base */
+        .projects-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
             position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+            min-height: 100vh;
+        }
+
+        /* Background Elements */
+        .projects-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .projects-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .projects-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .projects-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        /* Header Styling */
+        .projects-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .projects-title {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .projects-description {
+            color: #4b5563;
+            max-width: 48rem;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Project Card */
+        .project-card {
+            position: relative;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .project-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .project-image-wrapper {
+            position: relative;
+            height: 400px;
             overflow: hidden;
         }
 
-        .shine-effect::after {
-            content: '';
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        /* Overlay */
+        .project-overlay {
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg,
-                    transparent 45%,
-                    rgba(255, 255, 255, 0.1) 48%,
-                    rgba(255, 255, 255, 0.3) 50%,
-                    rgba(255, 255, 255, 0.1) 52%,
-                    transparent 55%);
-            transform: translateX(-100%) rotate(45deg);
+            inset: 0;
+            background: linear-gradient(to top,
+                    rgba(37, 99, 235, 0.95),
+                    rgba(37, 99, 235, 0.7) 50%,
+                    rgba(37, 99, 235, 0) 100%);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transform: translateY(60px);
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        .project-content {
+            opacity: 0.9;
+            transition: opacity 0.5s ease;
+        }
+
+        .project-card:hover .project-content {
+            opacity: 1;
+        }
+
+        .project-title {
+            color: white;
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 9999px;
+        }
+
+        .project-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .project-link-icon {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project-link:hover .project-link-icon {
+            transform: translateX(3px);
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .project-link {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .project-link-icon {
+            margin-left: 0;
+            margin-right: 0.5rem;
+            transform: scaleX(-1);
+        }
+
+        [dir="rtl"] .project-link:hover {
+            transform: translateX(-5px);
+        }
+
+        [dir="rtl"] .project-link:hover .project-link-icon {
+            transform: translateX(-3px) scaleX(-1);
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image-wrapper {
+                height: 300px;
+            }
+
+            .projects-title {
+                font-size: 2rem;
+            }
+
+            .project-title {
+                font-size: 1.5rem;
+            }
         }
     </style>
+    <div class="projects-section" id="projects">
+        <!-- Background Elements -->
+        <div class="projects-giant-logo"></div>
+        <div class="projects-cloud projects-cloud-1"></div>
+        <div class="projects-cloud projects-cloud-2"></div>
 
-    <!-- Projects Section -->
-    <div class="py-20 bg-gradient-to-b from-pink-50/50 to-purple-50/50" id="projects">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto">
             <!-- Section Header -->
-            <div class="text-center max-w-[80rem] mx-auto mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 rtl:font-[Tajawal]">
-                    <span class="text-purple-600">{{ __('projects.projects.magical') }}</span>
-                    {{-- <span class="text-purple-600">{{ __('projects.projects.learning_journey') }}</span> --}}
+            <div class="projects-header">
+                <h2 class="projects-title dynapuff text-4xl md:text-5xl font-bold">
+                    {{ __('projects.projects.magical') }}
                 </h2>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto rtl:font-[Tajawal]">
+                <p class="projects-description">
                     {{ __('projects.projects.description') }}
                 </p>
             </div>
 
             <!-- Projects Grid -->
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="projects-grid">
                 <!-- Project 1: Learning Activities -->
-                <div class="project-card group">
-                    <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
                         <img src="{{asset('build/assets/img/landing/bright-kids.png')}}"
-                            alt="{{ __('projects.projects.activities.alt') }}"
-                            class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+                            alt="{{ __('projects.projects.activities.alt') }}" class="project-image">
 
-                        <!-- Purple Overlay -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/40 to-transparent opacity-90">
-                            <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <div
-                                    class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 class="text-2xl font-bold text-white rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.activities.title') }}
-                                    </h3>
-                                    <p class="text-gray-200 rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.activities.description') }}
-                                    </p>
-                                    {{-- <div class="flex flex-wrap gap-2 pt-2">
-                                        <span
-                                            class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
-                                            {{ __('projects.projects.activities.tag1') }}
-                                        </span>
-                                        <span
-                                            class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
-                                            {{ __('projects.projects.activities.tag2') }}
-                                        </span>
-                                    </div> --}}
-                                    <a href="https://bright-kids.site/"
-                                        class="inline-block mt-2 text-white hover:text-pink-300 transition-colors duration-300 rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.view_more') }} →
-                                    </a>
-                                </div>
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <h3 class="project-title dynapuff">
+                                    {{ __('projects.projects.activities.title') }}
+                                </h3>
+                                <p class="project-description">
+                                    {{ __('projects.projects.activities.description') }}
+                                </p>
+                                <a href="https://bright-kids.site/" class="project-link dynapuff">
+                                    {{ __('projects.projects.view_more') }}
+                                    <span class="project-link-icon">→</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Parent Portal -->
-                <div class="project-card group">
-                    <div class="relative rounded-xl overflow-hidden shadow-xl shine-effect">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
                         <img src="{{asset('build/assets/img/landing/school-system-dashboard.png')}}"
-                            alt="{{ __('projects.projects.portal.alt') }}"
-                            class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+                            alt="{{ __('projects.projects.portal.alt') }}" class="project-image">
 
-                        <!-- Purple Overlay -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/40 to-transparent opacity-90">
-                            <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <div
-                                    class="space-y-3 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 class="text-2xl font-bold text-white rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.portal.title') }}
-                                    </h3>
-                                    <p class="text-gray-200 rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.portal.description') }}
-                                    </p>
-                                    {{-- <div class="flex flex-wrap gap-2 pt-2">
-                                        <span
-                                            class="px-3 py-1 bg-pink-500/20 text-pink-100 rounded-full text-sm rtl:font-[Tajawal]">
-                                            {{ __('projects.projects.portal.tag1') }}
-                                        </span>
-                                        <span
-                                            class="px-3 py-1 bg-purple-500/20 text-purple-100 rounded-full text-sm rtl:font-[Tajawal]">
-                                            {{ __('projects.projects.portal.tag2') }}
-                                        </span>
-                                    </div> --}}
-                                    <a href="/demo-dashboard"
-                                        class="inline-block mt-2 text-white hover:text-purple-300 transition-colors duration-300 rtl:font-[Tajawal]">
-                                        {{ __('projects.projects.view_more') }} →
-                                    </a>
-                                </div>
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <h3 class="project-title dynapuff">
+                                    {{ __('projects.projects.portal.title') }}
+                                </h3>
+                                <p class="project-description">
+                                    {{ __('projects.projects.portal.description') }}
+                                </p>
+                                <a href="/demo-dashboard" class="project-link dynapuff">
+                                    {{ __('projects.projects.view_more') }}
+                                    <span class="project-link-icon">→</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -3020,133 +3308,394 @@
 
     {{--END : Projects --}}
     <!-- Start::Contact Content -->
-    <div class="bg-gradient-to-b from-green-100 to-blue-100 py-16" id="contact">
-        <div class="container mx-auto px-4">
-            <h2 class="dynapuff text-4xl font-bold text-center text-purple-600 mb-6 rtl:font-[Tajawal]">
-                {{ __('contact.contact.title') }}
-            </h2>
-            <p class="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12 rtl:font-[Tajawal]">
-                {{ __('contact.contact.subtitle') }}
-            </p>
+    <style>
+        /* Contact Section Base */
+        .contact-section {
+            background: linear-gradient(to bottom, #eff6ff, #ecfdf5);
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 0;
+        }
 
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+        /* Background Elements */
+        .contact-giant-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .contact-cloud {
+            position: absolute;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 6rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .contact-cloud-1 {
+            top: 15%;
+            left: 10%;
+            width: 180px;
+            height: 50px;
+        }
+
+        .contact-cloud-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 220px;
+            height: 60px;
+            animation-delay: -3s;
+        }
+
+        /* Header Styling */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .contact-title {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards 0.3s;
+        }
+
+        /* Info Side */
+        .contact-info {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(34, 197, 94, 0.1));
+            padding: 2rem;
+        }
+
+        .contact-info-title {
+            color: #2563eb;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-icon-wrapper {
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .contact-icon {
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .contact-info-content h5 {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-info-content a {
+            color: #4b5563;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-content a:hover {
+            color: #2563eb;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Form Side */
+        .contact-form-wrapper {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(34, 197, 94, 0.05));
+            padding: 2rem;
+        }
+
+        .form-title {
+            color: #2563eb;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: #4b5563;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid rgba(37, 99, 235, 0.2);
+            border-radius: 9999px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        textarea.form-input {
+            border-radius: 1.5rem;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: linear-gradient(to right, #2563eb, #22c55e);
+            color: white;
+            border: none;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Alert Messages */
+        .alert {
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .alert-success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            color: #16a34a;
+        }
+
+        .alert-error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #dc2626;
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .contact-info-item:hover {
+            transform: translateX(-10px);
+        }
+
+        [dir="rtl"] .contact-icon-wrapper {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-card {
+                margin: 0 1rem;
+            }
+
+            .contact-info-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+    <div class="contact-section" id="contact">
+        <!-- Background Elements -->
+        <div class="contact-giant-logo"></div>
+        <div class="contact-cloud contact-cloud-1"></div>
+        <div class="contact-cloud contact-cloud-2"></div>
+
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="contact-header">
+                <h2 class="contact-title dynapuff text-4xl font-bold mb-4">
+                    {{ __('contact.contact.title') }}
+                </h2>
+                <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+                    {{ __('contact.contact.subtitle') }}
+                </p>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="contact-card">
                 <div class="md:flex">
-                    <div class="md:w-1/2 bg-yellow-50 p-8 flex flex-col justify-center">
-                        <div class="mb-8">
-                            <h3 class="dynapuff text-2xl font-bold text-purple-700 mb-4 rtl:font-[Tajawal]">
+                    <!-- Info Side -->
+                    <div class="md:w-1/2">
+                        <div class="contact-info" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                            <h3 class="contact-info-title dynapuff text-2xl font-bold">
                                 {{ __('contact.contact.quick_reach') }}
                             </h3>
-                            <div class="flex items-center mb-4 ">
-                                <div
-                                    class="bg-purple-600 rounded-full p-2 {{ app()->getLocale() === 'ar' ? 'ml-4' : 'mr-4' }}">
-                                    <i class="ri-smartphone-line text-xl text-white"></i>
+
+                            <!-- Phone -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="ri-smartphone-line contact-icon"></i>
                                 </div>
-                                <div>
-                                    <h5 class="font-semibold text-purple-700 rtl:font-[Tajawal]">{{
-                                        __('contact.contact.phone') }}</h5>
-                                    <a href="tel:+96566579000" class="text-purple-800" dir="ltr">+ 965 66579000</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div
-                                    class="bg-purple-600 rounded-full p-2 {{ app()->getLocale() === 'ar' ? 'ml-4' : 'mr-4' }}">
-                                    <i class="ri-mail-line text-xl text-white"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-semibold text-purple-700 rtl:font-[Tajawal]">{{
-                                        __('contact.contact.email') }}</h5>
-                                    <a href="mailto:ahmaadzaid7@gmail.com" class="text-purple-800"
-                                        dir="ltr">ahmaadzaid7@gmail.com</a>
+                                <div class="contact-info-content">
+                                    <h5>{{ __('contact.contact.phone') }}</h5>
+                                    <a href="tel:+96566579000" dir="ltr">+ 965 66579000</a>
                                 </div>
                             </div>
+
+                            <!-- Email -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="ri-mail-line contact-icon"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h5>{{ __('contact.contact.email') }}</h5>
+                                    <a href="mailto:ahmaadzaid7@gmail.com" dir="ltr">ahmaadzaid7@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <img src="{{asset('build/assets/img/landing/contact.jpg')}}"
+                                alt="{{ __('contact.contact.image_alt') }}" class="contact-image" />
                         </div>
-                        <img src="{{asset('build/assets/img/landing/contact.jpg')}}"
-                            alt="{{ __('contact.contact.image_alt') }}" />
                     </div>
-                    <div class="md:w-1/2 p-8 bg-yellow-500">
-                        {{-- resources/views/components/contact-form.blade.php --}}
-                        <form action="{{ route('contact.store') }}" method="POST" class="bg-yellow-500 p-8">
-                            @csrf
-                            <h3 class="dynapuff text-2xl font-bold text-purple-600 mb-6 rtl:font-[Tajawal]">
-                                {{ __('contact.contact.form_title') }}
-                            </h3>
 
-                            @if(session('success'))
-                            <div class="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-                                {{ session('success') }}
-                            </div>
-                            @endif
+                    <!-- Form Side -->
+                    <div class="md:w-1/2">
+                        <div class="contact-form-wrapper">
+                            <form action="{{ route('contact.store') }}" method="POST"
+                                dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                                @csrf
+                                <h3 class="form-title dynapuff text-2xl font-bold">
+                                    {{ __('contact.contact.form_title') }}
+                                </h3>
 
-                            @if($errors->any())
-                            <div class="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            @endif
+                                @if(session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                                @endif
 
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
-                                    {{ __('contact.contact.name_label') }}
-                                </label>
-                                <input type="text" id="name" name="name" value="{{ old('name') }}"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('name') border-red-500 @enderror"
-                                    placeholder="{{ __('contact.contact.name_placeholder') }}" required>
-                                @error('name')
-                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                                @enderror
-                            </div>
+                                @if($errors->any())
+                                <div class="alert alert-error">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endif
 
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
-                                    {{ __('contact.contact.email_label') }}
-                                </label>
-                                <input type="email" id="email" name="email" value="{{ old('email') }}"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('email') border-red-500 @enderror"
-                                    placeholder="{{ __('contact.contact.email_placeholder') }}" required>
-                                @error('email')
-                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                                @enderror
-                            </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="name">
+                                        {{ __('contact.contact.name_label') }}
+                                    </label>
+                                    <input type="text" id="name" name="name"
+                                        class="form-input @error('name') border-red-500 @enderror"
+                                        value="{{ old('name') }}"
+                                        placeholder="{{ __('contact.contact.name_placeholder') }}" required>
+                                </div>
 
-                            <div class="mb-4">
-                                <label for="phone" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
-                                    {{ __('contact.contact.phone_label') }}
-                                </label>
-                                <input type="tel" id="phone" name="phone" value="{{ old('phone') }}"
-                                    class="w-full px-4 py-2 rounded-full border-2 border-purple-300 focus:border-purple-500 focus:outline-none @error('phone') border-red-500 @enderror"
-                                    placeholder="{{ __('contact.contact.phone_placeholder') }}"
-                                    dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" required>
-                                @error('phone')
-                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                                @enderror
-                            </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email">
+                                        {{ __('contact.contact.email_label') }}
+                                    </label>
+                                    <input type="email" id="email" name="email"
+                                        class="form-input @error('email') border-red-500 @enderror"
+                                        value="{{ old('email') }}"
+                                        placeholder="{{ __('contact.contact.email_placeholder') }}" required>
+                                </div>
 
-                            <div class="mb-6">
-                                <label for="message" class="block text-gray-700 font-semibold mb-2 rtl:font-[Tajawal]">
-                                    {{ __('contact.contact.message_label') }}
-                                </label>
-                                <textarea id="message" name="message" rows="4"
-                                    class="w-full px-4 py-2 rounded-2xl border-2 border-purple-300 focus:border-purple-500 focus:outline-none rtl:font-[Tajawal] @error('message') border-red-500 @enderror"
-                                    placeholder="{{ __('contact.contact.message_placeholder') }}"
-                                    required>{{ old('message') }}</textarea>
-                                @error('message')
-                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                                @enderror
-                            </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">
+                                        {{ __('contact.contact.phone_label') }}
+                                    </label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="form-input @error('phone') border-red-500 @enderror"
+                                        value="{{ old('phone') }}"
+                                        placeholder="{{ __('contact.contact.phone_placeholder') }}" required>
+                                </div>
 
-                            <button type="submit"
-                                class="dynapuff w-full py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition duration-300 text-lg font-bold rtl:font-[Tajawal]">
-                                {{ __('contact.contact.submit_button') }}
-                            </button>
-                        </form>
+                                <div class="form-group">
+                                    <label class="form-label" for="message">
+                                        {{ __('contact.contact.message_label') }}
+                                    </label>
+                                    <textarea id="message" name="message"
+                                        class="form-input @error('message') border-red-500 @enderror"
+                                        placeholder="{{ __('contact.contact.message_placeholder') }}"
+                                        required>{{ old('message') }}</textarea>
+                                </div>
+
+                                <button type="submit" class="submit-button dynapuff">
+                                    {{ __('contact.contact.submit_button') }}
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- End::Contact Content -->
 
     <!-- Start::Banner Content -->
@@ -3155,15 +3704,22 @@
         <div class="container mx-auto z-[0] text-center space-y-5">
             <h2 class="section-title text-center text-3xl font-bold text-white md:text-4xl justify-center">Get
                 Notify When Project is Updated</h2>
-            <p class="w-2/3 mx-auto my-4 text-base text-white/70">We develop modern concepts to design and develop the
+            <p class="w-2/3 mx-auto my-4 text-base text-white/70">We develop modern concepts to design and
+                develop
+                the
                 interface design, web
-                development to deliver them with eye-catching innovative ideas. We believe in effective, efficient and
-                timely solutions for various types of businesses. Our team develops a long-term strategy to bring out
+                development to deliver them with eye-catching innovative ideas. We believe in effective,
+                efficient
+                and
+                timely solutions for various types of businesses. Our team develops a long-term strategy to
+                bring
+                out
                 spark
                 conversation with clients, and visibility to your company.</p>
             <div class="max-w-md space-x-3 rtl:space-x-reverse flex justify-center mx-auto">
                 <input type="email" class="ti-form-input" placeholder="Enter Your Email">
-                <a href="javascript:void(0);" class="ti-btn m-0 p-2 px-5 ti-btn-danger whitespace-nowrap">Notify Me</a>
+                <a href="javascript:void(0);" class="ti-btn m-0 p-2 px-5 ti-btn-danger whitespace-nowrap">Notify
+                    Me</a>
             </div>
         </div>
     </div> --}}
