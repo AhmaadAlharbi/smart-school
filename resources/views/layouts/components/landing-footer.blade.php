@@ -1,7 +1,15 @@
 <style>
     /* Footer Base */
     .footer {
-        background: linear-gradient(to bottom, #1e293b, #0f172a);
+        background: radial-gradient(circle at 70% 20%,
+                rgba(252, 211, 77, 0.05) 0%,
+                transparent 50%),
+            radial-gradient(circle at 20% 60%,
+                rgba(147, 197, 253, 0.05) 0%,
+                transparent 50%),
+            linear-gradient(180deg,
+                #1e293b 0%,
+                #0f172a 100%);
         position: relative;
         overflow: hidden;
         padding-top: 4rem;
@@ -13,10 +21,11 @@
         border-radius: 50%;
         filter: blur(100px);
         opacity: 0.1;
+        z-index: 1;
     }
 
     .footer-glow-1 {
-        background: #2563eb;
+        background: #60a5fa;
         width: 300px;
         height: 300px;
         top: -150px;
@@ -24,35 +33,49 @@
     }
 
     .footer-glow-2 {
-        background: #22c55e;
+        background: #fcd34d;
         width: 250px;
         height: 250px;
         bottom: -100px;
         right: -50px;
     }
 
-    /* Footer Content */
+    /* Content Wrapper */
     .footer-content {
         position: relative;
+        z-index: 2;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 2rem;
     }
 
+    /* Section Styling */
+    .footer-section {
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 1.5rem;
+        transition: transform 0.3s ease;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .footer-section:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
     /* Section Titles */
     .footer-title {
-        color: white;
+        color: #fff;
         font-size: 1.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         display: flex;
         align-items: center;
         gap: 0.75rem;
     }
 
     .footer-title-line {
-        display: inline-block;
         height: 3px;
         width: 2rem;
-        background: linear-gradient(to right, #2563eb, #22c55e);
+        background: linear-gradient(to right, #60a5fa, #fcd34d);
         border-radius: 1rem;
         transition: width 0.3s ease;
     }
@@ -61,12 +84,13 @@
         width: 3rem;
     }
 
-    /* About Section */
+    /* Logo and Description */
     .footer-logo {
         max-width: 150px;
         height: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         transition: transform 0.3s ease;
+        filter: brightness(1.2);
     }
 
     .footer-logo:hover {
@@ -89,25 +113,28 @@
     .footer-link {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.75rem;
         color: #94a3b8;
-        text-decoration: none;
-        padding: 0.5rem 0;
+        padding: 0.75rem;
+        border-radius: 12px;
         transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.02);
+        margin-bottom: 0.5rem;
     }
 
     .footer-link:hover {
-        color: #2563eb;
-        transform: translateX(5px);
+        color: #60a5fa;
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateX(10px);
     }
 
     .footer-link-icon {
-        color: #22c55e;
+        color: #fcd34d;
         transition: transform 0.3s ease;
     }
 
     .footer-link:hover .footer-link-icon {
-        transform: scale(1.2);
+        transform: rotate(360deg);
     }
 
     /* Contact Links */
@@ -116,22 +143,27 @@
         align-items: center;
         gap: 0.75rem;
         color: #94a3b8;
-        text-decoration: none;
-        padding: 0.5rem 0;
+        padding: 0.75rem;
+        border-radius: 12px;
         transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.02);
+        width: 100%;
+        margin-bottom: 0.5rem;
     }
 
     .contact-link:hover {
-        color: #2563eb;
+        color: #60a5fa;
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateX(10px);
     }
 
     .contact-icon {
-        color: #22c55e;
+        color: #fcd34d;
         transition: transform 0.3s ease;
     }
 
     .contact-link:hover .contact-icon {
-        transform: rotate(15deg);
+        transform: rotate(360deg);
     }
 
     /* Copyright Section */
@@ -140,6 +172,7 @@
         text-align: center;
         color: #94a3b8;
         position: relative;
+        z-index: 2;
     }
 
     .copyright-text {
@@ -147,13 +180,16 @@
     }
 
     .copyright-link {
-        color: #2563eb;
-        text-decoration: none;
-        transition: color 0.3s ease;
+        background: linear-gradient(to right, #60a5fa, #fcd34d);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+        transition: opacity 0.3s ease;
     }
 
     .copyright-link:hover {
-        color: #22c55e;
+        opacity: 0.8;
     }
 
     .heart-icon {
@@ -164,7 +200,11 @@
 
     /* RTL Support */
     [dir="rtl"] .footer-link:hover {
-        transform: translateX(-5px);
+        transform: translateX(-10px);
+    }
+
+    [dir="rtl"] .contact-link:hover {
+        transform: translateX(-10px);
     }
 
     [dir="rtl"] .footer-link {
@@ -189,31 +229,35 @@
     /* Responsive Design */
     @media (max-width: 768px) {
         .footer-section {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
 
         .footer-title {
             justify-content: center;
         }
 
-        .footer-description {
-            text-align: center;
+        .footer-logo {
+            margin: 0 auto 1.5rem;
         }
 
-        .footer-links {
-            text-align: center;
-        }
-
-        .footer-link {
+        .footer-link,
+        .contact-link {
             justify-content: center;
         }
 
-        .footer-logo {
-            margin: 0 auto 1rem;
-            display: block;
+        .footer-link:hover,
+        .contact-link:hover {
+            transform: translateY(-5px);
+        }
+
+        [dir="rtl"] .footer-link:hover,
+        [dir="rtl"] .contact-link:hover {
+            transform: translateY(-5px);
         }
     }
 </style>
+
 <footer class="footer" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
     <!-- Background Glows -->
     <div class="footer-glow footer-glow-1"></div>
@@ -221,7 +265,7 @@
 
     <div class="container mx-auto px-4">
         <div class="footer-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- About Section -->
                 <div class="footer-section">
                     <h6 class="footer-title dynapuff">
@@ -229,9 +273,7 @@
                         <span class="footer-title-line"></span>
                     </h6>
                     <img src="/images/sahabcode-logo.png" alt="Sahab Code Logo" class="footer-logo">
-                    <p class="footer-description">
-                        {{ __('footer.about.description') }}
-                    </p>
+                    <p class="footer-description">{{ __('footer.about.description') }}</p>
                 </div>
 
                 <!-- Services Section -->
