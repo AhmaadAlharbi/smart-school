@@ -1,5 +1,4 @@
-<nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-blue-50 to-green-50"
-    dir="{{LaravelLocalization::getCurrentLocale() === 'ar' ? 'rtl' : 'ltr'}}">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-blue-50 to-green-50">
     <div class="max-w-7xl mx-auto px-4 relative">
         <div class="flex items-center justify-between h-20">
             <!-- Logo -->
@@ -21,17 +20,17 @@
                     </div>
                     <!-- Logo Text with Language Support -->
                     <div
-                        class="text-xl font-bold tracking-tight {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'ar-font' : 'en-font' }}">
+                        class="text-xl font-bold tracking-tight {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'font-arabic' : '' }}">
                         @if(LaravelLocalization::getCurrentLocale() === 'ar')
                         <span
-                            class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent mr-2">سحاب</span>
+                            class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">سحاب</span>
                         <span
-                            class="bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">كود</span>
+                            class="bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent">كود</span>
                         @else
                         <span
                             class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Sahab</span>
                         <span
-                            class="bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">Code</span>
+                            class="bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">Code</span>
                         @endif
                     </div>
                 </a>
@@ -39,8 +38,8 @@
 
             <!-- Desktop Navigation -->
             <div
-                class="hidden md:flex md:items-center md:space-x-8 {{ LaravelLocalization::getCurrentLocaleDirection() === 'rtl' ? 'space-x-reverse mr-2' : '' }}">
-                <a href="#home" class="nav-link ml-10">
+                class="hidden md:flex md:items-center md:space-x-8 {{ LaravelLocalization::getCurrentLocaleDirection() === 'rtl' ? 'space-x-reverse' : '' }}">
+                <a href="#home" class="nav-link">
                     {{ __('navigation.home') }}
                 </a>
                 <a href="#services" class="nav-link">

@@ -1,4 +1,4 @@
-@extends('layouts.landing-master')
+# @extends('layouts.landing-master')
 
 @section('styles')
 
@@ -355,12 +355,20 @@
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            color: white;
+            /* color: rgb(47, 102, 154); */
+            -webkit-text-fill-color: white;
+            /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .hero-subtitle {
             color: var(--accent-warm);
+            -webkit-text-fill-color: var(--accent-warm);
+            /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
             font-size: 4rem;
             font-weight: 800;
             margin-bottom: 2rem;
@@ -375,39 +383,162 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
+        /* Modern Glassmorphic Buttons with Enhanced Effects */
         .button-container {
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             justify-content: center;
             margin-top: 2rem;
         }
 
         .cta-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
             padding: 1.25rem 2.5rem;
-            border-radius: 9999px;
+            border-radius: 12px;
             font-weight: 600;
             font-size: 1.125rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
             color: white;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-decoration: none;
         }
 
         .primary-button {
-            background: linear-gradient(135deg, #60a5fa, #3b82f6);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow:
+                0 8px 32px rgba(31, 38, 135, 0.15),
+                0 2px 4px rgba(255, 255, 255, 0.1) inset;
         }
 
         .secondary-button {
-            background: linear-gradient(135deg, #34d399, #10b981);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgb(242, 203, 30);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            box-shadow:
+                0 8px 32px rgba(31, 38, 135, 0.15),
+                0 2px 4px rgba(96, 165, 250, 0.1) inset;
+        }
+
+        /* Enhanced Hover Effects */
+        .cta-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(31, 38, 135, 0.2);
+        }
+
+        .primary-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .secondary-button:hover {
+            background: rgb(243, 147, 13);
+            border-color: rgba(255, 211, 34, 0.4);
+        }
+
+        /* Active state */
+        .cta-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 5px 15px rgba(31, 38, 135, 0.1);
+        }
+
+        /* Shine effect */
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.1),
+                    transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+            pointer-events: none;
+        }
+
+        .cta-button:hover::before {
+            animation: shine 1.5s;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-200%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(200%) rotate(45deg);
+            }
+        }
+
+        /* Icon styles */
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-200%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(200%) rotate(45deg);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                width: auto;
+                min-width: 200px;
+            }
+
+            .button-container {
+                gap: 1.5rem;
+            }
+        }
+
+        /* Optional: Add icon support */
+        .cta-button svg {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover svg {
+            transform: translateX(4px);
         }
 
         @keyframes sunGlow {
@@ -592,8 +723,8 @@
 
         <div class="content-wrapper">
             <div class="hero-content">
-                <h1 class="hero-title">We Shower Your Website</h1>
-                <h2 class="hero-subtitle">With Creativity</h2>
+                <h1 class="hero-title text-gray-100">We Rain Creativity on </h1>
+                <h2 class="hero-subtitle text-xl text-amber-200"> Your Website</h2>
                 <p class="hero-description">
                     Transform your digital presence with our cutting-edge development solutions
                     and innovative technologies that push boundaries.
