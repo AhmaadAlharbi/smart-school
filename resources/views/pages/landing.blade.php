@@ -1449,7 +1449,7 @@
         <div class="service-cloud service-cloud-2"></div>
 
         <div class="container mx-auto px-4">
-            <h2 class="process-title dynapuff">
+            <h2 class="process-title dynapuff ">
                 {{ __('process.title') }}
             </h2>
 
@@ -1601,6 +1601,7 @@
             background-clip: text;
             color: transparent;
             margin-bottom: 1rem;
+            padding: 20px 0;
         }
 
         .about-subtitle {
@@ -1889,6 +1890,7 @@
             background-clip: text;
             color: transparent;
             margin-bottom: 1rem;
+            padding: 20px 0;
         }
 
         .mission-subtitle {
@@ -2160,11 +2162,12 @@
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
+            background: linear-gradient(to right, #ffffff, #ffffff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin-bottom: 3rem;
+            padding: 20px 0;
         }
 
         /* Testimonial Card */
@@ -2478,11 +2481,12 @@
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
+            background: linear-gradient(to right, #ffffff, #ffffff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin-bottom: 1rem;
+            padding: 20px 0;
         }
 
         .pricing-description {
@@ -2888,11 +2892,12 @@
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
+            background: linear-gradient(to right, #ffffff, #ffffff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin-bottom: 1.5rem;
+            padding: 20px 0;
         }
 
         .projects-description {
@@ -3179,11 +3184,10 @@
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
-            -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: white;
             margin-bottom: 1rem;
+            padding: 20px 0;
         }
 
         /* Contact Card */

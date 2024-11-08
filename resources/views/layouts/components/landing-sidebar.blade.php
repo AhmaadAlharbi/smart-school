@@ -5,35 +5,22 @@
             <div class="flex-shrink-0 relative z-10">
                 <a href="/"
                     class="group flex items-center space-x-2 transform transition-all duration-300 hover:scale-105">
-                    <!-- Logo Cloud Icon -->
-                    <div class="w-10 h-10 relative">
+                    <!-- Cloud Logo with Sunlight Effect -->
+                    <div class="w-12 h-12 relative">
                         <div
-                            class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 rounded-lg transform transition-transform group-hover:scale-105 group-hover:rotate-3">
+                            class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full transform transition-transform group-hover:scale-105 group-hover:rotate-3">
+                            <div
+                                class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-300 rounded-full opacity-75 animate-pulse">
+                            </div>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none">
+                            <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M20 15.5C21.7 15.5 23 14.2 23 12.5C23 10.8 21.7 9.5 20 9.5H19.7C19.4 6.8 17.1 4.5 14.4 4.5C13.1 4.5 11.8 5 10.9 5.8C10.2 3.6 8.2 2 5.9 2C3.1 2 1 4.1 1 6.9C1 7.2 1 7.4 1.1 7.7C2.4 8.2 3.3 9.4 3.3 10.9C3.3 12.8 1.8 14.3 0 14.3"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                             </svg>
                         </div>
                     </div>
-                    <!-- Logo Text with Language Support -->
-                    <div
-                        class="text-xl font-bold tracking-tight {{ LaravelLocalization::getCurrentLocale() === 'ar' ? 'font-arabic' : '' }}">
-                        @if(LaravelLocalization::getCurrentLocale() === 'ar')
-                        <span
-                            class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">سحاب</span>
-                        <span
-                            class="bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent">كود</span>
-                        @else
-                        <span
-                            class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Sahab</span>
-                        <span
-                            class="bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">Code</span>
-                        @endif
-                    </div>
-                </a>
             </div>
 
             <!-- Desktop Navigation -->
