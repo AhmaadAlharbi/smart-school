@@ -10,7 +10,7 @@ return [
         'image_alt' => 'Contact illustration',
         'form_title' => 'Send Us a Message',
         'name_label' => 'Your Name',
-        'name_placeholder' => 'e.g., Super Parent',
+        'name_placeholder' => 'Your Name',
         'email_label' => 'Email Address',
         'email_placeholder' => 'you@example.com',
         'phone_label' => 'Phone Number',

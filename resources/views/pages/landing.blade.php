@@ -710,31 +710,55 @@
         <div class="rain-container">
             <script>
                 for (let i = 0; i < 100; i++) {
-                        const rain = document.createElement('div');
-                        rain.className = 'rain';
-                        rain.style.left = Math.random() * 100 + '%';
-                        rain.style.animationDelay = Math.random() * 2 + 's';
-                        rain.style.animationDuration = Math.random() * 1 + 1 + 's';
-                        rain.style.opacity = Math.random() * 0.3 + 0.2;
-                        document.querySelector('.rain-container').appendChild(rain);
-                    }
+                const rain = document.createElement('div');
+                rain.className = 'rain';
+                rain.style.left = Math.random() * 100 + '%';
+                rain.style.animationDelay = Math.random() * 2 + 's';
+                rain.style.animationDuration = Math.random() * 1 + 1 + 's';
+                rain.style.opacity = Math.random() * 0.3 + 0.2;
+                document.querySelector('.rain-container').appendChild(rain);
+            }
             </script>
         </div>
 
         <div class="content-wrapper">
-            <div class="hero-content">
-                <h1 class="hero-title text-gray-100">We Rain Creativity on </h1>
-                <h2 class="hero-subtitle text-xl text-amber-200"> Your Website</h2>
+            <div class="hero-content" dir="{{ App::isLocale('ar') ? 'rtl' : 'ltr' }}">
+                <h1 class="hero-title text-gray-100">
+                    @if(App::isLocale('en'))
+                    We Rain Creativity on
+                    @else
+                    نمطر الإبداع على
+                    @endif
+                </h1>
+                <h2 class="hero-subtitle text-xl text-amber-200">
+                    @if(App::isLocale('en'))
+                    Your Website
+                    @else
+                    موقعك الإلكتروني
+                    @endif
+                </h2>
                 <p class="hero-description">
+                    @if(App::isLocale('en'))
                     Transform your digital presence with our cutting-edge development solutions
                     and innovative technologies that push boundaries.
+                    @else
+                    قم بتحويل تواجدك الرقمي من خلال حلول التطوير المتطورة والتقنيات المبتكرة التي تتجاوز الحدود.
+                    @endif
                 </p>
                 <div class="button-container">
                     <a href="#projects" class="cta-button primary-button">
+                        @if(App::isLocale('en'))
                         Explore Our Work
+                        @else
+                        استكشف أعمالنا
+                        @endif
                     </a>
                     <a href="#contact" class="cta-button secondary-button">
+                        @if(App::isLocale('en'))
                         Start Creating
+                        @else
+                        ابدأ الإنشاء
+                        @endif
                     </a>
                 </div>
             </div>
@@ -1217,7 +1241,7 @@
                         </div>
                     </div>
                     <h3 class="service-title dynapuff">
-                        {{ __('services.redesign.title') }}
+                        {{ __('services.project_management_systems.title') }}
                     </h3>
                     <ul class="feature-list">
                         <li>
@@ -1225,28 +1249,28 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7" />
                             </svg>
-                            {{ __('services.redesign.feature_1') }}
+                            {{ __('services.project_management_systems.feature_1') }}
                         </li>
                         <li>
                             <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7" />
                             </svg>
-                            {{ __('services.redesign.feature_2') }}
+                            {{ __('services.project_management_systems.feature_2') }}
                         </li>
                         <li>
                             <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7" />
                             </svg>
-                            {{ __('services.redesign.feature_3') }}
+                            {{ __('services.project_management_systems.feature_3') }}
                         </li>
                         <li>
                             <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7" />
                             </svg>
-                            {{ __('services.redesign.feature_4') }}
+                            {{ __('services.project_management_systems.feature_4') }}
                         </li>
                     </ul>
                 </div>
@@ -1602,7 +1626,25 @@
             color: transparent;
             margin-bottom: 1rem;
             padding: 20px 0;
+            line-height: 1.2;
+            /* Controls the space between lines */
+            display: inline-block;
+            text-align: left;
+            /* Centers the text horizontally */
+            background-size: 100% 200%;
+            /* Ensures gradient covers both lines evenly */
+            background-position: 0 0;
+            /* Adjusts gradient start position */
         }
+
+        [dir="ltr"] .about-title {
+            text-align: left;
+        }
+
+        [dir="rtl"] .about-title {
+            text-align: right;
+        }
+
 
         .about-subtitle {
             font-size: 1.5rem;
@@ -2064,7 +2106,7 @@
                     <div class="order-1 lg:order-2" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                         <div class="mission-card">
                             <h2 class="dynapuff mission-title">{{ __('mission.title') }}</h2>
-                            <h3 class="dynapuff mission-subtitle">{{ __('mission.subtitle') }}</h3>
+                            <h3 class="dynapuff mission-subtitle py-2">{{ __('mission.subtitle') }}</h3>
 
                             <p class="text-lg text-gray-700 leading-relaxed mb-8">
                                 {{ __('mission.description') }}
@@ -2073,19 +2115,25 @@
                             <ul class="mission-feature-list">
                                 <li class="mission-feature-item">
                                     <div class="mission-feature-icon">
-                                        <i class="ri-parent-line"></i>
+                                        <i class="ri-bar-chart-box-line"></i>
                                     </div>
                                     <span class="text-gray-700">{{ __('mission.feature1') }}</span>
                                 </li>
                                 <li class="mission-feature-item">
                                     <div class="mission-feature-icon">
-                                        <i class="ri-calendar-todo-line"></i>
+                                        <i class="ri-settings-3-line"></i>
+                                    </div>
+                                    <span class="text-gray-700">{{ __('mission.feature2') }}</span>
+                                </li>
+                                <li class="mission-feature-item">
+                                    <div class="mission-feature-icon">
+                                        <i class="ri-user-smile-line"></i>
                                     </div>
                                     <span class="text-gray-700">{{ __('mission.feature3') }}</span>
                                 </li>
                                 <li class="mission-feature-item">
                                     <div class="mission-feature-icon">
-                                        <i class="ri-money-dollar-box-line"></i>
+                                        <i class="ri-pie-chart-2-line"></i>
                                     </div>
                                     <span class="text-gray-700">{{ __('mission.feature4') }}</span>
                                 </li>
@@ -2744,13 +2792,6 @@
             <div class="pricing-header text-center mb-12" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                 <h2 class="pricing-title dynapuff">{{ __('pricing.title') }}</h2>
                 <p class="pricing-description mb-6">{{ __('pricing.description') }}</p>
-
-                <!-- Notice Box -->
-                <div class="pricing-notice">
-                    <p class="text-yellow-800 text-sm">
-                        {{ __('pricing.notice') }}
-                    </p>
-                </div>
             </div>
 
             <!-- Pricing Cards Grid -->
@@ -2763,12 +2804,12 @@
                             <h3 class="dynapuff text-2xl font-bold text-blue-600 mb-2">{{ __('pricing.basic.title') }}
                             </h3>
                             <p class="text-gray-600 mb-4">{{ __('pricing.basic.subtitle') }}</p>
-                            <div class="price-tag">
+                            {{-- <div class="price-tag">
                                 <span class="dynapuff text-4xl font-bold text-blue-600">{{ app()->getLocale() == 'ar' ?
                                     '٢٥٠' : '250' }}</span>
                                 <span class="text-2xl font-bold text-blue-600">{{ app()->getLocale() == 'ar' ? 'د.ك' :
                                     'KWD' }}</span>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
@@ -2786,16 +2827,23 @@
 
                 <!-- Pro Plan -->
                 <div class="pricing-card">
-                    <div class="coming-soon-ribbon">
-                        {{ app()->getLocale() === 'ar' ? 'قريباً' : 'Coming Soon' }}
-                    </div>
+
 
                     <div class="card-header">
                         <div class="pricing-icon"><i class="ri-dashboard-3-line"></i></div>
                         <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            <h3 class="dynapuff text-2xl font-bold text-blue-600 mb-2">{{ __('pricing.pro.title') }}
-                            </h3>
-                            <p class="text-gray-600 mb-4">{{ __('pricing.pro.subtitle') }}</p>
+                            {{-- <h3 class="dynapuff text-2xl font-bold text-blue-600 mb-2">
+
+                                @if(App::isLocale('en'))
+                                <span class="price-amount text-4xl">200</span>
+                                <span class="price-currency text-4xl">KD</span>
+                                <span class="price-period text-xl font-medium text-gray-600">/ Year</span>
+                                @else
+                                <span class="price-amount text-4xl">٢٠٠</span>
+                                <span class="price-currency text-4xl">د.ك</span>
+                                <span class="price-period text-xl font-medium text-gray-600">/ سنة</span>
+                                @endif
+                            </h3> --}}
                             <div
                                 class="launch-badge bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full inline-block text-sm">
                                 <i class="ri-notification-3-line"></i>
@@ -2812,26 +2860,8 @@
                         </div>
                         @endforeach
                     </div>
+                    <a href="#contact" class="pricing-cta dynapuff">{{ __('pricing.basic.button') }}</a>
 
-                    <div class="coming-soon-features">
-                        <h4 class="dynapuff text-xl font-bold text-blue-600 mb-4 text-center">
-                            <i class="ri-rocket-line text-yellow-500"></i>
-                            {{ __('pricing.pro.upcoming_title') }}
-                        </h4>
-                        <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
-                            @foreach([1, 2] as $i)
-                            <div class="soon-feature">
-                                <i
-                                    class="ri-{{ $i == 1 ? 'settings' : 'dashboard' }}-line text-blue-600 text-xl mr-3"></i>
-                                <span>{{ __("pricing.pro.soon_features.$i") }}</span>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    <button class="pricing-cta disabled dynapuff">
-                        {{ __('pricing.pro.waitlist_button') }}
-                    </button>
                 </div>
             </div>
         </div>

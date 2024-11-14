@@ -10,7 +10,7 @@ return [
         'image_alt' => 'رسم توضيحي للاتصال',
         'form_title' => 'أرسل لنا رسالة',
         'name_label' => 'اسمك',
-        'name_placeholder' => 'مثال: ولي الأمر المتميز',
+        'name_placeholder' => 'الإسم',
         'email_label' => 'البريد الإلكتروني',
         'email_placeholder' => 'you@example.com',
         'phone_label' => 'رقم الهاتف',

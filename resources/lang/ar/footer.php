@@ -16,7 +16,7 @@ return [
     ],
     'contact' => [
         'title' => 'اتصل بنا',
-        'email' => 'contact@sahabcode.com'
+        'email' => 'ahmaadzaid7@gmail.com'
     ],
     'copyright' => [
         'made_with' => 'صنع بـ',

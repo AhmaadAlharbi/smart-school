@@ -5,7 +5,7 @@ return [
 
     'basic' => [
         'title' => 'Exciting Landing Page',
-        'subtitle' => 'Showcase your school\'s unique sparkle!',
+        'subtitle' => 'Showcase your business’s unique spark!',
         'price' => '150 KD',
         'features' => [
             1 => 'Attractive website design with beautiful colors',  // English: Attractive website design with beautiful colors
@@ -14,24 +14,22 @@ return [
             4 => 'User-friendly navigation',  // English: User-friendly navigation
             5 => 'Ongoing technical support',  // English: Ongoing technical s
         ],
-        'button' => 'Start the Fun!',
+        'button' => 'Start NOW!',
     ],
 
     'pro' => [
-        'title' => 'Rainbow Dashboard',
-        'subtitle' => 'For effective school management!',
+        'title' => 'Sahab Dashboard',
+        'subtitle' => 'For effective business management!',
         'price' => '300 KD',
+        'launch_notice' => 'Easily manage your project online',
+
         'features' => [
-            1 => 'Includes all features of the exciting landing page',
-            2 => 'Student Management System',
-            3 => 'Parents Management System',
-            4 => 'Files Management System',
-            5 => 'Classroom and Teacher Management System',
-            6 => 'Advanced Analytics for Performance Evaluation',
-            7 => 'Easy User Management',
-            8 => 'Custom Integrations with Other Tools',
-            9 => 'Dynamic Data Visualizations for Attractive Information Display',
-            10 => 'Online Registration System for Students',
+            1 => 'Real-Time Data Monitoring',
+            2 => 'Customizable Widgets and Layouts',
+            3 => 'User Role and Access Management',
+            4 => 'Interactive Reports and Analytics',
+            5 => 'Task and Project Tracking',
+            6 => 'Mobile-Friendly Design',
         ],
         'soon_features' => [
             1 => 'Multiple Login Options for different user types (Parents, Teachers, Admins)',
