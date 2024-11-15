@@ -2943,7 +2943,7 @@
         /* Project Cards */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 2.5rem;
             max-width: 72rem;
             margin: 0 auto;
@@ -3153,6 +3153,23 @@
                                 <h3 class="project-title dynapuff">{{ __('projects.projects.portal.title') }}</h3>
                                 <p class="project-description">{{ __('projects.projects.portal.description') }}</p>
                                 <a href="/demo-dashboard" class="project-link dynapuff">
+                                    {{ __('projects.projects.view_more') }}
+                                    <span class="project-link-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Parent Portal -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="{{asset('build/assets/img/landing/kahromaa.png')}}"
+                            alt="{{ __('projects.projects.portal.alt') }}" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-content">
+                                <h3 class="project-title dynapuff">{{ __('projects.projects.project3.title') }}</h3>
+                                <p class="project-description">{{ __('projects.projects.project3.description') }}</p>
+                                <a href="https://kahromaa.com" class="project-link dynapuff">
                                     {{ __('projects.projects.view_more') }}
                                     <span class="project-link-icon">→</span>
                                 </a>
