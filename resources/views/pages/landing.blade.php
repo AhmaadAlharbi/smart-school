@@ -94,12 +94,11 @@
 
 <div class="main-content landing-main !p-0  {{ app()->getLocale() == 'ar' ? 'rtl-layout' : 'ltr-layout' }}">
     <!-- Start::Home Content new one -->
-    <!-- Hero Section -->
     <style>
         :root {
             --sky-primary: #60a5fa;
             --sky-secondary: #93c5fd;
-            --accent-warm: #fcd34d;
+            --accent-warm: #ffd504;
             --accent-light: #bae6fd;
             --cloud-primary: #ffffff;
             --cloud-secondary: #f8fafc;
@@ -107,6 +106,7 @@
         }
 
         .scene-container {
+            padding-bottom: 10px;
             min-height: 100vh;
             background: radial-gradient(circle at 70% 20%,
                     rgba(252, 211, 77, 0.2) 0%,
@@ -120,51 +120,130 @@
             position: relative;
             overflow: hidden;
             display: flex;
+        }
+
+        /* Add RTL support for the container */
+        [dir="rtl"] .scene-container .split-layout {
+            flex-direction: row;
+        }
+
+        .split-layout {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content-side {
+            flex: 1;
+            display: flex;
             align-items: center;
             justify-content: center;
+            padding: 2rem;
+            z-index: 3;
         }
 
-        .sunlight {
-            position: absolute;
-            top: -100px;
-            right: 10%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle at center,
-                    rgba(252, 211, 77, 0.4) 0%,
-                    rgba(252, 211, 77, 0.2) 30%,
-                    rgba(252, 211, 77, 0.1) 60%,
-                    transparent 100%);
-            filter: blur(40px);
-            animation: sunGlow 10s ease-in-out infinite;
+        .content-wrapper {
+            max-width: 600px;
+            width: 100%;
         }
 
-        .light-rays {
-            position: absolute;
-            top: 0;
-            right: 10%;
-            width: 600px;
-            height: 100vh;
-            background: repeating-linear-gradient(120deg,
-                    transparent 0%,
-                    transparent 2%,
-                    rgba(252, 211, 77, 0.05) 4%,
-                    transparent 6%,
-                    transparent 8%);
-            transform-origin: top;
-            animation: lightShift 20s ease-in-out infinite;
+        /* RTL text alignment */
+        [dir="rtl"] .content-wrapper {
+            text-align: right;
         }
 
+        .animation-side {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-title {
+            /* font-family: "Geist Mono", monospace; */
+            font-family: "Sour Gummy", serif;
+            font-weight: bold;
+
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        [dir="rtl"] .hero-title {
+            /* font-family: "El Messiri", sans-serif; */
+            font-family: "Marhey", sans-serif;
+
+        }
+
+        .hero-subtitle {
+            color: var(--accent-warm);
+            font-family: "Geist Mono", monospace;
+            font-size: 2rem;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            /* -webkit-text-fill-color: var(--accent-warm);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255); */
+        }
+
+        .hero-description {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: rgb(244, 243, 243);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* RTL button container */
+        [dir="rtl"] .button-container {
+            flex-direction: row-reverse;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .primary-button {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .secondary-button {
+            background: rgb(242, 203, 30);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+        }
+
+        /* Cloud and rain styles remain the same */
         .cloud {
             position: absolute;
             background: linear-gradient(180deg,
                     var(--cloud-primary),
                     var(--cloud-secondary));
             border-radius: 50px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-                0 2px 8px rgba(255, 255, 255, 0.5),
-                inset 0 -4px 8px rgba(0, 0, 0, 0.05);
-            z-index: 2;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         .cloud::before,
@@ -201,7 +280,7 @@
         .cloud-2 {
             width: 260px;
             height: 90px;
-            top: 25%;
+            top: 35%;
             right: 15%;
             animation: floatCloud2 25s ease-in-out infinite;
         }
@@ -220,108 +299,6 @@
             left: 130px;
         }
 
-        .cloud-3 {
-            width: 220px;
-            height: 70px;
-            top: 35%;
-            left: 30%;
-            animation: floatCloud3 23s ease-in-out infinite;
-            opacity: 0.9;
-        }
-
-        .cloud-3::before {
-            width: 90px;
-            height: 90px;
-            top: -45px;
-            left: 35px;
-        }
-
-        .cloud-3::after {
-            width: 70px;
-            height: 70px;
-            top: -30px;
-            left: 100px;
-        }
-
-        .cloud-4 {
-            width: 180px;
-            height: 60px;
-            top: 20%;
-            right: 35%;
-            animation: floatCloud4 19s ease-in-out infinite;
-            opacity: 0.85;
-        }
-
-        .cloud-4::before {
-            width: 80px;
-            height: 80px;
-            top: -40px;
-            left: 30px;
-        }
-
-        .cloud-4::after {
-            width: 60px;
-            height: 60px;
-            top: -25px;
-            left: 90px;
-        }
-
-        .cloud-5 {
-            width: 160px;
-            height: 50px;
-            top: 45%;
-            right: 25%;
-            animation: floatCloud5 21s ease-in-out infinite;
-            opacity: 0.8;
-        }
-
-        .cloud-5::before {
-            width: 70px;
-            height: 70px;
-            top: -35px;
-            left: 25px;
-        }
-
-        .cloud-5::after {
-            width: 50px;
-            height: 50px;
-            top: -20px;
-            left: 80px;
-        }
-
-        .cloud-6 {
-            width: 140px;
-            height: 45px;
-            top: 30%;
-            left: 45%;
-            animation: floatCloud6 17s ease-in-out infinite;
-            opacity: 0.75;
-        }
-
-        .cloud-6::before {
-            width: 65px;
-            height: 65px;
-            top: -32px;
-            left: 20px;
-        }
-
-        .cloud-6::after {
-            width: 45px;
-            height: 45px;
-            top: -18px;
-            left: 70px;
-        }
-
-        .rain-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 1;
-        }
-
         .rain {
             position: absolute;
             width: 2px;
@@ -335,249 +312,15 @@
             animation: rain-fall linear infinite;
         }
 
-        .content-wrapper {
-            position: relative;
-            z-index: 3;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-title {
-            font-size: 4.5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            /* color: rgb(47, 102, 154); */
-            -webkit-text-fill-color: white;
-            /* Will override color (regardless of order) */
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: black;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-subtitle {
-            color: var(--accent-warm);
-            -webkit-text-fill-color: var(--accent-warm);
-            /* Will override color (regardless of order) */
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: black;
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 2rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-description {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            margin-bottom: 3rem;
-            color: white;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Modern Glassmorphic Buttons with Enhanced Effects */
-        .button-container {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            padding: 1.25rem 2.5rem;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 1.125rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            color: white;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            text-decoration: none;
-        }
-
-        .primary-button {
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow:
-                0 8px 32px rgba(31, 38, 135, 0.15),
-                0 2px 4px rgba(255, 255, 255, 0.1) inset;
-        }
-
-        .secondary-button {
-            background: rgb(242, 203, 30);
-            border: 1px solid rgba(96, 165, 250, 0.3);
-            box-shadow:
-                0 8px 32px rgba(31, 38, 135, 0.15),
-                0 2px 4px rgba(96, 165, 250, 0.1) inset;
-        }
-
-        /* Enhanced Hover Effects */
-        .cta-button:hover {
-            transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(31, 38, 135, 0.2);
-        }
-
-        .primary-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .secondary-button:hover {
-            background: rgb(243, 147, 13);
-            border-color: rgba(255, 211, 34, 0.4);
-        }
-
-        /* Active state */
-        .cta-button:active {
-            transform: translateY(0) scale(0.98);
-            box-shadow: 0 5px 15px rgba(31, 38, 135, 0.1);
-        }
-
-        /* Shine effect */
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg,
-                    transparent,
-                    rgba(255, 255, 255, 0.1),
-                    transparent);
-            transform: rotate(45deg);
-            transition: all 0.6s;
-            pointer-events: none;
-        }
-
-        .cta-button:hover::before {
-            animation: shine 1.5s;
-        }
-
-        @keyframes shine {
-            0% {
-                transform: translateX(-200%) rotate(45deg);
-            }
-
-            100% {
-                transform: translateX(200%) rotate(45deg);
-            }
-        }
-
-        /* Icon styles */
-        .cta-button svg {
-            width: 20px;
-            height: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .cta-button:hover svg {
-            transform: translateX(4px);
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .button-container {
-                flex-direction: column;
-                gap: 1.5rem;
-                padding: 0 1rem;
-            }
-
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        @keyframes shine {
-            0% {
-                transform: translateX(-200%) rotate(45deg);
-            }
-
-            100% {
-                transform: translateX(200%) rotate(45deg);
-            }
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                width: auto;
-                min-width: 200px;
-            }
-
-            .button-container {
-                gap: 1.5rem;
-            }
-        }
-
-        /* Optional: Add icon support */
-        .cta-button svg {
-            margin-left: 0.5rem;
-            transition: transform 0.3s ease;
-        }
-
-        .cta-button:hover svg {
-            transform: translateX(4px);
-        }
-
-        @keyframes sunGlow {
-
-            0%,
-            100% {
-                opacity: 0.6;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.8;
-                transform: scale(1.1);
-            }
-        }
-
-        @keyframes lightShift {
-
-            0%,
-            100% {
-                transform: rotate(0deg) translateY(0);
-                opacity: 0.5;
-            }
-
-            50% {
-                transform: rotate(5deg) translateY(-20px);
-                opacity: 0.7;
-            }
-        }
-
         @keyframes floatCloud1 {
 
             0%,
             100% {
-                transform: translate(0, 0) rotate(0deg);
+                transform: translate(0, 0);
             }
 
             50% {
-                transform: translate(100px, -20px) rotate(2deg);
+                transform: translate(30px, -15px);
             }
         }
 
@@ -585,59 +328,11 @@
 
             0%,
             100% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-
-            50% {
-                transform: translate(-100px, 20px) rotate(-2deg);
-            }
-        }
-
-        @keyframes floatCloud3 {
-
-            0%,
-            100% {
                 transform: translate(0, 0);
             }
 
             50% {
-                transform: translate(-80px, 15px);
-            }
-        }
-
-        @keyframes floatCloud4 {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            50% {
-                transform: translate(60px, -15px);
-            }
-        }
-
-        @keyframes floatCloud5 {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            50% {
-                transform: translate(-50px, -20px);
-            }
-        }
-
-        @keyframes floatCloud6 {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            50% {
-                transform: translate(40px, 10px);
+                transform: translate(-30px, 15px);
             }
         }
 
@@ -661,109 +356,268 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            .split-layout {
+                flex-direction: column-reverse !important;
+                /* Override RTL flex-direction for mobile */
+            }
+
+            .content-side {
+                padding: 2rem 1rem;
+            }
+
+            .animation-side {
+                min-height: 40vh;
+            }
+
             .hero-title {
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
 
             .hero-subtitle {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .hero-description {
                 font-size: 1.25rem;
-                padding: 0 1rem;
             }
 
             .button-container {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: column !important;
+                /* Override RTL flex-direction for mobile */
+                align-items: stretch;
+            }
+
+            .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <style>
+        @media (max-width: 1024px) {
+            .scene-container {
+                min-height: calc(100vh - 80px);
+                /* Adjust based on your navbar height */
+                margin-top: 80px;
+                /* Add margin-top equal to navbar height */
+            }
+
+            .split-layout {
+                flex-direction: column-reverse !important;
+                min-height: calc(100vh - 80px);
+                /* Match container height */
+            }
+
+            .content-side {
+                padding: 2rem 1rem;
+                flex: initial;
+                /* Remove flex grow */
+                min-height: 60vh;
+                /* Adjust content area height */
+            }
+
+            .animation-side {
+                min-height: 40vh;
+                max-height: 40vh;
+                /* Limit animation area height */
+                overflow: hidden;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+                /* Slightly smaller for mobile */
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .hero-subtitle {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .hero-description {
+                font-size: 1.125rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .button-container {
+                flex-direction: column !important;
+                align-items: stretch;
                 gap: 1rem;
             }
 
             .cta-button {
                 width: 100%;
-                max-width: 300px;
+                justify-content: center;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            /* Adjust cloud visibility and positions for mobile */
+            .cloud {
+                transform: scale(0.8);
+                /* Make clouds slightly smaller on mobile */
+            }
+
+            .cloud-5,
+            .cloud-6,
+            .cloud-7,
+            .cloud-8 {
+                display: none;
+                /* Hide smaller clouds on mobile */
+            }
+
+            /* Adjust remaining clouds positions */
+            .cloud-1 {
+                top: 10%;
+                left: 10%;
+            }
+
+            .cloud-2 {
+                top: 30%;
+                right: 10%;
+            }
+
+            .cloud-3 {
+                top: 20%;
+                left: 30%;
+            }
+
+            .cloud-4 {
+                top: 40%;
+                right: 25%;
+            }
+        }
+
+        /* Additional breakpoint for smaller phones */
+        @media (max-width: 640px) {
+            .scene-container {
+                margin-top: 64px;
+                /* Adjust for smaller navbar on phones */
+                min-height: calc(100vh - 64px);
+            }
+
+            .split-layout {
+                min-height: calc(100vh - 64px);
+            }
+
+            .content-side {
+                padding: 1.5rem 1rem;
+            }
+
+            .hero-title {
+                font-size: 2.75rem;
                 text-align: center;
             }
 
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            /* Further reduce number of visible clouds */
             .cloud-3,
-            .cloud-4,
-            .cloud-5,
-            .cloud-6 {
+            .cloud-4 {
                 display: none;
+            }
+        }
+
+        /* Ensure smooth transitions between breakpoints */
+        @media (min-width: 1025px) {
+            .scene-container {
+                margin-top: 0;
+                min-height: 100vh;
             }
         }
     </style>
 
-    <div class="scene-container">
-        <div class="sunlight"></div>
-        <div class="light-rays"></div>
-
-        <div class="cloud cloud-1"></div>
-        <div class="cloud cloud-2"></div>
-        <div class="cloud cloud-3"></div>
-        <div class="cloud cloud-4"></div>
-        <div class="cloud cloud-5"></div>
-        <div class="cloud cloud-6"></div>
-
-        <div class="rain-container">
-            <script>
-                for (let i = 0; i < 100; i++) {
-                const rain = document.createElement('div');
-                rain.className = 'rain';
-                rain.style.left = Math.random() * 100 + '%';
-                rain.style.animationDelay = Math.random() * 2 + 's';
-                rain.style.animationDuration = Math.random() * 1 + 1 + 's';
-                rain.style.opacity = Math.random() * 0.3 + 0.2;
-                document.querySelector('.rain-container').appendChild(rain);
-            }
-            </script>
-        </div>
-
-        <div class="content-wrapper">
-            <div class="hero-content" dir="{{ App::isLocale('ar') ? 'rtl' : 'ltr' }}">
-                <h1 class="hero-title text-gray-100">
-                    @if(App::isLocale('en'))
-                    We Rain Creativity on
-                    @else
-                    نمطر الإبداع على
-                    @endif
-                </h1>
-                <h2 class="hero-subtitle text-xl text-amber-200">
-                    @if(App::isLocale('en'))
-                    Your Website
-                    @else
-                    موقعك الإلكتروني
-                    @endif
-                </h2>
-                <p class="hero-description">
-                    @if(App::isLocale('en'))
-                    Transform your digital presence with our cutting-edge development solutions
-                    and innovative technologies that push boundaries.
-                    @else
-                    قم بتحويل تواجدك الرقمي من خلال حلول التطوير المتطورة والتقنيات المبتكرة التي تتجاوز الحدود.
-                    @endif
-                </p>
-                <div class="button-container">
-                    <a href="#projects" class="cta-button primary-button">
+    <div class="scene-container" dir="{{ App::isLocale('ar') ? 'rtl' : 'ltr' }}">
+        <div class="split-layout">
+            <div class="content-side">
+                <div class="content-wrapper">
+                    <h1 class="hero-title">
                         @if(App::isLocale('en'))
-                        Explore Our Work
+                        SahabCode:A Drop of Creativity in Every Cloud
                         @else
-                        استكشف أعمالنا
+                        سحاب كود : أفكارك تحلّق معنا
                         @endif
-                    </a>
-                    <a href="#contact" class="cta-button secondary-button">
+                    </h1>
+                    {{-- <h2 class="hero-subtitle">
                         @if(App::isLocale('en'))
-                        Start Creating
+                        Let Your Ideas Rain Into Stunning Websites
                         @else
-                        ابدأ الإنشاء
+                        نمطر إبداعاً، لتحصد تميّزاً
+
                         @endif
-                    </a>
+                    </h2> --}}
+
+                    <p class="hero-description">
+                        @if(App::isLocale('en'))
+                        At SahabCode, we create beautiful websites that help your business grow. Like clouds bringing
+                        rain, we bring fresh ideas and reliable solutions to every project.
+
+                        @else
+                        في سحاب كود، نُبدع مواقع ويب جميلة تساعد عملك على النمو. مثل السحاب الذي يجلب المطر، نأتي بأفكار
+                        جديدة وحلول موثوقة لكل مشروع.
+
+                        @endif
+                    </p>
+                    <div class="button-container">
+                        <a href="#projects" class="cta-button primary-button">
+                            @if(App::isLocale('en'))
+                            Explore Our Work
+                            @else
+                            استكشف أعمالنا
+                            @endif
+                        </a>
+                        <a href="#contact" class="cta-button secondary-button">
+                            @if(App::isLocale('en'))
+                            Start Creating
+                            @else
+                            ابدأ الإنشاء
+                            @endif
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="animation-side">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="rain-container"></div>
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+                <div class="cloud cloud-4"></div>
+                <div class="cloud cloud-5"></div>
+                <div class="cloud cloud-6"></div>
+                <div class="cloud cloud-7"></div>
+                <div class="cloud cloud-8"></div>
+                <div class="rain-container"></div>
+
             </div>
         </div>
     </div>
+
+
+    <script>
+        // Create rain effect
+        const rainContainer = document.querySelector('.rain-container');
+        for (let i = 0; i < 50; i++) {
+            const rain = document.createElement('div');
+            rain.className = 'rain';
+            rain.style.left = Math.random() * 100 + '%';
+            rain.style.animationDelay = Math.random() * 2 + 's';
+            rain.style.animationDuration = Math.random() * 1 + 1 + 's';
+            rain.style.opacity = Math.random() * 0.3 + 0.2;
+            rainContainer.appendChild(rain);
+        }
+    </script>
     <!-- End::Services Content -->
     <!-- Start::Services Content -->
 
@@ -1002,6 +856,7 @@
             margin-bottom: 1.5rem;
             font-size: 1.75rem;
             font-weight: 700;
+            line-height: 1.3
         }
 
         /* Feature List */
@@ -1053,12 +908,12 @@
 
             0%,
             100% {
-                transform: translate(0, 0);
+                transform: translate(-100px, 0);
             }
 
-            50% {
-                transform: translate(100px, -20px);
-            }
+            /* 50% {
+                transform: translate(-20px, -80px);
+            } */
         }
 
         @keyframes floatServiceCloud2 {
@@ -1089,6 +944,10 @@
         @media (max-width: 768px) {
             .services-section {
                 padding: 4rem 0;
+            }
+
+            .service-cloud-1 {
+                display: none;
             }
 
             .services-title {

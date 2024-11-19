@@ -1,9 +1,9 @@
 <?php
 return [
     'title' => 'What People Are Saying About Us',
-    'quote' => '“The website looks amazing! The team was quick, cooperative, and delivered a fantastic design. Super helpful and easy to work with!”',
+    'quote' => 'The website is amazing! The team was fast and cooperative, delivering fantastic design. They were helpful and easy to work with!',
     'profile' => [
-        'name' => 'Mohammed Zaid',
+        'name' => 'Nour Hussain',
         'title' => 'Principal, Bright Kids Kindergarten',
     ],
 ];
