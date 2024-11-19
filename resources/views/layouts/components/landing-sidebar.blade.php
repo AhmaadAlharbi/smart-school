@@ -64,7 +64,7 @@
     .logo-cloud {
         width: 45px;
         height: 45px;
-        background: linear-gradient(135deg, var(--sky-primary, #60a5fa), #93c5fd);
+        /* background: linear-gradient(135deg, var(--sky-primary, #60a5fa), #93c5fd); */
         border-radius: 50%;
         position: relative;
         box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);

@@ -126,7 +126,7 @@
     <div class="landing-page-wrapper relative">
 
         <!-- LANDING HEADER -->
-        @include('layouts.components.landing-header')
+        {{-- @include('layouts.components.landing-header') --}}
 
         <!-- END LANDING HEADER -->
 
