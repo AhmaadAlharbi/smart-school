@@ -9,7 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 
 
-<style>
+{{-- <style>
     @keyframes float {
 
         0%,
@@ -85,14 +85,14 @@
         text-align: right;
         direction: rtl;
     }
-</style>
+</style> --}}
 
 
 @endsection
 
 @section('content')
 
-<div class="main-content landing-main !p-0  {{ app()->getLocale() == 'ar' ? 'rtl-layout' : 'ltr-layout' }}">
+<div class=" landing-main !p-0  {{ app()->getLocale() == 'ar' ? 'rtl-layout' : 'ltr-layout' }}">
     <!-- Start::Home Content new one -->
     <style>
         :root {
@@ -106,7 +106,7 @@
         }
 
         .scene-container {
-            padding-bottom: 10px;
+            /* padding-bottom: 10px; */
             min-height: 100vh;
             background: radial-gradient(circle at 70% 20%,
                     rgba(252, 211, 77, 0.2) 0%,
@@ -358,6 +358,8 @@
 
         @media (max-width: 1024px) {
             .split-layout {
+                margin-top: 20px;
+                padding: 20px;
                 flex-direction: column-reverse !important;
                 /* Override RTL flex-direction for mobile */
             }
@@ -372,6 +374,7 @@
 
             .hero-title {
                 font-size: 3.5rem;
+                text-align: center;
             }
 
             .hero-subtitle {
@@ -394,12 +397,12 @@
             }
         }
     </style>
-    <style>
+    {{-- <style>
         @media (max-width: 1024px) {
             .scene-container {
-                min-height: calc(100vh - 80px);
+                /* min-height: calc(100vh - 80px); */
                 /* Adjust based on your navbar height */
-                margin-top: 80px;
+                /* margin-top: 30px; */
                 /* Add margin-top equal to navbar height */
             }
 
@@ -535,12 +538,14 @@
                 min-height: 100vh;
             }
         }
-    </style>
+    </style> --}}
 
     <div class="scene-container" dir="{{ App::isLocale('ar') ? 'rtl' : 'ltr' }}">
         <div class="split-layout">
             <div class="content-side">
                 <div class="content-wrapper">
+                    <div class="cloud cloud-1 -z-10 block lg:hidden"></div>
+                    <div class="cloud cloud-2 -z-10 block lg:hidden"></div>
                     <h1 class="hero-title">
                         @if(App::isLocale('en'))
                         SahabCode:A Drop of Creativity in Every Cloud

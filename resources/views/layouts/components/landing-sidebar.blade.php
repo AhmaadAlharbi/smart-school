@@ -84,6 +84,8 @@
     .brand-name {
         font-size: clamp(1.5rem, 3vw, 1.75rem);
         font-weight: bold;
+        font-family: "Sour Gummy", serif;
+
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
     }
 
@@ -101,12 +103,24 @@
     }
 
     .nav-link {
-        color: var(--text-color);
+        color: #2d3748;
+        /* Dark gray blue for better contrast */
+        font-size: 16px;
         text-decoration: none;
         font-weight: 500;
         padding: 0.5rem;
         position: relative;
         transition: color var(--transition-speed);
+        font-family: "DynaPuff", system-ui;
+
+    }
+
+
+
+    [dir="rtl"] .nav-link {
+        font-family: "Marhey", serif;
+
+        /* Remove auto margin */
     }
 
     .nav-link::before {
@@ -126,9 +140,14 @@
         transform: scaleX(1);
     }
 
-    .nav-link[aria-current="page"] {
-        color: var(--accent-warm);
+    .nav-link:hover {
+        color: #1a365d;
+        /* Darker blue on hover */
     }
+
+    /* .nav-link[aria-current="page"] {
+        color: var(--accent-warm);
+    } */
 
     .nav-link[aria-current="page"]::before {
         transform: scaleX(1);
@@ -145,11 +164,25 @@
         margin-left: auto;
     }
 
+
+    [dir="rtl"] .nav-toggle {
+        margin-left: 0;
+        margin-right: 0;
+        /* Remove auto margin */
+    }
+
+
+
     .menu-icon {
         width: 24px;
         height: 24px;
         stroke-linecap: round;
         stroke-linejoin: round;
+    }
+
+    [dir="rtl"] .nav-container {
+        flex-direction: row;
+        /* Reverse the order of items */
     }
 
     .lang-switch {
@@ -161,13 +194,31 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.1);
+        /* background: rgba(255, 255, 255, 0.1); */
+        background: var(--accent-warm);
+
         border: 1px solid var(--navbar-border);
         border-radius: 20px;
-        color: var(--text-color);
+        color: black;
         text-decoration: none;
         cursor: pointer;
         transition: all var(--transition-speed);
+    }
+
+
+
+
+
+    [dir="rtl"] .lang-btn {
+        font-family: "Marhey", serif;
+
+        /* Remove auto margin */
+    }
+
+    [dir="rtl"] .lang-btn {
+        font-family: "DynaPuff", system-ui;
+
+        /* Remove auto margin */
     }
 
     .lang-btn:hover,
@@ -205,7 +256,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgb(21, 189, 255);
             backdrop-filter: blur(var(--navbar-blur));
             padding: 2rem 1rem;
             flex-direction: column;
@@ -213,6 +264,10 @@
             text-align: center;
             display: none;
             z-index: 999;
+            min-height: calc(100vh - var(--navbar-height));
+            /* Add this */
+            justify-content: center;
+            /* Add this */
         }
 
         .nav-menu.active {
@@ -248,16 +303,44 @@
             transition-duration: 0.01ms !important;
         }
     }
+
+    /* SVG icon container */
+    .menu-icon {
+        width: 24px;
+        height: 24px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    /* Hide close icon by default */
+    .close-icon {
+        display: none;
+    }
+
+    /* When menu is open */
+    [aria-expanded="true"] .menu-bar {
+        display: none;
+    }
+
+    [aria-expanded="true"] .close-icon {
+        display: block;
+    }
 </style>
 
 <nav class="navbar" dir="{{ request()->is('ar*') ? 'rtl' : 'ltr' }}" aria-label="Main navigation">
     <div class="nav-container">
+
         <a href="{{ request()->is('ar*') ? '/ar' : '/' }}" class="logo-container" aria-label="SahabCode home">
-            <div class="logo-cloud" role="img" aria-hidden="true"></div>
+            @if(request()->is('ar*'))
+            <span class="brand-name">سحاب كود</span>
+
+            @else
             <span class="brand-name">SahabCode</span>
+
+            @endif
         </a>
 
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <button dir="rtl" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
             <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2">
                 <path class="menu-bar" d="M3 12h18M3 6h18M3 18h18" />
