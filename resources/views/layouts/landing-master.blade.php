@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="{{asset('build/assets/img/brand-logos/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{asset('build/assets/img/landing/svg.png')}}">
 
     <!-- APP CSS -->
     @vite(['resources/css/app.css'])

@@ -369,7 +369,10 @@
             }
 
             .animation-side {
-                min-height: 40vh;
+                min-height: 20vh;
+                position: relative;
+                margin-top: 25px;
+
             }
 
             .hero-title {
@@ -397,155 +400,13 @@
             }
         }
     </style>
-    {{-- <style>
-        @media (max-width: 1024px) {
-            .scene-container {
-                /* min-height: calc(100vh - 80px); */
-                /* Adjust based on your navbar height */
-                /* margin-top: 30px; */
-                /* Add margin-top equal to navbar height */
-            }
 
-            .split-layout {
-                flex-direction: column-reverse !important;
-                min-height: calc(100vh - 80px);
-                /* Match container height */
-            }
-
-            .content-side {
-                padding: 2rem 1rem;
-                flex: initial;
-                /* Remove flex grow */
-                min-height: 60vh;
-                /* Adjust content area height */
-            }
-
-            .animation-side {
-                min-height: 40vh;
-                max-height: 40vh;
-                /* Limit animation area height */
-                overflow: hidden;
-            }
-
-            .hero-title {
-                font-size: 3.5rem;
-                /* Slightly smaller for mobile */
-                margin-bottom: 1rem;
-                text-align: center;
-            }
-
-            .hero-subtitle {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-                text-align: center;
-            }
-
-            .hero-description {
-                font-size: 1.125rem;
-                margin-bottom: 1.5rem;
-                text-align: center;
-            }
-
-            .button-container {
-                flex-direction: column !important;
-                align-items: stretch;
-                gap: 1rem;
-            }
-
-            .cta-button {
-                width: 100%;
-                justify-content: center;
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
-
-            /* Adjust cloud visibility and positions for mobile */
-            .cloud {
-                transform: scale(0.8);
-                /* Make clouds slightly smaller on mobile */
-            }
-
-            .cloud-5,
-            .cloud-6,
-            .cloud-7,
-            .cloud-8 {
-                display: none;
-                /* Hide smaller clouds on mobile */
-            }
-
-            /* Adjust remaining clouds positions */
-            .cloud-1 {
-                top: 10%;
-                left: 10%;
-            }
-
-            .cloud-2 {
-                top: 30%;
-                right: 10%;
-            }
-
-            .cloud-3 {
-                top: 20%;
-                left: 30%;
-            }
-
-            .cloud-4 {
-                top: 40%;
-                right: 25%;
-            }
-        }
-
-        /* Additional breakpoint for smaller phones */
-        @media (max-width: 640px) {
-            .scene-container {
-                margin-top: 64px;
-                /* Adjust for smaller navbar on phones */
-                min-height: calc(100vh - 64px);
-            }
-
-            .split-layout {
-                min-height: calc(100vh - 64px);
-            }
-
-            .content-side {
-                padding: 1.5rem 1rem;
-            }
-
-            .hero-title {
-                font-size: 2.75rem;
-                text-align: center;
-            }
-
-            .hero-subtitle {
-                font-size: 1.25rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-            }
-
-            /* Further reduce number of visible clouds */
-            .cloud-3,
-            .cloud-4 {
-                display: none;
-            }
-        }
-
-        /* Ensure smooth transitions between breakpoints */
-        @media (min-width: 1025px) {
-            .scene-container {
-                margin-top: 0;
-                min-height: 100vh;
-            }
-        }
-    </style> --}}
 
     <div class="scene-container" dir="{{ App::isLocale('ar') ? 'rtl' : 'ltr' }}">
         <div class="split-layout">
             <div class="content-side">
                 <div class="content-wrapper">
-                    <div class="cloud cloud-1 -z-10 block lg:hidden"></div>
-                    <div class="cloud cloud-2 -z-10 block lg:hidden"></div>
+
                     <h1 class="hero-title">
                         @if(App::isLocale('en'))
                         SahabCode:A Drop of Creativity in Every Cloud
@@ -1953,7 +1814,7 @@
     <div class="mission-section" id="our-mission">
         <!-- Cloud Elements -->
         <div class="service-cloud service-cloud-1"></div>
-        <div class="service-cloud service-cloud-2"></div>
+        {{-- <div class="service-cloud service-cloud-2 hidden md:block"></div> --}}
 
         <div class="container mx-auto px-4">
             <div class="max-w-7xl mx-auto">
