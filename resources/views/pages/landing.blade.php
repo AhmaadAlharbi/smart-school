@@ -9,83 +9,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 
 
-{{-- <style>
-    @keyframes float {
-
-        0%,
-        100% {
-            transform: translateY(0px) rotate(2deg);
-        }
-
-        50% {
-            transform: translateY(-20px) rotate(2deg);
-        }
-    }
-
-    @keyframes floatShadow {
-
-        0%,
-        100% {
-            transform: scale(1);
-            opacity: 0.3;
-        }
-
-        50% {
-            transform: scale(0.85);
-            opacity: 0.2;
-        }
-    }
-
-    @keyframes soarIn {
-        0% {
-            transform: translateY(50px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    .float-animation {
-        animation: float 6s ease-in-out infinite;
-    }
-
-    .shadow-animation {
-        animation: floatShadow 6s ease-in-out infinite;
-    }
-
-    .soar-in {
-        animation: soarIn 1s ease-out forwards;
-    }
-
-    .soar-in-delay-1 {
-        opacity: 0;
-        animation: soarIn 1s ease-out 0.2s forwards;
-    }
-
-    .soar-in-delay-2 {
-        opacity: 0;
-        animation: soarIn 1s ease-out 0.4s forwards;
-    }
-
-    [lang="ar"] {
-        font-family: 'Cairo', sans-serif;
-        /* Arabic version */
-    }
-
-    .ltr-layout {
-        text-align: left;
-        direction: ltr;
-    }
-
-    /* RTL (Arabic) Layout */
-    .rtl-layout {
-        text-align: right;
-        direction: rtl;
-    }
-</style> --}}
 
 
 @endsection
@@ -860,7 +783,7 @@
             </p>
 
             <!-- Services Grid -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
 
                 <!-- Web Design Service -->
                 <div class="service-card">
@@ -2597,75 +2520,80 @@
 
 
     <style>
-        /* Projects Section Base */
         .projects-section {
-            background: radial-gradient(circle at 70% 20%,
-                    rgba(252, 211, 77, 0.2) 0%,
-                    transparent 50%),
-                radial-gradient(circle at 20% 60%,
-                    rgba(147, 197, 253, 0.3) 0%,
-                    transparent 50%),
-                linear-gradient(180deg,
-                    #7dd3fc 0%,
-                    #60a5fa 100%);
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(180deg, #7dd3fc 0%, #60a5fa 100%);
             padding: 4rem 0;
             min-height: 100vh;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Cloud Elements */
-        .projects-cloud {
+        .floating-circle {
             position: absolute;
-            background: linear-gradient(180deg,
-                    rgba(255, 255, 255, 0.95),
-                    rgba(255, 255, 255, 0.9));
-            border-radius: 50px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-            opacity: 0.5;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
         }
 
-        .projects-cloud-1 {
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            right: -100px;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .circle-2 {
             width: 200px;
-            height: 60px;
-            top: 5%;
-            left: 5%;
-            animation: floatProjectCloud1 20s ease-in-out infinite;
+            height: 200px;
+            bottom: -50px;
+            left: -50px;
+            animation: float 15s infinite ease-in-out reverse;
         }
 
-        .projects-cloud-2 {
-            width: 180px;
-            height: 50px;
-            bottom: 10%;
-            right: 5%;
-            animation: floatProjectCloud2 25s ease-in-out infinite;
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(30px, 30px) rotate(180deg);
+            }
         }
 
-        /* Typography */
         .projects-title {
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            background: linear-gradient(to right, #ffffff, #ffffff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            color: white;
             margin-bottom: 1.5rem;
             padding: 20px 0;
+            position: relative;
+        }
+
+        .projects-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #fcd34d, #f87171);
+            margin: 15px auto 0;
+            border-radius: 2px;
         }
 
         .projects-description {
-            color: #4b5563;
+            color: white;
             max-width: 48rem;
             margin: 0 auto;
             text-align: center;
             font-size: 1.125rem;
             line-height: 1.75;
             margin-bottom: 3rem;
+            padding: 0 1rem;
         }
 
-        /* Project Cards */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -2677,13 +2605,32 @@
 
         .project-card {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
             border-radius: 15px;
-            overflow: hidden;
+            padding: 2rem;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             position: relative;
-            z-index: 2;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, #60a5fa, #93c5fd);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
         }
 
         .project-card:hover {
@@ -2691,73 +2638,52 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .project-image-wrapper {
-            position: relative;
-            height: 400px;
-            overflow: hidden;
-        }
-
-        .project-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-card:hover .project-image {
-            transform: scale(1.05);
-        }
-
-        /* Overlay */
-        .project-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top,
-                    rgba(96, 165, 250, 0.95),
-                    rgba(96, 165, 250, 0.7) 50%,
-                    rgba(96, 165, 250, 0) 100%);
-            padding: 2rem;
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #60a5fa, #93c5fd);
+            border-radius: 12px;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            transform: translateY(60px);
-            transition: all 0.5s ease;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transform: rotate(-5deg);
+            transition: transform 0.3s ease;
         }
 
-        .project-card:hover .project-overlay {
-            transform: translateY(0);
+        .project-card:hover .project-icon {
+            transform: rotate(0deg) scale(1.1);
         }
 
-        .project-content {
-            opacity: 0.9;
-            transition: opacity 0.3s ease;
-        }
-
-        .project-card:hover .project-content {
-            opacity: 1;
+        .project-icon i {
+            font-size: 1.8rem;
+            color: white;
         }
 
         .project-title {
-            color: white;
+            color: #1e3a8a;
             font-size: 1.75rem;
             font-weight: bold;
             margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
         .project-description {
-            color: rgba(255, 255, 255, 0.95);
+            color: #4b5563;
             line-height: 1.6;
             margin-bottom: 1.5rem;
+            flex-grow: 1;
         }
 
         .project-link {
             display: inline-flex;
             align-items: center;
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
+            background: linear-gradient(to right, #60a5fa, #93c5fd);
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 9999px;
             font-weight: 600;
+            text-decoration: none;
             transition: all 0.3s ease;
         }
 
@@ -2772,135 +2698,103 @@
         }
 
         .project-link:hover .project-link-icon {
-            transform: translateX(3px);
+            transform: translateX(5px);
         }
 
-        /* RTL Support */
-        [dir="rtl"] .project-link {
-            flex-direction: row-reverse;
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
         }
 
-        [dir="rtl"] .project-link-icon {
-            margin-left: 0;
-            margin-right: 0.5rem;
-            transform: scaleX(-1);
+        .project-tag {
+            background: rgba(96, 165, 250, 0.1);
+            color: #3b82f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
         }
 
-        [dir="rtl"] .project-link:hover {
-            transform: translateY(-2px);
-        }
-
-        [dir="rtl"] .project-link:hover .project-link-icon {
-            transform: translateX(-3px) scaleX(-1);
-        }
-
-        /* Animations */
-        @keyframes floatProjectCloud1 {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            50% {
-                transform: translate(40px, -10px);
+        @media (max-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @keyframes floatProjectCloud2 {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            50% {
-                transform: translate(-40px, 10px);
-            }
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .projects-section {
-                padding: 3rem 0;
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
 
             .projects-title {
                 font-size: 2rem;
             }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-                padding: 0 1rem;
-            }
-
-            .project-image-wrapper {
-                height: 300px;
-            }
         }
     </style>
 
-    <div class="projects-section" id="projects">
-        <!-- Cloud Elements -->
-        <div class="service-cloud service-cloud-1"></div>
-        <div class="service-cloud service-cloud-2"></div>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <div class="container mx-auto px-4">
-            <h2 class="projects-title dynapuff">{{ __('projects.projects.magical') }}</h2>
+    <div class="projects-section">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+
+        <div class="container">
+            <h2 class="projects-title">{{ __('projects.projects.magical') }}</h2>
             <p class="projects-description">{{ __('projects.projects.description') }}</p>
 
             <div class="projects-grid">
-                <!-- Project 1: Learning Activities -->
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="{{asset('build/assets/img/landing/bright-kids.png')}}"
-                            alt="{{ __('projects.projects.activities.alt') }}" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title dynapuff">{{ __('projects.projects.activities.title') }}</h3>
-                                <p class="project-description">{{ __('projects.projects.activities.description') }}</p>
-                                <a href="https://bright-kids.site/" class="project-link dynapuff">
-                                    {{ __('projects.projects.view_more') }}
-                                    <span class="project-link-icon">→</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <div class="project-tags">
+                        {{-- <span class="project-tag">{{ __('projects.projects.activities.tag1') }}</span>
+                        <span class="project-tag">{{ __('projects.projects.activities.tag2') }}</span> --}}
+                    </div>
+                    <h3 class="project-title">{{ __('projects.projects.activities.title') }}</h3>
+                    <p class="project-description">{{ __('projects.projects.activities.description') }}</p>
+                    <a href="https://bright-kids.site/" class="project-link">
+                        {{ __('projects.projects.view_more') }}
+                        <span class="project-link-icon">→</span>
+                    </a>
                 </div>
 
-                <!-- Project 2: Parent Portal -->
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="{{asset('build/assets/img/landing/school-system-dashboard.png')}}"
-                            alt="{{ __('projects.projects.portal.alt') }}" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title dynapuff">{{ __('projects.projects.portal.title') }}</h3>
-                                <p class="project-description">{{ __('projects.projects.portal.description') }}</p>
-                                <a href="/demo-dashboard" class="project-link dynapuff">
-                                    {{ __('projects.projects.view_more') }}
-                                    <span class="project-link-icon">→</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <div class="project-tags">
+                        {{-- <span class="project-tag">{{ __('projects.projects.portal.tag1') }}</span>
+                        <span class="project-tag">{{ __('projects.projects.portal.tag2') }}</span> --}}
+                    </div>
+                    <h3 class="project-title">{{ __('projects.projects.portal.title') }}</h3>
+                    <p class="project-description">{{ __('projects.projects.portal.description') }}</p>
+                    <a href="/demo-dashboard" class="project-link">
+                        {{ __('projects.projects.view_more') }}
+                        <span class="project-link-icon">→</span>
+                    </a>
                 </div>
-                <!-- Project 2: Parent Portal -->
+
+                <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="{{asset('build/assets/img/landing/kahromaa.png')}}"
-                            alt="{{ __('projects.projects.portal.alt') }}" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-content">
-                                <h3 class="project-title dynapuff">{{ __('projects.projects.project3.title') }}</h3>
-                                <p class="project-description">{{ __('projects.projects.project3.description') }}</p>
-                                <a href="https://kahromaa.com" class="project-link dynapuff">
-                                    {{ __('projects.projects.view_more') }}
-                                    <span class="project-link-icon">→</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
                     </div>
+                    <div class="project-tags">
+                        {{-- <span class="project-tag">{{ __('projects.projects.project3.tag1') }}</span>
+                        <span class="project-tag">{{ __('projects.projects.project3.tag2') }}</span> --}}
+                    </div>
+                    <h3 class="project-title">{{ __('projects.projects.project3.title') }}</h3>
+                    <p class="project-description">{{ __('projects.projects.project3.description') }}</p>
+                    <a href="https://kahromaa.com" class="project-link">
+                        {{ __('projects.projects.view_more') }}
+                        <span class="project-link-icon">→</span>
+                    </a>
                 </div>
             </div>
         </div>
